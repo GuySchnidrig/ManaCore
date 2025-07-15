@@ -1,12 +1,12 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "manacore"
 version = "0.1"
 description = "ManaCore data pipeline package"
-requires-python = ">=3.11"
+requires-python = ">=3.9.12"
 dependencies = [
     "pandas>=2.0.0",
     "numpy>=1.24.0",

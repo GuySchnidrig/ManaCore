@@ -9,7 +9,7 @@ setup(
         "numpy>=1.24.0",
         "duckdb>=1.3.2"
     ],
-    python_requires=">=3.11",
+    python_requires=">=3.9.12",
     description="ManaCore data pipeline package",
     author="Dr. Guy Schnidrig",
     author_email="schnidrig.guy@gmail.com",

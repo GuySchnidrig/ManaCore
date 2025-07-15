@@ -42,6 +42,4 @@ jobs:
       - name: Run pipeline script
         env:
           PYTHONPATH: ${{ github.workspace }}
-        run: |
-          export PYTHONPATH="${{ github.workspace }}"
-          python services/run_pipeline.py
+        run: python services/run_pipeline.py
