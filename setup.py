@@ -7,7 +7,8 @@ setup(
     install_requires=[
         "pandas>=2.3.1",
         "numpy>=2.3.1",
-        "duckdb>=1.3.2"
+        "duckdb>=1.3.2",
+        "requests>=2.32.4"
     ],
     python_requires=">=3.11",
     description="ManaCore data pipeline package",

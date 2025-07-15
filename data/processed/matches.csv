@@ -15,26 +15,6 @@ draws,player1,player1Wins,player2,player2Wins,round,draft_id,season_id
 0,Dimlas,2,Lukas Stalder,1,4,20250609,Season-4
 0,Noe T.,2,Tommy,0,4,20250609,Season-4
 0,Pali,0,Sili,2,4,20250609,Season-4
-0,Yannik,0,Ivo,2,1,20250323,Season-4
-0,Manuel,0,Tommy,2,1,20250323,Season-4
-0,Andrin,1,Sili,2,1,20250323,Season-4
-0,Guy,2,Lukas Stalder,0,1,20250323,Season-4
-0,Dimlas,1,Tinu,2,1,20250323,Season-4
-0,Guy,2,Ivo,1,2,20250323,Season-4
-1,Lukas Stalder,1,Andrin,1,2,20250323,Season-4
-0,Tommy,2,Sili,1,2,20250323,Season-4
-0,Tinu,1,Manuel,2,2,20250323,Season-4
-0,Yannik,0,Dimlas,2,2,20250323,Season-4
-0,Tommy,2,Guy,0,3,20250323,Season-4
-0,Ivo,2,Tinu,0,3,20250323,Season-4
-0,Manuel,1,Dimlas,2,3,20250323,Season-4
-0,Lukas Stalder,0,Sili,2,3,20250323,Season-4
-0,Andrin,2,Yannik,0,3,20250323,Season-4
-0,Yannik,0,Tinu,2,4,20250323,Season-4
-0,Manuel,2,Lukas Stalder,0,4,20250323,Season-4
-1,Sili,1,Guy,1,4,20250323,Season-4
-0,Dimlas,2,Andrin,0,4,20250323,Season-4
-0,Tommy,2,Ivo,1,4,20250323,Season-4
 0,Dimlas,2,Filipe,1,1,20250712,Season-4
 0,Sam,0,Ivo,2,1,20250712,Season-4
 1,Manuel,1,Yannik,1,1,20250712,Season-4
@@ -99,3 +79,23 @@ draws,player1,player1Wins,player2,player2Wins,round,draft_id,season_id
 0,Matthias,2,Missing Player,0,4,20250518,Season-4
 0,Tommy,0,Lukas Stalder,2,4,20250518,Season-4
 0,Ivo,0,Andrin,2,4,20250518,Season-4
+0,Yannik,0,Ivo,2,1,20250323,Season-4
+0,Manuel,0,Tommy,2,1,20250323,Season-4
+0,Andrin,1,Sili,2,1,20250323,Season-4
+0,Guy,2,Lukas Stalder,0,1,20250323,Season-4
+0,Dimlas,1,Tinu,2,1,20250323,Season-4
+0,Guy,2,Ivo,1,2,20250323,Season-4
+1,Lukas Stalder,1,Andrin,1,2,20250323,Season-4
+0,Tommy,2,Sili,1,2,20250323,Season-4
+0,Tinu,1,Manuel,2,2,20250323,Season-4
+0,Yannik,0,Dimlas,2,2,20250323,Season-4
+0,Tommy,2,Guy,0,3,20250323,Season-4
+0,Ivo,2,Tinu,0,3,20250323,Season-4
+0,Manuel,1,Dimlas,2,3,20250323,Season-4
+0,Lukas Stalder,0,Sili,2,3,20250323,Season-4
+0,Andrin,2,Yannik,0,3,20250323,Season-4
+0,Yannik,0,Tinu,2,4,20250323,Season-4
+0,Manuel,2,Lukas Stalder,0,4,20250323,Season-4
+1,Sili,1,Guy,1,4,20250323,Season-4
+0,Dimlas,2,Andrin,0,4,20250323,Season-4
+0,Tommy,2,Ivo,1,4,20250323,Season-4
