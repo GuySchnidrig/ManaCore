@@ -3,7 +3,7 @@ import zipfile
 import pandas as pd
 from pathlib import Path
 import re
-import json
+from manacore.config.get_seasons import load_season_config, get_season_for_date
 
 def extract_date_from_filename(filename: str) -> str:
     # Extract date in YYYY_MM_DD format from filename, return YYYYMMDD string
@@ -11,21 +11,7 @@ def extract_date_from_filename(filename: str) -> str:
     if match:
         return f"{match.group(1)}{match.group(2)}{match.group(3)}"
     return "unknown_date"
-
-def load_season_config(path="manacore/config/seasons.json"):
-    with open(path, "r") as f:
-        return json.load(f)
-
-def get_season_for_date(date_str, season_config):
-    # date_str is YYYYMMDD string
-    date_int = int(date_str)
-    for date_range, season_name in season_config.items():
-        start_str, end_str = date_range.split('-')
-        start_int, end_int = int(start_str), int(end_str)
-        if start_int <= date_int <= end_int:
-            return season_name
-    return "Unknown Season"
-
+    
 def read_all_csvs_from_zips():
     base_path = "data/raw"
     zip_files = [os.path.join(base_path, f) for f in os.listdir(base_path) if f.endswith('.zip')]
@@ -73,6 +59,13 @@ def save_dataframes_to_csv(drafted_df, matches_df, output_dir=Path("data/process
     """
     Saves the drafted and match DataFrames to CSV files in output_dir.
     """
+    
+    drafted_col_order = ['season_id', 'draft_id', 'player', 'archetype', 'decktype', 'scryfallId'] 
+    drafted_df = drafted_df[drafted_col_order]
+    
+    matches_col_order = ['season_id', 'draft_id','player1','player2','player1Wins','player2Wins','draws','round'] 
+    matches_df = matches_df[matches_col_order]
+    
     output_dir.mkdir(parents=True, exist_ok=True)
 
     drafted_path = output_dir / "drafted_decks.csv"
