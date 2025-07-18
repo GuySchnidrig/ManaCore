@@ -89,9 +89,9 @@ def update_elo(rating_a, rating_b, score_a):
     """
     K = 32
     expected_a = expected_score(rating_a, rating_b)
-    expected_b = 1 - expected_a  # accurate since expected_score is symmetric
+    expected_b = 1 - expected_a
 
-    score_b = 1 - score_a        # actual result for Player B
+    score_b = 1 - score_a
 
     rating_a += K * (score_a - expected_a)
     rating_b += K * (score_b - expected_b)
@@ -105,46 +105,19 @@ from collections import defaultdict
 def process_matches(csv_file, output_file):
     """
     Processes match data from a CSV file to update player Elo ratings across drafts and seasons,
-    and writes the Elo progress of all players to an output CSV file, including matches played
-    per draft and rating changes.
-
-    The function reads match records with players and their wins/draws, calculates Elo rating
-    updates with modifiers based on match dominance, tracks matches played per draft, and
-    outputs a detailed Elo progression log.
+    and writes the Elo progress of all players to an output CSV file, including matches played per draft.
 
     Parameters:
     -----------
     csv_file : str
-        Path to the input CSV file containing match records. Each row should include the fields:
+        Path to the input CSV file containing match records. Each row should have fields:
         - 'draft_id' (string date like "YYYYMMDD")
-        - 'player1' (player name)
-        - 'player2' (player name)
-        - 'player1Wins' (integer count of wins by player1)
-        - 'player2Wins' (integer count of wins by player2)
-        - 'draws' (integer count of drawn games)
+        - 'player1', 'player2' (player names)
+        - 'player1Wins', 'player2Wins', 'draws' (match outcomes)
 
     output_file : str
         Path to the output CSV file where Elo rating progress will be saved.
-        The output CSV will contain the following columns:
-        - 'season_id': Identifier of the season corresponding to the draft date.
-        - 'draft_id': Draft identifier string (date format "YYYYMMDD").
-        - 'player_name': Name of the player.
-        - 'matches_played': Number of matches the player has played in the draft.
-        - 'elo': Player's Elo rating after the match(es) in that draft.
-        - 'rating_change': Elo rating change resulting from the match(es) in that draft.
-          For players not participating in the draft, this will be zero.
-
-    Notes:
-    ------
-    - If a draft's date does not map to a known season, the function retains the last known season.
-    - Elo rating updates incorporate modifiers to reflect match dominance or closeness.
-    - Players who do not participate in a draft have their Elo rating carried forward without change.
-    - The function assumes the presence of helper functions:
-        - `load_season_config()`
-        - `load_latest_elos()`
-        - `get_season_for_date()`
-        - `update_elo()`
-
+        The output CSV will have columns: ['season_id', 'draft_id', 'player_name', 'matches_played', 'elo'].
     """
     season_config = load_season_config()
     ratings = load_latest_elos("data/raw/elo_history.csv")
@@ -232,24 +205,27 @@ def process_matches(csv_file, output_file):
 
             # Update ratings with full score (no modifier here)
             new_r1, new_r2 = update_elo(r1, r2, score_p1)
-
-            # Calculate rating changes (raw)
+            
+            # Calculate raw rating changes
             change_p1 = new_r1 - r1
             change_p2 = new_r2 - r2
 
             # Apply modifier to rating changes
-            change_p1 *= modifier
-            change_p2 *= modifier
+            scaled_change_p1 = change_p1 * modifier
+            scaled_change_p2 = change_p2 * modifier
 
-            # Adjust new ratings by modified changes
-            new_r1 = r1 + change_p1
-            new_r2 = r2 + change_p2
-
+            # Final ratings after modifier applied
+            final_r1 = new_r1 + scaled_change_p1
+            final_r2 = new_r2 + scaled_change_p2
+            
+            print(r1, new_r1, modifier, scaled_change_p1, final_r1)
+            
             # Store updated ratings
-            ratings[p1], ratings[p2] = new_r1, new_r2
-            last_elo_by_player[p1] = new_r1
-            last_elo_by_player[p2] = new_r2
-
+            ratings[p1] = final_r1
+            ratings[p2] = final_r2
+            last_elo_by_player[p1] = final_r1
+            last_elo_by_player[p2] = final_r2
+                    
             # Record elo progress
             elo_progress.append((
                 season_id,
