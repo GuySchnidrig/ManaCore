@@ -136,7 +136,7 @@ def process_matches(csv_file, output_file):
 
     Notes:
     ------
-    - If a draft’s date does not map to a known season, the function retains the last known season.
+    - If a draft's date does not map to a known season, the function retains the last known season.
     - Elo rating updates incorporate modifiers to reflect match dominance or closeness.
     - Players who do not participate in a draft have their Elo rating carried forward without change.
     - The function assumes the presence of helper functions:
