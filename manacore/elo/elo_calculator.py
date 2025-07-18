@@ -8,58 +8,43 @@ from manacore.config.get_seasons import load_season_config,get_season_for_date
 
 def load_latest_elos(elo_history_file):
     """
-    Load the latest Elo ratings for players from an Elo history CSV file.
+    Load the latest Elo ratings for players from a wide-format Elo history CSV file.
 
     Parameters:
     -----------
     elo_history_file : str
-        Path to a CSV file containing Elo history data with columns:
-        - 'draft_id' (e.g. 'S1D5', 'S4D...' etc.)
-        - 'player_name'
-        - 'elo' (float rating)
+        Path to a CSV file with columns: 'player', 'baseElo', and draft columns like 'S1D1', ..., 'S3D12'.
 
     Returns:
     --------
     collections.defaultdict
         A defaultdict mapping player names to their latest Elo rating (float).
-        Players not found in the file will default to an Elo rating of 1000.
-
-    Behavior:
-    ---------
-    - Ignores drafts where draft_id starts with 'S4D'.
-    - For each player, sorts their drafts chronologically by season and draft number.
-    - Returns the Elo from the most recent draft for each player.
+        Defaults to 1000 if the player is not found.
     """
-    player_drafts = defaultdict(list)
-
-    with open(elo_history_file, newline='') as file:
-        reader = csv.DictReader(file)
-        for row in reader:
-            draft_id = row['draft_id']
-
-            # Exclude drafts starting with 'S4D'
-            if draft_id.startswith('S4D'):
-                continue
-
-            player = row['player_name']
-            elo = float(row['elo'])
-
-            player_drafts[player].append((draft_id, elo))
-
     latest_elos = {}
 
-    # Sort drafts per player by draft_id (season and draft number)
-    for player, drafts in player_drafts.items():
-        def sort_key(draft):
-            draft_id = draft[0]  # e.g. 'S1D5'
-            season_num = int(draft_id[1:draft_id.index('D')])
-            draft_num = int(draft_id[draft_id.index('D')+1:])
-            return (season_num, draft_num)
+    with open(elo_history_file, newline='', encoding='utf-8') as file:
+        reader = csv.DictReader(file)
+        # Clean up BOM if present
+        reader.fieldnames = [field.lstrip('\ufeff').strip() for field in reader.fieldnames]
+        
+        draft_columns = [col for col in reader.fieldnames if col.startswith('S')]
 
-        sorted_drafts = sorted(drafts, key=sort_key)
-        latest_elos[player] = sorted_drafts[-1][1]  # Elo value
+        for row in reader:
+            player = row['player'].strip()
+
+            draft_elo_values = [row[col] for col in draft_columns if row[col]]
+
+            if draft_elo_values:
+                latest_elo = float(draft_elo_values[-1])
+            else:
+                latest_elo = float(row.get('baseElo', 1000))
+
+            latest_elos[player] = latest_elo
 
     return defaultdict(lambda: 1000, latest_elos)
+
+
 
 def expected_score(rating_a, rating_b):
     """
@@ -104,12 +89,18 @@ def update_elo(rating_a, rating_b, score_a):
     """
     K = 32
     expected_a = expected_score(rating_a, rating_b)
-    expected_b = expected_score(rating_b, rating_a)
+    expected_b = 1 - expected_a  # accurate since expected_score is symmetric
+
+    score_b = 1 - score_a        # actual result for Player B
 
     rating_a += K * (score_a - expected_a)
-    rating_b += K * ((1 - score_a) - expected_b)
+    rating_b += K * (score_b - expected_b)
 
     return rating_a, rating_b
+
+import csv
+from datetime import datetime
+from collections import defaultdict
 
 def process_matches(csv_file, output_file):
     """
@@ -127,17 +118,9 @@ def process_matches(csv_file, output_file):
     output_file : str
         Path to the output CSV file where Elo rating progress will be saved.
         The output CSV will have columns: ['season_id', 'draft_id', 'player_name', 'matches_played', 'elo'].
-
-    Behavior:
-    ---------
-    - Loads season configuration and initial player Elo ratings.
-    - Iterates over match records, grouped by drafts, updating Elo ratings after each match.
-    - Tracks number of matches played by each player per draft.
-    - Writes all Elo progress entries, including matches played, to the output CSV file.
     """
     season_config = load_season_config()
-    initial_ratings = load_latest_elos("data/raw/player_elo.csv")
-    ratings = initial_ratings.copy()
+    ratings = load_latest_elos("data/raw/elo_history.csv")
     elo_progress = []
 
     current_draft = None
@@ -145,23 +128,22 @@ def process_matches(csv_file, output_file):
     all_players = set(ratings.keys())
     last_season = None
     last_elo_by_player = ratings.copy()
-    
-    from collections import defaultdict
+
     matches_played_per_draft = defaultdict(int)
 
     with open(csv_file, newline='') as file:
         reader = list(csv.DictReader(file))
 
         for i, row in enumerate(reader):
-            draft_id = row['draft_id']  # string like "20250101"
-            
+            draft_id = row['draft_id']
+
             try:
                 draft_date = datetime.strptime(draft_id, "%Y%m%d").date()
             except Exception:
                 draft_date = None
-            
+
             season_id = get_season_for_date(draft_date, season_config) if draft_date else None
-            
+
             if not season_id:
                 season_id = last_season
             else:
@@ -169,14 +151,13 @@ def process_matches(csv_file, output_file):
 
             p1 = row['player1']
             p2 = row['player2']
+
             p1wins = int(row['player1Wins'])
             p2wins = int(row['player2Wins'])
             draws = int(row['draws'])
 
-            # New draft started
             if draft_id != current_draft:
                 if current_draft is not None:
-                    # Fill in Elo for non-participants, with last known season & matches played
                     for player in all_players:
                         if player not in draft_players:
                             matches_played = matches_played_per_draft.get((current_draft, player), 0)
@@ -185,55 +166,81 @@ def process_matches(csv_file, output_file):
                                 current_draft,
                                 player,
                                 matches_played,
-                                last_elo_by_player.get(player, ratings.get(player, 1500))
-                                
+                                last_elo_by_player.get(player, 1000),
+                                0  # No rating change for non-participants
                             ))
-                # Reset for new draft
                 current_draft = draft_id
                 draft_players = set()
 
             draft_players.update([p1, p2])
             all_players.update([p1, p2])
 
-            # Update matches played count for both players this draft
             matches_played_per_draft[(draft_id, p1)] += 1
             matches_played_per_draft[(draft_id, p2)] += 1
 
-            total_games = p1wins + p2wins + draws
+            # Assign base full scores for update_elo and modifier
             if p1wins == 2 and p2wins == 0:
-                score_p1 = 1.0
+                score_p1 = 1.0        # dominant win
+                modifier = 1.0
             elif p1wins == 2 and p2wins == 1:
-                score_p1 = 0.67
+                score_p1 = 1.0        # narrow win
+                modifier = 0.67
             elif p2wins == 2 and p1wins == 0:
-                score_p1 = 0.0
+                score_p1 = 0.0        # dominant loss
+                modifier = 1.0
             elif p2wins == 2 and p1wins == 1:
-                score_p1 = 0.33
+                score_p1 = 0.0        # narrow loss
+                modifier = 0.33
             else:
-                score_p1 = (p1wins + 0.5 * draws) / total_games if total_games > 0 else 0.5
+                total_games = p1wins + p2wins + draws
+                if total_games > 0:
+                    score_p1 = (p1wins + 0.5 * draws) / total_games
+                else:
+                    score_p1 = 0.5
+                modifier = 1.0
 
-            r1, r2 = ratings.get(p1, 1000), ratings.get(p2, 1000)
+            # Get current ratings
+            r1 = ratings.get(p1, 1000)
+            r2 = ratings.get(p2, 1000)
+
+            # Update ratings with full score (no modifier here)
             new_r1, new_r2 = update_elo(r1, r2, score_p1)
-            ratings[p1], ratings[p2] = new_r1, new_r2
 
+            # Calculate rating changes (raw)
+            change_p1 = new_r1 - r1
+            change_p2 = new_r2 - r2
+
+            # Apply modifier to rating changes
+            change_p1 *= modifier
+            change_p2 *= modifier
+
+            # Adjust new ratings by modified changes
+            new_r1 = r1 + change_p1
+            new_r2 = r2 + change_p2
+
+            # Store updated ratings
+            ratings[p1], ratings[p2] = new_r1, new_r2
             last_elo_by_player[p1] = new_r1
             last_elo_by_player[p2] = new_r2
 
+            # Record elo progress
             elo_progress.append((
                 season_id,
                 draft_id,
                 p1,
                 matches_played_per_draft[(draft_id, p1)],
-                new_r1
+                new_r1,
+                change_p1
             ))
             elo_progress.append((
                 season_id,
                 draft_id,
                 p2,
                 matches_played_per_draft[(draft_id, p2)],
-                new_r2
+                new_r2,
+                change_p2
             ))
 
-        # Handle last draft’s non-participants after all rows
         for player in all_players:
             if player not in draft_players:
                 matches_played = matches_played_per_draft.get((current_draft, player), 0)
@@ -242,14 +249,14 @@ def process_matches(csv_file, output_file):
                     current_draft,
                     player,
                     matches_played,
-                    last_elo_by_player.get(player, ratings.get(player, 1000))
-
+                    last_elo_by_player.get(player, 1000),
+                    0  # No rating change for non-participants
                 ))
 
-    # Write output CSV with matches_played column
     with open(output_file, 'w', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(['season_id', 'draft_id', 'player', 'match_id', 'elo'])
+        # Add rating_change to header
+        writer.writerow(['season_id', 'draft_id', 'player_name', 'matches_played', 'elo', 'rating_change'])
         for row in elo_progress:
             writer.writerow(row)
 
