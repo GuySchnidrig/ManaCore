@@ -3,10 +3,172 @@ import pandas as pd
 from collections import defaultdict
 from pathlib import Path
 from datetime import datetime
+from dataclasses import dataclass
+from typing import Dict, Tuple, Set
 from manacore.config.get_seasons import load_season_config, get_season_for_date
 
 
-def calculate_standings(base_path="data/processed") -> pd.DataFrame:
+@dataclass
+class PlayerStats:
+    """Data class to hold player statistics for a draft."""
+    match_points: int = 0
+    game_points: int = 0
+    matches_played: int = 0
+    games_played: int = 0
+    opponents: Set[Tuple[str, str]] = None
+    byes: int = 0
+    draft_id: str = None
+    season_id: str = None
+    
+    def __post_init__(self):
+        if self.opponents is None:
+            self.opponents = set()
+
+
+def calculate_match_points(p1_wins: int, p2_wins: int, is_bye: bool) -> Tuple[int, int]:
+    """
+    Calculate match points for both players based on game results.
+    
+    Returns:
+        Tuple of (player1_match_points, player2_match_points)
+    """
+    if is_bye:
+        return 3, 0
+    
+    if p1_wins > p2_wins:
+        return 3, 0
+    elif p2_wins > p1_wins:
+        return 0, 3
+    else:
+        return 1, 1
+
+
+def calculate_game_points(wins: int, draws: int, is_bye: bool) -> int:
+    """Calculate game points for a player."""
+    if is_bye:
+        return 6  # Bye counts as 2-0 win
+    return wins * 3 + draws * 1
+
+
+def calculate_games_played(total_games: int, is_bye: bool) -> int:
+    """Calculate number of games played."""
+    if is_bye:
+        return 2  # Bye counts as 2 games
+    return total_games
+
+
+def process_match_row(row: pd.Series, player_stats: Dict[Tuple[str, str], PlayerStats]) -> None:
+    """
+    Process a single match row and update player statistics.
+    
+    Args:
+        row: Pandas Series containing match data
+        player_stats: Dictionary to store player statistics
+    """
+    p1, p2 = row['player1'], row['player2']
+    gw1, gw2, draws = row['player1Wins'], row['player2Wins'], row['draws']
+    draft_id = row['draft_id']
+    
+    # Determine season
+    draft_date = datetime.strptime(str(draft_id), "%Y%m%d").date()
+    season_config = load_season_config()
+    season_id = get_season_for_date(draft_date, season_config) if draft_date else None
+    
+    is_bye_p1 = row.get('player1Bye', False)
+    is_bye_p2 = row.get('player2Bye', False)
+    
+    total_games = gw1 + gw2 + draws
+    
+    # Calculate points
+    p1_match_points, p2_match_points = calculate_match_points(gw1, gw2, is_bye_p1)
+    if is_bye_p2:
+        p1_match_points, p2_match_points = 0, 3
+    
+    p1_game_points = calculate_game_points(gw1, draws, is_bye_p1)
+    p2_game_points = calculate_game_points(gw2, draws, is_bye_p2)
+    
+    p1_games_played = calculate_games_played(total_games, is_bye_p1)
+    p2_games_played = calculate_games_played(total_games, is_bye_p2)
+    
+    # Update player 1 stats
+    p1_stats = player_stats[(p1, draft_id)]
+    p1_stats.match_points += p1_match_points
+    p1_stats.game_points += p1_game_points
+    p1_stats.matches_played += 0 if is_bye_p1 else 1
+    p1_stats.games_played += p1_games_played
+    p1_stats.byes += 1 if is_bye_p1 else 0
+    p1_stats.draft_id = draft_id
+    p1_stats.season_id = season_id
+    
+    # Add opponent if not a bye
+    if not is_bye_p1 and p2 != "BYE":
+        p1_stats.opponents.add((p2, draft_id))
+    
+    # Update player 2 stats
+    p2_stats = player_stats[(p2, draft_id)]
+    p2_stats.match_points += p2_match_points
+    p2_stats.game_points += p2_game_points
+    p2_stats.matches_played += 0 if is_bye_p2 else 1
+    p2_stats.games_played += p2_games_played
+    p2_stats.byes += 1 if is_bye_p2 else 0
+    p2_stats.draft_id = draft_id
+    p2_stats.season_id = season_id
+    
+    # Add opponent if not a bye
+    if not is_bye_p2 and p1 != "BYE":
+        p2_stats.opponents.add((p1, draft_id))
+
+
+def calculate_tiebreaker_stats(stats: PlayerStats, all_player_stats: Dict[Tuple[str, str], PlayerStats]) -> Dict[str, float]:
+    """
+    Calculate tiebreaker statistics (MWP, OMP, GWP, OGP) for a player.
+    
+    Args:
+        stats: Player statistics
+        all_player_stats: All player statistics for opponent lookup
+        
+    Returns:
+        Dictionary with tiebreaker percentages
+    """
+    # Match Win Percentage
+    max_match_points = stats.matches_played * 3
+    mwp = (stats.match_points / max_match_points) if max_match_points > 0 else 0
+    
+    # Game Win Percentage
+    max_game_points = stats.games_played * 3
+    gwp = (stats.game_points / max_game_points) if max_game_points > 0 else 0
+    
+    # Opponent statistics
+    opponent_mwps = []
+    opponent_gwps = []
+    
+    for opp_key in stats.opponents:
+        opp_stats = all_player_stats.get(opp_key)
+        if not opp_stats or opp_stats.matches_played == 0 or opp_stats.games_played == 0:
+            continue
+            
+        # Opponent Match Win Percentage (minimum 33%)
+        opp_max_match_points = opp_stats.matches_played * 3
+        omp_val = max(opp_stats.match_points / opp_max_match_points, 0.33)
+        opponent_mwps.append(omp_val)
+        
+        # Opponent Game Win Percentage (minimum 33%)
+        opp_max_game_points = opp_stats.games_played * 3
+        ogp_val = max(opp_stats.game_points / opp_max_game_points, 0.33)
+        opponent_gwps.append(ogp_val)
+    
+    omp = sum(opponent_mwps) / len(opponent_mwps) if opponent_mwps else 0
+    ogp = sum(opponent_gwps) / len(opponent_gwps) if opponent_gwps else 0
+    
+    return {
+        'MWP': round(mwp * 100, 4),
+        'OMP': round(omp * 100, 4),
+        'GWP': round(gwp * 100, 4),
+        'OGP': round(ogp * 100, 4)
+    }
+
+
+def calculate_standings(base_path: str = "data/processed") -> pd.DataFrame:
     """
     Calculate player standings from match results, using match/game points and tie-breaking metrics.
 
@@ -27,10 +189,7 @@ def calculate_standings(base_path="data/processed") -> pd.DataFrame:
     --------
     pd.DataFrame
         A DataFrame with per-draft player standings, including:
-        - draft_id
-        - player
-        - match_points
-        - standing (rank within draft)
+        - draft_id, player, match_points, standing (rank within draft)
         - games_played, matches_played, byes
         - MWP, OMP, GWP, OGP (all as percentages)
 
@@ -38,212 +197,82 @@ def calculate_standings(base_path="data/processed") -> pd.DataFrame:
     -------
     FileNotFoundError
         If `matches.csv` does not exist in the specified base_path.
-
-    Notes:
-    ------
-    - Standings are sorted by draft_id, then by:
-        1. match_points
-        2. OMP
-        3. GWP
-        4. OGP
-    - A 'standing' column is added to represent rank within each draft.
-    - Minimum thresholds for MWP and GWP (0.33) are enforced as per official tournament guidelines.
-    - Bye matches are handled as 2-0 wins (6 game points, 3 match points) but excluded from opponent stats.
     """
-    season_config = load_season_config()
-
-    matches_file = os.path.join(base_path, "matches.csv")
-    if not os.path.exists(matches_file):
+    matches_file = Path(base_path) / "matches.csv"
+    if not matches_file.exists():
         raise FileNotFoundError(f"'matches.csv' not found in {base_path}")
 
     df = pd.read_csv(matches_file)
+    
+    # Validate required columns
+    required_columns = ['player1', 'player2', 'player1Wins', 'player2Wins', 'draws', 'draft_id']
+    missing_columns = [col for col in required_columns if col not in df.columns]
+    if missing_columns:
+        raise ValueError(f"Missing required columns: {missing_columns}")
 
-    # Store stats for each player in each draft_id
-    player_stats = defaultdict(lambda: {
-        'match_points': 0,
-        'game_points': 0,
-        'matches_played': 0,
-        'games_played': 0,
-        'opponents': set(),
-        'byes': 0,
-        'draft_id': None,
-        'season_id': None
+    # Initialize player stats using defaultdict with PlayerStats factory
+    player_stats = defaultdict(PlayerStats)
 
-    })
-
+    # Process each match
     for _, row in df.iterrows():
-                
-        p1 = row['player1']
-        p2 = row['player2']
-        gw1 = row['player1Wins']
-        gw2 = row['player2Wins']
-        draws = row['draws']
-        draft_id = row['draft_id']
-        
-        draft_date = datetime.strptime(str(draft_id), "%Y%m%d").date()
-        season_id = get_season_for_date(draft_date, season_config) if draft_date else None
-        
-        is_bye_p1 = row.get('player1Bye', False)  # You need a flag in data indicating if player got a bye
-        is_bye_p2 = row.get('player2Bye', False)
+        process_match_row(row, player_stats)
 
-        total_games = gw1 + gw2 + draws
-
-        # Calculate match points per Appendix C:
-        # Win = 3, Draw = 1, Loss = 0, Bye counts as 3 points and 6 game points, counted as 2-0 win
-        if is_bye_p1:
-            p1_match_points = 3
-            p1_game_points = 6
-            p1_games_played = 2  # bye counted as 2 games played 2-0
-            p2_match_points = 0
-            p2_game_points = 0
-            p2_games_played = 0
-            # Player 2 probably did not actually play, so no opponent added for player 1 here
-        elif is_bye_p2:
-            p2_match_points = 3
-            p2_game_points = 6
-            p2_games_played = 2
-            p1_match_points = 0
-            p1_game_points = 0
-            p1_games_played = 0
-        else:
-            # Normal match
-            # Match points
-            if gw1 > gw2:
-                p1_match_points = 3
-                p2_match_points = 0
-            elif gw2 > gw1:
-                p1_match_points = 0
-                p2_match_points = 3
-            else:
-                p1_match_points = 1
-                p2_match_points = 1
-
-            # Game points:
-            # 3 points per game won, 1 point per draw, 0 per loss
-            p1_game_points = gw1 * 3 + draws * 1
-            p2_game_points = gw2 * 3 + draws * 1
-            p1_games_played = total_games
-            p2_games_played = total_games
-
-        # Update player 1 stats
-        p1_stats = player_stats[(p1, draft_id)]
-        p1_stats['match_points'] += p1_match_points
-        p1_stats['game_points'] += p1_game_points
-        p1_stats['matches_played'] += 1 if not is_bye_p1 else 0  # byes do not count as played matches for opponent stats
-        p1_stats['games_played'] += p1_games_played
-        if not is_bye_p1 and p2 != "BYE":
-            p1_stats['opponents'].add((p2, draft_id))
-        if is_bye_p1:
-            p1_stats['byes'] += 1
-        p1_stats['draft_id'] = draft_id
-        p1_stats['season_id'] = season_id
-
-        # Update player 2 stats
-        p2_stats = player_stats[(p2, draft_id)]
-        p2_stats['match_points'] += p2_match_points
-        p2_stats['game_points'] += p2_game_points
-        p2_stats['matches_played'] += 1 if not is_bye_p2 else 0
-        p2_stats['games_played'] += p2_games_played
-        if not is_bye_p2 and p1 != "BYE":
-            p2_stats['opponents'].add((p1, draft_id))
-        if is_bye_p2:
-            p2_stats['byes'] += 1
-        p2_stats['draft_id'] = draft_id
-        p2_stats['season_id'] = season_id
-
-
+    # Calculate final standings
     results = []
     for (player, draft_id), stats in player_stats.items():
-        # Calculate Match-win Percentage (MWP) with minimum 0.33
-        max_match_points = stats['matches_played'] * 3
-        mwp = (stats['match_points'] / max_match_points) if max_match_points > 0 else 0
-        mwp = max(mwp, 0.33) if stats['matches_played'] > 0 else 0
-
-        # Calculate Game-win Percentage (GWP) with minimum 0.33
-        max_game_points = stats['games_played'] * 3
-        gwp = (stats['game_points'] / max_game_points) if max_game_points > 0 else 0
-        gwp = max(gwp, 0.33) if stats['games_played'] > 0 else 0
-
-        # Opponents' match-win % average, excluding byes
-        opponent_mwps = []
-        opponent_gwps = []
-
-        for (opp, did) in stats['opponents']:
-            opp_stats = player_stats.get((opp, did))
-            if opp_stats and opp_stats['matches_played'] > 0 and opp_stats['games_played'] > 0:
-                opp_max_match_points = opp_stats['matches_played'] * 3
-                opp_mwp = opp_stats['match_points'] / opp_max_match_points
-                opp_mwp = max(opp_mwp, 0.33)  # minimum 0.33 per rules
-
-                opp_max_game_points = opp_stats['games_played'] * 3
-                opp_gwp_val = opp_stats['game_points'] / opp_max_game_points
-                opp_gwp_val = max(opp_gwp_val, 0.33)
-
-                opponent_mwps.append(opp_mwp)
-                opponent_gwps.append(opp_gwp_val)
-
-        omp = sum(opponent_mwps) / len(opponent_mwps) if opponent_mwps else 0
-        ogp = sum(opponent_gwps) / len(opponent_gwps) if opponent_gwps else 0
-
-        results.append({
-            'season_id': season_id,
+        tiebreaker_stats = calculate_tiebreaker_stats(stats, player_stats)
+        
+        result = {
+            'season_id': stats.season_id,
             'draft_id': draft_id,
             'player': player,
-            'match_points': stats['match_points'],
-            'game_points': stats['game_points'],
-            'matches_played': stats['matches_played'],
-            'games_played': stats['games_played'],
-            'byes': stats['byes'],
-            'MWP': round(mwp*100, 4),
-            'OMP': round(omp*100, 4),
-            'GWP': round(gwp*100, 4),
-            'OGP': round(ogp*100, 4)
-        })
+            'match_points': stats.match_points,
+            'game_points': stats.game_points,
+            'matches_played': stats.matches_played,
+            'games_played': stats.games_played,
+            'byes': stats.byes,
+            **tiebreaker_stats
+        }
+        results.append(result)
 
     standings = pd.DataFrame(results)
+    
+    if standings.empty:
+        return standings
 
-    # Sort by draft_id, match_points, OMP, GWP, OGP descending (higher is better)
+    # Sort and rank
     standings = standings.sort_values(
-    by=['season_id', 'draft_id', 'match_points', 'OMP', 'GWP', 'OGP'],
-    ascending=[True, True, False, False, False, False]  # <-- Now 6 values
+        by=['season_id', 'draft_id', 'match_points', 'OMP', 'GWP', 'OGP'],
+        ascending=[True, True, False, False, False, False]
     )
 
-    # Add ranking within each draft_id
-    standings['standing'] = standings.groupby(['season_id', 'draft_id'])['match_points'] \
-    .rank(method='min', ascending=False).astype('Int64')
-    
-    # Put standing after match_points
-    cols = standings.columns.tolist()
-    cols.remove('standing')
-    mp_idx = cols.index('match_points')
-    cols.insert(mp_idx + 1, 'standing')
-    standings = standings[cols]
+    # Assign standings within each draft
+    standings['standing'] = standings.groupby(['season_id', 'draft_id']).cumcount() + 1
 
-    # Final sort
-    standings = standings.sort_values(by=['season_id','draft_id', 'standing'], ascending=[True, True, True])
+    # Reorder columns
+    column_order = [
+        'season_id', 'draft_id', 'player', 'match_points', 'standing',
+        'game_points', 'matches_played', 'games_played', 'byes',
+        'MWP', 'OMP', 'GWP', 'OGP'
+    ]
+    standings = standings[column_order]
 
     return standings
 
-def save_standings_to_csv(standings_df: pd.DataFrame, output_dir: Path = Path("data/processed")):
+
+def save_standings_to_csv(standings_df: pd.DataFrame, output_dir: Path = Path("data/processed")) -> None:
     """
     Save the standings DataFrame to a CSV file in the specified output directory.
 
     Parameters:
     -----------
     standings_df : pd.DataFrame
-        DataFrame containing player standings, typically generated by `calculate_standings`.
-        Expected to include columns like ['season_id', 'player', 'wins', 'losses', 'draws', 'win_rate'], etc.
-
+        DataFrame containing player standings
     output_dir : pathlib.Path, optional
         Directory path where the CSV will be saved. Defaults to 'data/processed'.
-
-    Behavior:
-    ---------
-    - Ensures the output directory exists (creates it if necessary).
-    - Writes the DataFrame to 'standings.csv' in the output directory.
-    - Prints the file path upon successful save.
     """
     output_dir.mkdir(parents=True, exist_ok=True)
     standings_path = output_dir / "standings.csv"
     standings_df.to_csv(standings_path, index=False)
     print(f"Saved standings to {standings_path}")
+
