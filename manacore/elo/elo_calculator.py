@@ -77,9 +77,9 @@ def update_elo(rating_a, rating_b, score_a):
     score_a : float
         Actual score of Player A in the match, based on result:
         - 1.0 for a dominant win (e.g., 2-0),
-        - 0.67 for a narrow win (e.g., 2-1),
+        - 1.0 for a narrow win (e.g., 2-1),
         - 0.5 for a draw,
-        - 0.33 for a narrow loss (e.g., 1-2),
+        - 0.0 for a narrow loss (e.g., 1-2),
         - 0.0 for a clear loss (e.g., 0-2).
 
     Returns:
@@ -105,19 +105,46 @@ from collections import defaultdict
 def process_matches(csv_file, output_file):
     """
     Processes match data from a CSV file to update player Elo ratings across drafts and seasons,
-    and writes the Elo progress of all players to an output CSV file, including matches played per draft.
+    and writes the Elo progress of all players to an output CSV file, including matches played
+    per draft and rating changes.
+
+    The function reads match records with players and their wins/draws, calculates Elo rating
+    updates with modifiers based on match dominance, tracks matches played per draft, and
+    outputs a detailed Elo progression log.
 
     Parameters:
     -----------
     csv_file : str
-        Path to the input CSV file containing match records. Each row should have fields:
+        Path to the input CSV file containing match records. Each row should include the fields:
         - 'draft_id' (string date like "YYYYMMDD")
-        - 'player1', 'player2' (player names)
-        - 'player1Wins', 'player2Wins', 'draws' (match outcomes)
+        - 'player1' (player name)
+        - 'player2' (player name)
+        - 'player1Wins' (integer count of wins by player1)
+        - 'player2Wins' (integer count of wins by player2)
+        - 'draws' (integer count of drawn games)
 
     output_file : str
         Path to the output CSV file where Elo rating progress will be saved.
-        The output CSV will have columns: ['season_id', 'draft_id', 'player_name', 'matches_played', 'elo'].
+        The output CSV will contain the following columns:
+        - 'season_id': Identifier of the season corresponding to the draft date.
+        - 'draft_id': Draft identifier string (date format "YYYYMMDD").
+        - 'player_name': Name of the player.
+        - 'matches_played': Number of matches the player has played in the draft.
+        - 'elo': Player's Elo rating after the match(es) in that draft.
+        - 'rating_change': Elo rating change resulting from the match(es) in that draft.
+          For players not participating in the draft, this will be zero.
+
+    Notes:
+    ------
+    - If a draft’s date does not map to a known season, the function retains the last known season.
+    - Elo rating updates incorporate modifiers to reflect match dominance or closeness.
+    - Players who do not participate in a draft have their Elo rating carried forward without change.
+    - The function assumes the presence of helper functions:
+        - `load_season_config()`
+        - `load_latest_elos()`
+        - `get_season_for_date()`
+        - `update_elo()`
+
     """
     season_config = load_season_config()
     ratings = load_latest_elos("data/raw/elo_history.csv")
