@@ -29,6 +29,9 @@ def run_script(script_path):
 def main():
     run_script("scripts/load_data.py")
     run_script("scripts/make_standings.py")
+    run_script("scripts/get_latest_cube.py")
+    run_script("scripts/get_card_history.py")
+    run_script("scripts/get_elo.py")
 
 if __name__ == "__main__":
     main()

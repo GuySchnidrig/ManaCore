@@ -2,8 +2,56 @@ import os
 import pandas as pd
 from collections import defaultdict
 from pathlib import Path
+from datetime import datetime
+from manacore.config.get_seasons import load_season_config, get_season_for_date
+
 
 def calculate_standings(base_path="data/processed") -> pd.DataFrame:
+    """
+    Calculate player standings from match results, using match/game points and tie-breaking metrics.
+
+    This function reads the `matches.csv` file, computes standings per draft based on:
+    - Match Points (Win = 3, Draw = 1, Loss = 0, Bye = 3 points)
+    - Game Points (3 per win, 1 per draw)
+    - Tie-breakers including Match Win % (MWP), Opponent MWP (OMP),
+      Game Win % (GWP), and Opponent GWP (OGP)
+
+    Applies minimum thresholds of 33% for MWP and GWP when computing OMP and OGP per competitive rules.
+
+    Parameters:
+    -----------
+    base_path : str, optional
+        Path to the directory containing 'matches.csv'. Default is 'data/processed'.
+
+    Returns:
+    --------
+    pd.DataFrame
+        A DataFrame with per-draft player standings, including:
+        - draft_id
+        - player
+        - match_points
+        - standing (rank within draft)
+        - games_played, matches_played, byes
+        - MWP, OMP, GWP, OGP (all as percentages)
+
+    Raises:
+    -------
+    FileNotFoundError
+        If `matches.csv` does not exist in the specified base_path.
+
+    Notes:
+    ------
+    - Standings are sorted by draft_id, then by:
+        1. match_points
+        2. OMP
+        3. GWP
+        4. OGP
+    - A 'standing' column is added to represent rank within each draft.
+    - Minimum thresholds for MWP and GWP (0.33) are enforced as per official tournament guidelines.
+    - Bye matches are handled as 2-0 wins (6 game points, 3 match points) but excluded from opponent stats.
+    """
+    season_config = load_season_config()
+
     matches_file = os.path.join(base_path, "matches.csv")
     if not os.path.exists(matches_file):
         raise FileNotFoundError(f"'matches.csv' not found in {base_path}")
@@ -18,16 +66,23 @@ def calculate_standings(base_path="data/processed") -> pd.DataFrame:
         'games_played': 0,
         'opponents': set(),
         'byes': 0,
-        'draft_id': None
+        'draft_id': None,
+        'season_id': None
+
     })
 
     for _, row in df.iterrows():
+                
         p1 = row['player1']
         p2 = row['player2']
         gw1 = row['player1Wins']
         gw2 = row['player2Wins']
         draws = row['draws']
         draft_id = row['draft_id']
+        
+        draft_date = datetime.strptime(str(draft_id), "%Y%m%d").date()
+        season_id = get_season_for_date(draft_date, season_config) if draft_date else None
+        
         is_bye_p1 = row.get('player1Bye', False)  # You need a flag in data indicating if player got a bye
         is_bye_p2 = row.get('player2Bye', False)
 
@@ -81,6 +136,7 @@ def calculate_standings(base_path="data/processed") -> pd.DataFrame:
         if is_bye_p1:
             p1_stats['byes'] += 1
         p1_stats['draft_id'] = draft_id
+        p1_stats['season_id'] = season_id
 
         # Update player 2 stats
         p2_stats = player_stats[(p2, draft_id)]
@@ -93,6 +149,8 @@ def calculate_standings(base_path="data/processed") -> pd.DataFrame:
         if is_bye_p2:
             p2_stats['byes'] += 1
         p2_stats['draft_id'] = draft_id
+        p2_stats['season_id'] = season_id
+
 
     results = []
     for (player, draft_id), stats in player_stats.items():
@@ -128,8 +186,9 @@ def calculate_standings(base_path="data/processed") -> pd.DataFrame:
         ogp = sum(opponent_gwps) / len(opponent_gwps) if opponent_gwps else 0
 
         results.append({
-            'player': player,
+            'season_id': season_id,
             'draft_id': draft_id,
+            'player': player,
             'match_points': stats['match_points'],
             'game_points': stats['game_points'],
             'matches_played': stats['matches_played'],
@@ -145,13 +204,14 @@ def calculate_standings(base_path="data/processed") -> pd.DataFrame:
 
     # Sort by draft_id, match_points, OMP, GWP, OGP descending (higher is better)
     standings = standings.sort_values(
-        by=['draft_id', 'match_points', 'OMP', 'GWP', 'OGP'],
-        ascending=[True, False, False, False, False]
+    by=['season_id', 'draft_id', 'match_points', 'OMP', 'GWP', 'OGP'],
+    ascending=[True, True, False, False, False, False]  # <-- Now 6 values
     )
 
     # Add ranking within each draft_id
-    standings['standing'] = standings.groupby('draft_id').cumcount() + 1
-
+    standings['standing'] = standings.groupby(['season_id', 'draft_id'])['match_points'] \
+    .rank(method='min', ascending=False).astype('Int64')
+    
     # Put standing after match_points
     cols = standings.columns.tolist()
     cols.remove('standing')
@@ -160,17 +220,28 @@ def calculate_standings(base_path="data/processed") -> pd.DataFrame:
     standings = standings[cols]
 
     # Final sort
-    standings = standings.sort_values(by=['draft_id', 'standing'], ascending=[True, True])
+    standings = standings.sort_values(by=['season_id','draft_id', 'standing'], ascending=[True, True, True])
 
     return standings
 
 def save_standings_to_csv(standings_df: pd.DataFrame, output_dir: Path = Path("data/processed")):
     """
-    Saves the standings DataFrame to a CSV file in the specified output directory.
+    Save the standings DataFrame to a CSV file in the specified output directory.
 
-    Args:
-        standings_df (pd.DataFrame): DataFrame returned by `calculate_standings`.
-        output_dir (Path): Directory where the CSV file will be saved. Default is 'data/processed'.
+    Parameters:
+    -----------
+    standings_df : pd.DataFrame
+        DataFrame containing player standings, typically generated by `calculate_standings`.
+        Expected to include columns like ['season_id', 'player', 'wins', 'losses', 'draws', 'win_rate'], etc.
+
+    output_dir : pathlib.Path, optional
+        Directory path where the CSV will be saved. Defaults to 'data/processed'.
+
+    Behavior:
+    ---------
+    - Ensures the output directory exists (creates it if necessary).
+    - Writes the DataFrame to 'standings.csv' in the output directory.
+    - Prints the file path upon successful save.
     """
     output_dir.mkdir(parents=True, exist_ok=True)
     standings_path = output_dir / "standings.csv"

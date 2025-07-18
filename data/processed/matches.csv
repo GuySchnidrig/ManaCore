@@ -1,156 +1,4 @@
 season_id,draft_id,player1,player2,player1Wins,player2Wins,draws,round
-Season-4,20250609,Noe T.,Sili,0,2,0,1
-Season-4,20250609,Dimlas,Andrin,2,1,0,1
-Season-4,20250609,Pali,Valentin,0,2,0,1
-Season-4,20250609,Tommy,Lukas Stalder,2,0,0,1
-Season-4,20250609,Andrin,Noe T.,1,2,0,2
-Season-4,20250609,Valentin,Tommy,2,1,0,2
-Season-4,20250609,Lukas Stalder,Pali,2,1,0,2
-Season-4,20250609,Sili,Dimlas,0,2,0,2
-Season-4,20250609,Sili,Tommy,0,2,0,3
-Season-4,20250609,Lukas Stalder,Noe T.,2,1,0,3
-Season-4,20250609,Valentin,Dimlas,1,2,0,3
-Season-4,20250609,Andrin,Pali,2,1,0,3
-Season-4,20250609,Valentin,Andrin,2,0,0,4
-Season-4,20250609,Dimlas,Lukas Stalder,2,1,0,4
-Season-4,20250609,Noe T.,Tommy,2,0,0,4
-Season-4,20250609,Pali,Sili,0,2,0,4
-Season-4,20250323,Yannik,Ivo,0,2,0,1
-Season-4,20250323,Manuel,Tommy,0,2,0,1
-Season-4,20250323,Andrin,Sili,1,2,0,1
-Season-4,20250323,Guy,Lukas Stalder,2,0,0,1
-Season-4,20250323,Dimlas,Tinu,1,2,0,1
-Season-4,20250323,Guy,Ivo,2,1,0,2
-Season-4,20250323,Lukas Stalder,Andrin,1,1,1,2
-Season-4,20250323,Tommy,Sili,2,1,0,2
-Season-4,20250323,Tinu,Manuel,1,2,0,2
-Season-4,20250323,Yannik,Dimlas,0,2,0,2
-Season-4,20250323,Tommy,Guy,2,0,0,3
-Season-4,20250323,Ivo,Tinu,2,0,0,3
-Season-4,20250323,Manuel,Dimlas,1,2,0,3
-Season-4,20250323,Lukas Stalder,Sili,0,2,0,3
-Season-4,20250323,Andrin,Yannik,2,0,0,3
-Season-4,20250323,Yannik,Tinu,0,2,0,4
-Season-4,20250323,Manuel,Lukas Stalder,2,0,0,4
-Season-4,20250323,Sili,Guy,1,1,1,4
-Season-4,20250323,Dimlas,Andrin,2,0,0,4
-Season-4,20250323,Tommy,Ivo,2,1,0,4
-Season-4,20250112,Tommy,Lukas Stalder,0,2,0,1
-Season-4,20250112,Noe T.,Sili,0,2,0,1
-Season-4,20250112,Ivo,Andrin,1,2,0,1
-Season-4,20250112,Dimlas,Matthias,2,0,0,1
-Season-4,20250112,Guy,Yannik,2,0,0,1
-Season-4,20250112,Valentin,Manuel,0,2,0,1
-Season-4,20250112,Tommy,Yannik,1,2,0,2
-Season-4,20250112,Dimlas,Sili,2,0,0,2
-Season-4,20250112,Ivo,Valentin,1,2,0,2
-Season-4,20250112,Matthias,Noe T.,1,2,0,2
-Season-4,20250112,Lukas Stalder,Andrin,0,1,0,2
-Season-4,20250112,Manuel,Guy,1,2,0,2
-Season-4,20250112,Sili,Manuel,0,2,0,3
-Season-4,20250112,Valentin,Lukas Stalder,2,0,0,3
-Season-4,20250112,Guy,Dimlas,0,2,0,3
-Season-4,20250112,Tommy,Matthias,2,1,0,3
-Season-4,20250112,Andrin,Yannik,2,0,0,3
-Season-4,20250112,Noe T.,Ivo,1,1,1,3
-Season-4,20250112,Dimlas,Andrin,2,0,0,4
-Season-4,20250112,Guy,Valentin,2,0,0,4
-Season-4,20250112,Lukas Stalder,Yannik,2,0,0,4
-Season-4,20250112,Tommy,Sili,2,1,0,4
-Season-4,20250112,Manuel,Noe T.,1,2,0,4
-Season-4,20250112,Ivo,Matthias,2,0,0,4
-Season-4,20250712,Dimlas,Filipe,2,1,0,1
-Season-4,20250712,Sam,Ivo,0,2,0,1
-Season-4,20250712,Manuel,Yannik,1,1,1,1
-Season-4,20250712,Andrin,Tinu,1,2,0,1
-Season-4,20250712,Tommy,Guy,0,2,0,1
-Season-4,20250712,Lukas Stalder,Noe T.,2,0,0,1
-Season-4,20250712,Sam,Tommy,0,1,0,2
-Season-4,20250712,Lukas Stalder,Ivo,2,1,0,2
-Season-4,20250712,Andrin,Noe T.,2,0,0,2
-Season-4,20250712,Manuel,Guy,1,2,0,2
-Season-4,20250712,Tinu,Dimlas,1,2,0,2
-Season-4,20250712,Yannik,Filipe,2,0,0,2
-Season-4,20250712,Andrin,Tommy,2,1,0,3
-Season-4,20250712,Manuel,Filipe,2,0,0,3
-Season-4,20250712,Lukas Stalder,Yannik,2,1,0,3
-Season-4,20250712,Ivo,Tinu,2,1,0,3
-Season-4,20250712,Guy,Dimlas,0,2,0,3
-Season-4,20250712,Noe T.,Sam,0,2,0,3
-Season-4,20250712,Ivo,Andrin,2,1,0,4
-Season-4,20250712,Guy,Yannik,2,0,0,4
-Season-4,20250712,Manuel,Sam,2,0,0,4
-Season-4,20250712,Dimlas,Lukas Stalder,1,2,0,4
-Season-4,20250712,Tommy,Tinu,0,2,0,4
-Season-4,20250712,Noe T.,Filipe,2,0,0,4
-Season-4,20250406,Valentin,Matthias,0,2,0,1
-Season-4,20250406,Andrin,Manuel,1,1,1,1
-Season-4,20250406,Tobi,Guy,0,2,0,1
-Season-4,20250406,Joel K.,Sili,2,0,0,1
-Season-4,20250406,Lukas Stalder,Dimlas,2,0,0,1
-Season-4,20250406,Valentin,Andrin,0,2,0,2
-Season-4,20250406,Manuel,Dimlas,0,2,0,2
-Season-4,20250406,Guy,Joel K.,2,1,0,2
-Season-4,20250406,Lukas Stalder,Matthias,1,2,0,2
-Season-4,20250406,Sili,Tobi,2,1,0,2
-Season-4,20250406,Matthias,Guy,1,2,0,3
-Season-4,20250406,Tobi,Valentin,2,0,0,3
-Season-4,20250406,Joel K.,Dimlas,2,1,0,3
-Season-4,20250406,Andrin,Lukas Stalder,2,0,0,3
-Season-4,20250406,Sili,Manuel,1,2,0,3
-Season-4,20250406,Joel K.,Matthias,0,2,0,4
-Season-4,20250406,Manuel,Tobi,0,2,0,4
-Season-4,20250406,Lukas Stalder,Valentin,0,2,0,4
-Season-4,20250406,Dimlas,Sili,1,2,0,4
-Season-4,20250406,Guy,Andrin,0,2,0,4
-Season-4,20241208,Dimlas,Valentin,2,0,0,1
-Season-4,20241208,Manuel,Joel K.,2,1,0,1
-Season-4,20241208,Tommy,Yannik,1,1,1,1
-Season-4,20241208,Sili,Noe T.,2,1,0,1
-Season-4,20241208,Lukas Stalder,Matthias,2,0,0,1
-Season-4,20241208,Luca,Andrin,2,1,0,1
-Season-4,20241208,Valentin,Joel K.,2,0,0,2
-Season-4,20241208,Sili,Tommy,0,2,0,2
-Season-4,20241208,Matthias,Noe T.,2,0,0,2
-Season-4,20241208,Yannik,Andrin,1,2,0,2
-Season-4,20241208,Lukas Stalder,Luca,2,0,0,2
-Season-4,20241208,Manuel,Dimlas,1,2,0,2
-Season-4,20241208,Valentin,Sili,0,2,0,3
-Season-4,20241208,Lukas Stalder,Dimlas,1,2,0,3
-Season-4,20241208,Joel K.,Noe T.,1,2,0,3
-Season-4,20241208,Luca,Yannik,2,0,0,3
-Season-4,20241208,Manuel,Andrin,1,2,0,3
-Season-4,20241208,Tommy,Matthias,1,1,1,3
-Season-4,20241208,Yannik,Joel K.,2,0,0,4
-Season-4,20241208,Andrin,Tommy,0,2,0,4
-Season-4,20241208,Dimlas,Luca,1,2,0,4
-Season-4,20241208,Manuel,Noe T.,1,2,0,4
-Season-4,20241208,Matthias,Valentin,1,2,0,4
-Season-4,20241208,Lukas Stalder,Sili,0,2,0,4
-Season-4,20241228,Tobi,Andrin,1,1,1,1
-Season-4,20241228,Yannik,Lukas Stalder,0,2,0,1
-Season-4,20241228,Sili,Tommy,1,1,1,1
-Season-4,20241228,Noe T.,Joel K.,1,2,0,1
-Season-4,20241228,Manuel,Ivo,1,2,0,1
-Season-4,20241228,Dimlas,Myri,2,0,0,1
-Season-4,20241228,Andrin,Tommy,0,2,0,2
-Season-4,20241228,Tobi,Sili,2,0,0,2
-Season-4,20241228,Manuel,Noe T.,0,2,0,2
-Season-4,20241228,Yannik,Myri,0,2,0,2
-Season-4,20241228,Dimlas,Ivo,1,2,0,2
-Season-4,20241228,Lukas Stalder,Joel K.,1,1,1,2
-Season-4,20241228,Yannik,Manuel,1,2,0,3
-Season-4,20241228,Tobi,Ivo,0,2,0,3
-Season-4,20241228,Myri,Joel K.,1,1,1,3
-Season-4,20241228,Dimlas,Noe T.,1,2,0,3
-Season-4,20241228,Andrin,Sili,0,2,0,3
-Season-4,20241228,Lukas Stalder,Tommy,0,2,0,3
-Season-4,20241228,Manuel,Andrin,1,2,0,4
-Season-4,20241228,Ivo,Tommy,2,1,0,4
-Season-4,20241228,Noe T.,Lukas Stalder,2,1,0,4
-Season-4,20241228,Joel K.,Sili,0,2,0,4
-Season-4,20241228,Tobi,Myri,0,2,0,4
-Season-4,20241228,Dimlas,Yannik,2,0,0,4
 Season-4,20240922,Joel R.,Sili,1,2,0,1
 Season-4,20240922,Andrin,Tinu,1,1,1,1
 Season-4,20240922,Sam,Guy,1,2,0,1
@@ -175,46 +23,6 @@ Season-4,20240922,Sam,Noe T.,2,0,0,4
 Season-4,20240922,Joel R.,Manuel,2,1,0,4
 Season-4,20240922,Yannik,Joel K.,2,0,0,4
 Season-4,20240922,Andrin,Guy,2,1,0,4
-Season-4,20250209,Matthias,Manuel,2,1,0,1
-Season-4,20250209,Joel K.,Dimlas,0,2,0,1
-Season-4,20250209,Andrin,Sili,2,1,0,1
-Season-4,20250209,Myri,Lukas Stalder,0,2,0,1
-Season-4,20250209,Tinu,Ivo,1,2,0,1
-Season-4,20250209,Lukas Stalder,Sili,0,2,0,2
-Season-4,20250209,Dimlas,Andrin,2,0,0,2
-Season-4,20250209,Matthias,Ivo,2,1,0,2
-Season-4,20250209,Manuel,Joel K.,0,2,0,2
-Season-4,20250209,Myri,Tinu,2,0,0,2
-Season-4,20250209,Myri,Andrin,1,2,0,3
-Season-4,20250209,Tinu,Manuel,2,0,0,3
-Season-4,20250209,Lukas Stalder,Ivo,1,1,1,3
-Season-4,20250209,Matthias,Dimlas,1,2,0,3
-Season-4,20250209,Joel K.,Sili,0,2,0,3
-Season-4,20250209,Lukas Stalder,Tinu,2,0,0,4
-Season-4,20250209,Dimlas,Sili,0,2,0,4
-Season-4,20250209,Ivo,Joel K.,2,0,0,4
-Season-4,20250209,Matthias,Andrin,2,0,0,4
-Season-4,20250209,Myri,Manuel,2,1,0,4
-Season-4,20250518,Matthias,Lukas Stalder,1,2,0,1
-Season-4,20250518,Missing Player,Manuel,0,2,0,1
-Season-4,20250518,Dimlas,Tommy,2,0,0,1
-Season-4,20250518,Myri,Ivo,1,2,0,1
-Season-4,20250518,Andrin,Tobi,2,1,0,1
-Season-4,20250518,Tommy,Missing Player,2,0,0,2
-Season-4,20250518,Andrin,Manuel,2,0,0,2
-Season-4,20250518,Matthias,Myri,2,0,0,2
-Season-4,20250518,Lukas Stalder,Tobi,1,2,0,2
-Season-4,20250518,Ivo,Dimlas,0,2,0,2
-Season-4,20250518,Andrin,Dimlas,0,2,0,3
-Season-4,20250518,Matthias,Ivo,1,2,0,3
-Season-4,20250518,Manuel,Lukas Stalder,2,1,0,3
-Season-4,20250518,Missing Player,Myri,0,2,0,3
-Season-4,20250518,Tommy,Tobi,2,1,0,3
-Season-4,20250518,Myri,Tobi,1,2,0,4
-Season-4,20250518,Dimlas,Manuel,2,1,0,4
-Season-4,20250518,Matthias,Missing Player,2,0,0,4
-Season-4,20250518,Tommy,Lukas Stalder,0,2,0,4
-Season-4,20250518,Ivo,Andrin,0,2,0,4
 Season-4,20241020,Pali,Dimlas,2,0,0,1
 Season-4,20241020,Joel K.,Manuel,1,2,0,1
 Season-4,20241020,Tommy,Joel R.,1,2,0,1
@@ -263,3 +71,195 @@ Season-4,20241124,Tinu,Tommy,1,2,0,4
 Season-4,20241124,Joel K.,Guy,0,2,0,4
 Season-4,20241124,Dimlas,Sili,2,0,0,4
 Season-4,20241124,Ivo,Valentin,2,0,0,4
+Season-4,20241208,Dimlas,Valentin,2,0,0,1
+Season-4,20241208,Manuel,Joel K.,2,1,0,1
+Season-4,20241208,Tommy,Yannik,1,1,1,1
+Season-4,20241208,Sili,Noe T.,2,1,0,1
+Season-4,20241208,Lukas Stalder,Matthias,2,0,0,1
+Season-4,20241208,Luca,Andrin,2,1,0,1
+Season-4,20241208,Valentin,Joel K.,2,0,0,2
+Season-4,20241208,Sili,Tommy,0,2,0,2
+Season-4,20241208,Matthias,Noe T.,2,0,0,2
+Season-4,20241208,Yannik,Andrin,1,2,0,2
+Season-4,20241208,Lukas Stalder,Luca,2,0,0,2
+Season-4,20241208,Manuel,Dimlas,1,2,0,2
+Season-4,20241208,Valentin,Sili,0,2,0,3
+Season-4,20241208,Lukas Stalder,Dimlas,1,2,0,3
+Season-4,20241208,Joel K.,Noe T.,1,2,0,3
+Season-4,20241208,Luca,Yannik,2,0,0,3
+Season-4,20241208,Manuel,Andrin,1,2,0,3
+Season-4,20241208,Tommy,Matthias,1,1,1,3
+Season-4,20241208,Yannik,Joel K.,2,0,0,4
+Season-4,20241208,Andrin,Tommy,0,2,0,4
+Season-4,20241208,Dimlas,Luca,1,2,0,4
+Season-4,20241208,Manuel,Noe T.,1,2,0,4
+Season-4,20241208,Matthias,Valentin,1,2,0,4
+Season-4,20241208,Lukas Stalder,Sili,0,2,0,4
+Season-4,20241228,Tobi,Andrin,1,1,1,1
+Season-4,20241228,Yannik,Lukas Stalder,0,2,0,1
+Season-4,20241228,Sili,Tommy,1,1,1,1
+Season-4,20241228,Noe T.,Joel K.,1,2,0,1
+Season-4,20241228,Manuel,Ivo,1,2,0,1
+Season-4,20241228,Dimlas,Myri,2,0,0,1
+Season-4,20241228,Andrin,Tommy,0,2,0,2
+Season-4,20241228,Tobi,Sili,2,0,0,2
+Season-4,20241228,Manuel,Noe T.,0,2,0,2
+Season-4,20241228,Yannik,Myri,0,2,0,2
+Season-4,20241228,Dimlas,Ivo,1,2,0,2
+Season-4,20241228,Lukas Stalder,Joel K.,1,1,1,2
+Season-4,20241228,Yannik,Manuel,1,2,0,3
+Season-4,20241228,Tobi,Ivo,0,2,0,3
+Season-4,20241228,Myri,Joel K.,1,1,1,3
+Season-4,20241228,Dimlas,Noe T.,1,2,0,3
+Season-4,20241228,Andrin,Sili,0,2,0,3
+Season-4,20241228,Lukas Stalder,Tommy,0,2,0,3
+Season-4,20241228,Manuel,Andrin,1,2,0,4
+Season-4,20241228,Ivo,Tommy,2,1,0,4
+Season-4,20241228,Noe T.,Lukas Stalder,2,1,0,4
+Season-4,20241228,Joel K.,Sili,0,2,0,4
+Season-4,20241228,Tobi,Myri,0,2,0,4
+Season-4,20241228,Dimlas,Yannik,2,0,0,4
+Season-4,20250112,Tommy,Lukas Stalder,0,2,0,1
+Season-4,20250112,Noe T.,Sili,0,2,0,1
+Season-4,20250112,Ivo,Andrin,1,2,0,1
+Season-4,20250112,Dimlas,Matthias,2,0,0,1
+Season-4,20250112,Guy,Yannik,2,0,0,1
+Season-4,20250112,Valentin,Manuel,0,2,0,1
+Season-4,20250112,Tommy,Yannik,1,2,0,2
+Season-4,20250112,Dimlas,Sili,2,0,0,2
+Season-4,20250112,Ivo,Valentin,1,2,0,2
+Season-4,20250112,Matthias,Noe T.,1,2,0,2
+Season-4,20250112,Lukas Stalder,Andrin,0,1,0,2
+Season-4,20250112,Manuel,Guy,1,2,0,2
+Season-4,20250112,Sili,Manuel,0,2,0,3
+Season-4,20250112,Valentin,Lukas Stalder,2,0,0,3
+Season-4,20250112,Guy,Dimlas,0,2,0,3
+Season-4,20250112,Tommy,Matthias,2,1,0,3
+Season-4,20250112,Andrin,Yannik,2,0,0,3
+Season-4,20250112,Noe T.,Ivo,1,1,1,3
+Season-4,20250112,Dimlas,Andrin,2,0,0,4
+Season-4,20250112,Guy,Valentin,2,0,0,4
+Season-4,20250112,Lukas Stalder,Yannik,2,0,0,4
+Season-4,20250112,Tommy,Sili,2,1,0,4
+Season-4,20250112,Manuel,Noe T.,1,2,0,4
+Season-4,20250112,Ivo,Matthias,2,0,0,4
+Season-4,20250209,Matthias,Manuel,2,1,0,1
+Season-4,20250209,Joel K.,Dimlas,0,2,0,1
+Season-4,20250209,Andrin,Sili,2,1,0,1
+Season-4,20250209,Myri,Lukas Stalder,0,2,0,1
+Season-4,20250209,Tinu,Ivo,1,2,0,1
+Season-4,20250209,Lukas Stalder,Sili,0,2,0,2
+Season-4,20250209,Dimlas,Andrin,2,0,0,2
+Season-4,20250209,Matthias,Ivo,2,1,0,2
+Season-4,20250209,Manuel,Joel K.,0,2,0,2
+Season-4,20250209,Myri,Tinu,2,0,0,2
+Season-4,20250209,Myri,Andrin,1,2,0,3
+Season-4,20250209,Tinu,Manuel,2,0,0,3
+Season-4,20250209,Lukas Stalder,Ivo,1,1,1,3
+Season-4,20250209,Matthias,Dimlas,1,2,0,3
+Season-4,20250209,Joel K.,Sili,0,2,0,3
+Season-4,20250209,Lukas Stalder,Tinu,2,0,0,4
+Season-4,20250209,Dimlas,Sili,0,2,0,4
+Season-4,20250209,Ivo,Joel K.,2,0,0,4
+Season-4,20250209,Matthias,Andrin,2,0,0,4
+Season-4,20250209,Myri,Manuel,2,1,0,4
+Season-4,20250323,Yannik,Ivo,0,2,0,1
+Season-4,20250323,Manuel,Tommy,0,2,0,1
+Season-4,20250323,Andrin,Sili,1,2,0,1
+Season-4,20250323,Guy,Lukas Stalder,2,0,0,1
+Season-4,20250323,Dimlas,Tinu,1,2,0,1
+Season-4,20250323,Guy,Ivo,2,1,0,2
+Season-4,20250323,Lukas Stalder,Andrin,1,1,1,2
+Season-4,20250323,Tommy,Sili,2,1,0,2
+Season-4,20250323,Tinu,Manuel,1,2,0,2
+Season-4,20250323,Yannik,Dimlas,0,2,0,2
+Season-4,20250323,Tommy,Guy,2,0,0,3
+Season-4,20250323,Ivo,Tinu,2,0,0,3
+Season-4,20250323,Manuel,Dimlas,1,2,0,3
+Season-4,20250323,Lukas Stalder,Sili,0,2,0,3
+Season-4,20250323,Andrin,Yannik,2,0,0,3
+Season-4,20250323,Yannik,Tinu,0,2,0,4
+Season-4,20250323,Manuel,Lukas Stalder,2,0,0,4
+Season-4,20250323,Sili,Guy,1,1,1,4
+Season-4,20250323,Dimlas,Andrin,2,0,0,4
+Season-4,20250323,Tommy,Ivo,2,1,0,4
+Season-4,20250406,Valentin,Matthias,0,2,0,1
+Season-4,20250406,Andrin,Manuel,1,1,1,1
+Season-4,20250406,Tobi,Guy,0,2,0,1
+Season-4,20250406,Joel K.,Sili,2,0,0,1
+Season-4,20250406,Lukas Stalder,Dimlas,2,0,0,1
+Season-4,20250406,Valentin,Andrin,0,2,0,2
+Season-4,20250406,Manuel,Dimlas,0,2,0,2
+Season-4,20250406,Guy,Joel K.,2,1,0,2
+Season-4,20250406,Lukas Stalder,Matthias,1,2,0,2
+Season-4,20250406,Sili,Tobi,2,1,0,2
+Season-4,20250406,Matthias,Guy,1,2,0,3
+Season-4,20250406,Tobi,Valentin,2,0,0,3
+Season-4,20250406,Joel K.,Dimlas,2,1,0,3
+Season-4,20250406,Andrin,Lukas Stalder,2,0,0,3
+Season-4,20250406,Sili,Manuel,1,2,0,3
+Season-4,20250406,Joel K.,Matthias,0,2,0,4
+Season-4,20250406,Manuel,Tobi,0,2,0,4
+Season-4,20250406,Lukas Stalder,Valentin,0,2,0,4
+Season-4,20250406,Dimlas,Sili,1,2,0,4
+Season-4,20250406,Guy,Andrin,0,2,0,4
+Season-4,20250518,Matthias,Lukas Stalder,1,2,0,1
+Season-4,20250518,Missing Player,Manuel,0,2,0,1
+Season-4,20250518,Dimlas,Tommy,2,0,0,1
+Season-4,20250518,Myri,Ivo,1,2,0,1
+Season-4,20250518,Andrin,Tobi,2,1,0,1
+Season-4,20250518,Tommy,Missing Player,2,0,0,2
+Season-4,20250518,Andrin,Manuel,2,0,0,2
+Season-4,20250518,Matthias,Myri,2,0,0,2
+Season-4,20250518,Lukas Stalder,Tobi,1,2,0,2
+Season-4,20250518,Ivo,Dimlas,0,2,0,2
+Season-4,20250518,Andrin,Dimlas,0,2,0,3
+Season-4,20250518,Matthias,Ivo,1,2,0,3
+Season-4,20250518,Manuel,Lukas Stalder,2,1,0,3
+Season-4,20250518,Missing Player,Myri,0,2,0,3
+Season-4,20250518,Tommy,Tobi,2,1,0,3
+Season-4,20250518,Myri,Tobi,1,2,0,4
+Season-4,20250518,Dimlas,Manuel,2,1,0,4
+Season-4,20250518,Matthias,Missing Player,2,0,0,4
+Season-4,20250518,Tommy,Lukas Stalder,0,2,0,4
+Season-4,20250518,Ivo,Andrin,0,2,0,4
+Season-4,20250609,Noe T.,Sili,0,2,0,1
+Season-4,20250609,Dimlas,Andrin,2,1,0,1
+Season-4,20250609,Pali,Valentin,0,2,0,1
+Season-4,20250609,Tommy,Lukas Stalder,2,0,0,1
+Season-4,20250609,Andrin,Noe T.,1,2,0,2
+Season-4,20250609,Valentin,Tommy,2,1,0,2
+Season-4,20250609,Lukas Stalder,Pali,2,1,0,2
+Season-4,20250609,Sili,Dimlas,0,2,0,2
+Season-4,20250609,Sili,Tommy,0,2,0,3
+Season-4,20250609,Lukas Stalder,Noe T.,2,1,0,3
+Season-4,20250609,Valentin,Dimlas,1,2,0,3
+Season-4,20250609,Andrin,Pali,2,1,0,3
+Season-4,20250609,Valentin,Andrin,2,0,0,4
+Season-4,20250609,Dimlas,Lukas Stalder,2,1,0,4
+Season-4,20250609,Noe T.,Tommy,2,0,0,4
+Season-4,20250609,Pali,Sili,0,2,0,4
+Season-4,20250712,Dimlas,Filipe,2,1,0,1
+Season-4,20250712,Sam,Ivo,0,2,0,1
+Season-4,20250712,Manuel,Yannik,1,1,1,1
+Season-4,20250712,Andrin,Tinu,1,2,0,1
+Season-4,20250712,Tommy,Guy,0,2,0,1
+Season-4,20250712,Lukas Stalder,Noe T.,2,0,0,1
+Season-4,20250712,Sam,Tommy,0,1,0,2
+Season-4,20250712,Lukas Stalder,Ivo,2,1,0,2
+Season-4,20250712,Andrin,Noe T.,2,0,0,2
+Season-4,20250712,Manuel,Guy,1,2,0,2
+Season-4,20250712,Tinu,Dimlas,1,2,0,2
+Season-4,20250712,Yannik,Filipe,2,0,0,2
+Season-4,20250712,Andrin,Tommy,2,1,0,3
+Season-4,20250712,Manuel,Filipe,2,0,0,3
+Season-4,20250712,Lukas Stalder,Yannik,2,1,0,3
+Season-4,20250712,Ivo,Tinu,2,1,0,3
+Season-4,20250712,Guy,Dimlas,0,2,0,3
+Season-4,20250712,Noe T.,Sam,0,2,0,3
+Season-4,20250712,Ivo,Andrin,2,1,0,4
+Season-4,20250712,Guy,Yannik,2,0,0,4
+Season-4,20250712,Manuel,Sam,2,0,0,4
+Season-4,20250712,Dimlas,Lukas Stalder,1,2,0,4
+Season-4,20250712,Tommy,Tinu,0,2,0,4
+Season-4,20250712,Noe T.,Filipe,2,0,0,4

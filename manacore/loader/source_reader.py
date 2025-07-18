@@ -6,6 +6,19 @@ import re
 from manacore.config.get_seasons import load_season_config, get_season_for_date
 
 def extract_date_from_filename(filename: str) -> str:
+    """
+    Extract a date string in YYYYMMDD format from a filename containing a date in YYYY_MM_DD format.
+
+    Parameters:
+    -----------
+    filename : str
+        The filename from which to extract the date (e.g., "cube_snapshot_2024_07_18.json").
+
+    Returns:
+    --------
+    str
+        The extracted date in 'YYYYMMDD' format. Returns 'unknown_date' if no valid date is found.
+    """
     # Extract date in YYYY_MM_DD format from filename, return YYYYMMDD string
     match = re.search(r'(\d{4})_(\d{2})_(\d{2})', filename)
     if match:
@@ -13,6 +26,31 @@ def extract_date_from_filename(filename: str) -> str:
     return "unknown_date"
     
 def read_all_csvs_from_zips():
+    """
+    Read and combine drafted deck and match CSV files from ZIP archives in the raw data directory.
+
+    Scans the "data/raw" directory for `.zip` files, extracts relevant CSVs,
+    annotates them with draft and season metadata, and returns two combined DataFrames.
+
+    Returns:
+    --------
+    tuple (pd.DataFrame, pd.DataFrame)
+        - drafted_df: Combined DataFrame of all drafted deck entries with 'draft_id' and 'season_id'.
+        - matches_df: Combined DataFrame of all match entries with 'draft_id' and 'season_id'.
+
+    Raises:
+    -------
+    FileNotFoundError
+        If no drafted deck CSVs or no match CSVs are found in the ZIP files.
+
+    Behavior:
+    ---------
+    - Extracts `drafted_decks` and `matches` CSV files from each ZIP archive.
+    - Infers `draft_id` from the ZIP filename using the format YYYY_MM_DD.
+    - Determines the `season_id` using the extracted date and season config.
+    - Drops unnecessary columns (`'tournament'`, `'quantity'`, and `'tournamentDate'`).
+    - Sorts the resulting DataFrames by `draft_id` while preserving original internal order.
+    """
     base_path = "data/raw"
     zip_files = [os.path.join(base_path, f) for f in os.listdir(base_path) if f.endswith('.zip')]
 
@@ -52,12 +90,36 @@ def read_all_csvs_from_zips():
     drafted_df = pd.concat(drafted_dfs, ignore_index=True)
     matches_df = pd.concat(matches_dfs, ignore_index=True)
 
+    # Sort both DataFrames by draft_id while keeping the internal order stable
+    drafted_df = drafted_df.sort_values(by='draft_id', kind='stable')
+    matches_df = matches_df.sort_values(by='draft_id', kind='stable')
+
     return drafted_df, matches_df
 
 
 def save_dataframes_to_csv(drafted_df, matches_df, output_dir=Path("data/processed")):
     """
-    Saves the drafted and match DataFrames to CSV files in output_dir.
+    Save drafted and match DataFrames to CSV files in a specified output directory.
+
+    Parameters:
+    -----------
+    drafted_df : pd.DataFrame
+        DataFrame containing drafted deck data with columns including:
+        ['season_id', 'draft_id', 'player', 'archetype', 'decktype', 'scryfallId'].
+
+    matches_df : pd.DataFrame
+        DataFrame containing match results with columns including:
+        ['season_id', 'draft_id', 'player1', 'player2', 'player1Wins', 'player2Wins', 'draws', 'round'].
+
+    output_dir : pathlib.Path, optional
+        Path to the output directory where CSV files will be saved (default: "data/processed").
+
+    Behavior:
+    ---------
+    - Reorders columns of both DataFrames to a standard format.
+    - Ensures the output directory exists.
+    - Saves `drafted_df` to 'drafted_decks.csv' and `matches_df` to 'matches.csv' within the output directory.
+    - Prints confirmation messages with output paths.
     """
     
     drafted_col_order = ['season_id', 'draft_id', 'player', 'archetype', 'decktype', 'scryfallId'] 

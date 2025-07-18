@@ -1,4 +1,4 @@
-change_id,season,timestamp,change_type,scryfallId
+change_id,season_id,timestamp,change_type,scryfallId
 1,Season-1,2021-05-05,adds,74af08d9-76ef-48aa-86c5-b92ea6e10c9f
 2,Season-1,2021-05-05,adds,207d5f12-fbc6-4c75-9d84-fd2f0023fbd0
 3,Season-1,2021-05-05,adds,2f8f22fb-7291-4517-9b15-e98501f2856b
