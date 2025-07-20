@@ -200,8 +200,7 @@ def process_matches(csv_file, output_file):
                     score_p1 = (p1wins + 0.5 * draws) / total_games
                 else:
                     score_p1 = 0.5
-                modifier_p1 = 1.0
-                modifier_p2 = 1.0
+                modifier = 1.0
 
             # Get current ratings
             r1 = ratings.get(p1, 1000)
