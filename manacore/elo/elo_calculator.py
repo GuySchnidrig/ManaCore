@@ -180,24 +180,29 @@ def process_matches(csv_file, output_file):
 
             # Assign base full scores for update_elo and modifier
             if p1wins == 2 and p2wins == 0:
-                score_p1 = 1.0        # dominant win
-                modifier = 1.0
+                score_p1 = 1.0
+                modifier_p1 = 1.0
+                modifier_p2 = 1.0
             elif p1wins == 2 and p2wins == 1:
-                score_p1 = 1.0        # narrow win
-                modifier = 0.67
+                score_p1 = 1.0
+                modifier_p1 = 0.67
+                modifier_p2 = 0.33  # p2 lost narrowly
             elif p2wins == 2 and p1wins == 0:
-                score_p1 = 0.0        # dominant loss
-                modifier = 1.0
+                score_p1 = 0.0
+                modifier_p1 = 1.0
+                modifier_p2 = 1.0
             elif p2wins == 2 and p1wins == 1:
-                score_p1 = 0.0        # narrow loss
-                modifier = 0.33
+                score_p1 = 0.0
+                modifier_p1 = 0.33  # p1 lost narrowly
+                modifier_p2 = 0.67
             else:
                 total_games = p1wins + p2wins + draws
                 if total_games > 0:
                     score_p1 = (p1wins + 0.5 * draws) / total_games
                 else:
                     score_p1 = 0.5
-                modifier = 1.0
+                modifier_p1 = 1.0
+                modifier_p2 = 1.0
 
             # Get current ratings
             r1 = ratings.get(p1, 1000)
@@ -211,14 +216,14 @@ def process_matches(csv_file, output_file):
             change_p2 = new_r2 - r2
 
             # Apply modifier to rating changes
-            scaled_change_p1 = change_p1 * modifier
-            scaled_change_p2 = change_p2 * modifier
+            scaled_change_p1 = change_p1 * modifier_p1
+            scaled_change_p2 = change_p2 * modifier_p2
 
             # Final ratings after modifier applied
-            final_r1 = new_r1 + scaled_change_p1
-            final_r2 = new_r2 + scaled_change_p2
+            final_r1 = r1 + scaled_change_p1
+            final_r2 = r2 + scaled_change_p2
             
-            print(r1, new_r1, modifier, scaled_change_p1, final_r1)
+            print(r1, new_r1, modifier_p1, scaled_change_p1, final_r1)
             
             # Store updated ratings
             ratings[p1] = final_r1
@@ -232,16 +237,16 @@ def process_matches(csv_file, output_file):
                 draft_id,
                 p1,
                 matches_played_per_draft[(draft_id, p1)],
-                new_r1,
-                change_p1
+                final_r1,
+                scaled_change_p1
             ))
             elo_progress.append((
                 season_id,
                 draft_id,
                 p2,
                 matches_played_per_draft[(draft_id, p2)],
-                new_r2,
-                change_p2
+                final_r2,
+                scaled_change_p2
             ))
 
         for player in all_players:

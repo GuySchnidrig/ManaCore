@@ -20,7 +20,7 @@ r1, r2 = 1166.4, 1083.2
 score_a = 1.0
 
 # Modifier for dominant win is 1.0 (full change)
-modifier = 1
+modifier = 0.33
 
 # Calculate expected score
 expected_a = expected_score(r1, r2)
