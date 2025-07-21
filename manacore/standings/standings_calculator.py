@@ -57,7 +57,6 @@ def calculate_standings(base_path="data/processed") -> pd.DataFrame:
 
     df = pd.read_csv(matches_file)
 
-    # Store stats for each player in each draft_id
     player_stats = defaultdict(lambda: {
         'match_points': 0,
         'game_points': 0,
@@ -82,17 +81,16 @@ def calculate_standings(base_path="data/processed") -> pd.DataFrame:
         draft_date = datetime.strptime(str(draft_id), "%Y%m%d").date()
         season_id = get_season_for_date(draft_date, season_config) if draft_date else None
         
-        is_bye_p1 = row.get('player1Bye', False)  # You need a flag in data indicating if player got a bye
+        is_bye_p1 = row.get('player1Bye', False)  
         is_bye_p2 = row.get('player2Bye', False)
 
         total_games = gw1 + gw2 + draws
 
-        # Calculate match points per Appendix C:
         # Win = 3, Draw = 1, Loss = 0, Bye counts as 3 points and 6 game points, counted as 2-0 win
         if is_bye_p1:
             p1_match_points = 3
             p1_game_points = 6
-            p1_games_played = 2  # bye counted as 2 games played 2-0
+            p1_games_played = 2  
             p2_match_points = 0
             p2_game_points = 0
             p2_games_played = 0
@@ -105,8 +103,6 @@ def calculate_standings(base_path="data/processed") -> pd.DataFrame:
             p1_game_points = 0
             p1_games_played = 0
         else:
-            # Normal match
-            # Match points
             if gw1 > gw2:
                 p1_match_points = 3
                 p2_match_points = 0
@@ -117,7 +113,6 @@ def calculate_standings(base_path="data/processed") -> pd.DataFrame:
                 p1_match_points = 1
                 p2_match_points = 1
 
-            # Game points:
             # 3 points per game won, 1 point per draw, 0 per loss
             p1_game_points = gw1 * 3 + draws * 1
             p2_game_points = gw2 * 3 + draws * 1
@@ -128,7 +123,8 @@ def calculate_standings(base_path="data/processed") -> pd.DataFrame:
         p1_stats = player_stats[(p1, draft_id)]
         p1_stats['match_points'] += p1_match_points
         p1_stats['game_points'] += p1_game_points
-        p1_stats['matches_played'] += 1 if not is_bye_p1 else 0  # byes do not count as played matches for opponent stats
+        p1_stats['matches_played'] += 1  # Always count the match, including byes
+
         p1_stats['games_played'] += p1_games_played
         if not is_bye_p1 and p2 != "BYE":
             p1_stats['opponents'].add((p2, draft_id))
@@ -141,10 +137,10 @@ def calculate_standings(base_path="data/processed") -> pd.DataFrame:
         p2_stats = player_stats[(p2, draft_id)]
         p2_stats['match_points'] += p2_match_points
         p2_stats['game_points'] += p2_game_points
-        p2_stats['matches_played'] += 1 if not is_bye_p2 else 0
+        p2_stats['matches_played'] += 1  # Always count the match, including byes
         p2_stats['games_played'] += p2_games_played
-        if not is_bye_p1:
-            p1_stats['opponents'].add((p2, draft_id))
+        if not is_bye_p2 and p1 != "BYE":
+            p2_stats['opponents'].add((p1, draft_id))
         if is_bye_p2:
             p2_stats['byes'] += 1
         p2_stats['draft_id'] = draft_id
