@@ -220,9 +220,7 @@ def process_matches(csv_file, output_file):
             # Final ratings after modifier applied
             final_r1 = r1 + scaled_change_p1
             final_r2 = r2 + scaled_change_p2
-            
-            print(r1, new_r1, modifier, scaled_change_p1, final_r1)
-            
+                        
             # Check for missing players
             if p1 == "Missing Player" or p2 == "Missing Player":
                 final_r1 = r1
