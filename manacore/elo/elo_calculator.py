@@ -223,6 +223,13 @@ def process_matches(csv_file, output_file):
             
             print(r1, new_r1, modifier, scaled_change_p1, final_r1)
             
+            # Check for missing players
+            if p1 == "Missing Player" or p2 == "Missing Player":
+                final_r1 = r1
+                final_r2 = r2
+                scaled_change_p1 = 0
+                scaled_change_p2 = 0
+
             # Store updated ratings
             ratings[p1] = final_r1
             ratings[p2] = final_r2
