@@ -1,5 +1,4 @@
 from manacore.cardbase import get_cardbase
-from manacore.config.get_seasons import load_season_config, load_season_start_dates
 
 def main():
     posts_with_season = get_cardbase.load_combined_history_data('data/processed/history')
