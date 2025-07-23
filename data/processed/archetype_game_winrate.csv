@@ -1,8 +1,8 @@
 season_id,archetype,games_played,games_won,game_win_rate
-Season-4,Combo,646,175,0.2708978328173375
-Season-4,Combo-Control,441,71,0.16099773242630386
-Season-4,Aggro,646,137,0.21207430340557276
-Season-4,Control-Aggro (Midrange),466,42,0.09012875536480687
-Season-4,Control,646,118,0.1826625386996904
-Season-4,Aggro-Control (Tempo),327,37,0.11314984709480122
-Season-4,Aggro-Combo,313,40,0.12779552715654952
+Season-4,Aggro,262,137,0.5229007633587787
+Season-4,Aggro-Combo,72,40,0.5555555555555556
+Season-4,Aggro-Control (Tempo),77,37,0.4805194805194805
+Season-4,Combo,378,175,0.46296296296296297
+Season-4,Combo-Control,132,71,0.5378787878787878
+Season-4,Control,248,118,0.47580645161290325
+Season-4,Control-Aggro (Midrange),107,42,0.3925233644859813

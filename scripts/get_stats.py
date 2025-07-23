@@ -33,7 +33,8 @@ def process_and_save_all_outputs(base_path: str):
     print("Combined winrates calculated.")
     
     print("Building card availability map...")
-    card_availability_map = build_card_availability_map(cube_history_df, drafts_df)
+    mainboard_df = load_mainboard(processed_dir)
+    card_availability_map = build_card_availability_map(cube_history_df, drafts_df, mainboard_df, )
     print("Card availability map built.")
     
     print("Calculating card mainboard rate per season...")

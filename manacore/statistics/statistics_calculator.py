@@ -29,6 +29,14 @@ def load_cube_history(base_path: str) -> pd.DataFrame:
     df['timestamp'] = pd.to_datetime(df['timestamp'])
     return df
 
+def load_mainboard(base_path: str) -> pd.DataFrame:
+    load_mainboard_file = os.path.join(base_path, "cube_mainboard.csv")
+    if not os.path.exists(load_mainboard_file):
+        raise FileNotFoundError(f"'cube_history.csv' not found in {base_path}")
+    df = pd.read_csv(load_mainboard_file)
+    df['timestamp'] = pd.to_datetime(df['timestamp'])
+    return df
+
 
 def load_drafts_with_timestamp(base_path: str) -> pd.DataFrame:
     drafts_file = os.path.join(base_path, "drafts.csv")
@@ -111,29 +119,44 @@ def calculate_combined_winrates_per_season(matches_df: pd.DataFrame, decks_df: p
     return pd.DataFrame(results)
 
 
-def build_card_availability_map(cube_history_df: pd.DataFrame, drafts_df: pd.DataFrame) -> dict:
-    cube_history_df = cube_history_df.sort_values('timestamp').reset_index(drop=True)
+def build_card_availability_map(cube_history_df, drafts_df, mainboard_df):
+    # Convert timestamps to datetime if needed
+    
+    cube_history_df = cube_history_df.sort_values('timestamp', ascending=False).reset_index(drop=True)
+    drafts_df = drafts_df.sort_values('timestamp', ascending=False).reset_index(drop=True)
+    mainboard_df = mainboard_df.sort_values('timestamp').reset_index(drop=True)
+
     availability_map = {}
 
-    for season, season_changes in cube_history_df.groupby('season_id'):
-        season_changes = season_changes.reset_index(drop=True)
-        season_drafts = drafts_df[drafts_df['season_id'] == season].sort_values('timestamp').reset_index(drop=True)
+    for season, mainboard_cards in mainboard_df.groupby('season_id'):
+        # Initialize available cards from mainboard snapshot at mainboard timestamp
+        mainboard_timestamp = mainboard_cards['timestamp'].iloc[0]
+        available_cards = set(mainboard_cards['scryfallId'])
 
-        available_cards = set()
+        # Filter changes and drafts for this season
+        season_changes = cube_history_df[cube_history_df['season_id'] == season]
+        season_drafts = drafts_df[drafts_df['season_id'] == season]
+
         idx_change = 0
         availability_map[season] = {}
+
+        # Sort drafts descending (latest draft first)
+        season_drafts = season_drafts.sort_values('timestamp', ascending=False).reset_index(drop=True)
 
         for _, draft in season_drafts.iterrows():
             draft_time = draft['timestamp']
             draft_id = draft['draft_id']
 
-            while idx_change < len(season_changes) and season_changes.loc[idx_change, 'timestamp'] <= draft_time:
-                change = season_changes.loc[idx_change]
+            # Move idx_change through changes happening after this draft but before mainboard snapshot
+            while idx_change < len(season_changes) and season_changes.iloc[idx_change]['timestamp'] > draft_time:
+                change = season_changes.iloc[idx_change]
                 card_id = change['scryfallId']
                 if change['change_type'] == 'adds':
-                    available_cards.add(card_id)
-                elif change['change_type'] == 'removes':
+                    # Card was added later, so before that it was NOT available — remove it now going backward
                     available_cards.discard(card_id)
+                elif change['change_type'] == 'removes':
+                    # Card was removed later, so before that it WAS available — add it back going backward
+                    available_cards.add(card_id)
                 idx_change += 1
 
             availability_map[season][draft_id] = available_cards.copy()
@@ -172,266 +195,206 @@ def calculate_card_mainboard_rate_per_season(decks_df: pd.DataFrame, drafts_df: 
 
 
 def calculate_card_match_winrate_per_season(matches_df, decks_df, card_availability_map):
-    card_drafts = decks_df.groupby(['season_id', 'draft_id', 'player', 'scryfallId']).size().reset_index().drop(0, axis=1)
-    results = []
+    # Deduplicate decks to unique cards per player per draft per season
+    card_drafts = decks_df[['season_id', 'draft_id', 'player', 'scryfallId']].drop_duplicates()
 
-    card_season_pairs = card_drafts[['season_id', 'scryfallId']].drop_duplicates()
+    # Create DataFrame from card_availability_map for fast lookup
+    # Assuming card_availability_map structure: {season_id: {draft_id: set(cards)}}
+    availability_rows = []
+    for season, drafts in card_availability_map.items():
+        for draft_id, cards in drafts.items():
+            for card in cards:
+                availability_rows.append({'season_id': season, 'draft_id': draft_id, 'scryfallId': card})
+    availability_df = pd.DataFrame(availability_rows)
 
-    for _, row in card_season_pairs.iterrows():
-        season_id = row['season_id']
-        card = row['scryfallId']
+    # Join card_drafts with availability to keep only cards available in that draft & season
+    valid_card_drafts = card_drafts.merge(
+        availability_df,
+        on=['season_id', 'draft_id', 'scryfallId'],
+        how='inner'
+    )
 
-        # Drafts and players who drafted this card
-        drafts_with_players = card_drafts[
-            (card_drafts['season_id'] == season_id) &
-            (card_drafts['scryfallId'] == card)
-        ][['draft_id', 'player']]
+    # Merge matches with valid_card_drafts twice: once for player1, once for player2, to get card presence per player
+    merged_p1 = matches_df.merge(
+        valid_card_drafts.rename(columns={'player': 'player1'}),
+        on=['season_id', 'draft_id', 'player1'],
+        how='left'
+    ).rename(columns={'scryfallId': 'card_p1'})
 
-        # Filter drafts where card was available
-        drafts_with_players = drafts_with_players[
-            drafts_with_players.apply(
-                lambda x: season_id in card_availability_map
-                          and x['draft_id'] in card_availability_map[season_id]
-                          and card in card_availability_map[season_id][x['draft_id']],
-                axis=1
-            )
-        ]
+    merged_p2 = matches_df.merge(
+        valid_card_drafts.rename(columns={'player': 'player2'}),
+        on=['season_id', 'draft_id', 'player2'],
+        how='left'
+    ).rename(columns={'scryfallId': 'card_p2'})
 
-        drafts = drafts_with_players['draft_id'].unique()
-        if len(drafts) == 0:
-            continue
+    # Combine presence info
+    combined = merged_p1[['season_id', 'draft_id', 'player1', 'player2', 'player1Wins', 'player2Wins', 'card_p1']].copy()
+    combined['card_p2'] = merged_p2['card_p2']
 
-        relevant_matches = matches_df[
-            (matches_df['season_id'] == season_id) &
-            (matches_df['draft_id'].isin(drafts))
-        ]
+    # Melt so each row is a player-card match
+    p1_long = combined[['season_id', 'card_p1', 'player1Wins', 'player2Wins']].rename(columns={'card_p1': 'scryfallId'})
+    p2_long = combined[['season_id', 'card_p2', 'player2Wins', 'player1Wins']].rename(columns={'card_p2': 'scryfallId'})
 
-        if relevant_matches.empty:
-            continue
+    p1_long = p1_long.dropna(subset=['scryfallId'])
+    p2_long = p2_long.dropna(subset=['scryfallId'])
 
-        matches_played = 0
-        matches_won = 0
+    p1_long['matches_played'] = 1
+    p1_long['matches_won'] = (p1_long['player1Wins'] > p1_long['player2Wins']).astype(int)
 
-        for _, match in relevant_matches.iterrows():
-            # Players in this match
-            p1 = match['player1']
-            p2 = match['player2']
+    p2_long['matches_played'] = 1
+    p2_long['matches_won'] = (p2_long['player2Wins'] > p2_long['player1Wins']).astype(int)
 
-            # Which players drafted this card in this draft?
-            players_with_card = drafts_with_players[drafts_with_players['draft_id'] == match['draft_id']]['player'].tolist()
+    all_players = pd.concat([p1_long, p2_long], ignore_index=True)
 
-            # Did either player draft the card?
-            p1_has_card = p1 in players_with_card
-            p2_has_card = p2 in players_with_card
+    # Aggregate by season and card
+    result = all_players.groupby(['season_id', 'scryfallId']).agg(
+        matches_played=('matches_played', 'sum'),
+        matches_won=('matches_won', 'sum')
+    ).reset_index()
 
-            # Count this match only if player with card played
-            if not (p1_has_card or p2_has_card):
-                continue
+    result['match_win_rate'] = result['matches_won'] / result['matches_played']
 
-            matches_played += 1
+    return result
 
-            # Determine winner
-            if match['player1Wins'] > match['player2Wins'] and p1_has_card:
-                matches_won += 1
-            elif match['player2Wins'] > match['player1Wins'] and p2_has_card:
-                matches_won += 1
-
-        match_win_rate = matches_won / matches_played if matches_played > 0 else 0
-
-        results.append({
-            'season_id': season_id,
-            'scryfallId': card,
-            'matches_played': matches_played,
-            'matches_won': matches_won,
-            'match_win_rate': match_win_rate
-        })
-
-    return pd.DataFrame(results)
 
 
 
 def calculate_card_game_winrate_per_season(matches_df: pd.DataFrame, decks_df: pd.DataFrame, card_availability_map: dict) -> pd.DataFrame:
-    card_drafts = decks_df.groupby(['season_id', 'draft_id', 'scryfallId']).size().reset_index().drop(0, axis=1)
-    results = []
+    # Deduplicate decks to unique cards per player per draft per season
+    card_drafts = decks_df[['season_id', 'draft_id', 'player', 'scryfallId']].drop_duplicates()
 
-    card_season_pairs = card_drafts[['season_id', 'scryfallId']].drop_duplicates()
+    # Create availability DataFrame from card_availability_map
+    availability_rows = []
+    for season, drafts in card_availability_map.items():
+        for draft_id, cards in drafts.items():
+            for card in cards:
+                availability_rows.append({'season_id': season, 'draft_id': draft_id, 'scryfallId': card})
+    availability_df = pd.DataFrame(availability_rows)
 
-    for _, row in card_season_pairs.iterrows():
-        season_id = row['season_id']
-        card = row['scryfallId']
+    # Filter card drafts by availability
+    valid_card_drafts = card_drafts.merge(
+        availability_df,
+        on=['season_id', 'draft_id', 'scryfallId'],
+        how='inner'
+    )
 
-        drafts_with_card = card_drafts[
-            (card_drafts['season_id'] == season_id) &
-            (card_drafts['scryfallId'] == card)
-        ]['draft_id'].unique()
+    # Merge matches with valid_card_drafts twice to get cards per player per match
+    merged_p1 = matches_df.merge(
+        valid_card_drafts.rename(columns={'player': 'player1'}),
+        on=['season_id', 'draft_id', 'player1'],
+        how='left'
+    ).rename(columns={'scryfallId': 'card_p1'})
 
-        drafts_with_card = [d for d in drafts_with_card if season_id in card_availability_map and d in card_availability_map[season_id] and card in card_availability_map[season_id][d]]
+    merged_p2 = matches_df.merge(
+        valid_card_drafts.rename(columns={'player': 'player2'}),
+        on=['season_id', 'draft_id', 'player2'],
+        how='left'
+    ).rename(columns={'scryfallId': 'card_p2'})
 
-        relevant_matches = matches_df[
-            (matches_df['draft_id'].isin(drafts_with_card)) &
-            (matches_df['season_id'] == season_id)
-        ]
+    # Combine card presence info
+    combined = merged_p1[['season_id', 'draft_id', 'player1', 'player2', 'player1Wins', 'player2Wins', 'draws', 'card_p1']].copy()
+    combined['card_p2'] = merged_p2['card_p2']
 
-        if relevant_matches.empty:
-            continue
+    # Prepare long format for each player-card pair with game results
+    p1_long = combined[['season_id', 'card_p1', 'player1Wins', 'player2Wins', 'draws']].rename(columns={'card_p1': 'scryfallId'})
+    p2_long = combined[['season_id', 'card_p2', 'player2Wins', 'player1Wins', 'draws']].rename(columns={'card_p2': 'scryfallId'})
 
-        games_played = 0
-        games_won = 0
+    p1_long = p1_long.dropna(subset=['scryfallId'])
+    p2_long = p2_long.dropna(subset=['scryfallId'])
 
-        for _, m in relevant_matches.iterrows():
-            total_games = m['player1Wins'] + m['player2Wins'] + m['draws']
-            games_played += total_games
+    # Calculate games played and games won for player1 perspective
+    p1_long['games_played'] = p1_long['player1Wins'] + p1_long['player2Wins'] + p1_long['draws']
+    p1_long['games_won'] = p1_long['player1Wins']
 
-            # Simplified: all wins count to decks with the card
-            games_won += m['player1Wins'] + m['player2Wins']
+    # Calculate games played and games won for player2 perspective
+    p2_long['games_played'] = p2_long['player1Wins'] + p2_long['player2Wins'] + p2_long['draws']
+    p2_long['games_won'] = p2_long['player2Wins']
 
-        game_winrate = games_won / games_played if games_played > 0 else 0
+    # Combine both players' data
+    all_players = pd.concat([p1_long, p2_long], ignore_index=True)
 
-        results.append({
-            'season_id': season_id,
-            'scryfallId': card,
-            'games_played': games_played,
-            'games_won': games_won,
-            'game_win_rate': game_winrate
-        })
+    # Aggregate by season and card to calculate total games played and games won
+    result = all_players.groupby(['season_id', 'scryfallId']).agg(
+        games_played=('games_played', 'sum'),
+        games_won=('games_won', 'sum')
+    ).reset_index()
 
-    return pd.DataFrame(results)
+    result['game_win_rate'] = result['games_won'] / result['games_played']
+
+    return result
+
 
 
 
 def calculate_archetype_match_winrate(matches_df: pd.DataFrame, decks_df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Calculate match winrate per archetype (Level 2) based on match and deck data.
+    # First get unique archetypes per player per draft + season to avoid duplicates
+    player_archetypes = decks_df[['season_id', 'draft_id', 'player', 'archetype']].drop_duplicates()
 
-    Args:
-        matches_df: DataFrame with match data including 'draft_id', 'player1', 'player2',
-                    'player1Wins', 'player2Wins', and 'season_id'.
-        decks_df: DataFrame with decks info including 'draft_id', 'player', 'archetype'.
+    # Merge archetype info for player1 and player2 in matches
+    merged = matches_df.merge(
+        player_archetypes.rename(columns={'player': 'player1', 'archetype': 'archetype_p1'}),
+        on=['season_id', 'draft_id', 'player1'], how='left'
+    ).merge(
+        player_archetypes.rename(columns={'player': 'player2', 'archetype': 'archetype_p2'}),
+        on=['season_id', 'draft_id', 'player2'], how='left'
+    )
 
-    Returns:
-        DataFrame with columns ['season_id', 'archetype', 'matches_played', 'matches_won', 'match_win_rate']
-    """
-    results = []
+    # Create long format: one row per player per match with their archetype, wins, and whether they won
+    p1 = merged[['season_id', 'archetype_p1', 'player1Wins', 'player2Wins']].rename(
+        columns={'archetype_p1': 'archetype', 'player1Wins': 'wins', 'player2Wins': 'losses'})
+    p2 = merged[['season_id', 'archetype_p2', 'player2Wins', 'player1Wins']].rename(
+        columns={'archetype_p2': 'archetype', 'player2Wins': 'wins', 'player1Wins': 'losses'})
 
-    # Merge archetype info for both players in each match
-    # Join player1 archetype
-    p1_decks = decks_df[['draft_id', 'player', 'archetype']].rename(
-        columns={'player': 'player1', 'archetype': 'archetype_p1'})
-    # Join player2 archetype
-    p2_decks = decks_df[['draft_id', 'player', 'archetype']].rename(
-        columns={'player': 'player2', 'archetype': 'archetype_p2'})
+    combined = pd.concat([p1, p2], ignore_index=True).dropna(subset=['archetype'])
 
-    matches = matches_df.merge(p1_decks, on=['draft_id', 'player1'], how='left')
-    matches = matches.merge(p2_decks, on=['draft_id', 'player2'], how='left')
+    combined['matches_played'] = 1
+    combined['matches_won'] = (combined['wins'] > combined['losses']).astype(int)
 
-    # We want to calculate stats per archetype per season
-    season_archetypes = set(matches['season_id'].unique())
-    season_archetypes = [(season, arch) for season in matches['season_id'].unique() for arch in 
-                        pd.concat([matches['archetype_p1'], matches['archetype_p2']]).dropna().unique()]
+    # Aggregate by season and archetype
+    result = combined.groupby(['season_id', 'archetype']).agg(
+        matches_played=('matches_played', 'sum'),
+        matches_won=('matches_won', 'sum')
+    ).reset_index()
 
-    for season_id, archetype in season_archetypes:
-        # Filter matches where player1 has archetype or player2 has archetype (since match is between two players)
-        filtered_matches = matches[
-            (matches['season_id'] == season_id) &
-            ((matches['archetype_p1'] == archetype) | (matches['archetype_p2'] == archetype))
-        ]
+    result['match_win_rate'] = result['matches_won'] / result['matches_played']
 
-        matches_played = len(filtered_matches)
-        if matches_played == 0:
-            continue
-
-        matches_won = 0
-
-        # Count matches won by players of the given archetype
-        for _, row in filtered_matches.iterrows():
-            winner = None
-            if row['player1Wins'] > row['player2Wins']:
-                winner = row['player1']
-                winner_arch = row['archetype_p1']
-            elif row['player2Wins'] > row['player1Wins']:
-                winner = row['player2']
-                winner_arch = row['archetype_p2']
-            else:
-                winner = None
-                winner_arch = None
-
-            if winner_arch == archetype:
-                matches_won += 1
-
-        match_win_rate = matches_won / matches_played if matches_played > 0 else 0
-
-        results.append({
-            'season_id': season_id,
-            'archetype': archetype,
-            'matches_played': matches_played,
-            'matches_won': matches_won,
-            'match_win_rate': match_win_rate
-        })
-
-    return pd.DataFrame(results)
+    return result
 
 def calculate_archetype_game_winrate(matches_df: pd.DataFrame, decks_df: pd.DataFrame) -> pd.DataFrame:
-    results = []
+    # Deduplicate to unique player archetypes per draft + season
+    player_archetypes = decks_df[['season_id', 'draft_id', 'player', 'archetype']].drop_duplicates()
 
-    # Get all unique (season_id, archetype) pairs
-    archetype_season_pairs = decks_df[['season_id', 'archetype']].drop_duplicates()
+    # Merge archetype info for player1 and player2 in matches
+    merged = matches_df.merge(
+        player_archetypes.rename(columns={'player': 'player1', 'archetype': 'archetype_p1'}),
+        on=['season_id', 'draft_id', 'player1'], how='left'
+    ).merge(
+        player_archetypes.rename(columns={'player': 'player2', 'archetype': 'archetype_p2'}),
+        on=['season_id', 'draft_id', 'player2'], how='left'
+    )
 
-    for _, row in archetype_season_pairs.iterrows():
-        season = row['season_id']
-        archetype = row['archetype']
+    # Prepare data for player1 and player2 in long format
+    p1 = merged[['season_id', 'archetype_p1', 'player1Wins', 'player2Wins', 'draws']].rename(
+        columns={'archetype_p1': 'archetype', 'player1Wins': 'wins', 'player2Wins': 'losses'})
+    p2 = merged[['season_id', 'archetype_p2', 'player2Wins', 'player1Wins', 'draws']].rename(
+        columns={'archetype_p2': 'archetype', 'player2Wins': 'wins', 'player1Wins': 'losses'})
 
-        # Get draft_ids where players played this archetype in this season
-        drafts_with_archetype = decks_df[
-            (decks_df['season_id'] == season) & 
-            (decks_df['archetype'] == archetype)
-        ]['draft_id'].unique()
+    combined = pd.concat([p1, p2], ignore_index=True).dropna(subset=['archetype'])
 
-        # Filter matches for these drafts and season
-        relevant_matches = matches_df[
-            (matches_df['season_id'] == season) &
-            (matches_df['draft_id'].isin(drafts_with_archetype))
-        ]
+    # Calculate total games played per row (wins + losses + draws)
+    combined['games_played'] = combined['wins'] + combined['losses'] + combined.get('draws', 0)
 
-        if relevant_matches.empty:
-            continue
+    combined['games_won'] = combined['wins']
 
-        games_played = 0
-        games_won = 0
+    # Aggregate by season and archetype
+    result = combined.groupby(['season_id', 'archetype']).agg(
+        games_played=('games_played', 'sum'),
+        games_won=('games_won', 'sum')
+    ).reset_index()
 
-        # For each match, we determine games played and won by this archetype
-        for _, match in relevant_matches.iterrows():
-            total_games = match['player1Wins'] + match['player2Wins'] + match['draws']
-            games_played += total_games
+    result['game_win_rate'] = result['games_won'] / result['games_played']
 
-            # Determine which archetype player1 and player2 had in this draft
-            p1_arch = decks_df[
-                (decks_df['draft_id'] == match['draft_id']) & 
-                (decks_df['player'] == match['player1'])
-            ]['archetype'].values
-            p2_arch = decks_df[
-                (decks_df['draft_id'] == match['draft_id']) & 
-                (decks_df['player'] == match['player2'])
-            ]['archetype'].values
-
-            # If player1 has this archetype, add their wins to games_won
-            if len(p1_arch) > 0 and p1_arch[0] == archetype:
-                games_won += match['player1Wins']
-
-            # If player2 has this archetype, add their wins to games_won
-            if len(p2_arch) > 0 and p2_arch[0] == archetype:
-                games_won += match['player2Wins']
-
-        game_winrate = games_won / games_played if games_played > 0 else 0
-
-        results.append({
-            'season_id': season,
-            'archetype': archetype,
-            'games_played': games_played,
-            'games_won': games_won,
-            'game_win_rate': game_winrate
-        })
-
-    return pd.DataFrame(results)
+    return result
 
 def calculate_most_picked_card_by_player(decks_df: pd.DataFrame) -> pd.DataFrame:
     """
@@ -454,121 +417,103 @@ def calculate_most_picked_card_by_player(decks_df: pd.DataFrame) -> pd.DataFrame
     return most_picked
 
 
-def calculate_decktype_match_winrate(matches_df: pd.DataFrame, decks_df: pd.DataFrame, decktype_level: str) -> pd.DataFrame:
-    """
-    Calculate match winrate per decktype.
+def calculate_decktype_match_winrate(matches_df, draftedecks_df, decktype_level='decktype'):
+    # Reduce to unique player decktypes per draft
+    player_decktypes = draftedecks_df[['season_id', 'draft_id', 'player', decktype_level]].drop_duplicates()
 
-    Args:
-        matches_df: DataFrame with columns ['draft_id', 'player1', 'player2', 'player1Wins', 'player2Wins', 'season_id', ...].
-        decks_df: DataFrame with columns ['draft_id', 'player', decktype_level].
-        decktype_level: string, column name for decktype level ('decktype ' or '').
-
-    Returns:
-        DataFrame with columns ['season_id', decktype_level, 'matches_played', 'matches_won', 'match_win_rate'].
-    """
-    results = []
-
-    # Prepare decks info for both players
-    p1_decks = decks_df[['draft_id', 'player', decktype_level]].rename(
-        columns={'player': 'player1', decktype_level: 'decktype_p1'}
-    )
-    p2_decks = decks_df[['draft_id', 'player', decktype_level]].rename(
-        columns={'player': 'player2', decktype_level: 'decktype_p2'}
+    # Merge decktype info for both players into matches
+    merged = matches_df.merge(
+        player_decktypes.rename(columns={'player': 'player1', decktype_level: 'decktype_p1'}),
+        on=['season_id', 'draft_id', 'player1'], how='left'
+    ).merge(
+        player_decktypes.rename(columns={'player': 'player2', decktype_level: 'decktype_p2'}),
+        on=['season_id', 'draft_id', 'player2'], how='left'
     )
 
-    # Merge decks info onto matches
-    merged = matches_df.merge(p1_decks, on=['draft_id', 'player1'], how='left')
-    merged = merged.merge(p2_decks, on=['draft_id', 'player2'], how='left')
+    # Determine winner decktype
+    def get_winner_decktype(row):
+        if row['player1Wins'] > row['player2Wins']:
+            return row['decktype_p1']
+        elif row['player2Wins'] > row['player1Wins']:
+            return row['decktype_p2']
+        else:
+            return None
 
-    # Get unique (season, decktype) pairs from both players
-    decktypes_p1 = merged[['season_id', 'decktype_p1']].dropna().rename(columns={'decktype_p1': decktype_level})
-    decktypes_p2 = merged[['season_id', 'decktype_p2']].dropna().rename(columns={'decktype_p2': decktype_level})
-    all_decktypes = pd.concat([decktypes_p1, decktypes_p2]).drop_duplicates()
+    merged['winner_decktype'] = merged.apply(get_winner_decktype, axis=1)
 
-    for _, row in all_decktypes.iterrows():
-        season = row['season_id']
-        decktype = row[decktype_level]
+    # Prepare player-centric data
+    p1 = merged[['season_id', 'draft_id', 'decktype_p1', 'player1Wins', 'player2Wins']].rename(columns={'decktype_p1': decktype_level})
+    p2 = merged[['season_id', 'draft_id', 'decktype_p2', 'player2Wins', 'player1Wins']].rename(
+        columns={'decktype_p2': decktype_level, 'player2Wins': 'player1Wins', 'player1Wins': 'player2Wins'}
+    )
 
-        # Filter matches where either player has this decktype
-        relevant_matches = merged[
-            (merged['season_id'] == season) &
-            ((merged['decktype_p1'] == decktype) | (merged['decktype_p2'] == decktype))
-        ]
+    all_players = pd.concat([p1, p2], ignore_index=True).dropna(subset=[decktype_level])
 
-        if relevant_matches.empty:
-            continue
+    all_players['won'] = all_players['player1Wins'] > all_players['player2Wins']
 
-        matches_played = len(relevant_matches)
-        matches_won = 0
+    # Group and calculate
+    result = all_players.groupby(['season_id', decktype_level]).agg(
+        matches_played=('draft_id', 'count'),
+        matches_won=('won', 'sum')
+    ).reset_index()
 
-        for _, match in relevant_matches.iterrows():
-            # Determine winner decktype
-            if match['player1Wins'] > match['player2Wins']:
-                winner_decktype = match['decktype_p1']
-            elif match['player2Wins'] > match['player1Wins']:
-                winner_decktype = match['decktype_p2']
-            else:
-                winner_decktype = None  # Draw
+    result['match_win_rate'] = result['matches_won'] / result['matches_played']
 
-            if winner_decktype == decktype:
-                matches_won += 1
+    return result
 
-        match_win_rate = matches_won / matches_played if matches_played > 0 else 0
-
-        results.append({
-            'season_id': season,
-            decktype_level: decktype,
-            'matches_played': matches_played,
-            'matches_won': matches_won,
-            'match_win_rate': match_win_rate
-        })
-
-    return pd.DataFrame(results)
 
 def calculate_decktype_game_winrate(matches_df, decks_df, decktype_column):
     """
     Calculate decktype game winrate as games won / games played.
 
     Parameters:
-    - matches_df: DataFrame with columns including player1, player2, player1Wins, player2Wins, draft_id
-    - decks_df: DataFrame with columns including draft_id, player, and the decktype_column
-    - decktype_column: str, column name for the deck type level to use ('decktype ', '', etc.)
+    - matches_df: DataFrame with ['player1', 'player2', 'player1Wins', 'player2Wins', 'draft_id']
+    - decks_df: DataFrame with ['draft_id', 'player', decktype_column]
+    - decktype_column: str, column name for decktype level (e.g., 'decktype')
 
     Returns:
     - DataFrame with decktype and their game winrate.
     """
 
-    # Merge decks info for both players in each match
-    merged1 = matches_df.merge(decks_df, left_on=['draft_id', 'player1'], right_on=['draft_id', 'player'], how='left')
-    merged2 = matches_df.merge(decks_df, left_on=['draft_id', 'player2'], right_on=['draft_id', 'player'], how='left')
+    # First reduce decks_df to unique player-draft decktypes to avoid duplication
+    unique_decks = decks_df[['draft_id', 'player', decktype_column]].drop_duplicates()
 
-    # Calculate games played and games won for player1 decktypes
-    player1_stats = merged1.groupby(decktype_column).agg(
-        games_played=('player1Wins', 'sum'),
-        total_games=('player1Wins', 'count')  # count of matches for that decktype
-    ).reset_index()
-    # But total_games here counts matches, we want total games played = player1Wins + player2Wins for those matches
+    # Merge decktype info onto player1 and player2 in matches
+    merged_p1 = matches_df.merge(
+        unique_decks.rename(columns={'player': 'player1', decktype_column: f'{decktype_column}_p1'}),
+        on=['draft_id', 'player1'],
+        how='left'
+    )
+    merged_p2 = matches_df.merge(
+        unique_decks.rename(columns={'player': 'player2', decktype_column: f'{decktype_column}_p2'}),
+        on=['draft_id', 'player2'],
+        how='left'
+    )
 
-    # Instead, calculate total games played as sum(player1Wins + player2Wins) for player1 decktypes
-    merged1['total_games'] = merged1['player1Wins'] + merged1['player2Wins']
-    player1_stats = merged1.groupby(decktype_column).agg(
+    # Calculate total games played per row (match) = sum of wins by both players
+    merged_p1['total_games'] = merged_p1['player1Wins'] + merged_p1['player2Wins']
+    merged_p2['total_games'] = merged_p2['player1Wins'] + merged_p2['player2Wins']
+
+    # Aggregate games won and games played by decktype for player1 decks
+    p1_stats = merged_p1.groupby(f'{decktype_column}_p1').agg(
         games_won=('player1Wins', 'sum'),
         games_played=('total_games', 'sum')
-    ).reset_index()
+    ).reset_index().rename(columns={f'{decktype_column}_p1': decktype_column})
 
-    # Similarly for player2
-    merged2['total_games'] = merged2['player1Wins'] + merged2['player2Wins']
-    player2_stats = merged2.groupby(decktype_column).agg(
+    # Aggregate games won and games played by decktype for player2 decks
+    p2_stats = merged_p2.groupby(f'{decktype_column}_p2').agg(
         games_won=('player2Wins', 'sum'),
         games_played=('total_games', 'sum')
-    ).reset_index()
+    ).reset_index().rename(columns={f'{decktype_column}_p2': decktype_column})
 
-    # Combine player1 and player2 stats by decktype
-    combined_stats = pd.merge(player1_stats, player2_stats, on=decktype_column, how='outer', suffixes=('_p1', '_p2')).fillna(0)
+    # Combine stats from both players
+    combined = pd.merge(p1_stats, p2_stats, on=decktype_column, how='outer', suffixes=('_p1', '_p2')).fillna(0)
 
-    combined_stats['games_won_total'] = combined_stats['games_won_p1'] + combined_stats['games_won_p2']
-    combined_stats['games_played_total'] = combined_stats['games_played_p1'] + combined_stats['games_played_p2']
+    # Sum wins and games played across both player1 and player2 decks
+    combined['games_won_total'] = combined['games_won_p1'] + combined['games_won_p2']
+    combined['games_played_total'] = combined['games_played_p1'] + combined['games_played_p2']
 
-    combined_stats['game_winrate'] = combined_stats['games_won_total'] / combined_stats['games_played_total']
+    # Calculate winrate
+    combined['game_winrate'] = combined['games_won_total'] / combined['games_played_total']
 
-    return combined_stats[[decktype_column, 'games_won_total', 'games_played_total', 'game_winrate']]
+    return combined[[decktype_column, 'games_won_total', 'games_played_total', 'game_winrate']]
