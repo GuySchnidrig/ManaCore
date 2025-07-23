@@ -82,7 +82,8 @@ def main():
         "scripts/make_standings.py", 
         "scripts/get_latest_cube.py",
         "scripts/get_card_history.py",
-        "scripts/get_elo.py"
+        "scripts/get_elo.py",
+        "scripts/get_stats.py"
     ]
     
     successful_scripts = []
