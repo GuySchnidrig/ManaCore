@@ -12,7 +12,8 @@ Season-4,Combo Mix,16,8,0.5
 Season-4,Combo-Control Lands,16,7,0.4375
 Season-4,Dimir Tempo,4,4,1.0
 Season-4,Domain-Control,20,10,0.5
-Season-4,Draw 7,20,9,0.45
+Season-4,Draw 7,12,5,0.4166666666666667
+Season-4,Draw 7 Combo-Control,8,4,0.5
 Season-4,Esper Control,4,1,0.25
 Season-4,Esper Tempo,4,1,0.25
 Season-4,Flash,4,2,0.5
@@ -26,12 +27,14 @@ Season-4,Jund Midrange,8,5,0.625
 Season-4,Lurrus Combo,8,6,0.75
 Season-4,Lurrus Control,20,10,0.5
 Season-4,Mardu Midrange,4,3,0.75
-Season-4,Nadu,12,5,0.4166666666666667
+Season-4,Nadu Combo-Control,4,2,0.5
+Season-4,Nadu Midrange,8,3,0.375
 Season-4,Orzhov Control,4,4,1.0
 Season-4,Orzhov Tempo,4,2,0.5
 Season-4,Rakdos Aggro,16,7,0.4375
 Season-4,Rakdos Aggro-Combo,4,3,0.75
-Season-4,Reanimator,40,19,0.475
+Season-4,Reanimator,36,17,0.4722222222222222
+Season-4,Reanimator Combo-Control,4,2,0.5
 Season-4,Reanimator-Flash,4,1,0.25
 Season-4,Reanimator-Sneak,8,6,0.75
 Season-4,Red Aggro,8,4,0.5
