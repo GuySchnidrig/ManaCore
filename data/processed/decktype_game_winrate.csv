@@ -1,48 +1,48 @@
-decktype,games_won_total,games_played_total,game_winrate
-Artifacts,27.0,76.0,0.35526315789473684
-Artifacts Control,4.0,17.0,0.23529411764705882
-Azorius Blink,15.0,38.0,0.39473684210526316
-Azorius Control,11.0,25.0,0.44
-Azorius Tempo,6.0,18.0,0.3333333333333333
-Birthing Pod,14.0,20.0,0.7
-Birthing Pod Combo-Control,5.0,11.0,0.45454545454545453
-Boros Aggro,69.0,124.0,0.5564516129032258
-Combo Lands,16.0,31.0,0.5161290322580645
-Combo Mix,20.0,41.0,0.4878048780487805
-Combo-Control Lands,19.0,41.0,0.4634146341463415
-Dimir Tempo,8.0,10.0,0.8
-Domain Control,26.0,50.0,0.52
-Draw 7,14.0,28.0,0.5
-Draw 7 Combo-Control,9.0,18.0,0.5
-Esper Control,2.0,8.0,0.25
-Esper Tempo,4.0,9.0,0.4444444444444444
-Flash,6.0,11.0,0.5454545454545454
-Golgari Midrange,5.0,19.0,0.2631578947368421
-Greenbased Aggro-Combo,33.0,60.0,0.55
-Grixis Control,17.0,31.0,0.5483870967741935
-Gruul Aggro,22.0,36.0,0.6111111111111112
-Izzet Tempo,7.0,11.0,0.6363636363636364
-Jeskai Control,4.0,8.0,0.5
-Jund Midrange,12.0,21.0,0.5714285714285714
-Lurrus Combo-Control,14.0,20.0,0.7
-Lurrus Control,25.0,47.0,0.5319148936170213
-Mardu Midrange,6.0,10.0,0.6
-Nadu Combo-Control,6.0,9.0,0.6666666666666666
-Nadu Midrange,7.0,18.0,0.3888888888888889
-Orzhov Control,8.0,8.0,1.0
-Orzhov Tempo,5.0,9.0,0.5555555555555556
-Rakdos Aggro,17.0,37.0,0.4594594594594595
-Rakdos Aggro-Combo,7.0,8.0,0.875
-Reanimator,38.0,85.0,0.4470588235294118
-Reanimator Combo-Control,5.0,11.0,0.45454545454545453
-Reanimator-Flash,3.0,9.0,0.3333333333333333
-Reanimator-Sneak,12.0,18.0,0.6666666666666666
-Red Aggro,10.0,17.0,0.5882352941176471
-Selesnya Aggro,4.0,10.0,0.4
-Selesnya Midrange,12.0,36.0,0.3333333333333333
-Simic Tempo,7.0,17.0,0.4117647058823529
-Sneak Attack,6.0,10.0,0.6
-Sneak and Flash,6.0,10.0,0.6
-Splinter-Twin,13.0,20.0,0.65
-Storm,27.0,49.0,0.5510204081632653
-White Aggro,15.0,28.0,0.5357142857142857
+season_id,decktype,games_won,games_played,game_winrate
+Season-4,Artifacts,27.0,81.0,0.3333333333333333
+Season-4,Artifacts Control,4.0,17.0,0.23529411764705882
+Season-4,Azorius Blink,15.0,39.0,0.38461538461538464
+Season-4,Azorius Control,11.0,27.0,0.4074074074074074
+Season-4,Azorius Tempo,6.0,18.0,0.3333333333333333
+Season-4,Birthing Pod,14.0,20.0,0.7
+Season-4,Birthing Pod Combo-Control,5.0,11.0,0.45454545454545453
+Season-4,Boros Aggro,69.0,130.0,0.5307692307692308
+Season-4,Combo Lands,16.0,31.0,0.5161290322580645
+Season-4,Combo Mix,20.0,41.0,0.4878048780487805
+Season-4,Combo-Control Lands,19.0,41.0,0.4634146341463415
+Season-4,Dimir Tempo,8.0,10.0,0.8
+Season-4,Domain Control,26.0,51.0,0.5098039215686274
+Season-4,Draw 7,14.0,30.0,0.4666666666666667
+Season-4,Draw 7 Combo-Control,9.0,18.0,0.5
+Season-4,Esper Control,2.0,8.0,0.25
+Season-4,Esper Tempo,4.0,10.0,0.4
+Season-4,Flash,6.0,11.0,0.5454545454545454
+Season-4,Golgari Midrange,5.0,19.0,0.2631578947368421
+Season-4,Greenbased Aggro-Combo,33.0,63.0,0.5238095238095238
+Season-4,Grixis Control,17.0,31.0,0.5483870967741935
+Season-4,Gruul Aggro,22.0,37.0,0.5945945945945946
+Season-4,Izzet Tempo,7.0,11.0,0.6363636363636364
+Season-4,Jeskai Control,4.0,8.0,0.5
+Season-4,Jund Midrange,12.0,21.0,0.5714285714285714
+Season-4,Lurrus Combo-Control,14.0,21.0,0.6666666666666666
+Season-4,Lurrus Control,25.0,47.0,0.5319148936170213
+Season-4,Mardu Midrange,6.0,10.0,0.6
+Season-4,Nadu Combo-Control,6.0,10.0,0.6
+Season-4,Nadu Midrange,7.0,19.0,0.3684210526315789
+Season-4,Orzhov Control,8.0,8.0,1.0
+Season-4,Orzhov Tempo,5.0,10.0,0.5
+Season-4,Rakdos Aggro,17.0,38.0,0.4473684210526316
+Season-4,Rakdos Aggro-Combo,7.0,9.0,0.7777777777777778
+Season-4,Reanimator,38.0,86.0,0.4418604651162791
+Season-4,Reanimator Combo-Control,5.0,11.0,0.45454545454545453
+Season-4,Reanimator-Flash,3.0,10.0,0.3
+Season-4,Reanimator-Sneak,12.0,18.0,0.6666666666666666
+Season-4,Red Aggro,10.0,18.0,0.5555555555555556
+Season-4,Selesnya Aggro,4.0,10.0,0.4
+Season-4,Selesnya Midrange,12.0,38.0,0.3157894736842105
+Season-4,Simic Tempo,7.0,18.0,0.3888888888888889
+Season-4,Sneak Attack,6.0,10.0,0.6
+Season-4,Sneak and Flash,6.0,10.0,0.6
+Season-4,Splinter-Twin,13.0,20.0,0.65
+Season-4,Storm,27.0,50.0,0.54
+Season-4,White Aggro,15.0,29.0,0.5172413793103449
