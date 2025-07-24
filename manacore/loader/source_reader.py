@@ -90,7 +90,15 @@ def save_dataframes_to_csv(drafted_df: pd.DataFrame, matches_df: pd.DataFrame, o
     output_dir.mkdir(parents=True, exist_ok=True)
 
     drafted_out = drafted_df[["season_id", "draft_id", "player", "archetype", "decktype", "scryfallId"]]
-    matches_out = matches_df[["season_id", "draft_id", "player1", "player2", "player1Wins", "player2Wins", "draws", "round"]]
+    
+    matches_df['match_id'] = (
+    matches_df['season_id'].astype(str) + '_' +
+    matches_df['draft_id'].astype(str) + '_' +
+    matches_df['round'].astype(str) + '_' +
+    matches_df['player1'].astype(str) + '_' +
+    matches_df['player2'].astype(str))
+
+    matches_out = matches_df[["season_id", "draft_id","match_id", "player1", "player2", "player1Wins", "player2Wins", "draws", "round"]]
 
     drafted_path = output_dir / "drafted_decks.csv"
     matches_path = output_dir / "matches.csv"

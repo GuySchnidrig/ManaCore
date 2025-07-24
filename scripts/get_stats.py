@@ -56,7 +56,15 @@ def process_and_save_all_outputs(base_path: str):
     print("Calculating archetype game winrate...")
     archetype_game_winrate_df = calculate_archetype_game_winrate(matches_df, decks_df)
     print("Archetype game winrate calculated.")
+
+    print("Calculating per-player archetype winrates...")
+    player_archetype_winrates_df = calculate_player_archetype_game_winrate(matches_df, decks_df)
+    print("Player-archetype winrates calculated.")
     
+    print("Calculating per-player decktype winrates...")
+    player_decktype_winrates_df = calculate_player_decktype_game_winrate(matches_df, decks_df)
+    print("Player-decktype winrates calculated.")
+
     print("Calculating most picked card by player...")
     most_picked_card_df = calculate_most_picked_card_by_player(decks_df)
     print("Most picked card calculated.")
@@ -68,6 +76,14 @@ def process_and_save_all_outputs(base_path: str):
     print("Calculating decktype game winrate...")
     decktype_game_winrate_df = calculate_decktype_game_winrate(matches_df, decks_df, 'decktype')
     print("Decktype game winrate calculated.")
+    
+    print("Calculating player game and match winrate...")
+    player_winrate_stats = calculate_player_game_and_match_stats(matches_df)
+    print("Player game and match winrate calculated.")
+
+    print("Calculating player vs player winrate...")
+    vs_player_winrate_stats = calculate_vs_player_stats(matches_df)
+    print("Player vs player winrate calculated.")
     
     # Saving results
     print("Saving combined winrates per season...")
@@ -93,6 +109,14 @@ def process_and_save_all_outputs(base_path: str):
     print("Saving archetype game winrate...")
     archetype_game_winrate_df.to_csv(os.path.join(processed_dir, "archetype_game_winrate.csv"), index=False)
     print("Saved archetype game winrate.")
+
+    print("Saving player archetype winrates...")
+    player_archetype_winrates_df.to_csv(os.path.join(processed_dir, "player_archetype_winrates.csv"), index=False)
+    print("Saved player archetype winrates.")
+
+    print("Saving player decktype winrates...")
+    player_decktype_winrates_df.to_csv(os.path.join(processed_dir, "player_decktype_winrates.csv"), index=False)
+    print("Saved player decktype winrates.")
     
     print("Saving most picked card by player...")
     most_picked_card_df.to_csv(os.path.join(processed_dir, "most_picked_card_by_player.csv"), index=False)
@@ -105,6 +129,14 @@ def process_and_save_all_outputs(base_path: str):
     print("Saving decktype game winrate...")
     decktype_game_winrate_df.to_csv(os.path.join(processed_dir, "decktype_game_winrate.csv"), index=False)
     print("Saved decktype game winrate.")
+
+    print("Saving player game and match winrate...")
+    player_winrate_stats.to_csv(os.path.join(processed_dir, "player_game_and_match_winrate.csv"), index=False)
+    print("Saved player game and match winrate.")
+
+    print("Saving player vs player winrate...")
+    vs_player_winrate_stats.to_csv(os.path.join(processed_dir, "vs_player_game_and_match_winrate.csv"), index=False)
+    print("Saved player vs player winrate.")
     
     print(f"All outputs saved to {processed_dir}")
 

@@ -1,0 +1,39 @@
+import os
+import pandas as pd
+from datetime import datetime
+from collections import defaultdict
+
+from manacore.standings.standings_calculator import load_match_data
+from manacore.statistics.statistics_calculator import *
+
+processed_dir = os.path.join("data/processed")
+# Loading data
+standings_df = load_standings_data(processed_dir)
+decks_df = load_drafted_decks(processed_dir)
+cube_history_df = load_cube_history(processed_dir)
+drafts_df = load_drafts_with_timestamp(processed_dir)
+matches_df = load_match_data(processed_dir)
+mainboard_df = load_mainboard(processed_dir)
+
+availability_map = build_card_availability_map(drafts_df, mainboard_df, cube_history_df)
+
+# Test player-archetype game winrate
+player_archetype_winrate = calculate_player_archetype_game_winrate(matches_df, decks_df)
+print("Player-Archetype Game Winrate Sample:")
+print(player_archetype_winrate.head())
+
+# Test player-decktype game winrate
+player_decktype_winrate = calculate_player_decktype_game_winrate(matches_df, decks_df)
+print("\nPlayer-Decktype Game Winrate Sample:")
+print(player_decktype_winrate.head())
+
+
+# Test player overall game and match winrates
+player_winrate_stats = calculate_player_game_and_match_stats(matches_df)
+print("\nPlayer Game and Match Winrate Sample:")
+print(player_winrate_stats.head())
+
+# Test vs-player stats
+vs_player_winrate_stats = calculate_vs_player_stats(matches_df)
+print("\nPlayer vs Player Winrate Sample:")
+print(vs_player_winrate_stats.head())

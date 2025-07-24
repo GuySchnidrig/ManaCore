@@ -36,3 +36,6 @@ print(match_winrates)
 game_winrates = calculate_card_game_winrate_per_season(matches_df, decks_df, availability_map, drafts_df)
 print("\nGame win rate sample:")
 print(game_winrates)
+
+
+    

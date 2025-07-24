@@ -113,6 +113,7 @@ def process_matches(csv_file: str, output_file: str):
 
         for row in reader:
             draft_id = row['draft_id']
+            match_id = row.get('match_id', '')  # Get match_id or empty string if missing
             p1, p2 = row['player1'], row['player2']
             p1wins, p2wins, draws = int(row['player1Wins']), int(row['player2Wins']), int(row['draws'])
 
@@ -156,8 +157,8 @@ def process_matches(csv_file: str, output_file: str):
             last_elo_by_player[p1], last_elo_by_player[p2] = final_r1, final_r2
 
             elo_progress.extend([
-                (season_id, draft_id, p1, matches_played_per_draft[(draft_id, p1)], final_r1, scaled_change_p1),
-                (season_id, draft_id, p2, matches_played_per_draft[(draft_id, p2)], final_r2, scaled_change_p2),
+                (season_id, draft_id, match_id, p1, matches_played_per_draft[(draft_id, p1)], final_r1, scaled_change_p1),
+                (season_id, draft_id, match_id, p2, matches_played_per_draft[(draft_id, p2)], final_r2, scaled_change_p2),
             ])
 
         append_inactive_players_progress(
@@ -166,7 +167,7 @@ def process_matches(csv_file: str, output_file: str):
 
     with open(output_file, 'w', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(['season_id', 'draft_id', 'player_name', 'matches_played', 'elo', 'rating_change'])
+        writer.writerow(['season_id', 'draft_id', 'match_id', 'player_name', 'matches_played', 'elo', 'rating_change'])
         writer.writerows(elo_progress)
 
     print(f"Wrote {len(elo_progress)} rows to {output_file}")
