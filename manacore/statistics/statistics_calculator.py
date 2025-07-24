@@ -47,170 +47,85 @@ def load_drafts_with_timestamp(base_path: str) -> pd.DataFrame:
     return df
 
 
-def calculate_combined_winrates_per_season(matches_df: pd.DataFrame, decks_df: pd.DataFrame) -> pd.DataFrame:
-    results = []
-
-    # All (player, draft_id, scryfallId) rows
-    grouped_decks = decks_df[['player', 'draft_id', 'scryfallId']].drop_duplicates()
-    player_card_combos = grouped_decks[['player', 'scryfallId']].drop_duplicates()
-
-    for _, row in player_card_combos.iterrows():
-        player = row['player']
-        card = row['scryfallId']
-
-        # Drafts where this player drafted this card
-        player_drafts_with_card = grouped_decks[
-            (grouped_decks['player'] == player) & 
-            (grouped_decks['scryfallId'] == card)
-        ]['draft_id'].unique()
-
-        # Count how many drafts this card was used in by the player
-        num_drafts_with_card = len(player_drafts_with_card)
-
-        # Filter matches only from those drafts AND where player was involved
-        matches_with_card = matches_df[
-            (matches_df['draft_id'].isin(player_drafts_with_card)) &
-            ((matches_df['player1'] == player) | (matches_df['player2'] == player))
-        ]
-
-        if matches_with_card.empty:
-            continue
-
-        # Group matches by season
-        for season_id, season_matches in matches_with_card.groupby('season_id'):
-            player_matches = season_matches[
-                (season_matches['player1'] == player) | (season_matches['player2'] == player)
-            ]
-            matches_played = len(player_matches)
-
-            # Match wins
-            player1_wins = (player_matches['player1'] == player) & (player_matches['player1Wins'] > player_matches['player2Wins'])
-            player2_wins = (player_matches['player2'] == player) & (player_matches['player2Wins'] > player_matches['player1Wins'])
-            matches_won = (player1_wins | player2_wins).sum()
-            match_win_rate = matches_won / matches_played if matches_played > 0 else 0.0
-
-            # Game stats
-            games_played = (
-                player_matches['player1Wins'] +
-                player_matches['player2Wins'] +
-                player_matches['draws']
-            ).sum()
-
-            games_won = (
-                player_matches.loc[player_matches['player1'] == player, 'player1Wins'].sum() +
-                player_matches.loc[player_matches['player2'] == player, 'player2Wins'].sum()
-            )
-
-            game_win_rate = games_won / games_played if games_played > 0 else 0.0
-
-            results.append({
-                'player': player,
-                'scryfallId': card,
-                'season_id': season_id,
-                'num_drafts_with_card': num_drafts_with_card,
-                'matches_played': matches_played,
-                'matches_won': matches_won,
-                'match_win_rate': match_win_rate,
-                'games_played': games_played,
-                'games_won': games_won,
-                'game_win_rate': game_win_rate
-            })
-
-    return pd.DataFrame(results)
-
-
-def build_card_availability_map(cube_history_df, drafts_df, mainboard_df):
-    # Convert timestamps to datetime if needed
-    
-    cube_history_df = cube_history_df.sort_values('timestamp', ascending=False).reset_index(drop=True)
-    drafts_df = drafts_df.sort_values('timestamp', ascending=False).reset_index(drop=True)
-    mainboard_df = mainboard_df.sort_values('timestamp').reset_index(drop=True)
-
+def build_card_availability_map(drafts_df,mainboard_df, cube_history_df):
     availability_map = {}
 
-    for season, mainboard_cards in mainboard_df.groupby('season_id'):
-        # Initialize available cards from mainboard snapshot at mainboard timestamp
-        mainboard_timestamp = mainboard_cards['timestamp'].iloc[0]
-        available_cards = set(mainboard_cards['scryfallId'])
+    # Group mainboard and history by season
+    for season in mainboard_df['season_id'].unique():
+        # Start with cards from mainboard snapshot
+        mainboard_cards = mainboard_df[mainboard_df['season_id'] == season]
+        cards_from_mainboard = set(mainboard_cards['scryfallId'])
 
-        # Filter changes and drafts for this season
+        # Add any card that appeared in cube history for this season
         season_changes = cube_history_df[cube_history_df['season_id'] == season]
-        season_drafts = drafts_df[drafts_df['season_id'] == season]
+        cards_from_changes = set(season_changes['scryfallId'])
 
-        idx_change = 0
-        availability_map[season] = {}
+        # Union of both sources
+        all_cards = cards_from_mainboard.union(cards_from_changes)
 
-        # Sort drafts descending (latest draft first)
-        season_drafts = season_drafts.sort_values('timestamp', ascending=False).reset_index(drop=True)
-
-        for _, draft in season_drafts.iterrows():
-            draft_time = draft['timestamp']
-            draft_id = draft['draft_id']
-
-            # Move idx_change through changes happening after this draft but before mainboard snapshot
-            while idx_change < len(season_changes) and season_changes.iloc[idx_change]['timestamp'] > draft_time:
-                change = season_changes.iloc[idx_change]
-                card_id = change['scryfallId']
-                if change['change_type'] == 'adds':
-                    # Card was added later, so before that it was NOT available — remove it now going backward
-                    available_cards.discard(card_id)
-                elif change['change_type'] == 'removes':
-                    # Card was removed later, so before that it WAS available — add it back going backward
-                    available_cards.add(card_id)
-                idx_change += 1
-
-            availability_map[season][draft_id] = available_cards.copy()
+        availability_map[season] = all_cards
 
     return availability_map
 
 def calculate_card_mainboard_rate_per_season(decks_df: pd.DataFrame, drafts_df: pd.DataFrame, card_availability_map: dict) -> pd.DataFrame:
+    # Count how many drafts each card appeared in
     card_drafts = decks_df.groupby(['season_id', 'draft_id', 'scryfallId']).size().reset_index().drop(0, axis=1)
     drafts_per_season = drafts_df.groupby('season_id')['draft_id'].nunique().reset_index()
     drafts_per_season.rename(columns={'draft_id': 'total_drafts_in_season'}, inplace=True)
 
-    results = defaultdict(lambda: {'drafts_with_card': 0, 'total_drafts_in_season': 0})
+    # Count drafts with card
+    drafts_with_card = card_drafts.groupby(['season_id', 'scryfallId'])['draft_id'].nunique().reset_index()
+    drafts_with_card.rename(columns={'draft_id': 'drafts_with_card'}, inplace=True)
 
-    for _, row in card_drafts.iterrows():
-        season = row['season_id']
-        draft_id = row['draft_id']
-        card = row['scryfallId']
+    # Prepare result rows
+    results = []
 
-        if season not in card_availability_map or draft_id not in card_availability_map[season]:
-            continue
-        if card not in card_availability_map[season][draft_id]:
-            continue
+    for season, total_row in drafts_per_season.iterrows():
+        season_id = total_row['season_id']
+        total_drafts = total_row['total_drafts_in_season']
 
-        key = (season, card)
-        results[key]['drafts_with_card'] += 1
+        # All cards available in this season
+        all_cards = card_availability_map.get(season_id, set())
 
-    for (season, card), data in results.items():
-        total = drafts_per_season.loc[drafts_per_season['season_id'] == season, 'total_drafts_in_season']
-        data['total_drafts_in_season'] = int(total.values[0]) if not total.empty else 0
-        data['season_id'] = season
-        data['scryfallId'] = card
-        data['mainboard_rate'] = data['drafts_with_card'] / data['total_drafts_in_season'] if data['total_drafts_in_season'] > 0 else 0
+        # Filter drafts_with_card for this season
+        season_cards = drafts_with_card[drafts_with_card['season_id'] == season_id].set_index('scryfallId')
 
-    df = pd.DataFrame(results.values())
+        for card in all_cards:
+            drafts_count = 0
+            if card in season_cards.index:
+                drafts_count = season_cards.loc[card, 'drafts_with_card']
+            mainboard_rate = drafts_count / total_drafts if total_drafts > 0 else 0
+
+            results.append({
+                'season_id': season_id,
+                'scryfallId': card,
+                'drafts_with_card': drafts_count,
+                'total_drafts_in_season': total_drafts,
+                'mainboard_rate': mainboard_rate
+            })
+
+    df = pd.DataFrame(results)
     return df[['season_id', 'scryfallId', 'drafts_with_card', 'total_drafts_in_season', 'mainboard_rate']]
 
-
-def calculate_card_match_winrate_per_season(matches_df, decks_df, card_availability_map):
+def calculate_card_match_winrate_per_season(matches_df, decks_df, card_availability_map, drafts_df):
     # Deduplicate decks to unique cards per player per draft per season
     card_drafts = decks_df[['season_id', 'draft_id', 'player', 'scryfallId']].drop_duplicates()
 
-    # Create DataFrame from card_availability_map for fast lookup
-    # Assuming card_availability_map structure: {season_id: {draft_id: set(cards)}}
+    # Get only seasons present in drafts_df
+    valid_seasons = set(drafts_df['season_id'].unique())
+
+    # Create availability DataFrame from card_availability_map but only for valid seasons
     availability_rows = []
-    for season, drafts in card_availability_map.items():
-        for draft_id, cards in drafts.items():
+    for season, cards in card_availability_map.items():
+        if season in valid_seasons:
             for card in cards:
-                availability_rows.append({'season_id': season, 'draft_id': draft_id, 'scryfallId': card})
+                availability_rows.append({'season_id': season, 'scryfallId': card})
     availability_df = pd.DataFrame(availability_rows)
 
-    # Join card_drafts with availability to keep only cards available in that draft & season
+    # Join card_drafts with availability to keep only cards available in that season
     valid_card_drafts = card_drafts.merge(
         availability_df,
-        on=['season_id', 'draft_id', 'scryfallId'],
+        on=['season_id', 'scryfallId'],
         how='inner'
     )
 
@@ -247,34 +162,45 @@ def calculate_card_match_winrate_per_season(matches_df, decks_df, card_availabil
     all_players = pd.concat([p1_long, p2_long], ignore_index=True)
 
     # Aggregate by season and card
-    result = all_players.groupby(['season_id', 'scryfallId']).agg(
+    aggregated = all_players.groupby(['season_id', 'scryfallId']).agg(
         matches_played=('matches_played', 'sum'),
         matches_won=('matches_won', 'sum')
     ).reset_index()
 
-    result['match_win_rate'] = result['matches_won'] / result['matches_played']
+    # Merge with full availability to include cards with zero matches played
+    full_df = availability_df.merge(
+        aggregated,
+        on=['season_id', 'scryfallId'],
+        how='left'
+    ).fillna({'matches_played': 0, 'matches_won': 0})
 
-    return result
+    full_df['match_win_rate'] = full_df.apply(
+        lambda row: row['matches_won'] / row['matches_played'] if row['matches_played'] > 0 else 0,
+        axis=1
+    )
+
+    return full_df
 
 
-
-
-def calculate_card_game_winrate_per_season(matches_df: pd.DataFrame, decks_df: pd.DataFrame, card_availability_map: dict) -> pd.DataFrame:
+def calculate_card_game_winrate_per_season(matches_df, decks_df, card_availability_map, drafts_df):
     # Deduplicate decks to unique cards per player per draft per season
     card_drafts = decks_df[['season_id', 'draft_id', 'player', 'scryfallId']].drop_duplicates()
 
-    # Create availability DataFrame from card_availability_map
+    # Get only seasons present in drafts_df
+    valid_seasons = set(drafts_df['season_id'].unique())
+
+    # Create availability DataFrame from card_availability_map but only for valid seasons
     availability_rows = []
-    for season, drafts in card_availability_map.items():
-        for draft_id, cards in drafts.items():
+    for season, cards in card_availability_map.items():
+        if season in valid_seasons:
             for card in cards:
-                availability_rows.append({'season_id': season, 'draft_id': draft_id, 'scryfallId': card})
+                availability_rows.append({'season_id': season, 'scryfallId': card})
     availability_df = pd.DataFrame(availability_rows)
 
     # Filter card drafts by availability
     valid_card_drafts = card_drafts.merge(
         availability_df,
-        on=['season_id', 'draft_id', 'scryfallId'],
+        on=['season_id', 'scryfallId'],
         how='inner'
     )
 
@@ -314,14 +240,24 @@ def calculate_card_game_winrate_per_season(matches_df: pd.DataFrame, decks_df: p
     all_players = pd.concat([p1_long, p2_long], ignore_index=True)
 
     # Aggregate by season and card to calculate total games played and games won
-    result = all_players.groupby(['season_id', 'scryfallId']).agg(
+    aggregated = all_players.groupby(['season_id', 'scryfallId']).agg(
         games_played=('games_played', 'sum'),
         games_won=('games_won', 'sum')
     ).reset_index()
 
-    result['game_win_rate'] = result['games_won'] / result['games_played']
+    # Merge with full availability to include cards with zero games played
+    full_df = availability_df.merge(
+        aggregated,
+        on=['season_id', 'scryfallId'],
+        how='left'
+    ).fillna({'games_played': 0, 'games_won': 0})
 
-    return result
+    full_df['game_win_rate'] = full_df.apply(
+        lambda row: row['games_won'] / row['games_played'] if row['games_played'] > 0 else 0,
+        axis=1
+    )
+
+    return full_df
 
 
 
@@ -517,3 +453,75 @@ def calculate_decktype_game_winrate(matches_df, decks_df, decktype_column):
     combined['game_winrate'] = combined['games_won_total'] / combined['games_played_total']
 
     return combined[[decktype_column, 'games_won_total', 'games_played_total', 'game_winrate']]
+
+
+def calculate_combined_winrates_per_season(matches_df: pd.DataFrame, decks_df: pd.DataFrame) -> pd.DataFrame:
+    results = []
+
+    # All (player, draft_id, scryfallId) rows
+    grouped_decks = decks_df[['player', 'draft_id', 'scryfallId']].drop_duplicates()
+    player_card_combos = grouped_decks[['player', 'scryfallId']].drop_duplicates()
+
+    for _, row in player_card_combos.iterrows():
+        player = row['player']
+        card = row['scryfallId']
+
+        # Drafts where this player drafted this card
+        player_drafts_with_card = grouped_decks[
+            (grouped_decks['player'] == player) & 
+            (grouped_decks['scryfallId'] == card)
+        ]['draft_id'].unique()
+
+        # Count how many drafts this card was used in by the player
+        num_drafts_with_card = len(player_drafts_with_card)
+
+        # Filter matches only from those drafts AND where player was involved
+        matches_with_card = matches_df[
+            (matches_df['draft_id'].isin(player_drafts_with_card)) &
+            ((matches_df['player1'] == player) | (matches_df['player2'] == player))
+        ]
+
+        if matches_with_card.empty:
+            continue
+
+        # Group matches by season
+        for season_id, season_matches in matches_with_card.groupby('season_id'):
+            player_matches = season_matches[
+                (season_matches['player1'] == player) | (season_matches['player2'] == player)
+            ]
+            matches_played = len(player_matches)
+
+            # Match wins
+            player1_wins = (player_matches['player1'] == player) & (player_matches['player1Wins'] > player_matches['player2Wins'])
+            player2_wins = (player_matches['player2'] == player) & (player_matches['player2Wins'] > player_matches['player1Wins'])
+            matches_won = (player1_wins | player2_wins).sum()
+            match_win_rate = matches_won / matches_played if matches_played > 0 else 0.0
+
+            # Game stats
+            games_played = (
+                player_matches['player1Wins'] +
+                player_matches['player2Wins'] +
+                player_matches['draws']
+            ).sum()
+
+            games_won = (
+                player_matches.loc[player_matches['player1'] == player, 'player1Wins'].sum() +
+                player_matches.loc[player_matches['player2'] == player, 'player2Wins'].sum()
+            )
+
+            game_win_rate = games_won / games_played if games_played > 0 else 0.0
+
+            results.append({
+                'player': player,
+                'scryfallId': card,
+                'season_id': season_id,
+                'num_drafts_with_card': num_drafts_with_card,
+                'matches_played': matches_played,
+                'matches_won': matches_won,
+                'match_win_rate': match_win_rate,
+                'games_played': games_played,
+                'games_won': games_won,
+                'game_win_rate': game_win_rate
+            })
+
+    return pd.DataFrame(results)

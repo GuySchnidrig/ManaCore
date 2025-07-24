@@ -34,19 +34,19 @@ def process_and_save_all_outputs(base_path: str):
     
     print("Building card availability map...")
     mainboard_df = load_mainboard(processed_dir)
-    card_availability_map = build_card_availability_map(cube_history_df, drafts_df, mainboard_df, )
+    availability_map = build_card_availability_map(drafts_df, mainboard_df, cube_history_df)
     print("Card availability map built.")
     
     print("Calculating card mainboard rate per season...")
-    mainboard_rate_df = calculate_card_mainboard_rate_per_season(decks_df, drafts_df, card_availability_map)
+    mainboard_rate_df = calculate_card_mainboard_rate_per_season(decks_df, drafts_df, availability_map)
     print("Card mainboard rate calculated.")
     
     print("Calculating card match winrate per season...")
-    card_match_winrate_df = calculate_card_match_winrate_per_season(matches_df, decks_df, card_availability_map)
+    card_match_winrate_df = calculate_card_match_winrate_per_season(matches_df, decks_df, availability_map, drafts_df)
     print("Card match winrate calculated.")
     
     print("Calculating card game winrate per season...")
-    card_game_winrate_df = calculate_card_game_winrate_per_season(matches_df, decks_df, card_availability_map)
+    card_game_winrate_df = calculate_card_game_winrate_per_season(matches_df, decks_df, availability_map, drafts_df)
     print("Card game winrate calculated.")
     
     print("Calculating archetype match winrate...")
