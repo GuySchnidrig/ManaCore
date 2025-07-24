@@ -1,6 +1,6 @@
 season_id,decktype,matches_played,matches_won,match_win_rate
-Season-4,Artifacts,36,7,0.19444444444444445
-Season-4,Azorius Artifacts,4,1,0.25
+Season-4,Artifacts,32,7,0.21875
+Season-4,Artifacts Control,8,1,0.125
 Season-4,Azorius Blink,16,5,0.3125
 Season-4,Azorius Control,12,4,0.3333333333333333
 Season-4,Azorius Tempo,8,2,0.25
