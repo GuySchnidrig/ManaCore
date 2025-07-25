@@ -1,111 +1,111 @@
-season_id,player,decktype,matches_played,matches_won,match_win_rate,games_played,games_won,game_win_rate
-Season-4,Andrin,Artifacts,12,3,0.25,31,11,0.3548387096774194
-Season-4,Andrin,Boros Aggro,4,3,0.75,9,6,0.6666666666666666
-Season-4,Andrin,Domain Control,4,2,0.5,11,6,0.5454545454545454
-Season-4,Andrin,Grixis Control,4,2,0.5,11,6,0.5454545454545454
-Season-4,Andrin,Rakdos Aggro,4,2,0.5,10,4,0.4
-Season-4,Andrin,Rakdos Aggro-Combo,4,3,0.75,9,7,0.7777777777777778
-Season-4,Andrin,Reanimator,8,5,0.625,19,10,0.5263157894736842
-Season-4,Andrin,Simic Tempo,4,2,0.5,10,5,0.5
-Season-4,Dimlas,Birthing Pod,8,7,0.875,20,14,0.7
-Season-4,Dimlas,Boros Aggro,4,3,0.75,11,7,0.6363636363636364
-Season-4,Dimlas,Combo Lands,4,3,0.75,10,7,0.7
-Season-4,Dimlas,Domain Control,4,4,1.0,11,8,0.7272727272727273
-Season-4,Dimlas,Lurrus Control,8,5,0.625,19,12,0.631578947368421
-Season-4,Dimlas,Orzhov Control,4,4,1.0,8,8,1.0
-Season-4,Dimlas,Reanimator-Sneak,4,3,0.75,9,6,0.6666666666666666
-Season-4,Dimlas,Splinter-Twin,4,3,0.75,11,7,0.6363636363636364
-Season-4,Dimlas,Storm,4,4,1.0,9,8,0.8888888888888888
-Season-4,Dimlas,White Aggro,4,2,0.5,10,6,0.6
-Season-4,Elie,Artifacts,4,1,0.25,9,3,0.3333333333333333
-Season-4,Filipe,Golgari Midrange,4,0,0.0,9,1,0.1111111111111111
-Season-4,Guy,Draw 7,4,2,0.5,11,6,0.5454545454545454
-Season-4,Guy,Draw 7 Combo-Control,4,3,0.75,9,6,0.6666666666666666
-Season-4,Guy,Jeskai Control,4,2,0.5,8,4,0.5
-Season-4,Guy,Mardu Midrange,4,3,0.75,10,6,0.6
-Season-4,Guy,Orzhov Tempo,4,2,0.5,10,5,0.5
-Season-4,Guy,Reanimator,4,1,0.25,10,3,0.3
-Season-4,Guy,Splinter-Twin,4,3,0.75,9,6,0.6666666666666666
-Season-4,Ivo,Boros Aggro,8,3,0.375,21,9,0.42857142857142855
-Season-4,Ivo,Combo-Control Lands,4,3,0.75,9,6,0.6666666666666666
-Season-4,Ivo,Greenbased Aggro-Combo,4,2,0.5,11,6,0.5454545454545454
-Season-4,Ivo,Lurrus Combo-Control,4,4,1.0,11,8,0.7272727272727273
-Season-4,Ivo,Storm,8,5,0.625,21,13,0.6190476190476191
-Season-4,Joel K.,Artifacts,12,1,0.08333333333333333,32,9,0.28125
-Season-4,Joel K.,Azorius Blink,4,1,0.25,8,2,0.25
-Season-4,Joel K.,Azorius Tempo,4,0,0.0,9,1,0.1111111111111111
-Season-4,Joel K.,Greenbased Aggro-Combo,4,2,0.5,10,5,0.5
-Season-4,Joel K.,Rakdos Aggro,4,0,0.0,9,1,0.1111111111111111
-Season-4,Joel R.,Grixis Control,4,3,0.75,11,7,0.6363636363636364
-Season-4,Joel R.,Selesnya Aggro,4,2,0.5,10,4,0.4
-Season-4,Luca,Combo Mix,4,3,0.75,10,6,0.6
-Season-4,Lukas Stalder,Azorius Blink,4,2,0.5,11,6,0.5454545454545454
-Season-4,Lukas Stalder,Boros Aggro,4,3,0.75,10,7,0.7
-Season-4,Lukas Stalder,Domain Control,4,0,0.0,9,1,0.1111111111111111
-Season-4,Lukas Stalder,Draw 7 Combo-Control,4,1,0.25,9,3,0.3333333333333333
-Season-4,Lukas Stalder,Lurrus Control,4,2,0.5,7,4,0.5714285714285714
-Season-4,Lukas Stalder,Rakdos Aggro,4,2,0.5,9,5,0.5555555555555556
-Season-4,Lukas Stalder,Reanimator,8,5,0.625,21,12,0.5714285714285714
-Season-4,Lukas Stalder,Reanimator Combo-Control,4,2,0.5,11,5,0.45454545454545453
-Season-4,Lukas Stalder,Sneak and Flash,4,2,0.5,10,6,0.6
-Season-4,Lukas Stalder,White Aggro,4,2,0.5,9,5,0.5555555555555556
-Season-4,Manuel,Boros Aggro,16,9,0.5625,41,24,0.5853658536585366
-Season-4,Manuel,Combo Lands,4,1,0.25,11,4,0.36363636363636365
-Season-4,Manuel,Combo-Control Lands,4,1,0.25,12,5,0.4166666666666667
-Season-4,Manuel,Draw 7,4,2,0.5,10,5,0.5
-Season-4,Manuel,Lurrus Control,4,1,0.25,10,3,0.3
-Season-4,Manuel,Reanimator-Flash,4,1,0.25,10,3,0.3
-Season-4,Manuel,Storm,8,1,0.125,20,6,0.3
-Season-4,Matthias,Artifacts Control,4,0,0.0,10,2,0.2
-Season-4,Matthias,Azorius Control,4,1,0.25,10,4,0.4
-Season-4,Matthias,Jund Midrange,4,3,0.75,11,7,0.6363636363636364
-Season-4,Matthias,Rakdos Aggro,4,3,0.75,10,7,0.7
-Season-4,Matthias,Sneak Attack,4,2,0.5,10,6,0.6
-Season-4,Myri,Combo Lands,4,2,0.5,10,5,0.5
-Season-4,Myri,Golgari Midrange,4,1,0.25,10,4,0.4
-Season-4,Myri,Gruul Aggro,4,2,0.5,9,5,0.5555555555555556
-Season-4,Myri,Simic Tempo,4,1,0.25,8,2,0.25
-Season-4,Noe T.,Combo Mix,4,2,0.5,10,5,0.5
-Season-4,Noe T.,Combo-Control Lands,4,2,0.5,11,5,0.45454545454545453
-Season-4,Noe T.,Gruul Aggro,4,3,0.75,11,7,0.6363636363636364
-Season-4,Noe T.,Nadu Midrange,8,3,0.375,19,7,0.3684210526315789
-Season-4,Noe T.,Selesnya Midrange,4,0,0.0,9,1,0.1111111111111111
-Season-4,Noe T.,White Aggro,4,1,0.25,10,4,0.4
-Season-4,Pali,Boros Aggro,4,0,0.0,10,2,0.2
-Season-4,Pali,Lurrus Control,4,2,0.5,11,6,0.5454545454545454
-Season-4,Sam,Artifacts Control,4,1,0.25,7,2,0.2857142857142857
-Season-4,Sam,Domain Control,4,2,0.5,11,6,0.5454545454545454
-Season-4,Sili,Azorius Control,4,2,0.5,9,5,0.5555555555555556
-Season-4,Sili,Birthing Pod Combo-Control,4,2,0.5,11,5,0.45454545454545453
-Season-4,Sili,Combo-Control Lands,4,1,0.25,9,3,0.3333333333333333
-Season-4,Sili,Greenbased Aggro-Combo,8,5,0.625,20,12,0.6
-Season-4,Sili,Gruul Aggro,8,5,0.625,17,10,0.5882352941176471
-Season-4,Sili,Reanimator,4,2,0.5,10,5,0.5
-Season-4,Sili,Reanimator-Sneak,4,3,0.75,9,6,0.6666666666666666
-Season-4,Sili,Red Aggro,4,3,0.75,9,7,0.7777777777777778
-Season-4,Tinu,Domain Control,4,2,0.5,9,5,0.5555555555555556
-Season-4,Tinu,Draw 7,4,1,0.25,9,3,0.3333333333333333
-Season-4,Tinu,Flash,4,2,0.5,11,6,0.5454545454545454
-Season-4,Tinu,Jund Midrange,4,2,0.5,10,5,0.5
-Season-4,Tinu,Lurrus Combo-Control,4,2,0.5,10,6,0.6
-Season-4,Tobi,Azorius Blink,4,2,0.5,11,6,0.5454545454545454
-Season-4,Tobi,Boros Aggro,8,3,0.375,18,8,0.4444444444444444
-Season-4,Tobi,Greenbased Aggro-Combo,4,2,0.5,12,6,0.5
-Season-4,Tommy,Azorius Control,4,1,0.25,8,2,0.25
-Season-4,Tommy,Azorius Tempo,4,2,0.5,9,5,0.5555555555555556
-Season-4,Tommy,Boros Aggro,4,2,0.5,10,6,0.6
-Season-4,Tommy,Combo Mix,8,3,0.375,21,9,0.42857142857142855
-Season-4,Tommy,Dimir Tempo,4,4,1.0,10,8,0.8
-Season-4,Tommy,Grixis Control,4,2,0.5,9,4,0.4444444444444444
-Season-4,Tommy,Izzet Tempo,4,3,0.75,11,7,0.6363636363636364
-Season-4,Tommy,Nadu Combo-Control,4,2,0.5,10,6,0.6
-Season-4,Valentin,Artifacts,4,2,0.5,9,4,0.4444444444444444
-Season-4,Valentin,Esper Control,4,1,0.25,8,2,0.25
-Season-4,Valentin,Reanimator,8,4,0.5,18,8,0.4444444444444444
-Season-4,Valentin,Selesnya Midrange,4,3,0.75,10,7,0.7
-Season-4,Yannik,Azorius Blink,4,0,0.0,9,1,0.1111111111111111
-Season-4,Yannik,Esper Tempo,4,1,0.25,10,4,0.4
-Season-4,Yannik,Greenbased Aggro-Combo,4,1,0.25,10,4,0.4
-Season-4,Yannik,Reanimator,4,0,0.0,8,0,0.0
-Season-4,Yannik,Red Aggro,4,1,0.25,9,3,0.3333333333333333
-Season-4,Yannik,Selesnya Midrange,8,1,0.125,19,4,0.21052631578947367
+season_id,player,decktype,games_won,games_played,game_win_rate,matches_won,matches_played,match_win_rate
+Season-4,Andrin,Artifacts,11,29,0.3793103448275862,3,12,0.25
+Season-4,Andrin,Boros Aggro,6,9,0.6666666666666666,3,4,0.75
+Season-4,Andrin,Domain Control,6,11,0.5454545454545454,2,4,0.5
+Season-4,Andrin,Grixis Control,6,11,0.5454545454545454,2,4,0.5
+Season-4,Andrin,Rakdos Aggro,4,10,0.4,2,4,0.5
+Season-4,Andrin,Rakdos Aggro-Combo,7,8,0.875,3,4,0.75
+Season-4,Andrin,Reanimator,10,19,0.5263157894736842,5,8,0.625
+Season-4,Andrin,Simic Tempo,5,9,0.5555555555555556,2,4,0.5
+Season-4,Dimlas,Birthing Pod,14,20,0.7,7,8,0.875
+Season-4,Dimlas,Boros Aggro,7,11,0.6363636363636364,3,4,0.75
+Season-4,Dimlas,Combo Lands,7,10,0.7,3,4,0.75
+Season-4,Dimlas,Domain Control,8,11,0.7272727272727273,4,4,1.0
+Season-4,Dimlas,Lurrus Control,12,19,0.631578947368421,5,8,0.625
+Season-4,Dimlas,Orzhov Control,8,8,1.0,4,4,1.0
+Season-4,Dimlas,Reanimator-Sneak,6,9,0.6666666666666666,3,4,0.75
+Season-4,Dimlas,Splinter-Twin,7,11,0.6363636363636364,3,4,0.75
+Season-4,Dimlas,Storm,8,9,0.8888888888888888,4,4,1.0
+Season-4,Dimlas,White Aggro,6,10,0.6,2,4,0.5
+Season-4,Elie,Artifacts,3,9,0.3333333333333333,1,4,0.25
+Season-4,Filipe,Golgari Midrange,1,9,0.1111111111111111,0,4,0.0
+Season-4,Guy,Draw 7,6,9,0.6666666666666666,2,4,0.5
+Season-4,Guy,Draw 7 Combo-Control,6,9,0.6666666666666666,3,4,0.75
+Season-4,Guy,Jeskai Control,4,8,0.5,2,4,0.5
+Season-4,Guy,Mardu Midrange,6,10,0.6,3,4,0.75
+Season-4,Guy,Orzhov Tempo,5,9,0.5555555555555556,2,4,0.5
+Season-4,Guy,Reanimator,3,10,0.3,1,4,0.25
+Season-4,Guy,Splinter-Twin,6,9,0.6666666666666666,3,4,0.75
+Season-4,Ivo,Boros Aggro,9,20,0.45,3,8,0.375
+Season-4,Ivo,Combo-Control Lands,6,9,0.6666666666666666,3,4,0.75
+Season-4,Ivo,Greenbased Aggro-Combo,6,10,0.6,2,4,0.5
+Season-4,Ivo,Lurrus Combo-Control,8,11,0.7272727272727273,4,4,1.0
+Season-4,Ivo,Storm,13,21,0.6190476190476191,5,8,0.625
+Season-4,Joel K.,Artifacts,9,29,0.3103448275862069,1,12,0.08333333333333333
+Season-4,Joel K.,Azorius Blink,2,8,0.25,1,4,0.25
+Season-4,Joel K.,Azorius Tempo,1,9,0.1111111111111111,0,4,0.0
+Season-4,Joel K.,Greenbased Aggro-Combo,5,10,0.5,2,4,0.5
+Season-4,Joel K.,Rakdos Aggro,1,8,0.125,0,4,0.0
+Season-4,Joel R.,Grixis Control,7,11,0.6363636363636364,3,4,0.75
+Season-4,Joel R.,Selesnya Aggro,4,10,0.4,2,4,0.5
+Season-4,Luca,Combo Mix,6,10,0.6,3,4,0.75
+Season-4,Lukas Stalder,Azorius Blink,6,11,0.5454545454545454,2,4,0.5
+Season-4,Lukas Stalder,Boros Aggro,7,10,0.7,3,4,0.75
+Season-4,Lukas Stalder,Domain Control,1,8,0.125,0,4,0.0
+Season-4,Lukas Stalder,Draw 7 Combo-Control,3,9,0.3333333333333333,1,4,0.25
+Season-4,Lukas Stalder,Lurrus Control,4,7,0.5714285714285714,2,4,0.5
+Season-4,Lukas Stalder,Rakdos Aggro,5,9,0.5555555555555556,2,4,0.5
+Season-4,Lukas Stalder,Reanimator,12,20,0.6,5,8,0.625
+Season-4,Lukas Stalder,Reanimator Combo-Control,5,11,0.45454545454545453,2,4,0.5
+Season-4,Lukas Stalder,Sneak and Flash,6,10,0.6,2,4,0.5
+Season-4,Lukas Stalder,White Aggro,5,8,0.625,2,4,0.5
+Season-4,Manuel,Boros Aggro,24,39,0.6153846153846154,9,16,0.5625
+Season-4,Manuel,Combo Lands,4,11,0.36363636363636365,1,4,0.25
+Season-4,Manuel,Combo-Control Lands,5,12,0.4166666666666667,1,4,0.25
+Season-4,Manuel,Draw 7,5,10,0.5,2,4,0.5
+Season-4,Manuel,Lurrus Control,3,10,0.3,1,4,0.25
+Season-4,Manuel,Reanimator-Flash,3,9,0.3333333333333333,1,4,0.25
+Season-4,Manuel,Storm,6,19,0.3157894736842105,1,8,0.125
+Season-4,Matthias,Artifacts Control,2,10,0.2,0,4,0.0
+Season-4,Matthias,Azorius Control,4,9,0.4444444444444444,1,4,0.25
+Season-4,Matthias,Jund Midrange,7,11,0.6363636363636364,3,4,0.75
+Season-4,Matthias,Rakdos Aggro,7,10,0.7,3,4,0.75
+Season-4,Matthias,Sneak Attack,6,10,0.6,2,4,0.5
+Season-4,Myri,Combo Lands,5,10,0.5,2,4,0.5
+Season-4,Myri,Golgari Midrange,4,10,0.4,1,4,0.25
+Season-4,Myri,Gruul Aggro,5,8,0.625,2,4,0.5
+Season-4,Myri,Simic Tempo,2,8,0.25,1,4,0.25
+Season-4,Noe T.,Combo Mix,5,10,0.5,2,4,0.5
+Season-4,Noe T.,Combo-Control Lands,5,11,0.45454545454545453,2,4,0.5
+Season-4,Noe T.,Gruul Aggro,7,11,0.6363636363636364,3,4,0.75
+Season-4,Noe T.,Nadu Midrange,7,18,0.3888888888888889,3,8,0.375
+Season-4,Noe T.,Selesnya Midrange,1,8,0.125,0,4,0.0
+Season-4,Noe T.,White Aggro,4,10,0.4,1,4,0.25
+Season-4,Pali,Boros Aggro,2,10,0.2,0,4,0.0
+Season-4,Pali,Lurrus Control,6,11,0.5454545454545454,2,4,0.5
+Season-4,Sam,Artifacts Control,2,7,0.2857142857142857,1,4,0.25
+Season-4,Sam,Domain Control,6,11,0.5454545454545454,2,4,0.5
+Season-4,Sili,Azorius Control,5,8,0.625,2,4,0.5
+Season-4,Sili,Birthing Pod Combo-Control,5,11,0.45454545454545453,2,4,0.5
+Season-4,Sili,Combo-Control Lands,3,9,0.3333333333333333,1,4,0.25
+Season-4,Sili,Greenbased Aggro-Combo,12,19,0.631578947368421,5,8,0.625
+Season-4,Sili,Gruul Aggro,10,17,0.5882352941176471,5,8,0.625
+Season-4,Sili,Reanimator,5,10,0.5,2,4,0.5
+Season-4,Sili,Reanimator-Sneak,6,9,0.6666666666666666,3,4,0.75
+Season-4,Sili,Red Aggro,7,9,0.7777777777777778,3,4,0.75
+Season-4,Tinu,Domain Control,5,9,0.5555555555555556,2,4,0.5
+Season-4,Tinu,Draw 7,3,9,0.3333333333333333,1,4,0.25
+Season-4,Tinu,Flash,6,11,0.5454545454545454,2,4,0.5
+Season-4,Tinu,Jund Midrange,5,10,0.5,2,4,0.5
+Season-4,Tinu,Lurrus Combo-Control,6,9,0.6666666666666666,2,4,0.5
+Season-4,Tobi,Azorius Blink,6,10,0.6,2,4,0.5
+Season-4,Tobi,Boros Aggro,8,17,0.47058823529411764,3,8,0.375
+Season-4,Tobi,Greenbased Aggro-Combo,6,12,0.5,2,4,0.5
+Season-4,Tommy,Azorius Control,2,8,0.25,1,4,0.25
+Season-4,Tommy,Azorius Tempo,5,9,0.5555555555555556,2,4,0.5
+Season-4,Tommy,Boros Aggro,6,8,0.75,2,4,0.5
+Season-4,Tommy,Combo Mix,9,21,0.42857142857142855,3,8,0.375
+Season-4,Tommy,Dimir Tempo,8,10,0.8,4,4,1.0
+Season-4,Tommy,Grixis Control,4,9,0.4444444444444444,2,4,0.5
+Season-4,Tommy,Izzet Tempo,7,11,0.6363636363636364,3,4,0.75
+Season-4,Tommy,Nadu Combo-Control,6,9,0.6666666666666666,2,4,0.5
+Season-4,Valentin,Artifacts,4,9,0.4444444444444444,2,4,0.5
+Season-4,Valentin,Esper Control,2,8,0.25,1,4,0.25
+Season-4,Valentin,Reanimator,8,18,0.4444444444444444,4,8,0.5
+Season-4,Valentin,Selesnya Midrange,7,10,0.7,3,4,0.75
+Season-4,Yannik,Azorius Blink,1,9,0.1111111111111111,0,4,0.0
+Season-4,Yannik,Esper Tempo,4,9,0.4444444444444444,1,4,0.25
+Season-4,Yannik,Greenbased Aggro-Combo,4,9,0.4444444444444444,1,4,0.25
+Season-4,Yannik,Reanimator,0,8,0.0,0,4,0.0
+Season-4,Yannik,Red Aggro,3,8,0.375,1,4,0.25
+Season-4,Yannik,Selesnya Midrange,4,18,0.2222222222222222,1,8,0.125

@@ -1,78 +1,78 @@
-season_id,player,archetype,matches_played,matches_won,match_win_rate,games_played,games_won,game_win_rate
-Season-4,Andrin,Aggro,8,5,0.625,19,10,0.5263157894736842
-Season-4,Andrin,Aggro-Combo,4,3,0.75,9,7,0.7777777777777778
-Season-4,Andrin,Aggro-Control (Tempo),4,2,0.5,10,5,0.5
-Season-4,Andrin,Combo,20,8,0.4,50,21,0.42
-Season-4,Andrin,Control,8,4,0.5,22,12,0.5454545454545454
-Season-4,Dimlas,Aggro,8,5,0.625,21,13,0.6190476190476191
-Season-4,Dimlas,Combo,12,10,0.8333333333333334,28,21,0.75
-Season-4,Dimlas,Combo-Control,4,3,0.75,11,7,0.6363636363636364
-Season-4,Dimlas,Control,24,20,0.8333333333333334,58,42,0.7241379310344828
-Season-4,Elie,Combo,4,1,0.25,9,3,0.3333333333333333
-Season-4,Filipe,Control-Aggro (Midrange),4,0,0.0,9,1,0.1111111111111111
-Season-4,Guy,Aggro-Control (Tempo),4,2,0.5,10,5,0.5
-Season-4,Guy,Combo,8,3,0.375,21,9,0.42857142857142855
-Season-4,Guy,Combo-Control,8,6,0.75,18,12,0.6666666666666666
-Season-4,Guy,Control,4,2,0.5,8,4,0.5
-Season-4,Guy,Control-Aggro (Midrange),4,3,0.75,10,6,0.6
-Season-4,Ivo,Aggro,8,3,0.375,21,9,0.42857142857142855
-Season-4,Ivo,Aggro-Combo,4,2,0.5,11,6,0.5454545454545454
-Season-4,Ivo,Combo,8,5,0.625,21,13,0.6190476190476191
-Season-4,Ivo,Combo-Control,8,7,0.875,20,14,0.7
-Season-4,Joel K.,Aggro,4,0,0.0,9,1,0.1111111111111111
-Season-4,Joel K.,Aggro-Combo,4,2,0.5,10,5,0.5
-Season-4,Joel K.,Aggro-Control (Tempo),4,0,0.0,9,1,0.1111111111111111
-Season-4,Joel K.,Combo,12,1,0.08333333333333333,32,9,0.28125
-Season-4,Joel K.,Control,4,1,0.25,8,2,0.25
-Season-4,Joel R.,Aggro,4,2,0.5,10,4,0.4
-Season-4,Joel R.,Control,4,3,0.75,11,7,0.6363636363636364
-Season-4,Luca,Combo,4,3,0.75,10,6,0.6
-Season-4,Lukas Stalder,Aggro,12,7,0.5833333333333334,28,17,0.6071428571428571
-Season-4,Lukas Stalder,Combo,12,7,0.5833333333333334,31,18,0.5806451612903226
-Season-4,Lukas Stalder,Combo-Control,8,3,0.375,20,8,0.4
-Season-4,Lukas Stalder,Control,12,4,0.3333333333333333,27,11,0.4074074074074074
-Season-4,Manuel,Aggro,16,9,0.5625,41,24,0.5853658536585366
-Season-4,Manuel,Combo,20,5,0.25,51,18,0.35294117647058826
-Season-4,Manuel,Combo-Control,4,1,0.25,12,5,0.4166666666666667
-Season-4,Manuel,Control,4,1,0.25,10,3,0.3
-Season-4,Matthias,Aggro,4,3,0.75,10,7,0.7
-Season-4,Matthias,Combo,4,2,0.5,10,6,0.6
-Season-4,Matthias,Control,8,1,0.125,20,6,0.3
-Season-4,Matthias,Control-Aggro (Midrange),4,3,0.75,11,7,0.6363636363636364
-Season-4,Myri,Aggro,4,2,0.5,9,5,0.5555555555555556
-Season-4,Myri,Aggro-Control (Tempo),4,1,0.25,8,2,0.25
-Season-4,Myri,Combo,4,2,0.5,10,5,0.5
-Season-4,Myri,Control-Aggro (Midrange),4,1,0.25,10,4,0.4
-Season-4,Noe T.,Aggro,8,4,0.5,21,11,0.5238095238095238
-Season-4,Noe T.,Combo,4,2,0.5,10,5,0.5
-Season-4,Noe T.,Combo-Control,4,2,0.5,11,5,0.45454545454545453
-Season-4,Noe T.,Control-Aggro (Midrange),12,3,0.25,28,8,0.2857142857142857
-Season-4,Pali,Aggro,4,0,0.0,10,2,0.2
-Season-4,Pali,Control,4,2,0.5,11,6,0.5454545454545454
-Season-4,Sam,Control,8,3,0.375,18,8,0.4444444444444444
-Season-4,Sili,Aggro,12,8,0.6666666666666666,26,17,0.6538461538461539
-Season-4,Sili,Aggro-Combo,8,5,0.625,20,12,0.6
-Season-4,Sili,Combo,8,5,0.625,19,11,0.5789473684210527
-Season-4,Sili,Combo-Control,8,3,0.375,20,8,0.4
-Season-4,Sili,Control,4,2,0.5,9,5,0.5555555555555556
-Season-4,Tinu,Combo,8,3,0.375,20,9,0.45
-Season-4,Tinu,Combo-Control,4,2,0.5,10,6,0.6
-Season-4,Tinu,Control,4,2,0.5,9,5,0.5555555555555556
-Season-4,Tinu,Control-Aggro (Midrange),4,2,0.5,10,5,0.5
-Season-4,Tobi,Aggro,8,3,0.375,18,8,0.4444444444444444
-Season-4,Tobi,Aggro-Combo,4,2,0.5,12,6,0.5
-Season-4,Tobi,Control,4,2,0.5,11,6,0.5454545454545454
-Season-4,Tommy,Aggro,4,2,0.5,10,6,0.6
-Season-4,Tommy,Aggro-Control (Tempo),12,9,0.75,30,20,0.6666666666666666
-Season-4,Tommy,Combo,8,3,0.375,21,9,0.42857142857142855
-Season-4,Tommy,Combo-Control,4,2,0.5,10,6,0.6
-Season-4,Tommy,Control,8,3,0.375,17,6,0.35294117647058826
-Season-4,Valentin,Combo,12,6,0.5,27,12,0.4444444444444444
-Season-4,Valentin,Control,4,1,0.25,8,2,0.25
-Season-4,Valentin,Control-Aggro (Midrange),4,3,0.75,10,7,0.7
-Season-4,Yannik,Aggro,4,1,0.25,9,3,0.3333333333333333
-Season-4,Yannik,Aggro-Combo,4,1,0.25,10,4,0.4
-Season-4,Yannik,Aggro-Control (Tempo),4,1,0.25,10,4,0.4
-Season-4,Yannik,Combo,4,0,0.0,8,0,0.0
-Season-4,Yannik,Control,4,0,0.0,9,1,0.1111111111111111
-Season-4,Yannik,Control-Aggro (Midrange),8,1,0.125,19,4,0.21052631578947367
+season_id,player,archetype,games_won,games_played,game_win_rate,matches_won,matches_played,match_win_rate
+Season-4,Andrin,Aggro,10,19,0.5263157894736842,5,8,0.625
+Season-4,Andrin,Aggro-Combo,7,8,0.875,3,4,0.75
+Season-4,Andrin,Aggro-Control (Tempo),5,9,0.5555555555555556,2,4,0.5
+Season-4,Andrin,Combo,21,48,0.4375,8,20,0.4
+Season-4,Andrin,Control,12,22,0.5454545454545454,4,8,0.5
+Season-4,Dimlas,Aggro,13,21,0.6190476190476191,5,8,0.625
+Season-4,Dimlas,Combo,21,28,0.75,10,12,0.8333333333333334
+Season-4,Dimlas,Combo-Control,7,11,0.6363636363636364,3,4,0.75
+Season-4,Dimlas,Control,42,58,0.7241379310344828,20,24,0.8333333333333334
+Season-4,Elie,Combo,3,9,0.3333333333333333,1,4,0.25
+Season-4,Filipe,Control-Aggro (Midrange),1,9,0.1111111111111111,0,4,0.0
+Season-4,Guy,Aggro-Control (Tempo),5,9,0.5555555555555556,2,4,0.5
+Season-4,Guy,Combo,9,19,0.47368421052631576,3,8,0.375
+Season-4,Guy,Combo-Control,12,18,0.6666666666666666,6,8,0.75
+Season-4,Guy,Control,4,8,0.5,2,4,0.5
+Season-4,Guy,Control-Aggro (Midrange),6,10,0.6,3,4,0.75
+Season-4,Ivo,Aggro,9,20,0.45,3,8,0.375
+Season-4,Ivo,Aggro-Combo,6,10,0.6,2,4,0.5
+Season-4,Ivo,Combo,13,21,0.6190476190476191,5,8,0.625
+Season-4,Ivo,Combo-Control,14,20,0.7,7,8,0.875
+Season-4,Joel K.,Aggro,1,8,0.125,0,4,0.0
+Season-4,Joel K.,Aggro-Combo,5,10,0.5,2,4,0.5
+Season-4,Joel K.,Aggro-Control (Tempo),1,9,0.1111111111111111,0,4,0.0
+Season-4,Joel K.,Combo,9,29,0.3103448275862069,1,12,0.08333333333333333
+Season-4,Joel K.,Control,2,8,0.25,1,4,0.25
+Season-4,Joel R.,Aggro,4,10,0.4,2,4,0.5
+Season-4,Joel R.,Control,7,11,0.6363636363636364,3,4,0.75
+Season-4,Luca,Combo,6,10,0.6,3,4,0.75
+Season-4,Lukas Stalder,Aggro,17,27,0.6296296296296297,7,12,0.5833333333333334
+Season-4,Lukas Stalder,Combo,18,30,0.6,7,12,0.5833333333333334
+Season-4,Lukas Stalder,Combo-Control,8,20,0.4,3,8,0.375
+Season-4,Lukas Stalder,Control,11,26,0.4230769230769231,4,12,0.3333333333333333
+Season-4,Manuel,Aggro,24,39,0.6153846153846154,9,16,0.5625
+Season-4,Manuel,Combo,18,49,0.3673469387755102,5,20,0.25
+Season-4,Manuel,Combo-Control,5,12,0.4166666666666667,1,4,0.25
+Season-4,Manuel,Control,3,10,0.3,1,4,0.25
+Season-4,Matthias,Aggro,7,10,0.7,3,4,0.75
+Season-4,Matthias,Combo,6,10,0.6,2,4,0.5
+Season-4,Matthias,Control,6,19,0.3157894736842105,1,8,0.125
+Season-4,Matthias,Control-Aggro (Midrange),7,11,0.6363636363636364,3,4,0.75
+Season-4,Myri,Aggro,5,8,0.625,2,4,0.5
+Season-4,Myri,Aggro-Control (Tempo),2,8,0.25,1,4,0.25
+Season-4,Myri,Combo,5,10,0.5,2,4,0.5
+Season-4,Myri,Control-Aggro (Midrange),4,10,0.4,1,4,0.25
+Season-4,Noe T.,Aggro,11,21,0.5238095238095238,4,8,0.5
+Season-4,Noe T.,Combo,5,10,0.5,2,4,0.5
+Season-4,Noe T.,Combo-Control,5,11,0.45454545454545453,2,4,0.5
+Season-4,Noe T.,Control-Aggro (Midrange),8,26,0.3076923076923077,3,12,0.25
+Season-4,Pali,Aggro,2,10,0.2,0,4,0.0
+Season-4,Pali,Control,6,11,0.5454545454545454,2,4,0.5
+Season-4,Sam,Control,8,18,0.4444444444444444,3,8,0.375
+Season-4,Sili,Aggro,17,26,0.6538461538461539,8,12,0.6666666666666666
+Season-4,Sili,Aggro-Combo,12,19,0.631578947368421,5,8,0.625
+Season-4,Sili,Combo,11,19,0.5789473684210527,5,8,0.625
+Season-4,Sili,Combo-Control,8,20,0.4,3,8,0.375
+Season-4,Sili,Control,5,8,0.625,2,4,0.5
+Season-4,Tinu,Combo,9,20,0.45,3,8,0.375
+Season-4,Tinu,Combo-Control,6,9,0.6666666666666666,2,4,0.5
+Season-4,Tinu,Control,5,9,0.5555555555555556,2,4,0.5
+Season-4,Tinu,Control-Aggro (Midrange),5,10,0.5,2,4,0.5
+Season-4,Tobi,Aggro,8,17,0.47058823529411764,3,8,0.375
+Season-4,Tobi,Aggro-Combo,6,12,0.5,2,4,0.5
+Season-4,Tobi,Control,6,10,0.6,2,4,0.5
+Season-4,Tommy,Aggro,6,8,0.75,2,4,0.5
+Season-4,Tommy,Aggro-Control (Tempo),20,30,0.6666666666666666,9,12,0.75
+Season-4,Tommy,Combo,9,21,0.42857142857142855,3,8,0.375
+Season-4,Tommy,Combo-Control,6,9,0.6666666666666666,2,4,0.5
+Season-4,Tommy,Control,6,17,0.35294117647058826,3,8,0.375
+Season-4,Valentin,Combo,12,27,0.4444444444444444,6,12,0.5
+Season-4,Valentin,Control,2,8,0.25,1,4,0.25
+Season-4,Valentin,Control-Aggro (Midrange),7,10,0.7,3,4,0.75
+Season-4,Yannik,Aggro,3,8,0.375,1,4,0.25
+Season-4,Yannik,Aggro-Combo,4,9,0.4444444444444444,1,4,0.25
+Season-4,Yannik,Aggro-Control (Tempo),4,9,0.4444444444444444,1,4,0.25
+Season-4,Yannik,Combo,0,8,0.0,0,4,0.0
+Season-4,Yannik,Control,1,9,0.1111111111111111,0,4,0.0
+Season-4,Yannik,Control-Aggro (Midrange),4,18,0.2222222222222222,1,8,0.125
