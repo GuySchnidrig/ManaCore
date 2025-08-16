@@ -1,9 +1,11 @@
 import os
 from collections import Counter
-from typing import List, Tuple
-
+from typing import List, Tuple, Dict
 import pandas as pd
-import requests
+import gzip
+import json
+import ast
+
 from manacore.statistics.statistics_calculator import load_drafted_decks
 
 
@@ -22,12 +24,13 @@ def parse_tags(val):
     if pd.isna(val) or val in ("", "[]"):
         return []
     try:
-        return eval(val) if isinstance(val, str) else val
+        return ast.literal_eval(val) if isinstance(val, str) else val
     except Exception:
         return []
 
 
 def prepare_cube(cube_main: pd.DataFrame, cube_history: pd.DataFrame):
+    """Return dictionaries mapping scryfallId -> tags."""
     for df in (cube_main, cube_history):
         df["tags"] = df["tags"].apply(parse_tags)
 
@@ -39,9 +42,8 @@ def prepare_cube(cube_main: pd.DataFrame, cube_history: pd.DataFrame):
 # -----------------------
 # Deck Tag Processing
 # -----------------------
-def resolve_tags(sid, main_tags, history_tags):
-    tags = main_tags.get(sid, []) or history_tags.get(sid, [])
-    return tags
+def resolve_tags(sid: str, main_tags: Dict[str, List[str]], history_tags: Dict[str, List[str]]) -> List[str]:
+    return main_tags.get(sid, []) or history_tags.get(sid, [])
 
 
 def assign_deck_ids(decks: pd.DataFrame) -> pd.DataFrame:
@@ -74,24 +76,61 @@ def assign_deck_colours(decks: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(deck_colours)
 
 
-def get_scryfall_colors(scryfall_id: str) -> List[str]:
-    """Fetch card colors from Scryfall by Scryfall ID."""
-    url = f"https://api.scryfall.com/cards/{scryfall_id}"
-    try:
-        resp = requests.get(url)
-        resp.raise_for_status()
-        return resp.json().get("colors", [])
-    except requests.RequestException:
-        print(f"Failed to fetch Scryfall data for {scryfall_id}")
-        return []
+def load_scryfall_data(local_path: str) -> Dict[str, Dict]:
+    """
+    Load Scryfall filtered bulk data from a local JSON gzip file.
+    Returns a dictionary mapping card ID to the card data.
+    """
+    with gzip.open(local_path, "rt", encoding="utf-8") as f:
+        data = json.load(f)
+    return {card["id"]: card for card in data}
 
 
-def expand_multicolor_tags(tags: List[str], scryfall_id: str) -> List[str]:
-    """Replace 'Multicolor' tag with actual Scryfall colors."""
-    if "Multicolor" in tags:
-        color_map = {"W": "White", "U": "Blue", "B": "Black", "R": "Red", "G": "Green"}
-        return [color_map[c] for c in get_scryfall_colors(scryfall_id) if c in color_map]
-    return tags
+def get_scryfall_colors_local(scryfall_id: str, card_index: Dict[str, Dict]) -> List[str]:
+    """
+    Get colors of a card using the local filtered Scryfall index.
+    Returns a list of color codes, e.g., ['W', 'U'], or empty list if not found.
+    """
+    card = card_index.get(scryfall_id)
+    if card:
+        return card.get("colors", [])
+    return []
+
+# -----------------------
+# Expand multicolor tags
+# -----------------------
+def expand_multicolor_tags(tags: List[str], scryfall_id: str, card_index: Dict[str, Dict]) -> List[str]:
+    """
+    Replace 'Multicolor'/'Multicolored' tags with actual colors from local Scryfall data.
+    Fill empty tags with colors from Scryfall if available.
+    """
+    color_map = {"W": "White", "U": "Blue", "B": "Black", "R": "Red", "G": "Green"}
+    scryfall_colors = get_scryfall_colors_local(scryfall_id, card_index)
+
+    if not tags:
+        # If no tags, use colors from Scryfall
+        return [color_map[c] for c in scryfall_colors if c in color_map]
+
+    new_tags = []
+    for t in tags:
+        if t.lower() in ("multicolor", "multicolored"):
+            new_tags.extend([color_map[c] for c in scryfall_colors if c in color_map])
+        else:
+            new_tags.append(t)
+
+    return new_tags
+
+
+def expand_multicolor_tags_in_decks(decks: pd.DataFrame, card_index: Dict[str, Dict]) -> pd.DataFrame:
+    """
+    Expand multicolor tags for all cards in the deck using local Scryfall data.
+    Updates the 'tags' column in-place.
+    """
+    decks["tags"] = decks.apply(
+        lambda row: expand_multicolor_tags(row["tags"], row["scryfallId"], card_index),
+        axis=1
+    )
+    return decks
 
 
 def remove_lands_from_deck_colours(decks: pd.DataFrame) -> pd.DataFrame:
@@ -101,5 +140,3 @@ def remove_lands_from_deck_colours(decks: pd.DataFrame) -> pd.DataFrame:
             lambda colours: [c for c in colours if c.lower() not in ("land", "lands", "colorless", "multicolored")]
         )
     return decks
-
-
