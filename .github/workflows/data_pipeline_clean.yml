@@ -1,4 +1,4 @@
-name: Run ManaCore data pipeline on raw data change
+name: ManaCore Data Pipeline
 
 on:
   workflow_dispatch:
