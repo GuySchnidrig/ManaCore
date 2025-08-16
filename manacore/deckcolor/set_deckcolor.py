@@ -30,14 +30,26 @@ def parse_tags(val):
 
 
 def prepare_cube(cube_main: pd.DataFrame, cube_history: pd.DataFrame):
-    """Return dictionaries mapping scryfallId -> tags."""
+    """Return dictionaries mapping scryfallId -> tags using the latest entry for both mainboard and history."""
     for df in (cube_main, cube_history):
         df["tags"] = df["tags"].apply(parse_tags)
 
-    main_tags = cube_main.groupby("scryfallId")["tags"].first().to_dict()
-    history_tags = cube_history.groupby("scryfallId")["tags"].first().to_dict()
+    # Latest main cube tags (last occurrence per scryfallId)
+    main_tags = cube_main.groupby("scryfallId")["tags"].last().to_dict()
+
+    # Latest history tags (last occurrence per scryfallId)
+    history_tags = cube_history.groupby("scryfallId")["tags"].last().to_dict()
+
     return main_tags, history_tags
 
+def load_scryfall_data(local_path: str) -> Dict[str, Dict]:
+    """
+    Load Scryfall filtered bulk data from a local JSON gzip file.
+    Returns a dictionary mapping card ID to the card data.
+    """
+    with gzip.open(local_path, "rt", encoding="utf-8") as f:
+        data = json.load(f)
+    return {card["id"]: card for card in data}
 
 # -----------------------
 # Deck Tag Processing
@@ -54,6 +66,48 @@ def assign_deck_ids(decks: pd.DataFrame) -> pd.DataFrame:
     draft_idx = cols.index("draft_id")
     cols.insert(draft_idx + 1, cols.pop(cols.index("deck_id")))
     return decks[cols]
+
+
+
+# -----------------------
+# Expand multicolor tags
+# -----------------------
+def expand_multicolor_tags(tags: list[str], scryfall_id: str, card_index: dict) -> list[str]:
+    """
+    Replace empty tags or 'Multicolor'/'Multicolored' tags with actual colors
+    from local Scryfall data. Leave other tags untouched.
+    """
+    color_map = {"W": "White", "U": "Blue", "B": "Black", "R": "Red", "G": "Green"}
+    scryfall_colors = get_scryfall_colors_local(scryfall_id, card_index)
+
+    # If no tags, fill in colors from Scryfall
+    if not tags:
+        return [color_map[c] for c in scryfall_colors if c in color_map]
+
+    new_tags = []
+    for t in tags:
+        if t.lower() in ("multicolor", "multicolored"):
+            # Replace Multicolor tags with Scryfall colors
+            for c in scryfall_colors:
+                color_name = color_map.get(c)
+                if color_name and color_name not in new_tags:
+                    new_tags.append(color_name)
+        else:
+            # Preserve all other tags
+            new_tags.append(t)
+
+    return new_tags
+
+def expand_multicolor_tags_in_decks(decks: pd.DataFrame, card_index: Dict[str, Dict]) -> pd.DataFrame:
+    """
+    Expand multicolor tags for all cards in the deck using local Scryfall data.
+    Updates the 'tags' column in-place.
+    """
+    decks["tags"] = decks.apply(
+        lambda row: expand_multicolor_tags(row["tags"], row["scryfallId"], card_index),
+        axis=1
+    )
+    return decks
 
 
 # -----------------------
@@ -76,16 +130,6 @@ def assign_deck_colours(decks: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(deck_colours)
 
 
-def load_scryfall_data(local_path: str) -> Dict[str, Dict]:
-    """
-    Load Scryfall filtered bulk data from a local JSON gzip file.
-    Returns a dictionary mapping card ID to the card data.
-    """
-    with gzip.open(local_path, "rt", encoding="utf-8") as f:
-        data = json.load(f)
-    return {card["id"]: card for card in data}
-
-
 def get_scryfall_colors_local(scryfall_id: str, card_index: Dict[str, Dict]) -> List[str]:
     """
     Get colors of a card using the local filtered Scryfall index.
@@ -95,42 +139,6 @@ def get_scryfall_colors_local(scryfall_id: str, card_index: Dict[str, Dict]) -> 
     if card:
         return card.get("colors", [])
     return []
-
-# -----------------------
-# Expand multicolor tags
-# -----------------------
-def expand_multicolor_tags(tags: List[str], scryfall_id: str, card_index: Dict[str, Dict]) -> List[str]:
-    """
-    Replace 'Multicolor'/'Multicolored' tags with actual colors from local Scryfall data.
-    Fill empty tags with colors from Scryfall if available.
-    """
-    color_map = {"W": "White", "U": "Blue", "B": "Black", "R": "Red", "G": "Green"}
-    scryfall_colors = get_scryfall_colors_local(scryfall_id, card_index)
-
-    if not tags:
-        # If no tags, use colors from Scryfall
-        return [color_map[c] for c in scryfall_colors if c in color_map]
-
-    new_tags = []
-    for t in tags:
-        if t.lower() in ("multicolor", "multicolored"):
-            new_tags.extend([color_map[c] for c in scryfall_colors if c in color_map])
-        else:
-            new_tags.append(t)
-
-    return new_tags
-
-
-def expand_multicolor_tags_in_decks(decks: pd.DataFrame, card_index: Dict[str, Dict]) -> pd.DataFrame:
-    """
-    Expand multicolor tags for all cards in the deck using local Scryfall data.
-    Updates the 'tags' column in-place.
-    """
-    decks["tags"] = decks.apply(
-        lambda row: expand_multicolor_tags(row["tags"], row["scryfallId"], card_index),
-        axis=1
-    )
-    return decks
 
 
 def remove_lands_from_deck_colours(decks: pd.DataFrame) -> pd.DataFrame:
