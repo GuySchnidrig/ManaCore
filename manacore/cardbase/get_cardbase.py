@@ -131,7 +131,8 @@ def process_history_entries(posts_with_season: List[Tuple[str, Dict]]) -> List[D
                     "season_id": season_id,
                     "timestamp": timestamp,
                     "change_type": change_type,
-                    "scryfallId": card["cardID"]
+                    "scryfallId": card["cardID"],
+                    "tags": card.get("tags", [])
                 })
 
     return records

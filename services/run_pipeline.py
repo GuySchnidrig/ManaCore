@@ -83,7 +83,8 @@ def main():
         "scripts/get_latest_cube.py",
         "scripts/get_card_history.py",
         "scripts/get_elo.py",
-        "scripts/get_stats.py"
+        "scripts/get_stats.py",
+        "scripts/get_deckcolor.py"
     ]
     
     successful_scripts = []
