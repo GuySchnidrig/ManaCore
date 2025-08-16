@@ -1,4 +1,4 @@
-name: Download ManaCore Bulk Card Data Daily
+name: ManaCore Download Bulk Card Data
 
 on:
   schedule:
