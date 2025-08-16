@@ -1,6 +1,7 @@
 name: Run ManaCore data pipeline on raw data change
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths:
