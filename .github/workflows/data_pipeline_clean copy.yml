@@ -1,0 +1,61 @@
+name: Download ManaCore Bulk Card Data Daily
+
+on:
+  schedule:
+    # Runs every day at 02:00 UTC (adjust as needed)
+    - cron: '0 2 * * *'
+  workflow_dispatch: # allows manual triggering
+
+jobs:
+  download-carddata:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Upgrade pip and setuptools
+        run: python -m pip install --upgrade pip setuptools
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install ManaCore as editable package
+        run: pip install -e .
+
+      - name: Show installed packages
+        run: python -m pip list
+
+      - name: Try importing manacore
+        run: python -c "import manacore; print(manacore.__file__)"
+
+      - name: Download bulk card data
+        run: python services/download_bulk_carddata.py
+
+      - name: Configure git for committing
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit updated CSV files
+        run: |
+          git add data/raw/*.csv
+          git diff --cached --quiet || git commit -m "Update bulk card data [skip ci]"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
