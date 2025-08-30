@@ -148,3 +148,13 @@ def remove_lands_from_deck_colours(decks: pd.DataFrame) -> pd.DataFrame:
             lambda colours: [c for c in colours if c.lower() not in ("land", "lands", "colorless", "multicolored")]
         )
     return decks
+
+
+def normalize_deck_color(colors_list):
+    """
+    Convert a list of colors to a short code string.
+    Example: ['Black', 'Green'] -> 'BG'
+    """
+    color_map = {"White": "W", "Blue": "U", "Black": "B", "Red": "R", "Green": "G"}
+    return "".join([color_map[c] for c in colors_list if c in color_map])
+

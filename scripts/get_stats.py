@@ -39,14 +39,17 @@ def process_and_save_all_outputs(base_path: str):
     
     print("Calculating card mainboard rate per season...")
     mainboard_rate_df = calculate_card_mainboard_rate_per_season(decks_df, drafts_df, availability_map)
+    mainboard_rate_df = mainboard_rate_df.sort_values(['season_id', 'scryfallId']).reset_index(drop=True)
     print("Card mainboard rate calculated.")
     
     print("Calculating card match winrate per season...")
     card_match_winrate_df = calculate_card_match_winrate_per_season(matches_df, decks_df, availability_map, drafts_df)
+    card_match_winrate_df = card_match_winrate_df.sort_values(['season_id', 'scryfallId']).reset_index(drop=True)
     print("Card match winrate calculated.")
     
     print("Calculating card game winrate per season...")
     card_game_winrate_df = calculate_card_game_winrate_per_season(matches_df, decks_df, availability_map, drafts_df)
+    card_game_winrate_df = card_game_winrate_df.sort_values(['season_id', 'scryfallId']).reset_index(drop=True)
     print("Card game winrate calculated.")
     
     print("Calculating archetype match winrate...")
@@ -84,7 +87,28 @@ def process_and_save_all_outputs(base_path: str):
     print("Calculating player vs player winrate...")
     vs_player_winrate_stats = calculate_vs_player_stats(matches_df)
     print("Player vs player winrate calculated.")
+
+    print("Calculating matchwinrate of Card by archetype...")
+    card_archetype_match_winrates = calculate_card_archetype_match_winrate_per_season(matches_df, decks_df, availability_map, drafts_df)
+    print("Player vs player winrate calculated.")
+
+    print("Calculating gamewinrate of Card by archetype...")
+    card_archetype_game_winrates = calculate_card_archetype_game_winrate_per_season(matches_df, decks_df, availability_map, drafts_df)
+    print("Player vs player winrate calculated.")
+
+    print("Calculating card archetype count per season...")
+    card_archetype_count_per_season = calculate_card_archetype_count_per_season(decks_df, availability_map, drafts_df)
+    print("Card archetype count per season calculated.")
+
+    print("Calculating colourpair winrates...")
+    colourpair_winrates = calculate_colourpair_winrate_per_season(matches_df, decks_df)
+    print("Colourpair winrates calculated.")
     
+    print("Calculating colour winrates...")
+    colour_winrates = calculate_colour_winrate_vectorized(decks_df, matches_df)
+    print("Colourpaircolour winrates.")
+
+
     # Saving results
     print("Saving combined winrates per season...")
     combined_winrates_df.to_csv(os.path.join(processed_dir, "combined_winrates_per_season.csv"), index=False)
@@ -137,7 +161,27 @@ def process_and_save_all_outputs(base_path: str):
     print("Saving player vs player winrate...")
     vs_player_winrate_stats.to_csv(os.path.join(processed_dir, "vs_player_game_and_match_winrate.csv"), index=False)
     print("Saved player vs player winrate.")
-    
+
+    print("Saving matchwinrate of Card by archetype...")
+    card_archetype_match_winrates.to_csv(os.path.join(processed_dir, "card_archetype_match_winrates.csv"), index=False)
+    print("Saved matchwinrate of Card by archetype.")
+
+    print("Saving gamewinrate of Card by archetype...")
+    card_archetype_game_winrates.to_csv(os.path.join(processed_dir, "card_archetype_game_winrates.csv"), index=False)
+    print("Saved gamewinrate of Card by archetype.")
+
+    print("Saving card archetype count per season...")
+    card_archetype_count_per_season.to_csv(os.path.join(processed_dir, "card_archetype_count_per_season.csv"), index=False)
+    print("Saved card archetype count per season.")
+
+    print("Saving card colourpair winrates per season...")
+    colourpair_winrates.to_csv(os.path.join(processed_dir, "colourpair_winrates.csv"), index=False)
+    print("Saved colourpair winrates per season.")
+
+    print("Saving color winrates...")
+    colour_winrates.to_csv(os.path.join(processed_dir, "colour_winrates.csv"), index=False)
+    print("Saved color winrates.")
+
     print(f"All outputs saved to {processed_dir}")
 
 if __name__ == "__main__":

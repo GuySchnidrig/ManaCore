@@ -38,4 +38,35 @@ print("\nGame win rate sample:")
 print(game_winrates)
 
 
-    
+ # ---- Calculate card+archetype match win rate ----
+card_archetype_match_winrates = calculate_card_archetype_match_winrate_per_season(
+    matches_df, decks_df, availability_map, drafts_df
+)
+print("\nCard + Archetype match win rate sample:")
+print(card_archetype_match_winrates)   
+
+# ---- Calculate card+archetype game win rate ----
+card_archetype_game_winrates = calculate_card_archetype_game_winrate_per_season(
+    matches_df, decks_df, availability_map, drafts_df
+)
+print("\nCard + Archetype game win rate sample:")
+print(card_archetype_game_winrates)
+
+# ---- Count cards by archetype ----
+card_archetype_counts = calculate_card_archetype_count_per_season(
+    decks_df, availability_map, drafts_df
+)
+print("\nCard + Archetype count sample:")
+print(card_archetype_counts)
+
+# ---- Calculate Colour Pair win rates ----
+colourpair_winrates = calculate_colourpair_winrate_per_season(matches_df, decks_df)
+print("\nColour Pair win rate sample:")
+print(colourpair_winrates)
+
+
+# ---- Calculate Colour Win Rates ----
+colour_winrates = calculate_colour_winrate_vectorized(decks_df, matches_df)
+print("\nColour win rate sample:")
+print(colour_winrates.sort_values(['season_id','color']))  # sorted for consistent output
+

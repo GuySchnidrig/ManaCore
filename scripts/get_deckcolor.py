@@ -7,7 +7,7 @@ from manacore.deckcolor.set_deckcolor import (
     remove_lands_from_deck_colours
 )
 import pandas as pd
-from manacore.deckcolor.set_deckcolor import load_scryfall_data, expand_multicolor_tags  # your new functions
+from manacore.deckcolor.set_deckcolor import *
 
 # -----------------------
 # Main Callable Function
@@ -43,6 +43,8 @@ def process_drafted_decks(
     # Remove irrelevant color tags
     decks = remove_lands_from_deck_colours(decks)
 
+    decks['deck_color_short'] = decks['deck_colour'].apply(normalize_deck_color)
+    
     # Save processed decks
     decks.to_csv(save_path, index=False)
     print(f"drafted_decks saved successfully to {save_path}!")
