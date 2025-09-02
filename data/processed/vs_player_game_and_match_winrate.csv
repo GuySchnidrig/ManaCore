@@ -1,267 +1,267 @@
-season_id,player,opponent,games_played_vs,games_won_vs,game_win_rate_vs,matches_played_vs,matches_won_vs,match_win_rate_vs
-Season-4,Andrin,Dimlas,11,1,0.09090909090909091,5,0,0.0
-Season-4,Andrin,Guy,5,4,0.8,2,2,1.0
-Season-4,Andrin,Ivo,11,6,0.5454545454545454,4,2,0.5
-Season-4,Andrin,Luca,3,1,0.3333333333333333,1,0,0.0
-Season-4,Andrin,Lukas Stalder,6,4,0.6666666666666666,3,2,0.6666666666666666
-Season-4,Andrin,Manuel,15,9,0.6,6,4,0.6666666666666666
-Season-4,Andrin,Matthias,2,0,0.0,1,0,0.0
-Season-4,Andrin,Myri,3,2,0.6666666666666666,1,1,1.0
-Season-4,Andrin,Noe T.,8,5,0.625,3,2,0.6666666666666666
-Season-4,Andrin,Pali,3,2,0.6666666666666666,1,1,1.0
-Season-4,Andrin,Sili,8,3,0.375,3,1,0.3333333333333333
-Season-4,Andrin,Tinu,6,2,0.3333333333333333,2,0,0.0
-Season-4,Andrin,Tobi,6,3,0.5,2,1,0.5
-Season-4,Andrin,Tommy,10,3,0.3,4,1,0.25
-Season-4,Andrin,Valentin,4,2,0.5,2,1,0.5
-Season-4,Andrin,Yannik,9,8,0.8888888888888888,4,4,1.0
-Season-4,Dimlas,Andrin,11,10,0.9090909090909091,5,5,1.0
-Season-4,Dimlas,Filipe,3,2,0.6666666666666666,1,1,1.0
-Season-4,Dimlas,Guy,6,6,1.0,3,3,1.0
-Season-4,Dimlas,Ivo,5,3,0.6,2,1,0.5
-Season-4,Dimlas,Joel K.,10,7,0.7,4,3,0.75
-Season-4,Dimlas,Joel R.,2,2,1.0,1,1,1.0
-Season-4,Dimlas,Luca,3,1,0.3333333333333333,1,0,0.0
-Season-4,Dimlas,Lukas Stalder,14,7,0.5,5,3,0.6
-Season-4,Dimlas,Manuel,11,8,0.7272727272727273,4,4,1.0
-Season-4,Dimlas,Matthias,5,4,0.8,2,2,1.0
-Season-4,Dimlas,Myri,2,2,1.0,1,1,1.0
-Season-4,Dimlas,Noe T.,3,1,0.3333333333333333,1,0,0.0
-Season-4,Dimlas,Pali,2,0,0.0,1,0,0.0
-Season-4,Dimlas,Sili,13,9,0.6923076923076923,6,4,0.6666666666666666
-Season-4,Dimlas,Tinu,11,7,0.6363636363636364,4,3,0.75
-Season-4,Dimlas,Tommy,8,6,0.75,3,3,1.0
-Season-4,Dimlas,Valentin,5,4,0.8,2,2,1.0
-Season-4,Dimlas,Yannik,4,4,1.0,2,2,1.0
-Season-4,Elie,Joel K.,2,2,1.0,1,1,1.0
-Season-4,Elie,Myri,2,0,0.0,1,0,0.0
-Season-4,Elie,Pali,3,1,0.3333333333333333,1,0,0.0
-Season-4,Elie,Tobi,2,0,0.0,1,0,0.0
-Season-4,Filipe,Dimlas,3,1,0.3333333333333333,1,0,0.0
-Season-4,Filipe,Manuel,2,0,0.0,1,0,0.0
-Season-4,Filipe,Noe T.,2,0,0.0,1,0,0.0
-Season-4,Filipe,Yannik,2,0,0.0,1,0,0.0
-Season-4,Guy,Andrin,5,1,0.2,2,0,0.0
-Season-4,Guy,Dimlas,6,0,0.0,3,0,0.0
-Season-4,Guy,Ivo,3,2,0.6666666666666666,1,1,1.0
-Season-4,Guy,Joel K.,5,4,0.8,2,2,1.0
-Season-4,Guy,Lukas Stalder,7,4,0.5714285714285714,3,2,0.6666666666666666
-Season-4,Guy,Manuel,9,5,0.5555555555555556,3,2,0.6666666666666666
-Season-4,Guy,Matthias,3,2,0.6666666666666666,1,1,1.0
-Season-4,Guy,Myri,2,2,1.0,1,1,1.0
-Season-4,Guy,Sam,3,2,0.6666666666666666,1,1,1.0
-Season-4,Guy,Sili,7,1,0.14285714285714285,3,0,0.0
-Season-4,Guy,Tobi,5,3,0.6,2,1,0.5
-Season-4,Guy,Tommy,4,2,0.5,2,1,0.5
-Season-4,Guy,Valentin,4,4,1.0,2,2,1.0
-Season-4,Guy,Yannik,4,4,1.0,2,2,1.0
-Season-4,Ivo,Andrin,11,5,0.45454545454545453,4,2,0.5
-Season-4,Ivo,Dimlas,5,2,0.4,2,1,0.5
-Season-4,Ivo,Guy,3,1,0.3333333333333333,1,0,0.0
-Season-4,Ivo,Joel K.,2,2,1.0,1,1,1.0
-Season-4,Ivo,Lukas Stalder,6,2,0.3333333333333333,2,0,0.0
-Season-4,Ivo,Manuel,5,4,0.8,2,2,1.0
-Season-4,Ivo,Matthias,8,5,0.625,3,2,0.6666666666666666
-Season-4,Ivo,Myri,3,2,0.6666666666666666,1,1,1.0
-Season-4,Ivo,Noe T.,3,1,0.3333333333333333,1,0,0.0
-Season-4,Ivo,Sam,2,2,1.0,1,1,1.0
-Season-4,Ivo,Tinu,8,6,0.75,3,3,1.0
-Season-4,Ivo,Tobi,2,2,1.0,1,1,1.0
-Season-4,Ivo,Tommy,8,3,0.375,3,1,0.3333333333333333
-Season-4,Ivo,Valentin,5,3,0.6,2,1,0.5
-Season-4,Ivo,Yannik,2,2,1.0,1,1,1.0
-Season-4,Joel K.,Dimlas,10,3,0.3,4,1,0.25
-Season-4,Joel K.,Elie,2,0,0.0,1,0,0.0
-Season-4,Joel K.,Guy,5,1,0.2,2,0,0.0
-Season-4,Joel K.,Ivo,2,0,0.0,1,0,0.0
-Season-4,Joel K.,Lukas Stalder,3,1,0.3333333333333333,1,0,0.0
-Season-4,Joel K.,Manuel,8,4,0.5,3,1,0.3333333333333333
-Season-4,Joel K.,Matthias,2,0,0.0,1,0,0.0
-Season-4,Joel K.,Myri,3,1,0.3333333333333333,1,0,0.0
-Season-4,Joel K.,Noe T.,9,4,0.4444444444444444,3,1,0.3333333333333333
-Season-4,Joel K.,Sam,3,1,0.3333333333333333,1,0,0.0
-Season-4,Joel K.,Sili,8,2,0.25,4,1,0.25
-Season-4,Joel K.,Tommy,2,0,0.0,1,0,0.0
-Season-4,Joel K.,Valentin,4,0,0.0,2,0,0.0
-Season-4,Joel K.,Yannik,7,1,0.14285714285714285,3,0,0.0
-Season-4,Joel R.,Dimlas,2,0,0.0,1,0,0.0
-Season-4,Joel R.,Manuel,3,2,0.6666666666666666,1,1,1.0
-Season-4,Joel R.,Noe T.,2,2,1.0,1,1,1.0
-Season-4,Joel R.,Sam,3,2,0.6666666666666666,1,1,1.0
-Season-4,Joel R.,Sili,5,1,0.2,2,0,0.0
-Season-4,Joel R.,Tobi,3,2,0.6666666666666666,1,1,1.0
-Season-4,Joel R.,Tommy,3,2,0.6666666666666666,1,1,1.0
-Season-4,Luca,Andrin,3,2,0.6666666666666666,1,1,1.0
-Season-4,Luca,Dimlas,3,2,0.6666666666666666,1,1,1.0
-Season-4,Luca,Lukas Stalder,2,0,0.0,1,0,0.0
-Season-4,Luca,Yannik,2,2,1.0,1,1,1.0
-Season-4,Lukas Stalder,Andrin,6,1,0.16666666666666666,3,0,0.0
-Season-4,Lukas Stalder,Dimlas,14,7,0.5,5,2,0.4
-Season-4,Lukas Stalder,Guy,7,3,0.42857142857142855,3,1,0.3333333333333333
-Season-4,Lukas Stalder,Ivo,6,3,0.5,2,1,0.5
-Season-4,Lukas Stalder,Joel K.,3,1,0.3333333333333333,1,0,0.0
-Season-4,Lukas Stalder,Luca,2,2,1.0,1,1,1.0
-Season-4,Lukas Stalder,Manuel,8,2,0.25,3,0,0.0
-Season-4,Lukas Stalder,Matthias,8,5,0.625,3,2,0.6666666666666666
-Season-4,Lukas Stalder,Myri,4,4,1.0,2,2,1.0
-Season-4,Lukas Stalder,Noe T.,10,7,0.7,4,3,0.75
-Season-4,Lukas Stalder,Pali,3,2,0.6666666666666666,1,1,1.0
-Season-4,Lukas Stalder,Sili,9,2,0.2222222222222222,4,1,0.25
-Season-4,Lukas Stalder,Tinu,2,2,1.0,1,1,1.0
-Season-4,Lukas Stalder,Tobi,3,1,0.3333333333333333,1,0,0.0
-Season-4,Lukas Stalder,Tommy,10,6,0.6,5,3,0.6
-Season-4,Lukas Stalder,Valentin,4,0,0.0,2,0,0.0
-Season-4,Lukas Stalder,Yannik,7,6,0.8571428571428571,3,3,1.0
-Season-4,Manuel,Andrin,15,5,0.3333333333333333,6,1,0.16666666666666666
-Season-4,Manuel,Dimlas,11,3,0.2727272727272727,4,0,0.0
-Season-4,Manuel,Filipe,2,2,1.0,1,1,1.0
-Season-4,Manuel,Guy,9,3,0.3333333333333333,3,0,0.0
-Season-4,Manuel,Ivo,5,1,0.2,2,0,0.0
-Season-4,Manuel,Joel K.,8,4,0.5,3,2,0.6666666666666666
-Season-4,Manuel,Joel R.,3,1,0.3333333333333333,1,0,0.0
-Season-4,Manuel,Lukas Stalder,8,6,0.75,3,3,1.0
-Season-4,Manuel,Matthias,3,1,0.3333333333333333,1,0,0.0
-Season-4,Manuel,Missing Player,2,2,1.0,1,1,1.0
-Season-4,Manuel,Myri,3,1,0.3333333333333333,1,0,0.0
-Season-4,Manuel,Noe T.,8,2,0.25,3,0,0.0
-Season-4,Manuel,Sam,2,2,1.0,1,1,1.0
-Season-4,Manuel,Sili,7,6,0.8571428571428571,3,3,1.0
-Season-4,Manuel,Tinu,7,2,0.2857142857142857,3,1,0.3333333333333333
-Season-4,Manuel,Tobi,2,0,0.0,1,0,0.0
-Season-4,Manuel,Tommy,2,0,0.0,1,0,0.0
-Season-4,Manuel,Valentin,5,3,0.6,2,1,0.5
-Season-4,Manuel,Yannik,12,6,0.5,4,2,0.5
-Season-4,Matthias,Andrin,2,2,1.0,1,1,1.0
-Season-4,Matthias,Dimlas,5,1,0.2,2,0,0.0
-Season-4,Matthias,Guy,3,1,0.3333333333333333,1,0,0.0
-Season-4,Matthias,Ivo,8,3,0.375,3,1,0.3333333333333333
-Season-4,Matthias,Joel K.,2,2,1.0,1,1,1.0
-Season-4,Matthias,Lukas Stalder,8,3,0.375,3,1,0.3333333333333333
-Season-4,Matthias,Manuel,3,2,0.6666666666666666,1,1,1.0
-Season-4,Matthias,Missing Player,2,2,1.0,1,1,1.0
-Season-4,Matthias,Myri,2,2,1.0,1,1,1.0
-Season-4,Matthias,Noe T.,5,3,0.6,2,1,0.5
-Season-4,Matthias,Tommy,6,2,0.3333333333333333,2,0,0.0
-Season-4,Matthias,Valentin,5,3,0.6,2,1,0.5
-Season-4,Missing Player,Manuel,2,0,0.0,1,0,0.0
-Season-4,Missing Player,Matthias,2,0,0.0,1,0,0.0
-Season-4,Missing Player,Myri,2,0,0.0,1,0,0.0
-Season-4,Missing Player,Tommy,2,0,0.0,1,0,0.0
-Season-4,Myri,Andrin,3,1,0.3333333333333333,1,0,0.0
-Season-4,Myri,Dimlas,2,0,0.0,1,0,0.0
-Season-4,Myri,Elie,2,2,1.0,1,1,1.0
-Season-4,Myri,Guy,2,0,0.0,1,0,0.0
-Season-4,Myri,Ivo,3,1,0.3333333333333333,1,0,0.0
-Season-4,Myri,Joel K.,3,1,0.3333333333333333,1,0,0.0
-Season-4,Myri,Lukas Stalder,4,0,0.0,2,0,0.0
-Season-4,Myri,Manuel,3,2,0.6666666666666666,1,1,1.0
-Season-4,Myri,Matthias,2,0,0.0,1,0,0.0
-Season-4,Myri,Missing Player,2,2,1.0,1,1,1.0
-Season-4,Myri,Sili,2,0,0.0,1,0,0.0
-Season-4,Myri,Tinu,2,2,1.0,1,1,1.0
-Season-4,Myri,Tobi,5,3,0.6,2,1,0.5
-Season-4,Myri,Yannik,2,2,1.0,1,1,1.0
-Season-4,Noe T.,Andrin,8,3,0.375,3,1,0.3333333333333333
-Season-4,Noe T.,Dimlas,3,2,0.6666666666666666,1,1,1.0
-Season-4,Noe T.,Filipe,2,2,1.0,1,1,1.0
-Season-4,Noe T.,Ivo,3,1,0.3333333333333333,1,0,0.0
-Season-4,Noe T.,Joel K.,9,4,0.4444444444444444,3,1,0.3333333333333333
-Season-4,Noe T.,Joel R.,2,0,0.0,1,0,0.0
-Season-4,Noe T.,Lukas Stalder,10,3,0.3,4,1,0.25
-Season-4,Noe T.,Manuel,8,6,0.75,3,3,1.0
-Season-4,Noe T.,Matthias,5,2,0.4,2,1,0.5
-Season-4,Noe T.,Sam,4,0,0.0,2,0,0.0
-Season-4,Noe T.,Sili,10,2,0.2,4,0,0.0
-Season-4,Noe T.,Tinu,2,0,0.0,1,0,0.0
-Season-4,Noe T.,Tommy,2,2,1.0,1,1,1.0
-Season-4,Noe T.,Yannik,2,2,1.0,1,1,1.0
-Season-4,Pali,Andrin,3,1,0.3333333333333333,1,0,0.0
-Season-4,Pali,Dimlas,2,2,1.0,1,1,1.0
-Season-4,Pali,Elie,3,2,0.6666666666666666,1,1,1.0
-Season-4,Pali,Lukas Stalder,3,1,0.3333333333333333,1,0,0.0
-Season-4,Pali,Sili,5,1,0.2,2,0,0.0
-Season-4,Pali,Tobi,3,1,0.3333333333333333,1,0,0.0
-Season-4,Pali,Valentin,2,0,0.0,1,0,0.0
-Season-4,Sam,Guy,3,1,0.3333333333333333,1,0,0.0
-Season-4,Sam,Ivo,2,0,0.0,1,0,0.0
-Season-4,Sam,Joel K.,3,2,0.6666666666666666,1,1,1.0
-Season-4,Sam,Joel R.,3,1,0.3333333333333333,1,0,0.0
-Season-4,Sam,Manuel,2,0,0.0,1,0,0.0
-Season-4,Sam,Noe T.,4,4,1.0,2,2,1.0
-Season-4,Sam,Tommy,1,0,0.0,1,0,0.0
-Season-4,Sili,Andrin,8,5,0.625,3,2,0.6666666666666666
-Season-4,Sili,Dimlas,13,4,0.3076923076923077,6,2,0.3333333333333333
-Season-4,Sili,Guy,7,5,0.7142857142857143,3,2,0.6666666666666666
-Season-4,Sili,Joel K.,8,6,0.75,4,3,0.75
-Season-4,Sili,Joel R.,5,4,0.8,2,2,1.0
-Season-4,Sili,Lukas Stalder,9,7,0.7777777777777778,4,3,0.75
-Season-4,Sili,Manuel,7,1,0.14285714285714285,3,0,0.0
-Season-4,Sili,Myri,2,2,1.0,1,1,1.0
-Season-4,Sili,Noe T.,10,8,0.8,4,4,1.0
-Season-4,Sili,Pali,5,4,0.8,2,2,1.0
-Season-4,Sili,Tobi,5,2,0.4,2,1,0.5
-Season-4,Sili,Tommy,13,3,0.23076923076923078,5,0,0.0
-Season-4,Sili,Valentin,2,2,1.0,1,1,1.0
-Season-4,Tinu,Andrin,6,3,0.5,2,1,0.5
-Season-4,Tinu,Dimlas,11,4,0.36363636363636365,4,1,0.25
-Season-4,Tinu,Ivo,8,2,0.25,3,0,0.0
-Season-4,Tinu,Lukas Stalder,2,0,0.0,1,0,0.0
-Season-4,Tinu,Manuel,7,5,0.7142857142857143,3,2,0.6666666666666666
-Season-4,Tinu,Myri,2,0,0.0,1,0,0.0
-Season-4,Tinu,Noe T.,2,2,1.0,1,1,1.0
-Season-4,Tinu,Tommy,5,3,0.6,2,1,0.5
-Season-4,Tinu,Yannik,6,6,1.0,3,3,1.0
-Season-4,Tobi,Andrin,6,2,0.3333333333333333,2,0,0.0
-Season-4,Tobi,Elie,2,2,1.0,1,1,1.0
-Season-4,Tobi,Guy,5,1,0.2,2,0,0.0
-Season-4,Tobi,Ivo,2,0,0.0,1,0,0.0
-Season-4,Tobi,Joel R.,3,1,0.3333333333333333,1,0,0.0
-Season-4,Tobi,Lukas Stalder,3,2,0.6666666666666666,1,1,1.0
-Season-4,Tobi,Manuel,2,2,1.0,1,1,1.0
-Season-4,Tobi,Myri,5,2,0.4,2,1,0.5
-Season-4,Tobi,Pali,3,2,0.6666666666666666,1,1,1.0
-Season-4,Tobi,Sili,5,3,0.6,2,1,0.5
-Season-4,Tobi,Tommy,3,1,0.3333333333333333,1,0,0.0
-Season-4,Tobi,Valentin,2,2,1.0,1,1,1.0
-Season-4,Tommy,Andrin,10,7,0.7,4,3,0.75
-Season-4,Tommy,Dimlas,8,2,0.25,3,0,0.0
-Season-4,Tommy,Guy,4,2,0.5,2,1,0.5
-Season-4,Tommy,Ivo,8,5,0.625,3,2,0.6666666666666666
-Season-4,Tommy,Joel K.,2,2,1.0,1,1,1.0
-Season-4,Tommy,Joel R.,3,1,0.3333333333333333,1,0,0.0
-Season-4,Tommy,Lukas Stalder,10,4,0.4,5,2,0.4
-Season-4,Tommy,Manuel,2,2,1.0,1,1,1.0
-Season-4,Tommy,Matthias,6,3,0.5,2,1,0.5
-Season-4,Tommy,Missing Player,2,2,1.0,1,1,1.0
-Season-4,Tommy,Noe T.,2,0,0.0,1,0,0.0
-Season-4,Tommy,Sam,1,1,1.0,1,1,1.0
-Season-4,Tommy,Sili,13,9,0.6923076923076923,5,4,0.8
-Season-4,Tommy,Tinu,5,2,0.4,2,1,0.5
-Season-4,Tommy,Tobi,3,2,0.6666666666666666,1,1,1.0
-Season-4,Tommy,Valentin,3,1,0.3333333333333333,1,0,0.0
-Season-4,Tommy,Yannik,6,2,0.3333333333333333,2,0,0.0
-Season-4,Valentin,Andrin,4,2,0.5,2,1,0.5
-Season-4,Valentin,Dimlas,5,1,0.2,2,0,0.0
-Season-4,Valentin,Guy,4,0,0.0,2,0,0.0
-Season-4,Valentin,Ivo,5,2,0.4,2,1,0.5
-Season-4,Valentin,Joel K.,4,4,1.0,2,2,1.0
-Season-4,Valentin,Lukas Stalder,4,4,1.0,2,2,1.0
-Season-4,Valentin,Manuel,5,2,0.4,2,1,0.5
-Season-4,Valentin,Matthias,5,2,0.4,2,1,0.5
-Season-4,Valentin,Pali,2,2,1.0,1,1,1.0
-Season-4,Valentin,Sili,2,0,0.0,1,0,0.0
-Season-4,Valentin,Tobi,2,0,0.0,1,0,0.0
-Season-4,Valentin,Tommy,3,2,0.6666666666666666,1,1,1.0
-Season-4,Yannik,Andrin,9,1,0.1111111111111111,4,0,0.0
-Season-4,Yannik,Dimlas,4,0,0.0,2,0,0.0
-Season-4,Yannik,Filipe,2,2,1.0,1,1,1.0
-Season-4,Yannik,Guy,4,0,0.0,2,0,0.0
-Season-4,Yannik,Ivo,2,0,0.0,1,0,0.0
-Season-4,Yannik,Joel K.,7,5,0.7142857142857143,3,2,0.6666666666666666
-Season-4,Yannik,Luca,2,0,0.0,1,0,0.0
-Season-4,Yannik,Lukas Stalder,7,1,0.14285714285714285,3,0,0.0
-Season-4,Yannik,Manuel,12,4,0.3333333333333333,4,0,0.0
-Season-4,Yannik,Myri,2,0,0.0,1,0,0.0
-Season-4,Yannik,Noe T.,2,0,0.0,1,0,0.0
-Season-4,Yannik,Tinu,6,0,0.0,3,0,0.0
-Season-4,Yannik,Tommy,6,3,0.5,2,1,0.5
+season_id,player,player_id,opponent,games_played_vs,games_won_vs,game_win_rate_vs,matches_played_vs,matches_won_vs,match_win_rate_vs
+Season-4,Andrin,5,Dimlas,11,1,0.0909090909090909,5,0,0.0
+Season-4,Andrin,5,Guy,5,4,0.8,2,2,1.0
+Season-4,Andrin,5,Ivo,11,6,0.5454545454545454,4,2,0.5
+Season-4,Andrin,5,Luca,3,1,0.3333333333333333,1,0,0.0
+Season-4,Andrin,5,Lukas Stalder,6,4,0.6666666666666666,3,2,0.6666666666666666
+Season-4,Andrin,5,Manuel,15,9,0.6,6,4,0.6666666666666666
+Season-4,Andrin,5,Matthias,2,0,0.0,1,0,0.0
+Season-4,Andrin,5,Myri,3,2,0.6666666666666666,1,1,1.0
+Season-4,Andrin,5,Noe T.,8,5,0.625,3,2,0.6666666666666666
+Season-4,Andrin,5,Pali,3,2,0.6666666666666666,1,1,1.0
+Season-4,Andrin,5,Sili,8,3,0.375,3,1,0.3333333333333333
+Season-4,Andrin,5,Tinu,6,2,0.3333333333333333,2,0,0.0
+Season-4,Andrin,5,Tobi,6,3,0.5,2,1,0.5
+Season-4,Andrin,5,Tommy,10,3,0.3,4,1,0.25
+Season-4,Andrin,5,Valentin,4,2,0.5,2,1,0.5
+Season-4,Andrin,5,Yannik,9,8,0.8888888888888888,4,4,1.0
+Season-4,Dimlas,1,Andrin,11,10,0.9090909090909092,5,5,1.0
+Season-4,Dimlas,1,Filipe,3,2,0.6666666666666666,1,1,1.0
+Season-4,Dimlas,1,Guy,6,6,1.0,3,3,1.0
+Season-4,Dimlas,1,Ivo,5,3,0.6,2,1,0.5
+Season-4,Dimlas,1,Joel K.,10,7,0.7,4,3,0.75
+Season-4,Dimlas,1,Joel R.,2,2,1.0,1,1,1.0
+Season-4,Dimlas,1,Luca,3,1,0.3333333333333333,1,0,0.0
+Season-4,Dimlas,1,Lukas Stalder,14,7,0.5,5,3,0.6
+Season-4,Dimlas,1,Manuel,11,8,0.7272727272727273,4,4,1.0
+Season-4,Dimlas,1,Matthias,5,4,0.8,2,2,1.0
+Season-4,Dimlas,1,Myri,2,2,1.0,1,1,1.0
+Season-4,Dimlas,1,Noe T.,3,1,0.3333333333333333,1,0,0.0
+Season-4,Dimlas,1,Pali,2,0,0.0,1,0,0.0
+Season-4,Dimlas,1,Sili,13,9,0.6923076923076923,6,4,0.6666666666666666
+Season-4,Dimlas,1,Tinu,11,7,0.6363636363636364,4,3,0.75
+Season-4,Dimlas,1,Tommy,8,6,0.75,3,3,1.0
+Season-4,Dimlas,1,Valentin,5,4,0.8,2,2,1.0
+Season-4,Dimlas,1,Yannik,4,4,1.0,2,2,1.0
+Season-4,Elie,17,Joel K.,2,2,1.0,1,1,1.0
+Season-4,Elie,17,Myri,2,0,0.0,1,0,0.0
+Season-4,Elie,17,Pali,3,1,0.3333333333333333,1,0,0.0
+Season-4,Elie,17,Tobi,2,0,0.0,1,0,0.0
+Season-4,Filipe,23,Dimlas,3,1,0.3333333333333333,1,0,0.0
+Season-4,Filipe,23,Manuel,2,0,0.0,1,0,0.0
+Season-4,Filipe,23,Noe T.,2,0,0.0,1,0,0.0
+Season-4,Filipe,23,Yannik,2,0,0.0,1,0,0.0
+Season-4,Guy,10,Andrin,5,1,0.2,2,0,0.0
+Season-4,Guy,10,Dimlas,6,0,0.0,3,0,0.0
+Season-4,Guy,10,Ivo,3,2,0.6666666666666666,1,1,1.0
+Season-4,Guy,10,Joel K.,5,4,0.8,2,2,1.0
+Season-4,Guy,10,Lukas Stalder,7,4,0.5714285714285714,3,2,0.6666666666666666
+Season-4,Guy,10,Manuel,9,5,0.5555555555555556,3,2,0.6666666666666666
+Season-4,Guy,10,Matthias,3,2,0.6666666666666666,1,1,1.0
+Season-4,Guy,10,Myri,2,2,1.0,1,1,1.0
+Season-4,Guy,10,Sam,3,2,0.6666666666666666,1,1,1.0
+Season-4,Guy,10,Sili,7,1,0.1428571428571428,3,0,0.0
+Season-4,Guy,10,Tobi,5,3,0.6,2,1,0.5
+Season-4,Guy,10,Tommy,4,2,0.5,2,1,0.5
+Season-4,Guy,10,Valentin,4,4,1.0,2,2,1.0
+Season-4,Guy,10,Yannik,4,4,1.0,2,2,1.0
+Season-4,Ivo,18,Andrin,11,5,0.4545454545454545,4,2,0.5
+Season-4,Ivo,18,Dimlas,5,2,0.4,2,1,0.5
+Season-4,Ivo,18,Guy,3,1,0.3333333333333333,1,0,0.0
+Season-4,Ivo,18,Joel K.,2,2,1.0,1,1,1.0
+Season-4,Ivo,18,Lukas Stalder,6,2,0.3333333333333333,2,0,0.0
+Season-4,Ivo,18,Manuel,5,4,0.8,2,2,1.0
+Season-4,Ivo,18,Matthias,8,5,0.625,3,2,0.6666666666666666
+Season-4,Ivo,18,Myri,3,2,0.6666666666666666,1,1,1.0
+Season-4,Ivo,18,Noe T.,3,1,0.3333333333333333,1,0,0.0
+Season-4,Ivo,18,Sam,2,2,1.0,1,1,1.0
+Season-4,Ivo,18,Tinu,8,6,0.75,3,3,1.0
+Season-4,Ivo,18,Tobi,2,2,1.0,1,1,1.0
+Season-4,Ivo,18,Tommy,8,3,0.375,3,1,0.3333333333333333
+Season-4,Ivo,18,Valentin,5,3,0.6,2,1,0.5
+Season-4,Ivo,18,Yannik,2,2,1.0,1,1,1.0
+Season-4,Joel K.,12,Dimlas,10,3,0.3,4,1,0.25
+Season-4,Joel K.,12,Elie,2,0,0.0,1,0,0.0
+Season-4,Joel K.,12,Guy,5,1,0.2,2,0,0.0
+Season-4,Joel K.,12,Ivo,2,0,0.0,1,0,0.0
+Season-4,Joel K.,12,Lukas Stalder,3,1,0.3333333333333333,1,0,0.0
+Season-4,Joel K.,12,Manuel,8,4,0.5,3,1,0.3333333333333333
+Season-4,Joel K.,12,Matthias,2,0,0.0,1,0,0.0
+Season-4,Joel K.,12,Myri,3,1,0.3333333333333333,1,0,0.0
+Season-4,Joel K.,12,Noe T.,9,4,0.4444444444444444,3,1,0.3333333333333333
+Season-4,Joel K.,12,Sam,3,1,0.3333333333333333,1,0,0.0
+Season-4,Joel K.,12,Sili,8,2,0.25,4,1,0.25
+Season-4,Joel K.,12,Tommy,2,0,0.0,1,0,0.0
+Season-4,Joel K.,12,Valentin,4,0,0.0,2,0,0.0
+Season-4,Joel K.,12,Yannik,7,1,0.1428571428571428,3,0,0.0
+Season-4,Joel R.,3,Dimlas,2,0,0.0,1,0,0.0
+Season-4,Joel R.,3,Manuel,3,2,0.6666666666666666,1,1,1.0
+Season-4,Joel R.,3,Noe T.,2,2,1.0,1,1,1.0
+Season-4,Joel R.,3,Sam,3,2,0.6666666666666666,1,1,1.0
+Season-4,Joel R.,3,Sili,5,1,0.2,2,0,0.0
+Season-4,Joel R.,3,Tobi,3,2,0.6666666666666666,1,1,1.0
+Season-4,Joel R.,3,Tommy,3,2,0.6666666666666666,1,1,1.0
+Season-4,Luca,20,Andrin,3,2,0.6666666666666666,1,1,1.0
+Season-4,Luca,20,Dimlas,3,2,0.6666666666666666,1,1,1.0
+Season-4,Luca,20,Lukas Stalder,2,0,0.0,1,0,0.0
+Season-4,Luca,20,Yannik,2,2,1.0,1,1,1.0
+Season-4,Lukas Stalder,2,Andrin,6,1,0.1666666666666666,3,0,0.0
+Season-4,Lukas Stalder,2,Dimlas,14,7,0.5,5,2,0.4
+Season-4,Lukas Stalder,2,Guy,7,3,0.4285714285714285,3,1,0.3333333333333333
+Season-4,Lukas Stalder,2,Ivo,6,3,0.5,2,1,0.5
+Season-4,Lukas Stalder,2,Joel K.,3,1,0.3333333333333333,1,0,0.0
+Season-4,Lukas Stalder,2,Luca,2,2,1.0,1,1,1.0
+Season-4,Lukas Stalder,2,Manuel,8,2,0.25,3,0,0.0
+Season-4,Lukas Stalder,2,Matthias,8,5,0.625,3,2,0.6666666666666666
+Season-4,Lukas Stalder,2,Myri,4,4,1.0,2,2,1.0
+Season-4,Lukas Stalder,2,Noe T.,10,7,0.7,4,3,0.75
+Season-4,Lukas Stalder,2,Pali,3,2,0.6666666666666666,1,1,1.0
+Season-4,Lukas Stalder,2,Sili,9,2,0.2222222222222222,4,1,0.25
+Season-4,Lukas Stalder,2,Tinu,2,2,1.0,1,1,1.0
+Season-4,Lukas Stalder,2,Tobi,3,1,0.3333333333333333,1,0,0.0
+Season-4,Lukas Stalder,2,Tommy,10,6,0.6,5,3,0.6
+Season-4,Lukas Stalder,2,Valentin,4,0,0.0,2,0,0.0
+Season-4,Lukas Stalder,2,Yannik,7,6,0.8571428571428571,3,3,1.0
+Season-4,Manuel,8,Andrin,15,5,0.3333333333333333,6,1,0.1666666666666666
+Season-4,Manuel,8,Dimlas,11,3,0.2727272727272727,4,0,0.0
+Season-4,Manuel,8,Filipe,2,2,1.0,1,1,1.0
+Season-4,Manuel,8,Guy,9,3,0.3333333333333333,3,0,0.0
+Season-4,Manuel,8,Ivo,5,1,0.2,2,0,0.0
+Season-4,Manuel,8,Joel K.,8,4,0.5,3,2,0.6666666666666666
+Season-4,Manuel,8,Joel R.,3,1,0.3333333333333333,1,0,0.0
+Season-4,Manuel,8,Lukas Stalder,8,6,0.75,3,3,1.0
+Season-4,Manuel,8,Matthias,3,1,0.3333333333333333,1,0,0.0
+Season-4,Manuel,8,Missing Player,2,2,1.0,1,1,1.0
+Season-4,Manuel,8,Myri,3,1,0.3333333333333333,1,0,0.0
+Season-4,Manuel,8,Noe T.,8,2,0.25,3,0,0.0
+Season-4,Manuel,8,Sam,2,2,1.0,1,1,1.0
+Season-4,Manuel,8,Sili,7,6,0.8571428571428571,3,3,1.0
+Season-4,Manuel,8,Tinu,7,2,0.2857142857142857,3,1,0.3333333333333333
+Season-4,Manuel,8,Tobi,2,0,0.0,1,0,0.0
+Season-4,Manuel,8,Tommy,2,0,0.0,1,0,0.0
+Season-4,Manuel,8,Valentin,5,3,0.6,2,1,0.5
+Season-4,Manuel,8,Yannik,12,6,0.5,4,2,0.5
+Season-4,Matthias,21,Andrin,2,2,1.0,1,1,1.0
+Season-4,Matthias,21,Dimlas,5,1,0.2,2,0,0.0
+Season-4,Matthias,21,Guy,3,1,0.3333333333333333,1,0,0.0
+Season-4,Matthias,21,Ivo,8,3,0.375,3,1,0.3333333333333333
+Season-4,Matthias,21,Joel K.,2,2,1.0,1,1,1.0
+Season-4,Matthias,21,Lukas Stalder,8,3,0.375,3,1,0.3333333333333333
+Season-4,Matthias,21,Manuel,3,2,0.6666666666666666,1,1,1.0
+Season-4,Matthias,21,Missing Player,2,2,1.0,1,1,1.0
+Season-4,Matthias,21,Myri,2,2,1.0,1,1,1.0
+Season-4,Matthias,21,Noe T.,5,3,0.6,2,1,0.5
+Season-4,Matthias,21,Tommy,6,2,0.3333333333333333,2,0,0.0
+Season-4,Matthias,21,Valentin,5,3,0.6,2,1,0.5
+Season-4,Missing Player,22,Manuel,2,0,0.0,1,0,0.0
+Season-4,Missing Player,22,Matthias,2,0,0.0,1,0,0.0
+Season-4,Missing Player,22,Myri,2,0,0.0,1,0,0.0
+Season-4,Missing Player,22,Tommy,2,0,0.0,1,0,0.0
+Season-4,Myri,15,Andrin,3,1,0.3333333333333333,1,0,0.0
+Season-4,Myri,15,Dimlas,2,0,0.0,1,0,0.0
+Season-4,Myri,15,Elie,2,2,1.0,1,1,1.0
+Season-4,Myri,15,Guy,2,0,0.0,1,0,0.0
+Season-4,Myri,15,Ivo,3,1,0.3333333333333333,1,0,0.0
+Season-4,Myri,15,Joel K.,3,1,0.3333333333333333,1,0,0.0
+Season-4,Myri,15,Lukas Stalder,4,0,0.0,2,0,0.0
+Season-4,Myri,15,Manuel,3,2,0.6666666666666666,1,1,1.0
+Season-4,Myri,15,Matthias,2,0,0.0,1,0,0.0
+Season-4,Myri,15,Missing Player,2,2,1.0,1,1,1.0
+Season-4,Myri,15,Sili,2,0,0.0,1,0,0.0
+Season-4,Myri,15,Tinu,2,2,1.0,1,1,1.0
+Season-4,Myri,15,Tobi,5,3,0.6,2,1,0.5
+Season-4,Myri,15,Yannik,2,2,1.0,1,1,1.0
+Season-4,Noe T.,11,Andrin,8,3,0.375,3,1,0.3333333333333333
+Season-4,Noe T.,11,Dimlas,3,2,0.6666666666666666,1,1,1.0
+Season-4,Noe T.,11,Filipe,2,2,1.0,1,1,1.0
+Season-4,Noe T.,11,Ivo,3,1,0.3333333333333333,1,0,0.0
+Season-4,Noe T.,11,Joel K.,9,4,0.4444444444444444,3,1,0.3333333333333333
+Season-4,Noe T.,11,Joel R.,2,0,0.0,1,0,0.0
+Season-4,Noe T.,11,Lukas Stalder,10,3,0.3,4,1,0.25
+Season-4,Noe T.,11,Manuel,8,6,0.75,3,3,1.0
+Season-4,Noe T.,11,Matthias,5,2,0.4,2,1,0.5
+Season-4,Noe T.,11,Sam,4,0,0.0,2,0,0.0
+Season-4,Noe T.,11,Sili,10,2,0.2,4,0,0.0
+Season-4,Noe T.,11,Tinu,2,0,0.0,1,0,0.0
+Season-4,Noe T.,11,Tommy,2,2,1.0,1,1,1.0
+Season-4,Noe T.,11,Yannik,2,2,1.0,1,1,1.0
+Season-4,Pali,14,Andrin,3,1,0.3333333333333333,1,0,0.0
+Season-4,Pali,14,Dimlas,2,2,1.0,1,1,1.0
+Season-4,Pali,14,Elie,3,2,0.6666666666666666,1,1,1.0
+Season-4,Pali,14,Lukas Stalder,3,1,0.3333333333333333,1,0,0.0
+Season-4,Pali,14,Sili,5,1,0.2,2,0,0.0
+Season-4,Pali,14,Tobi,3,1,0.3333333333333333,1,0,0.0
+Season-4,Pali,14,Valentin,2,0,0.0,1,0,0.0
+Season-4,Sam,7,Guy,3,1,0.3333333333333333,1,0,0.0
+Season-4,Sam,7,Ivo,2,0,0.0,1,0,0.0
+Season-4,Sam,7,Joel K.,3,2,0.6666666666666666,1,1,1.0
+Season-4,Sam,7,Joel R.,3,1,0.3333333333333333,1,0,0.0
+Season-4,Sam,7,Manuel,2,0,0.0,1,0,0.0
+Season-4,Sam,7,Noe T.,4,4,1.0,2,2,1.0
+Season-4,Sam,7,Tommy,1,0,0.0,1,0,0.0
+Season-4,Sili,6,Andrin,8,5,0.625,3,2,0.6666666666666666
+Season-4,Sili,6,Dimlas,13,4,0.3076923076923077,6,2,0.3333333333333333
+Season-4,Sili,6,Guy,7,5,0.7142857142857143,3,2,0.6666666666666666
+Season-4,Sili,6,Joel K.,8,6,0.75,4,3,0.75
+Season-4,Sili,6,Joel R.,5,4,0.8,2,2,1.0
+Season-4,Sili,6,Lukas Stalder,9,7,0.7777777777777778,4,3,0.75
+Season-4,Sili,6,Manuel,7,1,0.1428571428571428,3,0,0.0
+Season-4,Sili,6,Myri,2,2,1.0,1,1,1.0
+Season-4,Sili,6,Noe T.,10,8,0.8,4,4,1.0
+Season-4,Sili,6,Pali,5,4,0.8,2,2,1.0
+Season-4,Sili,6,Tobi,5,2,0.4,2,1,0.5
+Season-4,Sili,6,Tommy,13,3,0.2307692307692307,5,0,0.0
+Season-4,Sili,6,Valentin,2,2,1.0,1,1,1.0
+Season-4,Tinu,4,Andrin,6,3,0.5,2,1,0.5
+Season-4,Tinu,4,Dimlas,11,4,0.3636363636363636,4,1,0.25
+Season-4,Tinu,4,Ivo,8,2,0.25,3,0,0.0
+Season-4,Tinu,4,Lukas Stalder,2,0,0.0,1,0,0.0
+Season-4,Tinu,4,Manuel,7,5,0.7142857142857143,3,2,0.6666666666666666
+Season-4,Tinu,4,Myri,2,0,0.0,1,0,0.0
+Season-4,Tinu,4,Noe T.,2,2,1.0,1,1,1.0
+Season-4,Tinu,4,Tommy,5,3,0.6,2,1,0.5
+Season-4,Tinu,4,Yannik,6,6,1.0,3,3,1.0
+Season-4,Tobi,13,Andrin,6,2,0.3333333333333333,2,0,0.0
+Season-4,Tobi,13,Elie,2,2,1.0,1,1,1.0
+Season-4,Tobi,13,Guy,5,1,0.2,2,0,0.0
+Season-4,Tobi,13,Ivo,2,0,0.0,1,0,0.0
+Season-4,Tobi,13,Joel R.,3,1,0.3333333333333333,1,0,0.0
+Season-4,Tobi,13,Lukas Stalder,3,2,0.6666666666666666,1,1,1.0
+Season-4,Tobi,13,Manuel,2,2,1.0,1,1,1.0
+Season-4,Tobi,13,Myri,5,2,0.4,2,1,0.5
+Season-4,Tobi,13,Pali,3,2,0.6666666666666666,1,1,1.0
+Season-4,Tobi,13,Sili,5,3,0.6,2,1,0.5
+Season-4,Tobi,13,Tommy,3,1,0.3333333333333333,1,0,0.0
+Season-4,Tobi,13,Valentin,2,2,1.0,1,1,1.0
+Season-4,Tommy,16,Andrin,10,7,0.7,4,3,0.75
+Season-4,Tommy,16,Dimlas,8,2,0.25,3,0,0.0
+Season-4,Tommy,16,Guy,4,2,0.5,2,1,0.5
+Season-4,Tommy,16,Ivo,8,5,0.625,3,2,0.6666666666666666
+Season-4,Tommy,16,Joel K.,2,2,1.0,1,1,1.0
+Season-4,Tommy,16,Joel R.,3,1,0.3333333333333333,1,0,0.0
+Season-4,Tommy,16,Lukas Stalder,10,4,0.4,5,2,0.4
+Season-4,Tommy,16,Manuel,2,2,1.0,1,1,1.0
+Season-4,Tommy,16,Matthias,6,3,0.5,2,1,0.5
+Season-4,Tommy,16,Missing Player,2,2,1.0,1,1,1.0
+Season-4,Tommy,16,Noe T.,2,0,0.0,1,0,0.0
+Season-4,Tommy,16,Sam,1,1,1.0,1,1,1.0
+Season-4,Tommy,16,Sili,13,9,0.6923076923076923,5,4,0.8
+Season-4,Tommy,16,Tinu,5,2,0.4,2,1,0.5
+Season-4,Tommy,16,Tobi,3,2,0.6666666666666666,1,1,1.0
+Season-4,Tommy,16,Valentin,3,1,0.3333333333333333,1,0,0.0
+Season-4,Tommy,16,Yannik,6,2,0.3333333333333333,2,0,0.0
+Season-4,Valentin,19,Andrin,4,2,0.5,2,1,0.5
+Season-4,Valentin,19,Dimlas,5,1,0.2,2,0,0.0
+Season-4,Valentin,19,Guy,4,0,0.0,2,0,0.0
+Season-4,Valentin,19,Ivo,5,2,0.4,2,1,0.5
+Season-4,Valentin,19,Joel K.,4,4,1.0,2,2,1.0
+Season-4,Valentin,19,Lukas Stalder,4,4,1.0,2,2,1.0
+Season-4,Valentin,19,Manuel,5,2,0.4,2,1,0.5
+Season-4,Valentin,19,Matthias,5,2,0.4,2,1,0.5
+Season-4,Valentin,19,Pali,2,2,1.0,1,1,1.0
+Season-4,Valentin,19,Sili,2,0,0.0,1,0,0.0
+Season-4,Valentin,19,Tobi,2,0,0.0,1,0,0.0
+Season-4,Valentin,19,Tommy,3,2,0.6666666666666666,1,1,1.0
+Season-4,Yannik,9,Andrin,9,1,0.1111111111111111,4,0,0.0
+Season-4,Yannik,9,Dimlas,4,0,0.0,2,0,0.0
+Season-4,Yannik,9,Filipe,2,2,1.0,1,1,1.0
+Season-4,Yannik,9,Guy,4,0,0.0,2,0,0.0
+Season-4,Yannik,9,Ivo,2,0,0.0,1,0,0.0
+Season-4,Yannik,9,Joel K.,7,5,0.7142857142857143,3,2,0.6666666666666666
+Season-4,Yannik,9,Luca,2,0,0.0,1,0,0.0
+Season-4,Yannik,9,Lukas Stalder,7,1,0.1428571428571428,3,0,0.0
+Season-4,Yannik,9,Manuel,12,4,0.3333333333333333,4,0,0.0
+Season-4,Yannik,9,Myri,2,0,0.0,1,0,0.0
+Season-4,Yannik,9,Noe T.,2,0,0.0,1,0,0.0
+Season-4,Yannik,9,Tinu,6,0,0.0,3,0,0.0
+Season-4,Yannik,9,Tommy,6,3,0.5,2,1,0.5

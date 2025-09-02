@@ -167,7 +167,7 @@ def process_matches(csv_file: str, output_file: str):
 
     with open(output_file, 'w', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(['season_id', 'draft_id', 'match_id', 'player_name', 'matches_played', 'elo', 'rating_change'])
+        writer.writerow(['season_id', 'draft_id', 'match_id', 'player', 'matches_played', 'elo', 'rating_change'])
         writer.writerows(elo_progress)
 
     print(f"Wrote {len(elo_progress)} rows to {output_file}")

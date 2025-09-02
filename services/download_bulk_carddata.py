@@ -10,6 +10,7 @@ import json
 SCRYFALL_BULK_URL = "https://api.scryfall.com/bulk-data"
 BULK_TYPE = "default_cards"
 DRAFTED_DECKS_PATH = "data/processed/drafted_decks.csv"
+CUBE_MAINBOARD_PATH = "data/processed/cube_mainboard.csv"
 OUTPUT_DIR = "data/cards"
 OUTPUT_FILE = os.path.join(OUTPUT_DIR, "scryfall_filtered_cards.json.gz")
 
@@ -58,7 +59,13 @@ if __name__ == "__main__":
     # Load drafted deck Scryfall IDs
     print("Loading drafted decks IDs...")
     drafted_decks = pd.read_csv(DRAFTED_DECKS_PATH)
+    cube_mainboard = pd.read_csv(CUBE_MAINBOARD_PATH)
+    
+    # Combine unique IDs from both files
     drafted_ids = set(drafted_decks["scryfallId"].dropna().unique())
+    cube_ids = set(cube_mainboard["scryfallId"].dropna().unique())
+    drafted_ids = drafted_ids.union(cube_ids)
+    
     print(f"Found {len(drafted_ids)} unique drafted card IDs.")
 
     # Fetch bulk file URL

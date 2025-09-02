@@ -84,7 +84,8 @@ def main():
         "scripts/get_card_history.py",
         "scripts/get_elo.py",
         "scripts/get_deckcolor.py",
-        "scripts/get_stats.py"
+        "scripts/get_stats.py",
+        "scripts/improve_csv.py"
     ]
     
     successful_scripts = []

@@ -142,4 +142,24 @@ def save_standings_to_csv(standings_df: pd.DataFrame, output_dir: Path = Path("d
     standings_path = output_dir / "standings.csv"
     standings_df.to_csv(standings_path, index=False)
     print(f"Saved standings to {standings_path}")
+    
 
+def extract_player_ids(standings_df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Extract unique player IDs from the standings dataframe.
+    
+    Args:
+        standings_df (pd.DataFrame): The standings dataframe containing player data
+    
+    Returns:
+        pd.DataFrame: DataFrame with unique player names and their associated data
+    """
+    player_ids_df = standings_df[['player']].drop_duplicates().reset_index(drop=True)
+    player_ids_df['player_id'] = range(1, len(player_ids_df) + 1)
+    return player_ids_df[['player_id', 'player']]
+
+def save_players_id_to_csv(player_ids_df: pd.DataFrame, output_dir: Path = Path("data/processed")):
+    output_dir.mkdir(parents=True, exist_ok=True)
+    player_ids_df_path = output_dir / "players.csv"
+    player_ids_df.to_csv(player_ids_df_path, index=False)
+    print(f"Saved player_ids_df to {player_ids_df_path}")
