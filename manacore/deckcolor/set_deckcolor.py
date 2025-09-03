@@ -152,9 +152,17 @@ def remove_lands_from_deck_colours(decks: pd.DataFrame) -> pd.DataFrame:
 
 def normalize_deck_color(colors_list):
     """
-    Convert a list of colors to a short code string.
-    Example: ['Black', 'Green'] -> 'BG'
+    Convert a list of colors to a short code string in WUBRG order.
+    Example: ['Black', 'Blue'] -> 'UB' (not 'BU')
+    Example: ['Blue', 'Black'] -> 'UB' (not 'BU') 
     """
     color_map = {"White": "W", "Blue": "U", "Black": "B", "Red": "R", "Green": "G"}
-    return "".join([color_map[c] for c in colors_list if c in color_map])
-
+    
+    # Define the canonical WUBRG order for sorting
+    wubrg_order = {"W": 0, "U": 1, "B": 2, "R": 3, "G": 4}
+    
+    # Map colors to codes and sort by WUBRG order
+    color_codes = [color_map[c] for c in colors_list if c in color_map]
+    sorted_codes = sorted(color_codes, key=lambda x: wubrg_order[x])
+    
+    return "".join(sorted_codes)
