@@ -1,4 +1,3 @@
-
 import csv
 import json
 import datetime
@@ -86,6 +85,7 @@ def append_inactive_players_progress(
             elo_progress.append((
                 season_id or "Unknown Season",
                 draft_id,
+                "",  # Empty match_id for inactive players
                 player,
                 matches_played,
                 last_elo_by_player.get(player, DEFAULT_ELO),
