@@ -143,7 +143,7 @@ def process_and_save_all_outputs(base_path: str):
     print("Saved player decktype winrates.")
     
     print("Saving most picked card by player...")
-    most_picked_card_df.to_csv(os.path.join(processed_dir, "most_picked_card_by_player.csv"), index=False)
+    most_picked_card_df.to_csv(os.path.join(processed_dir, "most_played_card_by_player.csv"), index=False)
     print("Saved most picked card.")
     
     print("Saving decktype match winrate...")
