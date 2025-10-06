@@ -6,9 +6,10 @@ Season-4,Combo,175,378,0.46296296296296297
 Season-4,Combo-Control,71,132,0.5378787878787878
 Season-4,Control,126,256,0.4921875
 Season-4,Control-Aggro (Midrange),42,107,0.3925233644859813
-Unknown Season,Aggro,16,29,0.5517241379310345
+Unknown Season,Aggro,33,60,0.55
+Unknown Season,Aggro-Combo,4,8,0.5
 Unknown Season,Aggro-Control (Tempo),6,10,0.6
-Unknown Season,Combo,11,16,0.6875
+Unknown Season,Combo,35,58,0.603448275862069
 Unknown Season,Combo-Control,7,19,0.3684210526315789
-Unknown Season,Control,14,29,0.4827586206896552
+Unknown Season,Control,25,68,0.36764705882352944
 Unknown Season,Control-Aggro (Midrange),3,11,0.2727272727272727

@@ -4035,3 +4035,358 @@ Unknown Season,20250817,141,Tommy,16,Control,Birthing Pod,9503a1e6-f0bf-44d0-a28
 Unknown Season,20250817,141,Tommy,16,Control,Birthing Pod,d51269cf-a333-4a64-94cd-245798d840d2,Elder Gargaroth,['Green'],"['White', 'Green']",WG
 Unknown Season,20250817,141,Tommy,16,Control,Birthing Pod,fc310a26-b6a0-4e42-98ab-bdfd7b06cb63,"Beza, the Bounding Spring",['White'],"['White', 'Green']",WG
 Unknown Season,20250817,141,Tommy,16,Control,Birthing Pod,54a3ea87-005e-4985-b2a5-21711d0b71c0,Springheart Nantuko,['Green'],"['White', 'Green']",WG
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,e9be371c-c688-44ad-ab71-bd4c9f242d58,Force of Negation,['Blue'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,1ac01fff-4de6-4783-9489-4127e25bc641,Prismatic Vista,['Lands'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,fa87bf1e-2062-4983-b1c4-98bffea69a4c,Pyrogoyf,['Red'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,866b7fd4-86e3-4b42-b1ea-33bad0db1f9f,Prismari Command,"['Red', 'Blue']","['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,0e51d796-7279-4c06-87f0-37adbdaa41df,Underworld Breach,['Red'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,af7091c9-5f98-4078-a42b-c9e057346d9b,Hallowed Fountain,['Lands'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,72c6d541-e2cb-4d6e-acac-90a8f53b7006,Elegant Parlor,['Lands'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,1e0c695d-62f9-4805-9e2f-7032e8464136,No More Lies,"['Blue', 'White']","['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,2398892d-28e9-4009-81ec-0d544af79d2b,Ancestral Recall,['Blue'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,4cbdacc1-7a1b-4633-85f5-eb50c2bf406d,Snapcaster Mage,['Blue'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,53d4fd57-74b6-42c7-88b1-110e5a8dfc3c,Spell Pierce,['Blue'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,e6d7fba8-a157-4d81-9d6b-bd210a96b248,Gleemox,['Colorless'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,fc7d1912-7e27-49ef-bd98-375d975a42b0,Starting Town,['Lands'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,247939d9-87e9-4f01-b223-fb4cfa7dbbe1,Mana Leak,['Blue'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,ce648aa3-098b-4af0-a433-fd290bc85904,Balance,['White'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,7d48d622-f397-4f31-b1a5-0c23f60aa71c,Mana Tithe,['White'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,054f2276-2dd5-43da-bb26-c57c560861fe,Steam Vents,['Lands'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,bd8fa327-dd41-4737-8f19-2cf5eb1f7cdd,Black Lotus,['Colorless'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,b045c28a-39f9-4cd9-8f3a-a626b697f409,Cathartic Pyre,['Red'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,c1e0f201-42cb-46a1-901a-65bb4fc18f6c,Urza's Saga,['Lands'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,2a717b98-cdac-416d-bf6c-f6b6638e65d1,"Tamiyo, Inquisitive Student // Tamiyo, Seasoned Scholar",['Blue'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,6bbf7394-9b17-45f8-a25b-d865e8452b2c,Steamcore Scholar,['Blue'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,e5145f31-a4ac-44ef-8f85-e4d95f2c9ff5,Library of Alexandria,['Lands'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,8db735ea-f9cf-4e3c-9200-4f180df55baa,Fractured Identity,"['Blue', 'White']","['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,be77b98a-dd79-477c-8ab2-7ebf5637a89e,Headliner Scarlett,['Red'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,cf3eb762-6c3f-4b11-a4f9-968f79370217,Mystic Confluence,['Blue'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,1453f92e-df2d-4789-aa1b-a5b5c51567d4,Preordain,['Blue'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,01978fe5-00a9-4add-ae2a-b4c2572ffb9a,Vendilion Clique,['Blue'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,3a2d7cf9-dddb-4de3-b4f2-c52e3ec8fb4b,Brain Freeze,['Blue'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,ebc01ab4-d89a-4d25-bf54-6aed33772f4b,Force of Will,['Blue'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,155,Tommy,16,Combo,Storm,98e7bf8f-dba7-4005-8cee-634c9153931d,Phantasmal Image,['Blue'],"['Blue', 'Red', 'White']",WUR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,24e58478-c6a8-4f86-854a-a489c99bd777,Usher of the Fallen,['White'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,68c72226-6f52-4322-8b14-18737293dfa0,Bloodstained Mire,['Lands'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,9721f8da-39ed-4ada-a571-61e08a86032b,Broadside Bombardiers,['Red'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,8a720448-017f-4f4a-9501-678245eaed17,Mishra's Bauble,['Colorless'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,09fd2d9c-1793-4beb-a3fb-7a869f660cd4,Bonecrusher Giant // Stomp,['Red'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,ec3de5f4-bb55-4ab9-995f-f3e0dc22c1bb,Voice of Victory,['White'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,bb9ad57f-cca2-4717-a951-cbe3c7782efe,Recruiter of the Guard,['White'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,d13a898e-6a97-4fd9-980e-3bfd8d755386,Tarfire,['Red'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,24c0d87b-0049-4beb-b9cb-6f813b7aa7dc,Fable of the Mirror-Breaker // Reflection of Kiki-Jiki,['Red'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,a9738cda-adb1-47fb-9f4c-ecd930228c4d,"Ragavan, Nimble Pilferer",['Red'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,825969b9-3c70-4fca-8cab-696e9ca7cdb2,Prismatic Ending,['White'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,9814d8e8-c462-41ca-9909-1c659f488543,Lotus Petal,['Colorless'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,a7a8b6b8-b95f-4014-b17a-a6d44d965995,City of Traitors,['Lands'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,117bb5db-4a1c-4704-b0b5-c67b45ac2f52,"Yuffie, Materia Hunter",['Red'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,19018f23-b63b-45af-8419-8959f41472d4,Pre-War Formalwear,['White'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,b83cfbaa-7890-4f6f-878b-4edb45677371,Skyclave Apparition,['White'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,a1176dcf-40ee-4342-aa74-791b8352e99a,Scrawling Crawler,['Colorless'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,4e117771-5a8b-4812-b487-32ba34b7f724,Giver of Runes,['White'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,0d16e8e0-31b2-4389-afd6-783c501f6fa0,"Ajani, Nacatl Pariah // Ajani, Nacatl Avenger",['White'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,f231caf8-56c0-4719-a90d-5e5efbee3148,Den of the Bugbear,['Red'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,f3537373-ef54-4578-9d05-6216420ee349,Esper Sentinel,['White'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,0463e989-ba32-4a46-a82f-e0d6daf3cd51,Sulfuric Vortex,['Red'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,69490262-afc2-4692-8fac-b771a972c8f8,Volcanic Spite,['Red'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,4ced112a-e775-4f97-97b3-74877e9dce12,Dragon's Rage Channeler,['Red'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,9d48aaff-46ab-411b-9456-171d4709f951,Fear of Missing Out,['Red'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,b34bf7fd-9fe3-43e2-8cfe-7ce7cff08afe,Stonecoil Serpent,['Colorless'],"['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,e419cd0b-2449-4cc5-9ead-b9e45e271700,"Phlage, Titan of Fire's Fury","['Red', 'White']","['White', 'Red']",WR
+Unknown Season,20250921,149,Jonas W.,27,Aggro,Boros Aggro,76c3cad2-1e25-4abe-878d-9194de6fcc27,Guide of Souls,['White'],"['White', 'Red']",WR
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,9417f14c-a853-42c6-a992-29139484260a,Ignoble Hierarch,['Green'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,6989018c-37b1-4282-a4af-9cc97f160b4d,Oliphaunt,['Red'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,19adde22-e5eb-4815-beb6-c520b3274cc9,Lotus Cobra,['Green'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,0fe070f4-8877-4280-b8fd-869f3ac34ab6,Sheltering Landscape,['Lands'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,01e7b0bc-1c6c-48f4-8b72-1a809f536c6c,Birds of Paradise,['Green'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,6f11029a-b24d-4248-834f-b852b56857f6,Biogenic Ooze,['Green'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,de0e01e4-e143-47fd-8565-7b48219bb546,Goldvein Hydra,['Green'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,bf220c06-3cce-4bdd-aa58-83940c223e9c,Commercial District,['Lands'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,bbec97ff-bb84-4496-9e09-d4fc1570c516,Mawloc,"['Green', 'Red']","['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,89f5cc05-5d9d-4709-b3c5-a6249c294acc,Hexdrinker,['Green'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,73cc6df4-3564-4ace-bf8a-eac3e62d725a,Ursine Monstrosity,['Green'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,928036c9-11b8-493e-b9f2-8fbd3487cd19,"Minsc & Boo, Timeless Heroes","['Green', 'Red']","['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,f46a9329-7b91-441d-8653-50c1152c9120,"Kellan, Planar Trailblazer",['Red'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,b3dd3c7d-4685-4579-b483-14ddaaaddf5b,Scythecat Cub,['Green'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,01794178-cf41-454c-ac37-1d8b18e42db2,Green Sun's Zenith,['Green'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,eeeffc0b-dc92-458e-ad58-86ff6077a508,Sentinel of the Nameless City,['Green'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,4a706ecf-3277-40e3-871c-4ba4ead16e20,Wrenn and Six,"['Green', 'Red']","['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,52eef0d6-24b7-40b7-8403-e8e863d0cd55,"Bristly Bill, Spine Sower",['Green'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,f61693a2-7042-44e0-85ba-9bf12ab94e7e,Suplex,['Red'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,1f2f7d4b-aa65-42ed-a441-8e35be96743c,Orcish Lumberjack,['Red'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,16c8d2fa-54a7-46e8-980c-905258497c90,Arid Mesa,['Lands'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,487116ab-b885-406b-aa54-56cb67eb3ca5,Scavenging Ooze,['Green'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,c7bbb911-9de2-455d-9677-e1004db65dbd,"Chandra, Torch of Defiance",['Red'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,1af92296-455a-425e-9397-a96d09937767,Incinerate,['Red'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,2b5315a4-6a78-456f-8d5a-fea9d62f3f0e,Strip Mine,['Lands'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,4e4b6e22-93b2-4896-bba5-0ceaa5d8ea3c,"Yavimaya, Cradle of Growth",['Green'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,2ef878cb-27b6-47d8-ad11-bd20529b0e7e,Cast into the Fire,['Red'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,2b73d294-6ab1-4051-9b0f-d8e335d37674,Unholy Heat,['Red'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,1066a94a-8e4f-4d77-820b-7a77a18116f0,Wooded Foothills,['Lands'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,4acf970d-d2d7-413d-aba7-587ee53d8d5c,Stomping Ground,['Lands'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,1132218d-56cd-441e-9006-df3c50344491,Joraga Treespeaker,['Green'],"['Green', 'Red']",RG
+Unknown Season,20250921,144,Andrin,5,Aggro,Gruul Aggro,ce35e6fb-ff54-44c4-a216-7ddd37f46882,Screaming Nemesis,['Red'],"['Green', 'Red']",RG
+Unknown Season,20250921,148,Joel K.,12,Aggro,Boros Aggro,93f99e67-901f-4c8d-8a09-e443b7eb928f,Archangel Elspeth,['White'],"['White', 'Red']",WR
+Unknown Season,20250921,148,Joel K.,12,Aggro,Boros Aggro,3bd1ec98-8188-4649-899e-b0972509fc7e,Firebolt,['Red'],"['White', 'Red']",WR
+Unknown Season,20250921,148,Joel K.,12,Aggro,Boros Aggro,2c695df6-6bf2-4e6b-8500-e3116137ca27,Jacked Rabbit,['White'],"['White', 'Red']",WR
+Unknown Season,20250921,148,Joel K.,12,Aggro,Boros Aggro,80c72839-0fa6-4b5f-83b7-6553ebf09bef,"Otharri, Suns' Glory","['Red', 'White']","['White', 'Red']",WR
+Unknown Season,20250921,148,Joel K.,12,Aggro,Boros Aggro,0d60eabe-b281-4eba-9c26-287364ed2067,Earthshaker Khenra,['Red'],"['White', 'Red']",WR
+Unknown Season,20250921,148,Joel K.,12,Aggro,Boros Aggro,a3bb2881-e8fb-4fba-a9f9-d93e6ca24378,"Laelia, the Blade Reforged",['Red'],"['White', 'Red']",WR
+Unknown Season,20250921,148,Joel K.,12,Aggro,Boros Aggro,ed0216a0-c5c9-4a99-b869-53e4d0256326,Mox Pearl,['Colorless'],"['White', 'Red']",WR
+Unknown Season,20250921,148,Joel K.,12,Aggro,Boros Aggro,fa7a55aa-ae61-4933-b7a4-dcc55dac6fcd,"Inti, Seneschal of the Sun",['Red'],"['White', 'Red']",WR
+Unknown Season,20250921,148,Joel K.,12,Aggro,Boros Aggro,b689a206-aec3-4a31-95cf-3d4b840db04c,Securitron Squadron,['White'],"['White', 'Red']",WR
+Unknown Season,20250921,148,Joel K.,12,Aggro,Boros Aggro,89175ce1-0746-4ba1-970e-617d134b0527,"Gau, Feral Youth",['Red'],"['White', 'Red']",WR
+Unknown Season,20250921,148,Joel K.,12,Aggro,Boros Aggro,fe964e7e-e2c5-4263-889d-0a531eb51442,Luminarch Aspirant,['White'],"['White', 'Red']",WR
+Unknown Season,20250921,148,Joel K.,12,Aggro,Boros Aggro,f632be90-9e7f-41f8-a52e-a2952354d730,Descendant of Storms,['White'],"['White', 'Red']",WR
+Unknown Season,20250921,148,Joel K.,12,Aggro,Boros Aggro,9b32531e-c759-4603-abd0-1724e8df70db,Tribal Flames,['Red'],"['White', 'Red']",WR
+Unknown Season,20250921,148,Joel K.,12,Aggro,Boros Aggro,c8090bcf-e17a-4110-a518-77ccd045b18f,Charming Scoundrel,['Red'],"['White', 'Red']",WR
+Unknown Season,20250921,148,Joel K.,12,Aggro,Boros Aggro,c86b8a75-9e31-4a44-95b8-c83b9a49646f,Ocelot Pride,['White'],"['White', 'Red']",WR
+Unknown Season,20250921,148,Joel K.,12,Aggro,Boros Aggro,1ac0e78b-0fdd-44f9-8b7b-c4f28a32782e,Amped Raptor,['Red'],"['White', 'Red']",WR
+Unknown Season,20250921,148,Joel K.,12,Aggro,Boros Aggro,70e33f45-7d47-423b-a123-8541f1d1afb4,Lingering Souls,['White'],"['White', 'Red']",WR
+Unknown Season,20250921,148,Joel K.,12,Aggro,Boros Aggro,15db4353-9c46-4fe4-b22e-0cf024aa9dfc,Grim Lavamancer,['Red'],"['White', 'Red']",WR
+Unknown Season,20250921,148,Joel K.,12,Aggro,Boros Aggro,33ab05b5-d6f5-439c-9aed-1a58ceb282ad,Flametongue Yearling,['Red'],"['White', 'Red']",WR
+Unknown Season,20250921,148,Joel K.,12,Aggro,Boros Aggro,32a180dd-9641-4546-8940-9b21084f0c71,Lightning Bolt,['Red'],"['White', 'Red']",WR
+Unknown Season,20250921,148,Joel K.,12,Aggro,Boros Aggro,819a513c-3be6-4bdc-8ba6-1f7326a8f3ea,Fiery Confluence,['Red'],"['White', 'Red']",WR
+Unknown Season,20250921,148,Joel K.,12,Aggro,Boros Aggro,2dc16614-5cf8-444d-a5ae-cac25018af68,Burst Lightning,['Red'],"['White', 'Red']",WR
+Unknown Season,20250921,148,Joel K.,12,Aggro,Boros Aggro,89af0f45-c11c-4f13-9950-b1489440ee5b,Chain Lightning,['Red'],"['White', 'Red']",WR
+Unknown Season,20250921,148,Joel K.,12,Aggro,Boros Aggro,1e3e8085-cfcd-4e88-b441-4d1f8ac63904,Forth Eorlingas!,"['Red', 'White']","['White', 'Red']",WR
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,0055ea30-20fb-4324-a632-8fed87628f05,"Boseiju, Who Endures",['Green'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,43aa7e35-55ee-4e02-a8aa-ea2b267055d1,Woodfall Primus,['Green'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,96c5607b-55fe-43c2-93fe-0084d84499d9,Deep Forest Hermit,['Green'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,0845f0b0-9413-4ddd-861d-9607636bebc6,Natural Order,['Green'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,01c6f877-6b00-4d57-8a88-36cd3b16edbc,Llanowar Elves,['Green'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,30377bf0-d9b1-4c14-8dde-f74b1e02d604,Gilded Goose,['Green'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,1dd64b1d-bcef-476c-bf0b-3ac7df7cbed3,"Nissa, Ascended Animist",['Green'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,7c353e83-4b63-4bc6-b029-273d2eca1f75,Upheaval,['Blue'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,3462a3d0-5552-49fa-9eb7-100960c55891,"Oko, Thief of Crowns","['Green', 'Blue']","['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,b841bfa8-7c17-4df2-8466-780ab9a4a53a,Fabled Passage,['Lands'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,24a5cc2c-0fbf-4a5f-b175-6e0ffd0d0787,Misty Rainforest,['Lands'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,63c59228-c742-4abd-b4d7-9f7880190e95,Windswept Heath,['Lands'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,d2507bc2-da17-4e46-b4c5-ba0080ce2c6f,Rishadan Port,['Lands'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,6151b583-3aa7-4be8-9d05-d5e53f19c6c9,Fastbond,['Green'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,d7a8cc1d-aabb-4eb6-b0f1-6c93ec246f61,Court of Garenbrig,['Green'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,41e108a5-4e2f-42cf-9ea1-87bf3c0a2b7f,"Nissa, Who Shakes the World",['Green'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,7eb39e97-53c2-4df0-9fb3-a3d6a24ec41f,Avacyn's Pilgrim,['Green'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,71384418-173a-4f77-adab-56e52fa23692,Delighted Halfling,['Green'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,8683a978-1bef-4b01-9361-56b1fc157d26,Courser of Kruphix,['Green'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,4216656e-90e8-45fc-a0f6-0d0d79d0a021,Shelldock Isle,['Blue'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,005dae9a-dddc-4a11-95bb-cce319edcce4,Skullclamp,['Colorless'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,25b0b816-0583-44aa-9dc5-f3ff48993a51,Gaea's Cradle,['Lands'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,45fd6e91-df76-497f-b642-33dc3d5f6a5a,Mox Ruby,['Colorless'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,e41cf82d-3213-47ce-a015-6e51a8b07e4f,Questing Beast,['Green'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,0ce44270-a684-4489-9077-521456e6dfaa,Lórien Revealed,['Blue'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,3003d481-1b52-4aa9-bbdc-e948fbc8d49d,Sylvan Library,['Green'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,641b21e1-9188-4bc3-96e8-cda2acbc5ed5,Time Spiral,['Blue'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,44afd414-cc69-4888-ba12-7ea87e60b1f7,Craterhoof Behemoth,['Green'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,400382a4-aea2-4827-b06a-1b0b3745908b,Noble Hierarch,['Green'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,6aa5cc65-f8f1-4f6f-8b4e-2fedccbda684,"Rofellos, Llanowar Emissary",['Green'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,e4775a26-0b66-40e9-8f64-41d9308ca032,"Surrak, Elusive Hunter",['Green'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,ee8e9928-d9b2-4570-adb8-44b34115decd,Tireless Tracker,['Green'],"['Green', 'Blue']",UG
+Unknown Season,20250921,147,Ivo,18,Aggro-Combo,Greenbased Aggro-Combo,229a0d4a-3777-451d-a2fb-f1a2fdf8019f,Spara's Headquarters,['Lands'],"['Green', 'Blue']",UG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,5ad86b17-3fed-418a-938c-c49adb409531,Abundant Harvest,['Green'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,e4e6794a-feeb-4fc8-a2ee-38c75c18aaae,Heartless Act,['Black'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,d5806e68-1054-458e-866d-1f2470f682b2,The One Ring,['Colorless'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,cea3b218-0e6e-443a-84f7-380f1021e8e1,Barrowgoyf,['Black'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,df9d9075-2d1e-4848-b661-816d539e05eb,Emperor of Bones,['Black'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,4720b4f2-e6af-4223-9250-a0ed21ed5693,Pest Infestation,['Green'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,f6ca59cd-8779-4a84-a54b-e863b79c61f0,Underground Mortuary,['Lands'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,cb94a02f-4660-45b6-8a39-941b710cf8f3,Collective Brutality,['Black'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,d40b65c1-b24d-492d-81b9-d8474ebdc08c,Sylvan Caryatid,['Green'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,4820d223-4ea1-4850-931c-3d2ab5eb003b,Birthing Ritual,['Green'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,1c603751-1e2b-4c8e-a8d2-5c0876e7254f,Darkstar Augur,['Black'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,3ee3945e-5089-4751-b7b3-5961c39d2a33,Nethergoyf,['Black'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,cc520518-2063-4b57-a0d4-10cf62a7175e,Zagoth Triome,['Lands'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,7832abb5-5107-4603-904e-491b221bd3e3,Smuggler's Copter,['Colorless'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,45026d57-0324-4312-8b86-2e7d4f581ee9,Marsh Flats,['Lands'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,21c950d7-b4f6-4902-8c9a-98f2933f9fa5,Adanto Vanguard,['White'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,2ae6828e-ff19-45db-8b59-61616353491f,Deceptive Landscape,['Lands'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,553fb946-2706-475b-89f9-e4355ec9ea2b,March of Otherworldly Light,['White'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,9cbb7b4e-bd32-44a0-9396-16738c5e4381,The Last Ride,['Black'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,c17816e8-28b1-4295-a637-efb0e5c18873,Lush Portico,['Lands'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,29632951-3c3d-478c-8c5a-9a34f30a5c28,Dauthi Voidwalker,['Black'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,b256ddc8-8b12-434c-a610-1a872e948f2f,White Plume Adventurer,['White'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,dd16222e-349c-4a2b-a7c8-8eb35a8ab332,Static Prison,['White'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,6fd672bb-18cf-44e3-8dda-5310b1e0fffe,Godless Shrine,['Lands'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,05cf51d8-9f91-42ff-99e9-4397f2251c20,Dark Confidant,['Black'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,b6876d9e-0908-43ac-8542-09c7aa02b5ba,Tarmogoyf,['Green'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,35f1a6ba-e46f-44fb-93f4-fb883d677b36,Baleful Mastery,['Black'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,f62fd592-4910-417d-a500-e7029f3d119f,Kitesail Freebooter,['Black'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,d2e27911-87cb-49a0-a34f-6afe4bddd592,Phyrexian Metamorph,['Colorless'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,154,Pali,14,Control,Lifeloss Control,16e040c3-bf42-4a5b-aeb3-5dc9921151e5,Death's Shadow,['Black'],"['Green', 'Black', 'White']",WBG
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,16448d95-ee21-4def-b880-26f6f159c213,Metamorphosis Fanatic,['Black'],"['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,345a1c80-41d6-43b1-83ab-1aa56dd06b1b,Bitter Reunion,['Red'],"['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,a6539e26-b63b-4725-9407-caaf451de084,Troll of Khazad-dûm,['Black'],"['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,377cee38-e769-47b0-abd5-0f528600f36a,Badlands,['Lands'],"['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,2487d124-210b-4808-888c-cd0a78aebd90,Molten Collapse,"['Black', 'Red']","['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,d5c782cc-c951-4c6f-a93f-774ae6c1c214,Shallow Grave,['Black'],"['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,a9225cc3-90f0-448f-a8d9-7c6c2796d077,Sheoldred's Edict,['Black'],"['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,55d35442-5ca0-4fd7-8ff1-b7347b3e6690,Piggy Bank,['Red'],"['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,f0192cf7-3391-4720-b9c8-72dec5dde01e,Bloodtithe Harvester,"['Black', 'Red']","['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,995486ce-58bb-4753-a812-0ca73ef1a235,Gitaxian Probe,['Colorless'],"['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,86ecaedc-08f1-4de7-aae8-056df57940e0,Goblin Cratermaker,['Red'],"['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,4a1f905f-1d55-4d02-9d24-e58070793d3f,"Atraxa, Grand Unifier","['Black', 'Green', 'Blue', 'White']","['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,071daca8-ccc6-4707-843e-adac40dd1588,Fury,['Red'],"['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,68924203-c3d9-41ce-8ca8-c6dd491eb3ca,Psychic Frog,"['Black', 'Blue']","['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,b6cb2549-e485-44d6-9d65-7605c568909e,Unearth,['Black'],"['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,d58d3545-043a-457a-8324-facc3c2363ec,Overlord of the Boilerbilges,['Red'],"['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,2bf2da97-3331-4614-b4ff-f03d061500a7,Fire Covenant,"['Black', 'Red']","['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,c8f0b123-fdb0-4f3e-ba78-fa155c227e20,Greasewrench Goblin,['Red'],"['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,2424f2c4-366b-42cf-bf4b-a8a5bfdd2c4b,Life // Death,['Black'],"['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,69c68c95-b788-43b1-9f22-1b22c5a00b25,Deep-Cavern Bat,['Black'],"['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,d0e3e7b3-7ba9-47a2-b46c-a40bffb445e2,Twisted Landscape,['Lands'],"['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,311a6257-dd77-4bb6-81cb-c8e7862350f3,Necromancy,['Black'],"['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,e6befbc4-1320-4f26-bd9f-b1814fedda10,Grief,['Black'],"['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,1be9d9a4-d7ee-4854-abc2-85cabf993ec9,Archon of Cruelty,['Black'],"['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,4c732dc7-dd6b-4cc1-bbe0-ff3b1d2c7419,Animate Dead,['Black'],"['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,54f449ff-4025-465e-9ec5-a5cf42c4c9d3,Xander's Lounge,['Lands'],"['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,2ba70366-b6ae-423a-a8d8-29d2b8afd939,"Ivora, Insatiable Heir",['Red'],"['Black', 'Red']",BR
+Unknown Season,20250921,152,Matthias,21,Combo,Reanimator,18a3cca1-e50e-49b6-9e1a-f86640e3b177,Snuff Out,['Black'],"['Black', 'Red']",BR
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,ebeafbc2-0399-4335-8f63-76a3e085e8c6,Evolved Sleeper,['Black'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,1ee98955-4c47-4d45-9377-608dfa755337,Bone Shards,['Black'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,50bc0f5b-7421-45b9-af85-86dd9821b7d8,Soulherder,"['Blue', 'White']","['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,5bb3cb5c-8d66-4f5e-a9a9-917e6045f024,Flickerwisp,['White'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,74b4c336-5d4c-4bc5-b82a-35084a6ad808,Spellseeker,['Blue'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,0d08f5e4-d2d3-4659-86d4-a983d80e3b2c,Tundra,['Lands'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,17f28b16-da65-41a8-ba4f-f1c5e104aad6,Council's Judgment,['White'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,9503a1e6-f0bf-44d0-a28b-56fbfcff1ff2,Guardian of Ghirapur,['White'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,1a6f256b-943e-4cfb-9fc9-d1ded68b5f97,Chart a Course,['Blue'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,dcb94950-3f3e-4876-84f8-d5e4d9cfecee,Charming Prince,['White'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,07313dd3-d0dc-40ca-98a3-fa4d39e5bcae,Oust,['White'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,f33d3948-fe7b-4c3b-ab67-1022623fbb2b,"Toby, Beastie Befriender",['White'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,a2c56479-4bee-4edb-80d7-4af010b7c793,Raffine's Tower,['Lands'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,09521f23-52d6-482d-9f3b-c4d12fcc08cc,Tidehollow Sculler,"['Black', 'White']","['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,3c02b8ee-84cb-44cb-ba14-9e725a9d03ee,Ponder,['Blue'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,3b5233ff-03bc-4053-9b49-c4185c2de38d,Restoration Angel,['White'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,59faa45d-868b-4bc7-934c-0e077642e129,Loran of the Third Path,['White'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,04fc99dc-bfbe-4567-b791-6b1db96471ec,Reanimate,['Black'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,2da5f3f8-5eef-498f-ba2c-2f3fbc3745aa,Ephemerate,['White'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,b8aa7126-5df3-42dd-b4a3-0d0ea59eeebd,Helping Hand,['White'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,1bd3fa8a-6c50-4f7f-9ae3-0810eec5e3db,Reprieve,['White'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,e2312c49-1627-47ad-8113-78a999a97d8d,Contaminated Landscape,['Lands'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,5f6927e1-c580-483a-8e2a-6e2deb74800e,Mox Jet,['Colorless'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,504a69eb-3c2d-4bb1-b117-252b15acf0c2,Mana Confluence,['Lands'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,9d3a7998-ccac-45ad-a4e9-3a2cb057f63b,Elite Spellbinder,['White'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,ab1d1461-1625-4163-aacd-a939f4871fad,Staff of the Storyteller,['White'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,89345f55-2b32-4356-945a-d56dded39909,Preacher of the Schism,['Black'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,78cef262-c753-4658-b3ec-fec8db47f944,Palace Jailer,['White'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,153,Myri,15,Control,Azorius Blink,14065271-d942-42a8-aa38-d8a622c0375d,Scrubland,['Lands'],"['Black', 'Blue', 'White']",WUB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,02c532e8-21f1-4d6f-a931-1ea48a6aeea2,Coalition Relic,['Colorless'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,18bd50f2-c3ba-4217-a2d5-bb771e199706,Vampiric Tutor,['Black'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,a1febcf1-afa4-4406-9ac1-5bf98b2765d2,Time Walk,['Blue'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,5da578b8-19e6-4068-9336-e7cd33c585f1,Retrofitter Foundry,['Colorless'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,64a5d494-efa1-446b-bebe-2ad36e154376,"Ugin, Eye of the Storms",['Colorless'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,0a786855-6eb4-42c0-a528-4842db46809d,Stock Up,['Blue'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,4acaef84-55d1-43dc-b10a-696182e6709b,Repeal,['Blue'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,064dfdeb-485f-473e-9fa0-8fdb7638cdc6,Dismember,['Colorless'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,57fb0fa7-0c5c-4a75-9461-c51403c30282,Foreboding Landscape,['Lands'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,310a1c46-8331-4a09-9fcb-d942f8102364,Thoughtseize,['Black'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,187b6719-e5ed-4615-a00b-3313ceca055b,Currency Converter,['Colorless'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,7c024bae-5631-4e20-ac69-df392ac9e109,Orcish Bowmasters,['Black'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,f83ed433-fae3-4fa5-acad-bb8a5b535ce3,Coveted Jewel,['Colorless'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,4df8aabc-7fcb-4b7b-980b-18f499e6c170,Hullbreacher,['Blue'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,7ea4b5bc-18a4-45db-a56a-ab3f8bd2fb0d,Ledger Shredder,['Blue'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,fd99bce1-ce39-464b-8e61-2631eb3ed6f6,Tolarian Academy,['Blue'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,56995b84-2307-4955-9c7c-dc4f04acdc07,Inquisition of Kozilek,['Black'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,bd3d4b4b-cf31-4f89-8140-9650edb03c7b,Ancient Tomb,['Lands'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,073bfdca-d7b8-4f4b-93f3-6e7c44bc0b0a,Sol Ring,['Colorless'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,564caf57-4ba5-4993-a35e-945699c94eb7,Toxic Deluge,['Black'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,1c0f2873-5849-4cab-855a-2fbbc41dbb6c,Chaos Defiler,"['Black', 'Red']","['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,175b3d28-5c74-4972-9b5c-5e39762c78f4,Relic of Sauron,['Colorless'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,d67be074-cdd4-41d9-ac89-0a0456c4e4b2,"Sheoldred, the Apocalypse",['Black'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,672b9b16-daef-44e6-9a3a-cfd9f3c78bc7,Pentad Prism,['Colorless'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,b277752b-430a-4f09-8a98-b72f813dd52e,Bountiful Landscape,['Lands'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,2aef4608-5ba8-4636-b5e7-cac57c5c0608,Windfall,['Blue'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,d6ec3293-b09e-4931-ac4e-dc5eac0ca004,Mana Vault,['Colorless'],"['Black', 'Blue']",UB
+Unknown Season,20250921,150,Luca,20,Combo,Draw 7,3f3c77ad-fce8-4506-90e1-7ef71552a71c,Wheel of Fortune,['Red'],"['Black', 'Blue']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,4b4956a2-9a39-4152-9c98-70e4b2acfa26,Miscalculation,['Blue'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,661fc907-7003-45c6-820c-9616e9a71c30,Seething Landscape,['Lands'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,70496f16-c4c0-4c03-beef-454eb4824cd1,Deathrite Shaman,"['Black', 'Green']","['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,5ab21006-7f61-49e0-8b6a-0397c5d4c3bd,Imperial Seal,['Black'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,162e81d3-6cd4-4cb8-8ed8-cfbd8d34ca71,Mind Stone,['Colorless'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,5ad67b3c-cd5a-497b-8639-9b844e8d517a,Mind Twist,['Black'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,1716b4dd-9045-462b-b053-72de450a8cde,Blood Crypt,['Lands'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,ea1feac0-d3a7-45eb-9719-1cdaf51ea0b6,Mox Sapphire,['Colorless'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,416d2d51-8f29-4e95-b037-e8c32b081e6c,Mana Drain,['Blue'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,18adbda4-8d36-47cd-afbc-c785aaa8ed80,Blightsteel Colossus,['Colorless'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,17260fff-b239-4af4-9306-3236ae3fa5a5,Thundering Falls,['Lands'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,991037a2-fea2-49f5-8ace-ebbf9f678cff,Talisman of Dominance,['Colorless'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,5427d8a6-ac9e-4e50-bd39-81713b2ade25,Fatal Push,['Black'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,fadb218d-29e2-42d1-a7a1-1066741d63ad,Mox Diamond,['Colorless'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,02d6d693-f1f3-4317-bcc0-c21fa8490d38,"Jace, Vryn's Prodigy // Jace, Telepath Unbound",['Blue'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,139b90cd-8272-457a-be32-1298145345be,Watery Grave,['Lands'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,06cb1bd6-73e0-4104-b344-4bc52d7dcedf,Baleful Strix,"['Black', 'Blue']","['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,5f608efc-0dbc-4cc3-aadd-ed473bfc29ab,Portal to Phyrexia,['Colorless'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,327cf118-cc92-4073-85d0-94d2a0a6989a,Scalding Tarn,['Lands'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,7c884e1e-fecb-4330-b3de-5fc2a60f7173,Kolaghan's Command,"['Black', 'Red']","['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,bb41ff5c-9617-4033-a4fa-99323640b9c3,Duress,['Black'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,ff84ea71-e477-44f7-a3f8-77fef708efeb,Thieving Skydiver,['Blue'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,f1e5cafb-b0e6-4ee5-8c58-6f8e5ef2b9da,Virtue of Persistence // Locthwain Scorn,['Black'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,1e2fee55-227b-4373-a3f7-b463f220033f,Tinker,['Blue'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,15faa763-b897-4e86-b094-73f3236291a9,Verdant Catacombs,['Lands'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,1834ac92-8b4e-4442-a834-acd580e1ef99,Jack-in-the-Mox,['Colorless'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,68841ca8-a043-4f30-9a17-e983ed960bc2,Demonic Tutor,['Black'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,3d8ca18d-9099-4f1e-95c1-f04da58a26bd,"Gut, True Soul Zealot",['Red'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,6a058e68-70af-4a64-859c-c881e5578368,Chrome Mox,['Colorless'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,612b2e6e-fe8d-49ad-b845-6fa7fa59ffd1,Concealing Curtains // Revealing Eye,['Black'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,b0c5728e-43e7-417a-ba18-5038345cec67,Arcane Denial,['Blue'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,c78da035-6b5b-4136-9ab6-f622b64fdc54,Unstoppable Slasher,['Black'],"['Blue', 'Black']",UB
+Unknown Season,20250921,145,Dimlas,1,Combo,Artifacts,2b5801fb-2026-4f25-98bc-ebb2f99684b9,Undercity Sewers,['Lands'],"['Blue', 'Black']",UB
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,4bc61952-88ba-447a-835a-f1e9643fcd0d,Serum Visions,['Blue'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,522aa72b-2b8c-484c-872b-f082101cee35,Get Lost,['White'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,22c26e44-e129-4c4d-b552-3cc8774ce1a4,Mox Poison,['Colorless'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,55707746-da6e-46e5-a5ca-7ac843fdc38e,"Phelia, Exuberant Shepherd",['White'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,1571b584-9007-45ee-a3c3-6c72f227fee2,Mystical Tutor,['Blue'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,0cb33b46-4d1b-4f97-bfdc-d815aee111da,Mana Crypt,['Colorless'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,045ce37b-86d2-4e56-84af-b6625b53d13c,Path to Exile,['White'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,e58e681e-a069-4414-aafe-634c7987fd0d,Swords to Plowshares,['White'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,0c9a7cb0-5bff-48ff-b620-2838816ac9b5,Counterspell,['Blue'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,6ade6918-6d1d-448d-ab56-93996051e9a9,Sage of the Skies,['White'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,63af3c26-5b1f-46f6-9aa2-036c615bf5ea,Flash,['Blue'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,a24e8dba-5c86-4e32-8a52-61402f7fe9f0,Containment Priest,['White'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,a8069994-b103-40dc-9e14-062004914ec8,Cathar Commando,['White'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,5b8ba842-c662-4686-bca3-93ddb7fa11a6,Mother of Runes,['White'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,605c2218-9d12-4ac3-a721-fca590b89847,Karakas,['Lands'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,2be39749-ad6f-4160-99eb-c677eee7f1b2,Thraben Inspector,['White'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,c2089ec9-0665-448f-bfe9-d181de127814,Brazen Borrower // Petty Theft,['Blue'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,fe30c0ff-f74b-456a-a61e-3720d84d713f,Parallax Wave,['White'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,3b6e5956-f795-451b-bb24-56462d1ced27,Umezawa's Jitte,['Colorless'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,18092f68-b96e-4084-9eba-b240d2195d81,"Adeline, Resplendent Cathar",['White'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,52d3005f-a1c7-4ef5-911f-ccc0752f4181,Faerie Mastermind,['Blue'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,32e29c7d-ed4b-4eff-b3c2-d99e5b63ef8d,Sunfall,['White'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,652236c2-84ef-45e4-b5fc-ed6170bc3d6c,Meticulous Archive,['Lands'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,47a6234f-309f-4e03-9263-66da48b57153,Solitude,['White'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,19d6834d-afa3-4747-a62d-0654f4d9729f,"Malcolm, Alluring Scoundrel",['Blue'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,5d10b752-d9cb-419d-a5c4-d4ee1acb655e,"Teferi, Hero of Dominaria","['Blue', 'White']","['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,187e887c-c39d-4d25-a506-cdc95fc70316,"Gideon, Ally of Zendikar",['White'],"['Blue', 'White']",WU
+Unknown Season,20250921,151,Lukas Stalder,2,Control,Azorius Control,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,['Blue'],"['Blue', 'White']",WU
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,0027e5ca-8046-40a0-bd73-79be55f28bff,Remand,['Blue'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,490eb213-9ae2-4b45-abec-6f1dfc83792a,Cori-Steel Cutter,['Red'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,7054012b-4f9d-44a0-aaf9-7fd3bddc7b2d,Slickshot Show-Off,['Red'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,01d1e394-1b0c-4b40-ba85-f55973703d41,Smirking Spelljacker,['Blue'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,0f7585c8-9e21-4eef-afc1-2852de23db2f,Polluted Delta,['Lands'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,6be9b1d5-9ab8-4adb-ba54-2c0117e842fa,Mox Opal,['Colorless'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,985bdb0c-ce6c-4506-8163-76f3b2fdf5fb,Lose Focus,['Blue'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,0e606072-a3aa-4300-ba90-ec92a721fa76,"Jace, the Mind Sculptor",['Blue'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,07a3d9e8-8597-498b-869c-cff79e0df516,"Karn, Scion of Urza",['Colorless'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,94c6fdd8-21e7-48ae-aa05-a3666b928c1a,Timetwister,['Blue'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,0359f212-9564-41a9-870b-d2c57455a695,Brainstorm,['Blue'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,bf4b9a8a-b42a-46fb-b0d0-9cf800f63c8a,"Emry, Lurker of the Loch",['Blue'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,9e7fb3c0-5159-4d1f-8490-ce4c9a60f567,"Urza, Lord High Artificer",['Blue'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,5eccf31d-869d-4003-a92b-71b4f4b479ee,Strix Serenade,['Blue'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,31b770cc-09e7-4c0b-b2a4-462ab4f7200d,Expressive Iteration,"['Red', 'Blue']","['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,aced2c55-7543-4076-bcdd-36c4d649b8ae,Mox Emerald,['Colorless'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,4b0bd07e-cf80-4d64-af29-f4cec6632b3e,Perilous Landscape,['Lands'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,0a26d900-c652-4f9c-8681-a35c5f8b1937,Sacred Foundry,['Lands'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,bfa4e927-1d6f-4a64-9801-7d168a5ef3f6,Astrologian's Planisphere,['Blue'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,8c2996d9-3287-4480-8c04-7a378e37e3cf,Flooded Strand,['Lands'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,486d7edc-d983-41f0-8b78-c99aecd72996,"Otawara, Soaring City",['Blue'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,907b3d1d-8c85-4707-80b5-c4d832df9846,Tishana's Tidebinder,['Blue'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,32aa6e33-221f-414c-9b51-850d97a7e051,Galvanic Discharge,['Red'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,5a10b543-d5d4-42a8-9ee8-dada59a2ad7e,"Saheeli, Sublime Artificer","['Red', 'Blue']","['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,0c3bc412-689f-4385-807b-ed60d6276d76,Grim Monolith,['Colorless'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,f1a21287-e244-4960-84fb-c4f6e5c346d9,Third Path Iconoclast,"['Red', 'Blue']","['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,02138fbb-3962-4348-8d31-faaefba0b8b2,Raugrin Triome,['Lands'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,['Lands'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,4a08ca06-58db-4ce6-b490-be4bea8956a1,Sensei's Divining Top,['Colorless'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,97b9bab9-12ee-4da5-9d53-d0b82d9279cd,Pyrite Spellbomb,['Red'],"['Blue', 'Red']",UR
+Unknown Season,20250921,146,Gianni,28,Control,Izzet Control,5cb76266-ae50-4bbc-8f96-d98f309b02d3,"Teferi, Time Raveler","['Blue', 'White']","['Blue', 'Red']",UR

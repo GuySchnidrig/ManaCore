@@ -46,15 +46,22 @@ Season-4,Sneak and Flash,2,4,0.5
 Season-4,Splinter-Twin,6,8,0.75
 Season-4,Storm,10,20,0.5
 Season-4,White Aggro,5,12,0.4166666666666667
-Unknown Season,Artifacts,3,4,0.75
+Unknown Season,Artifacts,6,8,0.75
+Unknown Season,Azorius Blink,0,4,0.0
 Unknown Season,Azorius Combo Control,2,4,0.5
+Unknown Season,Azorius Control,2,4,0.5
 Unknown Season,Birthing Pod,1,4,0.25
-Unknown Season,Boros Aggro,3,4,0.75
+Unknown Season,Boros Aggro,7,12,0.5833333333333334
+Unknown Season,Draw 7,2,4,0.5
 Unknown Season,Draw 7 Combo-Control,1,4,0.25
+Unknown Season,Greenbased Aggro-Combo,2,4,0.5
+Unknown Season,Gruul Aggro,3,4,0.75
+Unknown Season,Izzet Control,0,4,0.0
 Unknown Season,Izzet Tempo,3,4,0.75
 Unknown Season,Landfall,0,4,0.0
-Unknown Season,Lifeloss Control,1,4,0.25
+Unknown Season,Lifeloss Control,1,8,0.125
 Unknown Season,Mardu Aggro,2,4,0.5
-Unknown Season,Reanimator,2,4,0.5
+Unknown Season,Reanimator,4,8,0.5
 Unknown Season,Selesnya Aggro,2,4,0.5
 Unknown Season,Sneak and Show,4,4,1.0
+Unknown Season,Storm,2,4,0.5

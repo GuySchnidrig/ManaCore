@@ -265,34 +265,69 @@ Season-4,Yannik,9,Myri,2,0,0.0,1,0,0.0
 Season-4,Yannik,9,Noe T.,2,0,0.0,1,0,0.0
 Season-4,Yannik,9,Tinu,6,0,0.0,3,0,0.0
 Season-4,Yannik,9,Tommy,6,3,0.5,2,1,0.5
-Unknown Season,Andrin,5,Dimlas,2,2,1.0,1,1,1.0
-Unknown Season,Andrin,5,Matthias,3,2,0.6666666666666666,1,1,1.0
-Unknown Season,Andrin,5,Tommy,2,0,0.0,1,0,0.0
+Unknown Season,Andrin,5,Dimlas,5,4,0.8,2,2,1.0
+Unknown Season,Andrin,5,Lukas Stalder,3,1,0.3333333333333333,1,0,0.0
+Unknown Season,Andrin,5,Matthias,6,4,0.6666666666666666,2,2,1.0
+Unknown Season,Andrin,5,Tommy,5,2,0.4,2,1,0.5
 Unknown Season,Andrin,5,Zoel,2,0,0.0,1,0,0.0
-Unknown Season,Dimlas,1,Andrin,2,0,0.0,1,0,0.0
+Unknown Season,Dimlas,1,Andrin,5,1,0.2,2,0,0.0
 Unknown Season,Dimlas,1,Guy,2,0,0.0,1,0,0.0
+Unknown Season,Dimlas,1,Jonas W.,3,2,0.6666666666666666,1,1,1.0
 Unknown Season,Dimlas,1,Lukas Stalder,2,2,1.0,1,1,1.0
+Unknown Season,Dimlas,1,Matthias,3,2,0.6666666666666666,1,1,1.0
+Unknown Season,Dimlas,1,Pali,2,2,1.0,1,1,1.0
 Unknown Season,Dimlas,1,Valentin,3,1,0.3333333333333333,1,0,0.0
 Unknown Season,Felix,25,Guy,2,0,0.0,1,0,0.0
 Unknown Season,Felix,25,Matthias,2,2,1.0,1,1,1.0
 Unknown Season,Felix,25,Tommy,3,2,0.6666666666666666,1,1,1.0
 Unknown Season,Felix,25,Valentin,3,2,0.6666666666666666,1,1,1.0
+Unknown Season,Gianni,28,Joel K.,2,0,0.0,1,0,0.0
+Unknown Season,Gianni,28,Matthias,2,0,0.0,1,0,0.0
+Unknown Season,Gianni,28,Myri,3,1,0.3333333333333333,1,0,0.0
+Unknown Season,Gianni,28,Pali,3,1,0.3333333333333333,1,0,0.0
 Unknown Season,Guy,10,Dimlas,2,2,1.0,1,1,1.0
 Unknown Season,Guy,10,Felix,2,2,1.0,1,1,1.0
 Unknown Season,Guy,10,Thomas,2,2,1.0,1,1,1.0
 Unknown Season,Guy,10,Zoel,2,0,0.0,1,0,0.0
-Unknown Season,Joel K.,12,Lukas Stalder,2,2,1.0,1,1,1.0
+Unknown Season,Ivo,18,Luca,2,0,0.0,1,0,0.0
+Unknown Season,Ivo,18,Lukas Stalder,2,0,0.0,1,0,0.0
+Unknown Season,Ivo,18,Myri,2,2,1.0,1,1,1.0
+Unknown Season,Ivo,18,Pali,2,2,1.0,1,1,1.0
+Unknown Season,Joel K.,12,Gianni,2,2,1.0,1,1,1.0
+Unknown Season,Joel K.,12,Jonas W.,2,2,1.0,1,1,1.0
+Unknown Season,Joel K.,12,Luca,3,1,0.3333333333333333,1,0,0.0
+Unknown Season,Joel K.,12,Lukas Stalder,4,2,0.5,2,1,0.5
 Unknown Season,Joel K.,12,Thomas,2,0,0.0,1,0,0.0
 Unknown Season,Joel K.,12,Tinu,2,0,0.0,1,0,0.0
 Unknown Season,Joel K.,12,Tommy,3,2,0.6666666666666666,1,1,1.0
+Unknown Season,Jonas W.,27,Dimlas,3,1,0.3333333333333333,1,0,0.0
+Unknown Season,Jonas W.,27,Joel K.,2,0,0.0,1,0,0.0
+Unknown Season,Jonas W.,27,Luca,3,2,0.6666666666666666,1,1,1.0
+Unknown Season,Jonas W.,27,Myri,2,2,1.0,1,1,1.0
+Unknown Season,Luca,20,Ivo,2,2,1.0,1,1,1.0
+Unknown Season,Luca,20,Joel K.,3,2,0.6666666666666666,1,1,1.0
+Unknown Season,Luca,20,Jonas W.,3,1,0.3333333333333333,1,0,0.0
+Unknown Season,Luca,20,Tommy,2,0,0.0,1,0,0.0
+Unknown Season,Lukas Stalder,2,Andrin,3,1,0.3333333333333333,1,0,0.0
 Unknown Season,Lukas Stalder,2,Dimlas,2,0,0.0,1,0,0.0
-Unknown Season,Lukas Stalder,2,Joel K.,2,0,0.0,1,0,0.0
-Unknown Season,Lukas Stalder,2,Matthias,3,2,0.6666666666666666,1,1,1.0
+Unknown Season,Lukas Stalder,2,Ivo,2,2,1.0,1,1,1.0
+Unknown Season,Lukas Stalder,2,Joel K.,4,2,0.5,2,1,0.5
+Unknown Season,Lukas Stalder,2,Matthias,5,2,0.4,2,1,0.5
 Unknown Season,Lukas Stalder,2,Zoel,2,0,0.0,1,0,0.0
-Unknown Season,Matthias,21,Andrin,3,1,0.3333333333333333,1,0,0.0
+Unknown Season,Matthias,21,Andrin,6,2,0.3333333333333333,2,0,0.0
+Unknown Season,Matthias,21,Dimlas,3,1,0.3333333333333333,1,0,0.0
 Unknown Season,Matthias,21,Felix,2,0,0.0,1,0,0.0
-Unknown Season,Matthias,21,Lukas Stalder,3,1,0.3333333333333333,1,0,0.0
+Unknown Season,Matthias,21,Gianni,2,2,1.0,1,1,1.0
+Unknown Season,Matthias,21,Lukas Stalder,5,3,0.6,2,1,0.5
 Unknown Season,Matthias,21,Tinu,3,1,0.3333333333333333,1,0,0.0
+Unknown Season,Myri,15,Gianni,3,1,0.3333333333333333,1,0,0.0
+Unknown Season,Myri,15,Ivo,2,0,0.0,1,0,0.0
+Unknown Season,Myri,15,Jonas W.,2,0,0.0,1,0,0.0
+Unknown Season,Myri,15,Tommy,3,1,0.3333333333333333,1,0,0.0
+Unknown Season,Pali,14,Dimlas,2,0,0.0,1,0,0.0
+Unknown Season,Pali,14,Gianni,3,1,0.3333333333333333,1,0,0.0
+Unknown Season,Pali,14,Ivo,2,0,0.0,1,0,0.0
+Unknown Season,Pali,14,Tommy,3,1,0.3333333333333333,1,0,0.0
 Unknown Season,Thomas,26,Guy,2,0,0.0,1,0,0.0
 Unknown Season,Thomas,26,Joel K.,2,2,1.0,1,1,1.0
 Unknown Season,Thomas,26,Tinu,3,1,0.3333333333333333,1,0,0.0
@@ -301,9 +336,12 @@ Unknown Season,Tinu,4,Joel K.,2,2,1.0,1,1,1.0
 Unknown Season,Tinu,4,Matthias,3,2,0.6666666666666666,1,1,1.0
 Unknown Season,Tinu,4,Thomas,3,2,0.6666666666666666,1,1,1.0
 Unknown Season,Tinu,4,Zoel,1,0,0.0,1,0,0.0
-Unknown Season,Tommy,16,Andrin,2,2,1.0,1,1,1.0
+Unknown Season,Tommy,16,Andrin,5,3,0.6,2,1,0.5
 Unknown Season,Tommy,16,Felix,3,1,0.3333333333333333,1,0,0.0
 Unknown Season,Tommy,16,Joel K.,3,1,0.3333333333333333,1,0,0.0
+Unknown Season,Tommy,16,Luca,2,2,1.0,1,1,1.0
+Unknown Season,Tommy,16,Myri,3,2,0.6666666666666666,1,1,1.0
+Unknown Season,Tommy,16,Pali,3,1,0.3333333333333333,1,0,0.0
 Unknown Season,Tommy,16,Valentin,3,1,0.3333333333333333,1,0,0.0
 Unknown Season,Valentin,19,Dimlas,3,2,0.6666666666666666,1,1,1.0
 Unknown Season,Valentin,19,Felix,3,1,0.3333333333333333,1,0,0.0
