@@ -67,7 +67,7 @@ def process_csvs_with_scryfall_names(csv_directory, json_file_path="data/cards/s
             
             if scryfall_col is None:
                 results[csv_file.name] = "No scryfallId column found"
-                print(f"  ❌ No scryfallId column found in {csv_file.name}")
+                print(f"  No scryfallId column found in {csv_file.name}")
                 continue
             
             # Add card_name column if it doesn't exist
@@ -85,19 +85,19 @@ def process_csvs_with_scryfall_names(csv_directory, json_file_path="data/cards/s
                 mapped_count = df['card_name'].notna().sum()
                 total_count = len(df)
                 
-                print(f"  ✅ Added card_name column next to {scryfall_col}. Mapped {mapped_count}/{total_count} cards")
+                print(f"  Added card_name column next to {scryfall_col}. Mapped {mapped_count}/{total_count} cards")
                 
                 # Save the updated CSV
                 df.to_csv(csv_file, index=False)
                 results[csv_file.name] = f"Success: {mapped_count}/{total_count} cards mapped"
                 
             else:
-                print(f"  ⚠️  card_name column already exists in {csv_file.name}")
+                print(f"  card_name column already exists in {csv_file.name}")
                 results[csv_file.name] = "card_name column already exists"
                 
         except Exception as e:
             error_msg = f"Error processing file: {e}"
-            print(f"  ❌ {error_msg}")
+            print(f"  {error_msg}")
             results[csv_file.name] = error_msg
     
     return results
@@ -140,14 +140,14 @@ def add_player_ids_to_csvs(csv_directory="data/processed", players_csv_path="dat
                 df.insert(col_idx + 1, new_col, df['player'].map(player_lookup).astype("Int64"))
                 df.to_csv(csv_file, index=False)
                 results[csv_file.name] = "Success: Added 'player_id' column"
-                print(f"  ✅ Added 'player_id' column next to 'player'")
+                print(f"   Added 'player_id' column next to 'player'")
             else:
                 results[csv_file.name] = "'player_id' column already exists"
-                print(f"  ⚠️  'player_id' column already exists")
+                print(f"   'player_id' column already exists")
 
         except Exception as e:
             results[csv_file.name] = f"Error processing file: {e}"
-            print(f"  ❌ Error: {e}")
+            print(f"  Error: {e}")
 
     return results
 
@@ -185,10 +185,10 @@ def main():
         failed_files = [f for f, s in {**card_results, **player_results}.items() if s.startswith("Error")]
         
         if failed_files:
-            print(f"\n❌ {len(failed_files)} files failed to process")
+            print(f"\n {len(failed_files)} files failed to process")
             exit(1)
         else:
-            print(f"\n✅ Successfully processed {len(card_results) + len(player_results)} files")
+            print(f"\n Successfully processed {len(card_results) + len(player_results)} files")
 
 
 if __name__ == "__main__":

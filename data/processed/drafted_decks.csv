@@ -2446,7 +2446,7 @@ Season-4,20250323,90,Tinu,4,Control-Aggro (Midrange),Jund Midrange,819a513c-3be6
 Season-4,20250323,90,Tinu,4,Control-Aggro (Midrange),Jund Midrange,73cc6df4-3564-4ace-bf8a-eac3e62d725a,Ursine Monstrosity,['Green'],"['Red', 'Green']",RG
 Season-4,20250323,90,Tinu,4,Control-Aggro (Midrange),Jund Midrange,2b5315a4-6a78-456f-8d5a-fea9d62f3f0e,Strip Mine,['Lands'],"['Red', 'Green']",RG
 Season-4,20250323,90,Tinu,4,Control-Aggro (Midrange),Jund Midrange,3bd1ec98-8188-4649-899e-b0972509fc7e,Firebolt,['Red'],"['Red', 'Green']",RG
-Season-4,20250323,90,Tinu,4,Control-Aggro (Midrange),Jund Midrange,70496f16-c4c0-4c03-beef-454eb4824cd1,Deathrite Shaman,"['Black', 'Green']","['Red', 'Green']",RG
+Season-4,20250323,90,Tinu,4,Control-Aggro (Midrange),Jund Midrange,70496f16-c4c0-4c03-beef-454eb4824cd1,Deathrite Shaman,['Black'],"['Red', 'Green']",RG
 Season-4,20250323,90,Tinu,4,Control-Aggro (Midrange),Jund Midrange,3277ad99-5682-4baa-b106-de15721876a6,Glorybringer,['Red'],"['Red', 'Green']",RG
 Season-4,20250323,90,Tinu,4,Control-Aggro (Midrange),Jund Midrange,24da9431-7e52-44f5-bc18-2f2d8a4ca81e,Abrade,['Red'],"['Red', 'Green']",RG
 Season-4,20250323,90,Tinu,4,Control-Aggro (Midrange),Jund Midrange,45fd6e91-df76-497f-b642-33dc3d5f6a5a,Mox Ruby,['Colorless'],"['Red', 'Green']",RG
@@ -3462,7 +3462,7 @@ Season-4,20250712,122,Filipe,23,Control-Aggro (Midrange),Golgari Midrange,4720b4
 Season-4,20250712,122,Filipe,23,Control-Aggro (Midrange),Golgari Midrange,c4fffacd-81c7-44b8-9b59-2c7210022c14,Augur of Autumn,['Green'],"['Black', 'Green']",BG
 Season-4,20250712,122,Filipe,23,Control-Aggro (Midrange),Golgari Midrange,8683a978-1bef-4b01-9361-56b1fc157d26,Courser of Kruphix,['Green'],"['Black', 'Green']",BG
 Season-4,20250712,122,Filipe,23,Control-Aggro (Midrange),Golgari Midrange,e6befbc4-1320-4f26-bd9f-b1814fedda10,Grief,['Black'],"['Black', 'Green']",BG
-Season-4,20250712,122,Filipe,23,Control-Aggro (Midrange),Golgari Midrange,70496f16-c4c0-4c03-beef-454eb4824cd1,Deathrite Shaman,"['Black', 'Green']","['Black', 'Green']",BG
+Season-4,20250712,122,Filipe,23,Control-Aggro (Midrange),Golgari Midrange,70496f16-c4c0-4c03-beef-454eb4824cd1,Deathrite Shaman,['Black'],"['Black', 'Green']",BG
 Season-4,20250712,122,Filipe,23,Control-Aggro (Midrange),Golgari Midrange,2b20d3e1-62ef-44db-8109-a33d4fa3e7f1,Exploration,['Green'],"['Black', 'Green']",BG
 Season-4,20250712,122,Filipe,23,Control-Aggro (Midrange),Golgari Midrange,c78da035-6b5b-4136-9ab6-f622b64fdc54,Unstoppable Slasher,['Black'],"['Black', 'Green']",BG
 Season-4,20250712,122,Filipe,23,Control-Aggro (Midrange),Golgari Midrange,f9246b68-580f-4f53-883d-7900880e4b0d,Six,['Green'],"['Black', 'Green']",BG
@@ -3704,7 +3704,7 @@ Season-5,20250817,133,Dimlas,1,Control,Lifeloss Control,026e7167-d665-43d0-a51e-
 Season-5,20250817,133,Dimlas,1,Control,Lifeloss Control,45026d57-0324-4312-8b86-2e7d4f581ee9,Marsh Flats,['Lands'],['Black'],B
 Season-5,20250817,133,Dimlas,1,Control,Lifeloss Control,ebeafbc2-0399-4335-8f63-76a3e085e8c6,Evolved Sleeper,['Black'],['Black'],B
 Season-5,20250817,133,Dimlas,1,Control,Lifeloss Control,3ee3945e-5089-4751-b7b3-5961c39d2a33,Nethergoyf,['Black'],['Black'],B
-Season-5,20250817,133,Dimlas,1,Control,Lifeloss Control,70496f16-c4c0-4c03-beef-454eb4824cd1,Deathrite Shaman,"['Black', 'Green']",['Black'],B
+Season-5,20250817,133,Dimlas,1,Control,Lifeloss Control,70496f16-c4c0-4c03-beef-454eb4824cd1,Deathrite Shaman,['Black'],['Black'],B
 Season-5,20250817,133,Dimlas,1,Control,Lifeloss Control,df9d9075-2d1e-4848-b661-816d539e05eb,Emperor of Bones,['Black'],['Black'],B
 Season-5,20250817,133,Dimlas,1,Control,Lifeloss Control,245cdc59-d560-4c10-b721-f51cc312e370,Mishra's Factory,['Lands'],['Black'],B
 Season-5,20250817,133,Dimlas,1,Control,Lifeloss Control,04fc99dc-bfbe-4567-b791-6b1db96471ec,Reanimate,['Black'],['Black'],B
@@ -4300,7 +4300,7 @@ Season-5,20250921,150,Luca,20,Combo,Draw 7,d6ec3293-b09e-4931-ac4e-dc5eac0ca004,
 Season-5,20250921,150,Luca,20,Combo,Draw 7,3f3c77ad-fce8-4506-90e1-7ef71552a71c,Wheel of Fortune,['Red'],"['Black', 'Blue']",UB
 Season-5,20250921,145,Dimlas,1,Combo,Artifacts,4b4956a2-9a39-4152-9c98-70e4b2acfa26,Miscalculation,['Blue'],"['Blue', 'Black']",UB
 Season-5,20250921,145,Dimlas,1,Combo,Artifacts,661fc907-7003-45c6-820c-9616e9a71c30,Seething Landscape,['Lands'],"['Blue', 'Black']",UB
-Season-5,20250921,145,Dimlas,1,Combo,Artifacts,70496f16-c4c0-4c03-beef-454eb4824cd1,Deathrite Shaman,"['Black', 'Green']","['Blue', 'Black']",UB
+Season-5,20250921,145,Dimlas,1,Combo,Artifacts,70496f16-c4c0-4c03-beef-454eb4824cd1,Deathrite Shaman,['Black'],"['Blue', 'Black']",UB
 Season-5,20250921,145,Dimlas,1,Combo,Artifacts,5ab21006-7f61-49e0-8b6a-0397c5d4c3bd,Imperial Seal,['Black'],"['Blue', 'Black']",UB
 Season-5,20250921,145,Dimlas,1,Combo,Artifacts,162e81d3-6cd4-4cb8-8ed8-cfbd8d34ca71,Mind Stone,['Colorless'],"['Blue', 'Black']",UB
 Season-5,20250921,145,Dimlas,1,Combo,Artifacts,5ad67b3c-cd5a-497b-8639-9b844e8d517a,Mind Twist,['Black'],"['Blue', 'Black']",UB

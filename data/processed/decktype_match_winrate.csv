@@ -65,3 +65,56 @@ Season-5,Reanimator,4,8,0.5
 Season-5,Selesnya Aggro,2,4,0.5
 Season-5,Sneak and Show,4,4,1.0
 Season-5,Storm,2,4,0.5
+Season-All,Artifacts,13,40,0.325
+Season-All,Artifacts Control,1,8,0.125
+Season-All,Azorius Blink,5,20,0.25
+Season-All,Azorius Combo Control,2,4,0.5
+Season-All,Azorius Control,6,16,0.375
+Season-All,Azorius Tempo,2,8,0.25
+Season-All,Birthing Pod,8,12,0.6666666666666666
+Season-All,Birthing Pod Combo-Control,2,4,0.5
+Season-All,Boros Aggro,33,64,0.515625
+Season-All,Combo Lands,6,12,0.5
+Season-All,Combo Mix,8,16,0.5
+Season-All,Combo-Control Lands,7,16,0.4375
+Season-All,Dimir Tempo,4,4,1.0
+Season-All,Domain Control,10,20,0.5
+Season-All,Draw 7,7,16,0.4375
+Season-All,Draw 7 Combo-Control,5,12,0.4166666666666667
+Season-All,Esper Control,1,4,0.25
+Season-All,Esper Tempo,1,4,0.25
+Season-All,Flash,2,4,0.5
+Season-All,Golgari Midrange,1,8,0.125
+Season-All,Greenbased Aggro-Combo,14,28,0.5
+Season-All,Grixis Control,7,12,0.5833333333333334
+Season-All,Gruul Aggro,13,20,0.65
+Season-All,Izzet Control,0,4,0.0
+Season-All,Izzet Tempo,6,8,0.75
+Season-All,Jeskai Control,2,4,0.5
+Season-All,Jund Midrange,5,8,0.625
+Season-All,Landfall,0,4,0.0
+Season-All,Lifeloss Control,1,8,0.125
+Season-All,Lurrus Combo-Control,6,8,0.75
+Season-All,Lurrus Control,10,20,0.5
+Season-All,Mardu Aggro,2,4,0.5
+Season-All,Mardu Midrange,3,4,0.75
+Season-All,Nadu Combo-Control,2,4,0.5
+Season-All,Nadu Midrange,3,8,0.375
+Season-All,Orzhov Control,4,4,1.0
+Season-All,Orzhov Tempo,2,4,0.5
+Season-All,Rakdos Aggro,7,16,0.4375
+Season-All,Rakdos Aggro-Combo,3,4,0.75
+Season-All,Reanimator,21,44,0.4772727272727273
+Season-All,Reanimator Combo-Control,2,4,0.5
+Season-All,Reanimator-Flash,1,4,0.25
+Season-All,Reanimator-Sneak,6,8,0.75
+Season-All,Red Aggro,4,8,0.5
+Season-All,Selesnya Aggro,4,8,0.5
+Season-All,Selesnya Midrange,4,16,0.25
+Season-All,Simic Tempo,3,8,0.375
+Season-All,Sneak Attack,2,4,0.5
+Season-All,Sneak and Flash,2,4,0.5
+Season-All,Sneak and Show,4,4,1.0
+Season-All,Splinter-Twin,6,8,0.75
+Season-All,Storm,12,24,0.5
+Season-All,White Aggro,5,12,0.4166666666666667
