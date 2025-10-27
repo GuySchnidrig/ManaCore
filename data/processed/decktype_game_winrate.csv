@@ -46,26 +46,33 @@ Season-4,Sneak and Flash,6.0,10.0,0.6
 Season-4,Splinter-Twin,13.0,20.0,0.65
 Season-4,Storm,27.0,50.0,0.54
 Season-4,White Aggro,15.0,29.0,0.5172413793103449
-Season-5,Artifacts,13.0,20.0,0.65
+Season-5,Artifacts,15.0,28.0,0.5357142857142857
 Season-5,Azorius Blink,2.0,10.0,0.2
 Season-5,Azorius Combo Control,5.0,10.0,0.5
 Season-5,Azorius Control,5.0,9.0,0.5555555555555556
 Season-5,Birthing Pod,5.0,11.0,0.45454545454545453
 Season-5,Boros Aggro,16.0,27.0,0.5925925925925926
-Season-5,Draw 7,5.0,10.0,0.5
+Season-5,Dimir Control,5.0,9.0,0.5555555555555556
+Season-5,Domain Control,7.0,10.0,0.7
+Season-5,Draw 7,12.0,20.0,0.6
 Season-5,Draw 7 Combo-Control,2.0,9.0,0.2222222222222222
 Season-5,Greenbased Aggro-Combo,4.0,8.0,0.5
 Season-5,Gruul Aggro,7.0,12.0,0.5833333333333334
 Season-5,Izzet Control,2.0,10.0,0.2
-Season-5,Izzet Tempo,6.0,10.0,0.6
-Season-5,Landfall,3.0,11.0,0.2727272727272727
+Season-5,Izzet Tempo,11.0,19.0,0.5789473684210527
+Season-5,Landfall,9.0,20.0,0.45
 Season-5,Lifeloss Control,5.0,19.0,0.2631578947368421
+Season-5,Lurrus Control,5.0,9.0,0.5555555555555556
 Season-5,Mardu Aggro,6.0,12.0,0.5
-Season-5,Reanimator,10.0,19.0,0.5263157894736842
+Season-5,Nadu Midrange,1.0,9.0,0.1111111111111111
+Season-5,Opposition,4.0,9.0,0.4444444444444444
+Season-5,Reanimator,13.0,29.0,0.4482758620689655
 Season-5,Selesnya Aggro,4.0,9.0,0.4444444444444444
+Season-5,Sneak and Flash,8.0,10.0,0.8
 Season-5,Sneak and Show,7.0,7.0,1.0
 Season-5,Storm,6.0,11.0,0.5454545454545454
-Season-All,Artifacts,40.0,101.0,0.39603960396039606
+Season-5,White Aggro,3.0,10.0,0.3
+Season-All,Artifacts,42.0,109.0,0.3853211009174312
 Season-All,Artifacts Control,4.0,17.0,0.23529411764705882
 Season-All,Azorius Blink,17.0,49.0,0.3469387755102041
 Season-All,Azorius Combo Control,5.0,10.0,0.5
@@ -77,9 +84,10 @@ Season-All,Boros Aggro,85.0,157.0,0.5414012738853503
 Season-All,Combo Lands,16.0,31.0,0.5161290322580645
 Season-All,Combo Mix,20.0,41.0,0.4878048780487805
 Season-All,Combo-Control Lands,19.0,41.0,0.4634146341463415
+Season-All,Dimir Control,5.0,9.0,0.5555555555555556
 Season-All,Dimir Tempo,8.0,10.0,0.8
-Season-All,Domain Control,26.0,51.0,0.5098039215686274
-Season-All,Draw 7,19.0,40.0,0.475
+Season-All,Domain Control,33.0,61.0,0.5409836065573771
+Season-All,Draw 7,26.0,50.0,0.52
 Season-All,Draw 7 Combo-Control,11.0,27.0,0.4074074074074074
 Season-All,Esper Control,2.0,8.0,0.25
 Season-All,Esper Tempo,4.0,10.0,0.4
@@ -89,22 +97,23 @@ Season-All,Greenbased Aggro-Combo,37.0,71.0,0.5211267605633803
 Season-All,Grixis Control,17.0,31.0,0.5483870967741935
 Season-All,Gruul Aggro,29.0,49.0,0.5918367346938775
 Season-All,Izzet Control,2.0,10.0,0.2
-Season-All,Izzet Tempo,13.0,21.0,0.6190476190476191
+Season-All,Izzet Tempo,18.0,30.0,0.6
 Season-All,Jeskai Control,4.0,8.0,0.5
 Season-All,Jund Midrange,12.0,21.0,0.5714285714285714
-Season-All,Landfall,3.0,11.0,0.2727272727272727
+Season-All,Landfall,9.0,20.0,0.45
 Season-All,Lifeloss Control,5.0,19.0,0.2631578947368421
 Season-All,Lurrus Combo-Control,14.0,21.0,0.6666666666666666
-Season-All,Lurrus Control,25.0,47.0,0.5319148936170213
+Season-All,Lurrus Control,30.0,56.0,0.5357142857142857
 Season-All,Mardu Aggro,6.0,12.0,0.5
 Season-All,Mardu Midrange,6.0,10.0,0.6
 Season-All,Nadu Combo-Control,6.0,10.0,0.6
-Season-All,Nadu Midrange,7.0,19.0,0.3684210526315789
+Season-All,Nadu Midrange,8.0,28.0,0.2857142857142857
+Season-All,Opposition,4.0,9.0,0.4444444444444444
 Season-All,Orzhov Control,8.0,8.0,1.0
 Season-All,Orzhov Tempo,5.0,10.0,0.5
 Season-All,Rakdos Aggro,17.0,38.0,0.4473684210526316
 Season-All,Rakdos Aggro-Combo,7.0,9.0,0.7777777777777778
-Season-All,Reanimator,48.0,105.0,0.45714285714285713
+Season-All,Reanimator,51.0,115.0,0.4434782608695652
 Season-All,Reanimator Combo-Control,5.0,11.0,0.45454545454545453
 Season-All,Reanimator-Flash,3.0,10.0,0.3
 Season-All,Reanimator-Sneak,12.0,18.0,0.6666666666666666
@@ -113,8 +122,8 @@ Season-All,Selesnya Aggro,8.0,19.0,0.42105263157894735
 Season-All,Selesnya Midrange,12.0,38.0,0.3157894736842105
 Season-All,Simic Tempo,7.0,18.0,0.3888888888888889
 Season-All,Sneak Attack,6.0,10.0,0.6
-Season-All,Sneak and Flash,6.0,10.0,0.6
+Season-All,Sneak and Flash,14.0,20.0,0.7
 Season-All,Sneak and Show,7.0,7.0,1.0
 Season-All,Splinter-Twin,13.0,20.0,0.65
 Season-All,Storm,33.0,61.0,0.5409836065573771
-Season-All,White Aggro,15.0,29.0,0.5172413793103449
+Season-All,White Aggro,18.0,39.0,0.46153846153846156

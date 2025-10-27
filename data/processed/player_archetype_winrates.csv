@@ -77,36 +77,47 @@ Season-4,Yannik,9,Combo,0,8,0.0,0,4,0.0
 Season-4,Yannik,9,Control,1,9,0.1111111111111111,0,4,0.0
 Season-4,Yannik,9,Control-Aggro (Midrange),4,18,0.2222222222222222,1,8,0.125
 Season-5,Andrin,5,Aggro,11,20,0.55,5,8,0.625
+Season-5,Andrin,5,Control,5,9,0.5555555555555556,2,4,0.5
 Season-5,Dimlas,1,Combo,7,11,0.6363636363636364,3,4,0.75
+Season-5,Dimlas,1,Combo-Control,8,10,0.8,4,4,1.0
 Season-5,Dimlas,1,Control,3,9,0.3333333333333333,1,4,0.25
 Season-5,Felix,25,Aggro-Control (Tempo),6,10,0.6,3,4,0.75
 Season-5,Gianni,28,Control,2,8,0.25,0,4,0.0
 Season-5,Guy,10,Aggro,6,8,0.75,3,4,0.75
+Season-5,Guy,10,Combo,7,10,0.7,3,4,0.75
 Season-5,Ivo,18,Aggro-Combo,4,8,0.5,2,4,0.5
 Season-5,Joel K.,12,Aggro,5,9,0.5555555555555556,2,4,0.5
 Season-5,Joel K.,12,Combo,4,9,0.4444444444444444,2,4,0.5
+Season-5,Joel K.,12,Control,5,9,0.5555555555555556,2,4,0.5
 Season-5,Jonas W.,27,Aggro,5,10,0.5,2,4,0.5
 Season-5,Luca,20,Combo,5,10,0.5,2,4,0.5
+Season-5,Lukas Stalder,2,Combo,3,10,0.3,1,4,0.25
 Season-5,Lukas Stalder,2,Combo-Control,2,9,0.2222222222222222,1,4,0.25
 Season-5,Lukas Stalder,2,Control,5,8,0.625,2,4,0.5
 Season-5,Matthias,21,Combo,6,10,0.6,2,4,0.5
 Season-5,Matthias,21,Control-Aggro (Midrange),3,11,0.2727272727272727,0,4,0.0
 Season-5,Myri,15,Control,2,9,0.2222222222222222,0,4,0.0
+Season-5,Noe T.,11,Aggro,3,10,0.3,1,4,0.25
+Season-5,Pali,14,Combo,2,8,0.25,1,4,0.25
 Season-5,Pali,14,Control,2,8,0.25,0,4,0.0
+Season-5,Sili,6,Control,4,9,0.4444444444444444,2,4,0.5
 Season-5,Thomas,26,Combo-Control,5,10,0.5,2,4,0.5
 Season-5,Tinu,4,Control,6,9,0.6666666666666666,3,4,0.75
+Season-5,Tinu,4,Control-Aggro (Midrange),6,9,0.6666666666666666,3,4,0.75
+Season-5,Tommy,16,Aggro-Control (Tempo),5,9,0.5555555555555556,2,4,0.5
 Season-5,Tommy,16,Combo,6,10,0.6,2,4,0.5
 Season-5,Tommy,16,Control,5,11,0.4545454545454545,1,4,0.25
 Season-5,Valentin,19,Aggro,6,12,0.5,2,4,0.5
 Season-5,Zoel,24,Combo,7,7,1.0,4,4,1.0
+Season-5,Zoel,24,Control,7,10,0.7,3,4,0.75
 Season-All,Andrin,5,Aggro,21,39,0.5384615384615384,10,16,0.625
 Season-All,Andrin,5,Aggro-Combo,7,8,0.875,3,4,0.75
 Season-All,Andrin,5,Aggro-Control (Tempo),5,9,0.5555555555555556,2,4,0.5
 Season-All,Andrin,5,Combo,21,48,0.4375,8,20,0.4
-Season-All,Andrin,5,Control,12,22,0.5454545454545454,4,8,0.5
+Season-All,Andrin,5,Control,17,31,0.5483870967741935,6,12,0.5
 Season-All,Dimlas,1,Aggro,13,21,0.6190476190476191,5,8,0.625
 Season-All,Dimlas,1,Combo,28,39,0.717948717948718,13,16,0.8125
-Season-All,Dimlas,1,Combo-Control,7,11,0.6363636363636364,3,4,0.75
+Season-All,Dimlas,1,Combo-Control,15,21,0.7142857142857143,7,8,0.875
 Season-All,Dimlas,1,Control,45,67,0.6716417910447762,21,28,0.75
 Season-All,Elie,17,Combo,3,9,0.3333333333333333,1,4,0.25
 Season-All,Felix,25,Aggro-Control (Tempo),6,10,0.6,3,4,0.75
@@ -114,7 +125,7 @@ Season-All,Filipe,23,Control-Aggro (Midrange),1,9,0.1111111111111111,0,4,0.0
 Season-All,Gianni,28,Control,2,8,0.25,0,4,0.0
 Season-All,Guy,10,Aggro,6,8,0.75,3,4,0.75
 Season-All,Guy,10,Aggro-Control (Tempo),5,9,0.5555555555555556,2,4,0.5
-Season-All,Guy,10,Combo,9,19,0.4736842105263157,3,8,0.375
+Season-All,Guy,10,Combo,16,29,0.5517241379310345,6,12,0.5
 Season-All,Guy,10,Combo-Control,12,18,0.6666666666666666,6,8,0.75
 Season-All,Guy,10,Control,4,8,0.5,2,4,0.5
 Season-All,Guy,10,Control-Aggro (Midrange),6,10,0.6,3,4,0.75
@@ -126,13 +137,13 @@ Season-All,Joel K.,12,Aggro,6,17,0.3529411764705882,2,8,0.25
 Season-All,Joel K.,12,Aggro-Combo,5,10,0.5,2,4,0.5
 Season-All,Joel K.,12,Aggro-Control (Tempo),1,9,0.1111111111111111,0,4,0.0
 Season-All,Joel K.,12,Combo,13,38,0.3421052631578947,3,16,0.1875
-Season-All,Joel K.,12,Control,2,8,0.25,1,4,0.25
+Season-All,Joel K.,12,Control,7,17,0.4117647058823529,3,8,0.375
 Season-All,Joel R.,3,Aggro,4,10,0.4,2,4,0.5
 Season-All,Joel R.,3,Control,7,11,0.6363636363636364,3,4,0.75
 Season-All,Jonas W.,27,Aggro,5,10,0.5,2,4,0.5
 Season-All,Luca,20,Combo,11,20,0.55,5,8,0.625
 Season-All,Lukas Stalder,2,Aggro,17,27,0.6296296296296297,7,12,0.5833333333333334
-Season-All,Lukas Stalder,2,Combo,18,30,0.6,7,12,0.5833333333333334
+Season-All,Lukas Stalder,2,Combo,21,40,0.525,8,16,0.5
 Season-All,Lukas Stalder,2,Combo-Control,10,29,0.3448275862068966,4,12,0.3333333333333333
 Season-All,Lukas Stalder,2,Control,16,34,0.4705882352941176,6,16,0.375
 Season-All,Manuel,8,Aggro,24,39,0.6153846153846154,9,16,0.5625
@@ -148,28 +159,29 @@ Season-All,Myri,15,Aggro-Control (Tempo),2,8,0.25,1,4,0.25
 Season-All,Myri,15,Combo,5,10,0.5,2,4,0.5
 Season-All,Myri,15,Control,2,9,0.2222222222222222,0,4,0.0
 Season-All,Myri,15,Control-Aggro (Midrange),4,10,0.4,1,4,0.25
-Season-All,Noe T.,11,Aggro,11,21,0.5238095238095238,4,8,0.5
+Season-All,Noe T.,11,Aggro,14,31,0.4516129032258064,5,12,0.4166666666666667
 Season-All,Noe T.,11,Combo,5,10,0.5,2,4,0.5
 Season-All,Noe T.,11,Combo-Control,5,11,0.4545454545454545,2,4,0.5
 Season-All,Noe T.,11,Control-Aggro (Midrange),8,26,0.3076923076923077,3,12,0.25
 Season-All,Pali,14,Aggro,2,10,0.2,0,4,0.0
+Season-All,Pali,14,Combo,2,8,0.25,1,4,0.25
 Season-All,Pali,14,Control,8,19,0.4210526315789473,2,8,0.25
 Season-All,Sam,7,Control,8,18,0.4444444444444444,3,8,0.375
 Season-All,Sili,6,Aggro,17,26,0.6538461538461539,8,12,0.6666666666666666
 Season-All,Sili,6,Aggro-Combo,12,19,0.631578947368421,5,8,0.625
 Season-All,Sili,6,Combo,11,19,0.5789473684210527,5,8,0.625
 Season-All,Sili,6,Combo-Control,8,20,0.4,3,8,0.375
-Season-All,Sili,6,Control,5,8,0.625,2,4,0.5
+Season-All,Sili,6,Control,9,17,0.5294117647058824,4,8,0.5
 Season-All,Thomas,26,Combo-Control,5,10,0.5,2,4,0.5
 Season-All,Tinu,4,Combo,9,20,0.45,3,8,0.375
 Season-All,Tinu,4,Combo-Control,6,9,0.6666666666666666,2,4,0.5
 Season-All,Tinu,4,Control,11,18,0.6111111111111112,5,8,0.625
-Season-All,Tinu,4,Control-Aggro (Midrange),5,10,0.5,2,4,0.5
+Season-All,Tinu,4,Control-Aggro (Midrange),11,19,0.5789473684210527,5,8,0.625
 Season-All,Tobi,13,Aggro,8,17,0.4705882352941176,3,8,0.375
 Season-All,Tobi,13,Aggro-Combo,6,12,0.5,2,4,0.5
 Season-All,Tobi,13,Control,6,10,0.6,2,4,0.5
 Season-All,Tommy,16,Aggro,6,8,0.75,2,4,0.5
-Season-All,Tommy,16,Aggro-Control (Tempo),20,30,0.6666666666666666,9,12,0.75
+Season-All,Tommy,16,Aggro-Control (Tempo),25,39,0.6410256410256411,11,16,0.6875
 Season-All,Tommy,16,Combo,15,31,0.4838709677419355,5,12,0.4166666666666667
 Season-All,Tommy,16,Combo-Control,6,9,0.6666666666666666,2,4,0.5
 Season-All,Tommy,16,Control,11,28,0.3928571428571428,4,12,0.3333333333333333
@@ -184,3 +196,4 @@ Season-All,Yannik,9,Combo,0,8,0.0,0,4,0.0
 Season-All,Yannik,9,Control,1,9,0.1111111111111111,0,4,0.0
 Season-All,Yannik,9,Control-Aggro (Midrange),4,18,0.2222222222222222,1,8,0.125
 Season-All,Zoel,24,Combo,7,7,1.0,4,4,1.0
+Season-All,Zoel,24,Control,7,10,0.7,3,4,0.75
