@@ -46,6 +46,9 @@ jobs:
       - name: Try importing manacore
         run: python -c "import manacore; print(manacore.__file__)"
 
+      - name: Get new card info
+        run: python services/download_bulk_carddata.py
+
       - name: Run pipeline script
         run: python services/run_pipeline.py
 
