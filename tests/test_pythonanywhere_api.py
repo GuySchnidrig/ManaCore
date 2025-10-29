@@ -1,31 +1,33 @@
 import requests
+from datetime import datetime, timedelta
+
 username = 'GuySchnidrig'
-token = 'XXX'
-
-# response
-response = requests.get(
-    'https://www.pythonanywhere.com/api/v0/user/{username}/cpu/'.format(
-        username=username
-    ),
-    headers={'Authorization': 'Token {token}'.format(token=token)}
-)
-if response.status_code == 200:
-    print('CPU quota info:')
-    print(response.content)
-else:
-    print('Got unexpected status code {}: {!r}'.format(response.status_code, response.content))
-
-# tasks
-url = f"https://www.pythonanywhere.com/api/v0/user/{username}/schedule/"
+token = ''
 headers = {"Authorization": f"Token {token}"}
-response = requests.get(url, headers=headers)
-print("Status code:", response.status_code)
-print("Response headers:", response.headers)
-print("Raw text:", response.text)  # 👈 check what it actually returns
 
-if response.status_code == 200:
-    data = response.json()
-    print(type(data))  # should be <class 'list'>
-    print(data)
-else:
-    print("Error:", response.text)
+
+# Schedule the task to run about 1 minute from now (UTC)
+now = datetime.utcnow()
+next_minute = now + timedelta(minutes=1)
+hour = next_minute.hour
+minute = next_minute.minute
+
+# Define updated parameters
+data = {
+    "command": "python3.10 /home/GuySchnidrig/update_data.py",
+    "enabled": True,
+    "description": "Run update_data.py shortly (updated)",
+    "interval": "daily",      # required field
+    "hour": hour,             # next minute
+    "minute": minute
+}
+
+# PUT request to update existing scheduled task by ID
+r = requests.put(
+    f"https://www.pythonanywhere.com/api/v0/user/{username}/schedule/1262825/",
+    headers=headers,
+    json=data
+)
+
+print("Status:", r.status_code)
+print("Response:", r.text)
