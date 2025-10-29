@@ -1,6 +1,7 @@
 name: Trigger PythonAnywhere Fetch
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
