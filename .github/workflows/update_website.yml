@@ -22,7 +22,7 @@ jobs:
       - name: Install requests
         run: pip install requests
 
-      - name: Trigger PythonAnywhere task
+      - name: Update existing PythonAnywhere task
         env:
           PA_USERNAME: ${{ secrets.PYTHONANYWHERE_USERNAME }}
           PA_TOKEN: ${{ secrets.PYTHONANYWHERE_API_TOKEN }}
@@ -41,19 +41,24 @@ jobs:
           hour = next_minute.hour
           minute = next_minute.minute
 
+          # Data to update the existing task
           data = {
               "command": "python3.10 /home/GuySchnidrig/update_data.py",
               "enabled": True,
-              "description": "Run update_data.py shortly",
+              "description": "Run update_data.py shortly (updated)",
               "interval": "daily",
               "hour": hour,
               "minute": minute
           }
 
-          r = requests.post(
-              f"https://www.pythonanywhere.com/api/v0/user/{username}/schedule/",
+          task_id = 1262825
+
+          r = requests.put(
+              f"https://www.pythonanywhere.com/api/v0/user/{username}/schedule/{task_id}/",
               headers=headers,
               json=data
           )
-          print(r.status_code, r.text)
+
+          print("Status:", r.status_code)
+          print("Response:", r.text)
           EOF
