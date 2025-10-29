@@ -7,11 +7,53 @@ on:
       - main
 
 jobs:
-  trigger:
+  schedule_task:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Trigger PythonAnywhere scheduled task
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Trigger PythonAnywhere task
+        env:
+          PA_USERNAME: ${{ secrets.PYTHONANYWHERE_USERNAME }}
+          PA_TOKEN: ${{ secrets.PYTHONANYWHERE_API_TOKEN }}
         run: |
-          curl -X POST \
-            -H "Authorization: Token ${{ secrets.PYTHONANYWHERE_API_TOKEN }}" \
-            https://www.pythonanywhere.com/api/v0/user/GuySchnidrig/schedule/1211693/run/
+          python - <<'EOF'
+          import requests
+          from datetime import datetime, timedelta
+
+          username = '${{ secrets.PYTHONANYWHERE_USERNAME }}'
+          token = '${{ secrets.PYTHONANYWHERE_API_TOKEN }}'
+          headers = {"Authorization": f"Token {token}"}
+
+          # Calculate the next minute in server UTC time
+          now = datetime.utcnow()
+          next_minute = now + timedelta(minutes=1)
+          hour = next_minute.hour
+          minute = next_minute.minute
+
+          data = {
+              "command": "python3.10 /home/GuySchnidrig/update_data.py",
+              "enabled": True,
+              "description": "Run update_data.py shortly",
+              "interval": "daily",
+              "hour": hour,
+              "minute": minute
+          }
+
+          r = requests.post(
+              f"https://www.pythonanywhere.com/api/v0/user/{username}/schedule/",
+              headers=headers,
+              json=data
+          )
+          print(r.status_code, r.text)
+          EOF
