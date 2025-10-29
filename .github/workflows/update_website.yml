@@ -2,9 +2,6 @@ name: Trigger PythonAnywhere Fetch
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
   workflow_run:
     workflows: ["ManaCore Data Pipeline"]
     types:
