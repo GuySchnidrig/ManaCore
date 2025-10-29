@@ -1,0 +1,16 @@
+name: Trigger PythonAnywhere Fetch
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger PythonAnywhere scheduled task
+        run: |
+          curl -X POST \
+            -H "Authorization: Token ${{ secrets.PYTHONANYWHERE_API_TOKEN }}" \
+            https://www.pythonanywhere.com/api/v0/user/GuySchnidrig/schedule/1211693/run/
