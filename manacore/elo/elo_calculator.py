@@ -111,9 +111,11 @@ def process_matches(csv_file: str, output_file: str):
 
     current_draft = None
     draft_players = set()
-    last_season = None
     last_elo_by_player = ratings.copy()
     matches_played_per_draft = defaultdict(int)
+    
+    # NEW: Store season_id per draft_id to ensure consistency
+    draft_to_season = {}
 
     # SECOND PASS: Process matches
     with open(csv_file, newline='') as file:
@@ -125,17 +127,22 @@ def process_matches(csv_file: str, output_file: str):
             p1, p2 = row['player1'], row['player2']
             p1wins, p2wins, draws = int(row['player1Wins']), int(row['player2Wins']), int(row['draws'])
 
-            try:
-                draft_date = datetime.strptime(draft_id, "%Y%m%d").date()
-                season_id = get_season_for_date(draft_date, season_config)
-                last_season = season_id
-            except Exception:
-                season_id = last_season
+            # Determine season_id for this draft
+            if draft_id not in draft_to_season:
+                try:
+                    draft_date = datetime.strptime(draft_id, "%Y%m%d").date()
+                    draft_to_season[draft_id] = get_season_for_date(draft_date, season_config)
+                except Exception:
+                    # If we can't parse the date, use a default or last known season
+                    draft_to_season[draft_id] = draft_to_season.get(current_draft, "Unknown Season")
+            
+            season_id = draft_to_season[draft_id]
 
             if draft_id != current_draft:
                 if current_draft is not None:
                     append_inactive_players_progress(
-                        elo_progress, all_players, draft_players, current_draft, last_season, last_elo_by_player, matches_played_per_draft
+                        elo_progress, all_players, draft_players, current_draft, 
+                        draft_to_season[current_draft], last_elo_by_player, matches_played_per_draft
                     )
                 current_draft = draft_id
                 draft_players = set()
@@ -167,9 +174,12 @@ def process_matches(csv_file: str, output_file: str):
                 (season_id, draft_id, match_id, p2, matches_played_per_draft[(draft_id, p2)], final_r2, scaled_change_p2),
             ])
 
-        append_inactive_players_progress(
-            elo_progress, all_players, draft_players, current_draft, last_season, last_elo_by_player, matches_played_per_draft
-        )
+        # Final inactive players for last draft
+        if current_draft is not None:
+            append_inactive_players_progress(
+                elo_progress, all_players, draft_players, current_draft, 
+                draft_to_season[current_draft], last_elo_by_player, matches_played_per_draft
+            )
 
     with open(output_file, 'w', newline='') as file:
         writer = csv.writer(file)
