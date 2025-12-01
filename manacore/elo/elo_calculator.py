@@ -101,19 +101,27 @@ def process_matches(csv_file: str, output_file: str):
     elo_progress = []
     DEFAULT_ELO = get_default_elo()
 
+    # FIRST PASS: Collect all players who ever play
+    all_players = set(ratings.keys())  # Start with players from history
+    with open(csv_file, newline='') as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            p1, p2 = row['player1'], row['player2']
+            all_players.update([p1, p2])
+
     current_draft = None
     draft_players = set()
-    all_players = set(ratings.keys())
     last_season = None
     last_elo_by_player = ratings.copy()
     matches_played_per_draft = defaultdict(int)
 
+    # SECOND PASS: Process matches
     with open(csv_file, newline='') as file:
         reader = list(csv.DictReader(file))
 
         for row in reader:
             draft_id = row['draft_id']
-            match_id = row.get('match_id', '')  # Get match_id or empty string if missing
+            match_id = row.get('match_id', '')
             p1, p2 = row['player1'], row['player2']
             p1wins, p2wins, draws = int(row['player1Wins']), int(row['player2Wins']), int(row['draws'])
 
@@ -133,8 +141,6 @@ def process_matches(csv_file: str, output_file: str):
                 draft_players = set()
 
             draft_players.update([p1, p2])
-            all_players.update([p1, p2])
-
             matches_played_per_draft[(draft_id, p1)] += 1
             matches_played_per_draft[(draft_id, p2)] += 1
 
