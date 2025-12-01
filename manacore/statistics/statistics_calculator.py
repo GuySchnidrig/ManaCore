@@ -390,7 +390,7 @@ def calculate_archetype_game_winrate(matches_df: pd.DataFrame, decks_df: pd.Data
     )
    
     # FIXED: Include draws in total games calculation
-    merged['total_games_per_match'] = merged['player1Wins'] + merged['player2Wins'] + merged['draws'].fillna(0)
+    merged['total_games_per_match'] = merged['player1Wins'] + merged['player2Wins'] #+ merged['draws'].fillna(0)
    
     # Create long format: one row per player per match with their archetype and game counts
     p1 = merged[['season_id', 'archetype_p1', 'player1Wins', 'total_games_per_match']].rename(
@@ -400,13 +400,10 @@ def calculate_archetype_game_winrate(matches_df: pd.DataFrame, decks_df: pd.Data
    
     combined = pd.concat([p1, p2], ignore_index=True).dropna(subset=['archetype'])
    
-    # FIXED: Use total_games_per_match instead of calculating games_won + games_lost
-    # This ensures draws are included in games_played
-   
     # Aggregate by season and archetype
     result = combined.groupby(['season_id', 'archetype']).agg(
-        games_played=('total_games_per_match', 'sum'),  # Now includes draws
-        games_won=('games_won', 'sum')                  # Draws are not wins
+        games_played=('total_games_per_match', 'sum'),  
+        games_won=('games_won', 'sum')                  
     ).reset_index()
     result['game_win_rate'] = result['games_won'] / result['games_played']
     result = result[['season_id', 'archetype', 'games_won', 'games_played', 'game_win_rate']]
@@ -503,7 +500,6 @@ def calculate_decktype_match_winrate(matches_df, draftedecks_df, decktype_level=
 def calculate_decktype_game_winrate(matches_df, decks_df, decktype_column):
     """
     Calculate decktype game winrate as games won / games played.
-    FIXED: Now properly includes draws in total games played and handles season_id.
    
     Parameters:
     - matches_df: DataFrame with ['season_id', 'draft_id', 'player1', 'player2', 'player1Wins', 'player2Wins', 'draws']
@@ -528,8 +524,6 @@ def calculate_decktype_game_winrate(matches_df, decks_df, decktype_column):
         how='left'
     )
    
-    # FIXED: Calculate total games played per row (match) INCLUDING DRAWS
-    # Handle case where 'draws' column might not exist or have NaN values
     if 'draws' not in matches_df.columns:
         merged_p1['draws'] = 0
         merged_p2['draws'] = 0
@@ -537,8 +531,8 @@ def calculate_decktype_game_winrate(matches_df, decks_df, decktype_column):
         merged_p1['draws'] = merged_p1['draws'].fillna(0)
         merged_p2['draws'] = merged_p2['draws'].fillna(0)
    
-    merged_p1['total_games'] = merged_p1['player1Wins'] + merged_p1['player2Wins'] + merged_p1['draws']
-    merged_p2['total_games'] = merged_p2['player1Wins'] + merged_p2['player2Wins'] + merged_p2['draws']
+    merged_p1['total_games'] = merged_p1['player1Wins'] + merged_p1['player2Wins'] #+ merged_p1['draws']
+    merged_p2['total_games'] = merged_p2['player1Wins'] + merged_p2['player2Wins'] #+ merged_p2['draws']
    
     # Aggregate games won and games played by season_id and decktype for player1 decks
     p1_stats = merged_p1.groupby(['season_id', f'{decktype_column}_p1']).agg(
@@ -625,13 +619,13 @@ def calculate_combined_winrates_per_season(matches_df: pd.DataFrame, decks_df: p
             ).sum()
             matches_drawn = (player1_wins == player2_wins).sum()
             matches_lost = matches_played - matches_won - matches_drawn
-            games_played = (player1_wins + player2_wins + draws).sum()
+            games_played = (player1_wins + player2_wins).sum()
             games_won = (
                 season_matches.loc[player1_is_player, 'player1Wins'].sum() +
                 season_matches.loc[~player1_is_player, 'player2Wins'].sum()
             )
             games_drawn = draws.sum()
-            games_lost = games_played - games_won - games_drawn
+            games_lost = games_played - games_won
             match_win_rate = matches_won / matches_played if matches_played else 0.0
             match_draw_rate = matches_drawn / matches_played if matches_played else 0.0
             game_win_rate = games_won / games_played if games_played else 0.0
@@ -670,13 +664,13 @@ def calculate_combined_winrates_per_season(matches_df: pd.DataFrame, decks_df: p
         matches_drawn_all = (player1_wins_all == player2_wins_all).sum()
         matches_lost_all = matches_played_all - matches_won_all - matches_drawn_all
         
-        games_played_all = (player1_wins_all + player2_wins_all + draws_all).sum()
+        games_played_all = (player1_wins_all + player2_wins_all).sum()
         games_won_all = (
             relevant_matches.loc[player1_is_player_all, 'player1Wins'].sum() +
             relevant_matches.loc[~player1_is_player_all, 'player2Wins'].sum()
         )
         games_drawn_all = draws_all.sum()
-        games_lost_all = games_played_all - games_won_all - games_drawn_all
+        games_lost_all = games_played_all - games_won_all
         
         match_win_rate_all = matches_won_all / matches_played_all if matches_played_all else 0.0
         match_draw_rate_all = matches_drawn_all / matches_played_all if matches_played_all else 0.0
@@ -940,6 +934,7 @@ def calculate_vs_player_stats(matches_df: pd.DataFrame) -> pd.DataFrame:
     """
     matches_df = matches_df.copy()
     matches_df['draws'] = matches_df['draws'].fillna(0)
+    
     # View from player1
     p1 = matches_df[['season_id', 'player1', 'player2', 'player1Wins', 'player2Wins', 'draws']].copy()
     p1 = p1.rename(columns={
@@ -948,9 +943,10 @@ def calculate_vs_player_stats(matches_df: pd.DataFrame) -> pd.DataFrame:
         'player1Wins': 'games_won_vs',
         'player2Wins': 'games_lost_vs'
     })
-    p1['games_played_vs'] = p1['games_won_vs'] + p1['games_lost_vs'] + p1['draws']
-    p1['matches_played_vs'] = 1
+    p1['games_played_vs'] = p1['games_won_vs'] + p1['games_lost_vs']  
+    p1['matches_played_vs'] = 1  # Each row is exactly 1 match
     p1['matches_won_vs'] = (p1['games_won_vs'] > p1['games_lost_vs']).astype(int)
+    
     # View from player2
     p2 = matches_df[['season_id', 'player2', 'player1', 'player2Wins', 'player1Wins', 'draws']].copy()
     p2 = p2.rename(columns={
@@ -959,9 +955,10 @@ def calculate_vs_player_stats(matches_df: pd.DataFrame) -> pd.DataFrame:
         'player2Wins': 'games_won_vs',
         'player1Wins': 'games_lost_vs'
     })
-    p2['games_played_vs'] = p2['games_won_vs'] + p2['games_lost_vs'] + p2['draws']
-    p2['matches_played_vs'] = 1
+    p2['games_played_vs'] = p2['games_won_vs'] + p2['games_lost_vs']
+    p2['matches_played_vs'] = 1  # Each row is exactly 1 match
     p2['matches_won_vs'] = (p2['games_won_vs'] > p2['games_lost_vs']).astype(int)
+    
     all_vs = pd.concat([p1, p2], ignore_index=True)
     result = all_vs.groupby(['season_id', 'player', 'opponent']).agg(
         games_played_vs=('games_played_vs', 'sum'),
@@ -969,14 +966,15 @@ def calculate_vs_player_stats(matches_df: pd.DataFrame) -> pd.DataFrame:
         matches_played_vs=('matches_played_vs', 'sum'),
         matches_won_vs=('matches_won_vs', 'sum')
     ).reset_index()
+    
     result['game_win_rate_vs'] = result['games_won_vs'] / result['games_played_vs']
     result['match_win_rate_vs'] = result['matches_won_vs'] / result['matches_played_vs']
+    
     result = result[['season_id', 'player', 'opponent',
                      'games_played_vs', 'games_won_vs', 'game_win_rate_vs',
                      'matches_played_vs', 'matches_won_vs', 'match_win_rate_vs']]
     
     # ===== ADD "SEASON-ALL" AGGREGATE =====
-    # Aggregate across all seasons for each player-opponent pair
     result_all = all_vs.groupby(['player', 'opponent']).agg(
         games_played_vs=('games_played_vs', 'sum'),
         games_won_vs=('games_won_vs', 'sum'),
@@ -992,11 +990,9 @@ def calculate_vs_player_stats(matches_df: pd.DataFrame) -> pd.DataFrame:
                              'games_played_vs', 'games_won_vs', 'game_win_rate_vs',
                              'matches_played_vs', 'matches_won_vs', 'match_win_rate_vs']]
     
-    # Combine with per-season results
     result = pd.concat([result, result_all], ignore_index=True)
     
     return result
-
 
 def calculate_card_archetype_match_winrate_per_season(matches_df: pd.DataFrame,
                                                       decks_df: pd.DataFrame,
