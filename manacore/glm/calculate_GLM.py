@@ -177,27 +177,26 @@ def run_glm_analysis(matches_df, card_of_interest=None):
     return result, games_df
 
 
-
 def analyze_all_cards(matches_df, mainboard_df, min_decks=10):
-    """Analyze all cards that appear in at least min_decks decks."""
-    # Get card counts by deck
-    card_counts = mainboard_df.groupby('scryfallId')['deck_id'].nunique().sort_values(ascending=False)
+    """Analyze all cards appearing in at least min_decks decks using the same GLM approach as run_glm_analysis."""
+    
+    # Count decks per card
+    card_counts = mainboard_df.groupby('scryfallId')['deck_id'].nunique()
     cards_to_analyze = card_counts[card_counts >= min_decks].index.tolist()
     
     print(f"\nAnalyzing {len(cards_to_analyze)} cards (appearing in {min_decks}+ decks)")
-    print(f"Card frequency range: {card_counts.min()}-{card_counts.max()} decks")
-    
     if len(cards_to_analyze) == 0:
-        print("No cards meet the threshold. Try lowering min_decks parameter.")
+        print("No cards meet the threshold. Try lowering min_decks.")
         return pd.DataFrame()
     
     results = []
+    
     for i, card_id in enumerate(cards_to_analyze, 1):
         if i % 10 == 0 or i == 1:
             print(f"Progress: {i}/{len(cards_to_analyze)}")
         
         try:
-            # Create game-level data for this card
+            # Prepare game-level data for this card
             games_df = create_game_level_data(matches_df, card_of_interest=card_id)
             games_df = games_df.dropna(subset=['player_elo', 'opponent_elo', 'archetype', 'archetype_opponent'])
             
@@ -205,23 +204,32 @@ def analyze_all_cards(matches_df, mainboard_df, min_decks=10):
             if games_df['has_card'].sum() < 10:
                 continue
             
-            for col in ['archetype', 'archetype_opponent', 'draft_id']:
+            # Compute elo descriptors
+            games_df['elo_diff'] = games_df['player_elo'] - games_df['opponent_elo']
+            games_df['elo_mean'] = (games_df['player_elo'] + games_df['opponent_elo']) / 2
+            
+            # Convert archetypes to categorical
+            for col in ['archetype', 'archetype_opponent']:
                 games_df[col] = pd.Categorical(games_df[col])
             
-            # Fit model
-            formula = 'win ~ player_elo + opponent_elo + has_card + C(archetype) + C(archetype_opponent) + C(draft_id)'
+            # Fit GLM
+            formula = 'win ~ elo_diff + elo_mean + has_card + C(archetype) + C(archetype_opponent)'
             model = glm(formula, data=games_df, family=Binomial())
             result = model.fit()
             
             # Extract card effect
             card_name = mainboard_df[mainboard_df['scryfallId'] == card_id]['card_name'].iloc[0]
+            coef = result.params['has_card']
+            raw_p = result.pvalues['has_card']
+            odds_ratio = np.exp(coef)
+            
+            # Append results
             results.append({
                 'scryfallId': card_id,
                 'card_name': card_name,
-                'coefficient': result.params['has_card'],
-                'std_error': result.bse['has_card'],
-                'p_value': result.pvalues['has_card'],
-                'odds_ratio': np.exp(result.params['has_card']),
+                'coefficient': coef,
+                'p_value': raw_p,
+                'odds_ratio': odds_ratio,
                 'games_with_card': int(games_df['has_card'].sum()),
                 'total_games': len(games_df),
                 'win_rate_with': games_df[games_df['has_card']==1]['win'].mean(),
@@ -232,14 +240,19 @@ def analyze_all_cards(matches_df, mainboard_df, min_decks=10):
             print(f"  Error analyzing {card_id}: {str(e)[:50]}")
             continue
     
-    # Create results dataframe
+    # Compile results
     if len(results) == 0:
         print("No cards successfully analyzed.")
         return pd.DataFrame()
     
     results_df = pd.DataFrame(results)
-    results_df['significant'] = results_df['p_value'] < 0.05
-    results_df = results_df.sort_values('coefficient', ascending=False)
+    
+    # FDR correction across all cards
+    if not results_df.empty:
+        _, fdr_pvals, _, _ = multipletests(results_df['p_value'], method='fdr_bh')
+        results_df['fdr_p'] = fdr_pvals
+        results_df['significant'] = results_df['fdr_p'] < 0.05
+        results_df = results_df.sort_values('coefficient', ascending=False)
     
     return results_df
 
