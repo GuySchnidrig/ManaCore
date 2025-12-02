@@ -201,7 +201,7 @@ def analyze_all_cards(matches_df, mainboard_df, min_decks=10):
             games_df = games_df.dropna(subset=['player_elo', 'opponent_elo', 'archetype', 'archetype_opponent'])
             
             # Skip if too few games with card
-            if games_df['has_card'].sum() < 10:
+            if games_df['has_card'].sum() < 3:
                 continue
             
             # Compute elo descriptors
