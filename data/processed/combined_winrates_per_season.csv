@@ -2424,8 +2424,8 @@ Matthias,21,0d08f5e4-d2d3-4659-86d4-a983d80e3b2c,Tundra,Season-4,1,4,1,1,2,0.25,
 Matthias,21,0d08f5e4-d2d3-4659-86d4-a983d80e3b2c,Tundra,Season-All,1,4,1,1,2,0.25,0.25,9,4,1,5,0.4444444444444444,0.1111111111111111
 Matthias,21,2398892d-28e9-4009-81ec-0d544af79d2b,Ancestral Recall,Season-4,1,4,1,1,2,0.25,0.25,9,4,1,5,0.4444444444444444,0.1111111111111111
 Matthias,21,2398892d-28e9-4009-81ec-0d544af79d2b,Ancestral Recall,Season-All,1,4,1,1,2,0.25,0.25,9,4,1,5,0.4444444444444444,0.1111111111111111
-Matthias,21,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,Season-4,2,8,4,1,3,0.5,0.125,20,11,1,9,0.55,0.05
-Matthias,21,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,Season-All,2,8,4,1,3,0.5,0.125,20,11,1,9,0.55,0.05
+Matthias,21,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,Season-4,1,4,1,1,2,0.25,0.25,9,4,1,5,0.4444444444444444,0.1111111111111111
+Matthias,21,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,Season-All,1,4,1,1,2,0.25,0.25,9,4,1,5,0.4444444444444444,0.1111111111111111
 Matthias,21,07a3d9e8-8597-498b-869c-cff79e0df516,"Karn, Scion of Urza",Season-4,1,4,1,1,2,0.25,0.25,9,4,1,5,0.4444444444444444,0.1111111111111111
 Matthias,21,07a3d9e8-8597-498b-869c-cff79e0df516,"Karn, Scion of Urza",Season-All,1,4,1,1,2,0.25,0.25,9,4,1,5,0.4444444444444444,0.1111111111111111
 Joel K.,12,26c68473-70ca-40ba-b5c6-71ec30f88a2c,Damnation,Season-4,1,4,0,0,4,0.0,0.0,10,2,0,8,0.2,0.0
@@ -3384,8 +3384,6 @@ Matthias,21,fd99bce1-ce39-464b-8e61-2631eb3ed6f6,Tolarian Academy,Season-4,1,4,0
 Matthias,21,fd99bce1-ce39-464b-8e61-2631eb3ed6f6,Tolarian Academy,Season-All,1,4,0,0,4,0.0,0.0,10,2,0,8,0.2,0.0
 Matthias,21,6be9b1d5-9ab8-4adb-ba54-2c0117e842fa,Mox Opal,Season-4,1,4,0,0,4,0.0,0.0,10,2,0,8,0.2,0.0
 Matthias,21,6be9b1d5-9ab8-4adb-ba54-2c0117e842fa,Mox Opal,Season-All,1,4,0,0,4,0.0,0.0,10,2,0,8,0.2,0.0
-Matthias,21,63af3c26-5b1f-46f6-9aa2-036c615bf5ea,Flash,Season-4,1,4,0,0,4,0.0,0.0,10,2,0,8,0.2,0.0
-Matthias,21,63af3c26-5b1f-46f6-9aa2-036c615bf5ea,Flash,Season-All,1,4,0,0,4,0.0,0.0,10,2,0,8,0.2,0.0
 Matthias,21,97b9bab9-12ee-4da5-9d53-d0b82d9279cd,Pyrite Spellbomb,Season-4,1,4,0,0,4,0.0,0.0,10,2,0,8,0.2,0.0
 Matthias,21,97b9bab9-12ee-4da5-9d53-d0b82d9279cd,Pyrite Spellbomb,Season-All,1,4,0,0,4,0.0,0.0,10,2,0,8,0.2,0.0
 Matthias,21,bf4b9a8a-b42a-46fb-b0d0-9cf800f63c8a,"Emry, Lurker of the Loch",Season-4,1,4,0,0,4,0.0,0.0,10,2,0,8,0.2,0.0
@@ -5930,8 +5928,6 @@ Filipe,23,2b20d3e1-62ef-44db-8109-a33d4fa3e7f1,Exploration,Season-4,1,4,0,0,4,0.
 Filipe,23,2b20d3e1-62ef-44db-8109-a33d4fa3e7f1,Exploration,Season-All,1,4,0,0,4,0.0,0.0,9,1,0,8,0.1111111111111111,0.0
 Filipe,23,c78da035-6b5b-4136-9ab6-f622b64fdc54,Unstoppable Slasher,Season-4,1,4,0,0,4,0.0,0.0,9,1,0,8,0.1111111111111111,0.0
 Filipe,23,c78da035-6b5b-4136-9ab6-f622b64fdc54,Unstoppable Slasher,Season-All,1,4,0,0,4,0.0,0.0,9,1,0,8,0.1111111111111111,0.0
-Filipe,23,f9246b68-580f-4f53-883d-7900880e4b0d,Six,Season-4,1,4,0,0,4,0.0,0.0,9,1,0,8,0.1111111111111111,0.0
-Filipe,23,f9246b68-580f-4f53-883d-7900880e4b0d,Six,Season-All,1,4,0,0,4,0.0,0.0,9,1,0,8,0.1111111111111111,0.0
 Filipe,23,41e108a5-4e2f-42cf-9ea1-87bf3c0a2b7f,"Nissa, Who Shakes the World",Season-4,1,4,0,0,4,0.0,0.0,9,1,0,8,0.1111111111111111,0.0
 Filipe,23,41e108a5-4e2f-42cf-9ea1-87bf3c0a2b7f,"Nissa, Who Shakes the World",Season-All,1,4,0,0,4,0.0,0.0,9,1,0,8,0.1111111111111111,0.0
 Andrin,5,24da9431-7e52-44f5-bc18-2f2d8a4ca81e,Abrade,Season-4,1,4,2,0,2,0.5,0.0,11,6,0,5,0.5454545454545454,0.0

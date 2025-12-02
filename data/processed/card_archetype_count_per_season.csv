@@ -957,7 +957,6 @@ Season-4,62d37423-3445-412a-9abd-0480da404637,Phyrexian Fleshgorger,Aggro,1
 Season-4,62d37423-3445-412a-9abd-0480da404637,Phyrexian Fleshgorger,Combo,7
 Season-4,63af3c26-5b1f-46f6-9aa2-036c615bf5ea,Flash,Aggro-Combo,1
 Season-4,63af3c26-5b1f-46f6-9aa2-036c615bf5ea,Flash,Combo,4
-Season-4,63af3c26-5b1f-46f6-9aa2-036c615bf5ea,Flash,Control,1
 Season-4,63c59228-c742-4abd-b4d7-9f7880190e95,Windswept Heath,Aggro,2
 Season-4,63c59228-c742-4abd-b4d7-9f7880190e95,Windswept Heath,Aggro-Combo,1
 Season-4,63c59228-c742-4abd-b4d7-9f7880190e95,Windswept Heath,Combo,1
@@ -1664,7 +1663,6 @@ Season-4,eeeffc0b-dc92-458e-ad58-86ff6077a508,Sentinel of the Nameless City,Cont
 Season-4,efda91fa-03b2-4fb4-ae07-b45f6c6d3eab,Yawgmoth's Will,Combo,4
 Season-4,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,Combo,6
 Season-4,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,Control,4
-Season-4,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,Control-Aggro (Midrange),1
 Season-4,f1a21287-e244-4960-84fb-c4f6e5c346d9,Third Path Iconoclast,Combo,2
 Season-4,f1a21287-e244-4960-84fb-c4f6e5c346d9,Third Path Iconoclast,Control,1
 Season-4,f1e5cafb-b0e6-4ee5-8c58-6f8e5ef2b9da,Virtue of Persistence // Locthwain Scorn,Aggro,1
@@ -1704,7 +1702,7 @@ Season-4,f83ed433-fae3-4fa5-acad-bb8a5b535ce3,Coveted Jewel,Combo,3
 Season-4,f83ed433-fae3-4fa5-acad-bb8a5b535ce3,Coveted Jewel,Control,1
 Season-4,f9246b68-580f-4f53-883d-7900880e4b0d,Six,Aggro-Combo,2
 Season-4,f9246b68-580f-4f53-883d-7900880e4b0d,Six,Combo-Control,1
-Season-4,f9246b68-580f-4f53-883d-7900880e4b0d,Six,Control-Aggro (Midrange),2
+Season-4,f9246b68-580f-4f53-883d-7900880e4b0d,Six,Control-Aggro (Midrange),1
 Season-4,f9287151-95df-4f5a-b32a-4b0aea825452,Karn Liberated,Control,2
 Season-4,fa6ac7d2-0127-49a8-b7d2-a38308d3c27b,"Liliana, the Last Hope",Aggro,1
 Season-4,fa6ac7d2-0127-49a8-b7d2-a38308d3c27b,"Liliana, the Last Hope",Combo,2
@@ -3815,7 +3813,7 @@ Season-All,635245e9-c27f-4a51-a6f1-bae62e696542,Lightstall Inquisitor,Aggro,2
 Season-All,63af3c26-5b1f-46f6-9aa2-036c615bf5ea,Flash,Aggro-Combo,1
 Season-All,63af3c26-5b1f-46f6-9aa2-036c615bf5ea,Flash,Combo,6
 Season-All,63af3c26-5b1f-46f6-9aa2-036c615bf5ea,Flash,Combo-Control,1
-Season-All,63af3c26-5b1f-46f6-9aa2-036c615bf5ea,Flash,Control,2
+Season-All,63af3c26-5b1f-46f6-9aa2-036c615bf5ea,Flash,Control,1
 Season-All,63c59228-c742-4abd-b4d7-9f7880190e95,Windswept Heath,Aggro,3
 Season-All,63c59228-c742-4abd-b4d7-9f7880190e95,Windswept Heath,Aggro-Combo,2
 Season-All,63c59228-c742-4abd-b4d7-9f7880190e95,Windswept Heath,Combo,1
@@ -4657,7 +4655,6 @@ Season-All,f0192cf7-3391-4720-b9c8-72dec5dde01e,Bloodtithe Harvester,Control,1
 Season-All,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,Aggro,2
 Season-All,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,Combo,7
 Season-All,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,Control,7
-Season-All,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,Control-Aggro (Midrange),1
 Season-All,f1a21287-e244-4960-84fb-c4f6e5c346d9,Third Path Iconoclast,Aggro-Control (Tempo),1
 Season-All,f1a21287-e244-4960-84fb-c4f6e5c346d9,Third Path Iconoclast,Combo,4
 Season-All,f1a21287-e244-4960-84fb-c4f6e5c346d9,Third Path Iconoclast,Control,2
@@ -4708,7 +4705,7 @@ Season-All,f88d81d9-8ded-4c20-8237-2218046595fb,"Shadow, Mysterious Assassin",Co
 Season-All,f9246b68-580f-4f53-883d-7900880e4b0d,Six,Aggro,1
 Season-All,f9246b68-580f-4f53-883d-7900880e4b0d,Six,Aggro-Combo,2
 Season-All,f9246b68-580f-4f53-883d-7900880e4b0d,Six,Combo-Control,1
-Season-All,f9246b68-580f-4f53-883d-7900880e4b0d,Six,Control-Aggro (Midrange),3
+Season-All,f9246b68-580f-4f53-883d-7900880e4b0d,Six,Control-Aggro (Midrange),2
 Season-All,f9287151-95df-4f5a-b32a-4b0aea825452,Karn Liberated,Control,2
 Season-All,fa6ac7d2-0127-49a8-b7d2-a38308d3c27b,"Liliana, the Last Hope",Aggro,1
 Season-All,fa6ac7d2-0127-49a8-b7d2-a38308d3c27b,"Liliana, the Last Hope",Combo,2

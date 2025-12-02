@@ -330,7 +330,7 @@ Season-4,6171e136-1167-4329-acb2-6853d3a814e5,Goblin Welder,30.0,11.0,0.36666666
 Season-4,61a28870-cf78-4323-9d82-cee764067764,Lightning Greaves,40.0,21.0,0.525
 Season-4,62b3f560-262b-4bc3-9aef-535fd7082c28,Vaultborn Tyrant,49.0,24.0,0.4897959183673469
 Season-4,62d37423-3445-412a-9abd-0480da404637,Phyrexian Fleshgorger,77.0,39.0,0.5064935064935064
-Season-4,63af3c26-5b1f-46f6-9aa2-036c615bf5ea,Flash,60.0,28.0,0.4666666666666667
+Season-4,63af3c26-5b1f-46f6-9aa2-036c615bf5ea,Flash,50.0,26.0,0.52
 Season-4,63c59228-c742-4abd-b4d7-9f7880190e95,Windswept Heath,108.0,52.0,0.4814814814814814
 Season-4,641b21e1-9188-4bc3-96e8-cda2acbc5ed5,Time Spiral,94.0,49.0,0.5212765957446809
 Season-4,652236c2-84ef-45e4-b5fc-ed6170bc3d6c,Meticulous Archive,41.0,19.0,0.4634146341463415
@@ -579,7 +579,7 @@ Season-4,ed557e51-32bd-476f-99f8-d7b1738495c5,Bloodthirsty Adversary,0.0,0.0,0.0
 Season-4,ee8e9928-d9b2-4570-adb8-44b34115decd,Tireless Tracker,75.0,39.0,0.52
 Season-4,eeeffc0b-dc92-458e-ad58-86ff6077a508,Sentinel of the Nameless City,59.0,35.0,0.5932203389830508
 Season-4,efda91fa-03b2-4fb4-ae07-b45f6c6d3eab,Yawgmoth's Will,40.0,26.0,0.65
-Season-4,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,107.0,55.0,0.514018691588785
+Season-4,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,96.0,48.0,0.5
 Season-4,f1a21287-e244-4960-84fb-c4f6e5c346d9,Third Path Iconoclast,29.0,14.0,0.4827586206896552
 Season-4,f1e5cafb-b0e6-4ee5-8c58-6f8e5ef2b9da,Virtue of Persistence // Locthwain Scorn,40.0,23.0,0.575
 Season-4,f20015ad-8fda-498f-ac28-1ffb824ab480,Caldaia Guardian,74.0,34.0,0.4594594594594595
@@ -595,7 +595,7 @@ Season-4,f6ca59cd-8779-4a84-a54b-e863b79c61f0,Underground Mortuary,37.0,22.0,0.5
 Season-4,f6fb576e-a4a4-496b-b553-3f81cc651210,,0.0,0.0,0.0
 Season-4,f823be95-bef4-4e86-a924-239be62394bf,Izzet Signet,56.0,29.0,0.5178571428571429
 Season-4,f83ed433-fae3-4fa5-acad-bb8a5b535ce3,Coveted Jewel,50.0,24.0,0.48
-Season-4,f9246b68-580f-4f53-883d-7900880e4b0d,Six,51.0,21.0,0.4117647058823529
+Season-4,f9246b68-580f-4f53-883d-7900880e4b0d,Six,42.0,20.0,0.4761904761904761
 Season-4,f9287151-95df-4f5a-b32a-4b0aea825452,Karn Liberated,19.0,9.0,0.4736842105263157
 Season-4,fa3b415f-7901-4ab4-84fe-60b90d40ac90,,0.0,0.0,0.0
 Season-4,fa6ac7d2-0127-49a8-b7d2-a38308d3c27b,"Liliana, the Last Hope",46.0,23.0,0.5
@@ -1580,7 +1580,7 @@ Season-All,61a28870-cf78-4323-9d82-cee764067764,Lightning Greaves,49.0,22.0,0.44
 Season-All,62b3f560-262b-4bc3-9aef-535fd7082c28,Vaultborn Tyrant,70.0,35.0,0.5
 Season-All,62d37423-3445-412a-9abd-0480da404637,Phyrexian Fleshgorger,77.0,39.0,0.5064935064935064
 Season-All,635245e9-c27f-4a51-a6f1-bae62e696542,Lightstall Inquisitor,21.0,10.0,0.4761904761904761
-Season-All,63af3c26-5b1f-46f6-9aa2-036c615bf5ea,Flash,94.0,53.0,0.5638297872340425
+Season-All,63af3c26-5b1f-46f6-9aa2-036c615bf5ea,Flash,84.0,51.0,0.6071428571428571
 Season-All,63c59228-c742-4abd-b4d7-9f7880190e95,Windswept Heath,143.0,72.0,0.5034965034965035
 Season-All,641b21e1-9188-4bc3-96e8-cda2acbc5ed5,Time Spiral,121.0,66.0,0.5454545454545454
 Season-All,64a5d494-efa1-446b-bebe-2ad36e154376,"Ugin, Eye of the Storms",29.0,14.0,0.4827586206896552
@@ -1884,7 +1884,7 @@ Season-All,ee8e9928-d9b2-4570-adb8-44b34115decd,Tireless Tracker,103.0,55.0,0.53
 Season-All,eeeffc0b-dc92-458e-ad58-86ff6077a508,Sentinel of the Nameless City,81.0,50.0,0.6172839506172839
 Season-All,efda91fa-03b2-4fb4-ae07-b45f6c6d3eab,Yawgmoth's Will,40.0,26.0,0.65
 Season-All,f0192cf7-3391-4720-b9c8-72dec5dde01e,Bloodtithe Harvester,29.0,14.0,0.4827586206896552
-Season-All,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,163.0,91.0,0.558282208588957
+Season-All,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,152.0,84.0,0.5526315789473685
 Season-All,f1a21287-e244-4960-84fb-c4f6e5c346d9,Third Path Iconoclast,66.0,32.0,0.4848484848484848
 Season-All,f1b8413f-c9fc-4cea-b416-a1fcf651b009,Sylvan Safekeeper,9.0,1.0,0.1111111111111111
 Season-All,f1e5cafb-b0e6-4ee5-8c58-6f8e5ef2b9da,Virtue of Persistence // Locthwain Scorn,70.0,42.0,0.6
@@ -1906,7 +1906,7 @@ Season-All,f6fb576e-a4a4-496b-b553-3f81cc651210,,0.0,0.0,0.0
 Season-All,f823be95-bef4-4e86-a924-239be62394bf,Izzet Signet,56.0,29.0,0.5178571428571429
 Season-All,f83ed433-fae3-4fa5-acad-bb8a5b535ce3,Coveted Jewel,60.0,29.0,0.4833333333333333
 Season-All,f88d81d9-8ded-4c20-8237-2218046595fb,"Shadow, Mysterious Assassin",18.0,5.0,0.2777777777777778
-Season-All,f9246b68-580f-4f53-883d-7900880e4b0d,Six,71.0,34.0,0.4788732394366197
+Season-All,f9246b68-580f-4f53-883d-7900880e4b0d,Six,62.0,33.0,0.532258064516129
 Season-All,f9287151-95df-4f5a-b32a-4b0aea825452,Karn Liberated,19.0,9.0,0.4736842105263157
 Season-All,fa3b415f-7901-4ab4-84fe-60b90d40ac90,,0.0,0.0,0.0
 Season-All,fa6ac7d2-0127-49a8-b7d2-a38308d3c27b,"Liliana, the Last Hope",46.0,23.0,0.5
