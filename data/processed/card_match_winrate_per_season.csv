@@ -648,7 +648,7 @@ Season-5,064dfdeb-485f-473e-9fa0-8fdb7638cdc6,Dismember,16.0,9.0,0.5625
 Season-5,068bb15a-fc2d-42a2-859b-837b946d23c0,Underground Sea,12.0,5.0,0.4166666666666667
 Season-5,06c0c35d-a26e-473a-9206-8fbda7191700,Entomb,8.0,4.0,0.5
 Season-5,06cb1bd6-73e0-4104-b344-4bc52d7dcedf,Baleful Strix,8.0,7.0,0.875
-Season-5,071daca8-ccc6-4707-843e-adac40dd1588,Fury,20.0,11.0,0.55
+Season-5,071daca8-ccc6-4707-843e-adac40dd1588,Fury,16.0,9.0,0.5625
 Season-5,07246783-d475-4f61-99ac-e2b574072349,Voice of Resurgence,8.0,5.0,0.625
 Season-5,07313dd3-d0dc-40ca-98a3-fa4d39e5bcae,Oust,12.0,5.0,0.4166666666666667
 Season-5,073bfdca-d7b8-4f4b-93f3-6e7c44bc0b0a,Sol Ring,16.0,12.0,0.75
@@ -1176,7 +1176,7 @@ Season-5,ee8e9928-d9b2-4570-adb8-44b34115decd,Tireless Tracker,12.0,8.0,0.666666
 Season-5,eeeffc0b-dc92-458e-ad58-86ff6077a508,Sentinel of the Nameless City,8.0,7.0,0.875
 Season-5,efda91fa-03b2-4fb4-ae07-b45f6c6d3eab,Yawgmoth's Will,0.0,0.0,0.0
 Season-5,f0192cf7-3391-4720-b9c8-72dec5dde01e,Bloodtithe Harvester,12.0,5.0,0.4166666666666667
-Season-5,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,23.0,16.0,0.6956521739130435
+Season-5,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,16.0,10.0,0.625
 Season-5,f1a21287-e244-4960-84fb-c4f6e5c346d9,Third Path Iconoclast,16.0,7.0,0.4375
 Season-5,f1b8413f-c9fc-4cea-b416-a1fcf651b009,Sylvan Safekeeper,4.0,0.0,0.0
 Season-5,f1e5cafb-b0e6-4ee5-8c58-6f8e5ef2b9da,Virtue of Persistence // Locthwain Scorn,12.0,8.0,0.6666666666666666
@@ -1255,7 +1255,7 @@ Season-All,064dfdeb-485f-473e-9fa0-8fdb7638cdc6,Dismember,52.0,27.0,0.5192307692
 Season-All,068bb15a-fc2d-42a2-859b-837b946d23c0,Underground Sea,44.0,17.0,0.3863636363636363
 Season-All,06c0c35d-a26e-473a-9206-8fbda7191700,Entomb,44.0,24.0,0.5454545454545454
 Season-All,06cb1bd6-73e0-4104-b344-4bc52d7dcedf,Baleful Strix,40.0,25.0,0.625
-Season-All,071daca8-ccc6-4707-843e-adac40dd1588,Fury,56.0,28.0,0.5
+Season-All,071daca8-ccc6-4707-843e-adac40dd1588,Fury,52.0,26.0,0.5
 Season-All,07246783-d475-4f61-99ac-e2b574072349,Voice of Resurgence,24.0,10.0,0.4166666666666667
 Season-All,07313dd3-d0dc-40ca-98a3-fa4d39e5bcae,Oust,52.0,24.0,0.4615384615384615
 Season-All,073bfdca-d7b8-4f4b-93f3-6e7c44bc0b0a,Sol Ring,56.0,32.0,0.5714285714285714
@@ -1884,7 +1884,7 @@ Season-All,ee8e9928-d9b2-4570-adb8-44b34115decd,Tireless Tracker,44.0,23.0,0.522
 Season-All,eeeffc0b-dc92-458e-ad58-86ff6077a508,Sentinel of the Nameless City,32.0,20.0,0.625
 Season-All,efda91fa-03b2-4fb4-ae07-b45f6c6d3eab,Yawgmoth's Will,16.0,11.0,0.6875
 Season-All,f0192cf7-3391-4720-b9c8-72dec5dde01e,Bloodtithe Harvester,12.0,5.0,0.4166666666666667
-Season-All,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,63.0,35.0,0.5555555555555556
+Season-All,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,56.0,29.0,0.5178571428571429
 Season-All,f1a21287-e244-4960-84fb-c4f6e5c346d9,Third Path Iconoclast,28.0,12.0,0.4285714285714285
 Season-All,f1b8413f-c9fc-4cea-b416-a1fcf651b009,Sylvan Safekeeper,4.0,0.0,0.0
 Season-All,f1e5cafb-b0e6-4ee5-8c58-6f8e5ef2b9da,Virtue of Persistence // Locthwain Scorn,28.0,17.0,0.6071428571428571

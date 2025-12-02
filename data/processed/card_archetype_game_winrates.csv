@@ -1807,7 +1807,7 @@ Season-5,06c0c35d-a26e-473a-9206-8fbda7191700,Entomb,Combo,18,9,0.5
 Season-5,06cb1bd6-73e0-4104-b344-4bc52d7dcedf,Baleful Strix,Combo,11,7,0.6363636363636364
 Season-5,06cb1bd6-73e0-4104-b344-4bc52d7dcedf,Baleful Strix,Combo-Control,10,8,0.8
 Season-5,071daca8-ccc6-4707-843e-adac40dd1588,Fury,Aggro,18,9,0.5
-Season-5,071daca8-ccc6-4707-843e-adac40dd1588,Fury,Combo,19,10,0.5263157894736842
+Season-5,071daca8-ccc6-4707-843e-adac40dd1588,Fury,Combo,10,6,0.6
 Season-5,071daca8-ccc6-4707-843e-adac40dd1588,Fury,Control-Aggro (Midrange),9,6,0.6666666666666666
 Season-5,07246783-d475-4f61-99ac-e2b574072349,Voice of Resurgence,Aggro,20,11,0.55
 Season-5,07313dd3-d0dc-40ca-98a3-fa4d39e5bcae,Oust,Aggro,8,6,0.75
@@ -2655,7 +2655,6 @@ Season-5,eeeffc0b-dc92-458e-ad58-86ff6077a508,Sentinel of the Nameless City,Aggr
 Season-5,f0192cf7-3391-4720-b9c8-72dec5dde01e,Bloodtithe Harvester,Aggro,10,3,0.3
 Season-5,f0192cf7-3391-4720-b9c8-72dec5dde01e,Bloodtithe Harvester,Combo,10,6,0.6
 Season-5,f0192cf7-3391-4720-b9c8-72dec5dde01e,Bloodtithe Harvester,Control,9,5,0.5555555555555556
-Season-5,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,Aggro,19,13,0.6842105263157895
 Season-5,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,Combo,10,7,0.7
 Season-5,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,Control,27,16,0.5925925925925926
 Season-5,f1a21287-e244-4960-84fb-c4f6e5c346d9,Third Path Iconoclast,Aggro-Control (Tempo),10,6,0.6
@@ -2836,7 +2835,7 @@ Season-All,06cb1bd6-73e0-4104-b344-4bc52d7dcedf,Baleful Strix,Combo,50,30,0.6
 Season-All,06cb1bd6-73e0-4104-b344-4bc52d7dcedf,Baleful Strix,Combo-Control,10,8,0.8
 Season-All,06cb1bd6-73e0-4104-b344-4bc52d7dcedf,Baleful Strix,Control,26,16,0.6153846153846154
 Season-All,071daca8-ccc6-4707-843e-adac40dd1588,Fury,Aggro,74,40,0.5405405405405406
-Season-All,071daca8-ccc6-4707-843e-adac40dd1588,Fury,Combo,19,10,0.5263157894736842
+Season-All,071daca8-ccc6-4707-843e-adac40dd1588,Fury,Combo,10,6,0.6
 Season-All,071daca8-ccc6-4707-843e-adac40dd1588,Fury,Combo-Control,9,3,0.3333333333333333
 Season-All,071daca8-ccc6-4707-843e-adac40dd1588,Fury,Control,11,6,0.5454545454545454
 Season-All,071daca8-ccc6-4707-843e-adac40dd1588,Fury,Control-Aggro (Midrange),19,11,0.5789473684210527
@@ -4652,7 +4651,6 @@ Season-All,efda91fa-03b2-4fb4-ae07-b45f6c6d3eab,Yawgmoth's Will,Combo,40,26,0.65
 Season-All,f0192cf7-3391-4720-b9c8-72dec5dde01e,Bloodtithe Harvester,Aggro,10,3,0.3
 Season-All,f0192cf7-3391-4720-b9c8-72dec5dde01e,Bloodtithe Harvester,Combo,10,6,0.6
 Season-All,f0192cf7-3391-4720-b9c8-72dec5dde01e,Bloodtithe Harvester,Control,9,5,0.5555555555555556
-Season-All,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,Aggro,19,13,0.6842105263157895
 Season-All,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,Combo,68,38,0.5588235294117647
 Season-All,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,Control,65,33,0.5076923076923077
 Season-All,f1a21287-e244-4960-84fb-c4f6e5c346d9,Third Path Iconoclast,Aggro-Control (Tempo),10,6,0.6

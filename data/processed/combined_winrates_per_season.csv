@@ -6449,8 +6449,6 @@ Guy,10,0d16e8e0-31b2-4389-afd6-783c501f6fa0,"Ajani, Nacatl Pariah // Ajani, Naca
 Guy,10,0d16e8e0-31b2-4389-afd6-783c501f6fa0,"Ajani, Nacatl Pariah // Ajani, Nacatl Avenger",Season-All,1,4,3,0,1,0.75,0.0,8,6,0,2,0.75,0.0
 Guy,10,073bfdca-d7b8-4f4b-93f3-6e7c44bc0b0a,Sol Ring,Season-5,2,8,6,0,2,0.75,0.0,18,13,0,5,0.7222222222222222,0.0
 Guy,10,073bfdca-d7b8-4f4b-93f3-6e7c44bc0b0a,Sol Ring,Season-All,2,8,6,0,2,0.75,0.0,18,13,0,5,0.7222222222222222,0.0
-Guy,10,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,Season-5,2,8,6,0,2,0.75,0.0,18,13,0,5,0.7222222222222222,0.0
-Guy,10,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,Season-All,2,8,6,0,2,0.75,0.0,18,13,0,5,0.7222222222222222,0.0
 Guy,10,3d8ca18d-9099-4f1e-95c1-f04da58a26bd,"Gut, True Soul Zealot",Season-5,1,4,3,0,1,0.75,0.0,8,6,0,2,0.75,0.0
 Guy,10,3d8ca18d-9099-4f1e-95c1-f04da58a26bd,"Gut, True Soul Zealot",Season-All,1,4,3,0,1,0.75,0.0,8,6,0,2,0.75,0.0
 Guy,10,f61693a2-7042-44e0-85ba-9bf12ab94e7e,Suplex,Season-5,1,4,3,0,1,0.75,0.0,8,6,0,2,0.75,0.0
@@ -6637,8 +6635,6 @@ Joel K.,12,661fc907-7003-45c6-820c-9616e9a71c30,Seething Landscape,Season-5,1,4,
 Joel K.,12,661fc907-7003-45c6-820c-9616e9a71c30,Seething Landscape,Season-All,1,4,2,0,2,0.5,0.0,9,4,0,5,0.4444444444444444,0.0
 Joel K.,12,16448d95-ee21-4def-b880-26f6f159c213,Metamorphosis Fanatic,Season-5,1,4,2,0,2,0.5,0.0,9,4,0,5,0.4444444444444444,0.0
 Joel K.,12,16448d95-ee21-4def-b880-26f6f159c213,Metamorphosis Fanatic,Season-All,1,4,2,0,2,0.5,0.0,9,4,0,5,0.4444444444444444,0.0
-Joel K.,12,071daca8-ccc6-4707-843e-adac40dd1588,Fury,Season-5,1,4,2,0,2,0.5,0.0,9,4,0,5,0.4444444444444444,0.0
-Joel K.,12,071daca8-ccc6-4707-843e-adac40dd1588,Fury,Season-All,1,4,2,0,2,0.5,0.0,9,4,0,5,0.4444444444444444,0.0
 Joel K.,12,7f7e780e-fbc5-4dc0-b5c7-efcb8645c7c6,Ertai Resurrected,Season-5,1,4,2,0,2,0.5,0.0,9,4,0,5,0.4444444444444444,0.0
 Joel K.,12,7f7e780e-fbc5-4dc0-b5c7-efcb8645c7c6,Ertai Resurrected,Season-All,1,4,2,0,2,0.5,0.0,9,4,0,5,0.4444444444444444,0.0
 Joel K.,12,cea3b218-0e6e-443a-84f7-380f1021e8e1,Barrowgoyf,Season-5,1,4,2,0,2,0.5,0.0,9,4,0,5,0.4444444444444444,0.0
@@ -7443,6 +7439,8 @@ Guy,10,02e8e540-8aa3-4e6a-9a11-c3949cab5f0f,"Tezzeret, Cruel Captain",Season-5,1
 Guy,10,02e8e540-8aa3-4e6a-9a11-c3949cab5f0f,"Tezzeret, Cruel Captain",Season-All,1,4,3,0,1,0.75,0.0,10,7,0,3,0.7,0.0
 Guy,10,b277752b-430a-4f09-8a98-b72f813dd52e,Bountiful Landscape,Season-5,1,4,3,0,1,0.75,0.0,10,7,0,3,0.7,0.0
 Guy,10,b277752b-430a-4f09-8a98-b72f813dd52e,Bountiful Landscape,Season-All,1,4,3,0,1,0.75,0.0,10,7,0,3,0.7,0.0
+Guy,10,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,Season-5,1,4,3,0,1,0.75,0.0,10,7,0,3,0.7,0.0
+Guy,10,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,Season-All,1,4,3,0,1,0.75,0.0,10,7,0,3,0.7,0.0
 Guy,10,661fc907-7003-45c6-820c-9616e9a71c30,Seething Landscape,Season-5,1,4,3,0,1,0.75,0.0,10,7,0,3,0.7,0.0
 Guy,10,661fc907-7003-45c6-820c-9616e9a71c30,Seething Landscape,Season-All,1,4,3,0,1,0.75,0.0,10,7,0,3,0.7,0.0
 Guy,10,64a5d494-efa1-446b-bebe-2ad36e154376,"Ugin, Eye of the Storms",Season-5,1,4,3,0,1,0.75,0.0,10,7,0,3,0.7,0.0
@@ -7683,8 +7681,6 @@ Valentin,19,c17816e8-28b1-4295-a637-efb0e5c18873,Lush Portico,Season-5,1,4,3,0,1
 Valentin,19,c17816e8-28b1-4295-a637-efb0e5c18873,Lush Portico,Season-All,1,4,3,0,1,0.75,0.0,11,7,0,4,0.6363636363636364,0.0
 Valentin,19,4acf970d-d2d7-413d-aba7-587ee53d8d5c,Stomping Ground,Season-5,1,4,3,0,1,0.75,0.0,11,7,0,4,0.6363636363636364,0.0
 Valentin,19,4acf970d-d2d7-413d-aba7-587ee53d8d5c,Stomping Ground,Season-All,1,4,3,0,1,0.75,0.0,11,7,0,4,0.6363636363636364,0.0
-Valentin,19,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,Season-5,1,4,3,0,1,0.75,0.0,11,7,0,4,0.6363636363636364,0.0
-Valentin,19,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,Season-All,1,4,3,0,1,0.75,0.0,11,7,0,4,0.6363636363636364,0.0
 Valentin,19,1ac0e78b-0fdd-44f9-8b7b-c4f28a32782e,Amped Raptor,Season-5,1,4,3,0,1,0.75,0.0,11,7,0,4,0.6363636363636364,0.0
 Valentin,19,1ac0e78b-0fdd-44f9-8b7b-c4f28a32782e,Amped Raptor,Season-All,1,4,3,0,1,0.75,0.0,11,7,0,4,0.6363636363636364,0.0
 Valentin,19,6f2cec5d-50ea-4d0f-8925-eba06222d015,"Shelinda, Yevon Acolyte",Season-5,1,4,3,0,1,0.75,0.0,11,7,0,4,0.6363636363636364,0.0
