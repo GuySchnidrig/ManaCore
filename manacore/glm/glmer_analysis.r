@@ -1,203 +1,150 @@
 #!/usr/bin/env Rscript
-# glmer_analysis.R
-# Pure R script for running GLMER models on card data
 
-# Load required libraries
 suppressPackageStartupMessages({
-  library(lme4)
-  library(lmerTest)
   library(dplyr)
-  library(readr)
+  library(lme4)
+  library(jsonlite)
 })
 
-cat("========================================\n")
-cat("GLMER Analysis in R\n")
-cat("========================================\n\n")
-
-# Parse command line arguments
 args <- commandArgs(trailingOnly = TRUE)
-if (length(args) < 2) {
-  stop("Usage: Rscript glmer_analysis.R <input_games.csv> <output_results.csv>")
+input_csv  <- args[1]
+output_csv <- args[2]
+min_games  <- as.numeric(args[3])
+
+cat("=== GLMER Analysis (Game-level) ===\n")
+cat("Input:", input_csv, "\n")
+cat("Output:", output_csv, "\n")
+cat("Min games:", min_games, "\n\n")
+
+# ------------------------------------------------------------
+# Load game-level data
+# ------------------------------------------------------------
+
+games_df <- read.csv(input_csv, stringsAsFactors = FALSE)
+
+# Ensure essential columns exist
+required_cols <- c("win","player_elo","opponent_elo","elo_diff","elo_mean",
+                   "color","archetype","draft_id","deck_id","cards")
+
+missing_cols <- setdiff(required_cols, colnames(games_df))
+if (length(missing_cols) > 0) {
+  stop("Missing required columns: ", paste(missing_cols, collapse=", "))
 }
 
-input_file <- args[1]
-output_file <- args[2]
-min_games <- ifelse(length(args) >= 3, as.integer(args[3]), 3)
+# Parse JSON card lists
+games_df$cards <- lapply(games_df$cards, function(x) {
+  # Safety: empty or NA → empty list
+  if (is.na(x) || trimws(x) == "") return(character(0))
+  tryCatch(fromJSON(x), error=function(e) character(0))
+})
 
-cat(sprintf("Input file: %s\n", input_file))
-cat(sprintf("Output file: %s\n", output_file))
-cat(sprintf("Min games with card: %d\n\n", min_games))
+cat("Loaded", nrow(games_df), "game observations\n")
 
-# Load game-level data prepared by Python
-cat("Loading data...\n")
-games_df <- read_csv(input_file, show_col_types = FALSE)
+# ------------------------------------------------------------
+# Build card universe
+# ------------------------------------------------------------
 
-cat(sprintf("Loaded %d game observations\n", nrow(games_df)))
-cat(sprintf("Unique players: %d\n", length(unique(games_df$player_name))))
-cat(sprintf("Unique cards: %d\n", length(unique(games_df$card_id))))
-cat(sprintf("Win rate: %.3f\n\n", mean(games_df$win)))
+all_cards <- unique(unlist(games_df$cards))
+cat("Found", length(all_cards), "unique cards\n\n")
 
-# Standardize continuous predictors
-standardize <- function(x) {
-  (x - mean(x, na.rm = TRUE)) / sd(x, na.rm = TRUE)
-}
+card_lookup <- data.frame(
+  card_id   = all_cards,
+  card_name = all_cards,   # placeholder (replace if we have names)
+  stringsAsFactors = FALSE
+)
 
-games_df <- games_df %>%
-  mutate(
-    elo_diff_c = standardize(elo_diff),
-    elo_mean_c = standardize(elo_mean)
+# ------------------------------------------------------------
+# Results storage
+# ------------------------------------------------------------
+
+results <- list()
+
+# ------------------------------------------------------------
+# GLMM formula (safe)
+# ------------------------------------------------------------
+
+glmm_formula <- win ~ has_card + elo_diff + color + archetype +
+  (1 | draft_id) + (1 | deck_id)
+
+# ------------------------------------------------------------
+# MAIN CARD LOOP
+# ------------------------------------------------------------
+
+for (i in seq_len(nrow(card_lookup))) {
+
+  if (i %% 25 == 0)
+    cat("Processing", i, "of", nrow(card_lookup), "\n")
+
+  card_id <- card_lookup$card_id[i]
+  card_name <- card_lookup$card_name[i]
+
+  # Compute has_card fast
+  games_df$has_card <- vapply(
+    games_df$cards,
+    function(x) card_id %in% x,
+    logical(1)
   )
 
-# Get unique cards to analyze
-card_counts <- games_df %>%
-  filter(has_card == 1) %>%
-  group_by(card_id, card_name) %>%
-  summarize(
-    n_games = n(),
-    n_decks = n_distinct(deck_id),
-    .groups = 'drop'
-  ) %>%
-  filter(n_games >= min_games)
+  n_games <- sum(games_df$has_card)
 
-cat(sprintf("Analyzing %d cards (with %d+ games)\n\n", nrow(card_counts), min_games))
+  # Skip low-usage cards
+  if (n_games < min_games)
+    next
 
-# Function to fit GLMER for a single card
-fit_card_model <- function(card_id, card_name, games_df) {
-  # Filter to games where we can compare with/without the card
-  card_games <- games_df %>%
-    filter(card_id == !!card_id | has_card == 0)
-  
-  # Create indicator for THIS specific card
-  card_games$has_this_card <- ifelse(card_games$card_id == card_id, 1, 0)
-  
-  # Fit GLMER with random intercept for player
-  tryCatch({
-    # Formula with archetype interactions
-    model <- glmer(
-      win ~ elo_diff_c + elo_mean_c + color + has_this_card + 
-            archetype * archetype_opponent + (1 | player_name),
-      data = card_games,
-      family = binomial,
-      control = glmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 2e5))
+  # Subset + convert logical → numeric
+  df_sub <- games_df %>%
+    mutate(
+      has_card = as.numeric(has_card),
+      deck_id = as.factor(deck_id),
+      draft_id = as.factor(draft_id),
+      color = as.factor(color),
+      archetype = as.factor(archetype)
     )
-    
-    # Extract coefficient for the card
-    coef_summary <- summary(model)$coefficients
-    card_row <- coef_summary[rownames(coef_summary) == "has_this_card", , drop = FALSE]
-    
-    if (nrow(card_row) == 0) {
-      return(NULL)
-    }
-    
-    coef_val <- card_row[1, "Estimate"]
-    std_err <- card_row[1, "Std. Error"]
-    z_val <- card_row[1, "z value"]
-    p_val <- card_row[1, "Pr(>|z|)"]
-    
-    # Calculate descriptive stats
-    win_rate_with <- mean(card_games$win[card_games$has_this_card == 1])
-    win_rate_without <- mean(card_games$win[card_games$has_this_card == 0])
-    
-    # Return results
-    data.frame(
-      card_id = card_id,
-      card_name = card_name,
-      coefficient = coef_val,
-      std_error = std_err,
-      z_value = z_val,
-      p_value = p_val,
-      odds_ratio = exp(coef_val),
-      games_with_card = sum(card_games$has_this_card == 1),
-      total_games = nrow(card_games),
-      win_rate_with = win_rate_with,
-      win_rate_without = win_rate_without,
-      convergence = "success",
-      stringsAsFactors = FALSE
+
+  # Fit GLMM safely
+  model <- tryCatch({
+    glmer(
+      glmm_formula,
+      data = df_sub,
+      family = binomial(link = "logit"),
+      control = glmerControl(optimizer = "bobyqa",
+                             optCtrl = list(maxfun = 200000))
     )
   }, error = function(e) {
-    # Return error info
-    data.frame(
-      card_id = card_id,
-      card_name = card_name,
-      coefficient = NA,
-      std_error = NA,
-      z_value = NA,
-      p_value = NA,
-      odds_ratio = NA,
-      games_with_card = NA,
-      total_games = NA,
-      win_rate_with = NA,
-      win_rate_without = NA,
-      convergence = paste("error:", substr(e$message, 1, 100)),
-      stringsAsFactors = FALSE
-    )
+    message("Model failed for card ", card_id, ": ", e$message)
+    NULL
   })
-}
 
-# Fit models for all cards
-cat("Fitting GLMER models...\n")
-results_list <- list()
+  if (is.null(model))
+    next
 
-for (i in 1:nrow(card_counts)) {
-  if (i %% 10 == 0 || i == 1) {
-    cat(sprintf("Progress: %d/%d\n", i, nrow(card_counts)))
+  coefs <- summary(model)$coefficients
+
+  if (!("has_card" %in% rownames(coefs))) {
+    message("Coefficient missing for card ", card_id)
+    next
   }
-  
-  card_id <- card_counts$card_id[i]
-  card_name <- card_counts$card_name[i]
-  
-  result <- fit_card_model(card_id, card_name, games_df)
-  
-  if (!is.null(result)) {
-    results_list[[i]] <- result
-  }
+
+  est <- coefs["has_card", "Estimate"]
+  p <- coefs["has_card", "Pr(>|z|)"]
+
+  results[[length(results) + 1]] <- data.frame(
+    card_id = card_id,
+    card_name = card_name,
+    n_games = n_games,
+    estimate = est,
+    p_value = p,
+    stringsAsFactors = FALSE
+  )
 }
 
-# Combine all results
-results_df <- bind_rows(results_list)
+# ------------------------------------------------------------
+# Save results
+# ------------------------------------------------------------
 
-# Filter to successful fits
-successful_results <- results_df %>%
-  filter(convergence == "success")
+results_df <- bind_rows(results)
 
-cat(sprintf("\nSuccessfully fit models for %d/%d cards\n", 
-            nrow(successful_results), nrow(card_counts)))
+write.csv(results_df, output_csv, row.names = FALSE)
 
-if (nrow(successful_results) > 0) {
-  # FDR correction
-  successful_results <- successful_results %>%
-    mutate(
-      fdr_p = p.adjust(p_value, method = "BH"),
-      significant = fdr_p < 0.05
-    ) %>%
-    arrange(desc(coefficient))
-  
-  # Save results
-  write_csv(successful_results, output_file)
-  cat(sprintf("\nResults saved to: %s\n", output_file))
-  
-  # Print summary
-  cat("\n========================================\n")
-  cat("SUMMARY\n")
-  cat("========================================\n")
-  cat(sprintf("Total cards analyzed: %d\n", nrow(successful_results)))
-  cat(sprintf("Significant cards (FDR < 0.05): %d\n", sum(successful_results$significant)))
-  cat(sprintf("Coefficient range: %.3f to %.3f\n", 
-              min(successful_results$coefficient), 
-              max(successful_results$coefficient)))
-  
-  cat("\n--- Top 10 Cards (Highest Win Impact) ---\n")
-  top_cards <- head(successful_results, 10)
-  print(select(top_cards, card_name, coefficient, p_value, odds_ratio), n = 10)
-  
-  cat("\n--- Bottom 10 Cards (Lowest Win Impact) ---\n")
-  bottom_cards <- tail(successful_results, 10)
-  print(select(bottom_cards, card_name, coefficient, p_value, odds_ratio), n = 10)
-  
-} else {
-  cat("\nNo successful model fits. Check your data.\n")
-}
-
-cat("\n========================================\n")
-cat("Analysis complete!\n")
-cat("========================================\n")
+cat("\nAnalysis complete.\n")
+cat("Saved:", output_csv, "\n")
