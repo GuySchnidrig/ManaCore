@@ -56,6 +56,14 @@ def prepare_data_for_r(processed_dir: str):
     matches_df, decks_df, standings_df = load_data(processed_dir)
     player_elo = get_player_ratings(processed_dir, standings_df)
 
+    # Create card name lookup from drafted_decks
+    card_lookup = (
+        decks_df[["scryfallId", "card_name"]]
+        .drop_duplicates()
+        .rename(columns={"scryfallId": "card_id", "card_name": "card_name"})
+    )
+    print(f"Created lookup for {len(card_lookup)} unique cards")
+
     # Unique deck structure
     unique_decks = (
         decks_df.groupby("deck_id")
@@ -110,11 +118,11 @@ def prepare_data_for_r(processed_dir: str):
                .drop("deck_id", axis=1).rename(columns={"cards": "cards_p2"})
 
     print(f"Prepared {len(data)} matches with deck + ELO info")
-    return data
+    return data, card_lookup
 
 
 # -------------------------------------------------------------------
-# Build game-level dataset (FAST)
+# Build game-level dataset (FAST) - NOW WITH OPPONENT COLOR
 # -------------------------------------------------------------------
 
 def create_game_level_data_fast(matches_df):
@@ -133,7 +141,7 @@ def create_game_level_data_fast(matches_df):
             print(f"  {idx}/{len(valid)} processed")
 
         # Helper to append one row
-        def add_row(win, p, o, p_elo, o_elo, arch, arch_opp, color, deck, cards):
+        def add_row(win, p, o, p_elo, o_elo, arch, arch_opp, color, color_opp, deck, cards):
             rows.append({
                 "win": win,
                 "player_name": p,
@@ -145,6 +153,7 @@ def create_game_level_data_fast(matches_df):
                 "archetype": arch,
                 "archetype_opponent": arch_opp,
                 "color": color,
+                "color_opponent": color_opp,
                 "deck_id": deck,
                 "draft_id": m["draft_id"],
                 # IMPORTANT: valid JSON for R
@@ -156,28 +165,32 @@ def create_game_level_data_fast(matches_df):
             add_row(1, m["player1"], m["player2"],
                     m["player_elo_p1"], m["player_elo_p2"],
                     m["archetype_p1"], m["archetype_p2"],
-                    m["color_p1"], m["deck_id_p1"], m["cards_p1"])
+                    m["color_p1"], m["color_p2"],
+                    m["deck_id_p1"], m["cards_p1"])
 
         # P1 losses == P2 wins
         for _ in range(int(m["player2Wins"])):
             add_row(0, m["player1"], m["player2"],
                     m["player_elo_p1"], m["player_elo_p2"],
                     m["archetype_p1"], m["archetype_p2"],
-                    m["color_p1"], m["deck_id_p1"], m["cards_p1"])
+                    m["color_p1"], m["color_p2"],
+                    m["deck_id_p1"], m["cards_p1"])
 
         # P2 wins
         for _ in range(int(m["player2Wins"])):
             add_row(1, m["player2"], m["player1"],
                     m["player_elo_p2"], m["player_elo_p1"],
                     m["archetype_p2"], m["archetype_p1"],
-                    m["color_p2"], m["deck_id_p2"], m["cards_p2"])
+                    m["color_p2"], m["color_p1"],
+                    m["deck_id_p2"], m["cards_p2"])
 
         # P2 losses == P1 wins
         for _ in range(int(m["player1Wins"])):
             add_row(0, m["player2"], m["player1"],
                     m["player_elo_p2"], m["player_elo_p1"],
                     m["archetype_p2"], m["archetype_p1"],
-                    m["color_p2"], m["deck_id_p2"], m["cards_p2"])
+                    m["color_p2"], m["color_p1"],
+                    m["deck_id_p2"], m["cards_p2"])
 
     df = pd.DataFrame(rows)
     print(f"Created {len(df)} game-level rows.")
@@ -196,17 +209,22 @@ def main():
     print("Python Data Preparation for R GLMER Analysis")
     print("=" * 80)
 
-    matches_df = prepare_data_for_r(processed_dir)
-    matches_df, card_names = matches_df, None  # card_names unused now
+    matches_df, card_lookup = prepare_data_for_r(processed_dir)
 
     games_df = create_game_level_data_fast(matches_df)
 
-    outpath = os.path.join(processed_dir, "games_for_r.csv")
-    print(f"\nSaving to: {outpath}")
-    games_df.to_csv(outpath, index=False)
+    # Save games data
+    games_outpath = os.path.join(processed_dir, "games_for_r.csv")
+    print(f"\nSaving games data to: {games_outpath}")
+    games_df.to_csv(games_outpath, index=False)
+
+    # Save card lookup
+    card_lookup_outpath = os.path.join(processed_dir, "card_lookup.csv")
+    print(f"Saving card lookup to: {card_lookup_outpath}")
+    card_lookup.to_csv(card_lookup_outpath, index=False)
 
     print("\nDone! Now run:")
-    print(f"  Rscript glmer_analysis.R {outpath} {os.path.join(processed_dir, 'card_glmer_results_from_r.csv')} 5")
+    print(f"  Rscript glmer_analysis.R {games_outpath} {os.path.join(processed_dir, 'card_glmer_results_from_r.csv')} 5")
     print("=" * 80)
 
 
