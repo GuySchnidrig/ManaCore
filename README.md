@@ -7,8 +7,6 @@
 [![GitHub issues](https://img.shields.io/github/issues/GuySchnidrig/ManaCore.svg)](https://github.com/GuySchnidrig/ManaCore/issues)
 
 
-## Overview
-
 ## Card Impact Analysis (Progressive Model Edition)
 This analysis framework evaluates **individual card impact** on game outcomes using a **progressive modeling approach**, starting from a simple baseline and adding complexity in stages:
 
