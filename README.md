@@ -1,4 +1,5 @@
-# ManaCore
+````markdown
+# Card Impact Analysis: Progressive Model Complexity
 
 [![Combine Datasets](https://github.com/GuySchnidrig/ManaCore/actions/workflows/data_pipeline_clean.yml/badge.svg)](https://github.com/GuySchnidrig/ManaCore/actions/workflows/data_pipeline_clean.yml)  
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/downloads/)  
@@ -6,15 +7,17 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/GuySchnidrig/ManaCore.svg)](https://github.com/GuySchnidrig/ManaCore/commits)  
 [![GitHub issues](https://img.shields.io/github/issues/GuySchnidrig/ManaCore.svg)](https://github.com/GuySchnidrig/ManaCore/issues)
 
+---
 
-## Card Impact Analysis (Progressive Model Edition)
-This analysis framework evaluates **individual card impact** on game outcomes using a **progressive modeling approach**, starting from a simple baseline and adding complexity in stages:
+## Overview
 
-- **Version 0 (V0)**: Baseline model — `win ~ has_card + elo_diff + elo_mean`  
-- **Version 1 (V1)**: Adds deck archetype — `win ~ has_card + elo_diff + elo_mean + archetype`  
-- Optional: **Bayesian Hierarchical Model** for shrinkage-based card effects.
+This R-based analysis evaluates **individual card impact** on game outcomes using a **progressive modeling approach**:
 
-It also computes **archetype-adjusted win-rate lifts (ΔP)** and other statistics for deeper insight.
+1. **Version 0 (V0)** – Baseline: `win ~ has_card + elo_diff + elo_mean`  
+2. **Version 1 (V1)** – Adds deck archetype: `win ~ has_card + elo_diff + elo_mean + archetype`  
+3. **Optional Bayesian Hierarchical Model** – Shrinks estimates for rare cards toward global mean using `rstanarm`.
+
+The framework outputs **odds ratios (OR)**, **p-values**, **archetype-adjusted win-rate lifts (ΔP)**, and other statistics for deeper insight into card effectiveness.
 
 ---
 
@@ -25,10 +28,10 @@ It also computes **archetype-adjusted win-rate lifts (ΔP)** and other statistic
 python scripts/prepare_data_for_r.py
 ````
 
-**Outputs:**
+**Generated files:**
 
-* `data/processed/games_for_r.csv` – game-level observations with card lists
-* `data/processed/card_lookup.csv` – mapping of card IDs to names
+* `data/processed/games_for_r.csv` – Game-level observations with card lists.
+* `data/processed/card_lookup.csv` – Mapping of card IDs to card names.
 
 ### 2. Run Analysis
 
@@ -45,7 +48,11 @@ Rscript scripts/glmer_analysis.R \
 * Output CSV (`card_results.csv`)
 * Minimum games threshold (default `100`)
 
-**Outputs:** `card_results.csv` with card-level statistics.
+**Outputs:**
+
+* `card_results.csv` – Main card-level statistics.
+* `_glm_only.csv` – GLM-only intermediate checkpoint.
+* `_bayes_rare_cards.csv` – Bayesian-only results for rare cards (if applicable).
 
 ---
 
@@ -53,64 +60,64 @@ Rscript scripts/glmer_analysis.R \
 
 ### Version 0: Baseline
 
-* `win ~ has_card + elo_diff + elo_mean`
-* Fast, simple estimate of card effect
-* Produces **odds ratio (OR)**, standard error, p-values
+* Formula: `win ~ has_card + elo_diff + elo_mean`
+* Simple, fast model estimating card effect.
+* Outputs OR, standard error, and p-values.
 
 ### Version 1: + Archetype
 
-* `win ~ has_card + elo_diff + elo_mean + archetype`
-* Controls for **deck archetype**
-* Computes **archetype-adjusted win-rate lift (ΔP)** for each card
-* Can calculate win-rate lift at **mean covariate values** for reference
+* Formula: `win ~ has_card + elo_diff + elo_mean + archetype`
+* Controls for **deck archetype**.
+* Computes **archetype-adjusted win-rate lift (ΔP)** per card.
+* ΔP also calculated at **mean covariate values**.
 
 ### Optional: Bayesian Hierarchical
 
-* Requires `rstanarm`
-* Model: `win ~ (1 | card_id) + elo_diff + archetype + archetype_opponent`
-* Pools information across cards for **stable effect estimates**
-* Outputs: Posterior OR, credible intervals, significance
+* Requires `rstanarm`.
+* Formula: `win ~ (1 | card_id) + scale(elo_diff) + scale(elo_mean) + archetype`.
+* Pools information across cards for stable effect estimates.
+* Outputs posterior OR, credible intervals, and significance flags.
 
 ---
 
 ## Key Metrics
 
-| Metric                                      | Description                                        |
-| ------------------------------------------- | -------------------------------------------------- |
-| `v0_or` / `v1_or`                           | Odds ratio for having card (V0 or V1)              |
-| `v1_win_rate_lift_pct`                      | ΔP, archetype-adjusted win-rate lift in %          |
-| `v1_win_rate_lift_mean_pct`                 | ΔP at mean covariate values                        |
-| `v*_p` / `v*_p_adj`                         | Raw and FDR-adjusted p-values                      |
-| `v*_significant_raw` / `v*_significant_fdr` | Significance flags                                 |
-| `n_games`                                   | Number of games card appears in                    |
-| `confidence`                                | High/medium/low based on consistency & sample size |
-| `bayes_or`                                  | Bayesian hierarchical odds ratio (if available)    |
-| `bayes_or_lower` / `bayes_or_upper`         | 95% credible interval                              |
-| `bayes_significant`                         | Credible positive/negative flag                    |
+| Metric                                      | Description                                         |
+| ------------------------------------------- | --------------------------------------------------- |
+| `v0_or` / `v1_or`                           | Odds ratio for having card (V0 or V1)               |
+| `v1_win_rate_lift_pct`                      | Archetype-adjusted ΔP in %                          |
+| `v1_win_rate_lift_mean_pct`                 | ΔP at mean covariate values                         |
+| `v*_p` / `v*_p_adj`                         | Raw and FDR-adjusted p-values                       |
+| `v*_significant_raw` / `v*_significant_fdr` | Significance flags                                  |
+| `n_games`                                   | Number of games card appears in                     |
+| `confidence`                                | High/medium/low based on sample size & OR stability |
+| `bayes_or`                                  | Bayesian hierarchical OR (if available)             |
+| `bayes_or_lower` / `bayes_or_upper`         | 95% credible interval                               |
+| `bayes_significant`                         | Credible positive/negative flag                     |
 
 ---
 
 ## Interpreting Results
 
-* **Odds Ratios:**
+* **Odds Ratios (OR)**
 
-  * OR > 1 → card increases win probability
-  * OR < 1 → card decreases win probability
+  * OR > 1 → Card increases win probability
+  * OR < 1 → Card decreases win probability
 
-* **Win-Rate Lift (ΔP):**
+* **Win-Rate Lift (ΔP)**
 
-  * Positive = card increases win probability, adjusted for archetype
-  * Compare `v1_win_rate_lift_pct` across cards to see top performers
+  * Positive → Card improves win probability, adjusted for archetype
+  * Compare `v1_win_rate_lift_pct` across cards to identify top performers
 
-* **Confidence Levels:**
+* **Confidence Levels**
 
-  * High: ≥200 games & stable OR across V0 → V1
+  * High: ≥200 games & stable OR from V0 → V1
   * Medium: ≥100 games & moderate stability
-  * Low: few games or inconsistent estimates
+  * Low: Few games or inconsistent estimates
 
-* **Bayesian Hierarchical Estimates:**
+* **Bayesian Estimates**
 
-  * Shrinks rare-card estimates toward the global mean
+  * Shrinks rare-card estimates toward global mean
   * Useful for cards with limited data
 
 ---
@@ -128,28 +135,36 @@ final_results %>%
 
 ## Model Comparison
 
-* **AIC improvement:** Difference between V0 and V1 for model fit
+* **AIC improvement:** Difference in model fit between V0 and V1
 * **OR stability:** Compare V0 and V1 OR to flag inconsistent effects
-* **Separation warnings:** Cards with extreme coefficients indicating potential perfect prediction
+* **Separation warnings:** Cards with extreme coefficients (potential perfect prediction)
+
+---
+
+## Optional Ridge Regression
+
+* Requires `glmnet`.
+* L2-regularized logistic regression across all cards simultaneously.
+* Outputs: coefficients, OR, and selected lambda.
 
 ---
 
 ## Troubleshooting
 
-* **Card too rare:** Increase `min_games` or rely on Bayesian estimates
-* **glmnet not available:** Ridge regularization skipped, optional
-* **rstanarm not available:** Bayesian hierarchical model skipped, optional
-* **Memory issues:** Filter top N cards, increase RAM
+* Card too rare → Increase `min_games` or rely on Bayesian estimates.
+* `glmnet` not installed → Ridge regression skipped.
+* `rstanarm` not installed → Bayesian hierarchical model skipped.
+* Memory issues → Filter top N cards or increase available RAM.
 
 ---
 
 ## Performance
 
-| Model                 | Runtime          | Parallelizable             |
-| --------------------- | ---------------- | -------------------------- |
-| V0 (baseline)         | <1 sec per card  | N/A                        |
-| V1 (+archetype)       | 1-2 sec per card | N/A                        |
-| Bayesian Hierarchical | 10–30 min        | Partial (depends on cores) |
+| Model                 | Runtime          | Parallelizable |
+| --------------------- | ---------------- | -------------- |
+| V0 (baseline)         | <1 sec per card  | N/A            |
+| V1 (+archetype)       | 1-2 sec per card | N/A            |
+| Bayesian Hierarchical | 10–30 min        | Partial        |
 
----
-
+```
+```
