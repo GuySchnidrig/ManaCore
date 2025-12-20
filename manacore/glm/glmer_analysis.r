@@ -1,14 +1,11 @@
 #!/usr/bin/env Rscript
 
 # ============================================================================
-# CARD IMPACT ANALYSIS: Multi-Method Approach
+# CARD IMPACT ANALYSIS: Progressive Model Complexity
 # ============================================================================
-# This script compares multiple methods for measuring card strength:
-# 1. Game-in-Hand Win Rate (GIH WR) - Simple baseline
-# 2. Bayesian GIH WR - Regularized for small samples
-# 3. GLMM Marginal Effects - Controls for confounders (with deck clustering)
-# 4. Bayesian Hierarchical Model - Pooled estimation with shrinkage
-# 5. Interaction Analysis - Context-dependent effects
+# This script compares models with increasing complexity:
+# Version 0: win ~ has_card + elo_diff + elo_mean (baseline)
+# Version 1: win ~ has_card + elo_diff + elo_mean + archetype
 # ============================================================================
 
 suppressPackageStartupMessages({
@@ -16,6 +13,17 @@ suppressPackageStartupMessages({
   library(lme4)
   library(jsonlite)
   library(ggplot2)
+})
+
+# Try to load glmnet for regularization
+GLMNET_AVAILABLE <- FALSE
+tryCatch({
+  suppressPackageStartupMessages(library(glmnet))
+  GLMNET_AVAILABLE <- TRUE
+  cat("glmnet loaded successfully - Ridge regularization will be available\n")
+}, error = function(e) {
+  cat("Note: glmnet not available - skipping ridge regularization\n")
+  cat("To enable: install.packages('glmnet')\n")
 })
 
 # Try to load rstanarm, but continue if it fails
@@ -32,9 +40,9 @@ tryCatch({
 args <- commandArgs(trailingOnly = TRUE)
 input_csv  <- args[1]
 output_csv <- args[2]
-min_games  <- as.numeric(args[3])
+min_games  <- if (length(args) >= 3) as.numeric(args[3]) else 100
 
-cat("=== Comprehensive Card Impact Analysis ===\n\n")
+cat("=== Progressive Model Complexity Card Analysis ===\n\n")
 
 # ------------------------------------------------------------
 # Load game-level data
@@ -61,7 +69,7 @@ if (file.exists(card_lookup_path)) {
   card_names_df <- NULL
 }
 
-# Global win rate (for Bayesian prior)
+# Global win rate
 global_wr <- mean(games_df$win)
 cat("Global win rate:", round(global_wr, 3), "\n\n")
 
@@ -69,118 +77,192 @@ cat("Global win rate:", round(global_wr, 3), "\n\n")
 all_cards <- unlist(games_df$cards)
 card_counts <- table(all_cards)
 eligible_cards <- names(card_counts)[card_counts >= min_games]
-cat("Analyzing", length(eligible_cards), "cards\n\n")
+cat("Analyzing", length(eligible_cards), "cards (minimum", min_games, "games)\n\n")
 
 # ------------------------------------------------------------
-# METHOD 1: Game-in-Hand Win Rate (GIH WR)
+# Progressive Model Versions (0-1)
 # ------------------------------------------------------------
-cat("Method 1: Computing GIH Win Rates...\n")
+cat("Fitting progressive model versions...\n\n")
 
-gih_results <- lapply(eligible_cards, function(card) {
-  has_card <- vapply(games_df$cards, function(x) card %in% x, logical(1))
-  n_games <- sum(has_card)
-  n_wins <- sum(games_df$win[has_card])
-  wr <- n_wins / n_games
-  
-  data.frame(
-    card_id = card,
-    gih_games = n_games,
-    gih_wins = n_wins,
-    gih_wr = wr,
-    stringsAsFactors = FALSE
+model_versions <- list(
+  v0 = list(
+    name = "Version 0: Baseline",
+    formula = win ~ has_card + elo_diff + elo_mean,
+    type = "glm"
+  ),
+  v1 = list(
+    name = "Version 1: + Archetype",
+    formula = win ~ has_card + elo_diff + elo_mean + archetype,
+    type = "glm"
   )
-}) %>% bind_rows()
+)
 
-# ------------------------------------------------------------
-# METHOD 2: Bayesian GIH Win Rate (Shrinkage Estimator)
-# ------------------------------------------------------------
-cat("Method 2: Computing Bayesian GIH Win Rates...\n")
+# Initialize results storage
+all_results <- list()
 
-# Use global win rate as prior with strength = 50 games
-prior_strength <- 50
-prior_wins <- global_wr * prior_strength
-
-gih_results <- gih_results %>%
-  mutate(
-    bayes_wr = (gih_wins + prior_wins) / (gih_games + prior_strength),
-    bayes_lift = bayes_wr - global_wr
-  )
-
-# ------------------------------------------------------------
-# METHOD 3: GLMM with Controls (Deck Random Effect)
-# ------------------------------------------------------------
-cat("Method 3: Fitting GLMM models with controls...\n")
-
-glmm_formula <- win ~ has_card + elo_diff + color + archetype + 
-  color_opponent + archetype_opponent + (1 | deck_id)
-
-glmm_results <- vector("list", length(eligible_cards))
-
-for (i in seq_along(eligible_cards)) {
-  if (i %% 25 == 0) cat("  Progress:", i, "/", length(eligible_cards), "\n")
+for (version_id in names(model_versions)) {
+  version <- model_versions[[version_id]]
+  cat(sprintf("=== %s ===\n", version$name))
+  cat(sprintf("Formula: %s\n\n", deparse(version$formula)))
   
-  card <- eligible_cards[i]
-  games_df$has_card <- as.numeric(vapply(
-    games_df$cards, 
-    function(x) card %in% x, 
-    logical(1)
-  ))
+  version_results <- vector("list", length(eligible_cards))
   
-  # Convert factors
-  df_model <- games_df %>%
-    mutate(
-      deck_id = as.factor(deck_id),
-      color = as.factor(color),
-      archetype = as.factor(archetype),
-      color_opponent = as.factor(color_opponent),
-      archetype_opponent = as.factor(archetype_opponent)
-    )
-  
-  model <- tryCatch({
-    glmer(glmm_formula, data = df_model, family = binomial,
-          control = glmerControl(optimizer = "bobyqa", 
-                                optCtrl = list(maxfun = 100000)))
-  }, error = function(e) NULL)
-  
-  if (!is.null(model)) {
-    coefs <- summary(model)$coefficients
-    if ("has_card" %in% rownames(coefs)) {
-      est <- coefs["has_card", "Estimate"]
-      se <- coefs["has_card", "Std. Error"]
-      z <- coefs["has_card", "z value"]
-      p <- coefs["has_card", "Pr(>|z|)"]
-      
-      # Check convergence
-      converged <- length(model@optinfo$conv$lme4) == 0
-      
-      glmm_results[[i]] <- data.frame(
-        card_id = card,
-        glmm_coef = est,
-        glmm_se = se,
-        glmm_z = z,
-        glmm_p = p,
-        glmm_or = exp(est),
-        glmm_or_lower = exp(est - 1.96 * se),
-        glmm_or_upper = exp(est + 1.96 * se),
-        converged = converged
+  for (i in seq_along(eligible_cards)) {
+    if (i %% 25 == 0) cat("  Progress:", i, "/", length(eligible_cards), "\n")
+    
+    card <- eligible_cards[i]
+    games_df$has_card <- as.numeric(vapply(
+      games_df$cards, 
+      function(x) card %in% x, 
+      logical(1)
+    ))
+    
+    # Prepare data with factors
+    df_model <- games_df %>%
+      mutate(
+        archetype = as.factor(archetype)
       )
+    
+    # Fit model based on type
+    model <- tryCatch({
+      if (version$type == "glm") {
+        glm(version$formula, data = df_model, family = binomial)
+      } else {
+        glmer(version$formula, data = df_model, family = binomial,
+              control = glmerControl(optimizer = "bobyqa", 
+                                    optCtrl = list(maxfun = 100000)))
+      }
+    }, error = function(e) NULL)
+    
+    if (!is.null(model)) {
+      coefs <- summary(model)$coefficients
+      if ("has_card" %in% rownames(coefs)) {
+        est <- coefs["has_card", "Estimate"]
+        se <- coefs["has_card", "Std. Error"]
+        z <- coefs["has_card", ifelse(version$type == "glm", "z value", "z value")]
+        p <- coefs["has_card", ifelse(version$type == "glm", "Pr(>|z|)", "Pr(>|z|)")]
+        
+        # Check for separation (infinite or very large coefficients)
+        separation_warning <- FALSE
+        if (abs(est) > 5 || se > 3) {
+          separation_warning <- TRUE
+          cat(sprintf("  WARNING: Possible separation for card %s (coef = %.2f, SE = %.2f)\n", 
+                     card, est, se))
+        }
+        
+        # Check convergence for mixed models
+        converged <- if (version$type == "glmm") {
+          length(model@optinfo$conv$lme4) == 0
+        } else {
+          TRUE
+        }
+        
+        # Get AIC for model comparison
+        model_aic <- AIC(model)
+        
+        # Compute marginal win-rate lift (ΔP)
+        # This is the average treatment effect across the observed distribution
+        if (version_id == "v1") {
+          # Create two versions of the data: with and without the card
+          df_with <- df_model
+          df_with$has_card <- 1
+          df_without <- df_model
+          df_without$has_card <- 0
+          
+          # Predict probabilities
+          p_with <- predict(model, newdata = df_with, type = "response")
+          p_without <- predict(model, newdata = df_without, type = "response")
+          
+          # Average treatment effect
+          win_rate_lift <- mean(p_with - p_without, na.rm = TRUE)
+          
+          # Also compute at mean covariate values for reference
+          mean_data <- df_model %>%
+            summarise(
+              elo_diff = mean(elo_diff, na.rm = TRUE),
+              elo_mean = mean(elo_mean, na.rm = TRUE),
+              archetype = names(sort(table(archetype), decreasing = TRUE))[1]
+            ) %>%
+            mutate(archetype = as.factor(archetype))
+          
+          mean_data_with <- mean_data %>% mutate(has_card = 1)
+          mean_data_without <- mean_data %>% mutate(has_card = 0)
+          
+          p_with_mean <- predict(model, newdata = mean_data_with, type = "response")
+          p_without_mean <- predict(model, newdata = mean_data_without, type = "response")
+          win_rate_lift_mean <- p_with_mean - p_without_mean
+        } else {
+          win_rate_lift <- NA
+          win_rate_lift_mean <- NA
+        }
+        
+        version_results[[i]] <- data.frame(
+          card_id = card,
+          coef = est,
+          se = se,
+          z = z,
+          p = p,
+          or = exp(est),
+          or_lower = exp(est - 1.96 * se),
+          or_upper = exp(est + 1.96 * se),
+          aic = model_aic,
+          converged = converged,
+          separation = separation_warning,
+          win_rate_lift = win_rate_lift,
+          win_rate_lift_mean = win_rate_lift_mean
+        )
+      }
     }
   }
+  
+  version_results <- bind_rows(version_results)
+  
+  # Add version prefix to column names
+  names(version_results)[-1] <- paste0(version_id, "_", names(version_results)[-1])
+  
+  all_results[[version_id]] <- version_results
+  
+  cat(sprintf("Completed: %d cards with estimates\n", nrow(version_results)))
+  if (version$type == "glmm") {
+    cat(sprintf("Converged models: %d\n", sum(version_results[[paste0(version_id, "_converged")]], na.rm = TRUE)))
+  }
+  sep_col <- paste0(version_id, "_separation")
+  if (sep_col %in% names(version_results)) {
+    n_separation <- sum(version_results[[sep_col]], na.rm = TRUE)
+    if (n_separation > 0) {
+      cat(sprintf("WARNING: %d cards with possible separation issues\n", n_separation))
+    }
+  }
+  cat("\n")
 }
 
-glmm_results <- bind_rows(glmm_results)
+# Combine all version results
+cat("Combining results from all model versions...\n")
+final_results <- all_results$v0
+for (version_id in names(model_versions)[-1]) {
+  final_results <- final_results %>%
+    left_join(all_results[[version_id]], by = "card_id")
+}
+
+# Add game counts
+game_counts <- data.frame(
+  card_id = eligible_cards,
+  n_games = as.numeric(card_counts[eligible_cards]),
+  stringsAsFactors = FALSE
+)
+final_results <- final_results %>%
+  left_join(game_counts, by = "card_id")
 
 # ------------------------------------------------------------
-# METHOD 4: Bayesian Hierarchical Model (Single Pooled Model)
+# Bayesian Hierarchical Model
 # ------------------------------------------------------------
 bayes_results <- NULL
 
 if (RSTANARM_AVAILABLE) {
-  cat("\nMethod 4: Fitting Bayesian Hierarchical Model...\n")
-  cat("This may take 10-30 minutes depending on data size.\n")
-  cat("The model pools information across all cards with adaptive shrinkage.\n\n")
+  cat("\n=== Bayesian Hierarchical Model ===\n")
+  cat("This may take 10-30 minutes depending on data size.\n\n")
 
-  # Create long-format data with card indicators
+  # Create long-format data
   cat("Reshaping data to long format...\n")
   game_card_long <- games_df %>%
     mutate(game_id = row_number()) %>%
@@ -190,44 +272,38 @@ if (RSTANARM_AVAILABLE) {
     rename(card_id = card_list) %>%
     ungroup()
 
-  # Filter to eligible cards only
   game_card_long <- game_card_long %>%
     filter(card_id %in% eligible_cards)
 
   cat(sprintf("Long format: %d game-card observations\n", nrow(game_card_long)))
-  cat(sprintf("Average cards per game: %.1f\n", 
-              nrow(game_card_long) / length(unique(game_card_long$game_id))))
 
   # Prepare factors
   game_card_long <- game_card_long %>%
     mutate(
       card_id = as.factor(card_id),
       deck_id = as.factor(deck_id),
-      color = as.factor(color),
       archetype = as.factor(archetype),
-      color_opponent = as.factor(color_opponent),
       archetype_opponent = as.factor(archetype_opponent)
     )
 
-  # Fit Bayesian hierarchical model
+  # Fit Bayesian model
   bayes_model <- tryCatch({
-    cat("Fitting Stan model (this will take a while)...\n")
+    cat("Fitting Stan model...\n")
     start_bayes <- Sys.time()
     
     model <- stan_glmer(
-      win ~ (1 | card_id) + elo_diff + color + archetype + 
-            color_opponent + archetype_opponent + (1 | deck_id),
+      win ~ (1 | card_id) + elo_diff + archetype + archetype_opponent,
       data = game_card_long,
       family = binomial(link = "logit"),
       prior = normal(0, 1, autoscale = TRUE),
       prior_covariance = decov(scale = 0.5),
       chains = 4,
-      iter = 2000,
-      warmup = 1000,
-      cores = 4,
+      iter = 400,
+      warmup = 200,
+      cores = 2,
       seed = 42,
       adapt_delta = 0.95,
-      refresh = 500
+      refresh = 1
     )
     
     elapsed_bayes <- difftime(Sys.time(), start_bayes, units = "mins")
@@ -236,18 +312,14 @@ if (RSTANARM_AVAILABLE) {
     model
   }, error = function(e) {
     cat("Bayesian model failed:", e$message, "\n")
-    cat("Continuing with other methods...\n")
     NULL
   })
 
-  # Extract card random effects if model succeeded
+  # Extract results
   if (!is.null(bayes_model)) {
-    cat("Extracting card-level estimates from Bayesian model...\n")
+    cat("Extracting card-level estimates...\n")
     
-    # Get random effects (posterior means)
     card_ranefs <- ranef(bayes_model)$card_id
-    
-    # Get posterior standard deviations
     card_ranefs_se <- se.ranef(bayes_model)$card_id
     
     bayes_results <- data.frame(
@@ -264,135 +336,8 @@ if (RSTANARM_AVAILABLE) {
       )
     
     cat(sprintf("Extracted estimates for %d cards\n", nrow(bayes_results)))
-    cat(sprintf("Cards with credibly positive effects: %d\n", 
-                sum(bayes_results$bayes_or_lower > 1.0)))
-    cat(sprintf("Cards with credibly negative effects: %d\n", 
-                sum(bayes_results$bayes_or_upper < 1.0)))
   }
-} else {
-  cat("\nMethod 4: Bayesian Hierarchical Model - SKIPPED (rstanarm not available)\n")
 }
-
-# ------------------------------------------------------------
-# METHOD 5: Stratified Analysis (Context Effects)
-# ------------------------------------------------------------
-cat("\nMethod 5: Computing stratified win rates...\n")
-
-stratified_results <- lapply(eligible_cards, function(card) {
-  # Create logical indicator
-  has_card_logical <- vapply(games_df$cards, function(x) card %in% x, logical(1))
-  
-  # By archetype (player's deck)
-  arch_strata <- games_df %>%
-    filter(has_card_logical) %>%
-    group_by(archetype) %>%
-    summarise(
-      n = n(),
-      wr = mean(win),
-      .groups = "drop"
-    ) %>%
-    filter(n >= 5)  # Min 5 games per stratum
-  
-  # By opponent archetype
-  opp_arch_strata <- games_df %>%
-    filter(has_card_logical) %>%
-    group_by(archetype_opponent) %>%
-    summarise(
-      n = n(),
-      wr = mean(win),
-      .groups = "drop"
-    ) %>%
-    filter(n >= 5)
-  
-  if (nrow(arch_strata) > 0) {
-    wr_variance <- var(arch_strata$wr)
-    wr_range <- max(arch_strata$wr) - min(arch_strata$wr)
-  } else {
-    wr_variance <- NA
-    wr_range <- NA
-  }
-  
-  if (nrow(opp_arch_strata) > 0) {
-    opp_wr_variance <- var(opp_arch_strata$wr)
-    opp_wr_range <- max(opp_arch_strata$wr) - min(opp_arch_strata$wr)
-  } else {
-    opp_wr_variance <- NA
-    opp_wr_range <- NA
-  }
-  
-  data.frame(
-    card_id = card,
-    context_variance = wr_variance,
-    context_range = wr_range,
-    n_contexts = nrow(arch_strata),
-    opp_context_variance = opp_wr_variance,
-    opp_context_range = opp_wr_range
-  )
-}) %>% bind_rows()
-
-# ------------------------------------------------------------
-# METHOD 6: Interaction Effects (Advanced)
-# ------------------------------------------------------------
-cat("Method 6: Testing key interactions for top cards...\n")
-
-# Test interaction with elo_diff for top 30 cards by GIH
-top_cards_for_interaction <- gih_results %>%
-  arrange(desc(gih_games)) %>%
-  head(30) %>%
-  pull(card_id)
-
-interaction_results <- lapply(top_cards_for_interaction, function(card) {
-  games_df$has_card <- as.numeric(vapply(
-    games_df$cards, 
-    function(x) card %in% x, 
-    logical(1)
-  ))
-  
-  # Convert factors
-  df_model <- games_df %>%
-    mutate(
-      color = as.factor(color),
-      archetype = as.factor(archetype),
-      color_opponent = as.factor(color_opponent),
-      archetype_opponent = as.factor(archetype_opponent)
-    )
-  
-  # Model with interaction
-  model_int <- tryCatch({
-    glm(
-      win ~ has_card * elo_diff + color + archetype + 
-        color_opponent + archetype_opponent,
-      data = df_model,
-      family = binomial(link = "logit")
-    )
-  }, error = function(e) NULL)
-  
-  if (!is.null(model_int)) {
-    coefs <- summary(model_int)$coefficients
-    if ("has_card:elo_diff" %in% rownames(coefs)) {
-      int_coef <- coefs["has_card:elo_diff", "Estimate"]
-      int_p <- coefs["has_card:elo_diff", "Pr(>|z|)"]
-      
-      return(data.frame(
-        card_id = card,
-        interaction_coef = int_coef,
-        interaction_p = int_p,
-        skill_dependent = abs(int_coef) > 0.0001 && int_p < 0.05
-      ))
-    }
-  }
-  return(NULL)
-}) %>% bind_rows()
-
-# ------------------------------------------------------------
-# Combine All Methods
-# ------------------------------------------------------------
-cat("\nCombining results from all methods...\n")
-
-final_results <- gih_results %>%
-  left_join(glmm_results, by = "card_id") %>%
-  left_join(stratified_results, by = "card_id") %>%
-  left_join(interaction_results, by = "card_id")
 
 # Add Bayesian results if available
 if (!is.null(bayes_results)) {
@@ -400,123 +345,152 @@ if (!is.null(bayes_results)) {
     left_join(bayes_results, by = "card_id")
 }
 
-# Apply FDR correction to GLMM p-values
-final_results <- final_results %>%
-  mutate(
-    glmm_p_adj = p.adjust(glmm_p, method = "BH"),
-    glmm_significant = !is.na(glmm_p_adj) & glmm_p_adj < 0.05
-  )
+
 
 # ------------------------------------------------------------
-# Create Composite Score
+# FDR Correction (add both raw and adjusted p-values)
 # ------------------------------------------------------------
-cat("Creating composite card strength score...\n")
+cat("\nApplying FDR correction and computing raw significance...\n")
 
-# Normalize each metric to 0-100 scale
-normalize_to_100 <- function(x) {
-  (x - min(x, na.rm = TRUE)) / 
-    (max(x, na.rm = TRUE) - min(x, na.rm = TRUE)) * 100
+for (version_id in names(model_versions)) {
+  p_col <- paste0(version_id, "_p")
+  p_adj_col <- paste0(version_id, "_p_adj")
+  sig_raw_col <- paste0(version_id, "_significant_raw")
+  sig_fdr_col <- paste0(version_id, "_significant_fdr")
+  
+  if (p_col %in% names(final_results)) {
+    final_results <- final_results %>%
+      mutate(
+        !!p_adj_col := p.adjust(.data[[p_col]], method = "BH"),
+        !!sig_raw_col := !is.na(.data[[p_col]]) & .data[[p_col]] < 0.05,
+        !!sig_fdr_col := !is.na(.data[[p_adj_col]]) & .data[[p_adj_col]] < 0.05
+      )
+  }
 }
 
+# ------------------------------------------------------------
+# Model Comparison Metrics
+# ------------------------------------------------------------
+cat("Computing model comparison metrics...\n")
+
 final_results <- final_results %>%
   mutate(
-    # Individual scores
-    score_gih = normalize_to_100(gih_wr),
-    score_bayes = normalize_to_100(bayes_wr),
-    score_glmm = normalize_to_100(glmm_or),
-    score_bayes_hier = if (!is.null(bayes_results)) normalize_to_100(bayes_or) else NA,
+    # AIC comparison (lower is better)
+    best_aic = pmin(v0_aic, v1_aic, na.rm = TRUE),
+    aic_improvement = v0_aic - v1_aic,
     
-    # Composite: weighted average (you can adjust weights)
-    # If Bayesian hierarchical available, use it; otherwise fall back to GLMM
-    composite_score = case_when(
-      !is.na(score_bayes_hier) ~ 0.4 * score_bayes_hier + 0.3 * score_bayes + 0.2 * score_glmm + 0.1 * score_gih,
-      !is.na(score_glmm) & converged ~ 0.5 * score_glmm + 0.3 * score_bayes + 0.2 * score_gih,
-      TRUE ~ 0.6 * score_bayes + 0.4 * score_gih
-    ),
+    # Effect size stability across V0 and V1
+    or_range = pmax(v0_or, v1_or, na.rm = TRUE) - 
+               pmin(v0_or, v1_or, na.rm = TRUE),
+    or_cv = or_range / ((v0_or + v1_or) / 2),
     
-    # Confidence: penalize high variance across contexts or low sample size
+    # Confidence based on consistency and sample size
     confidence = case_when(
-      gih_games >= 100 & is.na(context_variance) ~ "high",
-      gih_games >= 100 & context_variance < 0.01 ~ "high",
-      gih_games >= 50 & context_variance < 0.02 ~ "medium",
+      n_games >= 200 & or_cv < 0.1 ~ "high",
+      n_games >= 100 & or_cv < 0.2 ~ "medium",
       TRUE ~ "low"
     )
   ) %>%
-  arrange(desc(composite_score))
+  arrange(desc(v1_or))
+
+# Convert win_rate_lift to percentage points for readability
+if ("v1_win_rate_lift" %in% names(final_results)) {
+  final_results <- final_results %>%
+    mutate(
+      v1_win_rate_lift_pct = v1_win_rate_lift * 100,
+      v1_win_rate_lift_mean_pct = v1_win_rate_lift_mean * 100
+    )
+}
 
 # ------------------------------------------------------------
-# Save Results (with card names)
+# Save Results
 # ------------------------------------------------------------
-# Add card names if available
 if (!is.null(card_names_df)) {
   final_results <- final_results %>%
     left_join(card_names_df, by = "card_id") %>%
-    # Reorder columns to put card_name second
     select(card_id, card_name, everything())
 }
 
 write.csv(final_results, output_csv, row.names = FALSE)
 
+# ------------------------------------------------------------
+# Summary Statistics
+# ------------------------------------------------------------
 cat("\n=== Analysis Complete ===\n")
 cat("Total cards analyzed:", nrow(final_results), "\n")
-cat("Cards with GLMM estimates:", sum(!is.na(final_results$glmm_or)), "\n")
-cat("Converged models:", sum(final_results$converged, na.rm = TRUE), "\n")
-if (!is.null(bayes_results)) {
-  cat("Cards with Bayesian hierarchical estimates:", sum(!is.na(final_results$bayes_or)), "\n")
+for (version_id in names(model_versions)) {
+  or_col <- paste0(version_id, "_or")
+  conv_col <- paste0(version_id, "_converged")
+  sig_col <- paste0(version_id, "_significant")
+  
+  cat(sprintf("\n%s:\n", model_versions[[version_id]]$name))
+  cat(sprintf("  Estimates: %d\n", sum(!is.na(final_results[[or_col]]))))
+  if (conv_col %in% names(final_results)) {
+    cat(sprintf("  Converged: %d\n", sum(final_results[[conv_col]], na.rm = TRUE)))
+  }
+  sig_raw_col <- paste0(version_id, "_significant_raw")
+  sig_fdr_col <- paste0(version_id, "_significant_fdr")
+  cat(sprintf("  Significant (raw p < 0.05): %d\n", sum(final_results[[sig_raw_col]], na.rm = TRUE)))
+  cat(sprintf("  Significant (FDR < 0.05): %d\n", sum(final_results[[sig_fdr_col]], na.rm = TRUE)))
+  sep_col <- paste0(version_id, "_separation")
+  if (sep_col %in% names(final_results)) {
+    n_sep <- sum(final_results[[sep_col]], na.rm = TRUE)
+    if (n_sep > 0) {
+      cat(sprintf("  Separation warnings: %d\n", n_sep))
+    }
+  }
 }
-cat("Significant cards (FDR < 0.05):", sum(final_results$glmm_significant, na.rm = TRUE), "\n")
+
+if (!is.null(bayes_results)) {
+  cat(sprintf("\nBayesian Hierarchical:\n"))
+  cat(sprintf("  Estimates: %d\n", sum(!is.na(final_results$bayes_or))))
+  cat(sprintf("  Credibly positive: %d\n", sum(final_results$bayes_or_lower > 1.0, na.rm = TRUE)))
+  cat(sprintf("  Credibly negative: %d\n", sum(final_results$bayes_or_upper < 1.0, na.rm = TRUE)))
+}
 
 # ------------------------------------------------------------
-# Print Top Cards by Different Metrics
+# Top Cards by Different Metrics
 # ------------------------------------------------------------
-cat("\n=== Top 10 Cards by Composite Score ===\n")
-cols_to_show <- c("card_id", "card_name", "composite_score", "gih_wr", "bayes_wr", "glmm_or", 
-                  "gih_games", "confidence")
-if (!is.null(bayes_results)) {
-  cols_to_show <- c(cols_to_show[1:6], "bayes_or", cols_to_show[7:8])
-}
+cat("\n=== Top 10 Cards by Win-Rate Lift (V1 Archetype-Adjusted ΔP) ===\n")
+cols_lift <- c("card_id", "card_name", "v1_win_rate_lift_pct", "v1_or", 
+               "v1_p", "v1_significant_raw", "n_games", "confidence")
 print(final_results %>%
+  filter(!is.na(v1_win_rate_lift_pct)) %>%
+  arrange(desc(v1_win_rate_lift_pct)) %>%
+  select(any_of(cols_lift)) %>%
+  head(10), row.names = FALSE)
+
+cat("\n=== Top 10 Cards by Version 1 Odds Ratio ===\n")
+cols_to_show <- c("card_id", "card_name", "v1_or", "v1_or_lower", "v1_or_upper", 
+                  "v1_win_rate_lift_pct", "v1_p", "v1_significant_raw", "n_games", "confidence")
+print(final_results %>%
+  filter(!is.na(v1_or)) %>%
+  arrange(desc(v1_or)) %>%
   select(any_of(cols_to_show)) %>%
   head(10), row.names = FALSE)
 
-cat("\n=== Top 10 Cards by GLMM Odds Ratio (Controlled) ===\n")
+cat("\n=== Model Progression Comparison (Top 10 by games) ===\n")
+comparison_cols <- c("card_id", "card_name", "n_games", "v0_or", "v1_or", 
+                     "v1_win_rate_lift_pct", "or_cv")
 print(final_results %>%
-  filter(!is.na(glmm_or), converged) %>%
-  arrange(desc(glmm_or)) %>%
-  select(any_of(c("card_id", "card_name", "glmm_or", "glmm_or_lower", "glmm_or_upper", 
-         "glmm_p_adj", "gih_games"))) %>%
+  arrange(desc(n_games)) %>%
+  select(any_of(comparison_cols)) %>%
   head(10), row.names = FALSE)
 
 if (!is.null(bayes_results)) {
-  cat("\n=== Top 10 Cards by Bayesian Hierarchical OR ===\n")
+  cat("\n=== Bayesian Hierarchical vs V1 Comparison (Top 10 by games) ===\n")
   print(final_results %>%
-    filter(!is.na(bayes_or)) %>%
-    arrange(desc(bayes_or)) %>%
-    select(any_of(c("card_id", "card_name", "bayes_or", "bayes_or_lower", "bayes_or_upper", 
-           "bayes_significant", "gih_games"))) %>%
-    head(10), row.names = FALSE)
-  
-  cat("\n=== Comparison: GLMM vs Bayesian Hierarchical (Top 20 by games) ===\n")
-  print(final_results %>%
-    filter(!is.na(bayes_or), !is.na(glmm_or), converged) %>%
-    arrange(desc(gih_games)) %>%
+    filter(!is.na(bayes_or), !is.na(v1_or)) %>%
+    arrange(desc(n_games)) %>%
     mutate(
-      or_diff = abs(glmm_or - bayes_or),
-      shrinkage = (glmm_or - 1) / (bayes_or - 1)
+      or_diff = abs(v1_or - bayes_or),
+      shrinkage = (v1_or - 1) / (bayes_or - 1)
     ) %>%
-    select(any_of(c("card_id", "card_name", "gih_games", "glmm_or", "bayes_or", "or_diff", "shrinkage"))) %>%
-    head(20), row.names = FALSE)
-}
-
-cat("\n=== Cards with Strongest Skill Interactions ===\n")
-if (nrow(interaction_results) > 0) {
-  print(final_results %>%
-    filter(!is.na(skill_dependent), skill_dependent) %>%
-    arrange(desc(abs(interaction_coef))) %>%
-    select(any_of(c("card_id", "card_name", "interaction_coef", "interaction_p", "gih_wr", "glmm_or"))) %>%
+    select(any_of(c("card_id", "card_name", "n_games", "v1_or", "bayes_or", 
+                    "or_diff", "shrinkage"))) %>%
     head(10), row.names = FALSE)
-} else {
-  cat("No significant interactions detected\n")
 }
 
 cat("\nResults saved to:", output_csv, "\n")
+cat("\nNote: Default minimum games threshold is 100. Adjust with:\n")
+cat("  Rscript glmer_analysis.R input.csv output.csv [min_games]\n")

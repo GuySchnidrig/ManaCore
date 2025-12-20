@@ -224,7 +224,7 @@ def main():
     card_lookup.to_csv(card_lookup_outpath, index=False)
 
     print("\nDone! Now run:")
-    print(f"  Rscript glmer_analysis.R {games_outpath} {os.path.join(processed_dir, 'card_glmer_results_from_r.csv')} 5")
+    print(f"  Rscript glmer_analysis.R {games_outpath} {os.path.join(processed_dir, 'card_glmer_results_from_r.csv')} 50")
     print("=" * 80)
 
 
