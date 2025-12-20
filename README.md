@@ -1,5 +1,5 @@
-````markdown
-# Card Impact Analysis: Progressive Model Complexity
+# ManaCore
+
 
 [![Combine Datasets](https://github.com/GuySchnidrig/ManaCore/actions/workflows/data_pipeline_clean.yml/badge.svg)](https://github.com/GuySchnidrig/ManaCore/actions/workflows/data_pipeline_clean.yml)  
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/downloads/)  
@@ -7,54 +7,18 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/GuySchnidrig/ManaCore.svg)](https://github.com/GuySchnidrig/ManaCore/commits)  
 [![GitHub issues](https://img.shields.io/github/issues/GuySchnidrig/ManaCore.svg)](https://github.com/GuySchnidrig/ManaCore/issues)
 
----
 
-## Overview
+## Card Impact Analysis: Progressive Model Complexity
 
 This R-based analysis evaluates **individual card impact** on game outcomes using a **progressive modeling approach**:
 
 1. **Version 0 (V0)** – Baseline: `win ~ has_card + elo_diff + elo_mean`  
 2. **Version 1 (V1)** – Adds deck archetype: `win ~ has_card + elo_diff + elo_mean + archetype`  
 3. **Optional Bayesian Hierarchical Model** – Shrinks estimates for rare cards toward global mean using `rstanarm`.
+4. **Optional L2-regularized logistic regression** -  across all cards simultaneously.
+
 
 The framework outputs **odds ratios (OR)**, **p-values**, **archetype-adjusted win-rate lifts (ΔP)**, and other statistics for deeper insight into card effectiveness.
-
----
-
-## Quick Start
-
-### 1. Prepare Data
-```bash
-python scripts/prepare_data_for_r.py
-````
-
-**Generated files:**
-
-* `data/processed/games_for_r.csv` – Game-level observations with card lists.
-* `data/processed/card_lookup.csv` – Mapping of card IDs to card names.
-
-### 2. Run Analysis
-
-```bash
-Rscript scripts/glmer_analysis.R \
-  data/processed/games_for_r.csv \
-  data/processed/card_results.csv \
-  100
-```
-
-**Arguments:**
-
-* Input CSV (`games_for_r.csv`)
-* Output CSV (`card_results.csv`)
-* Minimum games threshold (default `100`)
-
-**Outputs:**
-
-* `card_results.csv` – Main card-level statistics.
-* `_glm_only.csv` – GLM-only intermediate checkpoint.
-* `_bayes_rare_cards.csv` – Bayesian-only results for rare cards (if applicable).
-
----
 
 ## Model Versions
 
@@ -122,17 +86,6 @@ Rscript scripts/glmer_analysis.R \
 
 ---
 
-## Example: Top Cards by ΔP
-
-```r
-final_results %>%
-  arrange(desc(v1_win_rate_lift_pct)) %>%
-  select(card_id, card_name, v1_win_rate_lift_pct, v1_or, n_games, confidence) %>%
-  head(10)
-```
-
----
-
 ## Model Comparison
 
 * **AIC improvement:** Difference in model fit between V0 and V1
@@ -141,30 +94,3 @@ final_results %>%
 
 ---
 
-## Optional Ridge Regression
-
-* Requires `glmnet`.
-* L2-regularized logistic regression across all cards simultaneously.
-* Outputs: coefficients, OR, and selected lambda.
-
----
-
-## Troubleshooting
-
-* Card too rare → Increase `min_games` or rely on Bayesian estimates.
-* `glmnet` not installed → Ridge regression skipped.
-* `rstanarm` not installed → Bayesian hierarchical model skipped.
-* Memory issues → Filter top N cards or increase available RAM.
-
----
-
-## Performance
-
-| Model                 | Runtime          | Parallelizable |
-| --------------------- | ---------------- | -------------- |
-| V0 (baseline)         | <1 sec per card  | N/A            |
-| V1 (+archetype)       | 1-2 sec per card | N/A            |
-| Bayesian Hierarchical | 10–30 min        | Partial        |
-
-```
-```
