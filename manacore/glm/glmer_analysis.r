@@ -12,7 +12,6 @@ suppressPackageStartupMessages({
   library(dplyr)
   library(lme4)
   library(jsonlite)
-  library(ggplot2)
 })
 
 # Try to load glmnet for regularization
@@ -41,10 +40,20 @@ tryCatch({
   cat("To enable: install.packages('rstanarm')\n")
 })
 
+
+
 args <- commandArgs(trailingOnly = TRUE)
 input_csv  <- args[1]
 output_csv <- args[2]
 min_games  <- if (length(args) >= 3) as.numeric(args[3]) else 100
+
+# Add input validation
+if (!file.exists(input_csv)) {
+  stop("Input file not found: ", input_csv)
+}
+if (min_games <= 0) {
+  stop("min_games must be positive")
+}
 
 cat("=== Progressive Model Complexity Card Analysis ===\n\n")
 
@@ -154,7 +163,10 @@ for (version_id in names(model_versions)) {
                 optCtrl = list(maxfun = 100000)
               ))
       }
-    }, error = function(e) NULL)
+    }, error = function(e) {
+      cat(sprintf("  Model fitting failed for card %s: %s\n", card, e$message))
+      NULL
+    })
     
     if (!is.null(model)) {
       coefs <- summary(model)$coefficients
@@ -188,10 +200,16 @@ for (version_id in names(model_versions)) {
         # Get AIC for model comparison
         model_aic <- AIC(model)
         
+        # ========================================================
         # Compute marginal win-rate lift (ΔP)
         # This is the average treatment effect 
         # across the observed distribution
-        if (version_id == "v1") {
+        # ========================================================
+        
+        win_rate_lift_prob <- NA
+        win_rate_lift_mean_prob <- NA
+        
+        tryCatch({
           # Create two versions of the data: 
           # with and without the card
           df_with <- df_model
@@ -215,12 +233,19 @@ for (version_id in names(model_versions)) {
           mean_data <- df_model %>%
             summarise(
               elo_diff = mean(elo_diff, na.rm = TRUE),
-              elo_mean = mean(elo_mean, na.rm = TRUE),
-              archetype = names(
-                sort(table(archetype), decreasing = TRUE)
-              )[1]
-            ) %>%
-            mutate(archetype = as.factor(archetype))
+              elo_mean = mean(elo_mean, na.rm = TRUE)
+            )
+          
+          # Add archetype if it exists in the model
+          if ("archetype" %in% all.vars(as.formula(version$formula))) {
+            mean_data <- mean_data %>%
+              mutate(
+                archetype = names(
+                  sort(table(df_model$archetype), decreasing = TRUE)
+                )[1]
+              ) %>%
+              mutate(archetype = as.factor(archetype))
+          }
           
           mean_data_with <- mean_data %>% mutate(has_card = 1)
           mean_data_without <- mean_data %>% mutate(has_card = 0)
@@ -232,10 +257,18 @@ for (version_id in names(model_versions)) {
                                    newdata = mean_data_without, 
                                    type = "response")
           win_rate_lift_mean_prob <- p_with_mean - p_without_mean
-        } else {
-          win_rate_lift_prob <- NA
-          win_rate_lift_mean_prob <- NA
-        }
+          
+          # Debug output for first card
+          if (i == 1) {
+            cat(sprintf("  Debug for card %s (%s):\n", card, version_id))
+            cat(sprintf("    win_rate_lift_prob: %.6f\n", win_rate_lift_prob))
+            cat(sprintf("    win_rate_lift_mean_prob: %.6f\n", win_rate_lift_mean_prob))
+          }
+          
+        }, error = function(e) {
+          cat(sprintf("  Win rate lift calculation failed for card %s: %s\n", 
+                     card, e$message))
+        })
         
         version_results[[i]] <- data.frame(
           card_id = card,
@@ -250,7 +283,8 @@ for (version_id in names(model_versions)) {
           converged = converged,
           separation = separation_warning,
           win_rate_lift_prob = win_rate_lift_prob,
-          win_rate_lift_mean_prob = win_rate_lift_mean_prob
+          win_rate_lift_mean_prob = win_rate_lift_mean_prob,
+          stringsAsFactors = FALSE
         )
       }
     }
@@ -528,12 +562,17 @@ if (RSTANARM_AVAILABLE) {
     start_bayes <- Sys.time()
     
     model <- stan_glmer(
-      win ~ (1 | card_id) + scale(elo_diff) + scale(elo_mean) + 
-            archetype,
+      win ~ 
+      scale(elo_diff) + 
+      scale(elo_mean) + 
+      archetype + 
+      (1 + scale(elo_diff) | card_id),
       data = game_card_long,
       family = binomial(link = "logit"),
-      prior = normal(0, 1, autoscale = TRUE),
-      prior_covariance = decov(scale = 0.5), 
+      # Loosen from 0.7 to 1.0 - allows larger fixed effects
+      prior = normal(0, 1.0, autoscale = TRUE),
+      # Loosen from 0.5 to 1.0 - allows more card-to-card variation
+      prior_covariance = decov(scale = 1.0),
       chains = 4,
       iter = 2000,
       warmup = 1000,
@@ -683,7 +722,6 @@ cat("Total cards analyzed:", nrow(final_results), "\n")
 for (version_id in names(model_versions)) {
   or_col <- paste0(version_id, "_or")
   conv_col <- paste0(version_id, "_converged")
-  sig_col <- paste0(version_id, "_significant")
   
   cat(sprintf("\n%s:\n", model_versions[[version_id]]$name))
   cat(sprintf("  Estimates: %d\n", 
@@ -771,8 +809,11 @@ if (!is.null(ridge_results)) {
     arrange(desc(n_games)) %>%
     mutate(
       or_diff = abs(v1_or - ridge_or),
-      shrinkage_pct = 100 * (1 - abs(ridge_coef) / 
-                                abs(v1_coef))
+      shrinkage_pct = if("v1_coef" %in% names(.)) {
+        100 * (1 - abs(ridge_coef) / abs(v1_coef))
+      } else {
+        100 * (1 - abs(ridge_coef) / abs(log(v1_or)))
+      }
     ) %>%
     select(any_of(c("card_id", "card_name", "n_games", 
                     "v1_or", "ridge_or", 

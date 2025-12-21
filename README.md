@@ -38,7 +38,7 @@ The framework outputs **odds ratios (OR)**, **p-values**, **archetype-adjusted w
 ### Optional: Bayesian Hierarchical
 
 * Requires `rstanarm`.
-* Formula: `win ~ (1 | card_id) + scale(elo_diff) + scale(elo_mean) + archetype`.
+* Formula: `win ~ scale(elo_diff) + scale(elo_mean) + archetype + (1 + scale(elo_diff) | card_id),`.
 * Pools information across cards for stable effect estimates.
 * Outputs posterior OR, credible intervals, and significance flags.
 
