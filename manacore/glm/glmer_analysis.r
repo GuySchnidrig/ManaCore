@@ -114,12 +114,12 @@ cat("Fitting progressive model versions...\n\n")
 model_versions <- list(
   v0 = list(
     name = "Version 0: Baseline",
-    formula = win ~ has_card + elo_diff + elo_mean,
+    formula = win ~ has_card + elo_diff,
     type = "glm"
   ),
   v1 = list(
     name = "Version 1: + Archetype",
-    formula = win ~ has_card + elo_diff + elo_mean + archetype,
+    formula = win ~ has_card + elo_diff + archetype,
     type = "glm"
   )
 )
