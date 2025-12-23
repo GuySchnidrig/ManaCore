@@ -1783,6 +1783,7 @@ Season-5,02c532e8-21f1-4d6f-a931-1ea48a6aeea2,Coalition Relic,Control,1
 Season-5,02d6d693-f1f3-4317-bcc0-c21fa8490d38,"Jace, Vryn's Prodigy // Jace, Telepath Unbound",Combo,3
 Season-5,02d6d693-f1f3-4317-bcc0-c21fa8490d38,"Jace, Vryn's Prodigy // Jace, Telepath Unbound",Combo-Control,1
 Season-5,02e8e540-8aa3-4e6a-9a11-c3949cab5f0f,"Tezzeret, Cruel Captain",Combo,1
+Season-5,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,Aggro,1
 Season-5,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,Aggro-Control (Tempo),1
 Season-5,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,Control,1
 Season-5,0359f212-9564-41a9-870b-d2c57455a695,Brainstorm,Combo,1
@@ -1838,7 +1839,7 @@ Season-5,09521f23-52d6-482d-9f3b-c4d12fcc08cc,Tidehollow Sculler,Control,3
 Season-5,09fd2d9c-1793-4beb-a3fb-7a869f660cd4,Bonecrusher Giant // Stomp,Aggro,3
 Season-5,09fd2d9c-1793-4beb-a3fb-7a869f660cd4,Bonecrusher Giant // Stomp,Combo,1
 Season-5,09fd2d9c-1793-4beb-a3fb-7a869f660cd4,Bonecrusher Giant // Stomp,Combo-Control,1
-Season-5,0a26d900-c652-4f9c-8681-a35c5f8b1937,Sacred Foundry,Aggro,2
+Season-5,0a26d900-c652-4f9c-8681-a35c5f8b1937,Sacred Foundry,Aggro,3
 Season-5,0a26d900-c652-4f9c-8681-a35c5f8b1937,Sacred Foundry,Aggro-Control (Tempo),1
 Season-5,0a26d900-c652-4f9c-8681-a35c5f8b1937,Sacred Foundry,Control,1
 Season-5,0a786855-6eb4-42c0-a528-4842db46809d,Stock Up,Combo,1
@@ -1868,6 +1869,7 @@ Season-5,0e0d989d-7186-40dc-bdfe-cfbb77656bc8,"Emrakul, the Aeons Torn",Combo,1
 Season-5,0e51d796-7279-4c06-87f0-37adbdaa41df,Underworld Breach,Combo,2
 Season-5,0e606072-a3aa-4300-ba90-ec92a721fa76,"Jace, the Mind Sculptor",Combo,1
 Season-5,0e606072-a3aa-4300-ba90-ec92a721fa76,"Jace, the Mind Sculptor",Control,3
+Season-5,0e9aeaa8-9a75-4719-992f-cbb316f72175,Savannah,Aggro,1
 Season-5,0eee981e-5d26-4810-90e1-432f3c3107f2,Reclamation Sage,Aggro-Combo,1
 Season-5,0f7585c8-9e21-4eef-afc1-2852de23db2f,Polluted Delta,Combo,1
 Season-5,0f7585c8-9e21-4eef-afc1-2852de23db2f,Polluted Delta,Control,2
@@ -1890,10 +1892,11 @@ Season-5,1163fe84-c5d5-42c8-b7cd-d206a9b0bd3f,Tireless Provisioner,Control-Aggro
 Season-5,117bb5db-4a1c-4704-b0b5-c67b45ac2f52,"Yuffie, Materia Hunter",Aggro,3
 Season-5,120be808-ff3b-4fca-96a1-4db6b9825856,Quantum Riddler,Aggro,1
 Season-5,120be808-ff3b-4fca-96a1-4db6b9825856,Quantum Riddler,Control,2
+Season-5,139b90cd-8272-457a-be32-1298145345be,Watery Grave,Aggro,1
 Season-5,139b90cd-8272-457a-be32-1298145345be,Watery Grave,Combo,1
 Season-5,139b90cd-8272-457a-be32-1298145345be,Watery Grave,Combo-Control,1
 Season-5,139b90cd-8272-457a-be32-1298145345be,Watery Grave,Control,1
-Season-5,14065271-d942-42a8-aa38-d8a622c0375d,Scrubland,Aggro,1
+Season-5,14065271-d942-42a8-aa38-d8a622c0375d,Scrubland,Aggro,2
 Season-5,14065271-d942-42a8-aa38-d8a622c0375d,Scrubland,Combo,1
 Season-5,14065271-d942-42a8-aa38-d8a622c0375d,Scrubland,Control,1
 Season-5,1453f92e-df2d-4789-aa1b-a5b5c51567d4,Preordain,Combo,5
@@ -1971,6 +1974,7 @@ Season-5,1c0f2873-5849-4cab-855a-2fbbc41dbb6c,Chaos Defiler,Combo-Control,1
 Season-5,1c0f2873-5849-4cab-855a-2fbbc41dbb6c,Chaos Defiler,Control-Aggro (Midrange),1
 Season-5,1c603751-1e2b-4c8e-a8d2-5c0876e7254f,Darkstar Augur,Aggro,2
 Season-5,1c603751-1e2b-4c8e-a8d2-5c0876e7254f,Darkstar Augur,Control,2
+Season-5,1c7d50d6-b63a-4d8c-88fa-1d78ae693a45,Overgrown Tomb,Aggro,1
 Season-5,1c7d50d6-b63a-4d8c-88fa-1d78ae693a45,Overgrown Tomb,Control,2
 Season-5,1daf4348-05c5-4c55-bcf2-c7bec7988bfc,Plateau,Aggro,2
 Season-5,1daf4348-05c5-4c55-bcf2-c7bec7988bfc,Plateau,Combo,1
@@ -2113,7 +2117,7 @@ Season-5,3462a3d0-5552-49fa-9eb7-100960c55891,"Oko, Thief of Crowns",Control,1
 Season-5,3462a3d0-5552-49fa-9eb7-100960c55891,"Oko, Thief of Crowns",Control-Aggro (Midrange),1
 Season-5,35f1a6ba-e46f-44fb-93f4-fb883d677b36,Baleful Mastery,Aggro,2
 Season-5,35f1a6ba-e46f-44fb-93f4-fb883d677b36,Baleful Mastery,Control,2
-Season-5,377cee38-e769-47b0-abd5-0f528600f36a,Badlands,Aggro,1
+Season-5,377cee38-e769-47b0-abd5-0f528600f36a,Badlands,Aggro,2
 Season-5,377cee38-e769-47b0-abd5-0f528600f36a,Badlands,Combo,1
 Season-5,377cee38-e769-47b0-abd5-0f528600f36a,Badlands,Control,1
 Season-5,377cee38-e769-47b0-abd5-0f528600f36a,Badlands,Control-Aggro (Midrange),1
@@ -2385,6 +2389,7 @@ Season-5,74b4c336-5d4c-4bc5-b82a-35084a6ad808,Spellseeker,Control,1
 Season-5,74d29b3d-f588-431d-bf4e-f7215683ab39,Tangle Wire,Aggro,1
 Season-5,74d29b3d-f588-431d-bf4e-f7215683ab39,Tangle Wire,Aggro-Combo,1
 Season-5,758f95f8-bcb0-43ae-b474-56ebd855951e,Lion's Eye Diamond,Combo,1
+Season-5,75fdce80-e338-4a50-bdc6-786511feaeef,Ziatora's Proving Ground,Aggro,1
 Season-5,75fdce80-e338-4a50-bdc6-786511feaeef,Ziatora's Proving Ground,Control,1
 Season-5,76c3cad2-1e25-4abe-878d-9194de6fcc27,Guide of Souls,Aggro,4
 Season-5,76c3cad2-1e25-4abe-878d-9194de6fcc27,Guide of Souls,Control,1
@@ -2605,7 +2610,7 @@ Season-5,bb41ff5c-9617-4033-a4fa-99323640b9c3,Duress,Control,1
 Season-5,bb9ad57f-cca2-4717-a951-cbe3c7782efe,Recruiter of the Guard,Aggro,2
 Season-5,bbec97ff-bb84-4496-9e09-d4fc1570c516,Mawloc,Aggro,3
 Season-5,bbec97ff-bb84-4496-9e09-d4fc1570c516,Mawloc,Control-Aggro (Midrange),1
-Season-5,bd3d4b4b-cf31-4f89-8140-9650edb03c7b,Ancient Tomb,Aggro,1
+Season-5,bd3d4b4b-cf31-4f89-8140-9650edb03c7b,Ancient Tomb,Aggro,2
 Season-5,bd3d4b4b-cf31-4f89-8140-9650edb03c7b,Ancient Tomb,Combo,1
 Season-5,bd3d4b4b-cf31-4f89-8140-9650edb03c7b,Ancient Tomb,Control,1
 Season-5,bd8fa327-dd41-4737-8f19-2cf5eb1f7cdd,Black Lotus,Aggro,1
@@ -2893,6 +2898,7 @@ Season-All,02d6d693-f1f3-4317-bcc0-c21fa8490d38,"Jace, Vryn's Prodigy // Jace, T
 Season-All,02d6d693-f1f3-4317-bcc0-c21fa8490d38,"Jace, Vryn's Prodigy // Jace, Telepath Unbound",Combo-Control,3
 Season-All,02d6d693-f1f3-4317-bcc0-c21fa8490d38,"Jace, Vryn's Prodigy // Jace, Telepath Unbound",Control,1
 Season-All,02e8e540-8aa3-4e6a-9a11-c3949cab5f0f,"Tezzeret, Cruel Captain",Combo,1
+Season-All,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,Aggro,1
 Season-All,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,Aggro-Control (Tempo),2
 Season-All,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,Combo,3
 Season-All,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,Combo-Control,1
@@ -2990,7 +2996,7 @@ Season-All,09521f23-52d6-482d-9f3b-c4d12fcc08cc,Tidehollow Sculler,Control-Aggro
 Season-All,09fd2d9c-1793-4beb-a3fb-7a869f660cd4,Bonecrusher Giant // Stomp,Aggro,10
 Season-All,09fd2d9c-1793-4beb-a3fb-7a869f660cd4,Bonecrusher Giant // Stomp,Combo,2
 Season-All,09fd2d9c-1793-4beb-a3fb-7a869f660cd4,Bonecrusher Giant // Stomp,Combo-Control,2
-Season-All,0a26d900-c652-4f9c-8681-a35c5f8b1937,Sacred Foundry,Aggro,6
+Season-All,0a26d900-c652-4f9c-8681-a35c5f8b1937,Sacred Foundry,Aggro,7
 Season-All,0a26d900-c652-4f9c-8681-a35c5f8b1937,Sacred Foundry,Aggro-Control (Tempo),1
 Season-All,0a26d900-c652-4f9c-8681-a35c5f8b1937,Sacred Foundry,Combo,1
 Season-All,0a26d900-c652-4f9c-8681-a35c5f8b1937,Sacred Foundry,Combo-Control,1
@@ -3054,7 +3060,7 @@ Season-All,0e51d796-7279-4c06-87f0-37adbdaa41df,Underworld Breach,Combo-Control,
 Season-All,0e606072-a3aa-4300-ba90-ec92a721fa76,"Jace, the Mind Sculptor",Aggro-Control (Tempo),2
 Season-All,0e606072-a3aa-4300-ba90-ec92a721fa76,"Jace, the Mind Sculptor",Combo,3
 Season-All,0e606072-a3aa-4300-ba90-ec92a721fa76,"Jace, the Mind Sculptor",Control,5
-Season-All,0e9aeaa8-9a75-4719-992f-cbb316f72175,Savannah,Aggro,2
+Season-All,0e9aeaa8-9a75-4719-992f-cbb316f72175,Savannah,Aggro,3
 Season-All,0e9aeaa8-9a75-4719-992f-cbb316f72175,Savannah,Aggro-Combo,1
 Season-All,0e9aeaa8-9a75-4719-992f-cbb316f72175,Savannah,Combo,1
 Season-All,0e9aeaa8-9a75-4719-992f-cbb316f72175,Savannah,Control,1
@@ -3109,11 +3115,12 @@ Season-All,1163fe84-c5d5-42c8-b7cd-d206a9b0bd3f,Tireless Provisioner,Control-Agg
 Season-All,117bb5db-4a1c-4704-b0b5-c67b45ac2f52,"Yuffie, Materia Hunter",Aggro,3
 Season-All,120be808-ff3b-4fca-96a1-4db6b9825856,Quantum Riddler,Aggro,1
 Season-All,120be808-ff3b-4fca-96a1-4db6b9825856,Quantum Riddler,Control,2
+Season-All,139b90cd-8272-457a-be32-1298145345be,Watery Grave,Aggro,1
 Season-All,139b90cd-8272-457a-be32-1298145345be,Watery Grave,Aggro-Control (Tempo),1
 Season-All,139b90cd-8272-457a-be32-1298145345be,Watery Grave,Combo,5
 Season-All,139b90cd-8272-457a-be32-1298145345be,Watery Grave,Combo-Control,1
 Season-All,139b90cd-8272-457a-be32-1298145345be,Watery Grave,Control,5
-Season-All,14065271-d942-42a8-aa38-d8a622c0375d,Scrubland,Aggro,2
+Season-All,14065271-d942-42a8-aa38-d8a622c0375d,Scrubland,Aggro,3
 Season-All,14065271-d942-42a8-aa38-d8a622c0375d,Scrubland,Aggro-Control (Tempo),1
 Season-All,14065271-d942-42a8-aa38-d8a622c0375d,Scrubland,Combo,2
 Season-All,14065271-d942-42a8-aa38-d8a622c0375d,Scrubland,Combo-Control,1
@@ -3257,6 +3264,7 @@ Season-All,1c0f2873-5849-4cab-855a-2fbbc41dbb6c,Chaos Defiler,Combo-Control,2
 Season-All,1c0f2873-5849-4cab-855a-2fbbc41dbb6c,Chaos Defiler,Control-Aggro (Midrange),3
 Season-All,1c603751-1e2b-4c8e-a8d2-5c0876e7254f,Darkstar Augur,Aggro,2
 Season-All,1c603751-1e2b-4c8e-a8d2-5c0876e7254f,Darkstar Augur,Control,2
+Season-All,1c7d50d6-b63a-4d8c-88fa-1d78ae693a45,Overgrown Tomb,Aggro,1
 Season-All,1c7d50d6-b63a-4d8c-88fa-1d78ae693a45,Overgrown Tomb,Combo,2
 Season-All,1c7d50d6-b63a-4d8c-88fa-1d78ae693a45,Overgrown Tomb,Combo-Control,2
 Season-All,1c7d50d6-b63a-4d8c-88fa-1d78ae693a45,Overgrown Tomb,Control,3
@@ -3562,7 +3570,7 @@ Season-All,3462a3d0-5552-49fa-9eb7-100960c55891,"Oko, Thief of Crowns",Control-A
 Season-All,35f1a6ba-e46f-44fb-93f4-fb883d677b36,Baleful Mastery,Aggro,2
 Season-All,35f1a6ba-e46f-44fb-93f4-fb883d677b36,Baleful Mastery,Combo,4
 Season-All,35f1a6ba-e46f-44fb-93f4-fb883d677b36,Baleful Mastery,Control,5
-Season-All,377cee38-e769-47b0-abd5-0f528600f36a,Badlands,Aggro,2
+Season-All,377cee38-e769-47b0-abd5-0f528600f36a,Badlands,Aggro,3
 Season-All,377cee38-e769-47b0-abd5-0f528600f36a,Badlands,Aggro-Combo,1
 Season-All,377cee38-e769-47b0-abd5-0f528600f36a,Badlands,Combo,5
 Season-All,377cee38-e769-47b0-abd5-0f528600f36a,Badlands,Control,2
@@ -4100,6 +4108,7 @@ Season-All,74d29b3d-f588-431d-bf4e-f7215683ab39,Tangle Wire,Control-Aggro (Midra
 Season-All,758f95f8-bcb0-43ae-b474-56ebd855951e,Lion's Eye Diamond,Aggro,1
 Season-All,758f95f8-bcb0-43ae-b474-56ebd855951e,Lion's Eye Diamond,Combo,9
 Season-All,758f95f8-bcb0-43ae-b474-56ebd855951e,Lion's Eye Diamond,Combo-Control,1
+Season-All,75fdce80-e338-4a50-bdc6-786511feaeef,Ziatora's Proving Ground,Aggro,1
 Season-All,75fdce80-e338-4a50-bdc6-786511feaeef,Ziatora's Proving Ground,Combo,2
 Season-All,75fdce80-e338-4a50-bdc6-786511feaeef,Ziatora's Proving Ground,Combo-Control,1
 Season-All,75fdce80-e338-4a50-bdc6-786511feaeef,Ziatora's Proving Ground,Control,2
@@ -4529,7 +4538,7 @@ Season-All,bbec97ff-bb84-4496-9e09-d4fc1570c516,Mawloc,Control-Aggro (Midrange),
 Season-All,bce84a87-093a-42de-9696-8c3250e0f33b,Goblin Rabblemaster,Aggro,4
 Season-All,bce84a87-093a-42de-9696-8c3250e0f33b,Goblin Rabblemaster,Aggro-Combo,1
 Season-All,bce84a87-093a-42de-9696-8c3250e0f33b,Goblin Rabblemaster,Control,1
-Season-All,bd3d4b4b-cf31-4f89-8140-9650edb03c7b,Ancient Tomb,Aggro,4
+Season-All,bd3d4b4b-cf31-4f89-8140-9650edb03c7b,Ancient Tomb,Aggro,5
 Season-All,bd3d4b4b-cf31-4f89-8140-9650edb03c7b,Ancient Tomb,Combo,2
 Season-All,bd3d4b4b-cf31-4f89-8140-9650edb03c7b,Ancient Tomb,Combo-Control,1
 Season-All,bd3d4b4b-cf31-4f89-8140-9650edb03c7b,Ancient Tomb,Control,2

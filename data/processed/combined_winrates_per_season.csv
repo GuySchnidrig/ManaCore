@@ -7258,8 +7258,8 @@ Gianni,28,aced2c55-7543-4076-bcdd-36c4d649b8ae,Mox Emerald,Season-5,1,4,0,2,2,0.
 Gianni,28,aced2c55-7543-4076-bcdd-36c4d649b8ae,Mox Emerald,Season-All,1,4,0,2,2,0.0,0.5,8,2,2,6,0.25,0.25
 Gianni,28,4b0bd07e-cf80-4d64-af29-f4cec6632b3e,Perilous Landscape,Season-5,1,4,0,2,2,0.0,0.5,8,2,2,6,0.25,0.25
 Gianni,28,4b0bd07e-cf80-4d64-af29-f4cec6632b3e,Perilous Landscape,Season-All,1,4,0,2,2,0.0,0.5,8,2,2,6,0.25,0.25
-Gianni,28,0a26d900-c652-4f9c-8681-a35c5f8b1937,Sacred Foundry,Season-5,1,4,0,2,2,0.0,0.5,8,2,2,6,0.25,0.25
-Gianni,28,0a26d900-c652-4f9c-8681-a35c5f8b1937,Sacred Foundry,Season-All,1,4,0,2,2,0.0,0.5,8,2,2,6,0.25,0.25
+Gianni,28,0a26d900-c652-4f9c-8681-a35c5f8b1937,Sacred Foundry,Season-5,2,8,2,4,2,0.25,0.5,17,8,4,9,0.4705882352941176,0.2352941176470588
+Gianni,28,0a26d900-c652-4f9c-8681-a35c5f8b1937,Sacred Foundry,Season-All,2,8,2,4,2,0.25,0.5,17,8,4,9,0.4705882352941176,0.2352941176470588
 Gianni,28,bfa4e927-1d6f-4a64-9801-7d168a5ef3f6,Astrologian's Planisphere,Season-5,1,4,0,2,2,0.0,0.5,8,2,2,6,0.25,0.25
 Gianni,28,bfa4e927-1d6f-4a64-9801-7d168a5ef3f6,Astrologian's Planisphere,Season-All,1,4,0,2,2,0.0,0.5,8,2,2,6,0.25,0.25
 Gianni,28,8c2996d9-3287-4480-8c04-7a378e37e3cf,Flooded Strand,Season-5,1,4,0,2,2,0.0,0.5,8,2,2,6,0.25,0.25
@@ -7278,8 +7278,8 @@ Gianni,28,f1a21287-e244-4960-84fb-c4f6e5c346d9,Third Path Iconoclast,Season-5,1,
 Gianni,28,f1a21287-e244-4960-84fb-c4f6e5c346d9,Third Path Iconoclast,Season-All,1,4,0,2,2,0.0,0.5,8,2,2,6,0.25,0.25
 Gianni,28,02138fbb-3962-4348-8d31-faaefba0b8b2,Raugrin Triome,Season-5,1,4,0,2,2,0.0,0.5,8,2,2,6,0.25,0.25
 Gianni,28,02138fbb-3962-4348-8d31-faaefba0b8b2,Raugrin Triome,Season-All,1,4,0,2,2,0.0,0.5,8,2,2,6,0.25,0.25
-Gianni,28,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,Season-5,1,4,0,2,2,0.0,0.5,8,2,2,6,0.25,0.25
-Gianni,28,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,Season-All,1,4,0,2,2,0.0,0.5,8,2,2,6,0.25,0.25
+Gianni,28,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,Season-5,2,8,2,4,2,0.25,0.5,17,8,4,9,0.4705882352941176,0.2352941176470588
+Gianni,28,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,Season-All,2,8,2,4,2,0.25,0.5,17,8,4,9,0.4705882352941176,0.2352941176470588
 Gianni,28,4a08ca06-58db-4ce6-b490-be4bea8956a1,Sensei's Divining Top,Season-5,1,4,0,2,2,0.0,0.5,8,2,2,6,0.25,0.25
 Gianni,28,4a08ca06-58db-4ce6-b490-be4bea8956a1,Sensei's Divining Top,Season-All,1,4,0,2,2,0.0,0.5,8,2,2,6,0.25,0.25
 Gianni,28,97b9bab9-12ee-4da5-9d53-d0b82d9279cd,Pyrite Spellbomb,Season-5,1,4,0,2,2,0.0,0.5,8,2,2,6,0.25,0.25
@@ -8408,36 +8408,36 @@ Sili,6,e6d7fba8-a157-4d81-9d6b-bd210a96b248,Gleemox,Season-5,1,4,2,0,2,0.5,0.0,8
 Sili,6,e6d7fba8-a157-4d81-9d6b-bd210a96b248,Gleemox,Season-All,1,4,2,0,2,0.5,0.0,8,4,0,4,0.5,0.0
 Sili,6,a249b1f4-2b22-4b67-a207-e0c4ae95d2e1,Ketria Triome,Season-5,1,4,2,0,2,0.5,0.0,8,4,0,4,0.5,0.0
 Sili,6,a249b1f4-2b22-4b67-a207-e0c4ae95d2e1,Ketria Triome,Season-All,1,4,2,0,2,0.5,0.0,8,4,0,4,0.5,0.0
-Tommy,16,a211d505-4d40-4914-a9da-220770d6ddbc,Consider,Season-5,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
-Tommy,16,a211d505-4d40-4914-a9da-220770d6ddbc,Consider,Season-All,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
+Tommy,16,18f23daa-bc59-456a-8a28-3823e51bc74b,Night's Whisper,Season-5,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
+Tommy,16,18f23daa-bc59-456a-8a28-3823e51bc74b,Night's Whisper,Season-All,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
+Tommy,16,0359f212-9564-41a9-870b-d2c57455a695,Brainstorm,Season-5,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
+Tommy,16,0359f212-9564-41a9-870b-d2c57455a695,Brainstorm,Season-All,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
+Tommy,16,cea3b218-0e6e-443a-84f7-380f1021e8e1,Barrowgoyf,Season-5,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
+Tommy,16,cea3b218-0e6e-443a-84f7-380f1021e8e1,Barrowgoyf,Season-All,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
 Tommy,16,bfa4e927-1d6f-4a64-9801-7d168a5ef3f6,Astrologian's Planisphere,Season-5,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
 Tommy,16,bfa4e927-1d6f-4a64-9801-7d168a5ef3f6,Astrologian's Planisphere,Season-All,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
+Tommy,16,068bb15a-fc2d-42a2-859b-837b946d23c0,Underground Sea,Season-5,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
+Tommy,16,068bb15a-fc2d-42a2-859b-837b946d23c0,Underground Sea,Season-All,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
 Tommy,16,310a1c46-8331-4a09-9fcb-d942f8102364,Thoughtseize,Season-5,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
 Tommy,16,310a1c46-8331-4a09-9fcb-d942f8102364,Thoughtseize,Season-All,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
 Tommy,16,69c68c95-b788-43b1-9f22-1b22c5a00b25,Deep-Cavern Bat,Season-5,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
 Tommy,16,69c68c95-b788-43b1-9f22-1b22c5a00b25,Deep-Cavern Bat,Season-All,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
+Tommy,16,a2c56479-4bee-4edb-80d7-4af010b7c793,Raffine's Tower,Season-5,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
+Tommy,16,a2c56479-4bee-4edb-80d7-4af010b7c793,Raffine's Tower,Season-All,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
 Tommy,16,57fb0fa7-0c5c-4a75-9461-c51403c30282,Foreboding Landscape,Season-5,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
 Tommy,16,57fb0fa7-0c5c-4a75-9461-c51403c30282,Foreboding Landscape,Season-All,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
 Tommy,16,05bdd22c-3e11-4c29-bdfa-d3dfc0e90a9f,Bitter Triumph,Season-5,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
 Tommy,16,05bdd22c-3e11-4c29-bdfa-d3dfc0e90a9f,Bitter Triumph,Season-All,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
-Tommy,16,a2c56479-4bee-4edb-80d7-4af010b7c793,Raffine's Tower,Season-5,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
-Tommy,16,a2c56479-4bee-4edb-80d7-4af010b7c793,Raffine's Tower,Season-All,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
-Tommy,16,068bb15a-fc2d-42a2-859b-837b946d23c0,Underground Sea,Season-5,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
-Tommy,16,068bb15a-fc2d-42a2-859b-837b946d23c0,Underground Sea,Season-All,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
-Tommy,16,396bca07-82ba-49b7-b79e-7784b3a06d48,Sunset Saboteur,Season-5,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
-Tommy,16,396bca07-82ba-49b7-b79e-7784b3a06d48,Sunset Saboteur,Season-All,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
-Tommy,16,cea3b218-0e6e-443a-84f7-380f1021e8e1,Barrowgoyf,Season-5,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
-Tommy,16,cea3b218-0e6e-443a-84f7-380f1021e8e1,Barrowgoyf,Season-All,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
 Tommy,16,68841ca8-a043-4f30-9a17-e983ed960bc2,Demonic Tutor,Season-5,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
 Tommy,16,68841ca8-a043-4f30-9a17-e983ed960bc2,Demonic Tutor,Season-All,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
-Tommy,16,0359f212-9564-41a9-870b-d2c57455a695,Brainstorm,Season-5,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
-Tommy,16,0359f212-9564-41a9-870b-d2c57455a695,Brainstorm,Season-All,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
+Tommy,16,396bca07-82ba-49b7-b79e-7784b3a06d48,Sunset Saboteur,Season-5,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
+Tommy,16,396bca07-82ba-49b7-b79e-7784b3a06d48,Sunset Saboteur,Season-All,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
 Tommy,16,1c603751-1e2b-4c8e-a8d2-5c0876e7254f,Darkstar Augur,Season-5,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
 Tommy,16,1c603751-1e2b-4c8e-a8d2-5c0876e7254f,Darkstar Augur,Season-All,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
+Tommy,16,a211d505-4d40-4914-a9da-220770d6ddbc,Consider,Season-5,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
+Tommy,16,a211d505-4d40-4914-a9da-220770d6ddbc,Consider,Season-All,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
 Tommy,16,06cb1bd6-73e0-4104-b344-4bc52d7dcedf,Baleful Strix,Season-5,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
 Tommy,16,06cb1bd6-73e0-4104-b344-4bc52d7dcedf,Baleful Strix,Season-All,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
-Tommy,16,18f23daa-bc59-456a-8a28-3823e51bc74b,Night's Whisper,Season-5,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
-Tommy,16,18f23daa-bc59-456a-8a28-3823e51bc74b,Night's Whisper,Season-All,1,4,3,1,0,0.75,0.25,8,7,1,1,0.875,0.125
 Yannik,9,a76fa8d4-923d-4afc-ba47-ba10fc0fe46e,"Comet, Stellar Pup",Season-5,1,4,1,0,3,0.25,0.0,8,2,0,6,0.25,0.0
 Yannik,9,a76fa8d4-923d-4afc-ba47-ba10fc0fe46e,"Comet, Stellar Pup",Season-All,1,4,1,0,3,0.25,0.0,8,2,0,6,0.25,0.0
 Yannik,9,d13a898e-6a97-4fd9-980e-3bfd8d755386,Tarfire,Season-5,1,4,1,0,3,0.25,0.0,8,2,0,6,0.25,0.0
@@ -8592,6 +8592,20 @@ Gianni,28,bbec97ff-bb84-4496-9e09-d4fc1570c516,Mawloc,Season-5,1,4,2,2,0,0.5,0.5
 Gianni,28,bbec97ff-bb84-4496-9e09-d4fc1570c516,Mawloc,Season-All,1,4,2,2,0,0.5,0.5,9,6,2,3,0.6666666666666666,0.2222222222222222
 Gianni,28,b8aa7126-5df3-42dd-b4a3-0d0ea59eeebd,Helping Hand,Season-5,1,4,2,2,0,0.5,0.5,9,6,2,3,0.6666666666666666,0.2222222222222222
 Gianni,28,b8aa7126-5df3-42dd-b4a3-0d0ea59eeebd,Helping Hand,Season-All,1,4,2,2,0,0.5,0.5,9,6,2,3,0.6666666666666666,0.2222222222222222
+Gianni,28,1c7d50d6-b63a-4d8c-88fa-1d78ae693a45,Overgrown Tomb,Season-5,1,4,2,2,0,0.5,0.5,9,6,2,3,0.6666666666666666,0.2222222222222222
+Gianni,28,1c7d50d6-b63a-4d8c-88fa-1d78ae693a45,Overgrown Tomb,Season-All,1,4,2,2,0,0.5,0.5,9,6,2,3,0.6666666666666666,0.2222222222222222
+Gianni,28,0e9aeaa8-9a75-4719-992f-cbb316f72175,Savannah,Season-5,1,4,2,2,0,0.5,0.5,9,6,2,3,0.6666666666666666,0.2222222222222222
+Gianni,28,0e9aeaa8-9a75-4719-992f-cbb316f72175,Savannah,Season-All,1,4,2,2,0,0.5,0.5,9,6,2,3,0.6666666666666666,0.2222222222222222
+Gianni,28,377cee38-e769-47b0-abd5-0f528600f36a,Badlands,Season-5,1,4,2,2,0,0.5,0.5,9,6,2,3,0.6666666666666666,0.2222222222222222
+Gianni,28,377cee38-e769-47b0-abd5-0f528600f36a,Badlands,Season-All,1,4,2,2,0,0.5,0.5,9,6,2,3,0.6666666666666666,0.2222222222222222
+Gianni,28,75fdce80-e338-4a50-bdc6-786511feaeef,Ziatora's Proving Ground,Season-5,1,4,2,2,0,0.5,0.5,9,6,2,3,0.6666666666666666,0.2222222222222222
+Gianni,28,75fdce80-e338-4a50-bdc6-786511feaeef,Ziatora's Proving Ground,Season-All,1,4,2,2,0,0.5,0.5,9,6,2,3,0.6666666666666666,0.2222222222222222
+Gianni,28,14065271-d942-42a8-aa38-d8a622c0375d,Scrubland,Season-5,1,4,2,2,0,0.5,0.5,9,6,2,3,0.6666666666666666,0.2222222222222222
+Gianni,28,14065271-d942-42a8-aa38-d8a622c0375d,Scrubland,Season-All,1,4,2,2,0,0.5,0.5,9,6,2,3,0.6666666666666666,0.2222222222222222
+Gianni,28,139b90cd-8272-457a-be32-1298145345be,Watery Grave,Season-5,1,4,2,2,0,0.5,0.5,9,6,2,3,0.6666666666666666,0.2222222222222222
+Gianni,28,139b90cd-8272-457a-be32-1298145345be,Watery Grave,Season-All,1,4,2,2,0,0.5,0.5,9,6,2,3,0.6666666666666666,0.2222222222222222
+Gianni,28,bd3d4b4b-cf31-4f89-8140-9650edb03c7b,Ancient Tomb,Season-5,1,4,2,2,0,0.5,0.5,9,6,2,3,0.6666666666666666,0.2222222222222222
+Gianni,28,bd3d4b4b-cf31-4f89-8140-9650edb03c7b,Ancient Tomb,Season-All,1,4,2,2,0,0.5,0.5,9,6,2,3,0.6666666666666666,0.2222222222222222
 Myri,15,71384418-173a-4f77-adab-56e52fa23692,Delighted Halfling,Season-5,1,4,1,1,2,0.25,0.25,8,3,1,5,0.375,0.125
 Myri,15,71384418-173a-4f77-adab-56e52fa23692,Delighted Halfling,Season-All,1,4,1,1,2,0.25,0.25,8,3,1,5,0.375,0.125
 Myri,15,60d0e6a6-629a-45a7-bfcb-25ba7156788b,Elvish Mystic,Season-5,1,4,1,1,2,0.25,0.25,8,3,1,5,0.375,0.125
