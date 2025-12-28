@@ -1,5 +1,5 @@
 player,player_id,scryfallId,card_name,pick_count
-Andrin,5,6989018c-37b1-4282-a4af-9cc97f160b4d,Oliphaunt,5
+Andrin,5,52d3005f-a1c7-4ef5-911f-ccc0752f4181,Faerie Mastermind,5
 Dimlas,1,310a1c46-8331-4a09-9fcb-d942f8102364,Thoughtseize,7
 Elie,17,04fc99dc-bfbe-4567-b791-6b1db96471ec,Reanimate,1
 Felix,25,006d2bf1-20f7-4b09-8d98-8233d91682bd,Flame Slash,1
@@ -10,9 +10,10 @@ Ivo,18,005dae9a-dddc-4a11-95bb-cce319edcce4,Skullclamp,3
 Joel K.,12,1785cb18-c291-4fd5-b8c7-ace893c32e49,Mesmeric Fiend,4
 Joel R.,3,01794178-cf41-454c-ac37-1d8b18e42db2,Green Sun's Zenith,1
 Jonas W.,27,0463e989-ba32-4a46-a82f-e0d6daf3cd51,Sulfuric Vortex,1
+Jonsi,32,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,1
 Kas,30,026e7167-d665-43d0-a51e-8df2d68cdb5e,"Cecil, Dark Knight // Cecil, Redeemed Paladin",1
 Luca,20,4df8aabc-7fcb-4b7b-980b-18f499e6c170,Hullbreacher,3
-Lukas Stalder,2,311a6257-dd77-4bb6-81cb-c8e7862350f3,Necromancy,6
+Lukas Stalder,2,0cb33b46-4d1b-4f97-bfdc-d815aee111da,Mana Crypt,6
 Lukas Wyss,29,1163fe84-c5d5-42c8-b7cd-d206a9b0bd3f,Tireless Provisioner,1
 Manuel,8,21c950d7-b4f6-4902-8c9a-98f2933f9fa5,Adanto Vanguard,5
 Matthias,21,0055ea30-20fb-4324-a632-8fed87628f05,"Boseiju, Who Endures",3
@@ -22,7 +23,7 @@ Noe T.,11,3b6e5956-f795-451b-bb24-56462d1ced27,Umezawa's Jitte,4
 Pali,14,553fb946-2706-475b-89f9-e4355ec9ea2b,March of Otherworldly Light,3
 Sam,7,5d10b752-d9cb-419d-a5c4-d4ee1acb655e,"Teferi, Hero of Dominaria",2
 Sili,6,01e7b0bc-1c6c-48f4-8b72-1a809f536c6c,Birds of Paradise,5
-Thomas,26,0027e5ca-8046-40a0-bd73-79be55f28bff,Remand,1
+Thomas,26,1e2fee55-227b-4373-a3f7-b463f220033f,Tinker,2
 Tinu,4,63c59228-c742-4abd-b4d7-9f7880190e95,Windswept Heath,4
 Tobi,13,079e6263-e54c-4899-a336-5315909b9322,"Magda, Brazen Outlaw",2
 Tommy,16,cf3eb762-6c3f-4b11-a4f9-968f79370217,Mystic Confluence,5
