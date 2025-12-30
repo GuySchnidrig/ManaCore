@@ -5458,7 +5458,6 @@ Season-5,20251228,197,Luca,20,Aggro,Jund Aggro,064dfdeb-485f-473e-9fa0-8fdb7638c
 Season-5,20251228,197,Luca,20,Aggro,Jund Aggro,45026d57-0324-4312-8b86-2e7d4f581ee9,Marsh Flats,['Lands'],"['Red', 'Green', 'Black']",BRG
 Season-5,20251228,197,Luca,20,Aggro,Jund Aggro,4acf970d-d2d7-413d-aba7-587ee53d8d5c,Stomping Ground,['Lands'],"['Red', 'Green', 'Black']",BRG
 Season-5,20251228,197,Luca,20,Aggro,Jund Aggro,079e6263-e54c-4899-a336-5315909b9322,"Magda, Brazen Outlaw",['Red'],"['Red', 'Green', 'Black']",BRG
-Season-5,20251228,197,Luca,20,Aggro,Jund Aggro,f9246b68-580f-4f53-883d-7900880e4b0d,Six,['Green'],"['Red', 'Green', 'Black']",BRG
 Season-5,20251228,197,Luca,20,Aggro,Jund Aggro,377cee38-e769-47b0-abd5-0f528600f36a,Badlands,['Lands'],"['Red', 'Green', 'Black']",BRG
 Season-5,20251228,197,Luca,20,Aggro,Jund Aggro,928036c9-11b8-493e-b9f2-8fbd3487cd19,"Minsc & Boo, Timeless Heroes","['Green', 'Red']","['Red', 'Green', 'Black']",BRG
 Season-5,20251228,197,Luca,20,Aggro,Jund Aggro,1f2f7d4b-aa65-42ed-a441-8e35be96743c,Orcish Lumberjack,['Red'],"['Red', 'Green', 'Black']",BRG
@@ -5473,6 +5472,7 @@ Season-5,20251228,197,Luca,20,Aggro,Jund Aggro,01e7b0bc-1c6c-48f4-8b72-1a809f536
 Season-5,20251228,197,Luca,20,Aggro,Jund Aggro,60d0e6a6-629a-45a7-bfcb-25ba7156788b,Elvish Mystic,['Green'],"['Red', 'Green', 'Black']",BRG
 Season-5,20251228,197,Luca,20,Aggro,Jund Aggro,f1e5cafb-b0e6-4ee5-8c58-6f8e5ef2b9da,Virtue of Persistence // Locthwain Scorn,['Black'],"['Red', 'Green', 'Black']",BRG
 Season-5,20251228,197,Luca,20,Aggro,Jund Aggro,fadb218d-29e2-42d1-a7a1-1066741d63ad,Mox Diamond,['Colorless'],"['Red', 'Green', 'Black']",BRG
+Season-5,20251228,197,Luca,20,Aggro,Jund Aggro,f9246b68-580f-4f53-883d-7900880e4b0d,Six,['Green'],"['Red', 'Green', 'Black']",BRG
 Season-5,20251228,203,Tommy,16,Combo,Combo Lands,107492bd-b32f-4692-917c-7771986b5bf7,Thespian's Stage,['Lands'],"['Green', 'Blue']",UG
 Season-5,20251228,203,Tommy,16,Combo,Combo Lands,4034e5ba-9974-43e3-bde7-8d9b4586c3a4,Once Upon a Time,['Green'],"['Green', 'Blue']",UG
 Season-5,20251228,203,Tommy,16,Combo,Combo Lands,551c0a45-9515-4e51-84e5-79703832a661,Expedition Map,['Colorless'],"['Green', 'Blue']",UG
@@ -5692,7 +5692,6 @@ Season-5,20251228,202,Thomas,26,Control-Aggro (Midrange),Simic Midrange,784287c2
 Season-5,20251228,202,Thomas,26,Control-Aggro (Midrange),Simic Midrange,2b73d294-6ab1-4051-9b0f-d8e335d37674,Unholy Heat,['Red'],"['Green', 'Blue']",UG
 Season-5,20251228,202,Thomas,26,Control-Aggro (Midrange),Simic Midrange,28667c8b-d02c-4e57-a050-1549207b65d1,Thragtusk,['Green'],"['Green', 'Blue']",UG
 Season-5,20251228,202,Thomas,26,Control-Aggro (Midrange),Simic Midrange,05e8a4ea-8c0d-4284-ac23-80e19fdde11d,Myr Battlesphere,['Colorless'],"['Green', 'Blue']",UG
-Season-5,20251228,202,Thomas,26,Control-Aggro (Midrange),Simic Midrange,f9246b68-580f-4f53-883d-7900880e4b0d,Six,['Green'],"['Green', 'Blue']",UG
 Season-5,20251228,202,Thomas,26,Control-Aggro (Midrange),Simic Midrange,33672990-4860-4aa6-ac1b-f9da66f5da59,Wurmcoil Engine,['Colorless'],"['Green', 'Blue']",UG
 Season-5,20251228,202,Thomas,26,Control-Aggro (Midrange),Simic Midrange,1f9fb33a-3b39-4aff-93b8-aedafe0ea694,Fanatic of Rhonas,['Green'],"['Green', 'Blue']",UG
 Season-5,20251228,202,Thomas,26,Control-Aggro (Midrange),Simic Midrange,19477aca-b8db-4061-9a78-ebb189a9df22,Breeding Pool,['Lands'],"['Green', 'Blue']",UG
@@ -5743,38 +5742,37 @@ Season-5,20251228,195,Joel K.,12,Control,Orzhov Tokens,07d8ae46-14ec-4878-ba8a-a
 Season-5,20251228,195,Joel K.,12,Control,Orzhov Tokens,99ff731b-8399-40c8-b539-ba6ba5783771,Wasteland,['Lands'],"['Black', 'White']",WB
 Season-5,20251228,195,Joel K.,12,Control,Orzhov Tokens,106f9629-b3aa-4703-82fb-c1e771bbce72,The Wandering Emperor,['White'],"['Black', 'White']",WB
 Season-5,20251228,195,Joel K.,12,Control,Orzhov Tokens,ab1d1461-1625-4163-aacd-a939f4871fad,Staff of the Storyteller,['White'],"['Black', 'White']",WB
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,aaae15dd-11b6-4421-99e9-365c7fe4a5d6,Embercleave,['Red'],"['Red', 'Blue']",UR
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,8c39f9b4-02b9-4d44-b8d6-4fd02ebbb0c5,"Narset, Parter of Veils",['Blue'],"['Red', 'Blue']",UR
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,da13a060-36ee-41e9-bab1-af8ddcc893b8,Norman Osborn // Green Goblin,['Blue'],"['Red', 'Blue']",UR
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,671c008a-8ff8-42d7-9e03-6d8a9ddace67,Faithless Looting,['Red'],"['Red', 'Blue']",UR
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,89175ce1-0746-4ba1-970e-617d134b0527,"Gau, Feral Youth",['Red'],"['Red', 'Blue']",UR
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,7054012b-4f9d-44a0-aaf9-7fd3bddc7b2d,Slickshot Show-Off,['Red'],"['Red', 'Blue']",UR
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,94c6fdd8-21e7-48ae-aa05-a3666b928c1a,Timetwister,['Blue'],"['Red', 'Blue']",UR
 Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,fc7d1912-7e27-49ef-bd98-375d975a42b0,Starting Town,['Lands'],"['Red', 'Blue']",UR
 Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,c14098d6-28ae-492f-8ffc-7d115d83ce6a,Summon: Good King Mog XII,['White'],"['Red', 'Blue']",UR
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,1834ac92-8b4e-4442-a834-acd580e1ef99,Jack-in-the-Mox,['Colorless'],"['Red', 'Blue']",UR
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,f9246b68-580f-4f53-883d-7900880e4b0d,Six,['Green'],"['Red', 'Blue']",UR
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,['Lands'],"['Red', 'Blue']",UR
+Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,7054012b-4f9d-44a0-aaf9-7fd3bddc7b2d,Slickshot Show-Off,['Red'],"['Red', 'Blue']",UR
 Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,db2a5e85-6cbc-43c1-9362-4056ad017ef0,Pyrokinesis,['Red'],"['Red', 'Blue']",UR
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,245cdc59-d560-4c10-b721-f51cc312e370,Mishra's Factory,['Lands'],"['Red', 'Blue']",UR
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,8db735ea-f9cf-4e3c-9200-4f180df55baa,Fractured Identity,"['Blue', 'White']","['Red', 'Blue']",UR
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,16c8d2fa-54a7-46e8-980c-905258497c90,Arid Mesa,['Lands'],"['Red', 'Blue']",UR
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,32aa6e33-221f-414c-9b51-850d97a7e051,Galvanic Discharge,['Red'],"['Red', 'Blue']",UR
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,0e606072-a3aa-4300-ba90-ec92a721fa76,"Jace, the Mind Sculptor",['Blue'],"['Red', 'Blue']",UR
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,f5fb426a-5618-4dd4-9c51-0cc847be8c1d,Multiversal Passage,['Lands'],"['Red', 'Blue']",UR
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,bf4b9a8a-b42a-46fb-b0d0-9cf800f63c8a,"Emry, Lurker of the Loch",['Blue'],"['Red', 'Blue']",UR
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,f1a21287-e244-4960-84fb-c4f6e5c346d9,Third Path Iconoclast,"['Red', 'Blue']","['Red', 'Blue']",UR
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,247939d9-87e9-4f01-b223-fb4cfa7dbbe1,Mana Leak,['Blue'],"['Red', 'Blue']",UR
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,3ca1e1de-b916-445f-b3b2-0f4d0cc7ceeb,Stern Scolding,['Blue'],"['Red', 'Blue']",UR
+Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,89175ce1-0746-4ba1-970e-617d134b0527,"Gau, Feral Youth",['Red'],"['Red', 'Blue']",UR
 Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,31b770cc-09e7-4c0b-b2a4-462ab4f7200d,Expressive Iteration,"['Red', 'Blue']","['Red', 'Blue']",UR
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,4ced112a-e775-4f97-97b3-74877e9dce12,Dragon's Rage Channeler,['Red'],"['Red', 'Blue']",UR
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,17260fff-b239-4af4-9306-3236ae3fa5a5,Thundering Falls,['Lands'],"['Red', 'Blue']",UR
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,0e51d796-7279-4c06-87f0-37adbdaa41df,Underworld Breach,['Red'],"['Red', 'Blue']",UR
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,20c4aae1-7665-4df7-bd51-a1d95bf8a17d,Murktide Regent,['Blue'],"['Red', 'Blue']",UR
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,907b3d1d-8c85-4707-80b5-c4d832df9846,Tishana's Tidebinder,['Blue'],"['Red', 'Blue']",UR
-Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,32a180dd-9641-4546-8940-9b21084f0c71,Lightning Bolt,['Red'],"['Red', 'Blue']",UR
+Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,247939d9-87e9-4f01-b223-fb4cfa7dbbe1,Mana Leak,['Blue'],"['Red', 'Blue']",UR
+Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,0e606072-a3aa-4300-ba90-ec92a721fa76,"Jace, the Mind Sculptor",['Blue'],"['Red', 'Blue']",UR
 Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,bd3d4b4b-cf31-4f89-8140-9650edb03c7b,Ancient Tomb,['Lands'],"['Red', 'Blue']",UR
+Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,8c39f9b4-02b9-4d44-b8d6-4fd02ebbb0c5,"Narset, Parter of Veils",['Blue'],"['Red', 'Blue']",UR
+Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,32aa6e33-221f-414c-9b51-850d97a7e051,Galvanic Discharge,['Red'],"['Red', 'Blue']",UR
+Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,32a180dd-9641-4546-8940-9b21084f0c71,Lightning Bolt,['Red'],"['Red', 'Blue']",UR
+Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,20c4aae1-7665-4df7-bd51-a1d95bf8a17d,Murktide Regent,['Blue'],"['Red', 'Blue']",UR
+Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,f1a21287-e244-4960-84fb-c4f6e5c346d9,Third Path Iconoclast,"['Red', 'Blue']","['Red', 'Blue']",UR
+Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,94c6fdd8-21e7-48ae-aa05-a3666b928c1a,Timetwister,['Blue'],"['Red', 'Blue']",UR
+Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,da13a060-36ee-41e9-bab1-af8ddcc893b8,Norman Osborn // Green Goblin,['Blue'],"['Red', 'Blue']",UR
+Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,['Lands'],"['Red', 'Blue']",UR
+Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,245cdc59-d560-4c10-b721-f51cc312e370,Mishra's Factory,['Lands'],"['Red', 'Blue']",UR
+Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,16c8d2fa-54a7-46e8-980c-905258497c90,Arid Mesa,['Lands'],"['Red', 'Blue']",UR
+Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,3ca1e1de-b916-445f-b3b2-0f4d0cc7ceeb,Stern Scolding,['Blue'],"['Red', 'Blue']",UR
+Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,17260fff-b239-4af4-9306-3236ae3fa5a5,Thundering Falls,['Lands'],"['Red', 'Blue']",UR
+Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,f5fb426a-5618-4dd4-9c51-0cc847be8c1d,Multiversal Passage,['Lands'],"['Red', 'Blue']",UR
+Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,1834ac92-8b4e-4442-a834-acd580e1ef99,Jack-in-the-Mox,['Colorless'],"['Red', 'Blue']",UR
+Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,907b3d1d-8c85-4707-80b5-c4d832df9846,Tishana's Tidebinder,['Blue'],"['Red', 'Blue']",UR
 Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,4cbdacc1-7a1b-4633-85f5-eb50c2bf406d,Snapcaster Mage,['Blue'],"['Red', 'Blue']",UR
+Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,4ced112a-e775-4f97-97b3-74877e9dce12,Dragon's Rage Channeler,['Red'],"['Red', 'Blue']",UR
+Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,671c008a-8ff8-42d7-9e03-6d8a9ddace67,Faithless Looting,['Red'],"['Red', 'Blue']",UR
+Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,aaae15dd-11b6-4421-99e9-365c7fe4a5d6,Embercleave,['Red'],"['Red', 'Blue']",UR
+Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,bf4b9a8a-b42a-46fb-b0d0-9cf800f63c8a,"Emry, Lurker of the Loch",['Blue'],"['Red', 'Blue']",UR
+Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,8db735ea-f9cf-4e3c-9200-4f180df55baa,Fractured Identity,"['Blue', 'White']","['Red', 'Blue']",UR
+Season-5,20251228,196,Jonsi,32,Aggro-Control (Tempo),Izzet Tempo,0e51d796-7279-4c06-87f0-37adbdaa41df,Underworld Breach,['Red'],"['Red', 'Blue']",UR
 Season-5,20251228,200,Myri,15,Aggro,Boros Aggro,ea1feac0-d3a7-45eb-9719-1cdaf51ea0b6,Mox Sapphire,['Colorless'],"['White', 'Red', 'Blue']",WUR
 Season-5,20251228,200,Myri,15,Aggro,Boros Aggro,21c950d7-b4f6-4902-8c9a-98f2933f9fa5,Adanto Vanguard,['White'],"['White', 'Red', 'Blue']",WUR
 Season-5,20251228,200,Myri,15,Aggro,Boros Aggro,b7f16fdf-a3f5-462d-a64a-789d893b6ef5,Batterskull,['Colorless'],"['White', 'Red', 'Blue']",WUR
