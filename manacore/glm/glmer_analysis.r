@@ -4,8 +4,9 @@
 # CARD IMPACT ANALYSIS: Progressive Model Complexity
 # =======================================================================
 # This script compares models with increasing complexity:
-# Version 0: win ~ has_card + elo_diff + elo_mean (baseline)
-# Version 1: win ~ has_card + elo_diff + elo_mean + archetype
+# Version 0: win ~ has_card + elo_diff (baseline)
+# Version 1: win ~ has_card + elo_diff + archetype
+# Version 2: win ~ has_card + archetype + archetype_opponent
 # =======================================================================
 
 suppressPackageStartupMessages({
@@ -107,7 +108,7 @@ cat("Card matrix created:", nrow(card_matrix), "games x",
     ncol(card_matrix), "cards\n\n")
 
 # ---------------------------------------------------------------
-# Progressive Model Versions (0-1)
+# Progressive Model Versions (0-2)
 # ---------------------------------------------------------------
 cat("Fitting progressive model versions...\n\n")
 
@@ -120,6 +121,11 @@ model_versions <- list(
   v1 = list(
     name = "Version 1: + Archetype",
     formula = win ~ has_card + elo_diff + archetype,
+    type = "glm"
+  ),
+  v2 = list(
+    name = "Version 2: Matchup Only",
+    formula = win ~ has_card + archetype + archetype_opponent,
     type = "glm"
   )
 )
@@ -147,7 +153,8 @@ for (version_id in names(model_versions)) {
     # Prepare data with factors
     df_model <- games_df %>%
       mutate(
-        archetype = as.factor(archetype)
+        archetype = as.factor(archetype),
+        archetype_opponent = as.factor(archetype_opponent)
       )
     
     # Fit model based on type
@@ -245,6 +252,17 @@ for (version_id in names(model_versions)) {
                 )[1]
               ) %>%
               mutate(archetype = as.factor(archetype))
+          }
+          
+          # Add archetype_opponent if it exists in the model
+          if ("archetype_opponent" %in% all.vars(as.formula(version$formula))) {
+            mean_data <- mean_data %>%
+              mutate(
+                archetype_opponent = names(
+                  sort(table(df_model$archetype_opponent), decreasing = TRUE)
+                )[1]
+              ) %>%
+              mutate(archetype_opponent = as.factor(archetype_opponent))
           }
           
           mean_data_with <- mean_data %>% mutate(has_card = 1)
@@ -368,13 +386,15 @@ cat("Computing model comparison metrics and effect sizes...\n")
 final_results <- final_results %>%
   mutate(
     # AIC comparison (lower is better)
-    best_aic = pmin(v0_aic, v1_aic, na.rm = TRUE),
-    aic_improvement = v0_aic - v1_aic,
+    best_aic = pmin(v0_aic, v1_aic, v2_aic, na.rm = TRUE),
+    aic_improvement_v0_to_v1 = v0_aic - v1_aic,
+    aic_improvement_v1_to_v2 = v1_aic - v2_aic,
     
-    # Effect size stability across V0 and V1
-    or_range = pmax(v0_or, v1_or, na.rm = TRUE) - 
-               pmin(v0_or, v1_or, na.rm = TRUE),
-    or_cv = or_range / ((v0_or + v1_or) / 2),
+    # Effect size stability across V0, V1, and V2
+    or_range = pmax(v0_or, v1_or, v2_or, na.rm = TRUE) - 
+               pmin(v0_or, v1_or, v2_or, na.rm = TRUE),
+    or_mean = (v0_or + v1_or + v2_or) / 3,
+    or_cv = or_range / or_mean,
     
     # Confidence based on consistency and sample size
     confidence = case_when(
@@ -383,34 +403,31 @@ final_results <- final_results %>%
       TRUE ~ "low"
     )
   ) %>%
-  arrange(desc(v1_or))
+  arrange(desc(v2_or))
 
 # IMPROVED NAMING: Add percentage and standardized versions
-if ("v1_win_rate_lift_prob" %in% names(final_results)) {
-  final_results <- final_results %>%
-    mutate(
-      # Keep probability (0-1 scale)
-      v1_win_rate_lift_prob = v1_win_rate_lift_prob,
-      v1_win_rate_lift_mean_prob = v1_win_rate_lift_mean_prob,
-      
-      # Add percentage points (0-100 scale)
-      v1_win_rate_lift_pct = v1_win_rate_lift_prob * 100,
-      v1_win_rate_lift_mean_pct = v1_win_rate_lift_mean_prob * 100,
-      
-      # STANDARDIZED: Relative to baseline win rate
-      v1_win_rate_lift_std = v1_win_rate_lift_prob / global_wr,
-      v1_win_rate_lift_mean_std = v1_win_rate_lift_mean_prob / 
-        global_wr
-    )
-}
-
-# Similar for v0 if it exists
-if ("v0_win_rate_lift_prob" %in% names(final_results)) {
-  final_results <- final_results %>%
-    mutate(
-      v0_win_rate_lift_pct = v0_win_rate_lift_prob * 100,
-      v0_win_rate_lift_std = v0_win_rate_lift_prob / global_wr
-    )
+# Do this for all versions that have win_rate_lift_prob
+for (version_id in names(model_versions)) {
+  prob_col <- paste0(version_id, "_win_rate_lift_prob")
+  mean_prob_col <- paste0(version_id, "_win_rate_lift_mean_prob")
+  
+  if (prob_col %in% names(final_results)) {
+    pct_col <- paste0(version_id, "_win_rate_lift_pct")
+    mean_pct_col <- paste0(version_id, "_win_rate_lift_mean_pct")
+    std_col <- paste0(version_id, "_win_rate_lift_std")
+    mean_std_col <- paste0(version_id, "_win_rate_lift_mean_std")
+    
+    final_results <- final_results %>%
+      mutate(
+        # Percentage points (0-100 scale)
+        !!pct_col := .data[[prob_col]] * 100,
+        !!mean_pct_col := .data[[mean_prob_col]] * 100,
+        
+        # Standardized relative to baseline win rate
+        !!std_col := .data[[prob_col]] / global_wr,
+        !!mean_std_col := .data[[mean_prob_col]] / global_wr
+      )
+  }
 }
 
 # ---------------------------------------------------------------
@@ -707,9 +724,80 @@ if (!is.null(bayes_results)) {
 }
 
 # ---------------------------------------------------------------
+# Archetype Strength Analysis (Empirical Game Win Rates)
+# ---------------------------------------------------------------
+cat("\n=== Computing Empirical Archetype Strength ===\n")
+cat("Using archetype-level game win rates\n")
+
+archetype_wr_csv <- file.path(
+  dirname(input_csv),
+  "archetype_game_winrate.csv"
+)
+
+archetype_strength <- NULL
+
+if (file.exists(archetype_wr_csv)) {
+
+  cat("Loading archetype game win rate data...\n")
+  archetype_wr <- read.csv(
+    archetype_wr_csv,
+    stringsAsFactors = FALSE
+  )
+
+  # Focus on aggregate season if present
+  if ("Season-All" %in% archetype_wr$season_id) {
+    archetype_wr <- archetype_wr %>%
+      dplyr::filter(season_id == "Season-All")
+    cat("Using Season-All aggregate data\n")
+  } else {
+    cat("WARNING: Season-All not found — using all rows\n")
+  }
+
+  # Compute global win rate (weighted)
+  global_wr <- sum(archetype_wr$games_won) /
+               sum(archetype_wr$games_played)
+
+  cat(sprintf("Global game win rate: %.4f\n", global_wr))
+
+  # Compute archetype strength metrics
+  archetype_strength <- archetype_wr %>%
+    mutate(
+      archetype_win_rate_lift =
+        game_win_rate - global_wr,
+
+      archetype_win_rate_lift_pct =
+        archetype_win_rate_lift * 100,
+
+      archetype_win_rate_lift_rel =
+        game_win_rate / global_wr
+    ) %>%
+    arrange(desc(archetype_win_rate_lift))
+
+  # Save results
+  output_path <- sub(
+    "\\.csv$",
+    "_archetype_strength_empirical.csv",
+    output_csv
+  )
+
+  write.csv(
+    archetype_strength,
+    output_path,
+    row.names = FALSE
+  )
+
+  cat("Empirical archetype strength analysis saved:\n")
+  cat(output_path, "\n")
+
+} else {
+  cat("No archetype_game_winrate.csv found — skipping analysis\n")
+}
+
+
+# ---------------------------------------------------------------
 # Save Final Results
 # ---------------------------------------------------------------
-if (!is.null(card_names_df)) {
+if (!is.null(card_names_df) && !"card_name" %in% names(final_results)) {
   final_results <- final_results %>%
     left_join(card_names_df, by = "card_id") %>%
     select(card_id, card_name, everything())
@@ -722,24 +810,26 @@ write.csv(final_results, output_csv, row.names = FALSE)
 # ---------------------------------------------------------------
 cat("\n=== Analysis Complete ===\n")
 cat("Total cards analyzed:", nrow(final_results), "\n")
+
 for (version_id in names(model_versions)) {
   or_col <- paste0(version_id, "_or")
-  conv_col <- paste0(version_id, "_converged")
-  
-  cat(sprintf("\n%s:\n", model_versions[[version_id]]$name))
-  cat(sprintf("  Estimates: %d\n", 
-              sum(!is.na(final_results[[or_col]]))))
-  if (conv_col %in% names(final_results)) {
-    cat(sprintf("  Converged: %d\n", 
-                sum(final_results[[conv_col]], na.rm = TRUE)))
-  }
   sig_raw_col <- paste0(version_id, "_significant_raw")
   sig_fdr_col <- paste0(version_id, "_significant_fdr")
-  cat(sprintf("  Significant (raw p < 0.05): %d\n", 
-              sum(final_results[[sig_raw_col]], na.rm = TRUE)))
-  cat(sprintf("  Significant (FDR < 0.05): %d\n", 
-              sum(final_results[[sig_fdr_col]], na.rm = TRUE)))
   sep_col <- paste0(version_id, "_separation")
+
+  cat(sprintf("\n%s:\n", model_versions[[version_id]]$name))
+  cat(sprintf(
+    "  Estimates: %d\n",
+    sum(!is.na(final_results[[or_col]]))
+  ))
+  cat(sprintf(
+    "  Significant (raw p < 0.05): %d\n",
+    sum(final_results[[sig_raw_col]], na.rm = TRUE)
+  ))
+  cat(sprintf(
+    "  Significant (FDR < 0.05): %d\n",
+    sum(final_results[[sig_fdr_col]], na.rm = TRUE)
+  ))
   if (sep_col %in% names(final_results)) {
     n_sep <- sum(final_results[[sep_col]], na.rm = TRUE)
     if (n_sep > 0) {
@@ -748,102 +838,90 @@ for (version_id in names(model_versions)) {
   }
 }
 
-if (!is.null(ridge_results)) {
-  cat(sprintf("\nRidge Regression:\n"))
-  cat(sprintf("  Estimates: %d\n", 
-              sum(!is.na(final_results$ridge_or))))
-  cat(sprintf("  Mean abs coefficient: %.4f\n", 
-              mean(abs(final_results$ridge_coef), na.rm = TRUE)))
-}
+# ---------------------------------------------------------------
+# Top Cards by Win-Rate Lift (V2 preferred)
+# ---------------------------------------------------------------
+cat("\n=== Top 10 Cards by Win-Rate Lift (V2 Matchup Model) ===\n")
+cols_v2_lift <- c(
+  "card_id", "card_name",
+  "v2_win_rate_lift_std",
+  "v2_win_rate_lift_pct",
+  "v2_or", "v2_p",
+  "v2_significant_raw",
+  "n_games", "confidence"
+)
 
-if (!is.null(bayes_results)) {
-  cat(sprintf("\nBayesian Hierarchical:\n"))
-  cat(sprintf("  Estimates: %d\n", 
-              sum(!is.na(final_results$bayes_or))))
-  cat(sprintf("  Credibly positive: %d\n", 
-              sum(final_results$bayes_or_lower > 1.0, 
-                  na.rm = TRUE)))
-  cat(sprintf("  Credibly negative: %d\n", 
-              sum(final_results$bayes_or_upper < 1.0, 
-                  na.rm = TRUE)))
+if (all(cols_v2_lift %in% names(final_results))) {
+  print(
+    final_results %>%
+      filter(!is.na(v2_win_rate_lift_std)) %>%
+      arrange(desc(v2_win_rate_lift_std)) %>%
+      select(any_of(cols_v2_lift)) %>%
+      head(10),
+    row.names = FALSE
+  )
+} else {
+  cat("V2 lift columns not available — skipping\n")
 }
 
 # ---------------------------------------------------------------
-# Top Cards by Different Metrics
+# Model Progression Comparison (Stability)
 # ---------------------------------------------------------------
-cat("\n=== Top 10 Cards by Win-Rate Lift ",
-    "(V1 Archetype-Adjusted) ===\n")
-cat("(Standardized by baseline win rate)\n")
-cols_lift <- c("card_id", "card_name", 
-               "v1_win_rate_lift_std", 
-               "v1_win_rate_lift_pct", 
-               "v1_or", "v1_p", "v1_significant_raw", 
-               "n_games", "confidence")
-print(final_results %>%
-  filter(!is.na(v1_win_rate_lift_std)) %>%
-  arrange(desc(v1_win_rate_lift_std)) %>%
-  select(any_of(cols_lift)) %>%
-  head(10), row.names = FALSE)
-
-cat("\n=== Top 10 Cards by Version 1 Odds Ratio ===\n")
-cols_to_show <- c("card_id", "card_name", "v1_or", 
-                  "v1_or_lower", "v1_or_upper", 
-                  "v1_win_rate_lift_pct", "v1_p", 
-                  "v1_significant_raw", "n_games", "confidence")
-print(final_results %>%
-  filter(!is.na(v1_or)) %>%
-  arrange(desc(v1_or)) %>%
-  select(any_of(cols_to_show)) %>%
-  head(10), row.names = FALSE)
-
 cat("\n=== Model Progression Comparison (Top 10 by games) ===\n")
-comparison_cols <- c("card_id", "card_name", "n_games", 
-                     "v0_or", "v1_or", 
-                     "v1_win_rate_lift_pct", "or_cv")
-print(final_results %>%
-  arrange(desc(n_games)) %>%
-  select(any_of(comparison_cols)) %>%
-  head(10), row.names = FALSE)
+comparison_cols <- c(
+  "card_id", "card_name", "n_games",
+  "v0_or", "v1_or", "v2_or",
+  "v2_win_rate_lift_pct", "or_cv"
+)
 
-if (!is.null(ridge_results)) {
-  cat("\n=== Ridge vs V1 Comparison (Top 10 by games) ===\n")
-  print(final_results %>%
-    filter(!is.na(ridge_or), !is.na(v1_or)) %>%
+print(
+  final_results %>%
     arrange(desc(n_games)) %>%
-    mutate(
-      or_diff = abs(v1_or - ridge_or),
-      shrinkage_pct = if("v1_coef" %in% names(.)) {
-        100 * (1 - abs(ridge_coef) / abs(v1_coef))
-      } else {
-        100 * (1 - abs(ridge_coef) / abs(log(v1_or)))
-      }
-    ) %>%
-    select(any_of(c("card_id", "card_name", "n_games", 
-                    "v1_or", "ridge_or", 
-                    "or_diff", "shrinkage_pct"))) %>%
-    head(10), row.names = FALSE)
+    select(any_of(comparison_cols)) %>%
+    head(10),
+  row.names = FALSE
+)
+
+# ---------------------------------------------------------------
+# Ridge vs V2 Comparison
+# ---------------------------------------------------------------
+if (!is.null(ridge_results)) {
+  cat("\n=== Ridge vs V2 Comparison (Top 10 by games) ===\n")
+  print(
+    final_results %>%
+      filter(!is.na(ridge_or), !is.na(v2_or)) %>%
+      arrange(desc(n_games)) %>%
+      mutate(or_diff = abs(v2_or - ridge_or)) %>%
+      select(
+        card_id, card_name, n_games,
+        v2_or, ridge_or, or_diff
+      ) %>%
+      head(10),
+    row.names = FALSE
+  )
 }
 
+# ---------------------------------------------------------------
+# Bayesian vs V2 Comparison
+# ---------------------------------------------------------------
 if (!is.null(bayes_results)) {
-  cat("\n=== Bayesian Hierarchical vs V1 Comparison ",
-      "(Top 10 by games) ===\n")
-  print(final_results %>%
-    filter(!is.na(bayes_or), !is.na(v1_or)) %>%
-    arrange(desc(n_games)) %>%
-    mutate(
-      or_diff = abs(v1_or - bayes_or),
-      shrinkage = (v1_or - 1) / (bayes_or - 1)
-    ) %>%
-    select(any_of(c("card_id", "card_name", "n_games", 
-                    "v1_or", "bayes_or", 
-                    "or_diff", "shrinkage"))) %>%
-    head(10), row.names = FALSE)
+  cat("\n=== Bayesian Hierarchical vs V2 Comparison ===\n")
+  print(
+    final_results %>%
+      filter(!is.na(bayes_or), !is.na(v2_or)) %>%
+      arrange(desc(n_games)) %>%
+      mutate(or_diff = abs(v2_or - bayes_or)) %>%
+      select(
+        card_id, card_name, n_games,
+        v2_or, bayes_or, or_diff
+      ) %>%
+      head(10),
+    row.names = FALSE
+  )
 }
 
 cat("\nResults saved to:", output_csv, "\n")
-cat("Intermediate results (GLM only) saved to:", 
-    intermediate_csv, "\n")
-cat("\nNote: Default minimum games threshold is 100. ",
-    "Adjust with:\n")
-cat("  Rscript glmer_analysis.R input.csv output.csv ",
-    "[min_games]\n")
+cat("Intermediate results (GLM only) saved to:", intermediate_csv, "\n")
+cat("\nNote: Default minimum games threshold is 100.\n")
+cat("Usage:\n")
+cat("  Rscript glmer_analysis.R input.csv output.csv [min_games]\n")
