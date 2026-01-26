@@ -443,12 +443,10 @@ if (GLMNET_AVAILABLE) {
     X <- card_matrix
     y <- games_df$win
     
-    # Add control variables (elo_diff, elo_mean)
+    # Add control variables (elo_diff)
     X_controls <- cbind(
       X,
-      elo_diff = games_df$elo_diff,
-      elo_mean = games_df$elo_mean
-    )
+      elo_diff = games_df$elo_diff)
     
     # Fit ridge model with cross-validation to select lambda
     cat("Running cross-validation to select lambda...\n")
@@ -563,16 +561,21 @@ if (RSTANARM_AVAILABLE) {
     
     model <- stan_glmer(
       win ~ 
-      scale(elo_diff) + 
-      scale(elo_mean) + 
-      archetype + 
-      (1 + scale(elo_diff) | card_id),
+        scale(elo_diff) + 
+        archetype + 
+        (1 + scale(elo_diff) | card_id),
       data = game_card_long,
       family = binomial(link = "logit"),
-      # Loosen from 0.7 to 1.0 - allows larger fixed effects
-      prior = normal(0, 1.0, autoscale = TRUE),
-      # Loosen from 0.5 to 1.0 - allows more card-to-card variation
-      prior_covariance = decov(scale = 1.0),
+      
+      # Looser fixed effects - allows ORs of 0.1 to 10
+      prior = normal(0, 2.5, autoscale = FALSE),
+      
+      # Looser random effects - allows more card variation
+      prior_covariance = decov(regularization = 1, 
+                              concentration = 1, 
+                              shape = 1, 
+                              scale = 2.5),
+      
       chains = 4,
       iter = 2000,
       warmup = 1000,
