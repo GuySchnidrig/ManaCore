@@ -214,7 +214,7 @@ def main():
     games_df = create_game_level_data_fast(matches_df)
 
     # Save games data
-    games_outpath = os.path.join(processed_dir, "games_for_r.csv")
+    games_outpath = os.path.join(processed_dir, "games_for_analysis.csv")
     print(f"\nSaving games data to: {games_outpath}")
     games_df.to_csv(games_outpath, index=False)
 
@@ -224,7 +224,7 @@ def main():
     card_lookup.to_csv(card_lookup_outpath, index=False)
 
     print("\nDone! Now run:")
-    print(f"  Rscript glmer_analysis.R {games_outpath} {os.path.join(processed_dir, 'card_glmer_results_from_r.csv')} 50")
+    print(f'  python card_impact_analysis.py "D:\\MTG\\ManaCore\\data\\processed\\games_for_analysis.csv" output.csv 75')
     print("=" * 80)
 
 
