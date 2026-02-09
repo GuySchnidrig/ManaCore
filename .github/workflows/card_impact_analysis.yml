@@ -55,12 +55,20 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Commit updated CSV files (excluding large CSV)
+      - name: Commit updated CSV files (excluding ignored)
         run: |
-            # Add all CSVs except the large one
-            git add data/processed/*.csv ':!data/processed/games_for_analysis.csv'
-            # Only commit if there are changes
+            # List all non-ignored CSVs in data/processed
+            files_to_add=$(git ls-files --exclude-standard --others "data/processed/*.csv")
+            echo "Files to add: $files_to_add"
+            
+            # Only add if there are any
+            if [ -n "$files_to_add" ]; then
+            git add $files_to_add
             git diff --cached --quiet || git commit -m "Update processed CSV files [skip ci]"
+            else
+            echo "No CSV files to commit."
+            fi
+
             
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
