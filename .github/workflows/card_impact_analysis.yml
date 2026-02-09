@@ -2,15 +2,6 @@ name: ManaCore Card Impact Analysis
 
 on:
   workflow_dispatch:  # run manually
-  # Optional triggers if you ever want automatic runs
-  # push:
-  #   branches: [main]
-  #   paths:
-  #     - 'ManaCore/manacore/glm/**'
-  # pull_request:
-  #   branches: [main]
-  #   paths:
-  #     - 'ManaCore/manacore/glm/**'
 
 jobs:
   run-analysis:
@@ -66,7 +57,9 @@ jobs:
 
       - name: Commit updated CSV files (excluding large CSV)
         run: |
-            git add data/processed/*.csv
+            # Add all CSVs except the large one
+            git add data/processed/*.csv ':!data/processed/games_for_analysis.csv'
+            # Only commit if there are changes
             git diff --cached --quiet || git commit -m "Update processed CSV files [skip ci]"
             
       - name: Push changes
