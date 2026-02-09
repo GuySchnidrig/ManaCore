@@ -49,11 +49,11 @@ jobs:
         
       - name: Run prepare_data_for_card_impact_analysis.py
         run: |
-            python ./manacore/glm/prepare_data_for_card_impact_analysis.py
+            python ManaCore/manacore/glm/prepare_data_for_card_impact_analysis.py
 
       - name: Run card impact analysis
         run: |
-            python ./card_impact_analysis.py "data/processed/games_for_analysis.csv" output.csv 75
+            python ManaCore/manacore/glm/card_impact_analysis.py "ManaCore/data/processed/games_for_analysis.csv" output.csv 75
 
       - name: Remove large CSV
         run: |
