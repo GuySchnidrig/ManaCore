@@ -66,9 +66,9 @@ jobs:
 
       - name: Commit updated CSV files (excluding large CSV)
         run: |
-          git add ManaCore/data/processed/*.csv
-          git diff --cached --quiet || git commit -m "Update processed CSV files [skip ci]"
-
+            git add data/processed/*.csv
+            git diff --cached --quiet || git commit -m "Update processed CSV files [skip ci]"
+            
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
