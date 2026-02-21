@@ -47,8 +47,7 @@ Season-4,Splinter-Twin,6,8,0.75
 Season-4,Storm,10,20,0.5
 Season-4,White Aggro,5,12,0.4166666666666667
 Season-5,Aggro-Combo Lands,1,4,0.25
-Season-5,Artifact,0,4,0.0
-Season-5,Artifacts,11,24,0.4583333333333333
+Season-5,Artifacts,11,28,0.39285714285714285
 Season-5,Azorius Blink,4,12,0.3333333333333333
 Season-5,Azorius Combo Control,2,4,0.5
 Season-5,Azorius Control,4,8,0.5
@@ -91,8 +90,7 @@ Season-5,Storm,7,12,0.5833333333333334
 Season-5,Sultai Control,1,4,0.25
 Season-5,White Aggro,1,4,0.25
 Season-All,Aggro-Combo Lands,1,4,0.25
-Season-All,Artifact,0,4,0.0
-Season-All,Artifacts,18,56,0.32142857142857145
+Season-All,Artifacts,18,60,0.3
 Season-All,Artifacts Control,1,8,0.125
 Season-All,Azorius Blink,9,28,0.32142857142857145
 Season-All,Azorius Combo Control,2,4,0.5

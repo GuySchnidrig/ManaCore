@@ -149,8 +149,7 @@ Season-5,Lukas Stalder,2,Draw 7 Combo-Control,2,9,0.2222222222222222,1,4,0.25
 Season-5,Lukas Stalder,2,Reanimator,3,10,0.3,1,4,0.25
 Season-5,Lukas Stalder,2,Reanimator-Sneak,5,9,0.5555555555555556,2,4,0.5
 Season-5,Lukas Wyss,29,Nadu Midrange,1,9,0.1111111111111111,0,4,0.0
-Season-5,Manuel,8,Artifact,1,9,0.1111111111111111,0,4,0.0
-Season-5,Manuel,8,Artifacts,3,9,0.3333333333333333,1,4,0.25
+Season-5,Manuel,8,Artifacts,4,18,0.2222222222222222,1,8,0.125
 Season-5,Manuel,8,Azorius Blink,2,8,0.25,1,4,0.25
 Season-5,Matthias,21,Landfall,3,11,0.2727272727272727,0,4,0.0
 Season-5,Matthias,21,Orzhov Control,6,9,0.6666666666666666,2,4,0.5
@@ -271,8 +270,7 @@ Season-All,Lukas Stalder,2,Reanimator-Sneak,5,9,0.5555555555555556,2,4,0.5
 Season-All,Lukas Stalder,2,Sneak and Flash,6,10,0.6,2,4,0.5
 Season-All,Lukas Stalder,2,White Aggro,5,8,0.625,2,4,0.5
 Season-All,Lukas Wyss,29,Nadu Midrange,1,9,0.1111111111111111,0,4,0.0
-Season-All,Manuel,8,Artifact,1,9,0.1111111111111111,0,4,0.0
-Season-All,Manuel,8,Artifacts,3,9,0.3333333333333333,1,4,0.25
+Season-All,Manuel,8,Artifacts,4,18,0.2222222222222222,1,8,0.125
 Season-All,Manuel,8,Azorius Blink,2,8,0.25,1,4,0.25
 Season-All,Manuel,8,Boros Aggro,24,39,0.6153846153846154,9,16,0.5625
 Season-All,Manuel,8,Combo Lands,4,11,0.3636363636363636,1,4,0.25
