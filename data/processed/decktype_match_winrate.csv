@@ -48,22 +48,23 @@ Season-4,Storm,10,20,0.5
 Season-4,White Aggro,5,12,0.4166666666666667
 Season-5,Aggro-Combo Lands,1,4,0.25
 Season-5,Artifacts,11,28,0.39285714285714285
+Season-5,Artifacts Control,3,4,0.75
 Season-5,Azorius Blink,4,12,0.3333333333333333
 Season-5,Azorius Combo Control,2,4,0.5
 Season-5,Azorius Control,4,8,0.5
 Season-5,Birthing Pod,1,4,0.25
-Season-5,Boros Aggro,22,36,0.6111111111111112
+Season-5,Boros Aggro,23,40,0.575
 Season-5,Combo Lands,3,4,0.75
 Season-5,Combo Mix,2,4,0.5
 Season-5,Dimir Control,5,8,0.625
 Season-5,Dimir Tempo,1,4,0.25
-Season-5,Domain Control,5,8,0.625
+Season-5,Domain Control,6,12,0.5
 Season-5,Draw 7,6,12,0.5
 Season-5,Draw 7 Combo-Control,1,4,0.25
 Season-5,Golgari Midrange,0,4,0.0
-Season-5,Greenbased Aggro-Combo,2,4,0.5
-Season-5,Grixis Control,4,8,0.5
-Season-5,Gruul Aggro,5,8,0.625
+Season-5,Greenbased Aggro-Combo,2,8,0.25
+Season-5,Grixis Control,7,12,0.5833333333333334
+Season-5,Gruul Aggro,7,12,0.5833333333333334
 Season-5,Izzet Control,0,4,0.0
 Season-5,Izzet Tempo,6,12,0.5
 Season-5,Jund Aggro,2,4,0.5
@@ -75,14 +76,15 @@ Season-5,Mardu Aggro,4,8,0.5
 Season-5,Nadu Midrange,3,12,0.25
 Season-5,Naya Aggro,3,4,0.75
 Season-5,Opposition,4,8,0.5
-Season-5,Orzhov Blink,2,4,0.5
-Season-5,Orzhov Control,2,4,0.5
+Season-5,Orzhov Blink,4,8,0.5
+Season-5,Orzhov Control,5,8,0.625
 Season-5,Orzhov Tokens,1,4,0.25
 Season-5,Rakdos Aggro,2,8,0.25
 Season-5,Reanimator,9,24,0.375
+Season-5,Reanimator-Flash,3,4,0.75
 Season-5,Reanimator-Sneak,2,4,0.5
-Season-5,Selesnya Aggro,2,4,0.5
-Season-5,Simic Midrange,3,4,0.75
+Season-5,Selesnya Aggro,3,8,0.375
+Season-5,Simic Midrange,7,12,0.5833333333333334
 Season-5,Sneak Attack,2,4,0.5
 Season-5,Sneak and Flash,4,4,1.0
 Season-5,Sneak and Show,4,4,1.0
@@ -91,29 +93,29 @@ Season-5,Sultai Control,1,4,0.25
 Season-5,White Aggro,1,4,0.25
 Season-All,Aggro-Combo Lands,1,4,0.25
 Season-All,Artifacts,18,60,0.3
-Season-All,Artifacts Control,1,8,0.125
+Season-All,Artifacts Control,4,12,0.3333333333333333
 Season-All,Azorius Blink,9,28,0.32142857142857145
 Season-All,Azorius Combo Control,2,4,0.5
 Season-All,Azorius Control,8,20,0.4
 Season-All,Azorius Tempo,2,8,0.25
 Season-All,Birthing Pod,8,12,0.6666666666666666
 Season-All,Birthing Pod Combo-Control,2,4,0.5
-Season-All,Boros Aggro,48,88,0.5454545454545454
+Season-All,Boros Aggro,49,92,0.532608695652174
 Season-All,Combo Lands,9,16,0.5625
 Season-All,Combo Mix,10,20,0.5
 Season-All,Combo-Control Lands,7,16,0.4375
 Season-All,Dimir Control,5,8,0.625
 Season-All,Dimir Tempo,5,8,0.625
-Season-All,Domain Control,15,28,0.5357142857142857
+Season-All,Domain Control,16,32,0.5
 Season-All,Draw 7,11,24,0.4583333333333333
 Season-All,Draw 7 Combo-Control,5,12,0.4166666666666667
 Season-All,Esper Control,1,4,0.25
 Season-All,Esper Tempo,1,4,0.25
 Season-All,Flash,2,4,0.5
 Season-All,Golgari Midrange,1,12,0.08333333333333333
-Season-All,Greenbased Aggro-Combo,14,28,0.5
-Season-All,Grixis Control,11,20,0.55
-Season-All,Gruul Aggro,15,24,0.625
+Season-All,Greenbased Aggro-Combo,14,32,0.4375
+Season-All,Grixis Control,14,24,0.5833333333333334
+Season-All,Gruul Aggro,17,28,0.6071428571428571
 Season-All,Izzet Control,0,4,0.0
 Season-All,Izzet Tempo,9,16,0.5625
 Season-All,Jeskai Control,2,4,0.5
@@ -130,20 +132,20 @@ Season-All,Nadu Combo-Control,2,4,0.5
 Season-All,Nadu Midrange,6,20,0.3
 Season-All,Naya Aggro,3,4,0.75
 Season-All,Opposition,4,8,0.5
-Season-All,Orzhov Blink,2,4,0.5
-Season-All,Orzhov Control,6,8,0.75
+Season-All,Orzhov Blink,4,8,0.5
+Season-All,Orzhov Control,9,12,0.75
 Season-All,Orzhov Tempo,2,4,0.5
 Season-All,Orzhov Tokens,1,4,0.25
 Season-All,Rakdos Aggro,9,24,0.375
 Season-All,Rakdos Aggro-Combo,3,4,0.75
 Season-All,Reanimator,26,60,0.43333333333333335
 Season-All,Reanimator Combo-Control,2,4,0.5
-Season-All,Reanimator-Flash,1,4,0.25
+Season-All,Reanimator-Flash,4,8,0.5
 Season-All,Reanimator-Sneak,8,12,0.6666666666666666
 Season-All,Red Aggro,4,8,0.5
-Season-All,Selesnya Aggro,4,8,0.5
+Season-All,Selesnya Aggro,5,12,0.4166666666666667
 Season-All,Selesnya Midrange,4,16,0.25
-Season-All,Simic Midrange,3,4,0.75
+Season-All,Simic Midrange,7,12,0.5833333333333334
 Season-All,Simic Tempo,3,8,0.375
 Season-All,Sneak Attack,4,8,0.5
 Season-All,Sneak and Flash,6,8,0.75
