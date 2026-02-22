@@ -116,7 +116,7 @@ Season-5,Matthias,21,Control-Aggro (Midrange),3,11,0.2727272727272727,0,4,0.0
 Season-5,Myri,15,Aggro,9,19,0.4736842105263157,3,8,0.375
 Season-5,Myri,15,Aggro-Combo,3,8,0.375,1,4,0.25
 Season-5,Myri,15,Control,6,16,0.375,2,8,0.25
-Season-5,Mäxu,34,Aggro,0,8,0.0,0,4,0.0
+Season-5,Mäxu,34,Aggro-Combo,0,8,0.0,0,4,0.0
 Season-5,Nici,31,Combo,0,8,0.0,0,4,0.0
 Season-5,Noe T.,11,Aggro,3,10,0.3,1,4,0.25
 Season-5,Noe T.,11,Aggro-Combo,5,9,0.5555555555555556,2,4,0.5
@@ -203,7 +203,7 @@ Season-All,Myri,15,Aggro-Control (Tempo),2,8,0.25,1,4,0.25
 Season-All,Myri,15,Combo,5,10,0.5,2,4,0.5
 Season-All,Myri,15,Control,6,16,0.375,2,8,0.25
 Season-All,Myri,15,Control-Aggro (Midrange),4,10,0.4,1,4,0.25
-Season-All,Mäxu,34,Aggro,0,8,0.0,0,4,0.0
+Season-All,Mäxu,34,Aggro-Combo,0,8,0.0,0,4,0.0
 Season-All,Nici,31,Combo,0,8,0.0,0,4,0.0
 Season-All,Noe T.,11,Aggro,14,31,0.4516129032258064,5,12,0.4166666666666667
 Season-All,Noe T.,11,Aggro-Combo,5,9,0.5555555555555556,2,4,0.5
