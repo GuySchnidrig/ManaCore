@@ -48,27 +48,25 @@ jobs:
 
       - name: Remove large CSV
         run: |
-          rm -f ManaCore/data/processed/games_for_analysis.csv
+          rm -f data/processed/games_for_analysis.csv
 
       - name: Configure git for committing
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
       - name: Commit updated CSV files (excluding ignored)
-        run: |
-            # List all non-ignored CSVs in data/processed
-            files_to_add=$(git ls-files --exclude-standard --others "data/processed/*.csv")
-            echo "Files to add: $files_to_add"
-            
-            # Only add if there are any
-            if [ -n "$files_to_add" ]; then
-            git add $files_to_add
-            git diff --cached --quiet || git commit -m "Update processed CSV files [skip ci]"
-            else
-            echo "No CSV files to commit."
-            fi
 
+        run: |
+            # Add all CSV files in data/processed (both modified and new)
+            # Git will respect .gitignore automatically
+            git add data/processed/*.csv 2>/dev/null || true
+            
+            # Check if there are any changes staged
+            if git diff --cached --quiet; then
+              echo "No CSV files to commit."
+            else
+              git commit -m "Update processed CSV files [skip ci]"
+            fi
             
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
