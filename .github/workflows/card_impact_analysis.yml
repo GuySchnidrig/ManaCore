@@ -44,7 +44,7 @@ jobs:
 
       - name: Run card impact analysis
         run: |
-            python manacore/glm/card_impact_analysis.py "data/processed/games_for_analysis.csv" output.csv 75
+            python manacore/glm/card_impact_analysis.py "data/processed/games_for_analysis.csv" output.csv 17
 
       - name: Remove large CSV
         run: |
