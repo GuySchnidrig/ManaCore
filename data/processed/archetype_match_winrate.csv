@@ -6,17 +6,17 @@ Season-4,Combo,66,152,0.4342105263157895
 Season-4,Combo-Control,29,52,0.5576923076923077
 Season-4,Control,51,108,0.4722222222222222
 Season-4,Control-Aggro (Midrange),16,44,0.36363636363636365
-Season-5,Aggro,53,100,0.53
-Season-5,Aggro-Combo,9,24,0.375
+Season-5,Aggro,60,112,0.5357142857142857
+Season-5,Aggro-Combo,12,32,0.375
 Season-5,Aggro-Control (Tempo),9,20,0.45
-Season-5,Combo,41,92,0.44565217391304346
-Season-5,Combo-Control,11,20,0.55
-Season-5,Control,60,132,0.45454545454545453
-Season-5,Control-Aggro (Midrange),15,36,0.4166666666666667
-Season-All,Aggro,107,208,0.5144230769230769
-Season-All,Aggro-Combo,24,52,0.46153846153846156
+Season-5,Combo,43,100,0.43
+Season-5,Combo-Control,13,24,0.5416666666666666
+Season-5,Control,60,136,0.4411764705882353
+Season-5,Control-Aggro (Midrange),19,40,0.475
+Season-All,Aggro,114,220,0.5181818181818182
+Season-All,Aggro-Combo,27,60,0.45
 Season-All,Aggro-Control (Tempo),24,52,0.46153846153846156
-Season-All,Combo,107,244,0.4385245901639344
-Season-All,Combo-Control,40,72,0.5555555555555556
-Season-All,Control,111,240,0.4625
-Season-All,Control-Aggro (Midrange),31,80,0.3875
+Season-All,Combo,109,252,0.43253968253968256
+Season-All,Combo-Control,42,76,0.5526315789473685
+Season-All,Control,111,244,0.45491803278688525
+Season-All,Control-Aggro (Midrange),35,84,0.4166666666666667
