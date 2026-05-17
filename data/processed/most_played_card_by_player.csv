@@ -1,11 +1,11 @@
 player,player_id,scryfallId,card_name,pick_count
 Andrin,5,d2e27911-87cb-49a0-a34f-6afe4bddd592,Phyrexian Metamorph,7
-Beni,35,2398892d-28e9-4009-81ec-0d544af79d2b,Ancestral Recall,2
+Beni,35,1834ac92-8b4e-4442-a834-acd580e1ef99,Jack-in-the-Mox,2
 Dimlas,1,310a1c46-8331-4a09-9fcb-d942f8102364,Thoughtseize,8
 Elie,17,04fc99dc-bfbe-4567-b791-6b1db96471ec,Reanimate,1
 Felix,25,006d2bf1-20f7-4b09-8d98-8233d91682bd,Flame Slash,1
-Filipe,23,01c6f877-6b00-4d57-8a88-36cd3b16edbc,Llanowar Elves,1
-Fubu,33,01006833-6007-4c16-9ebb-20d31c60a57a,Taiga,1
+Filipe,23,4720b4f2-e6af-4223-9250-a0ed21ed5693,Pest Infestation,2
+Fubu,33,0027e5ca-8046-40a0-bd73-79be55f28bff,Remand,1
 Gianni,28,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,2
 Guy,10,0f7585c8-9e21-4eef-afc1-2852de23db2f,Polluted Delta,4
 Ivo,18,3a2d7cf9-dddb-4de3-b4f2-c52e3ec8fb4b,Brain Freeze,4
@@ -14,23 +14,24 @@ Joel R.,3,01794178-cf41-454c-ac37-1d8b18e42db2,Green Sun's Zenith,1
 Jonas W.,27,0463e989-ba32-4a46-a82f-e0d6daf3cd51,Sulfuric Vortex,1
 Jonsi,32,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,1
 Kas,30,3faa8c5e-9e1b-4cee-b322-a033bf33dcbc,Hymn to Tourach,2
+Kaspar,36,006d2bf1-20f7-4b09-8d98-8233d91682bd,Flame Slash,1
 Luca,20,4df8aabc-7fcb-4b7b-980b-18f499e6c170,Hullbreacher,3
 Lukas Stalder,2,0cb33b46-4d1b-4f97-bfdc-d815aee111da,Mana Crypt,6
 Lukas Wyss,29,1163fe84-c5d5-42c8-b7cd-d206a9b0bd3f,Tireless Provisioner,1
 Manuel,8,21c950d7-b4f6-4902-8c9a-98f2933f9fa5,Adanto Vanguard,5
-Matthias,21,0055ea30-20fb-4324-a632-8fed87628f05,"Boseiju, Who Endures",3
+Matthias,21,7c884e1e-fecb-4330-b3de-5fc2a60f7173,Kolaghan's Command,4
 Myri,15,01c6f877-6b00-4d57-8a88-36cd3b16edbc,Llanowar Elves,4
 Mäxu,34,01006833-6007-4c16-9ebb-20d31c60a57a,Taiga,1
 Nici,31,01978fe5-00a9-4add-ae2a-b4c2572ffb9a,Vendilion Clique,1
 Noe T.,11,89f5cc05-5d9d-4709-b3c5-a6249c294acc,Hexdrinker,5
 Pali,14,553fb946-2706-475b-89f9-e4355ec9ea2b,March of Otherworldly Light,3
 Sam,7,5d10b752-d9cb-419d-a5c4-d4ee1acb655e,"Teferi, Hero of Dominaria",2
-Sili,6,01e7b0bc-1c6c-48f4-8b72-1a809f536c6c,Birds of Paradise,6
-Thomas,26,1e2fee55-227b-4373-a3f7-b463f220033f,Tinker,3
+Sili,6,01e7b0bc-1c6c-48f4-8b72-1a809f536c6c,Birds of Paradise,7
+Thomas,26,0e606072-a3aa-4300-ba90-ec92a721fa76,"Jace, the Mind Sculptor",3
 Thomas R.,,05e8a4ea-8c0d-4284-ac23-80e19fdde11d,Myr Battlesphere,1
 Tinu,4,63c59228-c742-4abd-b4d7-9f7880190e95,Windswept Heath,5
 Tobi,13,079e6263-e54c-4899-a336-5315909b9322,"Magda, Brazen Outlaw",2
 Tommy,16,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,5
-Valentin,19,05e8a4ea-8c0d-4284-ac23-80e19fdde11d,Myr Battlesphere,3
+Valentin,19,35f1a6ba-e46f-44fb-93f4-fb883d677b36,Baleful Mastery,4
 Yannik,9,e41cf82d-3213-47ce-a015-6e51a8b07e4f,Questing Beast,4
 Zoel,24,0359f212-9564-41a9-870b-d2c57455a695,Brainstorm,3
