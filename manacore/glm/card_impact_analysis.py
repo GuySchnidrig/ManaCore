@@ -5,7 +5,7 @@ CARD IMPACT ANALYSIS: Progressive Model Complexity
 =======================================================================
 Version 0: win ~ has_card + elo_diff (baseline)
 Version 1: win ~ has_card + elo_diff + archetype
-Version 2: win ~ has_card + archetype + archetype_opponent
+Version 2: win ~ has_card + elo_diff + archetype + archetype_opponent
 
 Group analysis: runs the same v0/v1/v2 models per card group
 (Fetchlands, Shocklands, Fast Mana, etc.) using has_any_<group>
@@ -577,7 +577,7 @@ def main():
     model_versions = {
         'v0': {'name': 'Version 0: Baseline',    'formula': 'win ~ has_card + elo_diff'},
         'v1': {'name': 'Version 1: + Archetype', 'formula': 'win ~ has_card + elo_diff + archetype'},
-        'v2': {'name': 'Version 2: Matchup Only','formula': 'win ~ has_card + archetype + archetype_opponent'},
+        'v2': {'name': 'Version 2: Matchup Only','formula': 'win ~ has_card + elo_diff + archetype + archetype_opponent'},
     }
 
     print("Fitting progressive model versions...\n")
@@ -655,13 +655,30 @@ def main():
     final_results['or_cv'] = final_results['or_range'] / final_results['or_mean']
 
     def assign_confidence(row):
-        if row['n_games'] >= 200 and row['or_cv'] < 0.1:
-            return 'high'
-        elif row['n_games'] >= 100 and row['or_cv'] < 0.2:
-            return 'medium'
-        else:
-            return 'low'
 
+        p_adj = row.get('v2_p_adj', np.nan)
+        se = row.get('v2_se', np.nan)
+        or_cv = row.get('or_cv', np.nan)
+
+        if pd.isna(se):
+            return 'unknown'
+
+        if (
+            p_adj < 0.05 and
+            se < 0.15 and
+            or_cv < 0.10
+        ):
+            return 'high'
+
+        if (
+            p_adj < 0.20 and
+            se < 0.35 and
+            or_cv < 0.25
+        ):
+            return 'medium'
+
+    return 'low'
+        
     final_results['confidence'] = final_results.apply(assign_confidence, axis=1)
 
     for version_id in model_versions.keys():
