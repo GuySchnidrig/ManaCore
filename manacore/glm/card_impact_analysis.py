@@ -5,7 +5,7 @@ CARD IMPACT ANALYSIS: Progressive Model Complexity
 =======================================================================
 Version 0: win ~ has_card + elo_diff (baseline)
 Version 1: win ~ has_card + elo_diff + archetype
-Version 2: win ~ has_card + elo_diff + archetype + archetype_opponent
+Version 2: win ~ has_card + archetype + archetype_opponent
 
 Group analysis: runs the same v0/v1/v2 models per card group
 (Fetchlands, Shocklands, Fast Mana, etc.) using has_any_<group>
@@ -210,15 +210,39 @@ def fit_glm_model(formula: str, data: pd.DataFrame):
         return None
 
 
-def compute_win_rate_lift(model, df_model, formula, treatment_col, global_wr) -> float:
+def compute_win_rate_lift(
+    model,
+    df_model: pd.DataFrame,
+    formula: str,
+    treatment_col: str,
+    global_wr: float
+) -> Tuple[float, float]:
     try:
         df_with = df_model.copy()
         df_with[treatment_col] = 1
         df_without = df_model.copy()
         df_without[treatment_col] = 0
-        return float((model.predict(df_with) - model.predict(df_without)).mean())
+
+        p_with = model.predict(df_with)
+        p_without = model.predict(df_without)
+        win_rate_lift_prob = (p_with - p_without).mean()
+
+        mean_data = pd.DataFrame({'elo_diff': [df_model['elo_diff'].mean()], treatment_col: [0]})
+        if 'archetype' in formula:
+            mean_data['archetype'] = df_model['archetype'].mode()[0]
+        if 'archetype_opponent' in formula:
+            mean_data['archetype_opponent'] = df_model['archetype_opponent'].mode()[0]
+
+        mean_data_with = mean_data.copy()
+        mean_data_with[treatment_col] = 1
+
+        p_with_mean = model.predict(mean_data_with)[0]
+        p_without_mean = model.predict(mean_data)[0]
+        win_rate_lift_mean_prob = p_with_mean - p_without_mean
+
+        return win_rate_lift_prob, win_rate_lift_mean_prob
     except Exception:
-        return np.nan
+        return np.nan, np.nan
 
 
 # ---------------------------------------------------------------------------
@@ -252,13 +276,14 @@ def analyze_card_with_models(
             p = model.pvalues['has_card']
             separation_warning = abs(est) > 5 or se > 3
 
-            win_rate_lift = compute_win_rate_lift(
-    model, df_model, version_info['formula'], 'has_card', global_wr
-)
+            win_rate_lift_prob, win_rate_lift_mean_prob = compute_win_rate_lift(
+                model, df_model, version_info['formula'], 'has_card', global_wr
+            )
 
             if card_idx == 0:
                 print(f"  Debug for card {card} ({version_id}):")
-                print(f"    win_rate_lift_prob: {win_rate_lift:.6f}")
+                print(f"    win_rate_lift_prob: {win_rate_lift_prob:.6f}")
+                print(f"    win_rate_lift_mean_prob: {win_rate_lift_mean_prob:.6f}")
 
             version_results[version_id] = pd.DataFrame([{
                 'card_id': card,
@@ -268,7 +293,8 @@ def analyze_card_with_models(
                 'or_upper': np.exp(est + 1.96 * se),
                 'aic': model.aic,
                 'separation': separation_warning,
-                'win_rate_lift_prob': win_rate_lift,
+                'win_rate_lift_prob': win_rate_lift_prob,
+                'win_rate_lift_mean_prob': win_rate_lift_mean_prob
             }])
         else:
             version_results[version_id] = pd.DataFrame()
@@ -314,9 +340,9 @@ def analyze_group_with_models(
             p = model.pvalues[group_col]
             separation_warning = abs(est) > 5 or se > 3
 
-            win_rate_lift_prob = compute_win_rate_lift(
-    model, df_model, formula, group_col, global_wr
-)
+            win_rate_lift_prob, win_rate_lift_mean_prob = compute_win_rate_lift(
+                model, df_model, formula, group_col, global_wr
+            )
 
             version_results[version_id] = pd.DataFrame([{
                 'group_id': group_slug,
@@ -329,6 +355,7 @@ def analyze_group_with_models(
                 'aic': model.aic,
                 'separation': separation_warning,
                 'win_rate_lift_prob': win_rate_lift_prob,
+                'win_rate_lift_mean_prob': win_rate_lift_mean_prob
             }])
         else:
             version_results[version_id] = pd.DataFrame()
@@ -404,9 +431,12 @@ def run_group_analysis(
     # Win-rate lift columns
     for version_id in model_versions.keys():
         prob_col = f"{version_id}_win_rate_lift_prob"
+        mean_prob_col = f"{version_id}_win_rate_lift_mean_prob"
         if prob_col in group_final.columns:
             group_final[f"{version_id}_win_rate_lift_pct"] = group_final[prob_col] * 100
+            group_final[f"{version_id}_win_rate_lift_mean_pct"] = group_final[mean_prob_col] * 100
             group_final[f"{version_id}_win_rate_lift_std"] = group_final[prob_col] / global_wr
+            group_final[f"{version_id}_win_rate_lift_mean_std"] = group_final[mean_prob_col] / global_wr
 
     # OR stability
     or_cols = [f"{v}_or" for v in model_versions.keys() if f"{v}_or" in group_final.columns]
@@ -425,7 +455,8 @@ def run_group_analysis(
     # Summary table
     print("\n=== Group Analysis Summary ===")
     summary_cols = ['group_name', 'n_games_with_group',
-                    'v0_or', 'v1_or', 'v2_or', 'v2_p',
+                    'v0_or', 'v1_or', 'v2_or',
+                    'v2_win_rate_lift_pct', 'v2_p',
                     'v2_significant_raw', 'v2_significant_fdr']
     summary_cols = [c for c in summary_cols if c in group_final.columns]
     if summary_cols:
@@ -546,7 +577,7 @@ def main():
     model_versions = {
         'v0': {'name': 'Version 0: Baseline',    'formula': 'win ~ has_card + elo_diff'},
         'v1': {'name': 'Version 1: + Archetype', 'formula': 'win ~ has_card + elo_diff + archetype'},
-        'v2': {'name': 'Version 2: Matchup Only','formula': 'win ~ has_card + elo_diff + archetype + archetype_opponent'},
+        'v2': {'name': 'Version 2: Matchup Only','formula': 'win ~ has_card + archetype + archetype_opponent'},
     }
 
     print("Fitting progressive model versions...\n")
@@ -623,22 +654,10 @@ def main():
     final_results['or_mean'] = final_results[['v0_or', 'v1_or', 'v2_or']].mean(axis=1)
     final_results['or_cv'] = final_results['or_range'] / final_results['or_mean']
 
-    def assign_confidence(row, ci_tight: float = 0.3, ci_wide: float = 0.6) -> str:
-        """
-        Confidence based on v2 CI width in OR units.
-        Thresholds: tight < 0.3, wide > 0.6 (on OR scale).
-        More principled than n_games + or_cv heuristic.
-        """
-        or_lower = row.get('v2_or_lower', np.nan)
-        or_upper = row.get('v2_or_upper', np.nan)
-
-        if pd.isna(or_lower) or pd.isna(or_upper):
-            return 'unknown'
-
-        ci_width = or_upper - or_lower
-        if ci_width < ci_tight:
+    def assign_confidence(row):
+        if row['n_games'] >= 200 and row['or_cv'] < 0.1:
             return 'high'
-        elif ci_width < ci_wide:
+        elif row['n_games'] >= 100 and row['or_cv'] < 0.2:
             return 'medium'
         else:
             return 'low'
@@ -647,9 +666,12 @@ def main():
 
     for version_id in model_versions.keys():
         prob_col = f"{version_id}_win_rate_lift_prob"
+        mean_prob_col = f"{version_id}_win_rate_lift_mean_prob"
         if prob_col in final_results.columns:
             final_results[f"{version_id}_win_rate_lift_pct"] = final_results[prob_col] * 100
+            final_results[f"{version_id}_win_rate_lift_mean_pct"] = final_results[mean_prob_col] * 100
             final_results[f"{version_id}_win_rate_lift_std"] = final_results[prob_col] / global_wr
+            final_results[f"{version_id}_win_rate_lift_mean_std"] = final_results[mean_prob_col] / global_wr
 
     final_results = final_results.sort_values('v2_or', ascending=False)
 
@@ -704,14 +726,14 @@ def main():
             print(f"  Separation warnings: {final_results[sep_col].sum()}")
 
     print("\n=== Top 10 Cards by Win-Rate Lift (V2 Matchup Model) ===")
-    cols_v2 = ['card_id', 'card_name', 'v2_win_rate_lift_std',
+    cols_v2 = ['card_id', 'card_name', 'v2_win_rate_lift_std', 'v2_win_rate_lift_pct',
                'v2_or', 'v2_p', 'v2_significant_raw', 'n_games', 'confidence']
     cols_v2 = [c for c in cols_v2 if c in final_results.columns]
     if 'v2_win_rate_lift_std' in final_results.columns:
         print(final_results.dropna(subset=['v2_win_rate_lift_std']).nlargest(10, 'v2_win_rate_lift_std')[cols_v2].to_string(index=False))
 
     print("\n=== Model Progression Comparison (Top 10 by games) ===")
-    comp_cols = ['card_id', 'card_name', 'n_games', 'v0_or', 'v1_or', 'v2_or', 'or_cv']
+    comp_cols = ['card_id', 'card_name', 'n_games', 'v0_or', 'v1_or', 'v2_or', 'v2_win_rate_lift_pct', 'or_cv']
     comp_cols = [c for c in comp_cols if c in final_results.columns]
     print(final_results.nlargest(10, 'n_games')[comp_cols].to_string(index=False))
 
