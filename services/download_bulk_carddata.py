@@ -14,13 +14,17 @@ CUBE_MAINBOARD_PATH = "data/processed/cube_mainboard.csv"
 OUTPUT_DIR = "data/cards"
 OUTPUT_FILE = os.path.join(OUTPUT_DIR, "scryfall_filtered_cards.json.gz")
 
+SCRYFALL_HEADERS = {
+    "User-Agent": "ManaCore/1.0",
+    "Accept": "application/json;q=0.9,*/*;q=0.8",
+}
 
 # -----------------------
 # Helper Functions
 # -----------------------
 def fetch_bulk_file_url(bulk_type: str = BULK_TYPE) -> str:
     """Fetch the download URL for a specific bulk data type."""
-    response = requests.get(SCRYFALL_BULK_URL)
+    response = requests.get(SCRYFALL_BULK_URL, headers=SCRYFALL_HEADERS)
     response.raise_for_status()
     data = response.json()
     
@@ -30,11 +34,10 @@ def fetch_bulk_file_url(bulk_type: str = BULK_TYPE) -> str:
     
     raise ValueError(f"No bulk file found for type '{bulk_type}'")
 
-
 def download_and_filter_bulk(url: str, drafted_ids: set, save_path: str):
     """Download the bulk file, filter by drafted_ids, and save gzip JSON."""
     print("Downloading Scryfall bulk data...")
-    response = requests.get(url)
+    response = requests.get(url, headers=SCRYFALL_HEADERS)
     response.raise_for_status()
 
     # Load full JSON array
@@ -48,7 +51,6 @@ def download_and_filter_bulk(url: str, drafted_ids: set, save_path: str):
     with gzip.open(save_path, "wt", encoding="utf-8") as f:
         json.dump(filtered_cards, f)
     print(f"Saved filtered cards to: {save_path}")
-
 
 # -----------------------
 # Main Script
