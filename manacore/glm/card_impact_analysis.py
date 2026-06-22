@@ -303,7 +303,7 @@ def analyze_card_with_models(
 
 
 # ---------------------------------------------------------------------------
-# Group analysis  <- NEW
+# Group analysis
 # ---------------------------------------------------------------------------
 
 def analyze_group_with_models(
@@ -655,30 +655,26 @@ def main():
     final_results['or_cv'] = final_results['or_range'] / final_results['or_mean']
 
     def assign_confidence(row):
-
         p_adj = row.get('v2_p_adj', np.nan)
         se = row.get('v2_se', np.nan)
         or_cv = row.get('or_cv', np.nan)
 
         if pd.isna(se):
             return 'unknown'
-
         if (
             p_adj < 0.05 and
             se < 0.15 and
             or_cv < 0.10
         ):
             return 'high'
-
         if (
             p_adj < 0.20 and
             se < 0.35 and
             or_cv < 0.25
         ):
             return 'medium'
+        return 'low'
 
-    return 'low'
-        
     final_results['confidence'] = final_results.apply(assign_confidence, axis=1)
 
     for version_id in model_versions.keys():
