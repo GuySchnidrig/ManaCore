@@ -113,12 +113,14 @@ Season-5,Andrin,5,Boros Aggro,7,9,0.7777777777777778,3,4,0.75
 Season-5,Andrin,5,Dimir Control,5,9,0.5555555555555556,2,4,0.5
 Season-5,Andrin,5,Dimir Tempo,4,9,0.4444444444444444,1,4,0.25
 Season-5,Andrin,5,Gruul Aggro,7,11,0.6363636363636364,3,4,0.75
+Season-5,Andrin,5,Izzet Tempo,7,12,0.5833333333333334,3,4,0.75
 Season-5,Andrin,5,Orzhov Control,6,9,0.6666666666666666,3,4,0.75
 Season-5,Andrin,5,Reanimator,11,19,0.5789473684210527,4,8,0.5
 Season-5,Andrin,5,Selesnya Aggro,8,18,0.4444444444444444,4,8,0.5
 Season-5,Beni,35,Azorius Blink,3,10,0.3,0,4,0.0
 Season-5,Beni,35,Grixis Control,4,11,0.3636363636363636,1,4,0.25
 Season-5,Beni,35,Naya Midrange,4,9,0.4444444444444444,2,4,0.5
+Season-5,Beni,35,Reanimator,5,9,0.5555555555555556,2,4,0.5
 Season-5,Dimlas,1,Artifacts,7,11,0.6363636363636364,3,4,0.75
 Season-5,Dimlas,1,Birthing Pod,7,11,0.6363636363636364,3,4,0.75
 Season-5,Dimlas,1,Boros Aggro,20,30,0.6666666666666666,9,12,0.75
@@ -126,6 +128,7 @@ Season-5,Dimlas,1,Domain Control,3,9,0.3333333333333333,1,4,0.25
 Season-5,Dimlas,1,Grixis Control,6,10,0.6,2,4,0.5
 Season-5,Dimlas,1,Lifeloss Control,3,9,0.3333333333333333,1,4,0.25
 Season-5,Dimlas,1,Nadu Midrange,5,9,0.5555555555555556,2,4,0.5
+Season-5,Dimlas,1,Opposition,5,11,0.4545454545454545,2,4,0.5
 Season-5,Dimlas,1,Rakdos Aggro,6,8,0.75,3,4,0.75
 Season-5,Dimlas,1,Sneak and Flash,8,10,0.8,4,4,1.0
 Season-5,Felix,25,Izzet Tempo,6,10,0.6,3,4,0.75
@@ -139,7 +142,9 @@ Season-5,Guy,10,Azorius Control,4,9,0.4444444444444444,2,4,0.5
 Season-5,Guy,10,Boros Aggro,6,8,0.75,3,4,0.75
 Season-5,Guy,10,Draw 7,7,10,0.7,3,4,0.75
 Season-5,Guy,10,Grixis Tempo,5,9,0.5555555555555556,2,4,0.5
+Season-5,Guy,10,Gruul Aggro,5,10,0.5,2,4,0.5
 Season-5,Guy,10,Orzhov Blink,5,9,0.5555555555555556,2,4,0.5
+Season-5,Ivo,18,Azorius Combo Control,5,12,0.4166666666666667,1,4,0.25
 Season-5,Ivo,18,Combo Mix,5,9,0.5555555555555556,2,4,0.5
 Season-5,Ivo,18,Greenbased Aggro-Combo,4,8,0.5,2,4,0.5
 Season-5,Ivo,18,Red Aggro Strom,5,11,0.4545454545454545,2,4,0.5
@@ -190,6 +195,7 @@ Season-5,Noe T.,11,White Aggro,3,10,0.3,1,4,0.25
 Season-5,Pali,14,Artifacts,2,8,0.25,1,4,0.25
 Season-5,Pali,14,Lifeloss Control,2,8,0.25,0,4,0.0
 Season-5,Sam,7,Rakdos Aggro,3,10,0.3,1,4,0.25
+Season-5,Sili,6,Birthing Pod,2,10,0.2,0,4,0.0
 Season-5,Sili,6,Boros Aggro,5,11,0.4545454545454545,2,4,0.5
 Season-5,Sili,6,Domain Control,4,9,0.4444444444444444,2,4,0.5
 Season-5,Sili,6,Draw 7,2,8,0.25,1,4,0.25
@@ -200,6 +206,7 @@ Season-5,Sili,6,Opposition,4,9,0.4444444444444444,2,4,0.5
 Season-5,Sili,6,Selesnya Midrange,6,8,0.75,2,4,0.5
 Season-5,Thomas,26,Azorius Combo Control,5,10,0.5,2,4,0.5
 Season-5,Thomas,26,Grixis Control,14,19,0.7368421052631579,6,8,0.75
+Season-5,Thomas,26,Orzhov Control,7,11,0.6363636363636364,3,4,0.75
 Season-5,Thomas,26,Simic Midrange,15,20,0.75,7,8,0.875
 Season-5,Tinu,4,Artifacts,6,9,0.6666666666666666,3,4,0.75
 Season-5,Tinu,4,Domain Control,5,9,0.5555555555555556,2,4,0.5
@@ -208,6 +215,7 @@ Season-5,Tinu,4,Landfall,6,9,0.6666666666666666,3,4,0.75
 Season-5,Tinu,4,Opposition,4,10,0.4,2,4,0.5
 Season-5,Tinu,4,Selesnya Aggro,2,8,0.25,1,4,0.25
 Season-5,Tinu,4,Sneak and Flash,3,8,0.375,1,4,0.25
+Season-5,Tobi,13,Reanimator,6,9,0.6666666666666666,3,4,0.75
 Season-5,Tommy,16,Birthing Pod,5,11,0.4545454545454545,1,4,0.25
 Season-5,Tommy,16,Combo Lands,7,10,0.7,3,4,0.75
 Season-5,Tommy,16,Dimir Control,7,8,0.875,3,4,0.75
@@ -232,6 +240,7 @@ Season-All,Andrin,5,Dimir Tempo,4,9,0.4444444444444444,1,4,0.25
 Season-All,Andrin,5,Domain Control,6,11,0.5454545454545454,2,4,0.5
 Season-All,Andrin,5,Grixis Control,6,11,0.5454545454545454,2,4,0.5
 Season-All,Andrin,5,Gruul Aggro,7,11,0.6363636363636364,3,4,0.75
+Season-All,Andrin,5,Izzet Tempo,7,12,0.5833333333333334,3,4,0.75
 Season-All,Andrin,5,Orzhov Control,6,9,0.6666666666666666,3,4,0.75
 Season-All,Andrin,5,Rakdos Aggro,4,10,0.4,2,4,0.5
 Season-All,Andrin,5,Rakdos Aggro-Combo,7,8,0.875,3,4,0.75
@@ -241,6 +250,7 @@ Season-All,Andrin,5,Simic Tempo,5,9,0.5555555555555556,2,4,0.5
 Season-All,Beni,35,Azorius Blink,3,10,0.3,0,4,0.0
 Season-All,Beni,35,Grixis Control,4,11,0.3636363636363636,1,4,0.25
 Season-All,Beni,35,Naya Midrange,4,9,0.4444444444444444,2,4,0.5
+Season-All,Beni,35,Reanimator,5,9,0.5555555555555556,2,4,0.5
 Season-All,Dimlas,1,Artifacts,7,11,0.6363636363636364,3,4,0.75
 Season-All,Dimlas,1,Birthing Pod,21,31,0.6774193548387096,10,12,0.8333333333333334
 Season-All,Dimlas,1,Boros Aggro,27,41,0.6585365853658537,12,16,0.75
@@ -250,6 +260,7 @@ Season-All,Dimlas,1,Grixis Control,6,10,0.6,2,4,0.5
 Season-All,Dimlas,1,Lifeloss Control,3,9,0.3333333333333333,1,4,0.25
 Season-All,Dimlas,1,Lurrus Control,12,19,0.631578947368421,5,8,0.625
 Season-All,Dimlas,1,Nadu Midrange,5,9,0.5555555555555556,2,4,0.5
+Season-All,Dimlas,1,Opposition,5,11,0.4545454545454545,2,4,0.5
 Season-All,Dimlas,1,Orzhov Control,8,8,1.0,4,4,1.0
 Season-All,Dimlas,1,Rakdos Aggro,6,8,0.75,3,4,0.75
 Season-All,Dimlas,1,Reanimator-Sneak,6,9,0.6666666666666666,3,4,0.75
@@ -271,12 +282,14 @@ Season-All,Guy,10,Boros Aggro,6,8,0.75,3,4,0.75
 Season-All,Guy,10,Draw 7,13,19,0.6842105263157895,5,8,0.625
 Season-All,Guy,10,Draw 7 Combo-Control,6,9,0.6666666666666666,3,4,0.75
 Season-All,Guy,10,Grixis Tempo,5,9,0.5555555555555556,2,4,0.5
+Season-All,Guy,10,Gruul Aggro,5,10,0.5,2,4,0.5
 Season-All,Guy,10,Jeskai Control,4,8,0.5,2,4,0.5
 Season-All,Guy,10,Mardu Midrange,6,10,0.6,3,4,0.75
 Season-All,Guy,10,Orzhov Blink,5,9,0.5555555555555556,2,4,0.5
 Season-All,Guy,10,Orzhov Tempo,5,9,0.5555555555555556,2,4,0.5
 Season-All,Guy,10,Reanimator,3,10,0.3,1,4,0.25
 Season-All,Guy,10,Splinter-Twin,6,9,0.6666666666666666,3,4,0.75
+Season-All,Ivo,18,Azorius Combo Control,5,12,0.4166666666666667,1,4,0.25
 Season-All,Ivo,18,Boros Aggro,9,20,0.45,3,8,0.375
 Season-All,Ivo,18,Combo Mix,5,9,0.5555555555555556,2,4,0.5
 Season-All,Ivo,18,Combo-Control Lands,6,9,0.6666666666666666,3,4,0.75
@@ -369,6 +382,7 @@ Season-All,Sam,7,Artifacts Control,2,7,0.2857142857142857,1,4,0.25
 Season-All,Sam,7,Domain Control,6,11,0.5454545454545454,2,4,0.5
 Season-All,Sam,7,Rakdos Aggro,3,10,0.3,1,4,0.25
 Season-All,Sili,6,Azorius Control,5,8,0.625,2,4,0.5
+Season-All,Sili,6,Birthing Pod,2,10,0.2,0,4,0.0
 Season-All,Sili,6,Birthing Pod Combo-Control,5,11,0.4545454545454545,2,4,0.5
 Season-All,Sili,6,Boros Aggro,5,11,0.4545454545454545,2,4,0.5
 Season-All,Sili,6,Combo-Control Lands,3,9,0.3333333333333333,1,4,0.25
@@ -384,6 +398,7 @@ Season-All,Sili,6,Red Aggro,7,9,0.7777777777777778,3,4,0.75
 Season-All,Sili,6,Selesnya Midrange,6,8,0.75,2,4,0.5
 Season-All,Thomas,26,Azorius Combo Control,5,10,0.5,2,4,0.5
 Season-All,Thomas,26,Grixis Control,14,19,0.7368421052631579,6,8,0.75
+Season-All,Thomas,26,Orzhov Control,7,11,0.6363636363636364,3,4,0.75
 Season-All,Thomas,26,Simic Midrange,15,20,0.75,7,8,0.875
 Season-All,Tinu,4,Artifacts,6,9,0.6666666666666666,3,4,0.75
 Season-All,Tinu,4,Domain Control,10,18,0.5555555555555556,4,8,0.5
@@ -399,6 +414,7 @@ Season-All,Tinu,4,Sneak and Flash,3,8,0.375,1,4,0.25
 Season-All,Tobi,13,Azorius Blink,6,10,0.6,2,4,0.5
 Season-All,Tobi,13,Boros Aggro,8,17,0.4705882352941176,3,8,0.375
 Season-All,Tobi,13,Greenbased Aggro-Combo,6,12,0.5,2,4,0.5
+Season-All,Tobi,13,Reanimator,6,9,0.6666666666666666,3,4,0.75
 Season-All,Tommy,16,Azorius Control,2,8,0.25,1,4,0.25
 Season-All,Tommy,16,Azorius Tempo,5,9,0.5555555555555556,2,4,0.5
 Season-All,Tommy,16,Birthing Pod,5,11,0.4545454545454545,1,4,0.25

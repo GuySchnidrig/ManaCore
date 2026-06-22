@@ -7502,3 +7502,234 @@ Season-5,20260517,261,Valentin,19,Aggro,Golgari Midrange,d5806e68-1054-458e-866d
 Season-5,20260517,261,Valentin,19,Aggro,Golgari Midrange,3b1e92b4-6e53-4dba-a572-c67e01965ac5,Abrupt Decay,"['Black', 'Green']","['Green', 'Black']",BG
 Season-5,20260517,261,Valentin,19,Aggro,Golgari Midrange,cdfadb17-76ad-4d4d-9fa7-33c4b88b4c0a,Sowing Mycospawn,['Green'],"['Green', 'Black']",BG
 Season-5,20260517,261,Valentin,19,Aggro,Golgari Midrange,906b6e99-128f-4c11-8daf-16099d35b0d4,Assassin's Trophy,"['Black', 'Green']","['Green', 'Black']",BG
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,c2089ec9-0665-448f-bfe9-d181de127814,Brazen Borrower // Petty Theft,['Blue'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,2ba70366-b6ae-423a-a8d8-29d2b8afd939,"Ivora, Insatiable Heir",['Red'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,2b73d294-6ab1-4051-9b0f-d8e335d37674,Unholy Heat,['Red'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,2e139ad1-1079-49e9-babd-6399c44ad333,Seasoned Pyromancer,['Red'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,e20da6b5-1057-4a28-9e85-07de714e262f,"Wan Shi Tong, Librarian",['Blue'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,09fd2d9c-1793-4beb-a3fb-7a869f660cd4,Bonecrusher Giant // Stomp,['Red'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,2dc16614-5cf8-444d-a5ae-cac25018af68,Burst Lightning,['Red'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,fa7a55aa-ae61-4933-b7a4-dcc55dac6fcd,"Inti, Seneschal of the Sun",['Red'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,bd8fa327-dd41-4737-8f19-2cf5eb1f7cdd,Black Lotus,['Colorless'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,ff84ea71-e477-44f7-a3f8-77fef708efeb,Thieving Skydiver,['Blue'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,ce35e6fb-ff54-44c4-a216-7ddd37f46882,Screaming Nemesis,['Red'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,f05e9a3e-8a35-4687-85cb-e31b3927a5e2,Daze,['Blue'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,a3bb2881-e8fb-4fba-a9f9-d93e6ca24378,"Laelia, the Blade Reforged",['Red'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,a1febcf1-afa4-4406-9ac1-5bf98b2765d2,Time Walk,['Blue'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,327cf118-cc92-4073-85d0-94d2a0a6989a,Scalding Tarn,['Lands'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,1af92296-455a-425e-9397-a96d09937767,Incinerate,['Red'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,866b7fd4-86e3-4b42-b1ea-33bad0db1f9f,Prismari Command,"['Red', 'Blue']","['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,504a69eb-3c2d-4bb1-b117-252b15acf0c2,Mana Confluence,['Lands'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,c7bbb911-9de2-455d-9677-e1004db65dbd,"Chandra, Torch of Defiance",['Red'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,4acaef84-55d1-43dc-b10a-696182e6709b,Repeal,['Blue'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,054f2276-2dd5-43da-bb26-c57c560861fe,Steam Vents,['Lands'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,985bdb0c-ce6c-4506-8163-76f3b2fdf5fb,Lose Focus,['Blue'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,819a513c-3be6-4bdc-8ba6-1f7326a8f3ea,Fiery Confluence,['Red'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,54e0c2cd-fa5f-427d-8e15-6066f002a8e3,Chainsaw,['Red'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,['Lands'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,4ced112a-e775-4f97-97b3-74877e9dce12,Dragon's Rage Channeler,['Red'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,f46a9329-7b91-441d-8653-50c1152c9120,"Kellan, Planar Trailblazer",['Red'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,7832abb5-5107-4603-904e-491b221bd3e3,Smuggler's Copter,['Colorless'],"['Blue', 'Red']",UR
+Season-5,20260621,262,Andrin,5,Aggro-Control (Tempo),Izzet Tempo,c8f0b123-fdb0-4f3e-ba78-fa155c227e20,Greasewrench Goblin,['Red'],"['Blue', 'Red']",UR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,187b6719-e5ed-4615-a00b-3313ceca055b,Currency Converter,['Colorless'],"['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,fa7b7897-36e0-415a-8bb7-602886164852,Show and Tell,['Blue'],"['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,b50e1800-a45c-43bd-8886-8a06145d9346,Recurring Nightmare,['Black'],"['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,0a786855-6eb4-42c0-a528-4842db46809d,Stock Up,['Blue'],"['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,441f8b2f-c8cb-4340-a92f-116c2276e906,Frantic Search,['Blue'],"['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,18bd50f2-c3ba-4217-a2d5-bb771e199706,Vampiric Tutor,['Black'],"['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,6da09e6a-2965-4855-bd41-41b41ba188fb,Through the Breach,['Red'],"['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,672b9b16-daef-44e6-9a3a-cfd9f3c78bc7,Pentad Prism,['Colorless'],"['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,310a1c46-8331-4a09-9fcb-d942f8102364,Thoughtseize,['Black'],"['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,b51666ae-2aef-4cb1-9cd4-44aec81530f8,Griselbrand,['Black'],"['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,cb94a02f-4660-45b6-8a39-941b710cf8f3,Collective Brutality,['Black'],"['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,1453f92e-df2d-4789-aa1b-a5b5c51567d4,Preordain,['Blue'],"['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,95c14c4d-6c16-4826-8d93-d89ad04aee09,"Etali, Primal Conqueror // Etali, Primal Sickness",['Red'],"['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,4cbdacc1-7a1b-4633-85f5-eb50c2bf406d,Snapcaster Mage,['Blue'],"['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,2a717b98-cdac-416d-bf6c-f6b6638e65d1,"Tamiyo, Inquisitive Student // Tamiyo, Seasoned Scholar",['Blue'],"['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,4a1f905f-1d55-4d02-9d24-e58070793d3f,"Atraxa, Grand Unifier","['Black', 'Green', 'Blue', 'White']","['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,416d2d51-8f29-4e95-b037-e8c32b081e6c,Mana Drain,['Blue'],"['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,89af0f45-c11c-4f13-9950-b1489440ee5b,Chain Lightning,['Red'],"['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,ca4c8b04-66af-4cb3-8003-9088d8344b20,Alpha Deathclaw,"['Black', 'Green']","['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,f0192cf7-3391-4720-b9c8-72dec5dde01e,Bloodtithe Harvester,"['Black', 'Red']","['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,a6539e26-b63b-4725-9407-caaf451de084,Troll of Khazad-dûm,['Black'],"['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,9814d8e8-c462-41ca-9909-1c659f488543,Lotus Petal,['Colorless'],"['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,c8090bcf-e17a-4110-a518-77ccd045b18f,Charming Scoundrel,['Red'],"['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,54f449ff-4025-465e-9ec5-a5cf42c4c9d3,Xander's Lounge,['Lands'],"['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,68c72226-6f52-4322-8b14-18737293dfa0,Bloodstained Mire,['Lands'],"['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,263,Beni,35,Combo,Reanimator,6a058e68-70af-4a64-859c-c881e5578368,Chrome Mox,['Colorless'],"['Blue', 'Black', 'Red']",UBR
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,0eee981e-5d26-4810-90e1-432f3c3107f2,Reclamation Sage,['Green'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,3462a3d0-5552-49fa-9eb7-100960c55891,"Oko, Thief of Crowns","['Green', 'Blue']","['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,05e8a4ea-8c0d-4284-ac23-80e19fdde11d,Myr Battlesphere,['Colorless'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,70496f16-c4c0-4c03-beef-454eb4824cd1,Deathrite Shaman,['Black'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,d40b65c1-b24d-492d-81b9-d8474ebdc08c,Sylvan Caryatid,['Green'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,9417f14c-a853-42c6-a992-29139484260a,Ignoble Hierarch,['Green'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,c14098d6-28ae-492f-8ffc-7d115d83ce6a,Summon: Good King Mog XII,['White'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,1c0f2873-5849-4cab-855a-2fbbc41dbb6c,Chaos Defiler,"['Black', 'Red']","['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,825969b9-3c70-4fca-8cab-696e9ca7cdb2,Prismatic Ending,['White'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,01e7b0bc-1c6c-48f4-8b72-1a809f536c6c,Birds of Paradise,['Green'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,95be2701-af7c-483e-8165-e8bd4b2774ed,Opposition,['Blue'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,5b8ba842-c662-4686-bca3-93ddb7fa11a6,Mother of Runes,['White'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,30377bf0-d9b1-4c14-8dde-f74b1e02d604,Gilded Goose,['Green'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,079e6263-e54c-4899-a336-5315909b9322,"Magda, Brazen Outlaw",['Red'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,eca8d6f8-c6f1-437c-99e2-4281eae14a6f,Fateful Absence,['White'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,89f5cc05-5d9d-4709-b3c5-a6249c294acc,Hexdrinker,['Green'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,3d8ca18d-9099-4f1e-95c1-f04da58a26bd,"Gut, True Soul Zealot",['Red'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,a8069994-b103-40dc-9e14-062004914ec8,Cathar Commando,['White'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,71384418-173a-4f77-adab-56e52fa23692,Delighted Halfling,['Green'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,b045c28a-39f9-4cd9-8f3a-a626b697f409,Cathartic Pyre,['Red'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,9d3a7998-ccac-45ad-a4e9-3a2cb057f63b,Elite Spellbinder,['White'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,6f2cec5d-50ea-4d0f-8925-eba06222d015,"Shelinda, Yevon Acolyte","['Green', 'White']","['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,f33d3948-fe7b-4c3b-ab67-1022623fbb2b,"Toby, Beastie Befriender",['White'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,4720b4f2-e6af-4223-9250-a0ed21ed5693,Pest Infestation,['Green'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,49bb0ad3-1082-41f1-82a4-52a4006cc9b6,"Leovold, Emissary of Trest","['Black', 'Green', 'Blue']","['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,652236c2-84ef-45e4-b5fc-ed6170bc3d6c,Meticulous Archive,['Lands'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,229a0d4a-3777-451d-a2fb-f1a2fdf8019f,Spara's Headquarters,['Lands'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,0e9aeaa8-9a75-4719-992f-cbb316f72175,Savannah,['Lands'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,377cee38-e769-47b0-abd5-0f528600f36a,Badlands,['Lands'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,25b0b816-0583-44aa-9dc5-f3ff48993a51,Gaea's Cradle,['Lands'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,bf220c06-3cce-4bdd-aa58-83940c223e9c,Commercial District,['Lands'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,0f7585c8-9e21-4eef-afc1-2852de23db2f,Polluted Delta,['Lands'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,5260f8ae-805b-4eae-badf-62de0f768867,Hedge Maze,['Lands'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,264,Dimlas,1,Control-Aggro (Midrange),Opposition,57fb0fa7-0c5c-4a75-9461-c51403c30282,Foreboding Landscape,['Lands'],"['Green', 'White', 'Red']",WRG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,19adde22-e5eb-4815-beb6-c520b3274cc9,Lotus Cobra,['Green'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,a87606cc-fbf0-4e2c-9798-f1c935d0573d,Esika's Chariot,['Green'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,d0e3e7b3-7ba9-47a2-b46c-a40bffb445e2,Twisted Landscape,['Lands'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,b277752b-430a-4f09-8a98-b72f813dd52e,Bountiful Landscape,['Lands'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,224d904a-5972-4152-878a-9a922e7a55b6,"Titania, Protector of Argoth",['Green'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,aced2c55-7543-4076-bcdd-36c4d649b8ae,Mox Emerald,['Colorless'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,be77b98a-dd79-477c-8ab2-7ebf5637a89e,Headliner Scarlett,['Red'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,f61693a2-7042-44e0-85ba-9bf12ab94e7e,Suplex,['Red'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,340c5799-4964-44dd-8c48-8f3f3aba5211,Badgermole Cub,['Green'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,a6d9b8d6-1e97-4e9c-b0c4-3b71734134a4,"Scarlet Spider, Ben Reilly","['Green', 'Red']","['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,006d2bf1-20f7-4b09-8d98-8233d91682bd,Flame Slash,['Red'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,d9482aab-6ddf-48e1-84fa-b13d5ff81e69,Icetill Explorer,['Green'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,265522eb-4f6a-40e7-b374-3833fa63c80b,Formidable Speaker,['Green'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,3a9d1082-a862-45d4-9e5e-392e879fead6,Zuran Orb,['Colorless'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,e4775a26-0b66-40e9-8f64-41d9308ca032,"Surrak, Elusive Hunter",['Green'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,928036c9-11b8-493e-b9f2-8fbd3487cd19,"Minsc & Boo, Timeless Heroes","['Green', 'Red']","['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,2c723fc9-d5c9-4126-a9a6-f80c247a4b6b,Baloth Prime,['Green'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,487116ab-b885-406b-aa54-56cb67eb3ca5,Scavenging Ooze,['Green'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,9721f8da-39ed-4ada-a571-61e08a86032b,Broadside Bombardiers,['Red'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,63c59228-c742-4abd-b4d7-9f7880190e95,Windswept Heath,['Lands'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,f1b8413f-c9fc-4cea-b416-a1fcf651b009,Sylvan Safekeeper,['Green'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,1daf4348-05c5-4c55-bcf2-c7bec7988bfc,Plateau,['Lands'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,01794178-cf41-454c-ac37-1d8b18e42db2,Green Sun's Zenith,['Green'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,15faa763-b897-4e86-b094-73f3236291a9,Verdant Catacombs,['Lands'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,3277ad99-5682-4baa-b106-de15721876a6,Glorybringer,['Red'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,1834ac92-8b4e-4442-a834-acd580e1ef99,Jack-in-the-Mox,['Colorless'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,73cc6df4-3564-4ace-bf8a-eac3e62d725a,Ursine Monstrosity,['Green'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,1e3e8085-cfcd-4e88-b441-4d1f8ac63904,Forth Eorlingas!,"['Red', 'White']","['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,52eef0d6-24b7-40b7-8403-e8e863d0cd55,"Bristly Bill, Spine Sower",['Green'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,1f2f7d4b-aa65-42ed-a441-8e35be96743c,Orcish Lumberjack,['Red'],"['Green', 'Red']",RG
+Season-5,20260621,265,Guy,10,Aggro,Gruul Aggro,3b6e5956-f795-451b-bb24-56462d1ced27,Umezawa's Jitte,['Colorless'],"['Green', 'Red']",RG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,0d16e8e0-31b2-4389-afd6-783c501f6fa0,"Ajani, Nacatl Pariah // Ajani, Nacatl Avenger",['White'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,b768efa2-e56b-4a7e-ace8-d673f10e0714,Birthing Pod,['Green'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,19477aca-b8db-4061-9a78-ebb189a9df22,Breeding Pool,['Lands'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,24c0d87b-0049-4beb-b9cb-6f813b7aa7dc,Fable of the Mirror-Breaker // Reflection of Kiki-Jiki,['Red'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,d51269cf-a333-4a64-94cd-245798d840d2,Elder Gargaroth,['Green'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,2b9b0195-beda-403e-bc27-7ae3be9f318c,Temple Garden,['Lands'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,59faa45d-868b-4bc7-934c-0e077642e129,Loran of the Third Path,['White'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,df3784d4-80cd-4f78-afb3-d61f3bab5b2c,Zealous Conscripts,['Red'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,24a5cc2c-0fbf-4a5f-b175-6e0ffd0d0787,Misty Rainforest,['Lands'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,eeeffc0b-dc92-458e-ad58-86ff6077a508,Sentinel of the Nameless City,['Green'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,b5aaaee0-9a61-45df-821e-cce516f8de6a,Old One Eye,['Green'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,4e4b6e22-93b2-4896-bba5-0ceaa5d8ea3c,"Yavimaya, Cradle of Growth",['Green'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,1fc6d14a-1328-4032-ad9e-cd85cd365bd3,Endurance,['Green'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,a9738cda-adb1-47fb-9f4c-ecd930228c4d,"Ragavan, Nimble Pilferer",['Red'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,a249b1f4-2b22-4b67-a207-e0c4ae95d2e1,Ketria Triome,['Lands'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,0845f0b0-9413-4ddd-861d-9607636bebc6,Natural Order,['Green'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,a178cfe8-f9fa-4255-88d0-54a0bed079f5,Malevolent Rumble,['Green'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,26d40e03-6de4-4373-9fbf-04c1dd79e995,Jetmir's Garden,['Lands'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,78cef262-c753-4658-b3ec-fec8db47f944,Palace Jailer,['White'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,07246783-d475-4f61-99ac-e2b574072349,Voice of Resurgence,"['Green', 'White']","['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,01006833-6007-4c16-9ebb-20d31c60a57a,Taiga,['Lands'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,4e4fb50c-a81f-44d3-93c5-fa9a0b37f617,"Omnath, Locus of Creation","['Green', 'Red', 'Blue', 'White']","['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,bbec97ff-bb84-4496-9e09-d4fc1570c516,Mawloc,"['Green', 'Red']","['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,de0e01e4-e143-47fd-8565-7b48219bb546,Goldvein Hydra,['Green'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,45fd6e91-df76-497f-b642-33dc3d5f6a5a,Mox Ruby,['Colorless'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,55d35442-5ca0-4fd7-8ff1-b7347b3e6690,Piggy Bank,['Red'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,a50d79fe-6d37-42f3-b7b0-0c3018282fa2,End-Raze Forerunners,['Green'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,7eb39e97-53c2-4df0-9fb3-a3d6a24ec41f,Avacyn's Pilgrim,['Green'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,dcb94950-3f3e-4876-84f8-d5e4d9cfecee,Charming Prince,['White'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,3c3ac3dd-35db-447f-8674-37b4680a1ef7,Leyline Binding,['White'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,267,Sili,6,Control-Aggro (Midrange),Birthing Pod,60d0e6a6-629a-45a7-bfcb-25ba7156788b,Elvish Mystic,['Green'],"['White', 'Green', 'Red']",WRG
+Season-5,20260621,268,Thomas,26,Control,Orzhov Control,1bd3fa8a-6c50-4f7f-9ae3-0810eec5e3db,Reprieve,['White'],"['White', 'Black']",WB
+Season-5,20260621,268,Thomas,26,Control,Orzhov Control,8c2996d9-3287-4480-8c04-7a378e37e3cf,Flooded Strand,['Lands'],"['White', 'Black']",WB
+Season-5,20260621,268,Thomas,26,Control,Orzhov Control,ce648aa3-098b-4af0-a433-fd290bc85904,Balance,['White'],"['White', 'Black']",WB
+Season-5,20260621,268,Thomas,26,Control,Orzhov Control,ab1d1461-1625-4163-aacd-a939f4871fad,Staff of the Storyteller,['White'],"['White', 'Black']",WB
+Season-5,20260621,268,Thomas,26,Control,Orzhov Control,68841ca8-a043-4f30-9a17-e983ed960bc2,Demonic Tutor,['Black'],"['White', 'Black']",WB
+Season-5,20260621,268,Thomas,26,Control,Orzhov Control,2ae6828e-ff19-45db-8b59-61616353491f,Deceptive Landscape,['Lands'],"['White', 'Black']",WB
+Season-5,20260621,268,Thomas,26,Control,Orzhov Control,08f79439-b8f8-418f-9772-26d81844749e,Enduring Innocence,['White'],"['White', 'Black']",WB
+Season-5,20260621,268,Thomas,26,Control,Orzhov Control,e4e6794a-feeb-4fc8-a2ee-38c75c18aaae,Heartless Act,['Black'],"['White', 'Black']",WB
+Season-5,20260621,268,Thomas,26,Control,Orzhov Control,fadb218d-29e2-42d1-a7a1-1066741d63ad,Mox Diamond,['Colorless'],"['White', 'Black']",WB
+Season-5,20260621,268,Thomas,26,Control,Orzhov Control,c78da035-6b5b-4136-9ab6-f622b64fdc54,Unstoppable Slasher,['Black'],"['White', 'Black']",WB
+Season-5,20260621,268,Thomas,26,Control,Orzhov Control,9b911653-7b96-4cf3-a907-13c5c53a14f7,Overlord of the Balemurk,['Black'],"['White', 'Black']",WB
+Season-5,20260621,268,Thomas,26,Control,Orzhov Control,5427d8a6-ac9e-4e50-bd39-81713b2ade25,Fatal Push,['Black'],"['White', 'Black']",WB
+Season-5,20260621,268,Thomas,26,Control,Orzhov Control,b256ddc8-8b12-434c-a610-1a872e948f2f,White Plume Adventurer,['White'],"['White', 'Black']",WB
+Season-5,20260621,268,Thomas,26,Control,Orzhov Control,e6befbc4-1320-4f26-bd9f-b1814fedda10,Grief,['Black'],"['White', 'Black']",WB
+Season-5,20260621,268,Thomas,26,Control,Orzhov Control,bb41ff5c-9617-4033-a4fa-99323640b9c3,Duress,['Black'],"['White', 'Black']",WB
+Season-5,20260621,268,Thomas,26,Control,Orzhov Control,162e81d3-6cd4-4cb8-8ed8-cfbd8d34ca71,Mind Stone,['Colorless'],"['White', 'Black']",WB
+Season-5,20260621,268,Thomas,26,Control,Orzhov Control,106f9629-b3aa-4703-82fb-c1e771bbce72,The Wandering Emperor,['White'],"['White', 'Black']",WB
+Season-5,20260621,268,Thomas,26,Control,Orzhov Control,17f28b16-da65-41a8-ba4f-f1c5e104aad6,Council's Judgment,['White'],"['White', 'Black']",WB
+Season-5,20260621,268,Thomas,26,Control,Orzhov Control,493a5ca7-5f90-4af4-b6db-43ae09a2f2c9,Dark Ritual,['Black'],"['White', 'Black']",WB
+Season-5,20260621,268,Thomas,26,Control,Orzhov Control,e58e681e-a069-4414-aafe-634c7987fd0d,Swords to Plowshares,['White'],"['White', 'Black']",WB
+Season-5,20260621,268,Thomas,26,Control,Orzhov Control,187e887c-c39d-4d25-a506-cdc95fc70316,"Gideon, Ally of Zendikar",['White'],"['White', 'Black']",WB
+Season-5,20260621,268,Thomas,26,Control,Orzhov Control,5ad67b3c-cd5a-497b-8639-9b844e8d517a,Mind Twist,['Black'],"['White', 'Black']",WB
+Season-5,20260621,268,Thomas,26,Control,Orzhov Control,93f99e67-901f-4c8d-8a09-e443b7eb928f,Archangel Elspeth,['White'],"['White', 'Black']",WB
+Season-5,20260621,268,Thomas,26,Control,Orzhov Control,cea3b218-0e6e-443a-84f7-380f1021e8e1,Barrowgoyf,['Black'],"['White', 'Black']",WB
+Season-5,20260621,268,Thomas,26,Control,Orzhov Control,064dfdeb-485f-473e-9fa0-8fdb7638cdc6,Dismember,['Colorless'],"['White', 'Black']",WB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,568dd5a6-86f4-4039-87d7-812120c8ab94,Triplicate Titan,['Colorless'],"['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,b0c5728e-43e7-417a-ba18-5038345cec67,Arcane Denial,['Blue'],"['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,d6ec3293-b09e-4931-ac4e-dc5eac0ca004,Mana Vault,['Colorless'],"['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,62b3f560-262b-4bc3-9aef-535fd7082c28,Vaultborn Tyrant,['Green'],"['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,a211d505-4d40-4914-a9da-220770d6ddbc,Consider,['Blue'],"['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,33672990-4860-4aa6-ac1b-f9da66f5da59,Wurmcoil Engine,['Colorless'],"['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,5f1cdcba-a04a-4a2f-8bc1-0dd7fa03754d,Exhume,['Black'],"['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,6920c895-bc98-4871-a53f-219fa27a74e5,Occult Epiphany,['Blue'],"['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,16448d95-ee21-4def-b880-26f6f159c213,Metamorphosis Fanatic,['Black'],"['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,4c732dc7-dd6b-4cc1-bbe0-ff3b1d2c7419,Animate Dead,['Black'],"['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,5ab21006-7f61-49e0-8b6a-0397c5d4c3bd,Imperial Seal,['Black'],"['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,777fcc21-2856-4181-8ecd-c272f9769e36,"Wan Shi Tong, All-Knowing",['Blue'],"['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,e7c53ba4-9956-4cd6-85ca-2d6b61a5127c,Dance of the Dead,['Black'],"['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,06c0c35d-a26e-473a-9206-8fbda7191700,Entomb,['Black'],"['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,ebc01ab4-d89a-4d25-bf54-6aed33772f4b,Force of Will,['Blue'],"['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,63af3c26-5b1f-46f6-9aa2-036c615bf5ea,Flash,['Blue'],"['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,1ee98955-4c47-4d45-9377-608dfa755337,Bone Shards,['Black'],"['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,d2e27911-87cb-49a0-a34f-6afe4bddd592,Phyrexian Metamorph,['Colorless'],"['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,19d6834d-afa3-4747-a62d-0654f4d9729f,"Malcolm, Alluring Scoundrel",['Blue'],"['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,5f6927e1-c580-483a-8e2a-6e2deb74800e,Mox Jet,['Colorless'],"['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,d67be074-cdd4-41d9-ac89-0a0456c4e4b2,"Sheoldred, the Apocalypse",['Black'],"['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,68924203-c3d9-41ce-8ca8-c6dd491eb3ca,Psychic Frog,"['Black', 'Blue']","['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,4216656e-90e8-45fc-a0f6-0d0d79d0a021,Shelldock Isle,['Blue'],"['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,f88d81d9-8ded-4c20-8237-2218046595fb,"Shadow, Mysterious Assassin",['Black'],"['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,05bdd22c-3e11-4c29-bdfa-d3dfc0e90a9f,Bitter Triumph,['Black'],"['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,139b90cd-8272-457a-be32-1298145345be,Watery Grave,['Lands'],"['Blue', 'Black']",UB
+Season-5,20260621,269,Tobi,13,Combo,Reanimator,b6cb2549-e485-44d6-9d65-7605c568909e,Unearth,['Black'],"['Blue', 'Black']",UB
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,64a5d494-efa1-446b-bebe-2ad36e154376,"Ugin, Eye of the Storms",['Colorless'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,fe30c0ff-f74b-456a-a61e-3720d84d713f,Parallax Wave,['White'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,64bc9b1d-5818-4d9e-b771-e49af4ff9a5c,The Tabernacle at Pendrell Vale,['Lands'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,9e7fb3c0-5159-4d1f-8490-ce4c9a60f567,"Urza, Lord High Artificer",['Blue'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,4b0bd07e-cf80-4d64-af29-f4cec6632b3e,Perilous Landscape,['Lands'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,0027e5ca-8046-40a0-bd73-79be55f28bff,Remand,['Blue'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,85a89077-b384-4fca-9d26-7297962c1541,Kappa Cannoneer,['Blue'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,bd3d4b4b-cf31-4f89-8140-9650edb03c7b,Ancient Tomb,['Lands'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,8c39f9b4-02b9-4d44-b8d6-4fd02ebbb0c5,"Narset, Parter of Veils",['Blue'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,2d9b12cc-f616-4b52-91eb-a430e70f9251,Wrath of God,['White'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,045ce37b-86d2-4e56-84af-b6625b53d13c,Path to Exile,['White'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,74d29b3d-f588-431d-bf4e-f7215683ab39,Tangle Wire,['Colorless'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,bfa4e927-1d6f-4a64-9801-7d168a5ef3f6,Astrologian's Planisphere,['Blue'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,07313dd3-d0dc-40ca-98a3-fa4d39e5bcae,Oust,['White'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,e7b3ddca-69ef-4743-897b-57c58077db24,Time Warp,['Blue'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,98e7bf8f-dba7-4005-8cee-634c9153931d,Phantasmal Image,['Blue'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,52d3005f-a1c7-4ef5-911f-ccc0752f4181,Faerie Mastermind,['Blue'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,2aef4608-5ba8-4636-b5e7-cac57c5c0608,Windfall,['Blue'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,94c6fdd8-21e7-48ae-aa05-a3666b928c1a,Timetwister,['Blue'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,7c353e83-4b63-4bc6-b029-273d2eca1f75,Upheaval,['Blue'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,0c3bc412-689f-4385-807b-ed60d6276d76,Grim Monolith,['Colorless'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,5a10b543-d5d4-42a8-9ee8-dada59a2ad7e,"Saheeli, Sublime Artificer","['Red', 'Blue']","['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,1571b584-9007-45ee-a3c3-6c72f227fee2,Mystical Tutor,['Blue'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,175b3d28-5c74-4972-9b5c-5e39762c78f4,Relic of Sauron,['Colorless'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,a1176dcf-40ee-4342-aa74-791b8352e99a,Scrawling Crawler,['Colorless'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,b841bfa8-7c17-4df2-8466-780ab9a4a53a,Fabled Passage,['Lands'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,37dbe1a3-3c44-452b-9fb9-37f5d793d0b5,Memory Jar,['Colorless'],"['White', 'Blue']",WU
+Season-5,20260621,266,Ivo,18,Combo-Control,Azorius Combo Control,ed0216a0-c5c9-4a99-b869-53e4d0256326,Mox Pearl,['Colorless'],"['White', 'Blue']",WU

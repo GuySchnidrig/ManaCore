@@ -1,6 +1,6 @@
 player,player_id,scryfallId,card_name,pick_count
-Andrin,5,d2e27911-87cb-49a0-a34f-6afe4bddd592,Phyrexian Metamorph,7
-Beni,35,1834ac92-8b4e-4442-a834-acd580e1ef99,Jack-in-the-Mox,2
+Andrin,5,c2089ec9-0665-448f-bfe9-d181de127814,Brazen Borrower // Petty Theft,7
+Beni,35,672b9b16-daef-44e6-9a3a-cfd9f3c78bc7,Pentad Prism,3
 Dimlas,1,310a1c46-8331-4a09-9fcb-d942f8102364,Thoughtseize,8
 Elie,17,04fc99dc-bfbe-4567-b791-6b1db96471ec,Reanimate,1
 Felix,25,006d2bf1-20f7-4b09-8d98-8233d91682bd,Flame Slash,1
@@ -27,7 +27,7 @@ Noe T.,11,89f5cc05-5d9d-4709-b3c5-a6249c294acc,Hexdrinker,5
 Pali,14,553fb946-2706-475b-89f9-e4355ec9ea2b,March of Otherworldly Light,3
 Sam,7,5d10b752-d9cb-419d-a5c4-d4ee1acb655e,"Teferi, Hero of Dominaria",2
 Sili,6,01e7b0bc-1c6c-48f4-8b72-1a809f536c6c,Birds of Paradise,7
-Thomas,26,0e606072-a3aa-4300-ba90-ec92a721fa76,"Jace, the Mind Sculptor",3
+Thomas,26,064dfdeb-485f-473e-9fa0-8fdb7638cdc6,Dismember,3
 Thomas R.,,05e8a4ea-8c0d-4284-ac23-80e19fdde11d,Myr Battlesphere,1
 Tinu,4,63c59228-c742-4abd-b4d7-9f7880190e95,Windswept Heath,5
 Tobi,13,079e6263-e54c-4899-a336-5315909b9322,"Magda, Brazen Outlaw",2
