@@ -233,8 +233,16 @@ Season-5,Yannik,9,Golgari Midrange,2,9,0.2222222222222222,0,4,0.0
 Season-5,Zoel,24,Azorius Control,5,9,0.5555555555555556,2,4,0.5
 Season-5,Zoel,24,Domain Control,7,10,0.7,3,4,0.75
 Season-5,Zoel,24,Sneak and Show,7,7,1.0,4,4,1.0
+Season-6,Andrin,5,Boros Aggro,8,10,0.8,4,4,1.0
+Season-6,Dimlas,1,High Tide,2,8,0.25,1,4,0.25
+Season-6,Guy,10,Reanimator-Flash,5,10,0.5,2,4,0.5
+Season-6,Matthias,21,Draw 7 Combo-Control,4,9,0.4444444444444444,2,4,0.5
+Season-6,Oli,37,Gruul Aggro,6,10,0.6,2,4,0.5
+Season-6,Sili,6,Lurrus Control,4,9,0.4444444444444444,2,4,0.5
+Season-6,Thomas,26,Reanimator,7,10,0.7,3,4,0.75
+Season-6,Tinu,4,Storm,2,10,0.2,0,4,0.0
 Season-All,Andrin,5,Artifacts,11,29,0.3793103448275862,3,12,0.25
-Season-All,Andrin,5,Boros Aggro,13,18,0.7222222222222222,6,8,0.75
+Season-All,Andrin,5,Boros Aggro,21,28,0.75,10,12,0.8333333333333334
 Season-All,Andrin,5,Dimir Control,5,9,0.5555555555555556,2,4,0.5
 Season-All,Andrin,5,Dimir Tempo,4,9,0.4444444444444444,1,4,0.25
 Season-All,Andrin,5,Domain Control,6,11,0.5454545454545454,2,4,0.5
@@ -257,6 +265,7 @@ Season-All,Dimlas,1,Boros Aggro,27,41,0.6585365853658537,12,16,0.75
 Season-All,Dimlas,1,Combo Lands,7,10,0.7,3,4,0.75
 Season-All,Dimlas,1,Domain Control,11,20,0.55,5,8,0.625
 Season-All,Dimlas,1,Grixis Control,6,10,0.6,2,4,0.5
+Season-All,Dimlas,1,High Tide,2,8,0.25,1,4,0.25
 Season-All,Dimlas,1,Lifeloss Control,3,9,0.3333333333333333,1,4,0.25
 Season-All,Dimlas,1,Lurrus Control,12,19,0.631578947368421,5,8,0.625
 Season-All,Dimlas,1,Nadu Midrange,5,9,0.5555555555555556,2,4,0.5
@@ -288,6 +297,7 @@ Season-All,Guy,10,Mardu Midrange,6,10,0.6,3,4,0.75
 Season-All,Guy,10,Orzhov Blink,5,9,0.5555555555555556,2,4,0.5
 Season-All,Guy,10,Orzhov Tempo,5,9,0.5555555555555556,2,4,0.5
 Season-All,Guy,10,Reanimator,3,10,0.3,1,4,0.25
+Season-All,Guy,10,Reanimator-Flash,5,10,0.5,2,4,0.5
 Season-All,Guy,10,Splinter-Twin,6,9,0.6666666666666666,3,4,0.75
 Season-All,Ivo,18,Azorius Combo Control,5,12,0.4166666666666667,1,4,0.25
 Season-All,Ivo,18,Boros Aggro,9,20,0.45,3,8,0.375
@@ -345,6 +355,7 @@ Season-All,Manuel,8,Reanimator-Flash,3,9,0.3333333333333333,1,4,0.25
 Season-All,Manuel,8,Storm,6,19,0.3157894736842105,1,8,0.125
 Season-All,Matthias,21,Artifacts Control,2,10,0.2,0,4,0.0
 Season-All,Matthias,21,Azorius Control,4,9,0.4444444444444444,1,4,0.25
+Season-All,Matthias,21,Draw 7 Combo-Control,4,9,0.4444444444444444,2,4,0.5
 Season-All,Matthias,21,Jund Midrange,7,11,0.6363636363636364,3,4,0.75
 Season-All,Matthias,21,Landfall,3,11,0.2727272727272727,0,4,0.0
 Season-All,Matthias,21,Mardu Aggro,5,9,0.5555555555555556,2,4,0.5
@@ -374,6 +385,7 @@ Season-All,Noe T.,11,Selesnya Midrange,1,8,0.125,0,4,0.0
 Season-All,Noe T.,11,Simic Midrange,4,10,0.4,2,4,0.5
 Season-All,Noe T.,11,Sneak Attack,5,9,0.5555555555555556,2,4,0.5
 Season-All,Noe T.,11,White Aggro,7,20,0.35,2,8,0.25
+Season-All,Oli,37,Gruul Aggro,6,10,0.6,2,4,0.5
 Season-All,Pali,14,Artifacts,2,8,0.25,1,4,0.25
 Season-All,Pali,14,Boros Aggro,2,10,0.2,0,4,0.0
 Season-All,Pali,14,Lifeloss Control,2,8,0.25,0,4,0.0
@@ -391,6 +403,7 @@ Season-All,Sili,6,Draw 7,2,8,0.25,1,4,0.25
 Season-All,Sili,6,Greenbased Aggro-Combo,19,29,0.6551724137931034,8,12,0.6666666666666666
 Season-All,Sili,6,Gruul Aggro,14,25,0.56,7,12,0.5833333333333334
 Season-All,Sili,6,Landfall,8,11,0.7272727272727273,4,4,1.0
+Season-All,Sili,6,Lurrus Control,4,9,0.4444444444444444,2,4,0.5
 Season-All,Sili,6,Opposition,4,9,0.4444444444444444,2,4,0.5
 Season-All,Sili,6,Reanimator,5,10,0.5,2,4,0.5
 Season-All,Sili,6,Reanimator-Sneak,6,9,0.6666666666666666,3,4,0.75
@@ -399,6 +412,7 @@ Season-All,Sili,6,Selesnya Midrange,6,8,0.75,2,4,0.5
 Season-All,Thomas,26,Azorius Combo Control,5,10,0.5,2,4,0.5
 Season-All,Thomas,26,Grixis Control,14,19,0.7368421052631579,6,8,0.75
 Season-All,Thomas,26,Orzhov Control,7,11,0.6363636363636364,3,4,0.75
+Season-All,Thomas,26,Reanimator,7,10,0.7,3,4,0.75
 Season-All,Thomas,26,Simic Midrange,15,20,0.75,7,8,0.875
 Season-All,Tinu,4,Artifacts,6,9,0.6666666666666666,3,4,0.75
 Season-All,Tinu,4,Domain Control,10,18,0.5555555555555556,4,8,0.5
@@ -411,6 +425,7 @@ Season-All,Tinu,4,Lurrus Combo-Control,6,9,0.6666666666666666,2,4,0.5
 Season-All,Tinu,4,Opposition,4,10,0.4,2,4,0.5
 Season-All,Tinu,4,Selesnya Aggro,2,8,0.25,1,4,0.25
 Season-All,Tinu,4,Sneak and Flash,3,8,0.375,1,4,0.25
+Season-All,Tinu,4,Storm,2,10,0.2,0,4,0.0
 Season-All,Tobi,13,Azorius Blink,6,10,0.6,2,4,0.5
 Season-All,Tobi,13,Boros Aggro,8,17,0.4705882352941176,3,8,0.375
 Season-All,Tobi,13,Greenbased Aggro-Combo,6,12,0.5,2,4,0.5

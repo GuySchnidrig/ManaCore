@@ -96,6 +96,14 @@ Season-5,Sneak and Show,4,4,1.0
 Season-5,Storm,9,20,0.45
 Season-5,Sultai Control,1,4,0.25
 Season-5,White Aggro,1,4,0.25
+Season-6,Boros Aggro,4,4,1.0
+Season-6,Draw 7 Combo-Control,2,4,0.5
+Season-6,Gruul Aggro,2,4,0.5
+Season-6,High Tide,1,4,0.25
+Season-6,Lurrus Control,2,4,0.5
+Season-6,Reanimator,3,4,0.75
+Season-6,Reanimator-Flash,2,4,0.5
+Season-6,Storm,0,4,0.0
 Season-All,Aggro-Combo Lands,1,4,0.25
 Season-All,Artifacts,18,64,0.28125
 Season-All,Artifacts Control,4,12,0.3333333333333333
@@ -105,7 +113,7 @@ Season-All,Azorius Control,10,24,0.4166666666666667
 Season-All,Azorius Tempo,2,8,0.25
 Season-All,Birthing Pod,11,20,0.55
 Season-All,Birthing Pod Combo-Control,2,4,0.5
-Season-All,Boros Aggro,56,104,0.5384615384615384
+Season-All,Boros Aggro,60,108,0.5555555555555556
 Season-All,Combo Lands,9,20,0.45
 Season-All,Combo Mix,10,20,0.5
 Season-All,Combo-Control Lands,7,16,0.4375
@@ -113,7 +121,7 @@ Season-All,Dimir Control,6,12,0.5
 Season-All,Dimir Tempo,5,8,0.625
 Season-All,Domain Control,18,36,0.5
 Season-All,Draw 7,11,24,0.4583333333333333
-Season-All,Draw 7 Combo-Control,7,16,0.4375
+Season-All,Draw 7 Combo-Control,9,20,0.45
 Season-All,Esper Control,1,4,0.25
 Season-All,Esper Tempo,1,4,0.25
 Season-All,Flash,2,4,0.5
@@ -121,8 +129,9 @@ Season-All,Golgari Midrange,3,16,0.1875
 Season-All,Greenbased Aggro-Combo,17,36,0.4722222222222222
 Season-All,Grixis Control,18,32,0.5625
 Season-All,Grixis Tempo,2,4,0.5
-Season-All,Gruul Aggro,20,36,0.5555555555555556
+Season-All,Gruul Aggro,22,40,0.55
 Season-All,Gruul Aggro Combo,1,4,0.25
+Season-All,High Tide,1,4,0.25
 Season-All,Izzet Control,0,4,0.0
 Season-All,Izzet Tempo,12,20,0.6
 Season-All,Jeskai Control,2,4,0.5
@@ -132,7 +141,7 @@ Season-All,Landfall,7,12,0.5833333333333334
 Season-All,Lands,1,4,0.25
 Season-All,Lifeloss Control,1,8,0.125
 Season-All,Lurrus Combo-Control,6,8,0.75
-Season-All,Lurrus Control,15,28,0.5357142857142857
+Season-All,Lurrus Control,17,32,0.53125
 Season-All,Mardu Aggro,6,12,0.5
 Season-All,Mardu Midrange,3,4,0.75
 Season-All,Nadu Combo-Control,2,4,0.5
@@ -146,9 +155,9 @@ Season-All,Orzhov Tempo,2,4,0.5
 Season-All,Orzhov Tokens,1,4,0.25
 Season-All,Rakdos Aggro,13,32,0.40625
 Season-All,Rakdos Aggro-Combo,3,4,0.75
-Season-All,Reanimator,34,76,0.4473684210526316
+Season-All,Reanimator,37,80,0.4625
 Season-All,Reanimator Combo-Control,2,4,0.5
-Season-All,Reanimator-Flash,4,8,0.5
+Season-All,Reanimator-Flash,6,12,0.5
 Season-All,Reanimator-Sneak,10,16,0.625
 Season-All,Red Aggro,4,8,0.5
 Season-All,Red Aggro Strom,2,4,0.5
@@ -160,6 +169,6 @@ Season-All,Sneak Attack,4,8,0.5
 Season-All,Sneak and Flash,7,12,0.5833333333333334
 Season-All,Sneak and Show,4,4,1.0
 Season-All,Splinter-Twin,6,8,0.75
-Season-All,Storm,19,40,0.475
+Season-All,Storm,19,44,0.4318181818181818
 Season-All,Sultai Control,1,4,0.25
 Season-All,White Aggro,6,16,0.375

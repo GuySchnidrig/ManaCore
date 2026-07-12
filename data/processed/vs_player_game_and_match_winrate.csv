@@ -633,9 +633,41 @@ Season-5,Zoel,24,Sili,2,2,1.0,1,1,1.0
 Season-5,Zoel,24,Tinu,1,1,1.0,1,1,1.0
 Season-5,Zoel,24,Tommy,3,2,0.6666666666666666,1,1,1.0
 Season-5,Zoel,24,Valentin,3,1,0.3333333333333333,1,0,0.0
+Season-6,Andrin,5,Guy,3,2,0.6666666666666666,1,1,1.0
+Season-6,Andrin,5,Matthias,2,2,1.0,1,1,1.0
+Season-6,Andrin,5,Oli,3,2,0.6666666666666666,1,1,1.0
+Season-6,Andrin,5,Sili,2,2,1.0,1,1,1.0
+Season-6,Dimlas,1,Guy,2,0,0.0,1,0,0.0
+Season-6,Dimlas,1,Oli,2,0,0.0,1,0,0.0
+Season-6,Dimlas,1,Thomas,2,0,0.0,1,0,0.0
+Season-6,Dimlas,1,Tinu,2,2,1.0,1,1,1.0
+Season-6,Guy,10,Andrin,3,1,0.3333333333333333,1,0,0.0
+Season-6,Guy,10,Dimlas,2,2,1.0,1,1,1.0
+Season-6,Guy,10,Sili,2,0,0.0,1,0,0.0
+Season-6,Guy,10,Tinu,3,2,0.6666666666666666,1,1,1.0
+Season-6,Matthias,21,Andrin,2,0,0.0,1,0,0.0
+Season-6,Matthias,21,Sili,2,2,1.0,1,1,1.0
+Season-6,Matthias,21,Thomas,2,0,0.0,1,0,0.0
+Season-6,Matthias,21,Tinu,3,2,0.6666666666666666,1,1,1.0
+Season-6,Oli,37,Andrin,3,1,0.3333333333333333,1,0,0.0
+Season-6,Oli,37,Dimlas,2,2,1.0,1,1,1.0
+Season-6,Oli,37,Thomas,3,1,0.3333333333333333,1,0,0.0
+Season-6,Oli,37,Tinu,2,2,1.0,1,1,1.0
+Season-6,Sili,6,Andrin,2,0,0.0,1,0,0.0
+Season-6,Sili,6,Guy,2,2,1.0,1,1,1.0
+Season-6,Sili,6,Matthias,2,0,0.0,1,0,0.0
+Season-6,Sili,6,Thomas,3,2,0.6666666666666666,1,1,1.0
+Season-6,Thomas,26,Dimlas,2,2,1.0,1,1,1.0
+Season-6,Thomas,26,Matthias,2,2,1.0,1,1,1.0
+Season-6,Thomas,26,Oli,3,2,0.6666666666666666,1,1,1.0
+Season-6,Thomas,26,Sili,3,1,0.3333333333333333,1,0,0.0
+Season-6,Tinu,4,Dimlas,2,0,0.0,1,0,0.0
+Season-6,Tinu,4,Guy,3,1,0.3333333333333333,1,0,0.0
+Season-6,Tinu,4,Matthias,3,1,0.3333333333333333,1,0,0.0
+Season-6,Tinu,4,Oli,2,0,0.0,1,0,0.0
 Season-All,Andrin,5,Beni,3,2,0.6666666666666666,1,1,1.0
 Season-All,Andrin,5,Dimlas,21,7,0.3333333333333333,9,3,0.3333333333333333
-Season-All,Andrin,5,Guy,12,8,0.6666666666666666,5,3,0.6
+Season-All,Andrin,5,Guy,15,10,0.6666666666666666,6,4,0.6666666666666666
 Season-All,Andrin,5,Ivo,13,8,0.6153846153846154,5,3,0.6
 Season-All,Andrin,5,Joel K.,5,4,0.8,2,2,1.0
 Season-All,Andrin,5,Kas,2,2,1.0,1,1,1.0
@@ -643,12 +675,13 @@ Season-All,Andrin,5,Luca,9,4,0.4444444444444444,3,1,0.3333333333333333
 Season-All,Andrin,5,Lukas Stalder,14,7,0.5,7,3,0.4285714285714285
 Season-All,Andrin,5,Lukas Wyss,2,2,1.0,1,1,1.0
 Season-All,Andrin,5,Manuel,16,11,0.6875,7,5,0.7142857142857143
-Season-All,Andrin,5,Matthias,8,4,0.5,3,2,0.6666666666666666
+Season-All,Andrin,5,Matthias,10,6,0.6,4,3,0.75
 Season-All,Andrin,5,Myri,6,4,0.6666666666666666,2,2,1.0
 Season-All,Andrin,5,Nici,2,2,1.0,1,1,1.0
 Season-All,Andrin,5,Noe T.,10,7,0.7,4,3,0.75
+Season-All,Andrin,5,Oli,3,2,0.6666666666666666,1,1,1.0
 Season-All,Andrin,5,Pali,3,2,0.6666666666666666,1,1,1.0
-Season-All,Andrin,5,Sili,12,7,0.5833333333333334,5,3,0.6
+Season-All,Andrin,5,Sili,14,9,0.6428571428571429,6,4,0.6666666666666666
 Season-All,Andrin,5,Thomas,5,2,0.4,2,1,0.5
 Season-All,Andrin,5,Tinu,10,5,0.5,4,1,0.25
 Season-All,Andrin,5,Tobi,8,4,0.5,3,1,0.3333333333333333
@@ -672,7 +705,7 @@ Season-All,Dimlas,1,Beni,5,2,0.4,2,1,0.5
 Season-All,Dimlas,1,Filipe,5,4,0.8,2,2,1.0
 Season-All,Dimlas,1,Fubu,3,2,0.6666666666666666,1,1,1.0
 Season-All,Dimlas,1,Gianni,2,0,0.0,1,0,0.0
-Season-All,Dimlas,1,Guy,13,8,0.6153846153846154,6,4,0.6666666666666666
+Season-All,Dimlas,1,Guy,15,8,0.5333333333333333,7,4,0.5714285714285714
 Season-All,Dimlas,1,Ivo,8,5,0.625,3,2,0.6666666666666666
 Season-All,Dimlas,1,Joel K.,19,12,0.631578947368421,7,5,0.7142857142857143
 Season-All,Dimlas,1,Joel R.,2,2,1.0,1,1,1.0
@@ -686,10 +719,11 @@ Season-All,Dimlas,1,Matthias,12,8,0.6666666666666666,5,4,0.8
 Season-All,Dimlas,1,Myri,7,6,0.8571428571428571,3,3,1.0
 Season-All,Dimlas,1,Mäxu,2,2,1.0,1,1,1.0
 Season-All,Dimlas,1,Noe T.,8,4,0.5,3,1,0.3333333333333333
+Season-All,Dimlas,1,Oli,2,0,0.0,1,0,0.0
 Season-All,Dimlas,1,Pali,4,2,0.5,2,1,0.5
 Season-All,Dimlas,1,Sili,22,13,0.5909090909090909,9,5,0.5555555555555556
-Season-All,Dimlas,1,Thomas,7,1,0.1428571428571428,3,0,0.0
-Season-All,Dimlas,1,Tinu,17,13,0.7647058823529411,7,6,0.8571428571428571
+Season-All,Dimlas,1,Thomas,9,1,0.1111111111111111,4,0,0.0
+Season-All,Dimlas,1,Tinu,19,15,0.7894736842105263,8,7,0.875
 Season-All,Dimlas,1,Tommy,15,12,0.8,6,6,1.0
 Season-All,Dimlas,1,Valentin,11,7,0.6363636363636364,4,3,0.75
 Season-All,Dimlas,1,Yannik,6,6,1.0,3,3,1.0
@@ -722,8 +756,8 @@ Season-All,Gianni,28,Matthias,2,0,0.0,1,0,0.0
 Season-All,Gianni,28,Myri,4,2,0.5,2,0,0.0
 Season-All,Gianni,28,Pali,2,1,0.5,1,0,0.0
 Season-All,Gianni,28,Tommy,2,1,0.5,1,0,0.0
-Season-All,Guy,10,Andrin,12,4,0.3333333333333333,5,0,0.0
-Season-All,Guy,10,Dimlas,13,5,0.3846153846153846,6,2,0.3333333333333333
+Season-All,Guy,10,Andrin,15,5,0.3333333333333333,6,0,0.0
+Season-All,Guy,10,Dimlas,15,7,0.4666666666666667,7,3,0.4285714285714285
 Season-All,Guy,10,Felix,2,2,1.0,1,1,1.0
 Season-All,Guy,10,Filipe,1,1,1.0,1,1,1.0
 Season-All,Guy,10,Ivo,6,4,0.6666666666666666,2,2,1.0
@@ -738,8 +772,9 @@ Season-All,Guy,10,Mäxu,2,2,1.0,1,1,1.0
 Season-All,Guy,10,Noe T.,3,2,0.6666666666666666,1,1,1.0
 Season-All,Guy,10,Pali,2,2,1.0,1,1,1.0
 Season-All,Guy,10,Sam,3,2,0.6666666666666666,1,1,1.0
-Season-All,Guy,10,Sili,11,3,0.2727272727272727,5,1,0.2
+Season-All,Guy,10,Sili,13,3,0.2307692307692307,6,1,0.1666666666666666
 Season-All,Guy,10,Thomas,12,4,0.3333333333333333,5,1,0.2
+Season-All,Guy,10,Tinu,3,2,0.6666666666666666,1,1,1.0
 Season-All,Guy,10,Tobi,6,5,0.8333333333333334,3,2,0.6666666666666666
 Season-All,Guy,10,Tommy,4,2,0.5,2,1,0.5
 Season-All,Guy,10,Valentin,4,4,1.0,2,2,1.0
@@ -877,7 +912,7 @@ Season-All,Manuel,8,Tobi,2,0,0.0,1,0,0.0
 Season-All,Manuel,8,Tommy,2,0,0.0,1,0,0.0
 Season-All,Manuel,8,Valentin,5,3,0.6,2,1,0.5
 Season-All,Manuel,8,Yannik,10,6,0.6,4,2,0.5
-Season-All,Matthias,21,Andrin,8,4,0.5,3,1,0.3333333333333333
+Season-All,Matthias,21,Andrin,10,4,0.4,4,1,0.25
 Season-All,Matthias,21,Beni,2,2,1.0,1,1,1.0
 Season-All,Matthias,21,Dimlas,12,4,0.3333333333333333,5,1,0.2
 Season-All,Matthias,21,Felix,2,0,0.0,1,0,0.0
@@ -891,7 +926,9 @@ Season-All,Matthias,21,Manuel,3,2,0.6666666666666666,1,1,1.0
 Season-All,Matthias,21,Missing Player,2,2,1.0,1,1,1.0
 Season-All,Matthias,21,Myri,4,4,1.0,2,2,1.0
 Season-All,Matthias,21,Noe T.,5,3,0.6,2,1,0.5
-Season-All,Matthias,21,Tinu,9,3,0.3333333333333333,3,0,0.0
+Season-All,Matthias,21,Sili,2,2,1.0,1,1,1.0
+Season-All,Matthias,21,Thomas,2,0,0.0,1,0,0.0
+Season-All,Matthias,21,Tinu,12,5,0.4166666666666667,4,1,0.25
 Season-All,Matthias,21,Tommy,5,2,0.4,2,0,0.0
 Season-All,Matthias,21,Valentin,10,4,0.4,4,1,0.25
 Season-All,Matthias,21,Yannik,2,2,1.0,1,1,1.0
@@ -952,6 +989,10 @@ Season-All,Noe T.,11,Tommy,4,2,0.5,2,1,0.5
 Season-All,Noe T.,11,Valentin,2,0,0.0,1,0,0.0
 Season-All,Noe T.,11,Yannik,4,4,1.0,2,2,1.0
 Season-All,Noe T.,11,Zoel,2,0,0.0,1,0,0.0
+Season-All,Oli,37,Andrin,3,1,0.3333333333333333,1,0,0.0
+Season-All,Oli,37,Dimlas,2,2,1.0,1,1,1.0
+Season-All,Oli,37,Thomas,3,1,0.3333333333333333,1,0,0.0
+Season-All,Oli,37,Tinu,2,2,1.0,1,1,1.0
 Season-All,Pali,14,Andrin,3,1,0.3333333333333333,1,0,0.0
 Season-All,Pali,14,Dimlas,4,2,0.5,2,1,0.5
 Season-All,Pali,14,Elie,3,2,0.6666666666666666,1,1,1.0
@@ -973,21 +1014,22 @@ Season-All,Sam,7,Manuel,5,2,0.4,2,1,0.5
 Season-All,Sam,7,Noe T.,7,5,0.7142857142857143,3,2,0.6666666666666666
 Season-All,Sam,7,Tommy,1,0,0.0,1,0,0.0
 Season-All,Sam,7,Zoel,2,0,0.0,1,0,0.0
-Season-All,Sili,6,Andrin,12,5,0.4166666666666667,5,2,0.4
+Season-All,Sili,6,Andrin,14,5,0.3571428571428571,6,2,0.3333333333333333
 Season-All,Sili,6,Beni,9,6,0.6666666666666666,4,3,0.75
 Season-All,Sili,6,Dimlas,22,9,0.4090909090909091,9,4,0.4444444444444444
 Season-All,Sili,6,Fubu,1,1,1.0,1,1,1.0
-Season-All,Sili,6,Guy,11,8,0.7272727272727273,5,3,0.6
+Season-All,Sili,6,Guy,13,10,0.7692307692307693,6,4,0.6666666666666666
 Season-All,Sili,6,Ivo,3,2,0.6666666666666666,1,1,1.0
 Season-All,Sili,6,Joel K.,10,8,0.8,5,4,0.8
 Season-All,Sili,6,Joel R.,5,4,0.8,2,2,1.0
 Season-All,Sili,6,Lukas Stalder,16,11,0.6875,7,5,0.7142857142857143
 Season-All,Sili,6,Manuel,11,5,0.4545454545454545,5,2,0.4
+Season-All,Sili,6,Matthias,2,0,0.0,1,0,0.0
 Season-All,Sili,6,Myri,4,2,0.5,2,1,0.5
 Season-All,Sili,6,Nici,2,2,1.0,1,1,1.0
 Season-All,Sili,6,Noe T.,12,8,0.6666666666666666,5,4,0.8
 Season-All,Sili,6,Pali,7,6,0.8571428571428571,3,3,1.0
-Season-All,Sili,6,Thomas,11,4,0.3636363636363636,4,1,0.25
+Season-All,Sili,6,Thomas,14,6,0.4285714285714285,5,2,0.4
 Season-All,Sili,6,Tinu,5,2,0.4,2,0,0.0
 Season-All,Sili,6,Tobi,7,2,0.2857142857142857,3,1,0.3333333333333333
 Season-All,Sili,6,Tommy,19,5,0.2631578947368421,8,1,0.125
@@ -995,29 +1037,33 @@ Season-All,Sili,6,Valentin,7,5,0.7142857142857143,3,2,0.6666666666666666
 Season-All,Sili,6,Zoel,2,0,0.0,1,0,0.0
 Season-All,Thomas,26,Andrin,5,3,0.6,2,1,0.5
 Season-All,Thomas,26,Beni,2,2,1.0,1,1,1.0
-Season-All,Thomas,26,Dimlas,7,6,0.8571428571428571,3,3,1.0
+Season-All,Thomas,26,Dimlas,9,8,0.8888888888888888,4,4,1.0
 Season-All,Thomas,26,Guy,12,8,0.6666666666666666,5,4,0.8
 Season-All,Thomas,26,Ivo,3,2,0.6666666666666666,1,1,1.0
 Season-All,Thomas,26,Joel K.,4,4,1.0,2,2,1.0
 Season-All,Thomas,26,Kaspar,2,2,1.0,1,1,1.0
 Season-All,Thomas,26,Lukas Stalder,3,2,0.6666666666666666,1,1,1.0
+Season-All,Thomas,26,Matthias,2,2,1.0,1,1,1.0
 Season-All,Thomas,26,Noe T.,3,1,0.3333333333333333,1,0,0.0
-Season-All,Thomas,26,Sili,11,7,0.6363636363636364,4,3,0.75
+Season-All,Thomas,26,Oli,3,2,0.6666666666666666,1,1,1.0
+Season-All,Thomas,26,Sili,14,8,0.5714285714285714,5,3,0.6
 Season-All,Thomas,26,Tinu,5,3,0.6,2,1,0.5
 Season-All,Thomas,26,Tommy,5,3,0.6,2,1,0.5
 Season-All,Thomas,26,Valentin,7,5,0.7142857142857143,3,2,0.6666666666666666
 Season-All,Tinu,4,Andrin,10,5,0.5,4,2,0.5
-Season-All,Tinu,4,Dimlas,17,4,0.2352941176470588,7,1,0.1428571428571428
+Season-All,Tinu,4,Dimlas,19,4,0.2105263157894736,8,1,0.125
+Season-All,Tinu,4,Guy,3,1,0.3333333333333333,1,0,0.0
 Season-All,Tinu,4,Ivo,8,2,0.25,3,0,0.0
 Season-All,Tinu,4,Joel K.,9,4,0.4444444444444444,4,2,0.5
 Season-All,Tinu,4,Kas,2,0,0.0,1,0,0.0
 Season-All,Tinu,4,Lukas Stalder,4,2,0.5,2,1,0.5
 Season-All,Tinu,4,Lukas Wyss,2,2,1.0,1,1,1.0
 Season-All,Tinu,4,Manuel,9,7,0.7777777777777778,4,3,0.75
-Season-All,Tinu,4,Matthias,9,6,0.6666666666666666,3,3,1.0
+Season-All,Tinu,4,Matthias,12,7,0.5833333333333334,4,3,0.75
 Season-All,Tinu,4,Myri,4,1,0.25,2,0,0.0
 Season-All,Tinu,4,Mäxu,2,2,1.0,1,1,1.0
 Season-All,Tinu,4,Noe T.,6,6,1.0,3,3,1.0
+Season-All,Tinu,4,Oli,2,0,0.0,1,0,0.0
 Season-All,Tinu,4,Sili,5,3,0.6,2,1,0.5
 Season-All,Tinu,4,Thomas,5,2,0.4,2,1,0.5
 Season-All,Tinu,4,Tommy,9,3,0.3333333333333333,4,1,0.25
