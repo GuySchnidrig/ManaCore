@@ -1487,7 +1487,7 @@ Season-6,5b8ba842-c662-4686-bca3-93ddb7fa11a6,Mother of Runes,0,1,0.0
 Season-6,5cb76266-ae50-4bbc-8f96-d98f309b02d3,"Teferi, Time Raveler",0,1,0.0
 Season-6,5d10b752-d9cb-419d-a5c4-d4ee1acb655e,"Teferi, Hero of Dominaria",0,1,0.0
 Season-6,5da578b8-19e6-4068-9336-e7cd33c585f1,Retrofitter Foundry,0,1,0.0
-Season-6,5dd72697-24be-42c7-a6d9-a837bdbd4662,,0,1,0.0
+Season-6,5dd72697-24be-42c7-a6d9-a837bdbd4662,Grim Lavamancer,0,1,0.0
 Season-6,5f1cdcba-a04a-4a2f-8bc1-0dd7fa03754d,Exhume,1,1,1.0
 Season-6,5f608efc-0dbc-4cc3-aadd-ed473bfc29ab,Portal to Phyrexia,1,1,1.0
 Season-6,5f6927e1-c580-483a-8e2a-6e2deb74800e,Mox Jet,1,1,1.0
@@ -1528,7 +1528,7 @@ Season-6,6f2cec5d-50ea-4d0f-8925-eba06222d015,"Shelinda, Yevon Acolyte",0,1,0.0
 Season-6,6fd672bb-18cf-44e3-8dda-5310b1e0fffe,Godless Shrine,1,1,1.0
 Season-6,70e33f45-7d47-423b-a123-8541f1d1afb4,Lingering Souls,1,1,1.0
 Season-6,70e64028-ae96-4950-aa6c-9d347409fad3,Force Spike,1,1,1.0
-Season-6,7127164d-f2a3-4d79-b6db-93507ff5ab47,,1,1,1.0
+Season-6,7127164d-f2a3-4d79-b6db-93507ff5ab47,Bitterbloom Bearer,1,1,1.0
 Season-6,71384418-173a-4f77-adab-56e52fa23692,Delighted Halfling,1,1,1.0
 Season-6,729daf0e-b822-41bd-a908-ca8ec34032f0,Tropical Island,0,1,0.0
 Season-6,72c6d541-e2cb-4d6e-acac-90a8f53b7006,Elegant Parlor,0,1,0.0
@@ -1568,7 +1568,7 @@ Season-6,89345f55-2b32-4356-945a-d56dded39909,Preacher of the Schism,0,1,0.0
 Season-6,89af0f45-c11c-4f13-9950-b1489440ee5b,Chain Lightning,1,1,1.0
 Season-6,89f5cc05-5d9d-4709-b3c5-a6249c294acc,Hexdrinker,0,1,0.0
 Season-6,8a720448-017f-4f4a-9501-678245eaed17,Mishra's Bauble,1,1,1.0
-Season-6,8ac39c01-127f-4471-bc74-11a90c48e306,,0,1,0.0
+Season-6,8ac39c01-127f-4471-bc74-11a90c48e306,Ghost Vacuum,0,1,0.0
 Season-6,8b1e10e8-ea14-4761-910b-4072e2a18456,Grave Researcher // Reanimate,1,1,1.0
 Season-6,8c2996d9-3287-4480-8c04-7a378e37e3cf,Flooded Strand,0,1,0.0
 Season-6,8c39f9b4-02b9-4d44-b8d6-4fd02ebbb0c5,"Narset, Parter of Veils",0,1,0.0
@@ -1733,7 +1733,7 @@ Season-6,f252ae53-443c-4a27-b8f0-639a9a2b8598,Pestermite,0,1,0.0
 Season-6,f33d3948-fe7b-4c3b-ab67-1022623fbb2b,"Toby, Beastie Befriender",0,1,0.0
 Season-6,f3405184-dcda-4bb6-ade6-c2a87bc3296d,Sleight of Hand,1,1,1.0
 Season-6,f3537373-ef54-4578-9d05-6216420ee349,Esper Sentinel,1,1,1.0
-Season-6,f486df00-7c4a-4ff0-bb0b-c8b5432ac742,,1,1,1.0
+Season-6,f486df00-7c4a-4ff0-bb0b-c8b5432ac742,Sylvan Library,1,1,1.0
 Season-6,f5fb426a-5618-4dd4-9c51-0cc847be8c1d,Multiversal Passage,0,1,0.0
 Season-6,f61693a2-7042-44e0-85ba-9bf12ab94e7e,Suplex,1,1,1.0
 Season-6,f62fd592-4910-417d-a500-e7029f3d119f,Kitesail Freebooter,1,1,1.0
@@ -2146,7 +2146,7 @@ Season-All,5c8a8dbb-cba7-4e1d-8888-73ab6f4aff07,Devoted Druid,0,25,0.0
 Season-All,5cb76266-ae50-4bbc-8f96-d98f309b02d3,"Teferi, Time Raveler",13,25,0.52
 Season-All,5d10b752-d9cb-419d-a5c4-d4ee1acb655e,"Teferi, Hero of Dominaria",15,25,0.6
 Season-All,5da578b8-19e6-4068-9336-e7cd33c585f1,Retrofitter Foundry,16,25,0.64
-Season-All,5dd72697-24be-42c7-a6d9-a837bdbd4662,,0,25,0.0
+Season-All,5dd72697-24be-42c7-a6d9-a837bdbd4662,Grim Lavamancer,0,25,0.0
 Season-All,5de097e5-e960-4404-a370-defe93ce892f,Oracle of Mul Daya,10,25,0.4
 Season-All,5eccf31d-869d-4003-a92b-71b4f4b479ee,Strix Serenade,14,25,0.56
 Season-All,5f1cdcba-a04a-4a2f-8bc1-0dd7fa03754d,Exhume,12,25,0.48
@@ -2207,7 +2207,7 @@ Season-All,70719e7b-6f02-4c1a-9f11-79b2b0d9846a,Dust Animus,7,25,0.28
 Season-All,70d8fd1a-8756-4e11-9235-ca119bd11dab,Cabal Ritual,0,25,0.0
 Season-All,70e33f45-7d47-423b-a123-8541f1d1afb4,Lingering Souls,17,25,0.68
 Season-All,70e64028-ae96-4950-aa6c-9d347409fad3,Force Spike,1,25,0.04
-Season-All,7127164d-f2a3-4d79-b6db-93507ff5ab47,,1,25,0.04
+Season-All,7127164d-f2a3-4d79-b6db-93507ff5ab47,Bitterbloom Bearer,1,25,0.04
 Season-All,71384418-173a-4f77-adab-56e52fa23692,Delighted Halfling,20,25,0.8
 Season-All,716a44b4-f6b0-4f14-a270-6442aed3251f,"Raffine, Scheming Seer",2,25,0.08
 Season-All,729daf0e-b822-41bd-a908-ca8ec34032f0,Tropical Island,13,25,0.52
@@ -2265,7 +2265,7 @@ Season-All,89345f55-2b32-4356-945a-d56dded39909,Preacher of the Schism,7,25,0.28
 Season-All,89af0f45-c11c-4f13-9950-b1489440ee5b,Chain Lightning,22,25,0.88
 Season-All,89f5cc05-5d9d-4709-b3c5-a6249c294acc,Hexdrinker,24,25,0.96
 Season-All,8a720448-017f-4f4a-9501-678245eaed17,Mishra's Bauble,18,25,0.72
-Season-All,8ac39c01-127f-4471-bc74-11a90c48e306,,0,25,0.0
+Season-All,8ac39c01-127f-4471-bc74-11a90c48e306,Ghost Vacuum,0,25,0.0
 Season-All,8b1e10e8-ea14-4761-910b-4072e2a18456,Grave Researcher // Reanimate,1,25,0.04
 Season-All,8c2996d9-3287-4480-8c04-7a378e37e3cf,Flooded Strand,21,25,0.84
 Season-All,8c39f9b4-02b9-4d44-b8d6-4fd02ebbb0c5,"Narset, Parter of Veils",16,25,0.64
@@ -2526,7 +2526,7 @@ Season-All,f3405184-dcda-4bb6-ade6-c2a87bc3296d,Sleight of Hand,4,25,0.16
 Season-All,f3537373-ef54-4578-9d05-6216420ee349,Esper Sentinel,19,25,0.76
 Season-All,f44e5128-e146-4e46-b313-a40d82719d1d,Spirit of the Labyrinth,4,25,0.16
 Season-All,f46a9329-7b91-441d-8653-50c1152c9120,"Kellan, Planar Trailblazer",11,25,0.44
-Season-All,f486df00-7c4a-4ff0-bb0b-c8b5432ac742,,1,25,0.04
+Season-All,f486df00-7c4a-4ff0-bb0b-c8b5432ac742,Sylvan Library,1,25,0.04
 Season-All,f5881bbc-8600-464d-9dcd-5a7780918d1d,Galvanic Blast,7,25,0.28
 Season-All,f5fb426a-5618-4dd4-9c51-0cc847be8c1d,Multiversal Passage,8,25,0.32
 Season-All,f61693a2-7042-44e0-85ba-9bf12ab94e7e,Suplex,12,25,0.48
