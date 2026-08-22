@@ -96,37 +96,46 @@ Season-5,Sneak and Show,4,4,1.0
 Season-5,Storm,9,20,0.45
 Season-5,Sultai Control,1,4,0.25
 Season-5,White Aggro,1,4,0.25
-Season-6,Boros Aggro,4,4,1.0
+Season-6,Artifacts,1,4,0.25
+Season-6,Azorius Combo Control,2,4,0.5
+Season-6,Boros Aggro,7,8,0.875
+Season-6,Domain Aggro,3,4,0.75
 Season-6,Draw 7 Combo-Control,2,4,0.5
+Season-6,Esper Control,1,4,0.25
+Season-6,Golgari Midrange,0,4,0.0
+Season-6,Greenbased Aggro-Combo,2,4,0.5
 Season-6,Gruul Aggro,2,4,0.5
 Season-6,High Tide,1,4,0.25
 Season-6,Lurrus Control,2,4,0.5
+Season-6,Naya Midrange,1,4,0.25
 Season-6,Reanimator,3,4,0.75
 Season-6,Reanimator-Flash,2,4,0.5
+Season-6,Sneak Attack,4,4,1.0
 Season-6,Storm,0,4,0.0
 Season-All,Aggro-Combo Lands,1,4,0.25
-Season-All,Artifacts,18,64,0.28125
+Season-All,Artifacts,19,68,0.27941176470588236
 Season-All,Artifacts Control,4,12,0.3333333333333333
 Season-All,Azorius Blink,9,32,0.28125
-Season-All,Azorius Combo Control,3,8,0.375
+Season-All,Azorius Combo Control,5,12,0.4166666666666667
 Season-All,Azorius Control,10,24,0.4166666666666667
 Season-All,Azorius Tempo,2,8,0.25
 Season-All,Birthing Pod,11,20,0.55
 Season-All,Birthing Pod Combo-Control,2,4,0.5
-Season-All,Boros Aggro,60,108,0.5555555555555556
+Season-All,Boros Aggro,63,112,0.5625
 Season-All,Combo Lands,9,20,0.45
 Season-All,Combo Mix,10,20,0.5
 Season-All,Combo-Control Lands,7,16,0.4375
 Season-All,Dimir Control,6,12,0.5
 Season-All,Dimir Tempo,5,8,0.625
+Season-All,Domain Aggro,3,4,0.75
 Season-All,Domain Control,18,36,0.5
 Season-All,Draw 7,11,24,0.4583333333333333
 Season-All,Draw 7 Combo-Control,9,20,0.45
-Season-All,Esper Control,1,4,0.25
+Season-All,Esper Control,2,8,0.25
 Season-All,Esper Tempo,1,4,0.25
 Season-All,Flash,2,4,0.5
-Season-All,Golgari Midrange,3,16,0.1875
-Season-All,Greenbased Aggro-Combo,17,36,0.4722222222222222
+Season-All,Golgari Midrange,3,20,0.15
+Season-All,Greenbased Aggro-Combo,19,40,0.475
 Season-All,Grixis Control,18,32,0.5625
 Season-All,Grixis Tempo,2,4,0.5
 Season-All,Gruul Aggro,22,40,0.55
@@ -147,7 +156,7 @@ Season-All,Mardu Midrange,3,4,0.75
 Season-All,Nadu Combo-Control,2,4,0.5
 Season-All,Nadu Midrange,6,20,0.3
 Season-All,Naya Aggro,3,4,0.75
-Season-All,Naya Midrange,2,4,0.5
+Season-All,Naya Midrange,3,8,0.375
 Season-All,Opposition,7,16,0.4375
 Season-All,Orzhov Blink,4,8,0.5
 Season-All,Orzhov Control,12,16,0.75
@@ -165,7 +174,7 @@ Season-All,Selesnya Aggro,7,16,0.4375
 Season-All,Selesnya Midrange,6,20,0.3
 Season-All,Simic Midrange,11,16,0.6875
 Season-All,Simic Tempo,3,8,0.375
-Season-All,Sneak Attack,4,8,0.5
+Season-All,Sneak Attack,8,12,0.6666666666666666
 Season-All,Sneak and Flash,7,12,0.5833333333333334
 Season-All,Sneak and Show,4,4,1.0
 Season-All,Splinter-Twin,6,8,0.75

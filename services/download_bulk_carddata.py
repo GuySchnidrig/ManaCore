@@ -27,27 +27,39 @@ def fetch_bulk_file_url(bulk_type: str = BULK_TYPE) -> str:
     response = requests.get(SCRYFALL_BULK_URL, headers=SCRYFALL_HEADERS)
     response.raise_for_status()
     data = response.json()
-    
+
     for bulk in data["data"]:
         if bulk["type"] == bulk_type:
-            return bulk["download_uri"]
-    
+            # download_uri (JSON) retired 2026-07-20; jsonl_download_uri is the only one left
+            uri = bulk.get("jsonl_download_uri") or bulk.get("download_uri")
+            if not uri:
+                raise ValueError(f"No download URI in bulk object: {list(bulk)}")
+            return uri
+
     raise ValueError(f"No bulk file found for type '{bulk_type}'")
 
+
 def download_and_filter_bulk(url: str, drafted_ids: set, save_path: str):
-    """Download the bulk file, filter by drafted_ids, and save gzip JSON."""
+    """Stream the gzipped JSONL bulk file, filter by drafted_ids, save gzip JSON."""
     print("Downloading Scryfall bulk data...")
-    response = requests.get(url, headers=SCRYFALL_HEADERS)
-    response.raise_for_status()
+    filtered_cards = []
+    total = 0
 
-    # Load full JSON array
-    data = response.json()
+    with requests.get(url, headers=SCRYFALL_HEADERS, stream=True) as response:
+        response.raise_for_status()
+        response.raw.decode_content = True  # handle transport-level Content-Encoding
+        with gzip.open(response.raw, "rt", encoding="utf-8") as fh:
+            for line in fh:
+                line = line.strip()
+                if not line:
+                    continue
+                total += 1
+                card = json.loads(line)
+                if card["id"] in drafted_ids:
+                    filtered_cards.append(card)
 
-    # Filter by drafted deck IDs
-    filtered_cards = [card for card in data if card["id"] in drafted_ids]
-    print(f"Filtered {len(filtered_cards)} cards out of {len(data)} total.")
+    print(f"Filtered {len(filtered_cards)} cards out of {total} total.")
 
-    # Save filtered cards to gzip JSON
     with gzip.open(save_path, "wt", encoding="utf-8") as f:
         json.dump(filtered_cards, f)
     print(f"Saved filtered cards to: {save_path}")

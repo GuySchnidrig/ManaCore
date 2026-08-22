@@ -1,6 +1,6 @@
 player,player_id,scryfallId,card_name,pick_count
 Andrin,5,c2089ec9-0665-448f-bfe9-d181de127814,Brazen Borrower // Petty Theft,7
-Beni,35,672b9b16-daef-44e6-9a3a-cfd9f3c78bc7,Pentad Prism,3
+Beni,35,4cbdacc1-7a1b-4633-85f5-eb50c2bf406d,Snapcaster Mage,3
 Dimlas,1,310a1c46-8331-4a09-9fcb-d942f8102364,Thoughtseize,8
 Elie,17,04fc99dc-bfbe-4567-b791-6b1db96471ec,Reanimate,1
 Felix,25,006d2bf1-20f7-4b09-8d98-8233d91682bd,Flame Slash,1
@@ -14,13 +14,13 @@ Joel R.,3,01794178-cf41-454c-ac37-1d8b18e42db2,Green Sun's Zenith,1
 Jonas W.,27,0463e989-ba32-4a46-a82f-e0d6daf3cd51,Sulfuric Vortex,1
 Jonsi,32,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,1
 Kas,30,3faa8c5e-9e1b-4cee-b322-a033bf33dcbc,Hymn to Tourach,2
-Kaspar,36,006d2bf1-20f7-4b09-8d98-8233d91682bd,Flame Slash,1
+Kaspar,36,006d2bf1-20f7-4b09-8d98-8233d91682bd,Flame Slash,2
 Luca,20,4df8aabc-7fcb-4b7b-980b-18f499e6c170,Hullbreacher,3
 Lukas Stalder,2,0cb33b46-4d1b-4f97-bfdc-d815aee111da,Mana Crypt,6
 Lukas Wyss,29,1163fe84-c5d5-42c8-b7cd-d206a9b0bd3f,Tireless Provisioner,1
 Manuel,8,21c950d7-b4f6-4902-8c9a-98f2933f9fa5,Adanto Vanguard,5
-Matthias,21,7c884e1e-fecb-4330-b3de-5fc2a60f7173,Kolaghan's Command,4
-Myri,15,01c6f877-6b00-4d57-8a88-36cd3b16edbc,Llanowar Elves,4
+Matthias,21,1fc6d14a-1328-4032-ad9e-cd85cd365bd3,Endurance,4
+Myri,15,01006833-6007-4c16-9ebb-20d31c60a57a,Taiga,4
 Mäxu,34,01006833-6007-4c16-9ebb-20d31c60a57a,Taiga,1
 Nici,31,01978fe5-00a9-4add-ae2a-b4c2572ffb9a,Vendilion Clique,1
 Noe T.,11,89f5cc05-5d9d-4709-b3c5-a6249c294acc,Hexdrinker,5
@@ -28,7 +28,7 @@ Oli,37,01c6f877-6b00-4d57-8a88-36cd3b16edbc,Llanowar Elves,1
 Pali,14,553fb946-2706-475b-89f9-e4355ec9ea2b,March of Otherworldly Light,3
 Sam,7,5d10b752-d9cb-419d-a5c4-d4ee1acb655e,"Teferi, Hero of Dominaria",2
 Sili,6,01e7b0bc-1c6c-48f4-8b72-1a809f536c6c,Birds of Paradise,7
-Thomas,26,064dfdeb-485f-473e-9fa0-8fdb7638cdc6,Dismember,3
+Thomas,26,9b911653-7b96-4cf3-a907-13c5c53a14f7,Overlord of the Balemurk,4
 Thomas R.,,05e8a4ea-8c0d-4284-ac23-80e19fdde11d,Myr Battlesphere,1
 Tinu,4,63c59228-c742-4abd-b4d7-9f7880190e95,Windswept Heath,5
 Tobi,13,079e6263-e54c-4899-a336-5315909b9322,"Magda, Brazen Outlaw",2
