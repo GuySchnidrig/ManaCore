@@ -1,4 +1,4 @@
-name: Trigger PythonAnywhere Fetch
+name: Sync Data to ManaDash
 
 on:
   workflow_dispatch:
