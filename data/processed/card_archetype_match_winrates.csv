@@ -3585,7 +3585,7 @@ Season-6,06c0c35d-a26e-473a-9206-8fbda7191700,Entomb,Aggro-Combo,4,3,0.75
 Season-6,06c0c35d-a26e-473a-9206-8fbda7191700,Entomb,Control-Aggro (Midrange),4,0,0.0
 Season-6,06cb1bd6-73e0-4104-b344-4bc52d7dcedf,Baleful Strix,Combo-Control,4,2,0.5
 Season-6,071daca8-ccc6-4707-843e-adac40dd1588,Fury,Combo-Control,4,4,1.0
-Season-6,07313dd3-d0dc-40ca-98a3-fa4d39e5bcae,Oust,Aggro,8,7,0.875
+Season-6,07313dd3-d0dc-40ca-98a3-fa4d39e5bcae,Oust,Aggro,4,4,1.0
 Season-6,07313dd3-d0dc-40ca-98a3-fa4d39e5bcae,Oust,Control-Aggro (Midrange),4,1,0.25
 Season-6,073bfdca-d7b8-4f4b-93f3-6e7c44bc0b0a,Sol Ring,Aggro-Combo,4,2,0.5
 Season-6,0783b426-a527-42c1-9271-be28b229e1c6,"Torsten, Founder of Benalia",Combo-Control,4,4,1.0
@@ -4201,7 +4201,7 @@ Season-All,071daca8-ccc6-4707-843e-adac40dd1588,Fury,Control-Aggro (Midrange),8,
 Season-All,07246783-d475-4f61-99ac-e2b574072349,Voice of Resurgence,Aggro,12,7,0.5833333333333334
 Season-All,07246783-d475-4f61-99ac-e2b574072349,Voice of Resurgence,Combo-Control,4,2,0.5
 Season-All,07246783-d475-4f61-99ac-e2b574072349,Voice of Resurgence,Control-Aggro (Midrange),12,1,0.0833333333333333
-Season-All,07313dd3-d0dc-40ca-98a3-fa4d39e5bcae,Oust,Aggro,40,23,0.575
+Season-All,07313dd3-d0dc-40ca-98a3-fa4d39e5bcae,Oust,Aggro,36,20,0.5555555555555556
 Season-All,07313dd3-d0dc-40ca-98a3-fa4d39e5bcae,Oust,Aggro-Control (Tempo),4,2,0.5
 Season-All,07313dd3-d0dc-40ca-98a3-fa4d39e5bcae,Oust,Combo,4,0,0.0
 Season-All,07313dd3-d0dc-40ca-98a3-fa4d39e5bcae,Oust,Combo-Control,12,6,0.5

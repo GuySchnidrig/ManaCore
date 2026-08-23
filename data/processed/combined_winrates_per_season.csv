@@ -5952,10 +5952,9 @@ Myri,15,cea3b218-0e6e-443a-84f7-380f1021e8e1,Barrowgoyf,Season-All,1,4,1,0,3,0.2
 Myri,15,17db2b6a-eaa8-4a08-9e86-370bbd058574,Bayou,Season-4,2,4,1,0,3,0.25,0.0,10,4,0,6,0.4,0.0
 Myri,15,17db2b6a-eaa8-4a08-9e86-370bbd058574,Bayou,Season-5,2,4,1,1,2,0.25,0.25,8,3,1,5,0.375,0.125
 Myri,15,17db2b6a-eaa8-4a08-9e86-370bbd058574,Bayou,Season-All,2,8,2,1,5,0.25,0.125,18,7,1,11,0.3888888888888889,0.0555555555555555
-Myri,15,07313dd3-d0dc-40ca-98a3-fa4d39e5bcae,Oust,Season-4,3,4,1,0,3,0.25,0.0,10,4,0,6,0.4,0.0
-Myri,15,07313dd3-d0dc-40ca-98a3-fa4d39e5bcae,Oust,Season-5,3,4,0,1,3,0.0,0.25,9,2,1,7,0.2222222222222222,0.1111111111111111
-Myri,15,07313dd3-d0dc-40ca-98a3-fa4d39e5bcae,Oust,Season-6,3,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,07313dd3-d0dc-40ca-98a3-fa4d39e5bcae,Oust,Season-All,3,12,4,1,7,0.3333333333333333,0.0833333333333333,29,12,1,17,0.4137931034482758,0.0344827586206896
+Myri,15,07313dd3-d0dc-40ca-98a3-fa4d39e5bcae,Oust,Season-4,2,4,1,0,3,0.25,0.0,10,4,0,6,0.4,0.0
+Myri,15,07313dd3-d0dc-40ca-98a3-fa4d39e5bcae,Oust,Season-5,2,4,0,1,3,0.0,0.25,9,2,1,7,0.2222222222222222,0.1111111111111111
+Myri,15,07313dd3-d0dc-40ca-98a3-fa4d39e5bcae,Oust,Season-All,2,8,1,1,6,0.125,0.125,19,6,1,13,0.3157894736842105,0.0526315789473684
 Myri,15,02c532e8-21f1-4d6f-a931-1ea48a6aeea2,Coalition Relic,Season-4,1,4,1,0,3,0.25,0.0,10,4,0,6,0.4,0.0
 Myri,15,02c532e8-21f1-4d6f-a931-1ea48a6aeea2,Coalition Relic,Season-All,1,4,1,0,3,0.25,0.0,10,4,0,6,0.4,0.0
 Myri,15,14065271-d942-42a8-aa38-d8a622c0375d,Scrubland,Season-4,2,4,1,0,3,0.25,0.0,10,4,0,6,0.4,0.0
@@ -12222,38 +12221,6 @@ Matthias,21,cdfadb17-76ad-4d4d-9fa7-33c4b88b4c0a,Sowing Mycospawn,Season-6,1,4,2
 Matthias,21,cdfadb17-76ad-4d4d-9fa7-33c4b88b4c0a,Sowing Mycospawn,Season-All,1,4,2,1,1,0.5,0.25,10,5,1,5,0.5,0.1
 Matthias,21,01794178-cf41-454c-ac37-1d8b18e42db2,Green Sun's Zenith,Season-6,1,4,2,1,1,0.5,0.25,10,5,1,5,0.5,0.1
 Matthias,21,01794178-cf41-454c-ac37-1d8b18e42db2,Green Sun's Zenith,Season-All,1,4,2,1,1,0.5,0.25,10,5,1,5,0.5,0.1
-Myri,15,327cf118-cc92-4073-85d0-94d2a0a6989a,Scalding Tarn,Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,327cf118-cc92-4073-85d0-94d2a0a6989a,Scalding Tarn,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,a3bb2881-e8fb-4fba-a9f9-d93e6ca24378,"Laelia, the Blade Reforged",Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,a3bb2881-e8fb-4fba-a9f9-d93e6ca24378,"Laelia, the Blade Reforged",Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,02138fbb-3962-4348-8d31-faaefba0b8b2,Raugrin Triome,Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,02138fbb-3962-4348-8d31-faaefba0b8b2,Raugrin Triome,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,26d40e03-6de4-4373-9fbf-04c1dd79e995,Jetmir's Garden,Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,26d40e03-6de4-4373-9fbf-04c1dd79e995,Jetmir's Garden,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,b256ddc8-8b12-434c-a610-1a872e948f2f,White Plume Adventurer,Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,b256ddc8-8b12-434c-a610-1a872e948f2f,White Plume Adventurer,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,99e96b34-b1c4-4647-a38e-2cf1aedaaace,Tersa Lightshatter,Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,99e96b34-b1c4-4647-a38e-2cf1aedaaace,Tersa Lightshatter,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,866b7fd4-86e3-4b42-b1ea-33bad0db1f9f,Prismari Command,Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,866b7fd4-86e3-4b42-b1ea-33bad0db1f9f,Prismari Command,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,6f2cec5d-50ea-4d0f-8925-eba06222d015,"Shelinda, Yevon Acolyte",Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,6f2cec5d-50ea-4d0f-8925-eba06222d015,"Shelinda, Yevon Acolyte",Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,c1bd3bc0-77bd-40fe-b4f1-835a04cb6e41,Eagles of the North,Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,c1bd3bc0-77bd-40fe-b4f1-835a04cb6e41,Eagles of the North,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,333bf101-14e8-4753-99bc-9174f42c4122,Kinscaer Sentry,Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,333bf101-14e8-4753-99bc-9174f42c4122,Kinscaer Sentry,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,ade32396-8841-4ba4-8852-d11146607f21,Mockingbird,Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,ade32396-8841-4ba4-8852-d11146607f21,Mockingbird,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,9d48aaff-46ab-411b-9456-171d4709f951,Fear of Missing Out,Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,9d48aaff-46ab-411b-9456-171d4709f951,Fear of Missing Out,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,18ee486e-dc25-4de7-a71f-f11fdf100176,"Okoye, Mighty and Adored",Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,18ee486e-dc25-4de7-a71f-f11fdf100176,"Okoye, Mighty and Adored",Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,c1c7aa22-51b0-45ee-9a8e-5493a1820d8c,"Wolverine, Fierce Fighter",Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,c1c7aa22-51b0-45ee-9a8e-5493a1820d8c,"Wolverine, Fierce Fighter",Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,0027e5ca-8046-40a0-bd73-79be55f28bff,Remand,Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Myri,15,0027e5ca-8046-40a0-bd73-79be55f28bff,Remand,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
 Sili,6,68c72226-6f52-4322-8b14-18737293dfa0,Bloodstained Mire,Season-6,1,4,4,0,0,1.0,0.0,8,8,0,0,1.0,0.0
 Sili,6,68c72226-6f52-4322-8b14-18737293dfa0,Bloodstained Mire,Season-All,1,4,4,0,0,1.0,0.0,8,8,0,0,1.0,0.0
 Sili,6,3199907b-9f24-4554-942a-8ab5a7701717,"Night Nurse, Healer of Heroes",Season-6,1,4,4,0,0,1.0,0.0,8,8,0,0,1.0,0.0
@@ -12396,3 +12363,35 @@ Beni,35,a1febcf1-afa4-4406-9ac1-5bf98b2765d2,Time Walk,Season-6,1,4,2,0,2,0.5,0.
 Beni,35,a1febcf1-afa4-4406-9ac1-5bf98b2765d2,Time Walk,Season-All,1,4,2,0,2,0.5,0.0,11,6,0,5,0.5454545454545454,0.0
 Beni,35,995486ce-58bb-4753-a812-0ca73ef1a235,Gitaxian Probe,Season-6,1,4,2,0,2,0.5,0.0,11,6,0,5,0.5454545454545454,0.0
 Beni,35,995486ce-58bb-4753-a812-0ca73ef1a235,Gitaxian Probe,Season-All,1,4,2,0,2,0.5,0.0,11,6,0,5,0.5454545454545454,0.0
+Myri,15,327cf118-cc92-4073-85d0-94d2a0a6989a,Scalding Tarn,Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,327cf118-cc92-4073-85d0-94d2a0a6989a,Scalding Tarn,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,a3bb2881-e8fb-4fba-a9f9-d93e6ca24378,"Laelia, the Blade Reforged",Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,a3bb2881-e8fb-4fba-a9f9-d93e6ca24378,"Laelia, the Blade Reforged",Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,02138fbb-3962-4348-8d31-faaefba0b8b2,Raugrin Triome,Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,02138fbb-3962-4348-8d31-faaefba0b8b2,Raugrin Triome,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,26d40e03-6de4-4373-9fbf-04c1dd79e995,Jetmir's Garden,Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,26d40e03-6de4-4373-9fbf-04c1dd79e995,Jetmir's Garden,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,b256ddc8-8b12-434c-a610-1a872e948f2f,White Plume Adventurer,Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,b256ddc8-8b12-434c-a610-1a872e948f2f,White Plume Adventurer,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,99e96b34-b1c4-4647-a38e-2cf1aedaaace,Tersa Lightshatter,Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,99e96b34-b1c4-4647-a38e-2cf1aedaaace,Tersa Lightshatter,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,866b7fd4-86e3-4b42-b1ea-33bad0db1f9f,Prismari Command,Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,866b7fd4-86e3-4b42-b1ea-33bad0db1f9f,Prismari Command,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,6f2cec5d-50ea-4d0f-8925-eba06222d015,"Shelinda, Yevon Acolyte",Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,6f2cec5d-50ea-4d0f-8925-eba06222d015,"Shelinda, Yevon Acolyte",Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,c1bd3bc0-77bd-40fe-b4f1-835a04cb6e41,Eagles of the North,Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,c1bd3bc0-77bd-40fe-b4f1-835a04cb6e41,Eagles of the North,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,333bf101-14e8-4753-99bc-9174f42c4122,Kinscaer Sentry,Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,333bf101-14e8-4753-99bc-9174f42c4122,Kinscaer Sentry,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,ade32396-8841-4ba4-8852-d11146607f21,Mockingbird,Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,ade32396-8841-4ba4-8852-d11146607f21,Mockingbird,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,9d48aaff-46ab-411b-9456-171d4709f951,Fear of Missing Out,Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,9d48aaff-46ab-411b-9456-171d4709f951,Fear of Missing Out,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,18ee486e-dc25-4de7-a71f-f11fdf100176,"Okoye, Mighty and Adored",Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,18ee486e-dc25-4de7-a71f-f11fdf100176,"Okoye, Mighty and Adored",Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,c1c7aa22-51b0-45ee-9a8e-5493a1820d8c,"Wolverine, Fierce Fighter",Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,c1c7aa22-51b0-45ee-9a8e-5493a1820d8c,"Wolverine, Fierce Fighter",Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,0027e5ca-8046-40a0-bd73-79be55f28bff,Remand,Season-6,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
+Myri,15,0027e5ca-8046-40a0-bd73-79be55f28bff,Remand,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
