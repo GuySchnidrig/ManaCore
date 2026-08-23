@@ -3,63 +3,48 @@ name: Sync Data to ManaDash
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["ManaCore Data Pipeline"]
-    types:
-      - completed
+    workflows: ["ManaCore Card Impact Analysis"]
+    types: [completed]
+    branches: [main]
 
 jobs:
-  schedule_task:
+  sync-data:
     runs-on: ubuntu-latest
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Checkout ManaCore
+        uses: actions/checkout@v6
         with:
-          python-version: '3.10'
+          ref: main
+          path: manacore
 
-      - name: Install requests
-        run: pip install requests
+      - name: Checkout ManaDash
+        uses: actions/checkout@v6
+        with:
+          repository: GuySchnidrig/ManaDash
+          token: ${{ secrets.MANADASH_TOKEN }}
+          ref: main
+          path: manadash
 
-      - name: Update existing PythonAnywhere task
-        env:
-          PA_USERNAME: ${{ secrets.PYTHONANYWHERE_USERNAME }}
-          PA_TOKEN: ${{ secrets.PYTHONANYWHERE_API_TOKEN }}
+      - name: Sync processed data
         run: |
-          python - <<'EOF'
-          import requests
-          from datetime import datetime, timedelta
+          mkdir -p manadash/data
+          rsync -av --delete \
+            --include='*/' --include='*.csv' --exclude='*' \
+            manacore/data/processed/ manadash/data/
 
-          username = '${{ secrets.PYTHONANYWHERE_USERNAME }}'
-          token = '${{ secrets.PYTHONANYWHERE_API_TOKEN }}'
-          headers = {"Authorization": f"Token {token}"}
-
-          # Calculate the next minute in server UTC time
-          now = datetime.utcnow()
-          next_minute = now + timedelta(minutes=1)
-          hour = next_minute.hour
-          minute = next_minute.minute
-
-          # Data to update the existing task
-          data = {
-              "command": "python3.10 /home/GuySchnidrig/update_data.py",
-              "enabled": True,
-              "description": "Run update_data.py shortly (updated)",
-              "interval": "daily",
-              "hour": hour,
-              "minute": minute
-          }
-
-          task_id = 1262825
-
-          r = requests.put(
-              f"https://www.pythonanywhere.com/api/v0/user/{username}/schedule/{task_id}/",
-              headers=headers,
-              json=data
-          )
-
-          print("Status:", r.status_code)
-          print("Response:", r.text)
-          EOF
+      - name: Commit and push to ManaDash
+        working-directory: manadash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A data
+          if git diff --cached --quiet; then
+            echo "No data changes to sync."
+          else
+            git commit -m "Sync processed data from ManaCore"
+            git push origin main
+          fi

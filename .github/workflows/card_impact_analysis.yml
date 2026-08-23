@@ -2,28 +2,35 @@ name: ManaCore Card Impact Analysis
 
 on:
   workflow_dispatch:  # run manually
+  workflow_run:
+    workflows: ["ManaCore Data Pipeline"]
+    types: [completed]
+    branches: [main]
+
+concurrency:
+  group: manacore-push-main
+  cancel-in-progress: false
 
 jobs:
   run-analysis:
     runs-on: ubuntu-latest
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
     permissions:
       contents: write
-      
+
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: Set up Python 3.11
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
           python-version: '3.11'
-
-      - name: Cache pip
-        uses: actions/cache@v3
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
+          cache: 'pip'
 
       - name: Upgrade pip and setuptools
         run: python -m pip install --upgrade pip setuptools
@@ -39,36 +46,25 @@ jobs:
 
       - name: Try importing manacore
         run: python -c "import manacore; print(manacore.__file__)"
-        
+
       - name: Run prepare_data_for_card_impact_analysis.py
-        run: |
-            python manacore/glm/prepare_data_for_card_impact_analysis.py
+        run: python manacore/glm/prepare_data_for_card_impact_analysis.py
 
       - name: Run card impact analysis
-        run: |
-            python manacore/glm/card_impact_analysis.py "data/processed/games_for_analysis.csv" output.csv 17
+        run: python manacore/glm/card_impact_analysis.py "data/processed/games_for_analysis.csv" output.csv 17
 
       - name: Remove large CSV
-        run: |
-          rm -f data/processed/games_for_analysis.csv
+        run: rm -f data/processed/games_for_analysis.csv
 
-      - name: Configure git for committing
+      - name: Commit and push updated CSVs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-      - name: Commit updated CSV files (excluding ignored)
-
-        run: |
-            # Add all CSV files in data/processed (both modified and new)
-            # Git will respect .gitignore automatically
-            git add data/processed/*.csv 2>/dev/null || true
-            
-            # Check if there are any changes staged
-            if git diff --cached --quiet; then
-              echo "No CSV files to commit."
-            else
-              git commit -m "Update processed CSV files [skip ci]"
-            fi
-            
-      - name: Push changes
-        run: git pull --rebase origin main && git push origin main
+          git add -A data/processed
+          if git diff --cached --quiet; then
+            echo "No CSV changes to commit."
+          else
+            git commit -m "Update processed CSV files [skip ci]"
+            git pull --rebase origin main
+            git push origin main
+          fi
