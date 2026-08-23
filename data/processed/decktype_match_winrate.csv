@@ -109,7 +109,7 @@ Season-6,High Tide,1,4,0.25
 Season-6,Lurrus Control,2,4,0.5
 Season-6,Naya Midrange,1,4,0.25
 Season-6,Reanimator,3,4,0.75
-Season-6,Reanimator-Flash,2,4,0.5
+Season-6,Reanimator-Flash,4,8,0.5
 Season-6,Sneak Attack,4,4,1.0
 Season-6,Storm,0,4,0.0
 Season-All,Aggro-Combo Lands,1,4,0.25
@@ -166,7 +166,7 @@ Season-All,Rakdos Aggro,13,32,0.40625
 Season-All,Rakdos Aggro-Combo,3,4,0.75
 Season-All,Reanimator,37,80,0.4625
 Season-All,Reanimator Combo-Control,2,4,0.5
-Season-All,Reanimator-Flash,6,12,0.5
+Season-All,Reanimator-Flash,8,16,0.5
 Season-All,Reanimator-Sneak,10,16,0.625
 Season-All,Red Aggro,4,8,0.5
 Season-All,Red Aggro Strom,2,4,0.5

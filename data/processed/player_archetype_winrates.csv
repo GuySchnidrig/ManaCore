@@ -160,6 +160,7 @@ Season-5,Yannik,9,Control-Aggro (Midrange),2,9,0.2222222222222222,0,4,0.0
 Season-5,Zoel,24,Combo,7,7,1.0,4,4,1.0
 Season-5,Zoel,24,Control,12,19,0.631578947368421,5,8,0.625
 Season-6,Andrin,5,Aggro,8,10,0.8,4,4,1.0
+Season-6,Andrin,5,Combo,5,11,0.4545454545454545,2,4,0.5
 Season-6,Beni,35,Combo-Control,6,11,0.5454545454545454,2,4,0.5
 Season-6,Dimlas,1,Aggro,6,10,0.6,3,4,0.75
 Season-6,Dimlas,1,Combo,2,8,0.25,1,4,0.25
@@ -179,7 +180,7 @@ Season-6,Tommy,16,Control-Aggro (Midrange),5,11,0.4545454545454545,1,4,0.25
 Season-All,Andrin,5,Aggro,40,67,0.5970149253731343,19,28,0.6785714285714286
 Season-All,Andrin,5,Aggro-Combo,7,8,0.875,3,4,0.75
 Season-All,Andrin,5,Aggro-Control (Tempo),16,30,0.5333333333333333,6,12,0.5
-Season-All,Andrin,5,Combo,32,67,0.4776119402985074,12,28,0.4285714285714285
+Season-All,Andrin,5,Combo,37,78,0.4743589743589743,14,32,0.4375
 Season-All,Andrin,5,Control,23,40,0.575,9,16,0.5625
 Season-All,Beni,35,Combo,5,9,0.5555555555555556,2,4,0.5
 Season-All,Beni,35,Combo-Control,6,11,0.5454545454545454,2,4,0.5

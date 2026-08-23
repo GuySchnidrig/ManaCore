@@ -234,6 +234,7 @@ Season-5,Zoel,24,Azorius Control,5,9,0.5555555555555556,2,4,0.5
 Season-5,Zoel,24,Domain Control,7,10,0.7,3,4,0.75
 Season-5,Zoel,24,Sneak and Show,7,7,1.0,4,4,1.0
 Season-6,Andrin,5,Boros Aggro,8,10,0.8,4,4,1.0
+Season-6,Andrin,5,Reanimator-Flash,5,11,0.4545454545454545,2,4,0.5
 Season-6,Beni,35,Azorius Combo Control,6,11,0.5454545454545454,2,4,0.5
 Season-6,Dimlas,1,Boros Aggro,6,10,0.6,3,4,0.75
 Season-6,Dimlas,1,High Tide,2,8,0.25,1,4,0.25
@@ -262,6 +263,7 @@ Season-All,Andrin,5,Orzhov Control,6,9,0.6666666666666666,3,4,0.75
 Season-All,Andrin,5,Rakdos Aggro,4,10,0.4,2,4,0.5
 Season-All,Andrin,5,Rakdos Aggro-Combo,7,8,0.875,3,4,0.75
 Season-All,Andrin,5,Reanimator,21,38,0.5526315789473685,9,16,0.5625
+Season-All,Andrin,5,Reanimator-Flash,5,11,0.4545454545454545,2,4,0.5
 Season-All,Andrin,5,Selesnya Aggro,8,18,0.4444444444444444,4,8,0.5
 Season-All,Andrin,5,Simic Tempo,5,9,0.5555555555555556,2,4,0.5
 Season-All,Beni,35,Azorius Blink,3,10,0.3,0,4,0.0
