@@ -3643,9 +3643,11 @@ Season-6,120be808-ff3b-4fca-96a1-4db6b9825856,Quantum Riddler,Control-Aggro (Mid
 Season-6,139b90cd-8272-457a-be32-1298145345be,Watery Grave,Control,4,2,0.5
 Season-6,13c5a1ce-932a-4b3d-8b86-ed920e646afc,Satyr Wayfinder,Aggro,4,2,0.5
 Season-6,13c5a1ce-932a-4b3d-8b86-ed920e646afc,Satyr Wayfinder,Control,4,2,0.5
-Season-6,13f5bcdc-70bb-4d67-99e1-282f166ee4bf,Increasing Confusion,Combo,4,0,0.0
+Season-6,13f5bcdc-70bb-4d67-99e1-282f166ee4bf,Increasing Confusion,Combo,8,0,0.0
 Season-6,14065271-d942-42a8-aa38-d8a622c0375d,Scrubland,Control,4,2,0.5
+Season-6,1453f92e-df2d-4789-aa1b-a5b5c51567d4,Preordain,Combo,4,0,0.0
 Season-6,1571b584-9007-45ee-a3c3-6c72f227fee2,Mystical Tutor,Combo,8,4,0.5
+Season-6,15c34f32-49d9-4a0d-83b2-28172f54fdd1,Crop Rotation,Combo,4,0,0.0
 Season-6,16448d95-ee21-4def-b880-26f6f159c213,Metamorphosis Fanatic,Combo-Control,4,4,1.0
 Season-6,16c8d2fa-54a7-46e8-980c-905258497c90,Arid Mesa,Combo-Control,4,2,0.5
 Season-6,1716b4dd-9045-462b-b053-72de450a8cde,Blood Crypt,Aggro-Combo,4,3,0.75
@@ -3676,6 +3678,7 @@ Season-6,19d6834d-afa3-4747-a62d-0654f4d9729f,"Malcolm, Alluring Scoundrel",Cont
 Season-6,1ac01fff-4de6-4783-9489-4127e25bc641,Prismatic Vista,Aggro,4,3,0.75
 Season-6,1ac01fff-4de6-4783-9489-4127e25bc641,Prismatic Vista,Aggro-Combo,4,3,0.75
 Season-6,1b0fe46d-08d6-48c3-be0d-650d8d3d66af,Ideas Unbound,Combo,4,1,0.25
+Season-6,1b406cc5-75c9-430a-83a2-de0f2a8aeae6,"Mole Man, Moloid Master",Combo,4,0,0.0
 Season-6,1b406cc5-75c9-430a-83a2-de0f2a8aeae6,"Mole Man, Moloid Master",Control-Aggro (Midrange),4,0,0.0
 Season-6,1bd3fa8a-6c50-4f7f-9ae3-0810eec5e3db,Reprieve,Control,4,2,0.5
 Season-6,1be9d9a4-d7ee-4854-abc2-85cabf993ec9,Archon of Cruelty,Combo,4,2,0.5
@@ -3751,6 +3754,7 @@ Season-6,2e139ad1-1079-49e9-babd-6399c44ad333,Seasoned Pyromancer,Aggro-Combo,4,
 Season-6,2ef878cb-27b6-47d8-ad11-bd20529b0e7e,Cast into the Fire,Aggro,4,3,0.75
 Season-6,2f8f22fb-7291-4517-9b15-e98501f2856b,Splinter Twin,Aggro-Combo,4,3,0.75
 Season-6,30377bf0-d9b1-4c14-8dde-f74b1e02d604,Gilded Goose,Aggro-Combo,4,2,0.5
+Season-6,30377bf0-d9b1-4c14-8dde-f74b1e02d604,Gilded Goose,Combo,4,0,0.0
 Season-6,310a1c46-8331-4a09-9fcb-d942f8102364,Thoughtseize,Combo-Control,4,4,1.0
 Season-6,311a6257-dd77-4bb6-81cb-c8e7862350f3,Necromancy,Control-Aggro (Midrange),4,0,0.0
 Season-6,3199907b-9f24-4554-942a-8ab5a7701717,"Night Nurse, Healer of Heroes",Combo-Control,4,4,1.0
@@ -3770,9 +3774,11 @@ Season-6,33672990-4860-4aa6-ac1b-f9da66f5da59,Wurmcoil Engine,Combo,4,1,0.25
 Season-6,33672990-4860-4aa6-ac1b-f9da66f5da59,Wurmcoil Engine,Combo-Control,4,4,1.0
 Season-6,340c5799-4964-44dd-8c48-8f3f3aba5211,Badgermole Cub,Aggro,4,2,0.5
 Season-6,340c5799-4964-44dd-8c48-8f3f3aba5211,Badgermole Cub,Aggro-Combo,4,2,0.5
+Season-6,340c5799-4964-44dd-8c48-8f3f3aba5211,Badgermole Cub,Combo,4,0,0.0
 Season-6,345a1c80-41d6-43b1-83ab-1aa56dd06b1b,Bitter Reunion,Combo,4,3,0.75
 Season-6,345a4aee-5846-4ae9-9af1-4c8fe8d692ec,Winds of Abandon,Aggro,4,1,0.25
 Season-6,345a4aee-5846-4ae9-9af1-4c8fe8d692ec,Winds of Abandon,Combo-Control,4,4,1.0
+Season-6,3462a3d0-5552-49fa-9eb7-100960c55891,"Oko, Thief of Crowns",Combo,4,0,0.0
 Season-6,3462a3d0-5552-49fa-9eb7-100960c55891,"Oko, Thief of Crowns",Control-Aggro (Midrange),4,1,0.25
 Season-6,35f1a6ba-e46f-44fb-93f4-fb883d677b36,Baleful Mastery,Combo,4,2,0.5
 Season-6,35f1a6ba-e46f-44fb-93f4-fb883d677b36,Baleful Mastery,Control-Aggro (Midrange),4,0,0.0
@@ -3799,6 +3805,7 @@ Season-6,3f3c77ad-fce8-4506-90e1-7ef71552a71c,Wheel of Fortune,Control-Aggro (Mi
 Season-6,3faa8c5e-9e1b-4cee-b322-a033bf33dcbc,Hymn to Tourach,Control,4,2,0.5
 Season-6,400382a4-aea2-4827-b06a-1b0b3745908b,Noble Hierarch,Aggro,4,1,0.25
 Season-6,400382a4-aea2-4827-b06a-1b0b3745908b,Noble Hierarch,Aggro-Combo,4,2,0.5
+Season-6,40f0ecf7-f49e-46ff-aa5b-9ff5361b72c5,Genemorph Imago,Combo,4,0,0.0
 Season-6,40f0ecf7-f49e-46ff-aa5b-9ff5361b72c5,Genemorph Imago,Control-Aggro (Midrange),4,1,0.25
 Season-6,415ff6a5-61ef-4b37-ae08-e44476300d4a,Fire Magic,Combo-Control,4,4,1.0
 Season-6,415ff6a5-61ef-4b37-ae08-e44476300d4a,Fire Magic,Control-Aggro (Midrange),4,1,0.25
@@ -3822,6 +3829,7 @@ Season-6,492b368b-de32-45c1-8459-238aae54f9fc,Unmarked Grave,Combo,4,2,0.5
 Season-6,4a1f905f-1d55-4d02-9d24-e58070793d3f,"Atraxa, Grand Unifier",Aggro-Combo,4,3,0.75
 Season-6,4acf970d-d2d7-413d-aba7-587ee53d8d5c,Stomping Ground,Aggro-Combo,4,2,0.5
 Season-6,4b0bd07e-cf80-4d64-af29-f4cec6632b3e,Perilous Landscape,Control-Aggro (Midrange),4,1,0.25
+Season-6,4b4956a2-9a39-4152-9c98-70e4b2acfa26,Miscalculation,Combo,4,0,0.0
 Season-6,4b4956a2-9a39-4152-9c98-70e4b2acfa26,Miscalculation,Control,4,2,0.5
 Season-6,4b4956a2-9a39-4152-9c98-70e4b2acfa26,Miscalculation,Control-Aggro (Midrange),4,1,0.25
 Season-6,4cbdacc1-7a1b-4633-85f5-eb50c2bf406d,Snapcaster Mage,Combo,4,1,0.25
@@ -3830,6 +3838,7 @@ Season-6,4cbdacc1-7a1b-4633-85f5-eb50c2bf406d,Snapcaster Mage,Control,4,2,0.5
 Season-6,4ced112a-e775-4f97-97b3-74877e9dce12,Dragon's Rage Channeler,Combo,4,0,0.0
 Season-6,4d9dbadd-c1b6-44fe-92ac-6f69d7178342,Talisman of Creativity,Combo,4,3,0.75
 Season-6,4d9dbadd-c1b6-44fe-92ac-6f69d7178342,Talisman of Creativity,Control,4,1,0.25
+Season-6,4df8aabc-7fcb-4b7b-980b-18f499e6c170,Hullbreacher,Combo,4,0,0.0
 Season-6,4df8aabc-7fcb-4b7b-980b-18f499e6c170,Hullbreacher,Combo-Control,8,4,0.5
 Season-6,4e117771-5a8b-4812-b487-32ba34b7f724,Giver of Runes,Aggro,12,8,0.6666666666666666
 Season-6,4e4fb50c-a81f-44d3-93c5-fa9a0b37f617,"Omnath, Locus of Creation",Control-Aggro (Midrange),4,1,0.25
@@ -3837,6 +3846,7 @@ Season-6,4e76d04a-0038-4b5b-a026-3056ee940da9,Cloud of Faeries,Combo,4,1,0.25
 Season-6,4ecbca71-9a1d-44c5-b709-d6f565941d5e,Skycoach Conductor // All Aboard,Control-Aggro (Midrange),4,1,0.25
 Season-6,504a69eb-3c2d-4bb1-b117-252b15acf0c2,Mana Confluence,Control,4,1,0.25
 Season-6,51eb9f05-9d5a-4196-9329-626ce4793c42,Vengevine,Control-Aggro (Midrange),4,0,0.0
+Season-6,5260f8ae-805b-4eae-badf-62de0f768867,Hedge Maze,Combo,4,0,0.0
 Season-6,5260f8ae-805b-4eae-badf-62de0f768867,Hedge Maze,Control-Aggro (Midrange),4,1,0.25
 Season-6,52eef0d6-24b7-40b7-8403-e8e863d0cd55,"Bristly Bill, Spine Sower",Aggro,4,2,0.5
 Season-6,53d4fd57-74b6-42c7-88b1-110e5a8dfc3c,Spell Pierce,Control,4,1,0.25
@@ -3871,6 +3881,7 @@ Season-6,60d0e6a6-629a-45a7-bfcb-25ba7156788b,Elvish Mystic,Aggro,4,3,0.75
 Season-6,60d0e6a6-629a-45a7-bfcb-25ba7156788b,Elvish Mystic,Control,4,2,0.5
 Season-6,61237530-ad49-469c-a952-67c92315708e,Jennifer Walters // The Sensational She-Hulk,Aggro,4,1,0.25
 Season-6,61237530-ad49-469c-a952-67c92315708e,Jennifer Walters // The Sensational She-Hulk,Control-Aggro (Midrange),4,1,0.25
+Season-6,6151b583-3aa7-4be8-9d05-d5e53f19c6c9,Fastbond,Combo,4,0,0.0
 Season-6,6171e136-1167-4329-acb2-6853d3a814e5,Goblin Welder,Combo,4,3,0.75
 Season-6,61a28870-cf78-4323-9d82-cee764067764,Lightning Greaves,Control-Aggro (Midrange),4,1,0.25
 Season-6,62b3f560-262b-4bc3-9aef-535fd7082c28,Vaultborn Tyrant,Combo,4,2,0.5
@@ -3900,7 +3911,7 @@ Season-6,68924203-c3d9-41ce-8ca8-c6dd491eb3ca,Psychic Frog,Combo,4,2,0.5
 Season-6,68924203-c3d9-41ce-8ca8-c6dd491eb3ca,Psychic Frog,Control,8,3,0.375
 Season-6,68c72226-6f52-4322-8b14-18737293dfa0,Bloodstained Mire,Aggro-Combo,4,3,0.75
 Season-6,68c72226-6f52-4322-8b14-18737293dfa0,Bloodstained Mire,Combo-Control,4,4,1.0
-Season-6,6920c895-bc98-4871-a53f-219fa27a74e5,Occult Epiphany,Combo,4,2,0.5
+Season-6,6920c895-bc98-4871-a53f-219fa27a74e5,Occult Epiphany,Combo,8,2,0.25
 Season-6,69490262-afc2-4692-8fac-b771a972c8f8,Volcanic Spite,Control,4,2,0.5
 Season-6,6989018c-37b1-4282-a4af-9cc97f160b4d,Oliphaunt,Combo-Control,4,4,1.0
 Season-6,6989018c-37b1-4282-a4af-9cc97f160b4d,Oliphaunt,Control,4,2,0.5
@@ -3917,6 +3928,7 @@ Season-6,70e33f45-7d47-423b-a123-8541f1d1afb4,Lingering Souls,Combo-Control,4,2,
 Season-6,70e64028-ae96-4950-aa6c-9d347409fad3,Force Spike,Control,8,3,0.375
 Season-6,7127164d-f2a3-4d79-b6db-93507ff5ab47,Bitterbloom Bearer,Control,4,2,0.5
 Season-6,71384418-173a-4f77-adab-56e52fa23692,Delighted Halfling,Aggro,12,6,0.5
+Season-6,729daf0e-b822-41bd-a908-ca8ec34032f0,Tropical Island,Combo,4,0,0.0
 Season-6,729daf0e-b822-41bd-a908-ca8ec34032f0,Tropical Island,Control-Aggro (Midrange),4,1,0.25
 Season-6,73a065e3-b530-4e62-ab3c-4f6f908184ec,"Elspeth, Storm Slayer",Aggro,12,8,0.6666666666666666
 Season-6,73cc6df4-3564-4ace-bf8a-eac3e62d725a,Ursine Monstrosity,Aggro,4,1,0.25
@@ -3924,6 +3936,7 @@ Season-6,73cc6df4-3564-4ace-bf8a-eac3e62d725a,Ursine Monstrosity,Aggro-Combo,4,2
 Season-6,748e6a61-9c1f-4225-9f04-e54002f63ac3,Savai Triome,Aggro,4,3,0.75
 Season-6,748e6a61-9c1f-4225-9f04-e54002f63ac3,Savai Triome,Aggro-Combo,4,3,0.75
 Season-6,74d29b3d-f588-431d-bf4e-f7215683ab39,Tangle Wire,Aggro-Combo,4,2,0.5
+Season-6,74d29b3d-f588-431d-bf4e-f7215683ab39,Tangle Wire,Combo,4,0,0.0
 Season-6,758f95f8-bcb0-43ae-b474-56ebd855951e,Lion's Eye Diamond,Combo,8,3,0.375
 Season-6,75fdce80-e338-4a50-bdc6-786511feaeef,Ziatora's Proving Ground,Control-Aggro (Midrange),4,1,0.25
 Season-6,76c3cad2-1e25-4abe-878d-9194de6fcc27,Guide of Souls,Aggro,4,4,1.0
@@ -3956,6 +3969,7 @@ Season-6,89af0f45-c11c-4f13-9950-b1489440ee5b,Chain Lightning,Control,4,2,0.5
 Season-6,89f5cc05-5d9d-4709-b3c5-a6249c294acc,Hexdrinker,Aggro,4,3,0.75
 Season-6,8a720448-017f-4f4a-9501-678245eaed17,Mishra's Bauble,Combo,8,4,0.5
 Season-6,8a720448-017f-4f4a-9501-678245eaed17,Mishra's Bauble,Control,4,1,0.25
+Season-6,8ac39c01-127f-4471-bc74-11a90c48e306,Ghost Vacuum,Combo,4,0,0.0
 Season-6,8b1e10e8-ea14-4761-910b-4072e2a18456,Grave Researcher // Reanimate,Aggro-Combo,4,3,0.75
 Season-6,8b1e10e8-ea14-4761-910b-4072e2a18456,Grave Researcher // Reanimate,Control-Aggro (Midrange),4,0,0.0
 Season-6,8c2996d9-3287-4480-8c04-7a378e37e3cf,Flooded Strand,Combo,8,5,0.625
@@ -3971,6 +3985,7 @@ Season-6,93f99e67-901f-4c8d-8a09-e443b7eb928f,Archangel Elspeth,Aggro,4,3,0.75
 Season-6,9417f14c-a853-42c6-a992-29139484260a,Ignoble Hierarch,Aggro-Combo,4,2,0.5
 Season-6,9417f14c-a853-42c6-a992-29139484260a,Ignoble Hierarch,Control,4,2,0.5
 Season-6,94b67489-5eb0-4406-9bf3-27e50dc632eb,"Nadu, Winged Wisdom",Control-Aggro (Midrange),4,1,0.25
+Season-6,94c6fdd8-21e7-48ae-aa05-a3666b928c1a,Timetwister,Combo,4,0,0.0
 Season-6,94c6fdd8-21e7-48ae-aa05-a3666b928c1a,Timetwister,Combo-Control,8,4,0.5
 Season-6,95c14c4d-6c16-4826-8d93-d89ad04aee09,"Etali, Primal Conqueror // Etali, Primal Sickness",Combo,4,2,0.5
 Season-6,95c14c4d-6c16-4826-8d93-d89ad04aee09,"Etali, Primal Conqueror // Etali, Primal Sickness",Combo-Control,4,4,1.0
@@ -3989,6 +4004,7 @@ Season-6,995486ce-58bb-4753-a812-0ca73ef1a235,Gitaxian Probe,Control,4,2,0.5
 Season-6,99e96b34-b1c4-4647-a38e-2cf1aedaaace,Tersa Lightshatter,Aggro,4,3,0.75
 Season-6,99e96b34-b1c4-4647-a38e-2cf1aedaaace,Tersa Lightshatter,Aggro-Combo,4,3,0.75
 Season-6,99e96b34-b1c4-4647-a38e-2cf1aedaaace,Tersa Lightshatter,Control-Aggro (Midrange),4,1,0.25
+Season-6,99fd1cd5-4740-4a0f-b773-3d3b66861d77,The Warring Triad,Combo,4,0,0.0
 Season-6,99fd1cd5-4740-4a0f-b773-3d3b66861d77,The Warring Triad,Control,4,1,0.25
 Season-6,99ff731b-8399-40c8-b539-ba6ba5783771,Wasteland,Aggro-Combo,4,2,0.5
 Season-6,9b911653-7b96-4cf3-a907-13c5c53a14f7,Overlord of the Balemurk,Aggro-Combo,4,3,0.75
@@ -4003,6 +4019,7 @@ Season-6,9d48aaff-46ab-411b-9456-171d4709f951,Fear of Missing Out,Aggro-Combo,4,
 Season-6,9d48aaff-46ab-411b-9456-171d4709f951,Fear of Missing Out,Control-Aggro (Midrange),4,1,0.25
 Season-6,9e7fb3c0-5159-4d1f-8490-ce4c9a60f567,"Urza, Lord High Artificer",Combo,8,3,0.375
 Season-6,9e7fb3c0-5159-4d1f-8490-ce4c9a60f567,"Urza, Lord High Artificer",Control,4,1,0.25
+Season-6,a1176dcf-40ee-4342-aa74-791b8352e99a,Scrawling Crawler,Combo,4,0,0.0
 Season-6,a16a6555-2e3a-4587-aacd-0307d696b26c,Consult the Star Charts,Combo,4,2,0.5
 Season-6,a178cfe8-f9fa-4255-88d0-54a0bed079f5,Malevolent Rumble,Aggro-Combo,4,3,0.75
 Season-6,a178cfe8-f9fa-4255-88d0-54a0bed079f5,Malevolent Rumble,Control,4,2,0.5
@@ -4042,8 +4059,10 @@ Season-6,b256ddc8-8b12-434c-a610-1a872e948f2f,White Plume Adventurer,Aggro,4,3,0
 Season-6,b256ddc8-8b12-434c-a610-1a872e948f2f,White Plume Adventurer,Control,4,2,0.5
 Season-6,b277752b-430a-4f09-8a98-b72f813dd52e,Bountiful Landscape,Aggro,4,2,0.5
 Season-6,b277752b-430a-4f09-8a98-b72f813dd52e,Bountiful Landscape,Control,4,2,0.5
+Season-6,b293d4cb-0920-46ef-bf4e-fc6a796df290,Sail into the West,Combo,4,0,0.0
 Season-6,b3da28c7-6e92-439d-a163-91682d4f11dc,Shattered Landscape,Control-Aggro (Midrange),4,1,0.25
 Season-6,b3dd3c7d-4685-4579-b483-14ddaaaddf5b,Scythecat Cub,Aggro-Combo,4,2,0.5
+Season-6,b3dd3c7d-4685-4579-b483-14ddaaaddf5b,Scythecat Cub,Combo,4,0,0.0
 Season-6,b51666ae-2aef-4cb1-9cd4-44aec81530f8,Griselbrand,Combo,8,4,0.5
 Season-6,b598c93e-dae1-4d71-a9e4-917abf76d2d0,Raucous Theater,Combo-Control,4,4,1.0
 Season-6,b598c93e-dae1-4d71-a9e4-917abf76d2d0,Raucous Theater,Control-Aggro (Midrange),4,1,0.25
@@ -4099,8 +4118,9 @@ Season-6,d0e3e7b3-7ba9-47a2-b46c-a40bffb445e2,Twisted Landscape,Aggro-Combo,4,2,
 Season-6,d0e3e7b3-7ba9-47a2-b46c-a40bffb445e2,Twisted Landscape,Control-Aggro (Midrange),4,1,0.25
 Season-6,d2119f3f-27d2-4d43-a5ef-35c1b73d182a,"The Reaper, King No More",Control-Aggro (Midrange),4,0,0.0
 Season-6,d2124603-d20e-40eb-97f0-a66323397ac2,Bolas's Citadel,Combo,4,3,0.75
-Season-6,d21433ba-0a14-42bc-ad0b-a4ef823a3295,Monument to Endurance,Combo,4,0,0.0
+Season-6,d21433ba-0a14-42bc-ad0b-a4ef823a3295,Monument to Endurance,Combo,8,0,0.0
 Season-6,d2507bc2-da17-4e46-b4c5-ba0080ce2c6f,Rishadan Port,Aggro,4,3,0.75
+Season-6,d2705b43-a94a-44c0-8740-82e0b296820c,Abhorrent Oculus,Combo,4,0,0.0
 Season-6,d2705b43-a94a-44c0-8740-82e0b296820c,Abhorrent Oculus,Control,4,1,0.25
 Season-6,d5806e68-1054-458e-866d-1f2470f682b2,The One Ring,Control-Aggro (Midrange),4,1,0.25
 Season-6,d67be074-cdd4-41d9-ac89-0a0456c4e4b2,"Sheoldred, the Apocalypse",Combo-Control,4,2,0.5
@@ -4178,6 +4198,7 @@ Season-6,f61693a2-7042-44e0-85ba-9bf12ab94e7e,Suplex,Control,4,2,0.5
 Season-6,f62fd592-4910-417d-a500-e7029f3d119f,Kitesail Freebooter,Combo,4,2,0.5
 Season-6,f62fd592-4910-417d-a500-e7029f3d119f,Kitesail Freebooter,Control,8,4,0.5
 Season-6,f7e0549e-2d23-4ea8-b8d1-ae21af2c9091,Snap,Combo,4,1,0.25
+Season-6,f9246b68-580f-4f53-883d-7900880e4b0d,Six,Combo,4,0,0.0
 Season-6,fa7a55aa-ae61-4933-b7a4-dcc55dac6fcd,"Inti, Seneschal of the Sun",Aggro,8,7,0.875
 Season-6,fa7b7897-36e0-415a-8bb7-602886164852,Show and Tell,Combo,8,3,0.375
 Season-6,fa87bf1e-2062-4983-b1c4-98bffea69a4c,Pyrogoyf,Combo-Control,4,4,1.0
@@ -4191,7 +4212,8 @@ Season-6,fd99bce1-ce39-464b-8e61-2631eb3ed6f6,Tolarian Academy,Control,4,1,0.25
 Season-6,fe30c0ff-f74b-456a-a61e-3720d84d713f,Parallax Wave,Aggro,4,4,1.0
 Season-6,fe30c0ff-f74b-456a-a61e-3720d84d713f,Parallax Wave,Control,4,2,0.5
 Season-6,fe964e7e-e2c5-4263-889d-0a531eb51442,Luminarch Aspirant,Aggro,8,5,0.625
-Season-6,ff37b863-f8c4-4584-8cc2-ac0e096e583f,Bazaar of Baghdad,Combo,4,0,0.0
+Season-6,ff37b863-f8c4-4584-8cc2-ac0e096e583f,Bazaar of Baghdad,Combo,8,0,0.0
+Season-6,ff590af2-2d6c-4f16-a9b8-1a6dab6e9ad5,Echo of Eons,Combo,4,0,0.0
 Season-6,ff84ea71-e477-44f7-a3f8-77fef708efeb,Thieving Skydiver,Combo-Control,4,2,0.5
 Season-All,0020c31b-002a-4121-bc61-2c2c16e9afc8,Ornery Tumblewagg,Aggro,4,2,0.5
 Season-All,0020c31b-002a-4121-bc61-2c2c16e9afc8,Ornery Tumblewagg,Aggro-Combo,8,4,0.5
@@ -4549,7 +4571,7 @@ Season-All,139b90cd-8272-457a-be32-1298145345be,Watery Grave,Combo-Control,8,6,0
 Season-All,139b90cd-8272-457a-be32-1298145345be,Watery Grave,Control,36,20,0.5555555555555556
 Season-All,13c5a1ce-932a-4b3d-8b86-ed920e646afc,Satyr Wayfinder,Aggro,4,2,0.5
 Season-All,13c5a1ce-932a-4b3d-8b86-ed920e646afc,Satyr Wayfinder,Control,4,2,0.5
-Season-All,13f5bcdc-70bb-4d67-99e1-282f166ee4bf,Increasing Confusion,Combo,4,0,0.0
+Season-All,13f5bcdc-70bb-4d67-99e1-282f166ee4bf,Increasing Confusion,Combo,8,0,0.0
 Season-All,14065271-d942-42a8-aa38-d8a622c0375d,Scrubland,Aggro,16,8,0.5
 Season-All,14065271-d942-42a8-aa38-d8a622c0375d,Scrubland,Aggro-Control (Tempo),8,4,0.5
 Season-All,14065271-d942-42a8-aa38-d8a622c0375d,Scrubland,Combo,8,2,0.25
@@ -4557,7 +4579,7 @@ Season-All,14065271-d942-42a8-aa38-d8a622c0375d,Scrubland,Combo-Control,8,5,0.62
 Season-All,14065271-d942-42a8-aa38-d8a622c0375d,Scrubland,Control,24,10,0.4166666666666667
 Season-All,14065271-d942-42a8-aa38-d8a622c0375d,Scrubland,Control-Aggro (Midrange),4,1,0.25
 Season-All,1453f92e-df2d-4789-aa1b-a5b5c51567d4,Preordain,Aggro-Control (Tempo),8,4,0.5
-Season-All,1453f92e-df2d-4789-aa1b-a5b5c51567d4,Preordain,Combo,52,24,0.4615384615384615
+Season-All,1453f92e-df2d-4789-aa1b-a5b5c51567d4,Preordain,Combo,56,24,0.4285714285714285
 Season-All,1453f92e-df2d-4789-aa1b-a5b5c51567d4,Preordain,Combo-Control,4,2,0.5
 Season-All,1453f92e-df2d-4789-aa1b-a5b5c51567d4,Preordain,Control,16,6,0.375
 Season-All,1453f92e-df2d-4789-aa1b-a5b5c51567d4,Preordain,Control-Aggro (Midrange),4,1,0.25
@@ -4567,7 +4589,7 @@ Season-All,1571b584-9007-45ee-a3c3-6c72f227fee2,Mystical Tutor,Combo-Control,8,2
 Season-All,1571b584-9007-45ee-a3c3-6c72f227fee2,Mystical Tutor,Control,12,4,0.3333333333333333
 Season-All,1571b584-9007-45ee-a3c3-6c72f227fee2,Mystical Tutor,Control-Aggro (Midrange),4,1,0.25
 Season-All,15c34f32-49d9-4a0d-83b2-28172f54fdd1,Crop Rotation,Aggro-Combo,8,2,0.25
-Season-All,15c34f32-49d9-4a0d-83b2-28172f54fdd1,Crop Rotation,Combo,16,7,0.4375
+Season-All,15c34f32-49d9-4a0d-83b2-28172f54fdd1,Crop Rotation,Combo,20,7,0.35
 Season-All,15c34f32-49d9-4a0d-83b2-28172f54fdd1,Crop Rotation,Combo-Control,8,3,0.375
 Season-All,15c34f32-49d9-4a0d-83b2-28172f54fdd1,Crop Rotation,Control-Aggro (Midrange),8,3,0.375
 Season-All,15db4353-9c46-4fe4-b22e-0cf024aa9dfc,Grim Lavamancer,Aggro,12,5,0.4166666666666667
@@ -4711,6 +4733,7 @@ Season-All,1af92296-455a-425e-9397-a96d09937767,Incinerate,Combo,4,0,0.0
 Season-All,1af92296-455a-425e-9397-a96d09937767,Incinerate,Combo-Control,4,3,0.75
 Season-All,1af92296-455a-425e-9397-a96d09937767,Incinerate,Control,8,3,0.375
 Season-All,1b0fe46d-08d6-48c3-be0d-650d8d3d66af,Ideas Unbound,Combo,4,1,0.25
+Season-All,1b406cc5-75c9-430a-83a2-de0f2a8aeae6,"Mole Man, Moloid Master",Combo,4,0,0.0
 Season-All,1b406cc5-75c9-430a-83a2-de0f2a8aeae6,"Mole Man, Moloid Master",Control-Aggro (Midrange),4,0,0.0
 Season-All,1b6ef5f5-4058-4f89-a573-9e2da87a9f2e,Steel Seraph,Aggro,4,2,0.5
 Season-All,1b6ef5f5-4058-4f89-a573-9e2da87a9f2e,Steel Seraph,Aggro-Control (Tempo),4,0,0.0
@@ -5024,7 +5047,7 @@ Season-All,3028075c-5fc5-4942-a984-1ffcf7a8933d,Knight of Autumn,Control-Aggro (
 Season-All,30377bf0-d9b1-4c14-8dde-f74b1e02d604,Gilded Goose,Aggro,12,8,0.6666666666666666
 Season-All,30377bf0-d9b1-4c14-8dde-f74b1e02d604,Gilded Goose,Aggro-Combo,16,8,0.5
 Season-All,30377bf0-d9b1-4c14-8dde-f74b1e02d604,Gilded Goose,Aggro-Control (Tempo),8,3,0.375
-Season-All,30377bf0-d9b1-4c14-8dde-f74b1e02d604,Gilded Goose,Combo,4,3,0.75
+Season-All,30377bf0-d9b1-4c14-8dde-f74b1e02d604,Gilded Goose,Combo,8,3,0.375
 Season-All,30377bf0-d9b1-4c14-8dde-f74b1e02d604,Gilded Goose,Combo-Control,4,2,0.5
 Season-All,30377bf0-d9b1-4c14-8dde-f74b1e02d604,Gilded Goose,Control,16,4,0.25
 Season-All,30377bf0-d9b1-4c14-8dde-f74b1e02d604,Gilded Goose,Control-Aggro (Midrange),28,12,0.4285714285714285
@@ -5097,6 +5120,7 @@ Season-All,33ca68a6-474e-4d86-bffa-ee4bddb4a3cf,Fellwar Stone,Combo,20,7,0.35
 Season-All,33ca68a6-474e-4d86-bffa-ee4bddb4a3cf,Fellwar Stone,Control,8,4,0.5
 Season-All,340c5799-4964-44dd-8c48-8f3f3aba5211,Badgermole Cub,Aggro,20,9,0.45
 Season-All,340c5799-4964-44dd-8c48-8f3f3aba5211,Badgermole Cub,Aggro-Combo,12,6,0.5
+Season-All,340c5799-4964-44dd-8c48-8f3f3aba5211,Badgermole Cub,Combo,4,0,0.0
 Season-All,345a1c80-41d6-43b1-83ab-1aa56dd06b1b,Bitter Reunion,Aggro,4,1,0.25
 Season-All,345a1c80-41d6-43b1-83ab-1aa56dd06b1b,Bitter Reunion,Aggro-Combo,4,2,0.5
 Season-All,345a1c80-41d6-43b1-83ab-1aa56dd06b1b,Bitter Reunion,Combo,12,6,0.5
@@ -5109,7 +5133,7 @@ Season-All,345fd005-5052-4500-a260-3649500e21f4,Mulldrifter,Aggro-Control (Tempo
 Season-All,345fd005-5052-4500-a260-3649500e21f4,Mulldrifter,Control,4,3,0.75
 Season-All,3462a3d0-5552-49fa-9eb7-100960c55891,"Oko, Thief of Crowns",Aggro-Combo,8,5,0.625
 Season-All,3462a3d0-5552-49fa-9eb7-100960c55891,"Oko, Thief of Crowns",Aggro-Control (Tempo),4,0,0.0
-Season-All,3462a3d0-5552-49fa-9eb7-100960c55891,"Oko, Thief of Crowns",Combo,8,5,0.625
+Season-All,3462a3d0-5552-49fa-9eb7-100960c55891,"Oko, Thief of Crowns",Combo,12,5,0.4166666666666667
 Season-All,3462a3d0-5552-49fa-9eb7-100960c55891,"Oko, Thief of Crowns",Combo-Control,4,2,0.5
 Season-All,3462a3d0-5552-49fa-9eb7-100960c55891,"Oko, Thief of Crowns",Control,24,7,0.2916666666666667
 Season-All,3462a3d0-5552-49fa-9eb7-100960c55891,"Oko, Thief of Crowns",Control-Aggro (Midrange),24,8,0.3333333333333333
@@ -5218,6 +5242,7 @@ Season-All,400382a4-aea2-4827-b06a-1b0b3745908b,Noble Hierarch,Combo,8,4,0.5
 Season-All,400382a4-aea2-4827-b06a-1b0b3745908b,Noble Hierarch,Combo-Control,8,3,0.375
 Season-All,400382a4-aea2-4827-b06a-1b0b3745908b,Noble Hierarch,Control,20,12,0.6
 Season-All,400382a4-aea2-4827-b06a-1b0b3745908b,Noble Hierarch,Control-Aggro (Midrange),20,9,0.45
+Season-All,40f0ecf7-f49e-46ff-aa5b-9ff5361b72c5,Genemorph Imago,Combo,4,0,0.0
 Season-All,40f0ecf7-f49e-46ff-aa5b-9ff5361b72c5,Genemorph Imago,Control-Aggro (Midrange),4,1,0.25
 Season-All,415ff6a5-61ef-4b37-ae08-e44476300d4a,Fire Magic,Combo-Control,4,4,1.0
 Season-All,415ff6a5-61ef-4b37-ae08-e44476300d4a,Fire Magic,Control-Aggro (Midrange),4,1,0.25
@@ -5342,7 +5367,7 @@ Season-All,4b0bd07e-cf80-4d64-af29-f4cec6632b3e,Perilous Landscape,Combo-Control
 Season-All,4b0bd07e-cf80-4d64-af29-f4cec6632b3e,Perilous Landscape,Control,12,5,0.4166666666666667
 Season-All,4b0bd07e-cf80-4d64-af29-f4cec6632b3e,Perilous Landscape,Control-Aggro (Midrange),4,1,0.25
 Season-All,4b4956a2-9a39-4152-9c98-70e4b2acfa26,Miscalculation,Aggro-Control (Tempo),8,7,0.875
-Season-All,4b4956a2-9a39-4152-9c98-70e4b2acfa26,Miscalculation,Combo,28,14,0.5
+Season-All,4b4956a2-9a39-4152-9c98-70e4b2acfa26,Miscalculation,Combo,32,14,0.4375
 Season-All,4b4956a2-9a39-4152-9c98-70e4b2acfa26,Miscalculation,Combo-Control,20,10,0.5
 Season-All,4b4956a2-9a39-4152-9c98-70e4b2acfa26,Miscalculation,Control,32,15,0.46875
 Season-All,4b4956a2-9a39-4152-9c98-70e4b2acfa26,Miscalculation,Control-Aggro (Midrange),8,2,0.25
@@ -5372,7 +5397,7 @@ Season-All,4d9dbadd-c1b6-44fe-92ac-6f69d7178342,Talisman of Creativity,Control-A
 Season-All,4dea7bcc-3ff8-40b0-8264-0cd678d6ff31,Scourge of the Skyclaves,Aggro,4,1,0.25
 Season-All,4dea7bcc-3ff8-40b0-8264-0cd678d6ff31,Scourge of the Skyclaves,Control,12,5,0.4166666666666667
 Season-All,4df8aabc-7fcb-4b7b-980b-18f499e6c170,Hullbreacher,Aggro-Control (Tempo),4,2,0.5
-Season-All,4df8aabc-7fcb-4b7b-980b-18f499e6c170,Hullbreacher,Combo,44,22,0.5
+Season-All,4df8aabc-7fcb-4b7b-980b-18f499e6c170,Hullbreacher,Combo,48,22,0.4583333333333333
 Season-All,4df8aabc-7fcb-4b7b-980b-18f499e6c170,Hullbreacher,Combo-Control,16,7,0.4375
 Season-All,4df8aabc-7fcb-4b7b-980b-18f499e6c170,Hullbreacher,Control,12,3,0.25
 Season-All,4e117771-5a8b-4812-b487-32ba34b7f724,Giver of Runes,Aggro,64,36,0.5625
@@ -5407,7 +5432,7 @@ Season-All,522aa72b-2b8c-484c-872b-f082101cee35,Get Lost,Combo,8,2,0.25
 Season-All,522aa72b-2b8c-484c-872b-f082101cee35,Get Lost,Combo-Control,4,2,0.5
 Season-All,522aa72b-2b8c-484c-872b-f082101cee35,Get Lost,Control,32,10,0.3125
 Season-All,522aa72b-2b8c-484c-872b-f082101cee35,Get Lost,Control-Aggro (Midrange),8,3,0.375
-Season-All,5260f8ae-805b-4eae-badf-62de0f768867,Hedge Maze,Combo,4,2,0.5
+Season-All,5260f8ae-805b-4eae-badf-62de0f768867,Hedge Maze,Combo,8,2,0.25
 Season-All,5260f8ae-805b-4eae-badf-62de0f768867,Hedge Maze,Control,8,3,0.375
 Season-All,5260f8ae-805b-4eae-badf-62de0f768867,Hedge Maze,Control-Aggro (Midrange),24,10,0.4166666666666667
 Season-All,52d3005f-a1c7-4ef5-911f-ccc0752f4181,Faerie Mastermind,Aggro-Control (Tempo),20,9,0.45
@@ -5580,7 +5605,7 @@ Season-All,612b2e6e-fe8d-49ad-b845-6fa7fa59ffd1,Concealing Curtains // Revealing
 Season-All,612b2e6e-fe8d-49ad-b845-6fa7fa59ffd1,Concealing Curtains // Revealing Eye,Control-Aggro (Midrange),4,3,0.75
 Season-All,6151b583-3aa7-4be8-9d05-d5e53f19c6c9,Fastbond,Aggro,4,2,0.5
 Season-All,6151b583-3aa7-4be8-9d05-d5e53f19c6c9,Fastbond,Aggro-Combo,16,7,0.4375
-Season-All,6151b583-3aa7-4be8-9d05-d5e53f19c6c9,Fastbond,Combo,20,7,0.35
+Season-All,6151b583-3aa7-4be8-9d05-d5e53f19c6c9,Fastbond,Combo,24,7,0.2916666666666667
 Season-All,6151b583-3aa7-4be8-9d05-d5e53f19c6c9,Fastbond,Combo-Control,8,4,0.5
 Season-All,6151b583-3aa7-4be8-9d05-d5e53f19c6c9,Fastbond,Control,8,2,0.25
 Season-All,6151b583-3aa7-4be8-9d05-d5e53f19c6c9,Fastbond,Control-Aggro (Midrange),20,3,0.15
@@ -5664,7 +5689,7 @@ Season-All,68c72226-6f52-4322-8b14-18737293dfa0,Bloodstained Mire,Combo-Control,
 Season-All,68c72226-6f52-4322-8b14-18737293dfa0,Bloodstained Mire,Control,20,11,0.55
 Season-All,68c72226-6f52-4322-8b14-18737293dfa0,Bloodstained Mire,Control-Aggro (Midrange),4,2,0.5
 Season-All,6920c895-bc98-4871-a53f-219fa27a74e5,Occult Epiphany,Aggro-Control (Tempo),4,4,1.0
-Season-All,6920c895-bc98-4871-a53f-219fa27a74e5,Occult Epiphany,Combo,44,22,0.5
+Season-All,6920c895-bc98-4871-a53f-219fa27a74e5,Occult Epiphany,Combo,48,22,0.4583333333333333
 Season-All,6920c895-bc98-4871-a53f-219fa27a74e5,Occult Epiphany,Combo-Control,4,2,0.5
 Season-All,6920c895-bc98-4871-a53f-219fa27a74e5,Occult Epiphany,Control,16,8,0.5
 Season-All,6920c895-bc98-4871-a53f-219fa27a74e5,Occult Epiphany,Control-Aggro (Midrange),4,2,0.5
@@ -5761,7 +5786,7 @@ Season-All,71384418-173a-4f77-adab-56e52fa23692,Delighted Halfling,Control-Aggro
 Season-All,716a44b4-f6b0-4f14-a270-6442aed3251f,"Raffine, Scheming Seer",Aggro-Control (Tempo),4,1,0.25
 Season-All,716a44b4-f6b0-4f14-a270-6442aed3251f,"Raffine, Scheming Seer",Control,4,2,0.5
 Season-All,729daf0e-b822-41bd-a908-ca8ec34032f0,Tropical Island,Aggro-Combo,8,5,0.625
-Season-All,729daf0e-b822-41bd-a908-ca8ec34032f0,Tropical Island,Combo,4,3,0.75
+Season-All,729daf0e-b822-41bd-a908-ca8ec34032f0,Tropical Island,Combo,8,3,0.375
 Season-All,729daf0e-b822-41bd-a908-ca8ec34032f0,Tropical Island,Control,20,9,0.45
 Season-All,729daf0e-b822-41bd-a908-ca8ec34032f0,Tropical Island,Control-Aggro (Midrange),24,9,0.375
 Season-All,72c6d541-e2cb-4d6e-acac-90a8f53b7006,Elegant Parlor,Aggro,28,15,0.5357142857142857
@@ -5782,7 +5807,7 @@ Season-All,748e6a61-9c1f-4225-9f04-e54002f63ac3,Savai Triome,Control,20,8,0.4
 Season-All,74b4c336-5d4c-4bc5-b82a-35084a6ad808,Spellseeker,Combo,16,7,0.4375
 Season-All,74d29b3d-f588-431d-bf4e-f7215683ab39,Tangle Wire,Aggro,12,5,0.4166666666666667
 Season-All,74d29b3d-f588-431d-bf4e-f7215683ab39,Tangle Wire,Aggro-Combo,20,9,0.45
-Season-All,74d29b3d-f588-431d-bf4e-f7215683ab39,Tangle Wire,Combo,8,2,0.25
+Season-All,74d29b3d-f588-431d-bf4e-f7215683ab39,Tangle Wire,Combo,12,2,0.1666666666666666
 Season-All,74d29b3d-f588-431d-bf4e-f7215683ab39,Tangle Wire,Combo-Control,8,2,0.25
 Season-All,74d29b3d-f588-431d-bf4e-f7215683ab39,Tangle Wire,Control,8,3,0.375
 Season-All,74d29b3d-f588-431d-bf4e-f7215683ab39,Tangle Wire,Control-Aggro (Midrange),8,2,0.25
@@ -5939,6 +5964,7 @@ Season-All,8a720448-017f-4f4a-9501-678245eaed17,Mishra's Bauble,Aggro-Combo,4,3,
 Season-All,8a720448-017f-4f4a-9501-678245eaed17,Mishra's Bauble,Combo,36,16,0.4444444444444444
 Season-All,8a720448-017f-4f4a-9501-678245eaed17,Mishra's Bauble,Control,28,14,0.5
 Season-All,8a720448-017f-4f4a-9501-678245eaed17,Mishra's Bauble,Control-Aggro (Midrange),4,2,0.5
+Season-All,8ac39c01-127f-4471-bc74-11a90c48e306,Ghost Vacuum,Combo,4,0,0.0
 Season-All,8b1e10e8-ea14-4761-910b-4072e2a18456,Grave Researcher // Reanimate,Aggro-Combo,4,3,0.75
 Season-All,8b1e10e8-ea14-4761-910b-4072e2a18456,Grave Researcher // Reanimate,Control-Aggro (Midrange),4,0,0.0
 Season-All,8c2996d9-3287-4480-8c04-7a378e37e3cf,Flooded Strand,Aggro,4,1,0.25
@@ -6016,7 +6042,7 @@ Season-All,94b67489-5eb0-4406-9bf3-27e50dc632eb,"Nadu, Winged Wisdom",Combo,4,3,
 Season-All,94b67489-5eb0-4406-9bf3-27e50dc632eb,"Nadu, Winged Wisdom",Combo-Control,4,2,0.5
 Season-All,94b67489-5eb0-4406-9bf3-27e50dc632eb,"Nadu, Winged Wisdom",Control-Aggro (Midrange),36,12,0.3333333333333333
 Season-All,94c6fdd8-21e7-48ae-aa05-a3666b928c1a,Timetwister,Aggro-Control (Tempo),4,1,0.25
-Season-All,94c6fdd8-21e7-48ae-aa05-a3666b928c1a,Timetwister,Combo,32,14,0.4375
+Season-All,94c6fdd8-21e7-48ae-aa05-a3666b928c1a,Timetwister,Combo,36,14,0.3888888888888889
 Season-All,94c6fdd8-21e7-48ae-aa05-a3666b928c1a,Timetwister,Combo-Control,28,15,0.5357142857142857
 Season-All,94c6fdd8-21e7-48ae-aa05-a3666b928c1a,Timetwister,Control,16,6,0.375
 Season-All,94c6fdd8-21e7-48ae-aa05-a3666b928c1a,Timetwister,Control-Aggro (Midrange),4,2,0.5
@@ -6086,6 +6112,7 @@ Season-All,995486ce-58bb-4753-a812-0ca73ef1a235,Gitaxian Probe,Control-Aggro (Mi
 Season-All,99e96b34-b1c4-4647-a38e-2cf1aedaaace,Tersa Lightshatter,Aggro,4,3,0.75
 Season-All,99e96b34-b1c4-4647-a38e-2cf1aedaaace,Tersa Lightshatter,Aggro-Combo,4,3,0.75
 Season-All,99e96b34-b1c4-4647-a38e-2cf1aedaaace,Tersa Lightshatter,Control-Aggro (Midrange),4,1,0.25
+Season-All,99fd1cd5-4740-4a0f-b773-3d3b66861d77,The Warring Triad,Combo,4,0,0.0
 Season-All,99fd1cd5-4740-4a0f-b773-3d3b66861d77,The Warring Triad,Control,4,1,0.25
 Season-All,99ff731b-8399-40c8-b539-ba6ba5783771,Wasteland,Aggro,16,11,0.6875
 Season-All,99ff731b-8399-40c8-b539-ba6ba5783771,Wasteland,Aggro-Combo,16,6,0.375
@@ -6133,7 +6160,7 @@ Season-All,9efbfd67-e0f5-43e0-9fff-1eb4a2bed0d8,Marauding Mako,Combo,8,3,0.375
 Season-All,9efbfd67-e0f5-43e0-9fff-1eb4a2bed0d8,Marauding Mako,Control-Aggro (Midrange),4,3,0.75
 Season-All,a0b6a71e-56cb-4d25-8f2b-7a4f1b60900d,"Uro, Titan of Nature's Wrath",Control-Aggro (Midrange),16,4,0.25
 Season-All,a1176dcf-40ee-4342-aa74-791b8352e99a,Scrawling Crawler,Aggro,12,6,0.5
-Season-All,a1176dcf-40ee-4342-aa74-791b8352e99a,Scrawling Crawler,Combo,16,5,0.3125
+Season-All,a1176dcf-40ee-4342-aa74-791b8352e99a,Scrawling Crawler,Combo,20,5,0.25
 Season-All,a1176dcf-40ee-4342-aa74-791b8352e99a,Scrawling Crawler,Combo-Control,4,1,0.25
 Season-All,a1176dcf-40ee-4342-aa74-791b8352e99a,Scrawling Crawler,Control,4,1,0.25
 Season-All,a15570c0-4210-4959-8584-987ec85f8283,Wight of the Reliquary,Control-Aggro (Midrange),8,3,0.375
@@ -6263,6 +6290,7 @@ Season-All,b277752b-430a-4f09-8a98-b72f813dd52e,Bountiful Landscape,Aggro,12,6,0
 Season-All,b277752b-430a-4f09-8a98-b72f813dd52e,Bountiful Landscape,Aggro-Combo,8,1,0.125
 Season-All,b277752b-430a-4f09-8a98-b72f813dd52e,Bountiful Landscape,Combo,16,8,0.5
 Season-All,b277752b-430a-4f09-8a98-b72f813dd52e,Bountiful Landscape,Control,8,3,0.375
+Season-All,b293d4cb-0920-46ef-bf4e-fc6a796df290,Sail into the West,Combo,4,0,0.0
 Season-All,b2996f07-9dbc-444f-aaae-710866da2b4b,Cosmic Spider-Man,Control,4,1,0.25
 Season-All,b2996f07-9dbc-444f-aaae-710866da2b4b,Cosmic Spider-Man,Control-Aggro (Midrange),4,2,0.5
 Season-All,b34bf7fd-9fe3-43e2-8cfe-7ce7cff08afe,Stonecoil Serpent,Aggro,8,4,0.5
@@ -6282,7 +6310,7 @@ Season-All,b3da28c7-6e92-439d-a163-91682d4f11dc,Shattered Landscape,Control,8,6,
 Season-All,b3da28c7-6e92-439d-a163-91682d4f11dc,Shattered Landscape,Control-Aggro (Midrange),8,4,0.5
 Season-All,b3dd3c7d-4685-4579-b483-14ddaaaddf5b,Scythecat Cub,Aggro,20,11,0.55
 Season-All,b3dd3c7d-4685-4579-b483-14ddaaaddf5b,Scythecat Cub,Aggro-Combo,12,3,0.25
-Season-All,b3dd3c7d-4685-4579-b483-14ddaaaddf5b,Scythecat Cub,Combo,4,3,0.75
+Season-All,b3dd3c7d-4685-4579-b483-14ddaaaddf5b,Scythecat Cub,Combo,8,3,0.375
 Season-All,b3dd3c7d-4685-4579-b483-14ddaaaddf5b,Scythecat Cub,Combo-Control,4,2,0.5
 Season-All,b3dd3c7d-4685-4579-b483-14ddaaaddf5b,Scythecat Cub,Control-Aggro (Midrange),12,5,0.4166666666666667
 Season-All,b50e1800-a45c-43bd-8886-8a06145d9346,Recurring Nightmare,Aggro,4,1,0.25
@@ -6513,12 +6541,13 @@ Season-All,d13a898e-6a97-4fd9-980e-3bfd8d755386,Tarfire,Aggro-Control (Tempo),4,
 Season-All,d13a898e-6a97-4fd9-980e-3bfd8d755386,Tarfire,Control,8,3,0.375
 Season-All,d2119f3f-27d2-4d43-a5ef-35c1b73d182a,"The Reaper, King No More",Control-Aggro (Midrange),4,0,0.0
 Season-All,d2124603-d20e-40eb-97f0-a66323397ac2,Bolas's Citadel,Combo,20,10,0.5
-Season-All,d21433ba-0a14-42bc-ad0b-a4ef823a3295,Monument to Endurance,Combo,4,0,0.0
+Season-All,d21433ba-0a14-42bc-ad0b-a4ef823a3295,Monument to Endurance,Combo,8,0,0.0
 Season-All,d2507bc2-da17-4e46-b4c5-ba0080ce2c6f,Rishadan Port,Aggro,28,14,0.5
 Season-All,d2507bc2-da17-4e46-b4c5-ba0080ce2c6f,Rishadan Port,Aggro-Combo,4,2,0.5
 Season-All,d2507bc2-da17-4e46-b4c5-ba0080ce2c6f,Rishadan Port,Combo-Control,4,1,0.25
 Season-All,d2507bc2-da17-4e46-b4c5-ba0080ce2c6f,Rishadan Port,Control,8,6,0.75
 Season-All,d2507bc2-da17-4e46-b4c5-ba0080ce2c6f,Rishadan Port,Control-Aggro (Midrange),4,1,0.25
+Season-All,d2705b43-a94a-44c0-8740-82e0b296820c,Abhorrent Oculus,Combo,4,0,0.0
 Season-All,d2705b43-a94a-44c0-8740-82e0b296820c,Abhorrent Oculus,Control,4,1,0.25
 Season-All,d2e27911-87cb-49a0-a34f-6afe4bddd592,Phyrexian Metamorph,Aggro,12,8,0.6666666666666666
 Season-All,d2e27911-87cb-49a0-a34f-6afe4bddd592,Phyrexian Metamorph,Aggro-Control (Tempo),4,1,0.25
@@ -6808,6 +6837,7 @@ Season-All,f88d81d9-8ded-4c20-8237-2218046595fb,"Shadow, Mysterious Assassin",Co
 Season-All,f88d81d9-8ded-4c20-8237-2218046595fb,"Shadow, Mysterious Assassin",Control,4,1,0.25
 Season-All,f9246b68-580f-4f53-883d-7900880e4b0d,Six,Aggro,16,8,0.5
 Season-All,f9246b68-580f-4f53-883d-7900880e4b0d,Six,Aggro-Combo,20,5,0.25
+Season-All,f9246b68-580f-4f53-883d-7900880e4b0d,Six,Combo,4,0,0.0
 Season-All,f9246b68-580f-4f53-883d-7900880e4b0d,Six,Combo-Control,4,2,0.5
 Season-All,f9246b68-580f-4f53-883d-7900880e4b0d,Six,Control-Aggro (Midrange),8,5,0.625
 Season-All,f9287151-95df-4f5a-b32a-4b0aea825452,Karn Liberated,Control,8,4,0.5
@@ -6868,8 +6898,8 @@ Season-All,fe964e7e-e2c5-4263-889d-0a531eb51442,Luminarch Aspirant,Control,24,10
 Season-All,febaaeae-5c0d-45fa-8169-b27b4996f18e,Chrome Host Seedshark,Aggro-Control (Tempo),12,7,0.5833333333333334
 Season-All,febaaeae-5c0d-45fa-8169-b27b4996f18e,Chrome Host Seedshark,Combo,8,2,0.25
 Season-All,febaaeae-5c0d-45fa-8169-b27b4996f18e,Chrome Host Seedshark,Control,12,6,0.5
-Season-All,ff37b863-f8c4-4584-8cc2-ac0e096e583f,Bazaar of Baghdad,Combo,4,0,0.0
-Season-All,ff590af2-2d6c-4f16-a9b8-1a6dab6e9ad5,Echo of Eons,Combo,20,9,0.45
+Season-All,ff37b863-f8c4-4584-8cc2-ac0e096e583f,Bazaar of Baghdad,Combo,8,0,0.0
+Season-All,ff590af2-2d6c-4f16-a9b8-1a6dab6e9ad5,Echo of Eons,Combo,24,9,0.375
 Season-All,ff590af2-2d6c-4f16-a9b8-1a6dab6e9ad5,Echo of Eons,Combo-Control,12,5,0.4166666666666667
 Season-All,ff84ea71-e477-44f7-a3f8-77fef708efeb,Thieving Skydiver,Aggro-Control (Tempo),24,12,0.5
 Season-All,ff84ea71-e477-44f7-a3f8-77fef708efeb,Thieving Skydiver,Combo,8,6,0.75

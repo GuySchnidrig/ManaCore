@@ -101,6 +101,7 @@ Season-6,Azorius Combo Control,6.0,11.0,0.5454545454545454
 Season-6,Birthing Pod,4.0,9.0,0.4444444444444444
 Season-6,Boros Aggro,14.0,20.0,0.7
 Season-6,Domain Aggro,6.0,10.0,0.6
+Season-6,Draw 7,1.0,9.0,0.1111111111111111
 Season-6,Draw 7 Combo-Control,4.0,9.0,0.4444444444444444
 Season-6,Esper Control,9.0,19.0,0.47368421052631576
 Season-6,Golgari Midrange,3.0,11.0,0.2727272727272727
@@ -133,7 +134,7 @@ Season-All,Dimir Control,16.0,26.0,0.6153846153846154
 Season-All,Dimir Tempo,12.0,19.0,0.631578947368421
 Season-All,Domain Aggro,6.0,10.0,0.6
 Season-All,Domain Control,45.0,87.0,0.5172413793103449
-Season-All,Draw 7,28.0,56.0,0.5
+Season-All,Draw 7,29.0,65.0,0.4461538461538462
 Season-All,Draw 7 Combo-Control,21.0,45.0,0.4666666666666667
 Season-All,Esper Control,11.0,27.0,0.4074074074074074
 Season-All,Esper Tempo,4.0,9.0,0.4444444444444444
