@@ -47,7 +47,7 @@ Season-4,Splinter-Twin,13.0,20.0,0.65
 Season-4,Storm,27.0,49.0,0.5510204081632653
 Season-4,White Aggro,15.0,28.0,0.5357142857142857
 Season-5,Aggro-Combo Lands,3.0,7.0,0.42857142857142855
-Season-5,Artifacts,28.0,74.0,0.3783783783783784
+Season-5,Artifacts,35.0,83.0,0.42168674698795183
 Season-5,Artifacts Control,7.0,9.0,0.7777777777777778
 Season-5,Azorius Blink,13.0,36.0,0.3611111111111111
 Season-5,Azorius Combo Control,10.0,22.0,0.45454545454545453
@@ -118,7 +118,7 @@ Season-6,Selesnya Aggro,5.0,10.0,0.5
 Season-6,Sneak Attack,8.0,8.0,1.0
 Season-6,Storm,9.0,20.0,0.45
 Season-All,Aggro-Combo Lands,3.0,7.0,0.42857142857142855
-Season-All,Artifacts,64.0,170.0,0.3764705882352941
+Season-All,Artifacts,71.0,179.0,0.39664804469273746
 Season-All,Artifacts Control,11.0,26.0,0.4230769230769231
 Season-All,Azorius Blink,28.0,74.0,0.3783783783783784
 Season-All,Azorius Combo Control,16.0,33.0,0.48484848484848486

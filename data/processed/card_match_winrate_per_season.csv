@@ -641,7 +641,7 @@ Season-5,059e8447-6b1c-4651-a734-a8fea2cbf7b2,Bloodchief's Thirst,12.0,3.0,0.25
 Season-5,05bd329b-5707-42fc-af1c-084cc604e805,Imperial Recruiter,12.0,2.0,0.1666666666666666
 Season-5,05bdd22c-3e11-4c29-bdfa-d3dfc0e90a9f,Bitter Triumph,44.0,22.0,0.5
 Season-5,05cf51d8-9f91-42ff-99e9-4397f2251c20,Dark Confidant,32.0,15.0,0.46875
-Season-5,05e8a4ea-8c0d-4284-ac23-80e19fdde11d,Myr Battlesphere,24.0,9.0,0.375
+Season-5,05e8a4ea-8c0d-4284-ac23-80e19fdde11d,Myr Battlesphere,28.0,12.0,0.4285714285714285
 Season-5,0645f487-efe5-4764-b361-85e07bb5ccca,"Ulamog, the Infinite Gyre",8.0,3.0,0.375
 Season-5,064dfdeb-485f-473e-9fa0-8fdb7638cdc6,Dismember,48.0,28.0,0.5833333333333334
 Season-5,068bb15a-fc2d-42a2-859b-837b946d23c0,Underground Sea,32.0,18.0,0.5625
@@ -665,8 +665,8 @@ Season-5,0a786855-6eb4-42c0-a528-4842db46809d,Stock Up,40.0,22.0,0.55
 Season-5,0aa3a844-97e6-4f5d-a36f-56fea4e06932,Manglehorn,0.0,0.0,0.0
 Season-5,0ad38866-fc5f-4f62-89c1-afc0f50765aa,Novice Inspector,24.0,11.0,0.4583333333333333
 Season-5,0adcd4e5-d542-4293-8774-ace2305ef820,Walk-In Closet // Forgotten Cellar,16.0,10.0,0.625
-Season-5,0c0e7131-db26-448d-afda-f48337a026f0,Pyroclasm,0.0,0.0,0.0
-Season-5,0c3bc412-689f-4385-807b-ed60d6276d76,Grim Monolith,24.0,9.0,0.375
+Season-5,0c0e7131-db26-448d-afda-f48337a026f0,Pyroclasm,4.0,3.0,0.75
+Season-5,0c3bc412-689f-4385-807b-ed60d6276d76,Grim Monolith,28.0,12.0,0.4285714285714285
 Season-5,0c3d7e2c-a104-4757-9984-fb31088f92c4,Cryptic Coat,8.0,3.0,0.375
 Season-5,0c9a7cb0-5bff-48ff-b620-2838816ac9b5,Counterspell,40.0,19.0,0.475
 Season-5,0cb33b46-4d1b-4f97-bfdc-d815aee111da,Mana Crypt,44.0,19.0,0.4318181818181818
@@ -692,7 +692,7 @@ Season-5,107492bd-b32f-4692-917c-7771986b5bf7,Thespian's Stage,8.0,3.0,0.375
 Season-5,1103da9c-300c-406b-997d-9e5bb7cd02d6,"Lightning, Army of One",24.0,16.0,0.6666666666666666
 Season-5,113f48b9-a972-4e2c-af95-05ab078e01f2,Tranquil Landscape,24.0,10.0,0.4166666666666667
 Season-5,117bb5db-4a1c-4704-b0b5-c67b45ac2f52,"Yuffie, Materia Hunter",20.0,8.0,0.4
-Season-5,120be808-ff3b-4fca-96a1-4db6b9825856,Quantum Riddler,24.0,14.0,0.5833333333333334
+Season-5,120be808-ff3b-4fca-96a1-4db6b9825856,Quantum Riddler,28.0,17.0,0.6071428571428571
 Season-5,139b90cd-8272-457a-be32-1298145345be,Watery Grave,40.0,24.0,0.6
 Season-5,14065271-d942-42a8-aa38-d8a622c0375d,Scrubland,36.0,16.0,0.4444444444444444
 Season-5,1453f92e-df2d-4789-aa1b-a5b5c51567d4,Preordain,36.0,18.0,0.5
@@ -726,7 +726,7 @@ Season-5,19557351-b65f-4b04-b971-66abdc07000a,Stoneforge Mystic,20.0,10.0,0.5
 Season-5,19adde22-e5eb-4815-beb6-c520b3274cc9,Lotus Cobra,44.0,21.0,0.4772727272727273
 Season-5,19d6834d-afa3-4747-a62d-0654f4d9729f,"Malcolm, Alluring Scoundrel",40.0,18.0,0.45
 Season-5,1a55c370-d396-4c73-8ee2-83dc4c124005,The Goose Mother,16.0,6.0,0.375
-Season-5,1a6f256b-943e-4cfb-9fc9-d1ded68b5f97,Chart a Course,24.0,10.0,0.4166666666666667
+Season-5,1a6f256b-943e-4cfb-9fc9-d1ded68b5f97,Chart a Course,28.0,13.0,0.4642857142857143
 Season-5,1ac01fff-4de6-4783-9489-4127e25bc641,Prismatic Vista,44.0,23.0,0.5227272727272727
 Season-5,1ac0e78b-0fdd-44f9-8b7b-c4f28a32782e,Amped Raptor,28.0,16.0,0.5714285714285714
 Season-5,1af92296-455a-425e-9397-a96d09937767,Incinerate,28.0,16.0,0.5714285714285714
@@ -738,7 +738,7 @@ Season-5,1c603751-1e2b-4c8e-a8d2-5c0876e7254f,Darkstar Augur,24.0,12.0,0.5
 Season-5,1c7d50d6-b63a-4d8c-88fa-1d78ae693a45,Overgrown Tomb,20.0,10.0,0.5
 Season-5,1daf4348-05c5-4c55-bcf2-c7bec7988bfc,Plateau,36.0,21.0,0.5833333333333334
 Season-5,1dd64b1d-bcef-476c-bf0b-3ac7df7cbed3,"Nissa, Ascended Animist",20.0,10.0,0.5
-Season-5,1e2fee55-227b-4373-a3f7-b463f220033f,Tinker,32.0,13.0,0.40625
+Season-5,1e2fee55-227b-4373-a3f7-b463f220033f,Tinker,36.0,16.0,0.4444444444444444
 Season-5,1e3e8085-cfcd-4e88-b441-4d1f8ac63904,Forth Eorlingas!,48.0,25.0,0.5208333333333334
 Season-5,1ee98955-4c47-4d45-9377-608dfa755337,Bone Shards,40.0,16.0,0.4
 Season-5,1f123ad6-fe84-4fed-9c0f-6b41921e9c26,Deceiver Exarch,0.0,0.0,0.0
@@ -810,7 +810,7 @@ Season-5,327cf118-cc92-4073-85d0-94d2a0a6989a,Scalding Tarn,44.0,24.0,0.54545454
 Season-5,329a8738-3e17-403a-857a-0ba529ce8cd1,Walking Ballista,20.0,9.0,0.45
 Season-5,32a180dd-9641-4546-8940-9b21084f0c71,Lightning Bolt,40.0,22.0,0.55
 Season-5,32aa6e33-221f-414c-9b51-850d97a7e051,Galvanic Discharge,36.0,16.0,0.4444444444444444
-Season-5,33672990-4860-4aa6-ac1b-f9da66f5da59,Wurmcoil Engine,24.0,13.0,0.5416666666666666
+Season-5,33672990-4860-4aa6-ac1b-f9da66f5da59,Wurmcoil Engine,28.0,16.0,0.5714285714285714
 Season-5,33ab05b5-d6f5-439c-9aed-1a58ceb282ad,Flametongue Yearling,16.0,5.0,0.3125
 Season-5,33ca68a6-474e-4d86-bffa-ee4bddb4a3cf,Fellwar Stone,4.0,3.0,0.75
 Season-5,340c5799-4964-44dd-8c48-8f3f3aba5211,Badgermole Cub,24.0,11.0,0.4583333333333333
@@ -820,7 +820,7 @@ Season-5,345fd005-5052-4500-a260-3649500e21f4,Mulldrifter,0.0,0.0,0.0
 Season-5,3462a3d0-5552-49fa-9eb7-100960c55891,"Oko, Thief of Crowns",36.0,17.0,0.4722222222222222
 Season-5,35f1a6ba-e46f-44fb-93f4-fb883d677b36,Baleful Mastery,36.0,13.0,0.3611111111111111
 Season-5,377cee38-e769-47b0-abd5-0f528600f36a,Badlands,51.0,25.0,0.4901960784313725
-Season-5,37dbe1a3-3c44-452b-9fb9-37f5d793d0b5,Memory Jar,12.0,4.0,0.3333333333333333
+Season-5,37dbe1a3-3c44-452b-9fb9-37f5d793d0b5,Memory Jar,16.0,7.0,0.4375
 Season-5,396bca07-82ba-49b7-b79e-7784b3a06d48,Sunset Saboteur,32.0,16.0,0.5
 Season-5,39b41cb3-ca3d-4389-8f66-e1f77f5fb683,Fact or Fiction,0.0,0.0,0.0
 Season-5,39c431d7-d94b-46c4-bb89-f3db56214ab4,Elvish Reclaimer,12.0,3.0,0.25
@@ -842,7 +842,7 @@ Season-5,3faa8c5e-9e1b-4cee-b322-a033bf33dcbc,Hymn to Tourach,24.0,12.0,0.5
 Season-5,400382a4-aea2-4827-b06a-1b0b3745908b,Noble Hierarch,44.0,21.0,0.4772727272727273
 Season-5,416d2d51-8f29-4e95-b037-e8c32b081e6c,Mana Drain,44.0,25.0,0.5681818181818182
 Season-5,41e108a5-4e2f-42cf-9ea1-87bf3c0a2b7f,"Nissa, Who Shakes the World",32.0,14.0,0.4375
-Season-5,41ff849e-2439-4690-8aa4-769039b6da4c,Talisman of Progress,20.0,5.0,0.25
+Season-5,41ff849e-2439-4690-8aa4-769039b6da4c,Talisman of Progress,24.0,8.0,0.3333333333333333
 Season-5,4216656e-90e8-45fc-a0f6-0d0d79d0a021,Shelldock Isle,36.0,17.0,0.4722222222222222
 Season-5,43aa7e35-55ee-4e02-a8aa-ea2b267055d1,Woodfall Primus,24.0,11.0,0.4583333333333333
 Season-5,441f8b2f-c8cb-4340-a92f-116c2276e906,Frantic Search,36.0,12.0,0.3333333333333333
@@ -853,18 +853,18 @@ Season-5,45fd6e91-df76-497f-b642-33dc3d5f6a5a,Mox Ruby,44.0,21.0,0.4772727272727
 Season-5,4720b4f2-e6af-4223-9250-a0ed21ed5693,Pest Infestation,36.0,15.0,0.4166666666666667
 Season-5,47a6234f-309f-4e03-9263-66da48b57153,Solitude,36.0,17.0,0.4722222222222222
 Season-5,4820d223-4ea1-4850-931c-3d2ab5eb003b,Birthing Ritual,20.0,5.0,0.25
-Season-5,486d7edc-d983-41f0-8b78-c99aecd72996,"Otawara, Soaring City",36.0,17.0,0.4722222222222222
+Season-5,486d7edc-d983-41f0-8b78-c99aecd72996,"Otawara, Soaring City",40.0,20.0,0.5
 Season-5,487116ab-b885-406b-aa54-56cb67eb3ca5,Scavenging Ooze,20.0,9.0,0.45
 Season-5,490eb213-9ae2-4b45-abec-6f1dfc83792a,Cori-Steel Cutter,36.0,21.0,0.5833333333333334
 Season-5,493a5ca7-5f90-4af4-b6db-43ae09a2f2c9,Dark Ritual,40.0,17.0,0.425
 Season-5,49bb0ad3-1082-41f1-82a4-52a4006cc9b6,"Leovold, Emissary of Trest",24.0,11.0,0.4583333333333333
 Season-5,4a08ca06-58db-4ce6-b490-be4bea8956a1,Sensei's Divining Top,24.0,6.0,0.25
-Season-5,4a0bb5dc-75a6-4bd6-81f8-611197fb0fba,Nettlecyst,12.0,3.0,0.25
+Season-5,4a0bb5dc-75a6-4bd6-81f8-611197fb0fba,Nettlecyst,16.0,6.0,0.375
 Season-5,4a1f905f-1d55-4d02-9d24-e58070793d3f,"Atraxa, Grand Unifier",36.0,22.0,0.6111111111111112
 Season-5,4a706ecf-3277-40e3-871c-4ba4ead16e20,Wrenn and Six,20.0,10.0,0.5
 Season-5,4acaef84-55d1-43dc-b10a-696182e6709b,Repeal,40.0,20.0,0.5
 Season-5,4acf970d-d2d7-413d-aba7-587ee53d8d5c,Stomping Ground,28.0,14.0,0.5
-Season-5,4b0bd07e-cf80-4d64-af29-f4cec6632b3e,Perilous Landscape,24.0,10.0,0.4166666666666667
+Season-5,4b0bd07e-cf80-4d64-af29-f4cec6632b3e,Perilous Landscape,28.0,13.0,0.4642857142857143
 Season-5,4b4956a2-9a39-4152-9c98-70e4b2acfa26,Miscalculation,40.0,20.0,0.5
 Season-5,4c6cf93a-d073-48ac-88db-c46bf3e10beb,Generous Plunderer,16.0,9.0,0.5625
 Season-5,4c732dc7-dd6b-4cc1-bbe0-ff3b1d2c7419,Animate Dead,48.0,22.0,0.4583333333333333
@@ -872,7 +872,7 @@ Season-5,4cbdacc1-7a1b-4633-85f5-eb50c2bf406d,Snapcaster Mage,40.0,19.0,0.475
 Season-5,4ced112a-e775-4f97-97b3-74877e9dce12,Dragon's Rage Channeler,40.0,23.0,0.575
 Season-5,4d9dbadd-c1b6-44fe-92ac-6f69d7178342,Talisman of Creativity,32.0,17.0,0.53125
 Season-5,4dea7bcc-3ff8-40b0-8264-0cd678d6ff31,Scourge of the Skyclaves,16.0,6.0,0.375
-Season-5,4df8aabc-7fcb-4b7b-980b-18f499e6c170,Hullbreacher,28.0,13.0,0.4642857142857143
+Season-5,4df8aabc-7fcb-4b7b-980b-18f499e6c170,Hullbreacher,32.0,16.0,0.5
 Season-5,4e117771-5a8b-4812-b487-32ba34b7f724,Giver of Runes,40.0,18.0,0.45
 Season-5,4e4b6e22-93b2-4896-bba5-0ceaa5d8ea3c,"Yavimaya, Cradle of Growth",36.0,20.0,0.5555555555555556
 Season-5,4e4fb50c-a81f-44d3-93c5-fa9a0b37f617,"Omnath, Locus of Creation",16.0,6.0,0.375
@@ -888,7 +888,7 @@ Season-5,5427d8a6-ac9e-4e50-bd39-81713b2ade25,Fatal Push,48.0,30.0,0.625
 Season-5,543d55cb-3a6b-4620-af25-10ae74ed32c4,Worldspine Wurm,4.0,4.0,1.0
 Season-5,54a3ea87-005e-4985-b2a5-21711d0b71c0,Springheart Nantuko,36.0,18.0,0.5
 Season-5,54e0c2cd-fa5f-427d-8e15-6066f002a8e3,Chainsaw,32.0,13.0,0.40625
-Season-5,54f449ff-4025-465e-9ec5-a5cf42c4c9d3,Xander's Lounge,44.0,23.0,0.5227272727272727
+Season-5,54f449ff-4025-465e-9ec5-a5cf42c4c9d3,Xander's Lounge,48.0,26.0,0.5416666666666666
 Season-5,551c0a45-9515-4e51-84e5-79703832a661,Expedition Map,28.0,17.0,0.6071428571428571
 Season-5,55707746-da6e-46e5-a5ca-7ac843fdc38e,"Phelia, Exuberant Shepherd",40.0,18.0,0.45
 Season-5,55a14f30-4ff9-4472-90a6-c3139f1c18e5,"Kaito, Bane of Nightmares",20.0,12.0,0.6
@@ -908,11 +908,11 @@ Season-5,5b8ba842-c662-4686-bca3-93ddb7fa11a6,Mother of Runes,48.0,28.0,0.583333
 Season-5,5bb3cb5c-8d66-4f5e-a9a9-917e6045f024,Flickerwisp,32.0,12.0,0.375
 Season-5,5cb76266-ae50-4bbc-8f96-d98f309b02d3,"Teferi, Time Raveler",32.0,14.0,0.4375
 Season-5,5d10b752-d9cb-419d-a5c4-d4ee1acb655e,"Teferi, Hero of Dominaria",32.0,14.0,0.4375
-Season-5,5da578b8-19e6-4068-9336-e7cd33c585f1,Retrofitter Foundry,32.0,10.0,0.3125
+Season-5,5da578b8-19e6-4068-9336-e7cd33c585f1,Retrofitter Foundry,36.0,13.0,0.3611111111111111
 Season-5,5de097e5-e960-4404-a370-defe93ce892f,Oracle of Mul Daya,16.0,4.0,0.25
 Season-5,5eccf31d-869d-4003-a92b-71b4f4b479ee,Strix Serenade,32.0,14.0,0.4375
 Season-5,5f1cdcba-a04a-4a2f-8bc1-0dd7fa03754d,Exhume,20.0,8.0,0.4
-Season-5,5f608efc-0dbc-4cc3-aadd-ed473bfc29ab,Portal to Phyrexia,20.0,9.0,0.45
+Season-5,5f608efc-0dbc-4cc3-aadd-ed473bfc29ab,Portal to Phyrexia,24.0,12.0,0.5
 Season-5,5f6927e1-c580-483a-8e2a-6e2deb74800e,Mox Jet,44.0,21.0,0.4772727272727273
 Season-5,600dca0f-5964-45e7-86df-f16a5b4a0106,General Ferrous Rokiric,0.0,0.0,0.0
 Season-5,605c2218-9d12-4ac3-a721-fca590b89847,Karakas,36.0,19.0,0.5277777777777778
@@ -982,7 +982,7 @@ Season-5,7c353e83-4b63-4bc6-b029-273d2eca1f75,Upheaval,20.0,11.0,0.55
 Season-5,7c59e0cd-10a8-4a32-9c0a-a2c6ef1ed9a6,Unable to Scream,0.0,0.0,0.0
 Season-5,7c884e1e-fecb-4330-b3de-5fc2a60f7173,Kolaghan's Command,36.0,21.0,0.5833333333333334
 Season-5,7d48d622-f397-4f31-b1a5-0c23f60aa71c,Mana Tithe,36.0,20.0,0.5555555555555556
-Season-5,7ea4b5bc-18a4-45db-a56a-ab3f8bd2fb0d,Ledger Shredder,24.0,11.0,0.4583333333333333
+Season-5,7ea4b5bc-18a4-45db-a56a-ab3f8bd2fb0d,Ledger Shredder,28.0,14.0,0.5
 Season-5,7eb39e97-53c2-4df0-9fb3-a3d6a24ec41f,Avacyn's Pilgrim,40.0,14.0,0.35
 Season-5,7f7e780e-fbc5-4dc0-b5c7-efcb8645c7c6,Ertai Resurrected,20.0,8.0,0.4
 Season-5,80c72839-0fa6-4b5f-83b7-6553ebf09bef,"Otharri, Suns' Glory",28.0,15.0,0.5357142857142857
@@ -997,7 +997,7 @@ Season-5,87cc2855-6b14-44dd-a398-7dc2bbae081f,Kaldra Compleat,12.0,5.0,0.4166666
 Season-5,8870ef0b-cb1f-463b-8509-fece4743d3d4,Ramunap Excavator,32.0,10.0,0.3125
 Season-5,89175ce1-0746-4ba1-970e-617d134b0527,"Gau, Feral Youth",28.0,11.0,0.3928571428571428
 Season-5,89345f55-2b32-4356-945a-d56dded39909,Preacher of the Schism,28.0,10.0,0.3571428571428571
-Season-5,89af0f45-c11c-4f13-9950-b1489440ee5b,Chain Lightning,44.0,20.0,0.4545454545454545
+Season-5,89af0f45-c11c-4f13-9950-b1489440ee5b,Chain Lightning,48.0,23.0,0.4791666666666667
 Season-5,89f5cc05-5d9d-4709-b3c5-a6249c294acc,Hexdrinker,48.0,24.0,0.5
 Season-5,8a720448-017f-4f4a-9501-678245eaed17,Mishra's Bauble,40.0,21.0,0.525
 Season-5,8c2996d9-3287-4480-8c04-7a378e37e3cf,Flooded Strand,48.0,25.0,0.5208333333333334
@@ -1012,7 +1012,7 @@ Season-5,906b6e99-128f-4c11-8daf-16099d35b0d4,Assassin's Trophy,20.0,7.0,0.35
 Season-5,907b3d1d-8c85-4707-80b5-c4d832df9846,Tishana's Tidebinder,16.0,3.0,0.1875
 Season-5,926916ed-2f22-4ba9-9427-194886ad6c1e,Urza's Cave,0.0,0.0,0.0
 Season-5,928036c9-11b8-493e-b9f2-8fbd3487cd19,"Minsc & Boo, Timeless Heroes",36.0,19.0,0.5277777777777778
-Season-5,939c6e19-4b27-4023-bb9c-ae440f91e21c,Shadowspear,20.0,6.0,0.3
+Season-5,939c6e19-4b27-4023-bb9c-ae440f91e21c,Shadowspear,24.0,9.0,0.375
 Season-5,93f99e67-901f-4c8d-8a09-e443b7eb928f,Archangel Elspeth,32.0,19.0,0.59375
 Season-5,9417f14c-a853-42c6-a992-29139484260a,Ignoble Hierarch,36.0,18.0,0.5
 Season-5,94b67489-5eb0-4406-9bf3-27e50dc632eb,"Nadu, Winged Wisdom",28.0,11.0,0.3928571428571428
@@ -1025,13 +1025,13 @@ Season-5,96b6b2e1-c3e6-464c-8a13-b15deb34e862,Aetherflux Reservoir,0.0,0.0,0.0
 Season-5,96c5607b-55fe-43c2-93fe-0084d84499d9,Deep Forest Hermit,16.0,6.0,0.375
 Season-5,9721f8da-39ed-4ada-a571-61e08a86032b,Broadside Bombardiers,44.0,24.0,0.5454545454545454
 Season-5,972f3582-ad7c-4fe9-af29-90fa695a623f,Depthshaker Titan,4.0,1.0,0.25
-Season-5,97b9bab9-12ee-4da5-9d53-d0b82d9279cd,Pyrite Spellbomb,28.0,11.0,0.3928571428571428
+Season-5,97b9bab9-12ee-4da5-9d53-d0b82d9279cd,Pyrite Spellbomb,32.0,14.0,0.4375
 Season-5,97d08a15-e61c-4421-a541-c68a4f87cb74,Forensic Gadgeteer,20.0,6.0,0.3
-Season-5,9814d8e8-c462-41ca-9909-1c659f488543,Lotus Petal,32.0,15.0,0.46875
+Season-5,9814d8e8-c462-41ca-9909-1c659f488543,Lotus Petal,36.0,18.0,0.5
 Season-5,985453e7-997e-4d77-a338-cc0290791ebe,Finale of Devastation,8.0,3.0,0.375
 Season-5,985bdb0c-ce6c-4506-8163-76f3b2fdf5fb,Lose Focus,44.0,20.0,0.4545454545454545
-Season-5,98e7bf8f-dba7-4005-8cee-634c9153931d,Phantasmal Image,28.0,14.0,0.5
-Season-5,991037a2-fea2-49f5-8ace-ebbf9f678cff,Talisman of Dominance,20.0,11.0,0.55
+Season-5,98e7bf8f-dba7-4005-8cee-634c9153931d,Phantasmal Image,32.0,17.0,0.53125
+Season-5,991037a2-fea2-49f5-8ace-ebbf9f678cff,Talisman of Dominance,24.0,14.0,0.5833333333333334
 Season-5,995486ce-58bb-4753-a812-0ca73ef1a235,Gitaxian Probe,40.0,20.0,0.5
 Season-5,99ff731b-8399-40c8-b539-ba6ba5783771,Wasteland,28.0,11.0,0.3928571428571428
 Season-5,9a71531f-d4b6-4cc7-8193-b2f5bce33b21,Night Scythe,4.0,3.0,0.75
@@ -1049,7 +1049,7 @@ Season-5,a0b6a71e-56cb-4d25-8f2b-7a4f1b60900d,"Uro, Titan of Nature's Wrath",16.
 Season-5,a1176dcf-40ee-4342-aa74-791b8352e99a,Scrawling Crawler,36.0,13.0,0.3611111111111111
 Season-5,a15570c0-4210-4959-8584-987ec85f8283,Wight of the Reliquary,4.0,0.0,0.0
 Season-5,a178cfe8-f9fa-4255-88d0-54a0bed079f5,Malevolent Rumble,36.0,17.0,0.4722222222222222
-Season-5,a1febcf1-afa4-4406-9ac1-5bf98b2765d2,Time Walk,44.0,25.0,0.5681818181818182
+Season-5,a1febcf1-afa4-4406-9ac1-5bf98b2765d2,Time Walk,48.0,28.0,0.5833333333333334
 Season-5,a211d505-4d40-4914-a9da-220770d6ddbc,Consider,24.0,12.0,0.5
 Season-5,a249b1f4-2b22-4b67-a207-e0c4ae95d2e1,Ketria Triome,24.0,13.0,0.5416666666666666
 Season-5,a24e8dba-5c86-4e32-8a52-61402f7fe9f0,Containment Priest,24.0,12.0,0.5
@@ -1070,7 +1070,7 @@ Season-5,a9225cc3-90f0-448f-a8d9-7c6c2796d077,Sheoldred's Edict,28.0,12.0,0.4285
 Season-5,a93e3406-4e29-4bc0-ae52-cbd2ac1f99a4,"Alesha, Who Laughs at Fate",0.0,0.0,0.0
 Season-5,a9738cda-adb1-47fb-9f4c-ecd930228c4d,"Ragavan, Nimble Pilferer",44.0,19.0,0.4318181818181818
 Season-5,aaae15dd-11b6-4421-99e9-365c7fe4a5d6,Embercleave,16.0,5.0,0.3125
-Season-5,aac0c8df-f01d-4178-8d66-ee603f814d24,Mishra's Workshop,24.0,11.0,0.4583333333333333
+Season-5,aac0c8df-f01d-4178-8d66-ee603f814d24,Mishra's Workshop,28.0,14.0,0.5
 Season-5,ab1d1461-1625-4163-aacd-a939f4871fad,Staff of the Storyteller,32.0,13.0,0.40625
 Season-5,ab9f6a1b-8467-4584-affd-8c71d3e34d2f,"Akal Pakal, First Among Equals",0.0,0.0,0.0
 Season-5,abcd0e32-2e6b-419b-9e8a-af38f2b48a66,Monastery Mentor,16.0,6.0,0.375
@@ -1094,7 +1094,7 @@ Season-5,b6876d9e-0908-43ac-8542-09c7aa02b5ba,Tarmogoyf,8.0,3.0,0.375
 Season-5,b689a206-aec3-4a31-95cf-3d4b840db04c,Securitron Squadron,16.0,6.0,0.375
 Season-5,b6cb2549-e485-44d6-9d65-7605c568909e,Unearth,28.0,13.0,0.4642857142857143
 Season-5,b768efa2-e56b-4a7e-ace8-d673f10e0714,Birthing Pod,12.0,4.0,0.3333333333333333
-Season-5,b7f16fdf-a3f5-462d-a64a-789d893b6ef5,Batterskull,12.0,7.0,0.5833333333333334
+Season-5,b7f16fdf-a3f5-462d-a64a-789d893b6ef5,Batterskull,16.0,10.0,0.625
 Season-5,b83cfbaa-7890-4f6f-878b-4edb45677371,Skyclave Apparition,40.0,19.0,0.475
 Season-5,b841bfa8-7c17-4df2-8466-780ab9a4a53a,Fabled Passage,44.0,21.0,0.4772727272727273
 Season-5,b8aa7126-5df3-42dd-b4a3-0d0ea59eeebd,Helping Hand,24.0,12.0,0.5
@@ -1111,7 +1111,7 @@ Season-5,bf220c06-3cce-4bdd-aa58-83940c223e9c,Commercial District,20.0,8.0,0.4
 Season-5,bfa4e927-1d6f-4a64-9801-7d168a5ef3f6,Astrologian's Planisphere,28.0,9.0,0.3214285714285714
 Season-5,c14098d6-28ae-492f-8ffc-7d115d83ce6a,Summon: Good King Mog XII,16.0,5.0,0.3125
 Season-5,c17816e8-28b1-4295-a637-efb0e5c18873,Lush Portico,28.0,9.0,0.3214285714285714
-Season-5,c1e0f201-42cb-46a1-901a-65bb4fc18f6c,Urza's Saga,32.0,17.0,0.53125
+Season-5,c1e0f201-42cb-46a1-901a-65bb4fc18f6c,Urza's Saga,36.0,20.0,0.5555555555555556
 Season-5,c2089ec9-0665-448f-bfe9-d181de127814,Brazen Borrower // Petty Theft,40.0,22.0,0.55
 Season-5,c3896705-bbd2-4ffb-a590-ee78e0eabdc5,Long Goodbye,28.0,10.0,0.3571428571428571
 Season-5,c565f8fe-acf7-40dd-8100-8f692d1e232c,Talon Gates of Madara,12.0,5.0,0.4166666666666667
@@ -1141,7 +1141,7 @@ Season-5,d40b65c1-b24d-492d-81b9-d8474ebdc08c,Sylvan Caryatid,40.0,17.0,0.425
 Season-5,d51269cf-a333-4a64-94cd-245798d840d2,Elder Gargaroth,28.0,11.0,0.3928571428571428
 Season-5,d5806e68-1054-458e-866d-1f2470f682b2,The One Ring,40.0,17.0,0.425
 Season-5,d67be074-cdd4-41d9-ac89-0a0456c4e4b2,"Sheoldred, the Apocalypse",48.0,21.0,0.4375
-Season-5,d6ec3293-b09e-4931-ac4e-dc5eac0ca004,Mana Vault,44.0,15.0,0.3409090909090909
+Season-5,d6ec3293-b09e-4931-ac4e-dc5eac0ca004,Mana Vault,48.0,18.0,0.375
 Season-5,d79b8974-796c-4f88-a0cb-5afbaf26fd24,Digsite Engineer,0.0,0.0,0.0
 Season-5,d7a8cc1d-aabb-4eb6-b0f1-6c93ec246f61,Court of Garenbrig,20.0,9.0,0.45
 Season-5,d91a527d-51f1-4fb1-9016-fc923fd43a6a,Azorius Signet,0.0,0.0,0.0
@@ -1159,7 +1159,7 @@ Season-5,e2312c49-1627-47ad-8113-78a999a97d8d,Contaminated Landscape,16.0,4.0,0.
 Season-5,e41cf82d-3213-47ce-a015-6e51a8b07e4f,Questing Beast,40.0,17.0,0.425
 Season-5,e4775a26-0b66-40e9-8f64-41d9308ca032,"Surrak, Elusive Hunter",40.0,19.0,0.475
 Season-5,e4e6794a-feeb-4fc8-a2ee-38c75c18aaae,Heartless Act,40.0,17.0,0.425
-Season-5,e5145f31-a4ac-44ef-8f85-e4d95f2c9ff5,Library of Alexandria,32.0,21.0,0.65625
+Season-5,e5145f31-a4ac-44ef-8f85-e4d95f2c9ff5,Library of Alexandria,36.0,24.0,0.6666666666666666
 Season-5,e58e681e-a069-4414-aafe-634c7987fd0d,Swords to Plowshares,44.0,23.0,0.5227272727272727
 Season-5,e6befbc4-1320-4f26-bd9f-b1814fedda10,Grief,36.0,22.0,0.6111111111111112
 Season-5,e6d7fba8-a157-4d81-9d6b-bd210a96b248,Gleemox,44.0,21.0,0.4772727272727273
@@ -1174,7 +1174,7 @@ Season-5,ec3de5f4-bb55-4ab9-995f-f3e0dc22c1bb,Voice of Victory,44.0,24.0,0.54545
 Season-5,ec59ed99-ce40-489a-b776-8874bec60393,Trash for Treasure,0.0,0.0,0.0
 Season-5,eca8d6f8-c6f1-437c-99e2-4281eae14a6f,Fateful Absence,36.0,19.0,0.5277777777777778
 Season-5,ecc1027a-8c07-44a0-bdde-fa2844cff694,Vivi Ornitier,0.0,0.0,0.0
-Season-5,ed0216a0-c5c9-4a99-b869-53e4d0256326,Mox Pearl,44.0,17.0,0.3863636363636363
+Season-5,ed0216a0-c5c9-4a99-b869-53e4d0256326,Mox Pearl,48.0,20.0,0.4166666666666667
 Season-5,ee8e9928-d9b2-4570-adb8-44b34115decd,Tireless Tracker,40.0,21.0,0.525
 Season-5,eeeffc0b-dc92-458e-ad58-86ff6077a508,Sentinel of the Nameless City,40.0,20.0,0.5
 Season-5,efda91fa-03b2-4fb4-ae07-b45f6c6d3eab,Yawgmoth's Will,8.0,4.0,0.5
@@ -1210,7 +1210,7 @@ Season-5,fc310a26-b6a0-4e42-98ab-bdfd7b06cb63,"Beza, the Bounding Spring",32.0,1
 Season-5,fc7d1912-7e27-49ef-bd98-375d975a42b0,Starting Town,44.0,19.0,0.4318181818181818
 Season-5,fd52688a-39fd-430f-b950-cb56e0004396,Talisman of Curiosity,20.0,10.0,0.5
 Season-5,fd97b3cf-924e-4f77-bb82-0bf19592389f,Dreadhorde Arcanist,16.0,8.0,0.5
-Season-5,fd99bce1-ce39-464b-8e61-2631eb3ed6f6,Tolarian Academy,28.0,13.0,0.4642857142857143
+Season-5,fd99bce1-ce39-464b-8e61-2631eb3ed6f6,Tolarian Academy,32.0,16.0,0.5
 Season-5,fe30c0ff-f74b-456a-a61e-3720d84d713f,Parallax Wave,48.0,24.0,0.5
 Season-5,fe964e7e-e2c5-4263-889d-0a531eb51442,Luminarch Aspirant,40.0,21.0,0.525
 Season-5,febaaeae-5c0d-45fa-8169-b27b4996f18e,Chrome Host Seedshark,0.0,0.0,0.0
@@ -1798,7 +1798,7 @@ Season-All,059e8447-6b1c-4651-a734-a8fea2cbf7b2,Bloodchief's Thirst,12.0,3.0,0.2
 Season-All,05bd329b-5707-42fc-af1c-084cc604e805,Imperial Recruiter,28.0,11.0,0.3928571428571428
 Season-All,05bdd22c-3e11-4c29-bdfa-d3dfc0e90a9f,Bitter Triumph,92.0,43.0,0.4673913043478261
 Season-All,05cf51d8-9f91-42ff-99e9-4397f2251c20,Dark Confidant,72.0,37.0,0.5138888888888888
-Season-All,05e8a4ea-8c0d-4284-ac23-80e19fdde11d,Myr Battlesphere,48.0,19.0,0.3958333333333333
+Season-All,05e8a4ea-8c0d-4284-ac23-80e19fdde11d,Myr Battlesphere,52.0,22.0,0.4230769230769231
 Season-All,0645f487-efe5-4764-b361-85e07bb5ccca,"Ulamog, the Infinite Gyre",20.0,9.0,0.45
 Season-All,064dfdeb-485f-473e-9fa0-8fdb7638cdc6,Dismember,92.0,49.0,0.532608695652174
 Season-All,068bb15a-fc2d-42a2-859b-837b946d23c0,Underground Sea,76.0,35.0,0.4605263157894737
@@ -1827,8 +1827,8 @@ Season-All,0ab6bfbd-d2e1-4c4c-9f91-6f69c5b8e3bb,Waterlogged Grove,0.0,0.0,0.0
 Season-All,0ad38866-fc5f-4f62-89c1-afc0f50765aa,Novice Inspector,80.0,39.0,0.4875
 Season-All,0ad4c472-b8ce-4ae0-a6f0-726ea74722c5,Dread Fugue,0.0,0.0,0.0
 Season-All,0adcd4e5-d542-4293-8774-ace2305ef820,Walk-In Closet // Forgotten Cellar,44.0,24.0,0.5454545454545454
-Season-All,0c0e7131-db26-448d-afda-f48337a026f0,Pyroclasm,8.0,5.0,0.625
-Season-All,0c3bc412-689f-4385-807b-ed60d6276d76,Grim Monolith,56.0,21.0,0.375
+Season-All,0c0e7131-db26-448d-afda-f48337a026f0,Pyroclasm,12.0,8.0,0.6666666666666666
+Season-All,0c3bc412-689f-4385-807b-ed60d6276d76,Grim Monolith,60.0,24.0,0.4
 Season-All,0c3d7e2c-a104-4757-9984-fb31088f92c4,Cryptic Coat,40.0,15.0,0.375
 Season-All,0c9a7cb0-5bff-48ff-b620-2838816ac9b5,Counterspell,84.0,42.0,0.5
 Season-All,0cb33b46-4d1b-4f97-bfdc-d815aee111da,Mana Crypt,92.0,50.0,0.5434782608695652
@@ -1859,7 +1859,7 @@ Season-All,113f48b9-a972-4e2c-af95-05ab078e01f2,Tranquil Landscape,32.0,13.0,0.4
 Season-All,1163fe84-c5d5-42c8-b7cd-d206a9b0bd3f,Tireless Provisioner,28.0,15.0,0.5357142857142857
 Season-All,117bb5db-4a1c-4704-b0b5-c67b45ac2f52,"Yuffie, Materia Hunter",20.0,8.0,0.4
 Season-All,1192f7a9-102e-4b3a-b154-18c8eb332217,"Ulamog, the Ceaseless Hunger",0.0,0.0,0.0
-Season-All,120be808-ff3b-4fca-96a1-4db6b9825856,Quantum Riddler,32.0,16.0,0.5
+Season-All,120be808-ff3b-4fca-96a1-4db6b9825856,Quantum Riddler,36.0,19.0,0.5277777777777778
 Season-All,1290e00b-c41b-4e30-8b65-a7fd4356d462,Mind's Desire,0.0,0.0,0.0
 Season-All,139b90cd-8272-457a-be32-1298145345be,Watery Grave,80.0,46.0,0.575
 Season-All,13c5a1ce-932a-4b3d-8b86-ed920e646afc,Satyr Wayfinder,8.0,4.0,0.5
@@ -1902,7 +1902,7 @@ Season-All,19adde22-e5eb-4815-beb6-c520b3274cc9,Lotus Cobra,84.0,37.0,0.44047619
 Season-All,19d6834d-afa3-4747-a62d-0654f4d9729f,"Malcolm, Alluring Scoundrel",52.0,23.0,0.4423076923076923
 Season-All,1a55c370-d396-4c73-8ee2-83dc4c124005,The Goose Mother,40.0,14.0,0.35
 Season-All,1a67768a-6cd9-4163-b941-752f29c87a8d,Basking Rootwalla,0.0,0.0,0.0
-Season-All,1a6f256b-943e-4cfb-9fc9-d1ded68b5f97,Chart a Course,44.0,19.0,0.4318181818181818
+Season-All,1a6f256b-943e-4cfb-9fc9-d1ded68b5f97,Chart a Course,48.0,22.0,0.4583333333333333
 Season-All,1ac01fff-4de6-4783-9489-4127e25bc641,Prismatic Vista,88.0,44.0,0.5
 Season-All,1ac0e78b-0fdd-44f9-8b7b-c4f28a32782e,Amped Raptor,28.0,16.0,0.5714285714285714
 Season-All,1af92296-455a-425e-9397-a96d09937767,Incinerate,56.0,28.0,0.5
@@ -1920,7 +1920,7 @@ Season-All,1daf4348-05c5-4c55-bcf2-c7bec7988bfc,Plateau,80.0,47.0,0.5875
 Season-All,1dd64b1d-bcef-476c-bf0b-3ac7df7cbed3,"Nissa, Ascended Animist",40.0,21.0,0.525
 Season-All,1e0c695d-62f9-4805-9e2f-7032e8464136,No More Lies,16.0,5.0,0.3125
 Season-All,1e14e677-9bfa-4bcc-9772-8e7758d7538a,Sea Gate Stormcaller,12.0,5.0,0.4166666666666667
-Season-All,1e2fee55-227b-4373-a3f7-b463f220033f,Tinker,72.0,25.0,0.3472222222222222
+Season-All,1e2fee55-227b-4373-a3f7-b463f220033f,Tinker,76.0,28.0,0.3684210526315789
 Season-All,1e3259f8-ee93-4b02-b8e1-a7bd6dd698ca,"Uro, Titan of Nature's Wrath",0.0,0.0,0.0
 Season-All,1e3e8085-cfcd-4e88-b441-4d1f8ac63904,Forth Eorlingas!,104.0,56.0,0.5384615384615384
 Season-All,1ea179e9-9c0d-46c1-9ee8-60be68e1f79c,Thirst for Discovery,24.0,9.0,0.375
@@ -2016,7 +2016,7 @@ Season-All,32aa6e33-221f-414c-9b51-850d97a7e051,Galvanic Discharge,68.0,34.0,0.5
 Season-All,32e29c7d-ed4b-4eff-b3c2-d99e5b63ef8d,Sunfall,12.0,3.0,0.25
 Season-All,32e670da-7563-4f6a-a7db-4c126a440eb8,Erode,8.0,5.0,0.625
 Season-All,333bf101-14e8-4753-99bc-9174f42c4122,Kinscaer Sentry,12.0,8.0,0.6666666666666666
-Season-All,33672990-4860-4aa6-ac1b-f9da66f5da59,Wurmcoil Engine,60.0,30.0,0.5
+Season-All,33672990-4860-4aa6-ac1b-f9da66f5da59,Wurmcoil Engine,64.0,33.0,0.515625
 Season-All,33ab05b5-d6f5-439c-9aed-1a58ceb282ad,Flametongue Yearling,40.0,20.0,0.5
 Season-All,33c59c04-4c0b-4a60-826e-3a7757d0b2a2,"Loot, the Pathfinder",0.0,0.0,0.0
 Season-All,33ca68a6-474e-4d86-bffa-ee4bddb4a3cf,Fellwar Stone,28.0,11.0,0.3928571428571428
@@ -2032,7 +2032,7 @@ Season-All,37478625-dd07-476d-bd9b-b2e0d71ac0d1,Abundant Countryside,0.0,0.0,0.0
 Season-All,377cee38-e769-47b0-abd5-0f528600f36a,Badlands,91.0,46.0,0.5054945054945055
 Season-All,37a497b8-e908-4ddc-996e-a8470df72afb,Super Shredder,0.0,0.0,0.0
 Season-All,37cb5599-7d2c-48e9-978b-902a01a74bde,Sinkhole Surveyor,4.0,2.0,0.5
-Season-All,37dbe1a3-3c44-452b-9fb9-37f5d793d0b5,Memory Jar,44.0,17.0,0.3863636363636363
+Season-All,37dbe1a3-3c44-452b-9fb9-37f5d793d0b5,Memory Jar,48.0,20.0,0.4166666666666667
 Season-All,396bca07-82ba-49b7-b79e-7784b3a06d48,Sunset Saboteur,32.0,16.0,0.5
 Season-All,39b41cb3-ca3d-4389-8f66-e1f77f5fb683,Fact or Fiction,16.0,8.0,0.5
 Season-All,39c431d7-d94b-46c4-bb89-f3db56214ab4,Elvish Reclaimer,32.0,13.0,0.40625
@@ -2064,7 +2064,7 @@ Season-All,40f0ecf7-f49e-46ff-aa5b-9ff5361b72c5,Genemorph Imago,8.0,1.0,0.125
 Season-All,415ff6a5-61ef-4b37-ae08-e44476300d4a,Fire Magic,8.0,5.0,0.625
 Season-All,416d2d51-8f29-4e95-b037-e8c32b081e6c,Mana Drain,88.0,46.0,0.5227272727272727
 Season-All,41e108a5-4e2f-42cf-9ea1-87bf3c0a2b7f,"Nissa, Who Shakes the World",64.0,28.0,0.4375
-Season-All,41ff849e-2439-4690-8aa4-769039b6da4c,Talisman of Progress,20.0,5.0,0.25
+Season-All,41ff849e-2439-4690-8aa4-769039b6da4c,Talisman of Progress,24.0,8.0,0.3333333333333333
 Season-All,4216656e-90e8-45fc-a0f6-0d0d79d0a021,Shelldock Isle,68.0,29.0,0.4264705882352941
 Season-All,424af0d0-398c-4d78-9ad5-2171bf1bcbd1,Nova Hellkite,4.0,2.0,0.5
 Season-All,425bff89-ad15-4d22-bce9-a4a07dbafd87,Bomat Courier,0.0,0.0,0.0
@@ -2083,7 +2083,7 @@ Season-All,47a6234f-309f-4e03-9263-66da48b57153,Solitude,88.0,50.0,0.56818181818
 Season-All,47c8e6c4-450b-4f8b-b897-5808fe935a90,Vampire Hexmage,16.0,7.0,0.4375
 Season-All,47d6093b-b1b6-4956-8bfd-02cce899f832,Flow State,4.0,0.0,0.0
 Season-All,4820d223-4ea1-4850-931c-3d2ab5eb003b,Birthing Ritual,32.0,11.0,0.34375
-Season-All,486d7edc-d983-41f0-8b78-c99aecd72996,"Otawara, Soaring City",52.0,25.0,0.4807692307692308
+Season-All,486d7edc-d983-41f0-8b78-c99aecd72996,"Otawara, Soaring City",56.0,28.0,0.5
 Season-All,487116ab-b885-406b-aa54-56cb67eb3ca5,Scavenging Ooze,44.0,20.0,0.4545454545454545
 Season-All,490eb213-9ae2-4b45-abec-6f1dfc83792a,Cori-Steel Cutter,44.0,24.0,0.5454545454545454
 Season-All,492b368b-de32-45c1-8459-238aae54f9fc,Unmarked Grave,28.0,12.0,0.4285714285714285
@@ -2091,12 +2091,12 @@ Season-All,493a5ca7-5f90-4af4-b6db-43ae09a2f2c9,Dark Ritual,76.0,37.0,0.48684210
 Season-All,49bb0ad3-1082-41f1-82a4-52a4006cc9b6,"Leovold, Emissary of Trest",44.0,24.0,0.5454545454545454
 Season-All,49cd4efa-4df4-4257-9a42-60330f7781e2,Town Greeter,0.0,0.0,0.0
 Season-All,4a08ca06-58db-4ce6-b490-be4bea8956a1,Sensei's Divining Top,44.0,16.0,0.3636363636363636
-Season-All,4a0bb5dc-75a6-4bd6-81f8-611197fb0fba,Nettlecyst,32.0,7.0,0.21875
+Season-All,4a0bb5dc-75a6-4bd6-81f8-611197fb0fba,Nettlecyst,36.0,10.0,0.2777777777777778
 Season-All,4a1f905f-1d55-4d02-9d24-e58070793d3f,"Atraxa, Grand Unifier",80.0,47.0,0.5875
 Season-All,4a706ecf-3277-40e3-871c-4ba4ead16e20,Wrenn and Six,52.0,25.0,0.4807692307692308
 Season-All,4acaef84-55d1-43dc-b10a-696182e6709b,Repeal,68.0,31.0,0.4558823529411764
 Season-All,4acf970d-d2d7-413d-aba7-587ee53d8d5c,Stomping Ground,72.0,43.0,0.5972222222222222
-Season-All,4b0bd07e-cf80-4d64-af29-f4cec6632b3e,Perilous Landscape,40.0,18.0,0.45
+Season-All,4b0bd07e-cf80-4d64-af29-f4cec6632b3e,Perilous Landscape,44.0,21.0,0.4772727272727273
 Season-All,4b4956a2-9a39-4152-9c98-70e4b2acfa26,Miscalculation,100.0,48.0,0.48
 Season-All,4ba8325a-1203-4125-9111-94d9e2b1f14b,"Squee, Goblin Nabob",0.0,0.0,0.0
 Season-All,4c6cf93a-d073-48ac-88db-c46bf3e10beb,Generous Plunderer,44.0,22.0,0.5
@@ -2105,7 +2105,7 @@ Season-All,4cbdacc1-7a1b-4633-85f5-eb50c2bf406d,Snapcaster Mage,84.0,37.0,0.4404
 Season-All,4ced112a-e775-4f97-97b3-74877e9dce12,Dragon's Rage Channeler,68.0,37.0,0.5441176470588235
 Season-All,4d9dbadd-c1b6-44fe-92ac-6f69d7178342,Talisman of Creativity,40.0,21.0,0.525
 Season-All,4dea7bcc-3ff8-40b0-8264-0cd678d6ff31,Scourge of the Skyclaves,16.0,6.0,0.375
-Season-All,4df8aabc-7fcb-4b7b-980b-18f499e6c170,Hullbreacher,80.0,34.0,0.425
+Season-All,4df8aabc-7fcb-4b7b-980b-18f499e6c170,Hullbreacher,84.0,37.0,0.4404761904761904
 Season-All,4e117771-5a8b-4812-b487-32ba34b7f724,Giver of Runes,92.0,49.0,0.532608695652174
 Season-All,4e4b6e22-93b2-4896-bba5-0ceaa5d8ea3c,"Yavimaya, Cradle of Growth",40.0,23.0,0.575
 Season-All,4e4fb50c-a81f-44d3-93c5-fa9a0b37f617,"Omnath, Locus of Creation",48.0,22.0,0.4583333333333333
@@ -2126,7 +2126,7 @@ Season-All,5427d8a6-ac9e-4e50-bd39-81713b2ade25,Fatal Push,92.0,58.0,0.630434782
 Season-All,543d55cb-3a6b-4620-af25-10ae74ed32c4,Worldspine Wurm,8.0,4.0,0.5
 Season-All,54a3ea87-005e-4985-b2a5-21711d0b71c0,Springheart Nantuko,76.0,38.0,0.5
 Season-All,54e0c2cd-fa5f-427d-8e15-6066f002a8e3,Chainsaw,32.0,13.0,0.40625
-Season-All,54f449ff-4025-465e-9ec5-a5cf42c4c9d3,Xander's Lounge,92.0,47.0,0.5108695652173914
+Season-All,54f449ff-4025-465e-9ec5-a5cf42c4c9d3,Xander's Lounge,96.0,50.0,0.5208333333333334
 Season-All,551c0a45-9515-4e51-84e5-79703832a661,Expedition Map,52.0,28.0,0.5384615384615384
 Season-All,553fb946-2706-475b-89f9-e4355ec9ea2b,March of Otherworldly Light,28.0,7.0,0.25
 Season-All,55707746-da6e-46e5-a5ca-7ac843fdc38e,"Phelia, Exuberant Shepherd",92.0,44.0,0.4782608695652174
@@ -2153,12 +2153,12 @@ Season-All,5c8a8dbb-cba7-4e1d-8888-73ab6f4aff07,Devoted Druid,0.0,0.0,0.0
 Season-All,5cb76266-ae50-4bbc-8f96-d98f309b02d3,"Teferi, Time Raveler",56.0,26.0,0.4642857142857143
 Season-All,5d10b752-d9cb-419d-a5c4-d4ee1acb655e,"Teferi, Hero of Dominaria",60.0,24.0,0.4
 Season-All,5d98073e-2828-4365-a8d6-f631aac0cca9,The Astonishing Ant-Man,0.0,0.0,0.0
-Season-All,5da578b8-19e6-4068-9336-e7cd33c585f1,Retrofitter Foundry,60.0,18.0,0.3
+Season-All,5da578b8-19e6-4068-9336-e7cd33c585f1,Retrofitter Foundry,64.0,21.0,0.328125
 Season-All,5dd72697-24be-42c7-a6d9-a837bdbd4662,Grim Lavamancer,0.0,0.0,0.0
 Season-All,5de097e5-e960-4404-a370-defe93ce892f,Oracle of Mul Daya,40.0,17.0,0.425
 Season-All,5eccf31d-869d-4003-a92b-71b4f4b479ee,Strix Serenade,56.0,28.0,0.5
 Season-All,5f1cdcba-a04a-4a2f-8bc1-0dd7fa03754d,Exhume,52.0,27.0,0.5192307692307693
-Season-All,5f608efc-0dbc-4cc3-aadd-ed473bfc29ab,Portal to Phyrexia,48.0,15.0,0.3125
+Season-All,5f608efc-0dbc-4cc3-aadd-ed473bfc29ab,Portal to Phyrexia,52.0,18.0,0.3461538461538461
 Season-All,5f6927e1-c580-483a-8e2a-6e2deb74800e,Mox Jet,92.0,52.0,0.5652173913043478
 Season-All,5f7687b1-630a-4e95-89c7-eaf456d8cb68,,0.0,0.0,0.0
 Season-All,600dca0f-5964-45e7-86df-f16a5b4a0106,General Ferrous Rokiric,0.0,0.0,0.0
@@ -2249,7 +2249,7 @@ Season-All,7c353e83-4b63-4bc6-b029-273d2eca1f75,Upheaval,36.0,15.0,0.41666666666
 Season-All,7c59e0cd-10a8-4a32-9c0a-a2c6ef1ed9a6,Unable to Scream,20.0,9.0,0.45
 Season-All,7c884e1e-fecb-4330-b3de-5fc2a60f7173,Kolaghan's Command,76.0,46.0,0.6052631578947368
 Season-All,7d48d622-f397-4f31-b1a5-0c23f60aa71c,Mana Tithe,80.0,45.0,0.5625
-Season-All,7ea4b5bc-18a4-45db-a56a-ab3f8bd2fb0d,Ledger Shredder,24.0,11.0,0.4583333333333333
+Season-All,7ea4b5bc-18a4-45db-a56a-ab3f8bd2fb0d,Ledger Shredder,28.0,14.0,0.5
 Season-All,7eb39e97-53c2-4df0-9fb3-a3d6a24ec41f,Avacyn's Pilgrim,68.0,32.0,0.4705882352941176
 Season-All,7f7e780e-fbc5-4dc0-b5c7-efcb8645c7c6,Ertai Resurrected,36.0,17.0,0.4722222222222222
 Season-All,7fb99a26-beeb-4aca-bb02-b2d2ce0595f9,Mana Flare,0.0,0.0,0.0
@@ -2273,7 +2273,7 @@ Season-All,88bf1ebb-9d85-4b9b-a614-c7f965c0893d,Thought Scour,4.0,3.0,0.75
 Season-All,88d36c32-d6f9-46e4-9cc8-08e6c0ff05d2,"Krang, Utrom Warlord",0.0,0.0,0.0
 Season-All,89175ce1-0746-4ba1-970e-617d134b0527,"Gau, Feral Youth",28.0,11.0,0.3928571428571428
 Season-All,89345f55-2b32-4356-945a-d56dded39909,Preacher of the Schism,28.0,10.0,0.3571428571428571
-Season-All,89af0f45-c11c-4f13-9950-b1489440ee5b,Chain Lightning,88.0,40.0,0.4545454545454545
+Season-All,89af0f45-c11c-4f13-9950-b1489440ee5b,Chain Lightning,92.0,43.0,0.4673913043478261
 Season-All,89f5cc05-5d9d-4709-b3c5-a6249c294acc,Hexdrinker,100.0,50.0,0.5
 Season-All,8a720448-017f-4f4a-9501-678245eaed17,Mishra's Bauble,80.0,40.0,0.5
 Season-All,8ac39c01-127f-4471-bc74-11a90c48e306,Ghost Vacuum,4.0,0.0,0.0
@@ -2294,7 +2294,7 @@ Season-All,920cd17f-9274-443e-906f-c9904f0658d5,Chromatic Sphere,4.0,3.0,0.75
 Season-All,924a24e7-91b8-4ceb-a136-7a765d98c994,Mystic Forge,16.0,6.0,0.375
 Season-All,926916ed-2f22-4ba9-9427-194886ad6c1e,Urza's Cave,20.0,11.0,0.55
 Season-All,928036c9-11b8-493e-b9f2-8fbd3487cd19,"Minsc & Boo, Timeless Heroes",80.0,39.0,0.4875
-Season-All,939c6e19-4b27-4023-bb9c-ae440f91e21c,Shadowspear,20.0,6.0,0.3
+Season-All,939c6e19-4b27-4023-bb9c-ae440f91e21c,Shadowspear,24.0,9.0,0.375
 Season-All,93f99e67-901f-4c8d-8a09-e443b7eb928f,Archangel Elspeth,68.0,34.0,0.5
 Season-All,9417f14c-a853-42c6-a992-29139484260a,Ignoble Hierarch,76.0,36.0,0.4736842105263157
 Season-All,94b67489-5eb0-4406-9bf3-27e50dc632eb,"Nadu, Winged Wisdom",52.0,21.0,0.4038461538461538
@@ -2308,14 +2308,14 @@ Season-All,96b6b2e1-c3e6-464c-8a13-b15deb34e862,Aetherflux Reservoir,28.0,9.0,0.
 Season-All,96c5607b-55fe-43c2-93fe-0084d84499d9,Deep Forest Hermit,36.0,14.0,0.3888888888888889
 Season-All,9721f8da-39ed-4ada-a571-61e08a86032b,Broadside Bombardiers,96.0,50.0,0.5208333333333334
 Season-All,972f3582-ad7c-4fe9-af29-90fa695a623f,Depthshaker Titan,4.0,1.0,0.25
-Season-All,97b9bab9-12ee-4da5-9d53-d0b82d9279cd,Pyrite Spellbomb,52.0,21.0,0.4038461538461538
+Season-All,97b9bab9-12ee-4da5-9d53-d0b82d9279cd,Pyrite Spellbomb,56.0,24.0,0.4285714285714285
 Season-All,97d08a15-e61c-4421-a541-c68a4f87cb74,Forensic Gadgeteer,36.0,11.0,0.3055555555555556
-Season-All,9814d8e8-c462-41ca-9909-1c659f488543,Lotus Petal,76.0,32.0,0.4210526315789473
+Season-All,9814d8e8-c462-41ca-9909-1c659f488543,Lotus Petal,80.0,35.0,0.4375
 Season-All,985453e7-997e-4d77-a338-cc0290791ebe,Finale of Devastation,36.0,12.0,0.3333333333333333
 Season-All,985bdb0c-ce6c-4506-8163-76f3b2fdf5fb,Lose Focus,88.0,38.0,0.4318181818181818
-Season-All,98e7bf8f-dba7-4005-8cee-634c9153931d,Phantasmal Image,60.0,25.0,0.4166666666666667
+Season-All,98e7bf8f-dba7-4005-8cee-634c9153931d,Phantasmal Image,64.0,28.0,0.4375
 Season-All,98fb1eaa-2871-491a-a4f5-3e358778ba40,Mindslaver,8.0,4.0,0.5
-Season-All,991037a2-fea2-49f5-8ace-ebbf9f678cff,Talisman of Dominance,20.0,11.0,0.55
+Season-All,991037a2-fea2-49f5-8ace-ebbf9f678cff,Talisman of Dominance,24.0,14.0,0.5833333333333334
 Season-All,995486ce-58bb-4753-a812-0ca73ef1a235,Gitaxian Probe,92.0,39.0,0.4239130434782608
 Season-All,99939b90-e88c-4c2f-ba78-56d455611703,Seachrome Coast,0.0,0.0,0.0
 Season-All,99e96b34-b1c4-4647-a38e-2cf1aedaaace,Tersa Lightshatter,12.0,7.0,0.5833333333333334
@@ -2339,7 +2339,7 @@ Season-All,a1176dcf-40ee-4342-aa74-791b8352e99a,Scrawling Crawler,40.0,13.0,0.32
 Season-All,a15570c0-4210-4959-8584-987ec85f8283,Wight of the Reliquary,8.0,3.0,0.375
 Season-All,a16a6555-2e3a-4587-aacd-0307d696b26c,Consult the Star Charts,4.0,2.0,0.5
 Season-All,a178cfe8-f9fa-4255-88d0-54a0bed079f5,Malevolent Rumble,44.0,22.0,0.5
-Season-All,a1febcf1-afa4-4406-9ac1-5bf98b2765d2,Time Walk,92.0,46.0,0.5
+Season-All,a1febcf1-afa4-4406-9ac1-5bf98b2765d2,Time Walk,96.0,49.0,0.5104166666666666
 Season-All,a211d505-4d40-4914-a9da-220770d6ddbc,Consider,24.0,12.0,0.5
 Season-All,a249b1f4-2b22-4b67-a207-e0c4ae95d2e1,Ketria Triome,64.0,28.0,0.4375
 Season-All,a24e8dba-5c86-4e32-8a52-61402f7fe9f0,Containment Priest,52.0,30.0,0.5769230769230769
@@ -2362,7 +2362,7 @@ Season-All,a9225cc3-90f0-448f-a8d9-7c6c2796d077,Sheoldred's Edict,60.0,28.0,0.46
 Season-All,a93e3406-4e29-4bc0-ae52-cbd2ac1f99a4,"Alesha, Who Laughs at Fate",4.0,3.0,0.75
 Season-All,a9738cda-adb1-47fb-9f4c-ecd930228c4d,"Ragavan, Nimble Pilferer",88.0,50.0,0.5681818181818182
 Season-All,aaae15dd-11b6-4421-99e9-365c7fe4a5d6,Embercleave,48.0,18.0,0.375
-Season-All,aac0c8df-f01d-4178-8d66-ee603f814d24,Mishra's Workshop,48.0,20.0,0.4166666666666667
+Season-All,aac0c8df-f01d-4178-8d66-ee603f814d24,Mishra's Workshop,52.0,23.0,0.4423076923076923
 Season-All,ab1d1461-1625-4163-aacd-a939f4871fad,Staff of the Storyteller,56.0,21.0,0.375
 Season-All,ab9f6a1b-8467-4584-affd-8c71d3e34d2f,"Akal Pakal, First Among Equals",24.0,6.0,0.25
 Season-All,abcd0e32-2e6b-419b-9e8a-af38f2b48a66,Monastery Mentor,16.0,6.0,0.375
@@ -2393,7 +2393,7 @@ Season-All,b6876d9e-0908-43ac-8542-09c7aa02b5ba,Tarmogoyf,8.0,3.0,0.375
 Season-All,b689a206-aec3-4a31-95cf-3d4b840db04c,Securitron Squadron,48.0,17.0,0.3541666666666667
 Season-All,b6cb2549-e485-44d6-9d65-7605c568909e,Unearth,68.0,34.0,0.5
 Season-All,b768efa2-e56b-4a7e-ace8-d673f10e0714,Birthing Pod,36.0,18.0,0.5
-Season-All,b7f16fdf-a3f5-462d-a64a-789d893b6ef5,Batterskull,36.0,20.0,0.5555555555555556
+Season-All,b7f16fdf-a3f5-462d-a64a-789d893b6ef5,Batterskull,40.0,23.0,0.575
 Season-All,b83cfbaa-7890-4f6f-878b-4edb45677371,Skyclave Apparition,84.0,41.0,0.4880952380952381
 Season-All,b841bfa8-7c17-4df2-8466-780ab9a4a53a,Fabled Passage,76.0,36.0,0.4736842105263157
 Season-All,b85e0aed-bfb2-4aa8-a754-849c4d9a6a58,Restless Bivouac,0.0,0.0,0.0
@@ -2421,7 +2421,7 @@ Season-All,c14098d6-28ae-492f-8ffc-7d115d83ce6a,Summon: Good King Mog XII,16.0,5
 Season-All,c17816e8-28b1-4295-a637-efb0e5c18873,Lush Portico,64.0,21.0,0.328125
 Season-All,c1bd3bc0-77bd-40fe-b4f1-835a04cb6e41,Eagles of the North,8.0,5.0,0.625
 Season-All,c1c7aa22-51b0-45ee-9a8e-5493a1820d8c,"Wolverine, Fierce Fighter",8.0,5.0,0.625
-Season-All,c1e0f201-42cb-46a1-901a-65bb4fc18f6c,Urza's Saga,68.0,35.0,0.5147058823529411
+Season-All,c1e0f201-42cb-46a1-901a-65bb4fc18f6c,Urza's Saga,72.0,38.0,0.5277777777777778
 Season-All,c2089ec9-0665-448f-bfe9-d181de127814,Brazen Borrower // Petty Theft,92.0,47.0,0.5108695652173914
 Season-All,c36820fa-ee86-4206-9a0d-737a67cf5208,Sunbaked Canyon,0.0,0.0,0.0
 Season-All,c375a022-5b57-496d-a802-e4ea8376e9e4,"Eiganjo, Seat of the Empire",8.0,4.0,0.5
@@ -2472,7 +2472,7 @@ Season-All,d58d3545-043a-457a-8324-facc3c2363ec,Overlord of the Boilerbilges,12.
 Season-All,d5c782cc-c951-4c6f-a93f-774ae6c1c214,Shallow Grave,24.0,11.0,0.4583333333333333
 Season-All,d5dfc25d-a17b-4ead-9484-e8a18b8fa176,,0.0,0.0,0.0
 Season-All,d67be074-cdd4-41d9-ac89-0a0456c4e4b2,"Sheoldred, the Apocalypse",92.0,45.0,0.4891304347826087
-Season-All,d6ec3293-b09e-4931-ac4e-dc5eac0ca004,Mana Vault,92.0,40.0,0.4347826086956521
+Season-All,d6ec3293-b09e-4931-ac4e-dc5eac0ca004,Mana Vault,96.0,43.0,0.4479166666666667
 Season-All,d79b8974-796c-4f88-a0cb-5afbaf26fd24,Digsite Engineer,0.0,0.0,0.0
 Season-All,d7a8cc1d-aabb-4eb6-b0f1-6c93ec246f61,Court of Garenbrig,52.0,23.0,0.4423076923076923
 Season-All,d91a527d-51f1-4fb1-9016-fc923fd43a6a,Azorius Signet,12.0,7.0,0.5833333333333334
@@ -2499,7 +2499,7 @@ Season-All,e419cd0b-2449-4cc5-9ead-b9e45e271700,"Phlage, Titan of Fire's Fury",2
 Season-All,e41cf82d-3213-47ce-a015-6e51a8b07e4f,Questing Beast,88.0,38.0,0.4318181818181818
 Season-All,e4775a26-0b66-40e9-8f64-41d9308ca032,"Surrak, Elusive Hunter",40.0,19.0,0.475
 Season-All,e4e6794a-feeb-4fc8-a2ee-38c75c18aaae,Heartless Act,76.0,33.0,0.4342105263157895
-Season-All,e5145f31-a4ac-44ef-8f85-e4d95f2c9ff5,Library of Alexandria,88.0,52.0,0.5909090909090909
+Season-All,e5145f31-a4ac-44ef-8f85-e4d95f2c9ff5,Library of Alexandria,92.0,55.0,0.5978260869565217
 Season-All,e530388b-eb19-4211-abd8-8a4c3c38c3af,Darkslick Shores,0.0,0.0,0.0
 Season-All,e58e681e-a069-4414-aafe-634c7987fd0d,Swords to Plowshares,96.0,43.0,0.4479166666666667
 Season-All,e5f3161d-3f69-4b06-ab73-c31fc0c1520c,Restless Vinestalk,0.0,0.0,0.0
@@ -2521,7 +2521,7 @@ Season-All,ec59ed99-ce40-489a-b776-8874bec60393,Trash for Treasure,16.0,3.0,0.18
 Season-All,eca092fc-7c67-4a73-989e-5297bbaaea76,Demand Answers,0.0,0.0,0.0
 Season-All,eca8d6f8-c6f1-437c-99e2-4281eae14a6f,Fateful Absence,56.0,28.0,0.5
 Season-All,ecc1027a-8c07-44a0-bdde-fa2844cff694,Vivi Ornitier,8.0,1.0,0.125
-Season-All,ed0216a0-c5c9-4a99-b869-53e4d0256326,Mox Pearl,100.0,44.0,0.44
+Season-All,ed0216a0-c5c9-4a99-b869-53e4d0256326,Mox Pearl,104.0,47.0,0.4519230769230769
 Season-All,ed0beb69-8441-4104-9990-81bd82f81f9a,The Fantasticar,4.0,1.0,0.25
 Season-All,ed557e51-32bd-476f-99f8-d7b1738495c5,Bloodthirsty Adversary,0.0,0.0,0.0
 Season-All,ee8e9928-d9b2-4570-adb8-44b34115decd,Tireless Tracker,76.0,38.0,0.5
@@ -2570,7 +2570,7 @@ Season-All,fc7d1912-7e27-49ef-bd98-375d975a42b0,Starting Town,52.0,24.0,0.461538
 Season-All,fd52688a-39fd-430f-b950-cb56e0004396,Talisman of Curiosity,20.0,10.0,0.5
 Season-All,fd6ddbca-b943-49d6-b341-509bb72dd5a6,Primeval Titan,16.0,7.0,0.4375
 Season-All,fd97b3cf-924e-4f77-bb82-0bf19592389f,Dreadhorde Arcanist,36.0,20.0,0.5555555555555556
-Season-All,fd99bce1-ce39-464b-8e61-2631eb3ed6f6,Tolarian Academy,68.0,24.0,0.3529411764705882
+Season-All,fd99bce1-ce39-464b-8e61-2631eb3ed6f6,Tolarian Academy,72.0,27.0,0.375
 Season-All,fe30c0ff-f74b-456a-a61e-3720d84d713f,Parallax Wave,96.0,52.0,0.5416666666666666
 Season-All,fe964e7e-e2c5-4263-889d-0a531eb51442,Luminarch Aspirant,88.0,48.0,0.5454545454545454
 Season-All,febaaeae-5c0d-45fa-8169-b27b4996f18e,Chrome Host Seedshark,32.0,15.0,0.46875

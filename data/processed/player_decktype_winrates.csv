@@ -204,6 +204,7 @@ Season-5,Sili,6,Gruul Aggro,4,8,0.5,2,4,0.5
 Season-5,Sili,6,Landfall,8,11,0.7272727272727273,4,4,1.0
 Season-5,Sili,6,Opposition,4,9,0.4444444444444444,2,4,0.5
 Season-5,Sili,6,Selesnya Midrange,6,8,0.75,2,4,0.5
+Season-5,Thomas,26,Artifacts,7,9,0.7777777777777778,3,4,0.75
 Season-5,Thomas,26,Azorius Combo Control,5,10,0.5,2,4,0.5
 Season-5,Thomas,26,Grixis Control,14,19,0.7368421052631579,6,8,0.75
 Season-5,Thomas,26,Orzhov Control,7,11,0.6363636363636364,3,4,0.75
@@ -438,6 +439,7 @@ Season-All,Sili,6,Reanimator-Sneak,6,9,0.6666666666666666,3,4,0.75
 Season-All,Sili,6,Red Aggro,7,9,0.7777777777777778,3,4,0.75
 Season-All,Sili,6,Selesnya Midrange,6,8,0.75,2,4,0.5
 Season-All,Sili,6,Sneak Attack,8,8,1.0,4,4,1.0
+Season-All,Thomas,26,Artifacts,7,9,0.7777777777777778,3,4,0.75
 Season-All,Thomas,26,Azorius Combo Control,5,10,0.5,2,4,0.5
 Season-All,Thomas,26,Esper Control,3,8,0.375,1,4,0.25
 Season-All,Thomas,26,Grixis Control,14,19,0.7368421052631579,6,8,0.75

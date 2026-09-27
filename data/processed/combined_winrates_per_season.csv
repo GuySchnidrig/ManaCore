@@ -7010,10 +7010,10 @@ Felix,25,74b4c336-5d4c-4bc5-b82a-35084a6ad808,Spellseeker,Season-5,1,4,3,0,1,0.7
 Felix,25,74b4c336-5d4c-4bc5-b82a-35084a6ad808,Spellseeker,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
 Felix,25,006d2bf1-20f7-4b09-8d98-8233d91682bd,Flame Slash,Season-5,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
 Felix,25,006d2bf1-20f7-4b09-8d98-8233d91682bd,Flame Slash,Season-All,1,4,3,0,1,0.75,0.0,10,6,0,4,0.6,0.0
-Thomas,26,e5145f31-a4ac-44ef-8f85-e4d95f2c9ff5,Library of Alexandria,Season-5,3,12,8,1,3,0.6666666666666666,0.0833333333333333,29,19,1,10,0.6551724137931034,0.0344827586206896
-Thomas,26,e5145f31-a4ac-44ef-8f85-e4d95f2c9ff5,Library of Alexandria,Season-All,3,12,8,1,3,0.6666666666666666,0.0833333333333333,29,19,1,10,0.6551724137931034,0.0344827586206896
-Thomas,26,97b9bab9-12ee-4da5-9d53-d0b82d9279cd,Pyrite Spellbomb,Season-5,1,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
-Thomas,26,97b9bab9-12ee-4da5-9d53-d0b82d9279cd,Pyrite Spellbomb,Season-All,1,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
+Thomas,26,e5145f31-a4ac-44ef-8f85-e4d95f2c9ff5,Library of Alexandria,Season-5,4,16,11,1,4,0.6875,0.0625,38,26,1,12,0.6842105263157895,0.0263157894736842
+Thomas,26,e5145f31-a4ac-44ef-8f85-e4d95f2c9ff5,Library of Alexandria,Season-All,4,16,11,1,4,0.6875,0.0625,38,26,1,12,0.6842105263157895,0.0263157894736842
+Thomas,26,97b9bab9-12ee-4da5-9d53-d0b82d9279cd,Pyrite Spellbomb,Season-5,2,8,5,0,3,0.625,0.0,19,12,0,7,0.631578947368421,0.0
+Thomas,26,97b9bab9-12ee-4da5-9d53-d0b82d9279cd,Pyrite Spellbomb,Season-All,2,8,5,0,3,0.625,0.0,19,12,0,7,0.631578947368421,0.0
 Thomas,26,652236c2-84ef-45e4-b5fc-ed6170bc3d6c,Meticulous Archive,Season-5,2,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
 Thomas,26,652236c2-84ef-45e4-b5fc-ed6170bc3d6c,Meticulous Archive,Season-6,2,4,1,1,2,0.25,0.25,8,3,1,5,0.375,0.125
 Thomas,26,652236c2-84ef-45e4-b5fc-ed6170bc3d6c,Meticulous Archive,Season-All,2,8,3,1,4,0.375,0.125,18,8,1,10,0.4444444444444444,0.0555555555555555
@@ -7021,8 +7021,8 @@ Thomas,26,045ce37b-86d2-4e56-84af-b6625b53d13c,Path to Exile,Season-5,1,4,2,0,2,
 Thomas,26,045ce37b-86d2-4e56-84af-b6625b53d13c,Path to Exile,Season-All,1,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
 Thomas,26,a76fa8d4-923d-4afc-ba47-ba10fc0fe46e,"Comet, Stellar Pup",Season-5,1,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
 Thomas,26,a76fa8d4-923d-4afc-ba47-ba10fc0fe46e,"Comet, Stellar Pup",Season-All,1,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
-Thomas,26,41ff849e-2439-4690-8aa4-769039b6da4c,Talisman of Progress,Season-5,1,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
-Thomas,26,41ff849e-2439-4690-8aa4-769039b6da4c,Talisman of Progress,Season-All,1,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
+Thomas,26,41ff849e-2439-4690-8aa4-769039b6da4c,Talisman of Progress,Season-5,2,8,5,0,3,0.625,0.0,19,12,0,7,0.631578947368421,0.0
+Thomas,26,41ff849e-2439-4690-8aa4-769039b6da4c,Talisman of Progress,Season-All,2,8,5,0,3,0.625,0.0,19,12,0,7,0.631578947368421,0.0
 Thomas,26,a211d505-4d40-4914-a9da-220770d6ddbc,Consider,Season-5,1,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
 Thomas,26,a211d505-4d40-4914-a9da-220770d6ddbc,Consider,Season-All,1,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
 Thomas,26,16c8d2fa-54a7-46e8-980c-905258497c90,Arid Mesa,Season-5,1,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
@@ -7031,15 +7031,15 @@ Thomas,26,54e0c2cd-fa5f-427d-8e15-6066f002a8e3,Chainsaw,Season-5,1,4,2,0,2,0.5,0
 Thomas,26,54e0c2cd-fa5f-427d-8e15-6066f002a8e3,Chainsaw,Season-All,1,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
 Thomas,26,0d08f5e4-d2d3-4659-86d4-a983d80e3b2c,Tundra,Season-5,1,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
 Thomas,26,0d08f5e4-d2d3-4659-86d4-a983d80e3b2c,Tundra,Season-All,1,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
-Thomas,26,5f608efc-0dbc-4cc3-aadd-ed473bfc29ab,Portal to Phyrexia,Season-5,2,8,5,0,3,0.625,0.0,20,12,0,8,0.6,0.0
-Thomas,26,5f608efc-0dbc-4cc3-aadd-ed473bfc29ab,Portal to Phyrexia,Season-All,2,8,5,0,3,0.625,0.0,20,12,0,8,0.6,0.0
+Thomas,26,5f608efc-0dbc-4cc3-aadd-ed473bfc29ab,Portal to Phyrexia,Season-5,3,12,8,0,4,0.6666666666666666,0.0,29,19,0,10,0.6551724137931034,0.0
+Thomas,26,5f608efc-0dbc-4cc3-aadd-ed473bfc29ab,Portal to Phyrexia,Season-All,3,12,8,0,4,0.6666666666666666,0.0,29,19,0,10,0.6551724137931034,0.0
 Thomas,26,748e6a61-9c1f-4225-9f04-e54002f63ac3,Savai Triome,Season-5,2,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
 Thomas,26,748e6a61-9c1f-4225-9f04-e54002f63ac3,Savai Triome,Season-6,2,4,3,0,1,0.75,0.0,10,7,0,3,0.7,0.0
 Thomas,26,748e6a61-9c1f-4225-9f04-e54002f63ac3,Savai Triome,Season-All,2,8,5,0,3,0.625,0.0,20,12,0,8,0.6,0.0
 Thomas,26,df3784d4-80cd-4f78-afb3-d61f3bab5b2c,Zealous Conscripts,Season-5,1,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
 Thomas,26,df3784d4-80cd-4f78-afb3-d61f3bab5b2c,Zealous Conscripts,Season-All,1,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
-Thomas,26,4df8aabc-7fcb-4b7b-980b-18f499e6c170,Hullbreacher,Season-5,1,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
-Thomas,26,4df8aabc-7fcb-4b7b-980b-18f499e6c170,Hullbreacher,Season-All,1,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
+Thomas,26,4df8aabc-7fcb-4b7b-980b-18f499e6c170,Hullbreacher,Season-5,2,8,5,0,3,0.625,0.0,19,12,0,7,0.631578947368421,0.0
+Thomas,26,4df8aabc-7fcb-4b7b-980b-18f499e6c170,Hullbreacher,Season-All,2,8,5,0,3,0.625,0.0,19,12,0,7,0.631578947368421,0.0
 Thomas,26,054f2276-2dd5-43da-bb26-c57c560861fe,Steam Vents,Season-5,1,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
 Thomas,26,054f2276-2dd5-43da-bb26-c57c560861fe,Steam Vents,Season-All,1,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
 Thomas,26,2dc16614-5cf8-444d-a5ae-cac25018af68,Burst Lightning,Season-5,1,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
@@ -7059,8 +7059,8 @@ Thomas,26,32a180dd-9641-4546-8940-9b21084f0c71,Lightning Bolt,Season-6,2,4,3,0,1
 Thomas,26,32a180dd-9641-4546-8940-9b21084f0c71,Lightning Bolt,Season-All,2,8,5,0,3,0.625,0.0,20,12,0,8,0.6,0.0
 Thomas,26,94c6fdd8-21e7-48ae-aa05-a3666b928c1a,Timetwister,Season-5,1,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
 Thomas,26,94c6fdd8-21e7-48ae-aa05-a3666b928c1a,Timetwister,Season-All,1,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
-Thomas,26,1e2fee55-227b-4373-a3f7-b463f220033f,Tinker,Season-5,3,12,8,0,4,0.6666666666666666,0.0,30,19,0,11,0.6333333333333333,0.0
-Thomas,26,1e2fee55-227b-4373-a3f7-b463f220033f,Tinker,Season-All,3,12,8,0,4,0.6666666666666666,0.0,30,19,0,11,0.6333333333333333,0.0
+Thomas,26,1e2fee55-227b-4373-a3f7-b463f220033f,Tinker,Season-5,4,16,11,0,5,0.6875,0.0,39,26,0,13,0.6666666666666666,0.0
+Thomas,26,1e2fee55-227b-4373-a3f7-b463f220033f,Tinker,Season-All,4,16,11,0,5,0.6875,0.0,39,26,0,13,0.6666666666666666,0.0
 Thomas,26,01978fe5-00a9-4add-ae2a-b4c2572ffb9a,Vendilion Clique,Season-5,1,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
 Thomas,26,01978fe5-00a9-4add-ae2a-b4c2572ffb9a,Vendilion Clique,Season-All,1,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
 Thomas,26,1e0c695d-62f9-4805-9e2f-7032e8464136,No More Lies,Season-5,1,4,2,0,2,0.5,0.0,10,5,0,5,0.5,0.0
@@ -9571,10 +9571,10 @@ Thomas,26,2b73d294-6ab1-4051-9b0f-d8e335d37674,Unholy Heat,Season-5,2,8,6,1,1,0.
 Thomas,26,2b73d294-6ab1-4051-9b0f-d8e335d37674,Unholy Heat,Season-All,2,8,6,1,1,0.75,0.125,19,14,1,5,0.7368421052631579,0.0526315789473684
 Thomas,26,28667c8b-d02c-4e57-a050-1549207b65d1,Thragtusk,Season-5,2,8,7,0,1,0.875,0.0,20,15,0,5,0.75,0.0
 Thomas,26,28667c8b-d02c-4e57-a050-1549207b65d1,Thragtusk,Season-All,2,8,7,0,1,0.875,0.0,20,15,0,5,0.75,0.0
-Thomas,26,05e8a4ea-8c0d-4284-ac23-80e19fdde11d,Myr Battlesphere,Season-5,1,4,3,0,1,0.75,0.0,10,7,0,3,0.7,0.0
-Thomas,26,05e8a4ea-8c0d-4284-ac23-80e19fdde11d,Myr Battlesphere,Season-All,1,4,3,0,1,0.75,0.0,10,7,0,3,0.7,0.0
-Thomas,26,33672990-4860-4aa6-ac1b-f9da66f5da59,Wurmcoil Engine,Season-5,2,8,6,0,2,0.75,0.0,20,14,0,6,0.7,0.0
-Thomas,26,33672990-4860-4aa6-ac1b-f9da66f5da59,Wurmcoil Engine,Season-All,2,8,6,0,2,0.75,0.0,20,14,0,6,0.7,0.0
+Thomas,26,05e8a4ea-8c0d-4284-ac23-80e19fdde11d,Myr Battlesphere,Season-5,2,8,6,0,2,0.75,0.0,19,14,0,5,0.7368421052631579,0.0
+Thomas,26,05e8a4ea-8c0d-4284-ac23-80e19fdde11d,Myr Battlesphere,Season-All,2,8,6,0,2,0.75,0.0,19,14,0,5,0.7368421052631579,0.0
+Thomas,26,33672990-4860-4aa6-ac1b-f9da66f5da59,Wurmcoil Engine,Season-5,3,12,9,0,3,0.75,0.0,29,21,0,8,0.7241379310344828,0.0
+Thomas,26,33672990-4860-4aa6-ac1b-f9da66f5da59,Wurmcoil Engine,Season-All,3,12,9,0,3,0.75,0.0,29,21,0,8,0.7241379310344828,0.0
 Thomas,26,1f9fb33a-3b39-4aff-93b8-aedafe0ea694,Fanatic of Rhonas,Season-5,1,4,3,0,1,0.75,0.0,10,7,0,3,0.7,0.0
 Thomas,26,1f9fb33a-3b39-4aff-93b8-aedafe0ea694,Fanatic of Rhonas,Season-All,1,4,3,0,1,0.75,0.0,10,7,0,3,0.7,0.0
 Thomas,26,19477aca-b8db-4061-9a78-ebb189a9df22,Breeding Pool,Season-5,1,4,3,0,1,0.75,0.0,10,7,0,3,0.7,0.0
@@ -10503,8 +10503,8 @@ Thomas,26,7c884e1e-fecb-4330-b3de-5fc2a60f7173,Kolaghan's Command,Season-5,1,4,3
 Thomas,26,7c884e1e-fecb-4330-b3de-5fc2a60f7173,Kolaghan's Command,Season-All,1,4,3,0,1,0.75,0.0,10,7,0,3,0.7,0.0
 Thomas,26,0e606072-a3aa-4300-ba90-ec92a721fa76,"Jace, the Mind Sculptor",Season-5,3,12,10,1,1,0.8333333333333334,0.0833333333333333,29,22,1,7,0.7586206896551724,0.0344827586206896
 Thomas,26,0e606072-a3aa-4300-ba90-ec92a721fa76,"Jace, the Mind Sculptor",Season-All,3,12,10,1,1,0.8333333333333334,0.0833333333333333,29,22,1,7,0.7586206896551724,0.0344827586206896
-Thomas,26,9814d8e8-c462-41ca-9909-1c659f488543,Lotus Petal,Season-5,1,4,3,0,1,0.75,0.0,10,7,0,3,0.7,0.0
-Thomas,26,9814d8e8-c462-41ca-9909-1c659f488543,Lotus Petal,Season-All,1,4,3,0,1,0.75,0.0,10,7,0,3,0.7,0.0
+Thomas,26,9814d8e8-c462-41ca-9909-1c659f488543,Lotus Petal,Season-5,2,8,6,0,2,0.75,0.0,19,14,0,5,0.7368421052631579,0.0
+Thomas,26,9814d8e8-c462-41ca-9909-1c659f488543,Lotus Petal,Season-All,2,8,6,0,2,0.75,0.0,19,14,0,5,0.7368421052631579,0.0
 Thomas,26,866b7fd4-86e3-4b42-b1ea-33bad0db1f9f,Prismari Command,Season-5,2,8,6,1,1,0.75,0.125,19,14,1,5,0.7368421052631579,0.0526315789473684
 Thomas,26,866b7fd4-86e3-4b42-b1ea-33bad0db1f9f,Prismari Command,Season-All,2,8,6,1,1,0.75,0.125,19,14,1,5,0.7368421052631579,0.0526315789473684
 Thomas,26,07a3d9e8-8597-498b-869c-cff79e0df516,"Karn, Scion of Urza",Season-5,2,4,3,0,1,0.75,0.0,10,7,0,3,0.7,0.0
@@ -10520,8 +10520,8 @@ Thomas,26,e4e6794a-feeb-4fc8-a2ee-38c75c18aaae,Heartless Act,Season-5,2,8,6,0,2,
 Thomas,26,e4e6794a-feeb-4fc8-a2ee-38c75c18aaae,Heartless Act,Season-All,2,8,6,0,2,0.75,0.0,21,14,0,7,0.6666666666666666,0.0
 Thomas,26,4b4956a2-9a39-4152-9c98-70e4b2acfa26,Miscalculation,Season-5,1,4,3,0,1,0.75,0.0,10,7,0,3,0.7,0.0
 Thomas,26,4b4956a2-9a39-4152-9c98-70e4b2acfa26,Miscalculation,Season-All,1,4,3,0,1,0.75,0.0,10,7,0,3,0.7,0.0
-Thomas,26,120be808-ff3b-4fca-96a1-4db6b9825856,Quantum Riddler,Season-5,2,8,7,0,1,0.875,0.0,20,15,0,5,0.75,0.0
-Thomas,26,120be808-ff3b-4fca-96a1-4db6b9825856,Quantum Riddler,Season-All,2,8,7,0,1,0.875,0.0,20,15,0,5,0.75,0.0
+Thomas,26,120be808-ff3b-4fca-96a1-4db6b9825856,Quantum Riddler,Season-5,3,12,10,0,2,0.8333333333333334,0.0,29,22,0,7,0.7586206896551724,0.0
+Thomas,26,120be808-ff3b-4fca-96a1-4db6b9825856,Quantum Riddler,Season-All,3,12,10,0,2,0.8333333333333334,0.0,29,22,0,7,0.7586206896551724,0.0
 Thomas,26,416d2d51-8f29-4e95-b037-e8c32b081e6c,Mana Drain,Season-5,1,4,3,0,1,0.75,0.0,10,7,0,3,0.7,0.0
 Thomas,26,416d2d51-8f29-4e95-b037-e8c32b081e6c,Mana Drain,Season-All,1,4,3,0,1,0.75,0.0,10,7,0,3,0.7,0.0
 Tinu,4,0fe070f4-8877-4280-b8fd-869f3ac34ab6,Sheltering Landscape,Season-5,1,4,1,0,3,0.25,0.0,8,2,0,6,0.25,0.0
@@ -10863,6 +10863,49 @@ Sili,6,487116ab-b885-406b-aa54-56cb67eb3ca5,Scavenging Ooze,Season-5,1,4,3,0,1,0
 Sili,6,487116ab-b885-406b-aa54-56cb67eb3ca5,Scavenging Ooze,Season-All,1,4,3,0,1,0.75,0.0,10,7,0,3,0.7,0.0
 Sili,6,fadb218d-29e2-42d1-a7a1-1066741d63ad,Mox Diamond,Season-5,2,8,5,0,3,0.625,0.0,21,12,0,9,0.5714285714285714,0.0
 Sili,6,fadb218d-29e2-42d1-a7a1-1066741d63ad,Mox Diamond,Season-All,2,8,5,0,3,0.625,0.0,21,12,0,9,0.5714285714285714,0.0
+Thomas,26,ed0216a0-c5c9-4a99-b869-53e4d0256326,Mox Pearl,Season-5,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,ed0216a0-c5c9-4a99-b869-53e4d0256326,Mox Pearl,Season-All,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,1a6f256b-943e-4cfb-9fc9-d1ded68b5f97,Chart a Course,Season-5,2,8,6,1,1,0.75,0.125,18,14,1,4,0.7777777777777778,0.0555555555555555
+Thomas,26,1a6f256b-943e-4cfb-9fc9-d1ded68b5f97,Chart a Course,Season-All,2,8,6,1,1,0.75,0.125,18,14,1,4,0.7777777777777778,0.0555555555555555
+Thomas,26,a1febcf1-afa4-4406-9ac1-5bf98b2765d2,Time Walk,Season-5,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,a1febcf1-afa4-4406-9ac1-5bf98b2765d2,Time Walk,Season-All,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,d6ec3293-b09e-4931-ac4e-dc5eac0ca004,Mana Vault,Season-5,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,d6ec3293-b09e-4931-ac4e-dc5eac0ca004,Mana Vault,Season-All,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,7ea4b5bc-18a4-45db-a56a-ab3f8bd2fb0d,Ledger Shredder,Season-5,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,7ea4b5bc-18a4-45db-a56a-ab3f8bd2fb0d,Ledger Shredder,Season-All,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,0c0e7131-db26-448d-afda-f48337a026f0,Pyroclasm,Season-5,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,0c0e7131-db26-448d-afda-f48337a026f0,Pyroclasm,Season-All,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,4a0bb5dc-75a6-4bd6-81f8-611197fb0fba,Nettlecyst,Season-5,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,4a0bb5dc-75a6-4bd6-81f8-611197fb0fba,Nettlecyst,Season-All,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,c1e0f201-42cb-46a1-901a-65bb4fc18f6c,Urza's Saga,Season-5,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,c1e0f201-42cb-46a1-901a-65bb4fc18f6c,Urza's Saga,Season-All,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,98e7bf8f-dba7-4005-8cee-634c9153931d,Phantasmal Image,Season-5,2,8,6,1,1,0.75,0.125,18,14,1,4,0.7777777777777778,0.0555555555555555
+Thomas,26,98e7bf8f-dba7-4005-8cee-634c9153931d,Phantasmal Image,Season-All,2,8,6,1,1,0.75,0.125,18,14,1,4,0.7777777777777778,0.0555555555555555
+Thomas,26,b7f16fdf-a3f5-462d-a64a-789d893b6ef5,Batterskull,Season-5,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,b7f16fdf-a3f5-462d-a64a-789d893b6ef5,Batterskull,Season-All,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,0c3bc412-689f-4385-807b-ed60d6276d76,Grim Monolith,Season-5,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,0c3bc412-689f-4385-807b-ed60d6276d76,Grim Monolith,Season-All,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,37dbe1a3-3c44-452b-9fb9-37f5d793d0b5,Memory Jar,Season-5,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,37dbe1a3-3c44-452b-9fb9-37f5d793d0b5,Memory Jar,Season-All,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,fd99bce1-ce39-464b-8e61-2631eb3ed6f6,Tolarian Academy,Season-5,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,fd99bce1-ce39-464b-8e61-2631eb3ed6f6,Tolarian Academy,Season-All,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,991037a2-fea2-49f5-8ace-ebbf9f678cff,Talisman of Dominance,Season-5,2,8,6,1,1,0.75,0.125,18,14,1,4,0.7777777777777778,0.0555555555555555
+Thomas,26,991037a2-fea2-49f5-8ace-ebbf9f678cff,Talisman of Dominance,Season-All,2,8,6,1,1,0.75,0.125,18,14,1,4,0.7777777777777778,0.0555555555555555
+Thomas,26,939c6e19-4b27-4023-bb9c-ae440f91e21c,Shadowspear,Season-5,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,939c6e19-4b27-4023-bb9c-ae440f91e21c,Shadowspear,Season-All,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,aac0c8df-f01d-4178-8d66-ee603f814d24,Mishra's Workshop,Season-5,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,aac0c8df-f01d-4178-8d66-ee603f814d24,Mishra's Workshop,Season-All,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,89af0f45-c11c-4f13-9950-b1489440ee5b,Chain Lightning,Season-5,2,8,6,1,1,0.75,0.125,18,14,1,4,0.7777777777777778,0.0555555555555555
+Thomas,26,89af0f45-c11c-4f13-9950-b1489440ee5b,Chain Lightning,Season-All,2,8,6,1,1,0.75,0.125,18,14,1,4,0.7777777777777778,0.0555555555555555
+Thomas,26,486d7edc-d983-41f0-8b78-c99aecd72996,"Otawara, Soaring City",Season-5,2,8,6,1,1,0.75,0.125,18,14,1,4,0.7777777777777778,0.0555555555555555
+Thomas,26,486d7edc-d983-41f0-8b78-c99aecd72996,"Otawara, Soaring City",Season-All,2,8,6,1,1,0.75,0.125,18,14,1,4,0.7777777777777778,0.0555555555555555
+Thomas,26,5da578b8-19e6-4068-9336-e7cd33c585f1,Retrofitter Foundry,Season-5,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,5da578b8-19e6-4068-9336-e7cd33c585f1,Retrofitter Foundry,Season-All,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,54f449ff-4025-465e-9ec5-a5cf42c4c9d3,Xander's Lounge,Season-5,2,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,54f449ff-4025-465e-9ec5-a5cf42c4c9d3,Xander's Lounge,Season-6,2,4,1,1,2,0.25,0.25,8,3,1,5,0.375,0.125
+Thomas,26,54f449ff-4025-465e-9ec5-a5cf42c4c9d3,Xander's Lounge,Season-All,2,8,4,1,3,0.5,0.125,17,10,1,7,0.5882352941176471,0.0588235294117647
+Thomas,26,4b0bd07e-cf80-4d64-af29-f4cec6632b3e,Perilous Landscape,Season-5,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
+Thomas,26,4b0bd07e-cf80-4d64-af29-f4cec6632b3e,Perilous Landscape,Season-All,1,4,3,0,1,0.75,0.0,9,7,0,2,0.7777777777777778,0.0
 Tinu,4,4b4956a2-9a39-4152-9c98-70e4b2acfa26,Miscalculation,Season-5,1,4,1,1,2,0.25,0.25,8,3,1,5,0.375,0.125
 Tinu,4,4b4956a2-9a39-4152-9c98-70e4b2acfa26,Miscalculation,Season-All,1,4,1,1,2,0.25,0.25,8,3,1,5,0.375,0.125
 Tinu,4,74d29b3d-f588-431d-bf4e-f7215683ab39,Tangle Wire,Season-5,1,4,1,1,2,0.25,0.25,8,3,1,5,0.375,0.125
@@ -11560,19 +11603,11 @@ Thomas,26,068bb15a-fc2d-42a2-859b-837b946d23c0,Underground Sea,Season-5,1,4,3,1,
 Thomas,26,068bb15a-fc2d-42a2-859b-837b946d23c0,Underground Sea,Season-All,1,4,3,1,0,0.75,0.25,9,7,1,2,0.7777777777777778,0.1111111111111111
 Thomas,26,bb41ff5c-9617-4033-a4fa-99323640b9c3,Duress,Season-5,2,8,6,1,1,0.75,0.125,20,14,1,6,0.7,0.05
 Thomas,26,bb41ff5c-9617-4033-a4fa-99323640b9c3,Duress,Season-All,2,8,6,1,1,0.75,0.125,20,14,1,6,0.7,0.05
-Thomas,26,1a6f256b-943e-4cfb-9fc9-d1ded68b5f97,Chart a Course,Season-5,1,4,3,1,0,0.75,0.25,9,7,1,2,0.7777777777777778,0.1111111111111111
-Thomas,26,1a6f256b-943e-4cfb-9fc9-d1ded68b5f97,Chart a Course,Season-All,1,4,3,1,0,0.75,0.25,9,7,1,2,0.7777777777777778,0.1111111111111111
-Thomas,26,89af0f45-c11c-4f13-9950-b1489440ee5b,Chain Lightning,Season-5,1,4,3,1,0,0.75,0.25,9,7,1,2,0.7777777777777778,0.1111111111111111
-Thomas,26,89af0f45-c11c-4f13-9950-b1489440ee5b,Chain Lightning,Season-All,1,4,3,1,0,0.75,0.25,9,7,1,2,0.7777777777777778,0.1111111111111111
-Thomas,26,98e7bf8f-dba7-4005-8cee-634c9153931d,Phantasmal Image,Season-5,1,4,3,1,0,0.75,0.25,9,7,1,2,0.7777777777777778,0.1111111111111111
-Thomas,26,98e7bf8f-dba7-4005-8cee-634c9153931d,Phantasmal Image,Season-All,1,4,3,1,0,0.75,0.25,9,7,1,2,0.7777777777777778,0.1111111111111111
 Thomas,26,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,Season-5,1,4,3,1,0,0.75,0.25,9,7,1,2,0.7777777777777778,0.1111111111111111
 Thomas,26,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,Season-All,1,4,3,1,0,0.75,0.25,9,7,1,2,0.7777777777777778,0.1111111111111111
 Thomas,26,e7c53ba4-9956-4cd6-85ca-2d6b61a5127c,Dance of the Dead,Season-5,2,4,3,1,0,0.75,0.25,9,7,1,2,0.7777777777777778,0.1111111111111111
 Thomas,26,e7c53ba4-9956-4cd6-85ca-2d6b61a5127c,Dance of the Dead,Season-6,2,4,3,0,1,0.75,0.0,10,7,0,3,0.7,0.0
 Thomas,26,e7c53ba4-9956-4cd6-85ca-2d6b61a5127c,Dance of the Dead,Season-All,2,8,6,1,1,0.75,0.125,19,14,1,5,0.7368421052631579,0.0526315789473684
-Thomas,26,486d7edc-d983-41f0-8b78-c99aecd72996,"Otawara, Soaring City",Season-5,1,4,3,1,0,0.75,0.25,9,7,1,2,0.7777777777777778,0.1111111111111111
-Thomas,26,486d7edc-d983-41f0-8b78-c99aecd72996,"Otawara, Soaring City",Season-All,1,4,3,1,0,0.75,0.25,9,7,1,2,0.7777777777777778,0.1111111111111111
 Thomas,26,2ba70366-b6ae-423a-a8d8-29d2b8afd939,"Ivora, Insatiable Heir",Season-5,1,4,3,1,0,0.75,0.25,9,7,1,2,0.7777777777777778,0.1111111111111111
 Thomas,26,2ba70366-b6ae-423a-a8d8-29d2b8afd939,"Ivora, Insatiable Heir",Season-All,1,4,3,1,0,0.75,0.25,9,7,1,2,0.7777777777777778,0.1111111111111111
 Thomas,26,e6befbc4-1320-4f26-bd9f-b1814fedda10,Grief,Season-5,2,8,6,1,1,0.75,0.125,20,14,1,6,0.7,0.05
@@ -11593,8 +11628,6 @@ Thomas,26,16448d95-ee21-4def-b880-26f6f159c213,Metamorphosis Fanatic,Season-5,1,
 Thomas,26,16448d95-ee21-4def-b880-26f6f159c213,Metamorphosis Fanatic,Season-All,1,4,3,1,0,0.75,0.25,9,7,1,2,0.7777777777777778,0.1111111111111111
 Thomas,26,6a058e68-70af-4a64-859c-c881e5578368,Chrome Mox,Season-5,1,4,3,1,0,0.75,0.25,9,7,1,2,0.7777777777777778,0.1111111111111111
 Thomas,26,6a058e68-70af-4a64-859c-c881e5578368,Chrome Mox,Season-All,1,4,3,1,0,0.75,0.25,9,7,1,2,0.7777777777777778,0.1111111111111111
-Thomas,26,991037a2-fea2-49f5-8ace-ebbf9f678cff,Talisman of Dominance,Season-5,1,4,3,1,0,0.75,0.25,9,7,1,2,0.7777777777777778,0.1111111111111111
-Thomas,26,991037a2-fea2-49f5-8ace-ebbf9f678cff,Talisman of Dominance,Season-All,1,4,3,1,0,0.75,0.25,9,7,1,2,0.7777777777777778,0.1111111111111111
 Thomas,26,1be9d9a4-d7ee-4854-abc2-85cabf993ec9,Archon of Cruelty,Season-5,1,4,3,1,0,0.75,0.25,9,7,1,2,0.7777777777777778,0.1111111111111111
 Thomas,26,1be9d9a4-d7ee-4854-abc2-85cabf993ec9,Archon of Cruelty,Season-All,1,4,3,1,0,0.75,0.25,9,7,1,2,0.7777777777777778,0.1111111111111111
 Tinu,4,68c72226-6f52-4322-8b14-18737293dfa0,Bloodstained Mire,Season-5,1,4,2,1,1,0.5,0.25,9,5,1,4,0.5555555555555556,0.1111111111111111
@@ -12369,8 +12402,6 @@ Thomas,26,661fc907-7003-45c6-820c-9616e9a71c30,Seething Landscape,Season-6,1,4,1
 Thomas,26,661fc907-7003-45c6-820c-9616e9a71c30,Seething Landscape,Season-All,1,4,1,1,2,0.25,0.25,8,3,1,5,0.375,0.125
 Thomas,26,d2705b43-a94a-44c0-8740-82e0b296820c,Abhorrent Oculus,Season-6,1,4,1,1,2,0.25,0.25,8,3,1,5,0.375,0.125
 Thomas,26,d2705b43-a94a-44c0-8740-82e0b296820c,Abhorrent Oculus,Season-All,1,4,1,1,2,0.25,0.25,8,3,1,5,0.375,0.125
-Thomas,26,54f449ff-4025-465e-9ec5-a5cf42c4c9d3,Xander's Lounge,Season-6,1,4,1,1,2,0.25,0.25,8,3,1,5,0.375,0.125
-Thomas,26,54f449ff-4025-465e-9ec5-a5cf42c4c9d3,Xander's Lounge,Season-All,1,4,1,1,2,0.25,0.25,8,3,1,5,0.375,0.125
 Thomas,26,5ad36fb2-c44e-4085-ba0d-54277841ad3a,Lurrus of the Dream-Den,Season-6,1,4,1,1,2,0.25,0.25,8,3,1,5,0.375,0.125
 Thomas,26,5ad36fb2-c44e-4085-ba0d-54277841ad3a,Lurrus of the Dream-Den,Season-All,1,4,1,1,2,0.25,0.25,8,3,1,5,0.375,0.125
 Thomas,26,63ce0909-7d7d-410d-ab6c-c87fa3e23877,"Black Widow, Super Spy",Season-6,1,4,1,1,2,0.25,0.25,8,3,1,5,0.375,0.125

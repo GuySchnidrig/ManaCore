@@ -140,6 +140,7 @@ Season-5,Sili,6,Aggro-Combo,7,10,0.7,3,4,0.75
 Season-5,Sili,6,Combo,2,8,0.25,1,4,0.25
 Season-5,Sili,6,Control,8,18,0.4444444444444444,4,8,0.5
 Season-5,Sili,6,Control-Aggro (Midrange),8,18,0.4444444444444444,2,8,0.25
+Season-5,Thomas,26,Combo,7,9,0.7777777777777778,3,4,0.75
 Season-5,Thomas,26,Combo-Control,5,10,0.5,2,4,0.5
 Season-5,Thomas,26,Control,21,30,0.7,9,12,0.75
 Season-5,Thomas,26,Control-Aggro (Midrange),15,20,0.75,7,8,0.875
@@ -272,6 +273,7 @@ Season-All,Sili,6,Combo-Control,16,28,0.5714285714285714,7,12,0.5833333333333334
 Season-All,Sili,6,Control,17,35,0.4857142857142857,8,16,0.5
 Season-All,Sili,6,Control-Aggro (Midrange),11,27,0.4074074074074074,3,12,0.25
 Season-All,Thomas,26,Aggro-Combo,7,10,0.7,3,4,0.75
+Season-All,Thomas,26,Combo,7,9,0.7777777777777778,3,4,0.75
 Season-All,Thomas,26,Combo-Control,5,10,0.5,2,4,0.5
 Season-All,Thomas,26,Control,24,38,0.631578947368421,10,16,0.625
 Season-All,Thomas,26,Control-Aggro (Midrange),15,20,0.75,7,8,0.875
