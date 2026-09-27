@@ -445,6 +445,77 @@ def calculate_most_picked_card_by_player(decks_df: pd.DataFrame) -> pd.DataFrame
     return most_picked
 
 
+POWER_PIECES = [
+    'Black Lotus',
+    'Gleemox',
+    'Mana Crypt',
+    'Time Walk',
+    'Ancestral Recall',
+    'Sol Ring',
+    'Mox Poison',
+    'Mox Sapphire',
+    'Mox Pearl',
+    'Mox Jet',
+    'Mox Ruby',
+    'Mox Emerald',
+]
+
+
+def calculate_power_pieces_by_player(decks_df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Count the power pieces each player has drafted, per season and across all seasons.
+
+    Args:
+        decks_df: DataFrame with drafted decks data, must contain columns
+                  ['season_id', 'draft_id', 'player', 'player_id', 'card_name']
+
+    Returns:
+        DataFrame with columns ['season_id', 'player', 'player_id', 'drafts_played', 'seasons_played',
+        'power_count', 'avg_power_per_draft', 'avg_power_per_season', 'most_picked_power_card',
+        'most_picked_power_count']. Rows with season_id 'Season-All' aggregate over all seasons.
+    """
+    power = decks_df[decks_df['card_name'].isin(POWER_PIECES)]
+
+    # Every player who played a draft, so players without power show up with 0
+    played = decks_df[['season_id', 'draft_id', 'player']].drop_duplicates()
+
+    # Group by name only; player_id can be missing for new players and would drop them from groupby
+    player_ids = decks_df.groupby('player')['player_id'].first().astype('Int64').reset_index()
+
+    def summarize(group_cols, played_df, power_df):
+        stats = played_df.groupby(group_cols).agg(
+            drafts_played=('draft_id', 'nunique'),
+            seasons_played=('season_id', 'nunique')
+        ).reset_index()
+
+        counts = power_df.groupby(group_cols).size().reset_index(name='power_count')
+        stats = stats.merge(counts, on=group_cols, how='left')
+        stats['power_count'] = stats['power_count'].fillna(0).astype(int)
+        stats['avg_power_per_draft'] = stats['power_count'] / stats['drafts_played']
+        stats['avg_power_per_season'] = stats['power_count'] / stats['seasons_played']
+
+        # Most picked power card (ties broken alphabetically)
+        card_counts = power_df.groupby(group_cols + ['card_name']).size().reset_index(name='most_picked_power_count')
+        card_counts = card_counts.sort_values(group_cols + ['most_picked_power_count', 'card_name'],
+                                              ascending=[True] * len(group_cols) + [False, True])
+        top = card_counts.drop_duplicates(subset=group_cols).rename(columns={'card_name': 'most_picked_power_card'})
+        stats = stats.merge(top, on=group_cols, how='left')
+        stats['most_picked_power_count'] = stats['most_picked_power_count'].fillna(0).astype(int)
+        return stats
+
+    per_season = summarize(['season_id', 'player'], played, power)
+
+    all_seasons = summarize(['player'], played, power)
+    all_seasons['season_id'] = 'Season-All'
+
+    result = pd.concat([per_season, all_seasons], ignore_index=True)
+    result = result.merge(player_ids, on='player', how='left')
+    result = result[['season_id', 'player', 'player_id', 'drafts_played', 'seasons_played', 'power_count',
+                     'avg_power_per_draft', 'avg_power_per_season', 'most_picked_power_card',
+                     'most_picked_power_count']]
+    return result.sort_values(['season_id', 'player']).reset_index(drop=True)
+
+
 def calculate_decktype_match_winrate(matches_df, draftedecks_df, decktype_level='decktype'):
     # Reduce to unique player decktypes per draft
     player_decktypes = draftedecks_df[['season_id', 'draft_id', 'player', decktype_level]].drop_duplicates()
