@@ -96,30 +96,34 @@ Season-5,Sneak and Show,7.0,7.0,1.0
 Season-5,Storm,24.0,47.0,0.5106382978723404
 Season-5,Sultai Control,4.0,10.0,0.4
 Season-5,White Aggro,3.0,10.0,0.3
-Season-6,Artifacts,3.0,10.0,0.3
+Season-6,Artifacts,9.0,20.0,0.45
 Season-6,Azorius Combo Control,6.0,11.0,0.5454545454545454
+Season-6,Birthing Pod,4.0,9.0,0.4444444444444444
 Season-6,Boros Aggro,14.0,20.0,0.7
 Season-6,Domain Aggro,6.0,10.0,0.6
 Season-6,Draw 7 Combo-Control,4.0,9.0,0.4444444444444444
-Season-6,Esper Control,3.0,8.0,0.375
+Season-6,Esper Control,9.0,19.0,0.47368421052631576
 Season-6,Golgari Midrange,3.0,11.0,0.2727272727272727
 Season-6,Greenbased Aggro-Combo,5.0,10.0,0.5
 Season-6,Gruul Aggro,6.0,10.0,0.6
+Season-6,Gruul Midrange,3.0,9.0,0.3333333333333333
 Season-6,High Tide,2.0,8.0,0.25
+Season-6,Jeskai Control,6.0,8.0,0.75
 Season-6,Lurrus Control,4.0,9.0,0.4444444444444444
 Season-6,Naya Midrange,5.0,11.0,0.45454545454545453
 Season-6,Reanimator,7.0,10.0,0.7
 Season-6,Reanimator-Flash,10.0,21.0,0.47619047619047616
+Season-6,Selesnya Aggro,5.0,10.0,0.5
 Season-6,Sneak Attack,8.0,8.0,1.0
-Season-6,Storm,2.0,10.0,0.2
+Season-6,Storm,9.0,20.0,0.45
 Season-All,Aggro-Combo Lands,3.0,7.0,0.42857142857142855
-Season-All,Artifacts,58.0,160.0,0.3625
+Season-All,Artifacts,64.0,170.0,0.3764705882352941
 Season-All,Artifacts Control,11.0,26.0,0.4230769230769231
 Season-All,Azorius Blink,28.0,74.0,0.3783783783783784
 Season-All,Azorius Combo Control,16.0,33.0,0.48484848484848486
 Season-All,Azorius Control,25.0,51.0,0.49019607843137253
 Season-All,Azorius Tempo,6.0,18.0,0.3333333333333333
-Season-All,Birthing Pod,28.0,52.0,0.5384615384615384
+Season-All,Birthing Pod,32.0,61.0,0.5245901639344263
 Season-All,Birthing Pod Combo-Control,5.0,11.0,0.45454545454545453
 Season-All,Boros Aggro,152.0,266.0,0.5714285714285714
 Season-All,Combo Lands,24.0,50.0,0.48
@@ -131,7 +135,7 @@ Season-All,Domain Aggro,6.0,10.0,0.6
 Season-All,Domain Control,45.0,87.0,0.5172413793103449
 Season-All,Draw 7,28.0,56.0,0.5
 Season-All,Draw 7 Combo-Control,21.0,45.0,0.4666666666666667
-Season-All,Esper Control,5.0,16.0,0.3125
+Season-All,Esper Control,11.0,27.0,0.4074074074074074
 Season-All,Esper Tempo,4.0,9.0,0.4444444444444444
 Season-All,Flash,6.0,11.0,0.5454545454545454
 Season-All,Golgari Midrange,16.0,47.0,0.3404255319148936
@@ -140,10 +144,11 @@ Season-All,Grixis Control,46.0,81.0,0.5679012345679012
 Season-All,Grixis Tempo,5.0,9.0,0.5555555555555556
 Season-All,Gruul Aggro,52.0,93.0,0.5591397849462365
 Season-All,Gruul Aggro Combo,3.0,8.0,0.375
+Season-All,Gruul Midrange,3.0,9.0,0.3333333333333333
 Season-All,High Tide,2.0,8.0,0.25
 Season-All,Izzet Control,2.0,8.0,0.25
 Season-All,Izzet Tempo,27.0,50.0,0.54
-Season-All,Jeskai Control,4.0,8.0,0.5
+Season-All,Jeskai Control,10.0,16.0,0.625
 Season-All,Jund Aggro,6.0,11.0,0.5454545454545454
 Season-All,Jund Midrange,12.0,21.0,0.5714285714285714
 Season-All,Landfall,17.0,31.0,0.5483870967741935
@@ -170,7 +175,7 @@ Season-All,Reanimator-Flash,20.0,39.0,0.5128205128205128
 Season-All,Reanimator-Sneak,22.0,37.0,0.5945945945945946
 Season-All,Red Aggro,10.0,17.0,0.5882352941176471
 Season-All,Red Aggro Strom,5.0,11.0,0.45454545454545453
-Season-All,Selesnya Aggro,14.0,36.0,0.3888888888888889
+Season-All,Selesnya Aggro,19.0,46.0,0.41304347826086957
 Season-All,Selesnya Midrange,18.0,44.0,0.4090909090909091
 Season-All,Simic Midrange,24.0,39.0,0.6153846153846154
 Season-All,Simic Tempo,7.0,17.0,0.4117647058823529
@@ -178,6 +183,6 @@ Season-All,Sneak Attack,19.0,27.0,0.7037037037037037
 Season-All,Sneak and Flash,17.0,28.0,0.6071428571428571
 Season-All,Sneak and Show,7.0,7.0,1.0
 Season-All,Splinter-Twin,13.0,20.0,0.65
-Season-All,Storm,53.0,106.0,0.5
+Season-All,Storm,60.0,116.0,0.5172413793103449
 Season-All,Sultai Control,4.0,10.0,0.4
 Season-All,White Aggro,18.0,38.0,0.47368421052631576

@@ -1,14 +1,14 @@
 player,player_id,scryfallId,card_name,pick_count
 Andrin,5,c2089ec9-0665-448f-bfe9-d181de127814,Brazen Borrower // Petty Theft,8
 Beni,35,4cbdacc1-7a1b-4633-85f5-eb50c2bf406d,Snapcaster Mage,3
-Dimlas,1,310a1c46-8331-4a09-9fcb-d942f8102364,Thoughtseize,8
+Dimlas,1,139b90cd-8272-457a-be32-1298145345be,Watery Grave,8
 Elie,17,04fc99dc-bfbe-4567-b791-6b1db96471ec,Reanimate,1
 Felix,25,006d2bf1-20f7-4b09-8d98-8233d91682bd,Flame Slash,1
 Filipe,23,4720b4f2-e6af-4223-9250-a0ed21ed5693,Pest Infestation,2
 Fubu,33,0027e5ca-8046-40a0-bd73-79be55f28bff,Remand,1
 Gianni,28,0324641d-af55-4c53-b4dc-c8262e967da5,Volcanic Island,2
-Guy,10,0f7585c8-9e21-4eef-afc1-2852de23db2f,Polluted Delta,4
-Ivo,18,3a2d7cf9-dddb-4de3-b4f2-c52e3ec8fb4b,Brain Freeze,4
+Guy,10,0027e5ca-8046-40a0-bd73-79be55f28bff,Remand,4
+Ivo,18,3a2d7cf9-dddb-4de3-b4f2-c52e3ec8fb4b,Brain Freeze,5
 Joel K.,12,18bd50f2-c3ba-4217-a2d5-bb771e199706,Vampiric Tutor,5
 Joel R.,3,01794178-cf41-454c-ac37-1d8b18e42db2,Green Sun's Zenith,1
 Jonas W.,27,0463e989-ba32-4a46-a82f-e0d6daf3cd51,Sulfuric Vortex,1
@@ -23,11 +23,12 @@ Matthias,21,1fc6d14a-1328-4032-ad9e-cd85cd365bd3,Endurance,4
 Myri,15,01006833-6007-4c16-9ebb-20d31c60a57a,Taiga,4
 Mäxu,34,01006833-6007-4c16-9ebb-20d31c60a57a,Taiga,1
 Nici,31,01978fe5-00a9-4add-ae2a-b4c2572ffb9a,Vendilion Clique,1
+Noe,,13f5bcdc-70bb-4d67-99e1-282f166ee4bf,Increasing Confusion,1
 Noe T.,11,89f5cc05-5d9d-4709-b3c5-a6249c294acc,Hexdrinker,5
 Oli,37,01c6f877-6b00-4d57-8a88-36cd3b16edbc,Llanowar Elves,1
 Pali,14,553fb946-2706-475b-89f9-e4355ec9ea2b,March of Otherworldly Light,3
 Sam,7,5d10b752-d9cb-419d-a5c4-d4ee1acb655e,"Teferi, Hero of Dominaria",2
-Sili,6,01e7b0bc-1c6c-48f4-8b72-1a809f536c6c,Birds of Paradise,7
+Sili,6,01e7b0bc-1c6c-48f4-8b72-1a809f536c6c,Birds of Paradise,8
 Thomas,26,9b911653-7b96-4cf3-a907-13c5c53a14f7,Overlord of the Balemurk,4
 Thomas R.,,05e8a4ea-8c0d-4284-ac23-80e19fdde11d,Myr Battlesphere,1
 Tinu,4,63c59228-c742-4abd-b4d7-9f7880190e95,Windswept Heath,5
