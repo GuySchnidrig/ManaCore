@@ -27,6 +27,10 @@ def process_and_save_all_outputs(base_path: str):
     matches_df = load_match_data(processed_dir)
     print("Match data loaded.")
     
+    print("Loading card names...")
+    card_names = load_card_names(os.path.join(base_path, "data", "cards"))
+    print("Card names loaded.")
+    
     # Processing data
     print("Calculating combined winrates per season...")
     combined_winrates_df = calculate_combined_winrates_per_season(matches_df, decks_df)
@@ -73,7 +77,7 @@ def process_and_save_all_outputs(base_path: str):
     print("Most picked card calculated.")
 
     print("Calculating power pieces by player...")
-    power_pieces_df = calculate_power_pieces_by_player(decks_df)
+    power_pieces_df = calculate_power_pieces_by_player(decks_df, card_names)
     print("Power pieces by player calculated.")
     
     print("Calculating decktype match winrate...")

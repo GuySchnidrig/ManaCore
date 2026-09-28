@@ -1,4 +1,6 @@
 import os
+import gzip
+import json
 import pandas as pd
 from datetime import datetime
 import ast
@@ -19,6 +21,15 @@ def load_drafted_decks(base_path: str) -> pd.DataFrame:
         raise FileNotFoundError(f"'drafted_decks.csv' not found in {base_path}")
     df = pd.read_csv(decks_file)
     return df
+
+
+def load_card_names(base_path: str) -> dict:
+    cards_file = os.path.join(base_path, "scryfall_filtered_cards.json.gz")
+    if not os.path.exists(cards_file):
+        raise FileNotFoundError(f"'scryfall_filtered_cards.json.gz' not found in {base_path}")
+    with gzip.open(cards_file, "rt", encoding="utf-8") as f:
+        cards = json.load(f)
+    return {card['id']: card['name'] for card in cards}
 
 
 def load_cube_history(base_path: str) -> pd.DataFrame:
@@ -461,26 +472,29 @@ POWER_PIECES = [
 ]
 
 
-def calculate_power_pieces_by_player(decks_df: pd.DataFrame) -> pd.DataFrame:
+def calculate_power_pieces_by_player(decks_df: pd.DataFrame, card_names: dict) -> pd.DataFrame:
     """
     Count the power pieces each player has drafted, per season and across all seasons.
 
     Args:
         decks_df: DataFrame with drafted decks data, must contain columns
-                  ['season_id', 'draft_id', 'player', 'player_id', 'card_name']
+                  ['season_id', 'draft_id', 'player', 'scryfallId']
+        card_names: Dictionary mapping scryfallId to card name
 
     Returns:
-        DataFrame with columns ['season_id', 'player', 'player_id', 'drafts_played', 'seasons_played',
+        DataFrame with columns ['season_id', 'player', 'drafts_played', 'seasons_played',
         'power_count', 'avg_power_per_draft', 'avg_power_per_season', 'most_picked_power_card',
         'most_picked_power_count']. Rows with season_id 'Season-All' aggregate over all seasons.
     """
+    # card_name and player_id are only added to drafted_decks.csv by improve_csv.py, which runs after
+    # the stats, so look the names up here and leave player_id to improve_csv.py
+    decks_df = decks_df.copy()
+    decks_df['card_name'] = decks_df['scryfallId'].map(card_names)
+
     power = decks_df[decks_df['card_name'].isin(POWER_PIECES)]
 
     # Every player who played a draft, so players without power show up with 0
     played = decks_df[['season_id', 'draft_id', 'player']].drop_duplicates()
-
-    # Group by name only; player_id can be missing for new players and would drop them from groupby
-    player_ids = decks_df.groupby('player')['player_id'].first().astype('Int64').reset_index()
 
     def summarize(group_cols, played_df, power_df):
         stats = played_df.groupby(group_cols).agg(
@@ -509,8 +523,7 @@ def calculate_power_pieces_by_player(decks_df: pd.DataFrame) -> pd.DataFrame:
     all_seasons['season_id'] = 'Season-All'
 
     result = pd.concat([per_season, all_seasons], ignore_index=True)
-    result = result.merge(player_ids, on='player', how='left')
-    result = result[['season_id', 'player', 'player_id', 'drafts_played', 'seasons_played', 'power_count',
+    result = result[['season_id', 'player', 'drafts_played', 'seasons_played', 'power_count',
                      'avg_power_per_draft', 'avg_power_per_season', 'most_picked_power_card',
                      'most_picked_power_count']]
     return result.sort_values(['season_id', 'player']).reset_index(drop=True)
