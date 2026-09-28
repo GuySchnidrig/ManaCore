@@ -516,6 +516,43 @@ def calculate_power_pieces_by_player(decks_df: pd.DataFrame) -> pd.DataFrame:
     return result.sort_values(['season_id', 'player']).reset_index(drop=True)
 
 
+def calculate_season_ranking(standings_df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Rank players of the newest season by average match points per draft.
+
+    Args:
+        standings_df: DataFrame with standings data, must contain columns
+                      ['season_id', 'draft_id', 'player', 'match_points', 'OMP', 'GWP', 'OGP']
+
+    Returns:
+        DataFrame with columns ['season_id', 'rank', 'player', 'drafts_played', 'total_points',
+        'avg_points_per_draft', 'OMP', 'GWP', 'OGP']. Tiebreakers are the player's OMP, GWP and OGP
+        averaged over the season's drafts; only players equal on all of them share a rank.
+    """
+    # Newest season = season of the latest draft (season names don't sort reliably, e.g. Season-10)
+    latest_season = standings_df.loc[standings_df['draft_id'].idxmax(), 'season_id']
+    season = standings_df[standings_df['season_id'] == latest_season]
+
+    ranking = season.groupby('player').agg(
+        drafts_played=('draft_id', 'nunique'),
+        total_points=('match_points', 'sum'),
+        OMP=('OMP', 'mean'),
+        GWP=('GWP', 'mean'),
+        OGP=('OGP', 'mean')
+    ).reset_index()
+    ranking['avg_points_per_draft'] = (ranking['total_points'] / ranking['drafts_played']).round(4)
+    ranking[['OMP', 'GWP', 'OGP']] = ranking[['OMP', 'GWP', 'OGP']].round(4)
+
+    tiebreak_cols = ['avg_points_per_draft', 'OMP', 'GWP', 'OGP']
+    ranking = ranking.sort_values(tiebreak_cols + ['player'], ascending=[False] * len(tiebreak_cols) + [True])
+    ranking['tiebreak_tuple'] = list(zip(*(ranking[c] for c in tiebreak_cols)))
+    ranking['rank'] = ranking['tiebreak_tuple'].rank(method='min', ascending=False).astype(int)
+    ranking['season_id'] = latest_season
+
+    return ranking[['season_id', 'rank', 'player', 'drafts_played', 'total_points',
+                    'avg_points_per_draft', 'OMP', 'GWP', 'OGP']].reset_index(drop=True)
+
+
 def calculate_decktype_match_winrate(matches_df, draftedecks_df, decktype_level='decktype'):
     # Reduce to unique player decktypes per draft
     player_decktypes = draftedecks_df[['season_id', 'draft_id', 'player', decktype_level]].drop_duplicates()

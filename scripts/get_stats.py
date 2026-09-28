@@ -75,7 +75,11 @@ def process_and_save_all_outputs(base_path: str):
     print("Calculating power pieces by player...")
     power_pieces_df = calculate_power_pieces_by_player(decks_df)
     print("Power pieces by player calculated.")
-    
+
+    print("Calculating season ranking...")
+    season_ranking_df = calculate_season_ranking(standings_df)
+    print("Season ranking calculated.")
+
     print("Calculating decktype match winrate...")
     decktype_match_winrate_df = calculate_decktype_match_winrate(matches_df, decks_df, 'decktype')
     print("Decktype match winrate calculated.")
@@ -153,7 +157,11 @@ def process_and_save_all_outputs(base_path: str):
     print("Saving power pieces by player...")
     power_pieces_df.to_csv(os.path.join(processed_dir, "power_pieces_by_player.csv"), index=False)
     print("Saved power pieces by player.")
-    
+
+    print("Saving season ranking...")
+    season_ranking_df.to_csv(os.path.join(processed_dir, "season_ranking.csv"), index=False)
+    print("Saved season ranking.")
+
     print("Saving decktype match winrate...")
     decktype_match_winrate_df.to_csv(os.path.join(processed_dir, "decktype_match_winrate.csv"), index=False)
     print("Saved decktype match winrate.")
