@@ -1,0 +1,107 @@
+season_id,player,player_id,drafts_played,seasons_played,power_count,avg_power_per_draft,avg_power_per_season,most_picked_power_card,most_picked_power_count
+Season-4,Andrin,5,11,1,4,0.36363636363636365,4.0,Mox Emerald,1
+Season-4,Dimlas,1,12,1,12,1.0,12.0,Ancestral Recall,2
+Season-4,Elie,17,1,1,0,0.0,0.0,,0
+Season-4,Filipe,23,1,1,0,0.0,0.0,,0
+Season-4,Guy,10,7,1,5,0.7142857142857143,5.0,Ancestral Recall,1
+Season-4,Ivo,18,7,1,7,1.0,7.0,Black Lotus,2
+Season-4,Joel K.,12,7,1,6,0.8571428571428571,6.0,Ancestral Recall,2
+Season-4,Joel R.,3,2,1,3,1.5,3.0,Ancestral Recall,1
+Season-4,Luca,20,1,1,2,2.0,2.0,Black Lotus,1
+Season-4,Lukas Stalder,2,11,1,11,1.0,11.0,Mana Crypt,3
+Season-4,Manuel,8,11,1,10,0.9090909090909091,10.0,Mox Pearl,3
+Season-4,Matthias,21,5,1,5,1.0,5.0,Ancestral Recall,1
+Season-4,Myri,15,4,1,4,1.0,4.0,Mox Ruby,2
+Season-4,Noe T.,11,7,1,5,0.7142857142857143,5.0,Mox Emerald,3
+Season-4,Pali,14,2,1,1,0.5,1.0,Black Lotus,1
+Season-4,Sam,7,2,1,3,1.5,3.0,Mox Emerald,1
+Season-4,Sili,6,10,1,10,1.0,10.0,Mox Emerald,2
+Season-4,Tinu,4,5,1,3,0.6,3.0,Mox Jet,1
+Season-4,Tobi,13,4,1,1,0.25,1.0,Mox Pearl,1
+Season-4,Tommy,16,9,1,6,0.6666666666666666,6.0,Mana Crypt,3
+Season-4,Valentin,19,5,1,7,1.4,7.0,Time Walk,2
+Season-4,Yannik,9,7,1,0,0.0,0.0,,0
+Season-5,Andrin,5,10,1,14,1.4,14.0,Mox Poison,3
+Season-5,Beni,35,4,1,7,1.75,7.0,Ancestral Recall,2
+Season-5,Dimlas,1,12,1,11,0.9166666666666666,11.0,Mox Emerald,2
+Season-5,Felix,25,1,1,2,2.0,2.0,Ancestral Recall,1
+Season-5,Filipe,23,1,1,0,0.0,0.0,,0
+Season-5,Fubu,33,2,1,3,1.5,3.0,Gleemox,1
+Season-5,Gianni,28,2,1,4,2.0,4.0,Mana Crypt,1
+Season-5,Guy,10,7,1,8,1.1428571428571428,8.0,Gleemox,3
+Season-5,Ivo,18,4,1,3,0.75,3.0,Mox Pearl,2
+Season-5,Joel K.,12,9,1,7,0.7777777777777778,7.0,Mox Pearl,2
+Season-5,Jonas W.,27,1,1,0,0.0,0.0,,0
+Season-5,Jonsi,32,1,1,0,0.0,0.0,,0
+Season-5,Kas,30,3,1,4,1.3333333333333333,4.0,Black Lotus,1
+Season-5,Kaspar,36,1,1,1,1.0,1.0,Ancestral Recall,1
+Season-5,Luca,20,3,1,2,0.6666666666666666,2.0,Sol Ring,1
+Season-5,Lukas Stalder,2,8,1,9,1.125,9.0,Mana Crypt,3
+Season-5,Lukas Wyss,29,1,1,0,0.0,0.0,,0
+Season-5,Manuel,8,3,1,1,0.3333333333333333,1.0,Mox Pearl,1
+Season-5,Matthias,21,5,1,3,0.6,3.0,Gleemox,1
+Season-5,Myri,15,7,1,7,1.0,7.0,Mox Sapphire,2
+Season-5,Mäxu,34,1,1,1,1.0,1.0,Ancestral Recall,1
+Season-5,Nici,31,1,1,0,0.0,0.0,,0
+Season-5,Noe T.,11,6,1,3,0.5,3.0,Black Lotus,1
+Season-5,Pali,14,2,1,0,0.0,0.0,,0
+Season-5,Sam,7,1,1,1,1.0,1.0,Gleemox,1
+Season-5,Sili,6,9,1,8,0.8888888888888888,8.0,Black Lotus,2
+Season-5,Thomas,26,7,1,5,0.7142857142857143,5.0,Black Lotus,1
+Season-5,Tinu,4,7,1,8,1.1428571428571428,8.0,Mox Emerald,2
+Season-5,Tobi,13,1,1,1,1.0,1.0,Mox Jet,1
+Season-5,Tommy,16,8,1,11,1.375,11.0,Ancestral Recall,3
+Season-5,Valentin,19,5,1,4,0.8,4.0,Mox Emerald,2
+Season-5,Yannik,9,2,1,4,2.0,4.0,Gleemox,1
+Season-5,Zoel,24,3,1,3,1.0,3.0,Black Lotus,1
+Season-6,Andrin,5,3,1,2,0.6666666666666666,2.0,Mox Jet,1
+Season-6,Beni,35,2,1,2,1.0,2.0,Sol Ring,1
+Season-6,Dimlas,1,3,1,1,0.3333333333333333,1.0,Mox Ruby,1
+Season-6,Filipe,23,1,1,0,0.0,0.0,,0
+Season-6,Guy,10,2,1,0,0.0,0.0,,0
+Season-6,Ivo,18,1,1,4,4.0,4.0,Ancestral Recall,1
+Season-6,Kaspar,36,1,1,1,1.0,1.0,Mox Emerald,1
+Season-6,Matthias,21,3,1,2,0.6666666666666666,2.0,Mox Jet,1
+Season-6,Myri,15,1,1,0,0.0,0.0,,0
+Season-6,Noe T.,11,1,1,0,0.0,0.0,,0
+Season-6,Oli,37,1,1,2,2.0,2.0,Mox Emerald,1
+Season-6,Sili,6,3,1,6,2.0,6.0,Black Lotus,2
+Season-6,Thomas,26,2,1,3,1.5,3.0,Ancestral Recall,1
+Season-6,Tinu,4,1,1,1,1.0,1.0,Gleemox,1
+Season-6,Tommy,16,1,1,1,1.0,1.0,Mox Pearl,1
+Season-All,Andrin,5,24,3,20,0.8333333333333334,6.666666666666667,Mox Emerald,3
+Season-All,Beni,35,6,2,9,1.5,4.5,Ancestral Recall,2
+Season-All,Dimlas,1,27,3,24,0.8888888888888888,8.0,Mana Crypt,3
+Season-All,Elie,17,1,1,0,0.0,0.0,,0
+Season-All,Felix,25,1,1,2,2.0,2.0,Ancestral Recall,1
+Season-All,Filipe,23,3,3,0,0.0,0.0,,0
+Season-All,Fubu,33,2,1,3,1.5,3.0,Gleemox,1
+Season-All,Gianni,28,2,1,4,2.0,4.0,Mana Crypt,1
+Season-All,Guy,10,16,3,13,0.8125,4.333333333333333,Gleemox,3
+Season-All,Ivo,18,12,3,14,1.1666666666666667,4.666666666666667,Mox Pearl,3
+Season-All,Joel K.,12,16,2,13,0.8125,6.5,Ancestral Recall,3
+Season-All,Joel R.,3,2,1,3,1.5,3.0,Ancestral Recall,1
+Season-All,Jonas W.,27,1,1,0,0.0,0.0,,0
+Season-All,Jonsi,32,1,1,0,0.0,0.0,,0
+Season-All,Kas,30,3,1,4,1.3333333333333333,4.0,Black Lotus,1
+Season-All,Kaspar,36,2,2,2,1.0,1.0,Ancestral Recall,1
+Season-All,Luca,20,4,2,4,1.0,2.0,Black Lotus,1
+Season-All,Lukas Stalder,2,19,2,20,1.0526315789473684,10.0,Mana Crypt,6
+Season-All,Lukas Wyss,29,1,1,0,0.0,0.0,,0
+Season-All,Manuel,8,14,2,11,0.7857142857142857,5.5,Mox Pearl,4
+Season-All,Matthias,21,13,3,10,0.7692307692307693,3.3333333333333335,Mox Jet,2
+Season-All,Myri,15,12,3,11,0.9166666666666666,3.6666666666666665,Mox Ruby,3
+Season-All,Mäxu,34,1,1,1,1.0,1.0,Ancestral Recall,1
+Season-All,Nici,31,1,1,0,0.0,0.0,,0
+Season-All,Noe T.,11,14,3,8,0.5714285714285714,2.6666666666666665,Mox Emerald,3
+Season-All,Oli,37,1,1,2,2.0,2.0,Mox Emerald,1
+Season-All,Pali,14,4,2,1,0.25,0.5,Black Lotus,1
+Season-All,Sam,7,3,2,4,1.3333333333333333,2.0,Gleemox,1
+Season-All,Sili,6,22,3,24,1.0909090909090908,8.0,Black Lotus,5
+Season-All,Thomas,26,9,2,8,0.8888888888888888,4.0,Black Lotus,2
+Season-All,Tinu,4,13,3,12,0.9230769230769231,4.0,Mox Emerald,2
+Season-All,Tobi,13,5,2,2,0.4,1.0,Mox Jet,1
+Season-All,Tommy,16,18,3,18,1.0,6.0,Ancestral Recall,3
+Season-All,Valentin,19,10,2,11,1.1,5.5,Mana Crypt,2
+Season-All,Yannik,9,9,2,4,0.4444444444444444,2.0,Gleemox,1
+Season-All,Zoel,24,3,1,3,1.0,3.0,Black Lotus,1

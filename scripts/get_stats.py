@@ -71,6 +71,10 @@ def process_and_save_all_outputs(base_path: str):
     print("Calculating most picked card by player...")
     most_picked_card_df = calculate_most_picked_card_by_player(decks_df)
     print("Most picked card calculated.")
+
+    print("Calculating power pieces by player...")
+    power_pieces_df = calculate_power_pieces_by_player(decks_df)
+    print("Power pieces by player calculated.")
     
     print("Calculating decktype match winrate...")
     decktype_match_winrate_df = calculate_decktype_match_winrate(matches_df, decks_df, 'decktype')
@@ -145,6 +149,10 @@ def process_and_save_all_outputs(base_path: str):
     print("Saving most picked card by player...")
     most_picked_card_df.to_csv(os.path.join(processed_dir, "most_played_card_by_player.csv"), index=False)
     print("Saved most picked card.")
+
+    print("Saving power pieces by player...")
+    power_pieces_df.to_csv(os.path.join(processed_dir, "power_pieces_by_player.csv"), index=False)
+    print("Saved power pieces by player.")
     
     print("Saving decktype match winrate...")
     decktype_match_winrate_df.to_csv(os.path.join(processed_dir, "decktype_match_winrate.csv"), index=False)
