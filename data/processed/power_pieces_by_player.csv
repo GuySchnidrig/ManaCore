@@ -1,5 +1,5 @@
 season_id,player,player_id,drafts_played,seasons_played,power_count,avg_power_per_draft,avg_power_per_season,most_picked_power_card,most_picked_power_count
-Season-4,Andrin,5,11,1,4,0.36363636363636365,4.0,Mox Emerald,1
+Season-4,Andrin,5,11,1,4,0.3636363636363636,4.0,Mox Emerald,1
 Season-4,Dimlas,1,12,1,12,1.0,12.0,Ancestral Recall,2
 Season-4,Elie,17,1,1,0,0.0,0.0,,0
 Season-4,Filipe,23,1,1,0,0.0,0.0,,0
@@ -9,7 +9,7 @@ Season-4,Joel K.,12,7,1,6,0.8571428571428571,6.0,Ancestral Recall,2
 Season-4,Joel R.,3,2,1,3,1.5,3.0,Ancestral Recall,1
 Season-4,Luca,20,1,1,2,2.0,2.0,Black Lotus,1
 Season-4,Lukas Stalder,2,11,1,11,1.0,11.0,Mana Crypt,3
-Season-4,Manuel,8,11,1,10,0.9090909090909091,10.0,Mox Pearl,3
+Season-4,Manuel,8,11,1,10,0.9090909090909092,10.0,Mox Pearl,3
 Season-4,Matthias,21,5,1,5,1.0,5.0,Ancestral Recall,1
 Season-4,Myri,15,4,1,4,1.0,4.0,Mox Ruby,2
 Season-4,Noe T.,11,7,1,5,0.7142857142857143,5.0,Mox Emerald,3
@@ -89,7 +89,7 @@ Season-All,Luca,20,4,2,4,1.0,2.0,Black Lotus,1
 Season-All,Lukas Stalder,2,19,2,20,1.0526315789473684,10.0,Mana Crypt,6
 Season-All,Lukas Wyss,29,1,1,0,0.0,0.0,,0
 Season-All,Manuel,8,14,2,11,0.7857142857142857,5.5,Mox Pearl,4
-Season-All,Matthias,21,13,3,10,0.7692307692307693,3.3333333333333335,Mox Jet,2
+Season-All,Matthias,21,13,3,10,0.7692307692307693,3.333333333333333,Mox Jet,2
 Season-All,Myri,15,12,3,11,0.9166666666666666,3.6666666666666665,Mox Ruby,3
 Season-All,Mäxu,34,1,1,1,1.0,1.0,Ancestral Recall,1
 Season-All,Nici,31,1,1,0,0.0,0.0,,0
@@ -99,7 +99,7 @@ Season-All,Pali,14,4,2,1,0.25,0.5,Black Lotus,1
 Season-All,Sam,7,3,2,4,1.3333333333333333,2.0,Gleemox,1
 Season-All,Sili,6,22,3,24,1.0909090909090908,8.0,Black Lotus,5
 Season-All,Thomas,26,9,2,8,0.8888888888888888,4.0,Black Lotus,2
-Season-All,Tinu,4,13,3,12,0.9230769230769231,4.0,Mox Emerald,2
+Season-All,Tinu,4,13,3,12,0.9230769230769232,4.0,Mox Emerald,2
 Season-All,Tobi,13,5,2,2,0.4,1.0,Mox Jet,1
 Season-All,Tommy,16,18,3,18,1.0,6.0,Ancestral Recall,3
 Season-All,Valentin,19,10,2,11,1.1,5.5,Mana Crypt,2
